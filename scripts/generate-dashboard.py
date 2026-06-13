@@ -122,18 +122,18 @@ def ticket_row(item: dict, duplicate_sources: dict[str, set[str]]) -> str:
 
     return f"""
 <tr>
-  <td class="score">{item["score"]}</td>
-  <td><a href="{html.escape(trac_url(ticket_id))}">#{html.escape(ticket_id)}</a></td>
-  <td>{html.escape(summary)}</td>
-  <td>{html.escape(component)}</td>
-  <td>{html.escape(item["query"].get("name", item["query"].get("track", "unknown")))}</td>
-  <td>{html.escape(trac_status)}</td>
-  <td>{html.escape(milestone)}</td>
-  <td>{html.escape(keywords)}</td>
-  <td>{html.escape(sources)}</td>
-  <td>{html.escape(review_state)}</td>
-  <td>{html.escape(review_reason)}</td>
-  <td>{html.escape(reasons)}</td>
+  <td class="score" data-label="Score">{item["score"]}</td>
+  <td data-label="Ticket"><a href="{html.escape(trac_url(ticket_id))}">#{html.escape(ticket_id)}</a></td>
+  <td data-label="Summary">{html.escape(summary)}</td>
+  <td data-label="Component">{html.escape(component)}</td>
+  <td data-label="Track">{html.escape(item["query"].get("name", item["query"].get("track", "unknown")))}</td>
+  <td data-label="Trac Status">{html.escape(trac_status)}</td>
+  <td data-label="Milestone">{html.escape(milestone)}</td>
+  <td data-label="Keywords">{html.escape(keywords)}</td>
+  <td data-label="Sources">{html.escape(sources)}</td>
+  <td data-label="Review">{html.escape(review_state)}</td>
+  <td data-label="Reason">{html.escape(review_reason)}</td>
+  <td data-label="Why Ranked">{html.escape(reasons)}</td>
 </tr>
 """
 
@@ -279,6 +279,62 @@ def build_dashboard() -> str:
       padding: 24px 32px;
       color: #646970;
       font-size: 13px;
+    }}
+
+    @media (max-width: 900px) {{
+      header {{
+        padding: 24px 18px;
+      }}
+
+      header h1 {{
+        font-size: 26px;
+      }}
+
+      main {{
+        padding: 18px;
+      }}
+
+      .summary {{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }}
+
+      table, thead, tbody, th, td, tr {{
+        display: block;
+      }}
+
+      thead {{
+        display: none;
+      }}
+
+      tr {{
+        padding: 14px;
+        border-bottom: 1px solid #dcdcde;
+      }}
+
+      td {{
+        border: 0;
+        padding: 6px 0;
+      }}
+
+      td::before {{
+        content: attr(data-label);
+        display: block;
+        color: #646970;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+      }}
+
+      td.score {{
+        font-size: 24px;
+      }}
+    }}
+
+    @media (max-width: 520px) {{
+      .summary {{
+        grid-template-columns: 1fr;
+      }}
     }}
   </style>
 </head>
