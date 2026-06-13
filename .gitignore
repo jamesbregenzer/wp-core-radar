@@ -11,3 +11,6 @@ __pycache__/
 
 # Environment files
 .env
+
+# Generated HTML reports
+reports/*.html
