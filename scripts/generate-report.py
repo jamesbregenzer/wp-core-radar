@@ -84,7 +84,14 @@ def main():
     lines.append("")
 
     for score, row, reasons in scored[:10]:
-        ticket = row.get("Ticket", "").lstrip("\ufeff")
+        ticket = (
+            row.get("Ticket")
+            or row.get("\ufeffTicket")
+            or row.get("id")
+            or row.get("\ufeffid")
+            or ""
+        ).strip()
+
         summary = row.get("Summary", "")
         status = row.get("Status", "")
         ticket_type = row.get("Type", "")
