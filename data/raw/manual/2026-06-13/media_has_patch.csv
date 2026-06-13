@@ -1,207 +1,25 @@
 ﻿id,Summary,Status,Keywords,Owner,Type,Priority
-9257,EXIF GPS data,assigned,has-patch dev-feedback,,enhancement,normal
-11895,Allow more specific image size editing,new,has-patch dev-feedback has-ui-feedback reporter-feedback,,feature request,normal
-15149,image_get_intermediate_size partly ignores 'path' and 'url' fields and has inconsistent return values,new,has-patch,,enhancement,normal
-15311,dynamic image resize (on the fly) using already available functions,new,dev-feedback has-patch,,enhancement,normal
-16165,Media Library Bulk Delete: Error in deleting...,assigned,has-patch dev-feedback,nacin,enhancement,normal
-17857,WP_Embed - Split shortcode() function into two for increased flexibility,new,has-patch reporter-feedback 2nd-opinion,,enhancement,normal
-18730,media_sideload_image() doesn't handle dynamic image url's well,new,has-patch,,defect (bug),normal
-18947,get_intermediate_image_sizes() should also contain width/height/crop values as sub array,assigned,has-patch dev-feedback close,,enhancement,normal
-19512,wp_read_image_metadata includes bitmap in description,new,has-patch needs-refresh,,defect (bug),normal
-21569,Filter gallery styles with access to $attr,new,has-patch needs-refresh,,enhancement,normal
-21679,media_handle_upload does not provide a way to change the file's name,new,has-patch,,enhancement,normal
-22100,Treat built-in image sizes the same as custom image sizes,new,has-patch needs-refresh,,enhancement,normal
-23148,Add hook in wp_ajax_save_attachment for additional attachment fields,reopened,has-patch 2nd-opinion dev-feedback needs-dev-note needs-docs,audrasjb,enhancement,normal
-23205,New Media Uploader slow for sites with many images,new,dev-feedback has-patch close,,enhancement,normal
-23779,Can't insert large image if it's smaller than media setting but larger than theme setting,new,has-patch dev-feedback,,defect (bug),normal
-24380,Missing Compression Parameter in WP_Image_Editor_GD,reopened,has-patch dev-feedback needs-refresh,wonderboymusic,enhancement,normal
-24430,inconsistent icon_dir/icon_dirs use in wp_mime_type_icon and wp_get_attachment_image_src,new,has-patch,,defect (bug),normal
-24688,Memory exhaustion caused by very many unattached media,new,has-patch has-test-info reporter-feedback,,defect (bug),normal
-24815,get_the_post_thumbnail() fetches full sized image if 'post-thumbnail' custom size not defined in theme,new,needs-codex has-patch needs-refresh,,defect (bug),normal
-25899,Adding mediaelement CSS links outside of head tags breaks HTML5 validation,new,has-patch,,defect (bug),normal
-26992,"Failing to make new yyyy/mm for uploads affects existing URLs (WP_CONTENT_URL, wp_get_attachment_url and GUID)",new,has-patch needs-unit-tests needs-test-info 2nd-opinion,,defect (bug),normal
-27139,Image caption disappears if images are rearranged immediately after adding the caption.,new,has-patch has-test-info,,defect (bug),normal
-27919,Similar strings for media modal,accepted,has-patch,joedolson,defect (bug),normal
-28053,Fields with same name added to new media modal using 'attachment_fields_to_edit' do not pass as an array when saving.,accepted,has-patch,joedolson,defect (bug),normal
-28077,Use exif_imagetype instead of getimagesize in file_is_displayable_image,new,has-patch has-unit-tests,,enhancement,normal
-28185,Expose image attachment title and/or filename in the image details modal,new,has-patch dev-feedback,,enhancement,normal
-28381,Filter for unattached attachments count,new,has-patch needs-refresh,,enhancement,normal
-28474,WordPress destroys animation in animated GIF when it resizes,assigned,has-patch changes-requested,,defect (bug),normal
-28634,Upload images. does not clear Thumbnails metadata (+30kb from camera for each thumbnails),reopened,has-patch,joemcgill,enhancement,normal
-29727,Porting self-hosted Wordpress to HTTPS: mixed content,new,has-patch https needs-test-info,,feature request,normal
-30150,apply_filters( 'image_size_names_choose' ) should be provided a named context,new,has-patch,,enhancement,normal
-30691,Removing a featured image does not remove the 'post_parent' value - reproducible,reopened,2nd-opinion has-patch,,defect (bug),normal
-31029,Allow 0 columns in gallery settings,assigned,good-first-bug has-patch,rhurling,defect (bug),normal
-31570,Infinite loop when filtering Media Library images by size in a modal (using wp_prepare_attachment_for_js),assigned,has-patch dev-feedback,fuhton,defect (bug),normal
-31689,Media player not working with 302 redirects,new,has-patch has-unit-tests,,defect (bug),normal
-31945,Deleting a user without reassigning should have clearer messaging about the implications,new,has-patch needs-refresh 2nd-opinion,,enhancement,normal
-32654,Denying upload_files cap makes Customizer and Media modal act oddly,assigned,has-patch,wonderboymusic,defect (bug),normal
-33278,Naming files with dimensions when manually cropping images,new,has-patch needs-refresh,,enhancement,normal
-33959,Improve wp_get_attachment_thumb_file,new,has-patch needs-refresh needs-unit-tests,,enhancement,normal
-34225,Display correct dimensions for image sizes in media modal,new,has-patch,,defect (bug),normal
-34638,New function for retrieving previous and next adjacent image,new,has-patch,,feature request,normal
-34736,wp_calculate_image_srcset filter: provide the individual srcset image size,accepted,has-patch,joemcgill,defect (bug),normal
-34981,Usage of `image_size_names_choose` breaks JS attachment model attributes,assigned,has-patch needs-unit-tests has-test-info,,defect (bug),normal
-35092,Remove crop check in wp_prepare_attachment_for_js() for sizes,reviewing,has-patch reporter-feedback,joemcgill,defect (bug),normal
-35593,Metadata from wrong file in media_handle_upload,reviewing,has-patch needs-testing,,defect (bug),normal
-35959,Functon 'wp_generate_attachment_metadata(...)' silently swallowing errors from 'wp_get_image_editor(...)'.,new,has-patch needs-refresh,,defect (bug),normal
-36194,Media Settings page description is unclear,new,has-patch,,enhancement,normal
-36273,update_attached_file() on Windows will result in invalid image path when using native Windows directory separators,new,needs-unit-tests has-patch,,defect (bug),normal
-36418,Custom MIME type icons lost in WP Media List view,new,dev-feedback has-patch,,defect (bug),normal
-36437,wp_delete_attachment causes warning,new,has-patch has-unit-tests,,defect (bug),normal
-36916,Refactor EditAttachments frame to work outside Media Library admin page,new,has-patch needs-refresh reporter-feedback,,enhancement,normal
-36931,wp_upload_dir caches calls with default arguments separately from their explicit equivalent,new,has-patch has-unit-tests,,defect (bug),normal
-36982,Add image attributes and additional context to the wp_calculate_image_srcset and wp_calculate_image_sizes filters,assigned,has-patch 2nd-opinion has-unit-tests,adamsilverstein,enhancement,normal
-37005,Unit test for the wp_check_filetype method,new,has-patch has-unit-tests needs-refresh,,enhancement,normal
-37549,Add optional parameter to wp_generate_attachment_metadata for image dimensions.,reviewing,has-patch,joemcgill,enhancement,normal
-37581,"text overflows, if it has no hyphens on media upload error notices",new,has-screenshots has-patch,,defect (bug),normal
-37773,Update get_avatar() to support native and registered image sizes.,new,has-patch has-unit-tests reporter-feedback dev-feedback needs-refresh,,enhancement,normal
-38026,Add Delete link to details modal when file in trash,new,has-patch,,enhancement,normal
-38479,Need to check utf8_encode() is available before use.,new,has-patch,,defect (bug),normal
+47456,Improve the user interface to ensure correct usage of the image alt text,accepted,wpcampus-report needs-patch phase-3-media-triage,joedolson,defect (bug),high
+17255,More statuses (like draft and/or private) for media files,new,needs-patch phase-3-media-triage,,defect (bug),normal
+22894,Need WordPress Media Uploader Stop or Cancel Button in WP Version 3.5,reopened,needs-patch phase-3-media-triage,,enhancement,normal
+22937,Bulk Actions > Edit could allow batch-assignment of taxonomies to Media following the WP 3.5 media changes,new,needs-patch phase-3-media-triage,,feature request,normal
+23436,Media Gallery - Cropping Image and then Cropping a thumbnail from that crop doesn't work.,accepted,needs-patch 2nd-opinion media-edit,joedolson,defect (bug),normal
+28321,"Media uploader confuses user with description, caption, alt and title, without explanation",new,phase-3-media-triage,,enhancement,normal
+31177,Captions video not saved with the post and are lost on attachment page,assigned,needs-patch phase-3-media-triage,postphotos,defect (bug),normal
+31395,"Indicate difference of two visually equal, but otherwise different images in non-list media views",new,phase-3-media-triage,,enhancement,normal
+32849,Allow option of Grid AND List View of the gallery when inserting media into post,new,needs-patch phase-3-media-triage,,enhancement,normal
+32965,Add new Credit field to media attachment details,new,phase-3-media-triage,,enhancement,normal
+34223,Core support for image regeneration,new,phase-3-media-triage,,feature request,normal
+35887,Adding multiple media to post - selecting image size,new,needs-patch has-needs-design-feedback phase-3-media-triage,,defect (bug),normal
 39004,Alt attributes should be searchable in media library,accepted,has-patch has-unit-tests phase-3-media-triage needs-design,joedolson,enhancement,normal
-39387,Responsive Images Broken When Full Size <= 300 px,reviewing,has-patch,joemcgill,defect (bug),normal
-39553,Use REST API endpoints for Plupload backend,new,has-patch,,enhancement,normal
-39625,Give an error message when a non-image is uploaded for featured image,new,has-patch needs-screenshots changes-requested,,defect (bug),normal
-39647,"Make media upload ""HTTP error."" more user-helpful",new,has-patch needs-test-info,,defect (bug),normal
-39883,Code hooking on `image_downsize` can no longer assume the file is an image,assigned,has-patch 2nd-opinion,joemcgill,defect (bug),normal
-39968,Media Library: deleting all items on the last page loses the pagination/navigation buttons and shows message,reopened,has-patch has-test-info dev-feedback,antpb,defect (bug),normal
-40076,Add Filter option Attached,new,has-patch needs-refresh 2nd-opinion,,enhancement,normal
-40370,"add_image_sizes does not create the ""crop position"" versions of the image",reopened,good-first-bug has-patch 2nd-opinion has-unit-tests needs-testing,,enhancement,normal
-40415,Imagick resize filter hook,assigned,has-patch has-test-info dev-feedback,adamsilverstein,enhancement,normal
-40590,"wp_video_shortcode always adds controls=""controls""",new,has-patch has-unit-tests needs-refresh,,defect (bug),normal
-40638,In attachments taxonomy displays slug instead of name,new,has-patch,,defect (bug),normal
-40774,Refine error message when embedding invalid Video (URL),new,has-patch needs-refresh 2nd-opinion,,enhancement,normal
-40806,Subtitles show no media files in browser when there are some,new,has-patch close,,defect (bug),normal
-41148,Test for ticket 39875 can throw PHP error,new,has-patch,,defect (bug),normal
-41332,Introduce dedicated capabilities for managing attachments,new,2nd-opinion granular-capabilities has-patch has-unit-tests,,enhancement,normal
-41353,Async upload breaks when there are special characters into file name,new,has-patch dev-feedback,,defect (bug),normal
-41675,Add filter to bypass display/query for Media Months filter in media modal,reviewing,good-first-bug has-patch has-unit-tests,,enhancement,normal
-41753,_wp_get_attachment_relative_path uses hardcoded uploads directory path,reopened,has-patch,,enhancement,normal
-41801,add wp_get_image_extensions() and wp_image_extensions filter,assigned,has-patch dev-feedback,pbiron,enhancement,normal
-41816,attachment_url_to_postid() should find post_id for URLs of intermediate size images,new,has-patch dev-feedback 2nd-opinion has-unit-tests,,defect (bug),normal
-42560,mp4 files do not play in Safari,reopened,has-patch,,defect (bug),normal
-42794,Can't upload new media files when multiple media dialogues are present on a single page,new,has-patch has-screenshots,,defect (bug),normal
-42838,Manipulating uploads and images can break when using stream wrappers,new,has-patch needs-refresh,,defect (bug),normal
-42920,Add support for the picture element,assigned,has-patch 2nd-opinion needs-unit-tests,adamsilverstein,enhancement,normal
-43009,Create Video/Audio Playlist hooks not working as expected,new,has-patch,,defect (bug),normal
-43046,`has_image_size()` returns false for Core image sizes,assigned,has-patch dev-feedback has-unit-tests,,defect (bug),normal
-43119,Allow passing empty post ID to media_handle_sideload(),new,has-unit-tests has-patch needs-refresh,,defect (bug),normal
+39358,Media search speed has been dramatically reduced,reopened,needs-patch phase-3-media-triage,joemcgill,defect (bug),normal
+40126,Mobile has two media editing experiences,new,phase-3-media-triage,,defect (bug),normal
+41462,Promote media details admin page to full post page,new,needs-design phase-3-media-triage,,enhancement,normal
+42751,Can we please  enqueue media-views independently ?,new,phase-3-media-triage,,defect (bug),normal
 43178,Rethinking what “captions” means for video,accepted,has-patch reporter-feedback has-ux-feedback has-ui-feedback phase-3-media-triage,joedolson,enhancement,normal
-43281,"Capitalize ""Set featured image"" media button on Media Modal",new,has-patch 2nd-opinion,,enhancement,normal
-43413,wp_prepare_attachment_for_js  missing image size medium_large,new,has-patch,,defect (bug),normal
-43560,Entering single quotes in Add Media dialog after recropping causes browser to hang,new,has-patch has-screenshots,,defect (bug),normal
-44441,Remove the settings for image dimensions from Settings => Media,accepted,has-patch,joedolson,enhancement,normal
-44641,Customizing Button Text in Custom Media Manager Frame Doesn't Work Anymore,assigned,has-patch needs-testing 2nd-opinion,antpb,defect (bug),normal
-44801,`image_constrain_size_for_editor()` forcing the `$content_width` messes up dimensions,new,needs-unit-tests has-patch,,defect (bug),normal
-44867,image editor: save modified image as a new copy,accepted,has-patch,joedolson,enhancement,normal
-44900,add post lock display to Media Library,new,has-patch has-screenshots needs-design,,enhancement,normal
-45363,Allow Thumbnail generation for other filetypes such as ODT,new,has-patch,,enhancement,normal
-46134,Allow filtering of `$header` object in `get_header_image_tag()` function (for custom header image override),new,has-patch 2nd-opinion,,enhancement,normal
-46777,Pass attachment ID to image_resize_dimensions to allow reliable per image cropping,new,has-patch,,enhancement,normal
-47237,Used different escape function on options-media.php,new,has-patch,,enhancement,normal
-47527,Add visible class to media library sidebar on library frames,reviewing,has-patch needs-design needs-refresh,joemcgill,defect (bug),normal
-47539,Incomplete sanitization of upload file name.,reviewing,has-patch,SergeyBiryukov,enhancement,normal
-47713,image_get_intermediate_size does not return size if it equals original size,reviewing,has-patch needs-unit-tests,SergeyBiryukov,defect (bug),normal
-47726,Uploading new media to existing posts/pages backdates file location,reopened,has-patch has-unit-tests 2nd-opinion,,enhancement,normal
-47889,uploading image contains special characters will return a wrong image url,new,has-patch,,defect (bug),normal
-48236,Media attachment browser no longer provides id of attachment,new,has-patch needs-refresh,,defect (bug),normal
-48489,Big image size threshold should take into account registered image sizes.,new,good-first-bug has-patch has-unit-tests,,defect (bug),normal
-49086,"The ""site_icon"" option isn't always removed when the site icon is deleted",new,dev-feedback has-patch,,defect (bug),normal
-49490,Proposal: New wrapper function and hook for creating attachments,accepted,dev-feedback 2nd-opinion has-patch,pbearne,enhancement,normal
-49601,layout width bugfix for img_caption_shortcode(),reopened,has-patch dev-feedback,,defect (bug),normal
-49631,Test coverage for media_sideload_image() _source_url meta,assigned,has-patch,killua99,task (blessed),normal
-50681,default-filters.php contains non-tweakable parameters,new,has-patch,,defect (bug),normal
-50692,WordPress v5.4.2 Escaping Problem in the Edit Media Screen,new,has-patch,,defect (bug),normal
-51058,attachment_url_to_postid does not retrieve post ID of really large images,new,has-patch needs-testing,,defect (bug),normal
-51243,[JS] Exception when setting or trying to upload a featured image in a post,new,has-patch,,defect (bug),normal
-51929,Video links on Attachment pages,new,has-patch dev-feedback has-test-info,,defect (bug),normal
-52181,wrong mimetime for gzip files,new,has-patch,,defect (bug),normal
-52373,URL returned by get_attachment_link() can 404.,new,has-patch has-unit-tests,,defect (bug),normal
-53229,"""Alt Text"" label misaligned in French",accepted,has-patch,audrasjb,defect (bug),normal
-53944,Video resolution in portrait orientation,new,has-patch,,defect (bug),normal
-53981,The 'media_buttons' hook does not work for contributors.,new,has-patch,,defect (bug),normal
-54016,Media Library: Bulk delete elements in grid view takes very long,new,has-patch 2nd-opinion needs-testing,,enhancement,normal
-54091,Attachment details pane navigation not working after opening 81st (or greater) item and refreshing the browser,assigned,dev-feedback has-patch,antpb,defect (bug),normal
-54193,PHP fileinfo extention identifies JSON as text/plain; wp_check_filetype_and_ext then prevents upload,new,has-patch,,defect (bug),normal
-54943,"image_get_intermediate_size(): size data is a bool, not an array throws notice / warning",new,has-patch reporter-feedback needs-test-info needs-unit-tests changes-requested,,defect (bug),normal
-55041,Add end to end test case for Filter media by type,new,has-patch has-unit-tests,,enhancement,normal
-55200,Cannot add caption to images on mobile,new,has-screenshots has-patch,,defect (bug),normal
-55261,"Add a ""file size"" column to the media library menu",new,has-screenshots needs-docs has-patch,,feature request,normal
-55290,Not all image edits are applied to all subsizes,accepted,has-patch needs-unit-tests needs-refresh,joedolson,defect (bug),normal
-55345,"When uploading image through featured image section, the image item count is wrong.",new,has-screenshots has-patch,,defect (bug),normal
-55443,Create WebP sub-sizes and use for output,reopened,has-unit-tests needs-dev-note needs-docs needs-user-docs has-patch,adamsilverstein,enhancement,normal
-55465,Fix hiding playlist buttons from Add Media modal dialog,new,has-patch,,defect (bug),normal
-55492,`Dismiss Errors` button alignment is not centered in Media Library.,reopened,has-patch has-screenshots,,defect (bug),normal
-56151,Port Dominant Color from performance plugin to core,new,has-patch has-unit-tests has-dev-note,,enhancement,normal
-56217,Add video rotation info in wp_read_video_metadata(),new,has-unit-tests has-patch,,enhancement,normal
-56248,Reduce code duplication in tests that upload file as attachment,reviewing,has-patch has-unit-tests,SergeyBiryukov,enhancement,normal
-56288,Add mime output control to `add_image_size`,accepted,has-patch has-unit-tests,adamsilverstein,enhancement,normal
-56344,Filters for Sharpening Images,assigned,changes-requested needs-unit-tests has-patch,antpb,feature request,normal
-56529,Add minimal JPEG fallback script to address limited lack of WebP support,new,has-patch has-unit-tests,,enhancement,normal
-57239,Notice undefined array keys width and height when using full svg image,new,has-patch,,defect (bug),normal
-57276,Failing TIFF image uploads to S3 buckets using WP Offload Plugin,new,has-patch,,defect (bug),normal
-57637,ImageEdit component can be exited with unsaved state,new,has-patch,,defect (bug),normal
-57760,add 'pre_wp_get_attachment_url' filter,new,has-patch,,enhancement,normal
-57813,"wp_get_missing_image_subsizes() can give error if image_meta exists, but not height/width",new,has-patch,,defect (bug),normal
-57948,Media toolbar elements height /size is inconsistent across views,new,has-screenshots needs-design-feedback has-patch,,defect (bug),normal
-58137,"WP creates unnecessary ""cropped-""[filename] icon file",assigned,has-patch changes-requested,antpb,defect (bug),normal
-58163,Media Tests for Attachments and Images,new,has-unit-tests has-patch,,enhancement,normal
-58240,wp_read_image_metadata() doesn't handle Exif array values,accepted,has-patch,joedolson,defect (bug),normal
-58391,Ugly looking file editing section,new,has-patch needs-design-feedback has-screenshots,,feature request,normal
-58416,Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.,new,has-patch has-screenshots has-test-info needs-testing needs-unit-tests,,enhancement,normal
-58729,Incorrect Information Displayed in Media Library Window when Uploading Featured Image,new,has-patch,,defect (bug),normal
-58730,"Media not getting removed from the media library popup after clicking ""Delete permanently"" button",new,has-patch changes-requested has-screenshots,,defect (bug),normal
-58752,Doc typo improvement to  of file : wordpress-develop/src/js/media/views/view.js,assigned,has-patch 2nd-opinion,,enhancement,normal
-59939,"Media: ""Copy URL"" tooltip text may wrap",new,has-patch,,defect (bug),normal
-60569,Generate UUID for media slugs if attachment pages are inactive.,assigned,dev-feedback has-patch has-unit-tests,antpb,enhancement,normal
-60628,Issues with avif image  imagecreatefromavif not working. Resizing not possible.,assigned,avif has-patch has-unit-tests early reporter-feedback needs-testing,adamsilverstein,defect (bug),normal
-60666,Unwanted section appears as a sidebar in 'Create gallery' section,reopened,has-patch,joedolson,defect (bug),normal
-61057,Media Library not showing new uploads when filtering by date,assigned,has-patch,antpb,defect (bug),normal
-61133,Update `get_attachment_link()` to return image URL when attachment pages are turned off.,reviewing,has-patch,antpb,defect (bug),normal
-61220,manage_media_columns filter conflict,new,has-patch,,defect (bug),normal
-61398,Missing src attribute on <audio> tag prevents m4a audio files playing in safari.,accepted,has-patch has-test-info changes-requested,joedolson,defect (bug),normal
-61717,Warning: Trying to access array offset on value of type bool in /sites/site.com/wp-includes/media.php on line 795 801,new,has-patch reporter-feedback needs-test-info,,defect (bug),normal
-61949,Do not call getimagesize() against non-existent files,new,has-patch,,defect (bug),normal
-61983,Part of `wp_generate_attachment_metadata` missing `avif` extension,new,has-patch,,defect (bug),normal
-62199,Media attachment date filter dropdown text is not showing correctly,new,has-patch has-test-info,,defect (bug),normal
-62293,"wp_get_missing_image_subsizes() - Warning: Undefined array key ""height""",reopened,has-patch,,defect (bug),normal
-62312,wp_image_src_get_dimensions() - Warning for SVG with postmeta height and width empty,new,has-patch,,defect (bug),normal
-62361,"Set filter ""activate_tinymce_for_media_description"" to ""true""  is breaking meadia_descripton by running it through ""htmlspecialchars()""",accepted,has-patch 2nd-opinion close,joedolson,defect (bug),normal
-62902,Description of featured image is being deleted,new,has-screenshots has-test-info has-patch,,defect (bug),normal
-63279,Improve `media_library_months_with_files` inside `wp_enqueue_media()`,new,has-patch,,enhancement,normal
-63423,Find some Wrong escaping function into the core files,new,dev-feedback has-patch changes-requested,,defect (bug),normal
-63478,Remove leftover debug code from Box class,new,has-patch,,enhancement,normal
-63509,Use proper filename for attachment post title,new,has-patch,,enhancement,normal
-63553,Administration: Color Schemes are not properly applied on individual attachment within media views,new,has-patch has-screenshots changes-requested,,defect (bug),normal
-63673,Various inconsistencies in connection with the ‘Crop’ function,accepted,has-patch,joedolson,enhancement,normal
-63764,ImageMagick writeImage() causes duplicate inotify events during thumbnail generation,assigned,has-patch reporter-feedback,,defect (bug),normal
-63773,Palette-based PNG cause failure attempting AVIF/WebP conversion under GD,assigned,has-patch has-unit-tests dev-reviewed has-screenshots has-test-info,adamsilverstein,defect (bug),normal
-63926,Feature Request: Show Selection Count in Media Library,new,has-patch,,feature request,normal
-63932,Investigate failing Imagick tests on PHP 8.3 and 8.4,new,has-patch has-unit-tests,,defect (bug),normal
-63990,`Tests_Media::test_quality_with_avif_conversion_file_sizes` sometimes runs with GD,new,has-patch has-unit-tests,,defect (bug),normal
-64010,wp_die() status code Media component updates (parent ticket: #64009),new,has-patch dev-feedback,,defect (bug),normal
-64056,Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings,new,has-patch needs-testing close,,enhancement,normal
-64321,Media Library Search Field Obscured by Plugin Fields,new,reporter-feedback has-patch,,defect (bug),normal
-64467,Grid view displays attachments in the wrong order when an order query var is present but not normalized,new,has-screenshots changes-requested has-patch has-unit-tests,,defect (bug),normal
-64600,"[E_WARNING] Undefined array key ""full"" in wp-includes/media.php on line 4678",new,has-patch,,defect (bug),normal
-64902,wp_save_image() fatal error when wp_save_image_file() returns WP_Error,new,has-patch needs-testing has-test-info,,defect (bug),normal
-64915,Media: Enable HEIC/HEIF uploads when server lacks image editor support,assigned,has-patch,adamsilverstein,defect (bug),normal
-64927,.media-upload-form .media-item min-height is causing a visual glitch,new,has-screenshots has-patch,,defect (bug),normal
-64929,Media edit screen shows file URL under “Permalink” for non-previewable formats,new,has-screenshots has-patch has-unit-tests,,defect (bug),normal
-64931,"On media grid view, the file name is shown twice if it exceeds the maximum file upload size",new,has-screenshots has-patch has-test-info,,defect (bug),normal
-64937,Image editor: scale and crop input size mismatch with button and info icon not using new color,reopened,has-patch dev-feedback,wildworks,defect (bug),normal
-65086,Add action hooks to media modal attachment details templates for field extensibility,new,has-patch,,enhancement,normal
-65152,UI: Inconsistent left padding between buttons and select dropdowns in media views,new,has-patch reporter-feedback,,enhancement,normal
-65161,Give an error message when a non-image is uploaded for site icon,new,has-patch,,defect (bug),normal
-65204,Custom Bulk Actions missing from Grid View,assigned,has-patch,takshil,defect (bug),normal
-65230,`redirect_canonical()` fails to redirect slug-based attachment URLs when `wp_attachment_pages_enabled` is disabled,new,has-patch has-unit-tests,,defect (bug),normal
-65275,Media Library CSS Bug: Loading spinner misaligned in media modal filter toolbar,reopened,has-patch has-test-info commit dev-feedback,joedolson,defect (bug),normal
-65276,Media Library: Date filter is offset with empty left space when type filter is hidden,accepted,has-patch,joedolson,defect (bug),normal
-65297,HEIC/HEIF MIME Type Mapping Is Inaccurate,reviewing,has-patch needs-unit-tests,adamsilverstein,defect (bug),normal
-65300,Increase Minor Bottom Spacing for Labels “Filter by type” and “Filter by date” in Media Modal,new,has-patch,,defect (bug),normal
-65315,Inserting the same image with different captions on the same page results in figcaptions with duplicate `id` elements.,accepted,has-patch has-unit-tests changes-requested,joedolson,defect (bug),normal
-65329,Move sideload metadata writes to the finalize endpoint,assigned,has-patch has-unit-tests needs-testing,adamsilverstein,enhancement,normal
-65345,Site Icon subsizes use wrong array key 'width ' instead of 'width',new,has-patch needs-testing has-unit-tests,,defect (bug),normal
-65399,Skip Document-Isolation-Policy on the classic-theme site preview,assigned,has-patch has-unit-tests,adamsilverstein,defect (bug),normal
-65428,Scale button not aligned to dimensions on edit image screen.,accepted,has-patch,joedolson,defect (bug),normal
-65438,"All images without a title now show as ""uploading..."" in the Media Library grid view",accepted,has-patch,joedolson,defect (bug),normal
+43658,Media attachment filter drop-down mime types in grid mode is not properly filtered by available mime types,assigned,has-screenshots phase-3-media-triage,,defect (bug),normal
+53013,Improve media library grid management tools,accepted,phase-3-media-triage,joedolson,enhancement,normal
+59742,Media library should display the number of pages/posts/urls a particular media file is being used in.,assigned,phase-3-media-triage,,enhancement,normal
+59753,Attach image to existing content functionality not working properly,new,phase-3-media-triage,,defect (bug),normal
+60250,Feature Req – Media Library Grid-List,assigned,phase-3-media-triage,antpb,feature request,normal
+60345,Add duplicate checking for uploaded attachments,new,phase-3-media-triage,,enhancement,normal
