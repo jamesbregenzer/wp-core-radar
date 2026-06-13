@@ -19,6 +19,7 @@ from typing import Any, Iterable
 ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW = ROOT / "data" / "raw"
 OUTCOMES_CSV = ROOT / "data" / "outcomes" / "outcomes.csv"
+REVIEWS_CSV = ROOT / "data" / "reviews" / "reviews.csv"
 QUERIES_JSON = ROOT / "config" / "queries.json"
 REPORTS_DIR = ROOT / "reports"
 
@@ -103,6 +104,28 @@ def load_outcomes(path: Path = OUTCOMES_CSV) -> dict[str, str]:
             if ticket_id and outcome:
                 outcomes[ticket_id] = outcome
     return outcomes
+
+
+def load_reviews(path: Path = REVIEWS_CSV) -> dict[str, dict[str, str]]:
+    reviews: dict[str, dict[str, str]] = {}
+    if not path.exists():
+        return reviews
+
+    with path.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            ticket_id = normalize_ticket_id(row.get("ticket", ""))
+            if not ticket_id:
+                continue
+
+            reviews[ticket_id] = {
+                "status": row.get("status", "").strip().lower(),
+                "reason": row.get("reason", "").strip(),
+                "notes": row.get("notes", "").strip(),
+                "updated_at": row.get("updated_at", "").strip(),
+            }
+
+    return reviews
 
 
 def infer_query_slug(csv_path: Path) -> str:
