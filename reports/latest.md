@@ -1,6 +1,6 @@
 # WP Core Radar — Latest Report
 
-Generated: 2026-06-13 14:26:46
+Generated: 2026-06-13 14:47:04
 
 Source: `data/raw/manual/2026-06-13/media_has_patch.csv`
 
