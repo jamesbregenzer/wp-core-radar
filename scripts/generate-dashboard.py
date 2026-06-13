@@ -6,7 +6,6 @@ from __future__ import annotations
 import html
 from collections import defaultdict
 from datetime import datetime
-
 from pathlib import Path
 
 from radarlib import (
@@ -26,13 +25,52 @@ from radarlib import (
 )
 
 
+PRIORITY_TARGET_LIMIT = 12
+PRIORITY_TARGET_MIN_SCORE = 150
+
+
 def review_status(item: dict) -> str:
     review = item.get("review") or {}
     return review.get("status", "").strip().lower()
 
 
+def is_priority_target(item: dict) -> bool:
+    status = review_status(item)
+    if status:
+        return False
+
+    score = item.get("score", 0)
+    if score < PRIORITY_TARGET_MIN_SCORE:
+        return False
+
+    reasons = " ".join(item.get("reasons", [])).lower()
+
+    has_action_signal = (
+        "needs testing" in reasons
+        or "has patch" in reasons
+        or "good first bug" in reasons
+    )
+
+    has_recent_or_manageable_signal = (
+        "recent activity" in reasons
+        or "healthy comment count" in reasons
+        or "has owner" in reasons
+    )
+
+    has_stale_penalty = (
+        "very old ticket" in reasons
+        or "stale activity" in reasons
+        or "very large thread" in reasons
+        or "already produced props" in reasons
+        or "already tested" in reasons
+    )
+
+    return has_action_signal and has_recent_or_manageable_signal and not has_stale_penalty
+
+
 def group_items(items: list[dict]) -> dict[str, list[dict]]:
     groups = {
+        "priority": [],
         "top": [],
         "shortlist": [],
         "watch": [],
@@ -51,6 +89,8 @@ def group_items(items: list[dict]) -> dict[str, list[dict]]:
             groups["watch"].append(item)
         elif status in {"tested", "commented", "props", "committed"}:
             groups["completed"].append(item)
+        elif is_priority_target(item) and len(groups["priority"]) < PRIORITY_TARGET_LIMIT:
+            groups["priority"].append(item)
         else:
             groups["top"].append(item)
 
@@ -350,10 +390,11 @@ def build_dashboard() -> str:
       <div class="card"><strong>{len(summary["datasets"])}</strong>Datasets discovered</div>
       <div class="card"><strong>{len(summary["outcomes"])}</strong>Outcomes loaded</div>
       <div class="card"><strong>{len(summary["reviews"])}</strong>Reviews loaded</div>
-      <div class="card"><strong>{len(groups["top"])}</strong>Top opportunities</div>
-      <div class="card"><strong>{len(groups["rejected"])}</strong>Rejected</div>
+      <div class="card"><strong>{len(groups["priority"])}</strong>Priority targets</div>
+      <div class="card"><strong>{len(groups["top"])}</strong>Other opportunities</div>
     </div>
 
+    {section_html("Priority Targets", groups["priority"], duplicate_sources)}
     {section_html("Top Opportunities", groups["top"], duplicate_sources, limit=50)}
     {section_html("Shortlisted", groups["shortlist"], duplicate_sources)}
     {section_html("Watching", groups["watch"], duplicate_sources)}
