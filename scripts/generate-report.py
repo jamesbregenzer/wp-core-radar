@@ -12,6 +12,7 @@ from radarlib import (
     discover_datasets,
     first_value,
     load_outcomes,
+    load_reviews,
     load_queries,
     read_ticket_rows,
     score_ticket,
@@ -28,6 +29,7 @@ def build_report(limit: int = 50) -> str:
     query_list = load_queries()
     query_meta = {q["slug"]: q for q in query_list}
     outcomes = load_outcomes()
+    reviews = load_reviews()
     datasets = discover_datasets()
 
     scored_by_ticket: dict[str, dict] = {}
@@ -45,6 +47,7 @@ def build_report(limit: int = 50) -> str:
                 "reasons": reasons,
                 "row": row,
                 "query": meta,
+                "review": reviews.get(ticket_id),
             }
             if ticket_id not in scored_by_ticket or score > scored_by_ticket[ticket_id]["score"]:
                 scored_by_ticket[ticket_id] = candidate
