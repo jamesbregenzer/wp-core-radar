@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Local downloads / temp files
+*.tmp
+*.log
+
+# Environment files
+.env
