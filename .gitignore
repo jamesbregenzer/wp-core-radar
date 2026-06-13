@@ -14,3 +14,8 @@ __pycache__/
 
 # Generated HTML reports
 reports/*.html
+
+# Local script backups
+scripts/*.bak
+scripts/*.before-*.py
+scripts/*.pre-*.py

@@ -11,7 +11,20 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from radarlib import ROOT, trac_url
+from radarlib import (
+    ROOT,
+    trac_url,
+    first_value,
+    SUMMARY_KEYS,
+    COMPONENT_KEYS,
+    KEYWORDS_KEYS,
+    STATUS_KEYS,
+    MILESTONE_KEYS,
+    OWNER_KEYS,
+    COMMENTS_KEYS,
+    MODIFIED_KEYS,
+    CREATED_KEYS,
+)
 
 dashboard_path = Path(__file__).resolve().parent / "generate-dashboard.py"
 spec = importlib.util.spec_from_file_location("generate_dashboard", dashboard_path)
@@ -21,6 +34,7 @@ spec.loader.exec_module(generate_dashboard)
 
 collect_items = generate_dashboard.collect_items
 group_items = generate_dashboard.group_items
+priority_tier = generate_dashboard.priority_tier
 
 HOST = "127.0.0.1"
 PORT = 8765
@@ -30,66 +44,155 @@ def run_command(command: list[str]) -> None:
     subprocess.run(command, cwd=ROOT, check=False)
 
 
+def item_summary(item: dict) -> str:
+    return first_value(item["row"], SUMMARY_KEYS, "Untitled ticket")
+
+
+def copy_context(item: dict) -> str:
+    row = item["row"]
+    ticket_id = item["ticket_id"]
+    _, tier_label = priority_tier(item)
+    review = item.get("review") or {}
+
+    lines = [
+        "Please review this WordPress Core contribution opportunity and give me a green light, yellow light, or red light.",
+        "",
+        f"Ticket: #{ticket_id}",
+        f"URL: {trac_url(ticket_id)}",
+        f"Summary: {item_summary(item)}",
+        f"Score: {item['score']}",
+        f"Priority tier: {tier_label}",
+        f"Track: {item['query'].get('name', item['query'].get('track', 'unknown'))}",
+        "",
+        "Ticket fields:",
+        f"- Component: {first_value(row, COMPONENT_KEYS, 'Unknown')}",
+        f"- Status: {first_value(row, STATUS_KEYS, 'Unknown')}",
+        f"- Milestone: {first_value(row, MILESTONE_KEYS, 'Unknown')}",
+        f"- Owner: {first_value(row, OWNER_KEYS, 'Unknown')}",
+        f"- Keywords: {first_value(row, KEYWORDS_KEYS, '')}",
+        f"- Comments: {first_value(row, COMMENTS_KEYS, 'Unknown')}",
+        f"- Created: {first_value(row, CREATED_KEYS, 'Unknown')}",
+        f"- Modified: {first_value(row, MODIFIED_KEYS, 'Unknown')}",
+        "",
+        "Radar scoring details:",
+    ]
+
+    for reason in item["reasons"]:
+        lines.append(f"- {reason}")
+
+    if review:
+        lines.extend([
+            "",
+            "Current review state:",
+            f"- Status: {review.get('status', '')}",
+            f"- Reason: {review.get('reason', '')}",
+            f"- Notes: {review.get('notes', '')}",
+            f"- Updated: {review.get('updated_at', '')}",
+        ])
+
+    lines.extend([
+        "",
+        "What I need from you:",
+        "- Is this likely a good WordPress Core contribution opportunity for me?",
+        "- What should I check before spending time on it?",
+        "- Should I reject, watch, shortlist, or test this ticket?",
+    ])
+
+    return "\n".join(lines)
+
+
 def action_form(ticket_id: str) -> str:
     safe_ticket = html.escape(ticket_id)
 
     return f"""
-    <form method="post" action="/review">
+    <form method="post" action="/radar/admin/review" class="decision-form">
       <input type="hidden" name="ticket" value="{safe_ticket}">
-      <input type="text" name="reason" placeholder="Reason / note">
-      <button name="status" value="shortlist">Shortlist</button>
-      <button name="status" value="watch">Watch</button>
-      <button name="status" value="reject">Reject</button>
-      <button name="status" value="tested">Tested</button>
-      <button name="status" value="commented">Commented</button>
+      <select name="status" aria-label="Review decision" required>
+        <option value="" selected>Choose action...</option>
+        <option value="shortlist">Shortlist</option>
+        <option value="watch">Watch</option>
+        <option value="reject">Reject</option>
+        <option value="tested">Tested</option>
+        <option value="commented">Commented</option>
+        <option value="props">Props</option>
+        <option value="committed">Committed</option>
+      </select>
+      <input type="text" name="reason" placeholder="Reason / note" class="conditional-field">
+      <button type="submit" class="conditional-field" disabled>Save</button>
     </form>
     """
 
 
-def item_summary(item: dict) -> str:
-    row = item["row"]
-    return row.get("summary") or row.get("Summary") or "Untitled ticket"
+def reason_badges(reasons: list[str]) -> str:
+    labels = []
 
+    for reason in reasons:
+        lower = reason.lower()
 
-def item_review_label(item: dict) -> str:
-    review = item.get("review") or {}
-    status = review.get("status", "")
-    reason = review.get("reason", "")
+        if "has patch" in lower:
+            labels.append(("patch", "Has Patch"))
+        elif "needs testing" in lower:
+            labels.append(("testing", "Needs Testing"))
+        elif "good first bug" in lower:
+            labels.append(("first", "Good First Bug"))
+        elif "dev feedback" in lower:
+            labels.append(("feedback", "Dev Feedback"))
+        elif "reporter feedback" in lower:
+            labels.append(("feedback", "Reporter Feedback"))
+        elif "has owner" in lower:
+            labels.append(("owner", "Has Owner"))
+        elif "recent activity" in lower:
+            labels.append(("recent", "Recent Activity"))
+        elif "preferred component" in lower:
+            labels.append(("component", "Preferred Component"))
 
-    if not status:
-        return ""
+    if not labels:
+        labels.append(("standard", "Scored Candidate"))
 
-    label = f"<strong>{html.escape(status)}</strong>"
-    if reason:
-        label += f"<br><span>{html.escape(reason)}</span>"
+    seen = set()
+    badges = []
 
-    return label
+    for badge_class, label in labels:
+        if label in seen:
+            continue
+
+        seen.add(label)
+        badges.append(
+            f'<span class="reason-badge reason-{html.escape(badge_class)}">{html.escape(label)}</span>'
+        )
+
+    return " ".join(badges)
 
 
 def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
     display_items = items if limit is None else items[:limit]
-
     rows = []
 
     for item in display_items:
         ticket_id = item["ticket_id"]
-        reasons = ", ".join(item["reasons"][:5])
+        tier_class, tier_label = priority_tier(item)
+        reasons = reason_badges(item["reasons"])
+        context = html.escape(copy_context(item), quote=True)
 
         rows.append(f"""
-        <tr>
-          <td class="score">{item["score"]}</td>
-          <td><a href="{html.escape(trac_url(ticket_id))}" target="_blank">#{html.escape(ticket_id)}</a></td>
-          <td>{html.escape(item_summary(item))}</td>
-          <td>{html.escape(reasons)}</td>
-          <td>{item_review_label(item)}</td>
-          <td class="actions">{action_form(ticket_id)}</td>
+        <tr class="tier-{html.escape(tier_class)}">
+          <td class="score" data-label="Score">{item["score"]}</td>
+          <td data-label="Tier"><span class="tier-label tier-label-{html.escape(tier_class)}">{html.escape(tier_label)}</span></td>
+          <td data-label="Ticket"><a href="{html.escape(trac_url(ticket_id))}" target="_blank">#{html.escape(ticket_id)}</a></td>
+          <td data-label="Summary">{html.escape(item_summary(item))}</td>
+          <td data-label="Why Ranked" class="reasons">{reasons}</td>
+          <td data-label="Tools" class="tools">
+            <a class="button-link" href="{html.escape(trac_url(ticket_id))}" target="_blank">Open Trac</a>
+            <button type="button" class="copy-button" data-context="{context}">Copy Review Context</button>
+          </td>
+          <td data-label="Action" class="actions">{action_form(ticket_id)}</td>
         </tr>
         """)
 
     if not rows:
         rows.append("""
         <tr>
-          <td colspan="6" class="empty">No tickets in this section.</td>
+          <td colspan="7" class="empty">No tickets in this section.</td>
         </tr>
         """)
 
@@ -101,10 +204,11 @@ def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
           <thead>
             <tr>
               <th>Score</th>
+              <th>Tier</th>
               <th>Ticket</th>
               <th>Summary</th>
               <th>Why Ranked</th>
-              <th>Review</th>
+              <th>Tools</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -122,6 +226,9 @@ def page_html(message: str = "") -> str:
     groups = group_items(ranked)
 
     message_html = f'<div class="notice">{html.escape(message)}</div>' if message else ""
+    immediate_count = sum(1 for item in groups["priority"] if priority_tier(item)[0] == "immediate")
+    strong_count = sum(1 for item in groups["priority"] if priority_tier(item)[0] == "strong")
+    watching_count = sum(1 for item in groups["top"] if priority_tier(item)[0] == "watching")
 
     return f"""<!doctype html>
 <html lang="en">
@@ -175,6 +282,10 @@ def page_html(message: str = "") -> str:
       font-size: 26px;
       margin-bottom: 4px;
     }}
+    .card-blue {{ border-left: 6px solid #2563eb; }}
+    .card-purple {{ border-left: 6px solid #7c3aed; }}
+    .card-amber {{ border-left: 6px solid #d97706; }}
+
     section {{
       margin-top: 32px;
     }}
@@ -197,63 +308,126 @@ def page_html(message: str = "") -> str:
     table {{
       width: 100%;
       border-collapse: collapse;
-      font-size: 14px;
+      font-size: 13px;
     }}
     th, td {{
-      padding: 10px 12px;
+      padding: 8px 10px;
       border-bottom: 1px solid #f0f0f1;
       text-align: left;
       vertical-align: top;
     }}
     th {{
       background: #f0f0f1;
+      white-space: nowrap;
     }}
+    tr.tier-immediate {{ border-left: 6px solid #2563eb; }}
+    tr.tier-strong {{ border-left: 6px solid #7c3aed; }}
+    tr.tier-watching {{ border-left: 6px solid #d97706; }}
+    tr.tier-standard {{ border-left: 6px solid transparent; }}
+
     .score {{
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
     }}
+    .tier-label {{
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }}
+    .tier-label-immediate {{
+      background: #dbeafe;
+      color: #1d4ed8;
+    }}
+    .tier-label-strong {{
+      background: #ede9fe;
+      color: #6d28d9;
+    }}
+    .tier-label-watching {{
+      background: #fef3c7;
+      color: #92400e;
+    }}
+    .tier-label-standard {{
+      background: #f3f4f6;
+      color: #4b5563;
+    }}
+    .reasons {{
+      min-width: 220px;
+    }}
+    .reason-badge {{
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 7px;
+      margin: 0 4px 4px 0;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+      background: #f3f4f6;
+      color: #4b5563;
+    }}
+    .reason-patch {{ background: #dbeafe; color: #1d4ed8; }}
+    .reason-testing {{ background: #dcfce7; color: #166534; }}
+    .reason-first {{ background: #fef3c7; color: #92400e; }}
+    .reason-feedback {{ background: #ede9fe; color: #6d28d9; }}
+    .reason-owner {{ background: #e0f2fe; color: #075985; }}
+    .reason-recent {{ background: #ccfbf1; color: #115e59; }}
+    .reason-component {{ background: #fce7f3; color: #9d174d; }}
+
     a {{
       color: #2271b1;
       font-weight: 700;
     }}
     form {{
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: minmax(140px, 180px) minmax(220px, 1fr) auto;
       gap: 8px;
+      align-items: center;
     }}
-    input[type="text"] {{
-      min-width: 220px;
+    input[type="text"],
+    select {{
       padding: 8px;
       border: 1px solid #c3c4c7;
       border-radius: 6px;
+      background: white;
     }}
-    button {{
+    button, .button-link {{
       border: 0;
       border-radius: 6px;
-      padding: 8px 10px;
+      padding: 7px 9px;
       cursor: pointer;
       font-weight: 700;
       background: #2271b1;
       color: white;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
     }}
-    button[value="reject"] {{
-      background: #b32d2e;
+    .decision-form button {{
+      background: #2271b1;
     }}
-    button[value="watch"] {{
-      background: #996800;
+    .decision-form button:disabled {{
+      background: #c3c4c7;
+      cursor: not-allowed;
     }}
-    button[value="tested"],
-    button[value="commented"] {{
-      background: #008a20;
+    .copy-button {{ background: #7c3aed; }}
+    .tools {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }}
     .empty {{
       color: #646970;
       font-style: italic;
     }}
-    @media (max-width: 800px) {{
+    @media (max-width: 900px) {{
       header, main {{
         padding-left: 18px;
         padding-right: 18px;
+      }}
+      .summary {{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }}
       table, thead, tbody, th, td, tr {{
         display: block;
@@ -268,13 +442,18 @@ def page_html(message: str = "") -> str:
         border: 0;
         padding: 6px 0;
       }}
+      td::before {{
+        content: attr(data-label);
+        display: block;
+        color: #646970;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+      }}
       form {{
         display: grid;
-      }}
-      input[type="text"] {{
-        min-width: 0;
-        width: 100%;
-        box-sizing: border-box;
+        grid-template-columns: 1fr;
       }}
     }}
   </style>
@@ -282,26 +461,60 @@ def page_html(message: str = "") -> str:
 <body>
   <header>
     <h1>WP Core Radar Admin</h1>
-    <p>Private local review console. Decisions are written to data/reviews/reviews.csv.</p>
+    <p>Private review console. Decisions are written to data/reviews/reviews.csv.</p>
   </header>
   <main>
     {message_html}
 
     <div class="summary">
       <div class="card"><strong>{len(ranked)}</strong>Unique tickets</div>
-      <div class="card"><strong>{len(groups["top"])}</strong>Top opportunities</div>
-      <div class="card"><strong>{len(groups["shortlist"])}</strong>Shortlisted</div>
-      <div class="card"><strong>{len(groups["watch"])}</strong>Watching</div>
-      <div class="card"><strong>{len(groups["completed"])}</strong>Completed</div>
+      <div class="card"><strong>{len(groups["priority"])}</strong>Priority targets</div>
+      <div class="card card-blue"><strong>{immediate_count}</strong>Immediate Review</div>
+      <div class="card card-purple"><strong>{strong_count}</strong>Strong Candidates</div>
+      <div class="card card-amber"><strong>{watching_count}</strong>Worth Watching</div>
       <div class="card"><strong>{len(groups["rejected"])}</strong>Rejected</div>
     </div>
 
+    {table_html("Priority Targets", groups["priority"])}
     {table_html("Top Opportunities", groups["top"], limit=50)}
     {table_html("Shortlisted", groups["shortlist"])}
     {table_html("Watching", groups["watch"])}
     {table_html("Completed / Acted On", groups["completed"])}
     {table_html("Rejected", groups["rejected"])}
   </main>
+
+  <script>
+    document.addEventListener("change", function(event) {{
+      const select = event.target.closest("select[name='status']");
+      if (!select) return;
+
+      const form = select.closest("form");
+      const reason = form.querySelector("input[name='reason']");
+      const save = form.querySelector("button[type='submit']");
+
+      if (select.value) {{
+        reason.hidden = false;
+        save.disabled = false;
+      }} else {{
+        reason.hidden = true;
+        save.disabled = true;
+      }}
+    }});
+
+    document.addEventListener("click", async function(event) {{
+      const button = event.target.closest(".copy-button");
+      if (!button) return;
+
+      try {{
+        await navigator.clipboard.writeText(button.dataset.context || "");
+        const original = button.textContent;
+        button.textContent = "Copied";
+        setTimeout(() => button.textContent = original, 1400);
+      }} catch (error) {{
+        alert("Could not copy review context.");
+      }}
+    }});
+  </script>
 </body>
 </html>
 """
@@ -309,12 +522,18 @@ def page_html(message: str = "") -> str:
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
+        parsed = urlparse(self.path)
+
+        if parsed.path not in {"/", "/radar/admin", "/radar/admin/"}:
+            self.send_error(404)
+            return
+
         self.respond(page_html())
 
     def do_POST(self) -> None:
         parsed = urlparse(self.path)
 
-        if parsed.path != "/review":
+        if parsed.path not in {"/review", "/radar/admin/review"}:
             self.send_error(404)
             return
 
@@ -348,6 +567,7 @@ class Handler(BaseHTTPRequestHandler):
 def main() -> int:
     server = ThreadingHTTPServer((HOST, PORT), Handler)
     print(f"WP Core Radar Admin running at http://{HOST}:{PORT}")
+    print(f"Admin route also available at http://{HOST}:{PORT}/radar/admin")
     print("Press Ctrl+C to stop.")
     server.serve_forever()
     return 0
