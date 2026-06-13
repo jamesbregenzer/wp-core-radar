@@ -44,6 +44,15 @@
       font-size: 28px;
       margin-bottom: 4px;
     }
+    .card-blue {
+      border-left: 6px solid #2563eb;
+    }
+    .card-purple {
+      border-left: 6px solid #7c3aed;
+    }
+    .card-amber {
+      border-left: 6px solid #d97706;
+    }
     section {
       margin-top: 32px;
     }
@@ -80,9 +89,45 @@
       position: sticky;
       top: 0;
     }
+    tr.tier-immediate {
+      border-left: 6px solid #2563eb;
+    }
+    tr.tier-strong {
+      border-left: 6px solid #7c3aed;
+    }
+    tr.tier-watching {
+      border-left: 6px solid #d97706;
+    }
+    tr.tier-standard {
+      border-left: 6px solid transparent;
+    }
     td.score {
       font-weight: 700;
       font-size: 18px;
+    }
+    .tier-label {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .tier-label-immediate {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+    .tier-label-strong {
+      background: #ede9fe;
+      color: #6d28d9;
+    }
+    .tier-label-watching {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    .tier-label-standard {
+      background: #f3f4f6;
+      color: #4b5563;
     }
     a {
       color: #2271b1;
@@ -158,17 +203,17 @@
 <body>
   <header>
     <h1>WP Core Radar Dashboard</h1>
-    <p>Generated 2026-06-13 17:11. Radar recommends opportunities only. Humans make contribution decisions.</p>
+    <p>Generated 2026-06-13 17:40. Radar recommends opportunities only. Humans make contribution decisions.</p>
   </header>
 
   <main>
     <div class="summary">
       <div class="card"><strong>280</strong>Unique tickets scored</div>
-      <div class="card"><strong>5</strong>Datasets discovered</div>
-      <div class="card"><strong>4</strong>Outcomes loaded</div>
-      <div class="card"><strong>1</strong>Reviews loaded</div>
       <div class="card"><strong>9</strong>Priority targets</div>
-      <div class="card"><strong>270</strong>Other opportunities</div>
+      <div class="card card-blue"><strong>1</strong>Immediate Review</div>
+      <div class="card card-purple"><strong>8</strong>Strong Candidates</div>
+      <div class="card card-amber"><strong>109</strong>Worth Watching</div>
+      <div class="card"><strong>1</strong>Reviews loaded</div>
     </div>
 
     
@@ -179,6 +224,7 @@
       <thead>
         <tr>
           <th>Score</th>
+          <th>Tier</th>
           <th>Ticket</th>
           <th>Summary</th>
           <th>Component</th>
@@ -194,8 +240,9 @@
       </thead>
       <tbody>
         
-<tr>
+<tr class="tier-immediate">
   <td class="score" data-label="Score">174</td>
+  <td data-label="Tier"><span class="tier-label tier-label-immediate">Immediate Review</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/33073">#33073</a></td>
   <td data-label="Summary">Some strings need &quot;no HTML entities&quot; translator comments</td>
   <td data-label="Component">Unknown</td>
@@ -210,8 +257,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">156</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/41081">#41081</a></td>
   <td data-label="Summary">Improve Custom Menu widget, show notification if menu is empty or no menu selected</td>
   <td data-label="Component">Unknown</td>
@@ -226,8 +274,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">154</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/21989">#21989</a></td>
   <td data-label="Summary">update_option() calls sanitize_option() twice when option does not exist</td>
   <td data-label="Component">Unknown</td>
@@ -242,8 +291,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">154</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/41305">#41305</a></td>
   <td data-label="Summary">Add lazily evaluated translations</td>
   <td data-label="Component">Unknown</td>
@@ -258,8 +308,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">154</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/42670">#42670</a></td>
   <td data-label="Summary">Symlinked plugin makes plugin_basename function return wrong basename</td>
   <td data-label="Component">Unknown</td>
@@ -274,8 +325,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">154</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/54034">#54034</a></td>
   <td data-label="Summary">Update jQuery UI Touch Punch to the latest version</td>
   <td data-label="Component">Unknown</td>
@@ -290,8 +342,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">154</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/58801">#58801</a></td>
   <td data-label="Summary">Prefetch Block Editor from Posts page</td>
   <td data-label="Component">Unknown</td>
@@ -306,8 +359,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">154</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/63568">#63568</a></td>
   <td data-label="Summary">WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes</td>
   <td data-label="Component">Unknown</td>
@@ -322,8 +376,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">151</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/43178">#43178</a></td>
   <td data-label="Summary">Rethinking what “captions” means for video</td>
   <td data-label="Component">Unknown</td>
@@ -350,6 +405,7 @@
       <thead>
         <tr>
           <th>Score</th>
+          <th>Tier</th>
           <th>Ticket</th>
           <th>Summary</th>
           <th>Component</th>
@@ -365,8 +421,9 @@
       </thead>
       <tbody>
         
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">150</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/40370">#40370</a></td>
   <td data-label="Summary">add_image_sizes does not create the &quot;crop position&quot; versions of the image</td>
   <td data-label="Component">Unknown</td>
@@ -381,8 +438,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">150</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/47988">#47988</a></td>
   <td data-label="Summary">Unexpected behaviour when draft post has the same page_name as published post</td>
   <td data-label="Component">Unknown</td>
@@ -397,8 +455,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-strong">
   <td class="score" data-label="Score">150</td>
+  <td data-label="Tier"><span class="tier-label tier-label-strong">Strong Candidate</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/56886">#56886</a></td>
   <td data-label="Summary">Admin facing add site screen missing search engine visibility field</td>
   <td data-label="Component">Unknown</td>
@@ -413,8 +472,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/16293">#16293</a></td>
   <td data-label="Summary">In multisite installs, users with id 1 can&#x27;t be deleted</td>
   <td data-label="Component">Unknown</td>
@@ -429,8 +489,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/20746">#20746</a></td>
   <td data-label="Summary">Accessing non-existing theme folder in Network install gives 500 error</td>
   <td data-label="Component">Unknown</td>
@@ -445,8 +506,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/36201">#36201</a></td>
   <td data-label="Summary">Admin Pagination URLs Use Wrong Hostname</td>
   <td data-label="Component">Unknown</td>
@@ -461,8 +523,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/40790">#40790</a></td>
   <td data-label="Summary">Ability to filter $post_type in _get_last_post_time</td>
   <td data-label="Component">Unknown</td>
@@ -477,8 +540,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/41358">#41358</a></td>
   <td data-label="Summary">Shutdown hooks can significantly slow down REST API responses</td>
   <td data-label="Component">Unknown</td>
@@ -493,8 +557,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/43885">#43885</a></td>
   <td data-label="Summary">WP_Role and WP_Roles::get_role() missing Display Name</td>
   <td data-label="Component">Unknown</td>
@@ -509,8 +574,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/45354">#45354</a></td>
   <td data-label="Summary">Adding index for meta_key and post_id in postmeta</td>
   <td data-label="Component">Unknown</td>
@@ -525,8 +591,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/47352">#47352</a></td>
   <td data-label="Summary">Take into account the current admin email address when rate limiting the recovery mode email</td>
   <td data-label="Component">Unknown</td>
@@ -541,8 +608,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/48193">#48193</a></td>
   <td data-label="Summary">Improve the WordPress loop</td>
   <td data-label="Component">Unknown</td>
@@ -557,8 +625,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/51446">#51446</a></td>
   <td data-label="Summary">CORS issues with QUnit while running tests</td>
   <td data-label="Component">Unknown</td>
@@ -573,8 +642,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/53450">#53450</a></td>
   <td data-label="Summary">[WP_Meta_Query] Add faster LIKE based &#x27;STARTSWITH&#x27; and &#x27;ENDSWITH&#x27; compare modes for value query</td>
   <td data-label="Component">Unknown</td>
@@ -589,8 +659,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/54042">#54042</a></td>
   <td data-label="Summary">Extending wpdb::prepare() to support IN() operator</td>
   <td data-label="Component">Unknown</td>
@@ -605,8 +676,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/54546">#54546</a></td>
   <td data-label="Summary">Fatal error receive while updating WP 5.8.2 to WP 5.9.</td>
   <td data-label="Component">Unknown</td>
@@ -621,8 +693,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/57586">#57586</a></td>
   <td data-label="Summary">term_exists() return type not consistent regarding wp_insert_term()</td>
   <td data-label="Component">Unknown</td>
@@ -637,8 +710,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/63109">#63109</a></td>
   <td data-label="Summary">test_get_block_editor_settings_theme_json_settings failing</td>
   <td data-label="Component">Unknown</td>
@@ -653,8 +727,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/63197">#63197</a></td>
   <td data-label="Summary">Sanity Checks in mkdir and delete for FTPext Filesystem</td>
   <td data-label="Component">Unknown</td>
@@ -669,8 +744,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">148</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/65392">#65392</a></td>
   <td data-label="Summary">&quot;Show more comments&quot; button in comments metabox doesn&#x27;t load new comments if they are of a type different than &#x27;comment&#x27;</td>
   <td data-label="Component">Unknown</td>
@@ -685,8 +761,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">146</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/52464">#52464</a></td>
   <td data-label="Summary">The value of argument passed to the update_option_new_admin_email() is not a valid email.</td>
   <td data-label="Component">Unknown</td>
@@ -701,8 +778,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">146</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/55691">#55691</a></td>
   <td data-label="Summary">New site editor uses WP_SITEURL instead of WP_HOME</td>
   <td data-label="Component">Unknown</td>
@@ -717,8 +795,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">146</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/60628">#60628</a></td>
   <td data-label="Summary">Issues with avif image  imagecreatefromavif not working. Resizing not possible.</td>
   <td data-label="Component">Unknown</td>
@@ -733,8 +812,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">146</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/64921">#64921</a></td>
   <td data-label="Summary">REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)</td>
   <td data-label="Component">Unknown</td>
@@ -749,8 +829,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">141</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/39004">#39004</a></td>
   <td data-label="Summary">Alt attributes should be searchable in media library</td>
   <td data-label="Component">Unknown</td>
@@ -765,8 +846,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/19173">#19173</a></td>
   <td data-label="Summary">Issues with wp_editor() when used inside of a meta box.</td>
   <td data-label="Component">Unknown</td>
@@ -781,8 +863,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/22367">#22367</a></td>
   <td data-label="Summary">Usernames with &quot;@&quot; char are assumed email addresses, causing incorrect look-up in several places</td>
   <td data-label="Component">Unknown</td>
@@ -797,8 +880,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/26571">#26571</a></td>
   <td data-label="Summary">Increase flexibility of &quot;At a Glance&quot; Dashboard Widget to match &quot;Right Now&quot; Widget</td>
   <td data-label="Component">Unknown</td>
@@ -813,8 +897,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/34848">#34848</a></td>
   <td data-label="Summary">Add support for updating post meta in bulk</td>
   <td data-label="Component">Unknown</td>
@@ -829,8 +914,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/38238">#38238</a></td>
   <td data-label="Summary">Sorting a list table by some kind of count should default to DESC initially</td>
   <td data-label="Component">Unknown</td>
@@ -845,8 +931,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/43746">#43746</a></td>
   <td data-label="Summary">Custom post type single post feed returns a 404 if has_archive is set to false when calling register_post_type()</td>
   <td data-label="Component">Unknown</td>
@@ -861,8 +948,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/43879">#43879</a></td>
   <td data-label="Summary">Add tools for anonymizing of post authors</td>
   <td data-label="Component">Unknown</td>
@@ -877,8 +965,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/44641">#44641</a></td>
   <td data-label="Summary">Customizing Button Text in Custom Media Manager Frame Doesn&#x27;t Work Anymore</td>
   <td data-label="Component">Unknown</td>
@@ -893,8 +982,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/44921">#44921</a></td>
   <td data-label="Summary">User nicename discovery is slow to return</td>
   <td data-label="Component">Unknown</td>
@@ -909,8 +999,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/54151">#54151</a></td>
   <td data-label="Summary">Dashboard widgets e2e tests</td>
   <td data-label="Component">Unknown</td>
@@ -925,8 +1016,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/56320">#56320</a></td>
   <td data-label="Summary">Update mediaelement.js to the latest version</td>
   <td data-label="Component">Unknown</td>
@@ -941,8 +1033,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/60029">#60029</a></td>
   <td data-label="Summary">Admin unable to create new Application Password for user with no role on main site (multisite)</td>
   <td data-label="Component">Unknown</td>
@@ -957,8 +1050,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/63256">#63256</a></td>
   <td data-label="Summary">Unnecessary array_map() call in get_terms() when object_ids is not set</td>
   <td data-label="Component">Unknown</td>
@@ -973,8 +1067,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/65048">#65048</a></td>
   <td data-label="Summary">wp_ajax_fetch_list(): Sanitize $_GET input before nonce construction</td>
   <td data-label="Component">Unknown</td>
@@ -989,8 +1084,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/65051">#65051</a></td>
   <td data-label="Summary">$_REQUEST[&#x27;term&#x27;] used unsanitized in user search query</td>
   <td data-label="Component">Unknown</td>
@@ -1005,8 +1101,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/65052">#65052</a></td>
   <td data-label="Summary">Nonce check order flaw in post-quickdraft-save</td>
   <td data-label="Component">Unknown</td>
@@ -1021,8 +1118,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/65054">#65054</a></td>
   <td data-label="Summary">$_GET[&#x27;pagenow&#x27;] and $_GET[&#x27;widget&#x27;] unsanitized in dashboard AJAX handler</td>
   <td data-label="Component">Unknown</td>
@@ -1037,8 +1135,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/65329">#65329</a></td>
   <td data-label="Summary">Move sideload metadata writes to the finalize endpoint</td>
   <td data-label="Component">Unknown</td>
@@ -1053,8 +1152,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">136</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/65419">#65419</a></td>
   <td data-label="Summary">In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode</td>
   <td data-label="Component">Unknown</td>
@@ -1069,8 +1169,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">130</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/7965">#7965</a></td>
   <td data-label="Summary">Database upgrade complete message should be an admin notice</td>
   <td data-label="Component">Unknown</td>
@@ -1085,8 +1186,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">130</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/13743">#13743</a></td>
   <td data-label="Summary">Ability to choose a network default theme</td>
   <td data-label="Component">Unknown</td>
@@ -1101,8 +1203,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">130</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/22116">#22116</a></td>
   <td data-label="Summary">bug in dynamic_sidebar function</td>
   <td data-label="Component">Unknown</td>
@@ -1117,8 +1220,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">130</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/22330">#22330</a></td>
   <td data-label="Summary">Optimize regexes to remove protocol from URL</td>
   <td data-label="Component">Unknown</td>
@@ -1133,8 +1237,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">130</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/23197">#23197</a></td>
   <td data-label="Summary">wp-activate.php, without explanation, does not load site plugins</td>
   <td data-label="Component">Unknown</td>
@@ -1149,8 +1254,9 @@
 </tr>
 
 
-<tr>
+<tr class="tier-watching">
   <td class="score" data-label="Score">130</td>
+  <td data-label="Tier"><span class="tier-label tier-label-watching">Worth Watching</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/24241">#24241</a></td>
   <td data-label="Summary">Whitelist trackbacks/pingbacks from own site</td>
   <td data-label="Component">Unknown</td>
@@ -1177,6 +1283,7 @@
       <thead>
         <tr>
           <th>Score</th>
+          <th>Tier</th>
           <th>Ticket</th>
           <th>Summary</th>
           <th>Component</th>
@@ -1191,7 +1298,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td colspan="12" class="empty">No tickets in this section.</td></tr>
+        <tr><td colspan="13" class="empty">No tickets in this section.</td></tr>
       </tbody>
     </table>
   </div>
@@ -1205,6 +1312,7 @@
       <thead>
         <tr>
           <th>Score</th>
+          <th>Tier</th>
           <th>Ticket</th>
           <th>Summary</th>
           <th>Component</th>
@@ -1219,7 +1327,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td colspan="12" class="empty">No tickets in this section.</td></tr>
+        <tr><td colspan="13" class="empty">No tickets in this section.</td></tr>
       </tbody>
     </table>
   </div>
@@ -1233,6 +1341,7 @@
       <thead>
         <tr>
           <th>Score</th>
+          <th>Tier</th>
           <th>Ticket</th>
           <th>Summary</th>
           <th>Component</th>
@@ -1247,7 +1356,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td colspan="12" class="empty">No tickets in this section.</td></tr>
+        <tr><td colspan="13" class="empty">No tickets in this section.</td></tr>
       </tbody>
     </table>
   </div>
@@ -1261,6 +1370,7 @@
       <thead>
         <tr>
           <th>Score</th>
+          <th>Tier</th>
           <th>Ticket</th>
           <th>Summary</th>
           <th>Component</th>
@@ -1276,8 +1386,9 @@
       </thead>
       <tbody>
         
-<tr>
+<tr class="tier-standard">
   <td class="score" data-label="Score">110</td>
+  <td data-label="Tier"><span class="tier-label tier-label-standard">Standard</span></td>
   <td data-label="Ticket"><a href="https://core.trac.wordpress.org/ticket/65345">#65345</a></td>
   <td data-label="Summary">Site Icon subsizes use wrong array key &#x27;width &#x27; instead of &#x27;width&#x27;</td>
   <td data-label="Component">Unknown</td>

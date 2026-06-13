@@ -34,6 +34,21 @@ def review_status(item: dict) -> str:
     return review.get("status", "").strip().lower()
 
 
+def priority_tier(item: dict) -> tuple[str, str]:
+    score = item.get("score", 0)
+
+    if score >= 165:
+        return "immediate", "Immediate Review"
+
+    if score >= 150:
+        return "strong", "Strong Candidate"
+
+    if score >= 130:
+        return "watching", "Worth Watching"
+
+    return "standard", "Standard"
+
+
 def is_priority_target(item: dict) -> bool:
     status = review_status(item)
     if status:
@@ -148,6 +163,7 @@ def ticket_row(item: dict, duplicate_sources: dict[str, set[str]]) -> str:
     row = item["row"]
     ticket_id = item["ticket_id"]
     review = item.get("review") or {}
+    tier_class, tier_label = priority_tier(item)
 
     summary = first_value(row, SUMMARY_KEYS, "Untitled ticket")
     component = first_value(row, COMPONENT_KEYS, "Unknown")
@@ -161,8 +177,9 @@ def ticket_row(item: dict, duplicate_sources: dict[str, set[str]]) -> str:
     review_reason = review.get("reason", "")
 
     return f"""
-<tr>
+<tr class="tier-{html.escape(tier_class)}">
   <td class="score" data-label="Score">{item["score"]}</td>
+  <td data-label="Tier"><span class="tier-label tier-label-{html.escape(tier_class)}">{html.escape(tier_label)}</span></td>
   <td data-label="Ticket"><a href="{html.escape(trac_url(ticket_id))}">#{html.escape(ticket_id)}</a></td>
   <td data-label="Summary">{html.escape(summary)}</td>
   <td data-label="Component">{html.escape(component)}</td>
@@ -184,7 +201,7 @@ def section_html(title: str, items: list[dict], duplicate_sources: dict[str, set
     rows = "\n".join(ticket_row(item, duplicate_sources) for item in display_items)
 
     if not rows:
-        rows = '<tr><td colspan="12" class="empty">No tickets in this section.</td></tr>'
+        rows = '<tr><td colspan="13" class="empty">No tickets in this section.</td></tr>'
 
     return f"""
 <section>
@@ -194,6 +211,7 @@ def section_html(title: str, items: list[dict], duplicate_sources: dict[str, set
       <thead>
         <tr>
           <th>Score</th>
+          <th>Tier</th>
           <th>Ticket</th>
           <th>Summary</th>
           <th>Component</th>
@@ -220,6 +238,10 @@ def build_dashboard() -> str:
     ranked, duplicate_sources, summary = collect_items()
     groups = group_items(ranked)
     generated = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+    immediate_count = sum(1 for item in groups["priority"] if priority_tier(item)[0] == "immediate")
+    strong_count = sum(1 for item in groups["priority"] if priority_tier(item)[0] == "strong")
+    watching_count = sum(1 for item in groups["top"] if priority_tier(item)[0] == "watching")
 
     return f"""<!doctype html>
 <html lang="en">
@@ -267,6 +289,15 @@ def build_dashboard() -> str:
       font-size: 28px;
       margin-bottom: 4px;
     }}
+    .card-blue {{
+      border-left: 6px solid #2563eb;
+    }}
+    .card-purple {{
+      border-left: 6px solid #7c3aed;
+    }}
+    .card-amber {{
+      border-left: 6px solid #d97706;
+    }}
     section {{
       margin-top: 32px;
     }}
@@ -303,9 +334,45 @@ def build_dashboard() -> str:
       position: sticky;
       top: 0;
     }}
+    tr.tier-immediate {{
+      border-left: 6px solid #2563eb;
+    }}
+    tr.tier-strong {{
+      border-left: 6px solid #7c3aed;
+    }}
+    tr.tier-watching {{
+      border-left: 6px solid #d97706;
+    }}
+    tr.tier-standard {{
+      border-left: 6px solid transparent;
+    }}
     td.score {{
       font-weight: 700;
       font-size: 18px;
+    }}
+    .tier-label {{
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }}
+    .tier-label-immediate {{
+      background: #dbeafe;
+      color: #1d4ed8;
+    }}
+    .tier-label-strong {{
+      background: #ede9fe;
+      color: #6d28d9;
+    }}
+    .tier-label-watching {{
+      background: #fef3c7;
+      color: #92400e;
+    }}
+    .tier-label-standard {{
+      background: #f3f4f6;
+      color: #4b5563;
     }}
     a {{
       color: #2271b1;
@@ -387,11 +454,11 @@ def build_dashboard() -> str:
   <main>
     <div class="summary">
       <div class="card"><strong>{len(ranked)}</strong>Unique tickets scored</div>
-      <div class="card"><strong>{len(summary["datasets"])}</strong>Datasets discovered</div>
-      <div class="card"><strong>{len(summary["outcomes"])}</strong>Outcomes loaded</div>
-      <div class="card"><strong>{len(summary["reviews"])}</strong>Reviews loaded</div>
       <div class="card"><strong>{len(groups["priority"])}</strong>Priority targets</div>
-      <div class="card"><strong>{len(groups["top"])}</strong>Other opportunities</div>
+      <div class="card card-blue"><strong>{immediate_count}</strong>Immediate Review</div>
+      <div class="card card-purple"><strong>{strong_count}</strong>Strong Candidates</div>
+      <div class="card card-amber"><strong>{watching_count}</strong>Worth Watching</div>
+      <div class="card"><strong>{len(summary["reviews"])}</strong>Reviews loaded</div>
     </div>
 
     {section_html("Priority Targets", groups["priority"], duplicate_sources)}
