@@ -46,5 +46,8 @@ def main():
     downloaded.unlink()
     print("Removed downloaded query.csv")
 
+    subprocess.run(["osascript", "-e", 'tell application "Firefox" to quit'], check=False)
+    print("Closed Firefox")
+
 if __name__ == "__main__":
     main()
