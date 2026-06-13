@@ -1,0 +1,26 @@
+# WP Core Radar scoring configuration
+#
+# Scores are intentionally deterministic and explainable.
+# The model/review layer should only evaluate already-scored opportunities.
+
+positive:
+  has-patch: 30
+  needs-testing: 30
+  dev-feedback: 25
+  reporter-feedback: 15
+  has-screenshots: 10
+  has-unit-tests: 10
+  assigned-status: 10
+  media-component: 15
+  admin-ui-focus: 10
+  recent-activity: 15
+
+negative:
+  closed-ticket: -100
+  no-patch: -20
+  feature-request: -10
+  owner-assigned: -5
+  stale-ticket: -25
+  complex-environment: -20
+  multiple-recent-test-reports: -15
+  unclear-reproduction: -20
