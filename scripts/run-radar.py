@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
-"""Run WP Core Radar collection and report generation.
-
-By default this runs every enabled query in config/queries.json by delegating to
-scripts/browser-fetch.py <query_slug>, then generates a unified report.
-
-Use --skip-fetch to regenerate reports from existing data only.
-"""
+"""Run the WP Core Radar collection and reporting pipeline."""
 
 from __future__ import annotations
 
 import argparse
 import subprocess
 import sys
-from pathlib import Path
 
 from radarlib import ROOT, load_queries
 
@@ -44,16 +37,28 @@ def main() -> int:
             slug = query["slug"]
             print(f"\n=== Fetching {slug}: {query.get('name', slug)} ===")
             code = run([sys.executable, "scripts/browser-fetch.py", slug])
+
             if code != 0:
                 message = f"Fetch failed for {slug} with exit code {code}."
                 if args.continue_on_error:
-                    print(message)
+                    print(message, file=sys.stderr)
                     continue
+
                 print(message, file=sys.stderr)
                 return code
 
-    print("\n=== Generating unified report ===")
-    return run([sys.executable, "scripts/generate-report.py"])
+    print("\n=== Generating Markdown report ===")
+    code = run([sys.executable, "scripts/generate-report.py"])
+    if code != 0:
+        return code
+
+    print("\n=== Generating HTML dashboard ===")
+    code = run([sys.executable, "scripts/generate-dashboard.py"])
+    if code != 0:
+        return code
+
+    print("\nRadar run complete.")
+    return 0
 
 
 if __name__ == "__main__":
