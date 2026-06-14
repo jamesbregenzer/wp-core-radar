@@ -479,10 +479,11 @@ def build_dashboard() -> str:
 
 def main() -> int:
     docs_dir = Path("docs")
-    docs_dir.mkdir(parents=True, exist_ok=True)
+    radar_dir = docs_dir / "radar"
+    radar_dir.mkdir(parents=True, exist_ok=True)
 
     dashboard = build_dashboard()
-    output = docs_dir / "index.html"
+    output = radar_dir / "index.html"
 
     output.write_text(dashboard, encoding="utf-8")
 
