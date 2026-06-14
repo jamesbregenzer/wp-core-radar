@@ -175,17 +175,31 @@ def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
         context = html.escape(copy_context(item), quote=True)
 
         rows.append(f"""
-        <tr class="tier-{html.escape(tier_class)}">
+        <tr class="ticket-row tier-{html.escape(tier_class)}" data-ticket="{html.escape(ticket_id)}">
+          <td class="expand" data-label="Details">
+            <button type="button" class="expand-button" aria-label="Toggle details" data-ticket="{html.escape(ticket_id)}">▶</button>
+          </td>
           <td class="score" data-label="Score">{item["score"]}</td>
           <td data-label="Tier"><span class="tier-label tier-label-{html.escape(tier_class)}">{html.escape(tier_label)}</span></td>
           <td data-label="Ticket"><a href="{html.escape(trac_url(ticket_id))}" target="_blank">#{html.escape(ticket_id)}</a></td>
           <td data-label="Summary">{html.escape(item_summary(item))}</td>
-          <td data-label="Why Ranked" class="reasons">{reasons}</td>
           <td data-label="Tools" class="tools">
             <a class="button-link" href="{html.escape(trac_url(ticket_id))}" target="_blank">Open Trac</a>
-            <button type="button" class="copy-button" data-context="{context}">Copy Review Context</button>
+            <button type="button" class="copy-button" data-context="{context}">Copy Details</button>
           </td>
           <td data-label="Action" class="actions">{action_form(ticket_id)}</td>
+        </tr>
+        <tr class="tray-row" data-tray="{html.escape(ticket_id)}">
+          <td colspan="7">
+            <div class="tray">
+              <h3>Ticket #{html.escape(ticket_id)}</h3>
+              <p><strong>{html.escape(item_summary(item))}</strong></p>
+              <div class="tray-section">
+                <h4>Why this ranked highly</h4>
+                <div class="tray-reasons">{reasons}</div>
+              </div>
+            </div>
+          </td>
         </tr>
         """)
 
@@ -203,11 +217,11 @@ def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
         <table>
           <thead>
             <tr>
+              <th></th>
               <th>Score</th>
               <th>Tier</th>
               <th>Ticket</th>
               <th>Summary</th>
-              <th>Why Ranked</th>
               <th>Tools</th>
               <th>Action</th>
             </tr>
@@ -325,6 +339,57 @@ def page_html(message: str = "") -> str:
     tr.tier-watching {{ border-left: 6px solid #d97706; }}
     tr.tier-standard {{ border-left: 6px solid transparent; }}
 
+    .expand {{
+      width: 36px;
+      text-align: center;
+    }}
+    .expand-button {{
+      background: transparent;
+      color: #646970;
+      border: 0;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 4px;
+    }}
+    .expand-button:hover {{
+      color: #1d2327;
+    }}
+    .tray-row {{
+      display: none;
+      border-left: 6px solid #dcdcde;
+    }}
+    .tray-row.is-open {{
+      display: table-row;
+    }}
+    .tray-row td {{
+      background: #fbfbfc;
+      padding: 0;
+    }}
+    .tray {{
+      padding: 18px 22px;
+      border-top: 1px solid #f0f0f1;
+    }}
+    .tray h3 {{
+      margin: 0 0 8px;
+    }}
+    .tray p {{
+      margin: 0 0 8px;
+    }}
+    .tray-section {{
+      margin-top: 14px;
+    }}
+    .tray-section h4 {{
+      margin: 0 0 8px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #646970;
+    }}
+    .tray-reasons {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }}
     .score {{
       font-size: 18px;
       font-weight: 700;
@@ -381,12 +446,18 @@ def page_html(message: str = "") -> str:
     }}
     form {{
       display: grid;
-      grid-template-columns: minmax(140px, 180px) minmax(220px, 1fr) auto;
+      grid-template-columns: minmax(180px, 1fr);
       gap: 8px;
       align-items: center;
+      min-width: 260px;
+    }}
+    .decision-form.has-decision {{
+      grid-template-columns: minmax(180px, 1fr);
     }}
     input[type="text"],
     select {{
+      width: 100%;
+      box-sizing: border-box;
       padding: 8px;
       border: 1px solid #c3c4c7;
       border-radius: 6px;
@@ -411,11 +482,25 @@ def page_html(message: str = "") -> str:
       background: #c3c4c7;
       cursor: not-allowed;
     }}
+    .conditional-field {{
+      display: none;
+    }}
+    .decision-form.has-decision .conditional-field {{
+      display: block;
+    }}
     .copy-button {{ background: #7c3aed; }}
     .tools {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+      min-width: 120px;
+      max-width: 140px;
+    }}
+    .tools .button-link,
+    .tools .copy-button {{
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
     }}
     .empty {{
       color: #646970;
@@ -489,16 +574,28 @@ def page_html(message: str = "") -> str:
       if (!select) return;
 
       const form = select.closest("form");
-      const reason = form.querySelector("input[name='reason']");
       const save = form.querySelector("button[type='submit']");
 
       if (select.value) {{
-        reason.hidden = false;
+        form.classList.add("has-decision");
         save.disabled = false;
       }} else {{
-        reason.hidden = true;
+        form.classList.remove("has-decision");
         save.disabled = true;
       }}
+    }});
+
+    document.addEventListener("click", function(event) {{
+      const expandButton = event.target.closest(".expand-button");
+      if (!expandButton) return;
+
+      const row = expandButton.closest("tr");
+      const tray = row ? row.nextElementSibling : null;
+
+      if (!tray || !tray.classList.contains("tray-row")) return;
+
+      const isOpen = tray.classList.toggle("is-open");
+      expandButton.textContent = isOpen ? "▼" : "▶";
     }});
 
     document.addEventListener("click", async function(event) {{
