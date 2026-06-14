@@ -72,11 +72,11 @@ http://127.0.0.1:8765/radar/admin
 - `docs/radar/index.html` is the public static dashboard.
 - `reports/latest.md` is the latest Markdown report.
 - `reports/radar-YYYY-MM-DD.md` is the dated Markdown report.
-- `data/reviews/reviews.csv` stores local review decisions.
+- `data/reviews/reviews.json` stores human review decisions as constrained metadata keyed by ticket ID.
 - `data/outcomes/outcomes.csv` stores contribution outcomes.
 
 ## Deployment
 
 The public dashboard is designed to be served at `/radar/` through Cloudflare Pages/Workers routing.
 
-The local admin console is intentionally not published. `/radar/admin/` should remain local-only until authentication and access controls are intentionally added.
+The local admin console is intentionally not published by the static dashboard. A future `/radar/admin/` route should authenticate before writing review metadata, and should only update the constrained reviews JSON file.

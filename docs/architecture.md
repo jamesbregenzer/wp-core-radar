@@ -75,4 +75,8 @@ The report's recommended next step is always:
 2. Verify the current ticket state.
 3. Test locally if appropriate.
 4. Decide whether to comment manually.
-5. Record the outcome in `data/outcomes/outcomes.csv`.
+5. Record contribution outcomes in `data/outcomes/outcomes.csv` and review decisions in `data/reviews/reviews.json`.
+
+## Public and admin boundaries
+
+The public dashboard is static and published under `/radar/`. The admin workflow is intentionally a separate, authenticated path for future deployment. Admin write-back should remain narrowly scoped to review metadata in `data/reviews/reviews.json`; it should not become a general repository editor.

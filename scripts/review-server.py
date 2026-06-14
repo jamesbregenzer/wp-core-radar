@@ -676,7 +676,7 @@ def page_html(message: str = "") -> str:
 <body>
   <header>
     <h1>WP Core Radar Admin</h1>
-    <p>Private review console. Decisions are written to data/reviews/reviews.csv.</p>
+    <p>Private review console. Decisions are written to data/reviews/reviews.json.</p>
   </header>
   <main>
     {message_html}

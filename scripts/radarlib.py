@@ -19,7 +19,7 @@ from typing import Any, Iterable
 ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW = ROOT / "data" / "raw"
 OUTCOMES_CSV = ROOT / "data" / "outcomes" / "outcomes.csv"
-REVIEWS_CSV = ROOT / "data" / "reviews" / "reviews.csv"
+REVIEWS_JSON = ROOT / "data" / "reviews" / "reviews.json"
 QUERIES_JSON = ROOT / "config" / "queries.json"
 REPORTS_DIR = ROOT / "reports"
 
@@ -106,26 +106,47 @@ def load_outcomes(path: Path = OUTCOMES_CSV) -> dict[str, str]:
     return outcomes
 
 
-def load_reviews(path: Path = REVIEWS_CSV) -> dict[str, dict[str, str]]:
-    reviews: dict[str, dict[str, str]] = {}
+def normalize_review(review: dict[str, Any]) -> dict[str, str]:
+    return {
+        "status": str(review.get("status", "")).strip().lower(),
+        "reason": str(review.get("reason", "")).strip(),
+        "notes": str(review.get("notes", "")).strip(),
+        "updated_at": str(review.get("updated_at", "")).strip(),
+    }
+
+
+def load_reviews(path: Path = REVIEWS_JSON) -> dict[str, dict[str, str]]:
+    """Load human review decisions from JSON.
+
+    Reviews are keyed by normalized ticket ID so the admin workflow can update
+    exactly one constrained data file. This is intentionally easier for a
+    future Worker-backed admin endpoint to validate than CSV rows.
+    """
     if not path.exists():
-        return reviews
+        return {}
 
-    with path.open(newline="", encoding="utf-8") as handle:
-        reader = csv.DictReader(handle)
-        for row in reader:
-            ticket_id = normalize_ticket_id(row.get("ticket", ""))
-            if not ticket_id:
-                continue
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    reviews: dict[str, dict[str, str]] = {}
 
-            reviews[ticket_id] = {
-                "status": row.get("status", "").strip().lower(),
-                "reason": row.get("reason", "").strip(),
-                "notes": row.get("notes", "").strip(),
-                "updated_at": row.get("updated_at", "").strip(),
-            }
+    for ticket, review in payload.items():
+        ticket_id = normalize_ticket_id(str(ticket))
+        if ticket_id and isinstance(review, dict):
+            reviews[ticket_id] = normalize_review(review)
 
     return reviews
+
+
+def save_reviews(reviews: dict[str, dict[str, str]], path: Path = REVIEWS_JSON) -> None:
+    """Persist human review decisions as stable, sorted JSON."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    normalized = {
+        ticket_id: normalize_review(review)
+        for ticket_id, review in sorted(reviews.items(), key=lambda item: int(item[0]))
+        if normalize_ticket_id(ticket_id)
+    }
+
+    path.write_text(json.dumps(normalized, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
 def infer_query_slug(csv_path: Path) -> str:
