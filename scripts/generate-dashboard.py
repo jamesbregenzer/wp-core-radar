@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import html
+import json
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -20,6 +21,8 @@ from radarlib import (
     priority_tier,
     signal_class,
     signal_labels,
+    ranking_signal_labels,
+    score_breakdown,
     trac_url,
 )
 
@@ -273,6 +276,60 @@ def dashboard_css() -> str:
     """
 
 
+def admin_item_payload(item: dict[str, Any], duplicate_sources: dict[str, set[str]]) -> dict[str, Any]:
+    """Return compact structured ticket data for the protected admin UI."""
+    row = item["row"]
+    ticket_id = item["ticket_id"]
+    tier_class, tier_label = priority_tier(item)
+    keywords = first_value(row, KEYWORDS_KEYS, "")
+
+    return {
+        "ticket_id": ticket_id,
+        "url": trac_url(ticket_id),
+        "score": item["score"],
+        "tier_class": tier_class,
+        "tier_label": tier_label,
+        "summary": first_value(row, SUMMARY_KEYS, "Untitled ticket"),
+        "track": item["query"].get("name", item["query"].get("track", "unknown")),
+        "status": pretty_label(first_value(row, STATUS_KEYS, "Unknown")),
+        "component": first_value(row, ("component", "Component"), "Unknown"),
+        "owner": first_value(row, ("owner", "Owner"), ""),
+        "comments": first_value(row, ("comments", "Comments"), "Unknown"),
+        "created": first_value(row, ("created", "Created", "time", "Created Time"), "Unknown"),
+        "modified": first_value(row, ("modified", "Modified", "changetime", "Change Time"), "Unknown"),
+        "keywords": keywords,
+        "signals": [
+            {"label": label, "class": signal_class(label)}
+            for label in ranking_signal_labels(item["reasons"])
+        ],
+        "score_breakdown": score_breakdown(item["reasons"]),
+        "discovery_track": discovery_track_label(duplicate_sources[ticket_id]),
+        "review": item.get("review") or {},
+    }
+
+
+def admin_data_payload() -> dict[str, Any]:
+    """Build structured data used by the protected Cloudflare Worker admin UI."""
+    ranked, duplicate_sources, summary = collect_items()
+    groups = group_items(ranked)
+
+    return {
+        "generated": datetime.now().isoformat(timespec="seconds"),
+        "summary": {
+            "unique_tickets": len(ranked),
+            "priority_targets": len(groups["priority"]),
+            "immediate": sum(1 for item in groups["priority"] if priority_tier(item)[0] == "immediate"),
+            "strong": sum(1 for item in groups["priority"] if priority_tier(item)[0] == "strong"),
+            "watching": sum(1 for item in groups["top"] if priority_tier(item)[0] == "watching"),
+            "reviews_loaded": len(summary["reviews"]),
+        },
+        "groups": {
+            name: [admin_item_payload(item, duplicate_sources) for item in items]
+            for name, items in groups.items()
+        },
+    }
+
+
 def build_dashboard() -> str:
     ranked, duplicate_sources, summary = collect_items()
     groups = group_items(ranked)
@@ -333,7 +390,11 @@ def main() -> int:
     output = radar_dir / "index.html"
     output.write_text(build_dashboard(), encoding="utf-8")
 
+    admin_data = radar_dir / "admin-data.json"
+    admin_data.write_text(json.dumps(admin_data_payload(), indent=2) + "\n", encoding="utf-8")
+
     print(f"Wrote {output}")
+    print(f"Wrote {admin_data}")
     return 0
 
 
