@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import html
 import importlib.util
+import re
 import subprocess
 import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -164,6 +165,24 @@ def reason_badges(reasons: list[str]) -> str:
     return " ".join(badges)
 
 
+def score_breakdown(reasons: list[str]) -> str:
+    rows = []
+
+    for reason in reasons:
+        match = re.search(r"([+-]\d+)", reason)
+        points = match.group(1) if match else ""
+        label = reason.replace(points, "").strip(" ,") if points else reason
+
+        point_class = "positive" if points.startswith("+") else "negative" if points.startswith("-") else "neutral"
+
+        rows.append(
+            f'<li><span class="score-points score-{point_class}">{html.escape(points)}</span> '
+            f'<span>{html.escape(label)}</span></li>'
+        )
+
+    return "<ul class=\"score-breakdown\">" + "".join(rows) + "</ul>"
+
+
 def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
     display_items = items if limit is None else items[:limit]
     rows = []
@@ -172,6 +191,7 @@ def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
         ticket_id = item["ticket_id"]
         tier_class, tier_label = priority_tier(item)
         reasons = reason_badges(item["reasons"])
+        breakdown = score_breakdown(item["reasons"])
         context = html.escape(copy_context(item), quote=True)
 
         rows.append(f"""
@@ -183,20 +203,36 @@ def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
           <td data-label="Tier"><span class="tier-label tier-label-{html.escape(tier_class)}">{html.escape(tier_label)}</span></td>
           <td data-label="Ticket"><a href="{html.escape(trac_url(ticket_id))}" target="_blank">#{html.escape(ticket_id)}</a></td>
           <td data-label="Summary">{html.escape(item_summary(item))}</td>
-          <td data-label="Tools" class="tools">
-            <a class="button-link" href="{html.escape(trac_url(ticket_id))}" target="_blank">Open Trac</a>
-            <button type="button" class="copy-button" data-context="{context}">Copy Details</button>
-          </td>
-          <td data-label="Action" class="actions">{action_form(ticket_id)}</td>
+
         </tr>
         <tr class="tray-row" data-tray="{html.escape(ticket_id)}">
-          <td colspan="7">
+          <td colspan="5">
             <div class="tray">
               <h3>Ticket #{html.escape(ticket_id)}</h3>
               <p><strong>{html.escape(item_summary(item))}</strong></p>
+
+              <div class="tray-section tray-workspace">
+                <div>
+                  <h4>Tools</h4>
+                  <div class="tools">
+                    <a class="button-link" href="{html.escape(trac_url(ticket_id))}" target="_blank">Open Trac</a>
+                    <button type="button" class="copy-button" data-context="{context}">Copy Details</button>
+                  </div>
+                </div>
+
+                <div>
+                  <h4>Decision</h4>
+                  <div class="actions">{action_form(ticket_id)}</div>
+                </div>
+              </div>
               <div class="tray-section">
-                <h4>Why this ranked highly</h4>
+                <h4>Ranking signals</h4>
                 <div class="tray-reasons">{reasons}</div>
+              </div>
+              <div class="tray-section">
+                <h4>Score breakdown</h4>
+                {breakdown}
+                <p class="score-total">Final score: <strong>{item["score"]}</strong></p>
               </div>
             </div>
           </td>
@@ -206,7 +242,7 @@ def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
     if not rows:
         rows.append("""
         <tr>
-          <td colspan="7" class="empty">No tickets in this section.</td>
+          <td colspan="5" class="empty">No tickets in this section.</td>
         </tr>
         """)
 
@@ -222,8 +258,7 @@ def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
               <th>Tier</th>
               <th>Ticket</th>
               <th>Summary</th>
-              <th>Tools</th>
-              <th>Action</th>
+
             </tr>
           </thead>
           <tbody>
@@ -389,6 +424,46 @@ def page_html(message: str = "") -> str:
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
+    }}
+    .tray-workspace {{
+      display: grid;
+      grid-template-columns: minmax(160px, 220px) minmax(260px, 1fr);
+      gap: 24px;
+      align-items: start;
+      padding: 14px;
+      background: #fff;
+      border: 1px solid #dcdcde;
+      border-radius: 8px;
+    }}
+    .score-breakdown {{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 6px;
+    }}
+    .score-breakdown li {{
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+    }}
+    .score-points {{
+      display: inline-block;
+      min-width: 42px;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }}
+    .score-positive {{
+      color: #008a20;
+    }}
+    .score-negative {{
+      color: #b32d2e;
+    }}
+    .score-neutral {{
+      color: #646970;
+    }}
+    .score-total {{
+      margin-top: 10px;
     }}
     .score {{
       font-size: 18px;
