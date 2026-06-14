@@ -118,7 +118,7 @@ def action_form(ticket_id: str) -> str:
         <option value="props">Props</option>
         <option value="committed">Committed</option>
       </select>
-      <input type="text" name="reason" placeholder="Reason / note" class="conditional-field">
+      <input type="text" name="reason" placeholder="Review notes" class="conditional-field">
       <button type="submit" class="conditional-field" disabled>Save</button>
     </form>
     """
@@ -208,31 +208,41 @@ def table_html(title: str, items: list[dict], limit: int | None = None) -> str:
         <tr class="tray-row" data-tray="{html.escape(ticket_id)}">
           <td colspan="5">
             <div class="tray">
-              <h3>Ticket #{html.escape(ticket_id)}</h3>
-              <p><strong>{html.escape(item_summary(item))}</strong></p>
-
-              <div class="tray-section tray-workspace">
+              <div class="tray-header tray-header-{html.escape(tier_class)}">
                 <div>
-                  <h4>Tools</h4>
-                  <div class="tools">
-                    <a class="button-link" href="{html.escape(trac_url(ticket_id))}" target="_blank">Open Trac</a>
-                    <button type="button" class="copy-button" data-context="{context}">Copy Details</button>
-                  </div>
+                  <h3>#{html.escape(ticket_id)}</h3>
+                  <p>{html.escape(item_summary(item))}</p>
+                </div>
+                <div class="tray-meta">
+                  <span class="tier-label tier-label-{html.escape(tier_class)}">{html.escape(tier_label)}</span>
+                  <strong>Score {item["score"]}</strong>
+                </div>
+              </div>
+
+              <div class="tray-section tray-grid">
+                <div class="tray-panel">
+                  <h4>Ranking signals</h4>
+                  <div class="tray-reasons">{reasons}</div>
+                  <p class="tray-help tray-panel-note">These signals contributed to this ticket's score.</p>
                 </div>
 
-                <div>
-                  <h4>Decision</h4>
+                <div class="tray-panel">
+                  <h4>Score breakdown</h4>
+                  {breakdown}
+                  <p class="score-total">Final score: <strong>{item["score"]}</strong></p>
+                </div>
+
+                <div class="tray-panel">
+                  <h4>Review tools & decision</h4>
+                  <div class="tools tools-inline">
+                    <a class="button-link" href="{html.escape(trac_url(ticket_id))}" target="_blank">Open Trac ↗</a>
+                    <button type="button" class="copy-button" data-context="{context}">Copy Details ⧉</button>
+                  </div>
+
+                  <h4 class="tray-subhead">Decision</h4>
+                  <p class="tray-help">Choose a review outcome. Notes appear after selecting an action.</p>
                   <div class="actions">{action_form(ticket_id)}</div>
                 </div>
-              </div>
-              <div class="tray-section">
-                <h4>Ranking signals</h4>
-                <div class="tray-reasons">{reasons}</div>
-              </div>
-              <div class="tray-section">
-                <h4>Score breakdown</h4>
-                {breakdown}
-                <p class="score-total">Final score: <strong>{item["score"]}</strong></p>
               </div>
             </div>
           </td>
@@ -404,11 +414,41 @@ def page_html(message: str = "") -> str:
       padding: 18px 22px;
       border-top: 1px solid #f0f0f1;
     }}
-    .tray h3 {{
-      margin: 0 0 8px;
+    .tray-header {{
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid #dcdcde;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 14px;
     }}
+    .tray-header h3 {{
+      margin: 0 0 6px;
+      font-size: 18px;
+    }}
+    .tray-header p {{
+      margin: 0;
+      font-weight: 700;
+    }}
+    .tray-meta {{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      white-space: nowrap;
+    }}
+    .tray-header-immediate {{ border-left: 6px solid #2563eb; }}
+    .tray-header-strong {{ border-left: 6px solid #7c3aed; }}
+    .tray-header-watching {{ border-left: 6px solid #d97706; }}
+    .tray-header-standard {{ border-left: 6px solid transparent; }}
     .tray p {{
       margin: 0 0 8px;
+    }}
+    .tray-help {{
+      color: #646970;
+      font-size: 13px;
     }}
     .tray-section {{
       margin-top: 14px;
@@ -425,15 +465,30 @@ def page_html(message: str = "") -> str:
       flex-wrap: wrap;
       gap: 6px;
     }}
-    .tray-workspace {{
+    .tray-grid {{
       display: grid;
-      grid-template-columns: minmax(160px, 220px) minmax(260px, 1fr);
-      gap: 24px;
-      align-items: start;
-      padding: 14px;
+      grid-template-columns: minmax(260px, 0.9fr) minmax(280px, 1fr) minmax(300px, 1.1fr);
+      gap: 14px;
+      align-items: stretch;
+    }}
+    .tray-panel {{
       background: #fff;
       border: 1px solid #dcdcde;
       border-radius: 8px;
+      padding: 14px;
+      min-height: 160px;
+    }}
+    .tray-panel-note {{
+      margin-top: 18px;
+    }}
+    .tools-inline {{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      max-width: 340px;
+    }}
+    .tray-subhead {{
+      margin-top: 18px !important;
     }}
     .score-breakdown {{
       list-style: none;
