@@ -1,4 +1,10 @@
 {
+  "33073": {
+    "status": "watch",
+    "reason": "Needs refresh/dev feedback",
+    "notes": "Good candidate, but verify latest patch applies and dev feedback is addressed before testing.",
+    "updated_at": "2026-06-14T08:11:40.103Z"
+  },
   "65345": {
     "notes": "",
     "reason": "Too complex for quick testing",
