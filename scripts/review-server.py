@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import html
-import importlib.util
 import re
 import subprocess
 import sys
@@ -15,6 +14,12 @@ from urllib.parse import parse_qs, urlparse
 from radarlib import (
     ROOT,
     trac_url,
+    collect_items,
+    group_items,
+    priority_tier,
+    ranking_signal_labels,
+    score_breakdown as shared_score_breakdown,
+    signal_class,
     first_value,
     SUMMARY_KEYS,
     COMPONENT_KEYS,
@@ -26,16 +31,6 @@ from radarlib import (
     MODIFIED_KEYS,
     CREATED_KEYS,
 )
-
-dashboard_path = Path(__file__).resolve().parent / "generate-dashboard.py"
-spec = importlib.util.spec_from_file_location("generate_dashboard", dashboard_path)
-generate_dashboard = importlib.util.module_from_spec(spec)
-assert spec.loader is not None
-spec.loader.exec_module(generate_dashboard)
-
-collect_items = generate_dashboard.collect_items
-group_items = generate_dashboard.group_items
-priority_tier = generate_dashboard.priority_tier
 
 HOST = "127.0.0.1"
 PORT = 8765
@@ -125,41 +120,11 @@ def action_form(ticket_id: str) -> str:
 
 
 def reason_badges(reasons: list[str]) -> str:
-    labels = []
-
-    for reason in reasons:
-        lower = reason.lower()
-
-        if "has patch" in lower:
-            labels.append(("patch", "Has Patch"))
-        elif "needs testing" in lower:
-            labels.append(("testing", "Needs Testing"))
-        elif "good first bug" in lower:
-            labels.append(("first", "Good First Bug"))
-        elif "dev feedback" in lower:
-            labels.append(("feedback", "Dev Feedback"))
-        elif "reporter feedback" in lower:
-            labels.append(("feedback", "Reporter Feedback"))
-        elif "has owner" in lower:
-            labels.append(("owner", "Has Owner"))
-        elif "recent activity" in lower:
-            labels.append(("recent", "Recent Activity"))
-        elif "preferred component" in lower:
-            labels.append(("component", "Preferred Component"))
-
-    if not labels:
-        labels.append(("standard", "Scored Candidate"))
-
-    seen = set()
     badges = []
 
-    for badge_class, label in labels:
-        if label in seen:
-            continue
-
-        seen.add(label)
+    for label in ranking_signal_labels(reasons):
         badges.append(
-            f'<span class="reason-badge reason-{html.escape(badge_class)}">{html.escape(label)}</span>'
+            f'<span class="reason-badge reason-{html.escape(signal_class(label))}">{html.escape(label)}</span>'
         )
 
     return " ".join(badges)
@@ -168,16 +133,10 @@ def reason_badges(reasons: list[str]) -> str:
 def score_breakdown(reasons: list[str]) -> str:
     rows = []
 
-    for reason in reasons:
-        match = re.search(r"([+-]\d+)", reason)
-        points = match.group(1) if match else ""
-        label = reason.replace(points, "").strip(" ,") if points else reason
-
-        point_class = "positive" if points.startswith("+") else "negative" if points.startswith("-") else "neutral"
-
+    for item in shared_score_breakdown(reasons):
         rows.append(
-            f'<li><span class="score-points score-{point_class}">{html.escape(points)}</span> '
-            f'<span>{html.escape(label)}</span></li>'
+            f'<li><span class="score-points score-{html.escape(item["polarity"])}">{html.escape(item["points"])}</span> '
+            f'<span>{html.escape(item["label"])}</span></li>'
         )
 
     return "<ul class=\"score-breakdown\">" + "".join(rows) + "</ul>"
@@ -567,6 +526,8 @@ def page_html(message: str = "") -> str:
     .reason-first {{ background: #fef3c7; color: #92400e; }}
     .reason-feedback {{ background: #ede9fe; color: #6d28d9; }}
     .reason-owner {{ background: #e0f2fe; color: #075985; }}
+    .reason-priority {{ background: #e0f2fe; color: #075985; }}
+    .reason-refresh {{ background: #ffedd5; color: #9a3412; }}
     .reason-recent {{ background: #ccfbf1; color: #115e59; }}
     .reason-component {{ background: #fce7f3; color: #9d174d; }}
 

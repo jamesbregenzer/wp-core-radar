@@ -17,17 +17,18 @@ WP Core Radar helps answer:
 
 WP Core Radar does not auto-comment on Trac, automate contribution activity, or bypass WordPress.org access controls. It is intentionally a recommendation and review workflow, not a bot.
 
-## Current workflow
+## Current architecture
 
 ```text
-Collect Trac CSV exports
-Archive raw datasets under data/raw/
-Score tickets deterministically
-Generate Markdown and HTML reports
-Review candidates in the local admin console
-Act manually in Trac when appropriate
-Record outcomes and review decisions
+Mac Mini browser collector
+  → archived raw Trac CSVs
+  → deterministic scoring
+  → Markdown report + public dashboard
+  → GitHub
+  → Cloudflare Pages/Worker routing
 ```
+
+The Mac Mini is an intentional part of the system because the CSV collection flow depends on the local browser/network environment. GitHub and Cloudflare host the generated artifacts after the Mac Mini pushes updates.
 
 ## Main commands
 
@@ -43,6 +44,12 @@ Regenerate reports without fetching new Trac data:
 python3 scripts/run-radar.py --skip-fetch
 ```
 
+Run one configured query:
+
+```bash
+python3 scripts/run-radar.py --query general_needs_testing
+```
+
 Generate only the public dashboard:
 
 ```bash
@@ -53,6 +60,12 @@ Generate only the Markdown report:
 
 ```bash
 python3 scripts/generate-report.py
+```
+
+Record a review decision:
+
+```bash
+python3 scripts/review-ticket.py 33073 shortlist "Good first contribution candidate"
 ```
 
 Run the local private review console:
@@ -73,10 +86,19 @@ http://127.0.0.1:8765/radar/admin
 - `reports/latest.md` is the latest Markdown report.
 - `reports/radar-YYYY-MM-DD.md` is the dated Markdown report.
 - `data/reviews/reviews.json` stores human review decisions as constrained metadata keyed by ticket ID.
-- `data/outcomes/outcomes.csv` stores contribution outcomes.
+- `data/outcomes/outcomes.csv` stores manually maintained contribution outcomes.
+- `data/raw/manual/YYYY-MM-DD/<query_slug>.csv` stores archived Trac CSV exports.
 
 ## Deployment
 
 The public dashboard is designed to be served at `/radar/` through Cloudflare Pages/Workers routing.
 
 The local admin console is intentionally not published by the static dashboard. A future `/radar/admin/` route should authenticate before writing review metadata, and should only update the constrained reviews JSON file.
+
+## Project docs
+
+- `docs/architecture.md` — system architecture and boundaries
+- `docs/mac-mini-collector.md` — local collection workflow
+- `docs/scoring-rubric.md` — deterministic scoring rules
+- `docs/outcome-tracking.md` — review and contribution state
+- `docs/failed-approaches.md` — decisions not to repeat without a reason

@@ -3,62 +3,37 @@
 
 from __future__ import annotations
 
+import argparse
 import sys
 from datetime import datetime, timezone
 
-from radarlib import load_reviews, normalize_ticket_id, save_reviews
-
-VALID_STATUSES = {
-    "new",
-    "shortlist",
-    "watch",
-    "reject",
-    "tested",
-    "commented",
-    "props",
-    "committed",
-}
-
-
-def usage() -> None:
-    print("Usage:")
-    print("  python3 scripts/review-ticket.py <ticket> <status> <reason> [notes]")
-    print("")
-    print("Statuses:")
-    print("  " + ", ".join(sorted(VALID_STATUSES)))
-    raise SystemExit(1)
+from radarlib import VALID_REVIEW_STATUSES, load_reviews, normalize_ticket_id, save_reviews
 
 
 def main() -> int:
-    if len(sys.argv) < 4:
-        usage()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("ticket", help="WordPress Trac ticket ID or URL.")
+    parser.add_argument("status", choices=sorted(VALID_REVIEW_STATUSES), help="Review decision status.")
+    parser.add_argument("reason", help="Short reason or note shown in review metadata.")
+    parser.add_argument("notes", nargs="?", default="", help="Optional longer review notes.")
+    args = parser.parse_args()
 
-    ticket = normalize_ticket_id(sys.argv[1].strip())
-    status = sys.argv[2].strip().lower()
-    reason = sys.argv[3].strip()
-    notes = sys.argv[4].strip() if len(sys.argv) > 4 else ""
-
+    ticket = normalize_ticket_id(args.ticket)
     if not ticket:
-        print("Invalid ticket ID.")
-        usage()
-
-    if status not in VALID_STATUSES:
-        print(f"Invalid status: {status}")
-        usage()
+        print("Invalid ticket ID.", file=sys.stderr)
+        return 1
 
     reviews = load_reviews()
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-
     reviews[ticket] = {
-        "status": status,
-        "reason": reason,
-        "notes": notes,
+        "status": args.status,
+        "reason": args.reason.strip(),
+        "notes": args.notes.strip(),
         "updated_at": now,
     }
 
     save_reviews(reviews)
-
-    print(f"Recorded review for #{ticket}: {status} — {reason}")
+    print(f"Recorded review for #{ticket}: {args.status} — {args.reason}")
     return 0
 
 

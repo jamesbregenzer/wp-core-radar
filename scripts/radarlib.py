@@ -9,6 +9,7 @@ or comment on in WordPress Trac.
 from __future__ import annotations
 
 import csv
+from collections import defaultdict
 import json
 import re
 from dataclasses import dataclass
@@ -294,3 +295,239 @@ def score_ticket(row: dict[str, Any], query_meta: dict[str, Any], outcomes: dict
 
 def trac_url(ticket_id: str) -> str:
     return f"https://core.trac.wordpress.org/ticket/{ticket_id}"
+
+# Shared review/grouping helpers -------------------------------------------------
+
+PRIORITY_TARGET_LIMIT = 12
+PRIORITY_TARGET_MIN_SCORE = 150
+COMPLETED_REVIEW_STATUSES = {"tested", "commented", "props", "committed"}
+VALID_REVIEW_STATUSES = {
+    "new",
+    "shortlist",
+    "watch",
+    "reject",
+    "tested",
+    "commented",
+    "props",
+    "committed",
+}
+
+
+def review_status(item: dict[str, Any]) -> str:
+    review = item.get("review") or {}
+    return str(review.get("status", "")).strip().lower()
+
+
+def priority_tier(item: dict[str, Any]) -> tuple[str, str]:
+    score = int(item.get("score", 0))
+
+    if score >= 165:
+        return "immediate", "Immediate Review"
+    if score >= 150:
+        return "strong", "Strong Candidate"
+    if score >= 130:
+        return "watching", "Worth Watching"
+
+    return "standard", "Standard"
+
+
+def is_priority_target(item: dict[str, Any]) -> bool:
+    if review_status(item):
+        return False
+
+    if int(item.get("score", 0)) < PRIORITY_TARGET_MIN_SCORE:
+        return False
+
+    reasons = " ".join(item.get("reasons", [])).lower()
+
+    has_action_signal = any(
+        signal in reasons
+        for signal in ("needs testing", "has patch", "good first bug")
+    )
+    has_manageable_signal = any(
+        signal in reasons
+        for signal in ("recent activity", "healthy comment count", "has owner")
+    )
+    has_stale_penalty = any(
+        penalty in reasons
+        for penalty in (
+            "very old ticket",
+            "stale activity",
+            "very large thread",
+            "already produced props",
+            "already tested",
+        )
+    )
+
+    return has_action_signal and has_manageable_signal and not has_stale_penalty
+
+
+def group_items(items: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    groups: dict[str, list[dict[str, Any]]] = {
+        "priority": [],
+        "top": [],
+        "shortlist": [],
+        "watch": [],
+        "completed": [],
+        "rejected": [],
+    }
+
+    for item in items:
+        status = review_status(item)
+
+        if status == "reject":
+            groups["rejected"].append(item)
+        elif status == "shortlist":
+            groups["shortlist"].append(item)
+        elif status == "watch":
+            groups["watch"].append(item)
+        elif status in COMPLETED_REVIEW_STATUSES:
+            groups["completed"].append(item)
+        elif is_priority_target(item) and len(groups["priority"]) < PRIORITY_TARGET_LIMIT:
+            groups["priority"].append(item)
+        else:
+            groups["top"].append(item)
+
+    return groups
+
+
+def collect_items() -> tuple[list[dict[str, Any]], dict[str, set[str]], dict[str, Any]]:
+    query_list = load_queries()
+    query_meta = {query["slug"]: query for query in query_list}
+    outcomes = load_outcomes()
+    reviews = load_reviews()
+    datasets = discover_datasets()
+
+    scored_by_ticket: dict[str, dict[str, Any]] = {}
+    duplicate_sources: dict[str, set[str]] = defaultdict(set)
+
+    for dataset in datasets:
+        meta = query_meta.get(
+            dataset.query_slug,
+            {"priority": 50, "name": dataset.query_slug, "track": dataset.query_slug},
+        )
+
+        for row in read_ticket_rows(dataset):
+            score, reasons = score_ticket(row, meta, outcomes)
+            ticket_id = row["ticket_id"]
+            duplicate_sources[ticket_id].add(dataset.query_slug)
+
+            candidate = {
+                "ticket_id": ticket_id,
+                "score": score,
+                "reasons": reasons,
+                "row": row,
+                "query": meta,
+                "review": reviews.get(ticket_id),
+            }
+
+            if ticket_id not in scored_by_ticket or score > scored_by_ticket[ticket_id]["score"]:
+                scored_by_ticket[ticket_id] = candidate
+
+    ranked = sorted(
+        scored_by_ticket.values(),
+        key=lambda item: (-int(item["score"]), int(item["ticket_id"])),
+    )
+
+    return ranked, duplicate_sources, {
+        "datasets": datasets,
+        "outcomes": outcomes,
+        "reviews": reviews,
+    }
+
+
+# Shared presentation helpers ----------------------------------------------------
+
+
+def pretty_label(value: str) -> str:
+    words = value.replace("_", " ").replace("-", " ").strip().split()
+    return " ".join(word.upper() if word.lower() in {"ui", "ux"} else word.capitalize() for word in words)
+
+
+def clean_reason_label(reason: str) -> str:
+    reason = re.sub(r"[+-]\d+", "", reason)
+    return pretty_label(reason.strip(" ,"))
+
+
+def signal_class(label: str) -> str:
+    lowered = label.lower()
+
+    if "priority" in lowered:
+        return "priority"
+    if "patch" in lowered:
+        return "patch"
+    if "testing" in lowered or "unit test" in lowered:
+        return "testing"
+    if "first bug" in lowered or "good first" in lowered:
+        return "first"
+    if "feedback" in lowered:
+        return "feedback"
+    if "owner" in lowered:
+        return "owner"
+    if "refresh" in lowered:
+        return "refresh"
+    if "recent" in lowered:
+        return "recent"
+    if "component" in lowered:
+        return "component"
+
+    return "standard"
+
+
+def signal_labels(keywords: str, reasons: list[str]) -> list[str]:
+    labels = [pretty_label(keyword) for keyword in keywords.split()]
+    labels.extend(clean_reason_label(reason) for reason in reasons)
+
+    seen: set[str] = set()
+    unique: list[str] = []
+
+    for label in labels:
+        key = label.lower()
+        if not label or key in seen:
+            continue
+        seen.add(key)
+        unique.append(label)
+
+    return unique
+
+
+def ranking_signal_labels(reasons: list[str]) -> list[str]:
+    labels: list[str] = []
+
+    for reason in reasons:
+        lower = reason.lower()
+        if "has patch" in lower:
+            labels.append("Has Patch")
+        elif "needs testing" in lower:
+            labels.append("Needs Testing")
+        elif "good first bug" in lower:
+            labels.append("Good First Bug")
+        elif "dev feedback" in lower:
+            labels.append("Dev Feedback")
+        elif "reporter feedback" in lower:
+            labels.append("Reporter Feedback")
+        elif "has owner" in lower:
+            labels.append("Has Owner")
+        elif "recent activity" in lower:
+            labels.append("Recent Activity")
+        elif "preferred component" in lower:
+            labels.append("Preferred Component")
+
+    return labels or ["Scored Candidate"]
+
+
+def score_breakdown(reasons: list[str]) -> list[dict[str, str]]:
+    rows: list[dict[str, str]] = []
+
+    for reason in reasons:
+        match = re.search(r"([+-]\d+)", reason)
+        points = match.group(1) if match else ""
+        label = reason.replace(points, "").strip(" ,") if points else reason
+        polarity = "positive" if points.startswith("+") else "negative" if points.startswith("-") else "neutral"
+        rows.append({"points": points, "label": pretty_label(label), "polarity": polarity})
+
+    return rows
+
+
+def discovery_track_label(sources: set[str]) -> str:
+    return ", ".join(pretty_label(source) for source in sorted(sources))

@@ -4,8 +4,6 @@
 from __future__ import annotations
 
 import html
-import re
-from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -14,202 +12,26 @@ from radarlib import (
     KEYWORDS_KEYS,
     STATUS_KEYS,
     SUMMARY_KEYS,
-    discover_datasets,
+    collect_items,
+    discovery_track_label,
     first_value,
-    load_outcomes,
-    load_queries,
-    load_reviews,
-    read_ticket_rows,
-    score_ticket,
+    group_items,
+    pretty_label,
+    priority_tier,
+    signal_class,
+    signal_labels,
     trac_url,
 )
 
-
-PRIORITY_TARGET_LIMIT = 12
-PRIORITY_TARGET_MIN_SCORE = 150
-COMPLETED_REVIEW_STATUSES = {"tested", "commented", "props", "committed"}
+PUBLIC_TOP_LIMIT = 50
 
 
-def review_status(item: dict[str, Any]) -> str:
-    review = item.get("review") or {}
-    return review.get("status", "").strip().lower()
-
-
-def priority_tier(item: dict[str, Any]) -> tuple[str, str]:
-    score = item.get("score", 0)
-
-    if score >= 165:
-        return "immediate", "Immediate Review"
-    if score >= 150:
-        return "strong", "Strong Candidate"
-    if score >= 130:
-        return "watching", "Worth Watching"
-
-    return "standard", "Standard"
-
-
-def is_priority_target(item: dict[str, Any]) -> bool:
-    if review_status(item):
-        return False
-
-    if item.get("score", 0) < PRIORITY_TARGET_MIN_SCORE:
-        return False
-
-    reasons = " ".join(item.get("reasons", [])).lower()
-
-    has_action_signal = (
-        "needs testing" in reasons
-        or "has patch" in reasons
-        or "good first bug" in reasons
-    )
-
-    has_recent_or_manageable_signal = (
-        "recent activity" in reasons
-        or "healthy comment count" in reasons
-        or "has owner" in reasons
-    )
-
-    has_stale_penalty = (
-        "very old ticket" in reasons
-        or "stale activity" in reasons
-        or "very large thread" in reasons
-        or "already produced props" in reasons
-        or "already tested" in reasons
-    )
-
-    return has_action_signal and has_recent_or_manageable_signal and not has_stale_penalty
-
-
-def group_items(items: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
-    groups: dict[str, list[dict[str, Any]]] = {
-        "priority": [],
-        "top": [],
-        "shortlist": [],
-        "watch": [],
-        "completed": [],
-        "rejected": [],
-    }
-
-    for item in items:
-        status = review_status(item)
-
-        if status == "reject":
-            groups["rejected"].append(item)
-        elif status == "shortlist":
-            groups["shortlist"].append(item)
-        elif status == "watch":
-            groups["watch"].append(item)
-        elif status in COMPLETED_REVIEW_STATUSES:
-            groups["completed"].append(item)
-        elif is_priority_target(item) and len(groups["priority"]) < PRIORITY_TARGET_LIMIT:
-            groups["priority"].append(item)
-        else:
-            groups["top"].append(item)
-
-    return groups
-
-
-def collect_items() -> tuple[list[dict[str, Any]], dict[str, set[str]], dict[str, Any]]:
-    query_list = load_queries()
-    query_meta = {query["slug"]: query for query in query_list}
-    outcomes = load_outcomes()
-    reviews = load_reviews()
-    datasets = discover_datasets()
-
-    scored_by_ticket: dict[str, dict[str, Any]] = {}
-    duplicate_sources: dict[str, set[str]] = defaultdict(set)
-
-    for dataset in datasets:
-        meta = query_meta.get(
-            dataset.query_slug,
-            {"priority": 50, "name": dataset.query_slug, "track": dataset.query_slug},
-        )
-
-        for row in read_ticket_rows(dataset):
-            score, reasons = score_ticket(row, meta, outcomes)
-            ticket_id = row["ticket_id"]
-            duplicate_sources[ticket_id].add(dataset.query_slug)
-
-            candidate = {
-                "ticket_id": ticket_id,
-                "score": score,
-                "reasons": reasons,
-                "row": row,
-                "query": meta,
-                "review": reviews.get(ticket_id),
-            }
-
-            if ticket_id not in scored_by_ticket or score > scored_by_ticket[ticket_id]["score"]:
-                scored_by_ticket[ticket_id] = candidate
-
-    ranked = sorted(
-        scored_by_ticket.values(),
-        key=lambda item: (-item["score"], int(item["ticket_id"])),
-    )
-
-    return ranked, duplicate_sources, {
-        "datasets": datasets,
-        "outcomes": outcomes,
-        "reviews": reviews,
-    }
-
-
-def pretty_label(value: str) -> str:
-    words = value.replace("_", " ").replace("-", " ").strip().split()
-    return " ".join(word.upper() if word.lower() in {"ui", "ux"} else word.capitalize() for word in words)
-
-
-def clean_reason_label(reason: str) -> str:
-    reason = re.sub(r"[+-]\d+", "", reason)
-    return pretty_label(reason.strip(" ,"))
-
-
-def signal_class(label: str) -> str:
-    lowered = label.lower()
-
-    if "priority" in lowered:
-        return "priority"
-    if "patch" in lowered:
-        return "patch"
-    if "testing" in lowered or "unit test" in lowered:
-        return "testing"
-    if "first bug" in lowered or "good first" in lowered:
-        return "first"
-    if "feedback" in lowered:
-        return "feedback"
-    if "owner" in lowered:
-        return "owner"
-    if "refresh" in lowered:
-        return "refresh"
-
-    return "standard"
-
-
-def signal_badge(label: str) -> str:
-    css_class = signal_class(label)
-    return f'<span class="signal-badge signal-{html.escape(css_class)}">{html.escape(label)}</span>'
+def html_badge(label: str, css_prefix: str = "signal") -> str:
+    return f'<span class="{css_prefix}-badge {css_prefix}-{html.escape(signal_class(label))}">{html.escape(label)}</span>'
 
 
 def signal_badges(keywords: str, reasons: list[str]) -> str:
-    labels = [pretty_label(keyword) for keyword in keywords.split()]
-    labels.extend(clean_reason_label(reason) for reason in reasons)
-
-    seen: set[str] = set()
-    badges: list[str] = []
-
-    for label in labels:
-        key = label.lower()
-        if not label or key in seen:
-            continue
-
-        seen.add(key)
-        badges.append(signal_badge(label))
-
-    return " ".join(badges)
-
-
-def discovery_track_label(sources: set[str]) -> str:
-    return ", ".join(pretty_label(source) for source in sorted(sources))
+    return " ".join(html_badge(label, "signal") for label in signal_labels(keywords, reasons))
 
 
 def ticket_row(item: dict[str, Any], duplicate_sources: dict[str, set[str]]) -> str:
@@ -238,7 +60,12 @@ def ticket_row(item: dict[str, Any], duplicate_sources: dict[str, set[str]]) -> 
 """
 
 
-def section_html(title: str, items: list[dict[str, Any]], duplicate_sources: dict[str, set[str]], limit: int | None = None) -> str:
+def section_html(
+    title: str,
+    items: list[dict[str, Any]],
+    duplicate_sources: dict[str, set[str]],
+    limit: int | None = None,
+) -> str:
     display_items = items if limit is None else items[:limit]
     rows = "\n".join(ticket_row(item, duplicate_sources) for item in display_items)
 
@@ -315,10 +142,7 @@ def dashboard_css() -> str:
     .card-blue { border-left: 6px solid #2563eb; }
     .card-purple { border-left: 6px solid #7c3aed; }
     .card-amber { border-left: 6px solid #d97706; }
-
-    section {
-      margin-top: 32px;
-    }
+    section { margin-top: 32px; }
     h2 {
       display: flex;
       gap: 8px;
@@ -357,14 +181,11 @@ def dashboard_css() -> str:
     tr.tier-strong { border-left: 6px solid #7c3aed; }
     tr.tier-watching { border-left: 6px solid #d97706; }
     tr.tier-standard { border-left: 6px solid transparent; }
-
     td.score {
       font-weight: 700;
       font-size: 18px;
     }
-    .signals {
-      min-width: 300px;
-    }
+    .signals { min-width: 300px; }
     .signal-badge,
     .tier-label {
       display: inline-block;
@@ -376,38 +197,19 @@ def dashboard_css() -> str:
       white-space: nowrap;
     }
     .signal-standard,
-    .tier-label-standard {
-      background: #f3f4f6;
-      color: #4b5563;
-    }
+    .tier-label-standard { background: #f3f4f6; color: #4b5563; }
     .signal-priority,
-    .signal-owner {
-      background: #e0f2fe;
-      color: #075985;
-    }
+    .signal-owner { background: #e0f2fe; color: #075985; }
     .signal-patch,
-    .tier-label-immediate {
-      background: #dbeafe;
-      color: #1d4ed8;
-    }
-    .signal-testing {
-      background: #dcfce7;
-      color: #166534;
-    }
+    .tier-label-immediate { background: #dbeafe; color: #1d4ed8; }
+    .signal-testing { background: #dcfce7; color: #166534; }
     .signal-first,
-    .tier-label-watching {
-      background: #fef3c7;
-      color: #92400e;
-    }
+    .tier-label-watching { background: #fef3c7; color: #92400e; }
     .signal-feedback,
-    .tier-label-strong {
-      background: #ede9fe;
-      color: #6d28d9;
-    }
-    .signal-refresh {
-      background: #ffedd5;
-      color: #9a3412;
-    }
+    .tier-label-strong { background: #ede9fe; color: #6d28d9; }
+    .signal-refresh { background: #ffedd5; color: #9a3412; }
+    .signal-recent { background: #ccfbf1; color: #115e59; }
+    .signal-component { background: #fce7f3; color: #9d174d; }
     a {
       color: #2271b1;
       font-weight: 600;
@@ -421,34 +223,26 @@ def dashboard_css() -> str:
       color: #646970;
       font-size: 13px;
     }
-
     @media (max-width: 900px) {
       header { padding: 24px 18px; }
       header h1 { font-size: 26px; }
       main { padding: 18px; }
       .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
       table,
       thead,
       tbody,
       th,
       td,
-      tr {
-        display: block;
-      }
-
+      tr { display: block; }
       thead { display: none; }
-
       tr {
         padding: 14px;
         border-bottom: 1px solid #dcdcde;
       }
-
       td {
         border: 0;
         padding: 6px 0;
       }
-
       td::before {
         content: attr(data-label);
         display: block;
@@ -458,10 +252,8 @@ def dashboard_css() -> str:
         text-transform: uppercase;
         margin-bottom: 2px;
       }
-
       td.score { font-size: 24px; }
     }
-
     @media (max-width: 520px) {
       .summary { grid-template-columns: 1fr; }
     }
@@ -504,7 +296,7 @@ def build_dashboard() -> str:
     </div>
 
     {section_html("Priority Targets", groups["priority"], duplicate_sources)}
-    {section_html("Top Opportunities", groups["top"], duplicate_sources, limit=50)}
+    {section_html("Top Opportunities", groups["top"], duplicate_sources, limit=PUBLIC_TOP_LIMIT)}
     {section_html("Shortlisted", groups["shortlist"], duplicate_sources)}
     {section_html("Watching", groups["watch"], duplicate_sources)}
     {section_html("Completed / Acted On", groups["completed"], duplicate_sources)}
@@ -523,9 +315,8 @@ def main() -> int:
     radar_dir = Path("docs") / "radar"
     radar_dir.mkdir(parents=True, exist_ok=True)
 
-    dashboard = build_dashboard()
     output = radar_dir / "index.html"
-    output.write_text(dashboard, encoding="utf-8")
+    output.write_text(build_dashboard(), encoding="utf-8")
 
     print(f"Wrote {output}")
     return 0

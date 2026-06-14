@@ -1,6 +1,6 @@
 # Outcome Tracking
 
-WP Core Radar tracks contribution outcomes and review decisions so scoring can improve over time without automating contribution activity.
+WP Core Radar tracks contribution outcomes and review decisions so scoring and workflow sections can improve over time without automating contribution activity.
 
 ## Contribution Outcomes
 
@@ -43,7 +43,7 @@ Review decisions live in:
 data/reviews/reviews.json
 ```
 
-Reviews are stored as JSON keyed by ticket ID because this format is easier for the admin console and a future protected Worker endpoint to validate safely.
+Reviews are stored as JSON keyed by ticket ID because this format is easy for both the local admin console and a future protected Worker endpoint to validate safely.
 
 Example:
 

@@ -48,10 +48,7 @@
     .card-blue { border-left: 6px solid #2563eb; }
     .card-purple { border-left: 6px solid #7c3aed; }
     .card-amber { border-left: 6px solid #d97706; }
-
-    section {
-      margin-top: 32px;
-    }
+    section { margin-top: 32px; }
     h2 {
       display: flex;
       gap: 8px;
@@ -90,14 +87,11 @@
     tr.tier-strong { border-left: 6px solid #7c3aed; }
     tr.tier-watching { border-left: 6px solid #d97706; }
     tr.tier-standard { border-left: 6px solid transparent; }
-
     td.score {
       font-weight: 700;
       font-size: 18px;
     }
-    .signals {
-      min-width: 300px;
-    }
+    .signals { min-width: 300px; }
     .signal-badge,
     .tier-label {
       display: inline-block;
@@ -109,38 +103,19 @@
       white-space: nowrap;
     }
     .signal-standard,
-    .tier-label-standard {
-      background: #f3f4f6;
-      color: #4b5563;
-    }
+    .tier-label-standard { background: #f3f4f6; color: #4b5563; }
     .signal-priority,
-    .signal-owner {
-      background: #e0f2fe;
-      color: #075985;
-    }
+    .signal-owner { background: #e0f2fe; color: #075985; }
     .signal-patch,
-    .tier-label-immediate {
-      background: #dbeafe;
-      color: #1d4ed8;
-    }
-    .signal-testing {
-      background: #dcfce7;
-      color: #166534;
-    }
+    .tier-label-immediate { background: #dbeafe; color: #1d4ed8; }
+    .signal-testing { background: #dcfce7; color: #166534; }
     .signal-first,
-    .tier-label-watching {
-      background: #fef3c7;
-      color: #92400e;
-    }
+    .tier-label-watching { background: #fef3c7; color: #92400e; }
     .signal-feedback,
-    .tier-label-strong {
-      background: #ede9fe;
-      color: #6d28d9;
-    }
-    .signal-refresh {
-      background: #ffedd5;
-      color: #9a3412;
-    }
+    .tier-label-strong { background: #ede9fe; color: #6d28d9; }
+    .signal-refresh { background: #ffedd5; color: #9a3412; }
+    .signal-recent { background: #ccfbf1; color: #115e59; }
+    .signal-component { background: #fce7f3; color: #9d174d; }
     a {
       color: #2271b1;
       font-weight: 600;
@@ -154,34 +129,26 @@
       color: #646970;
       font-size: 13px;
     }
-
     @media (max-width: 900px) {
       header { padding: 24px 18px; }
       header h1 { font-size: 26px; }
       main { padding: 18px; }
       .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
       table,
       thead,
       tbody,
       th,
       td,
-      tr {
-        display: block;
-      }
-
+      tr { display: block; }
       thead { display: none; }
-
       tr {
         padding: 14px;
         border-bottom: 1px solid #dcdcde;
       }
-
       td {
         border: 0;
         padding: 6px 0;
       }
-
       td::before {
         content: attr(data-label);
         display: block;
@@ -191,10 +158,8 @@
         text-transform: uppercase;
         margin-bottom: 2px;
       }
-
       td.score { font-size: 24px; }
     }
-
     @media (max-width: 520px) {
       .summary { grid-template-columns: 1fr; }
     }
@@ -204,7 +169,7 @@
 <body>
   <header>
     <h1>WP Core Radar Dashboard</h1>
-    <p>Generated 2026-06-14 06:02. Radar recommends opportunities only. Humans make contribution decisions.</p>
+    <p>Generated 2026-06-14 06:30. Radar recommends opportunities only. Humans make contribution decisions.</p>
   </header>
 
   <main>

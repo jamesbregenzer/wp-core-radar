@@ -2,9 +2,11 @@
 
 This file records approaches that were tried or considered and should not be repeated without a clear reason.
 
-## Publishing the admin console publicly
+## Publishing the local admin console directly
 
-The review console writes to local CSV files and can run follow-up scripts. It should remain local-only until proper authentication, authorization, and write-safety controls are added.
+The local review console writes review state and runs follow-up scripts. It should not be exposed directly to the public internet.
+
+A future public `/radar/admin/` route should authenticate first and only write constrained review metadata to `data/reviews/reviews.json`.
 
 ## Treating Radar as a Trac automation bot
 
@@ -12,7 +14,7 @@ Radar is intentionally human-in-the-loop. It should not auto-comment on Trac, su
 
 ## Keeping every raw field in the public dashboard
 
-Early dashboard versions exposed many raw columns such as component, milestone, separate keyword lists, review reason, and source slugs. This made the dashboard feel like a CSV export instead of a product.
+Early dashboard versions exposed many raw columns such as component, milestone, separate keyword lists, review reason, and raw source slugs. This made the dashboard feel like a CSV export instead of a product.
 
 The current public dashboard intentionally keeps the table focused:
 
@@ -20,10 +22,16 @@ The current public dashboard intentionally keeps the table focused:
 Score | Tier | Ticket | Summary | Track | Trac Status | Discovery Track | Signals
 ```
 
-Detailed scoring and action controls belong in the local admin console, not the public dashboard.
+Detailed scoring and action controls belong in the admin console, not the public dashboard.
 
-## Publishing directly from GitHub Pages custom domain
+## Publishing directly from a GitHub Pages custom domain
 
 GitHub Pages works for a single repository/domain mapping, but it does not preserve the desired long-term architecture where `james.bregenzer.dev` can become a portfolio site while `/radar/` serves this project.
 
 Cloudflare routing is the preferred direction for this project.
+
+## Replacing the Mac Mini collector with GitHub-hosted Actions
+
+GitHub-hosted runners do not share the Mac Mini's local browser/network context. Because Trac CSV collection depends on that context, GitHub Actions should not be the primary collector.
+
+Actions may still be useful later for linting or validation after the Mac Mini pushes updates.

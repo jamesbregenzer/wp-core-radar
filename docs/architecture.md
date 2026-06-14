@@ -2,43 +2,63 @@
 
 WP Core Radar is a deterministic, human-in-the-loop contribution intelligence workflow for WordPress Core.
 
-## Pipeline
+## System Overview
 
 ```text
 WordPress Trac
   ↓
-Browser-assisted CSV fetcher
+Mac Mini browser-assisted collector
   ↓
-Archived raw datasets
+Archived raw CSV datasets
   ↓
-Automatic dataset discovery
+Deterministic scoring and grouping
   ↓
-Deterministic scoring
+Markdown report + public dashboard
   ↓
-Unified opportunity report
+GitHub repository
   ↓
-Human review and local testing
-  ↓
-Manual Trac contribution
-  ↓
-Outcome tracking
+Cloudflare Pages/Worker routing
 ```
+
+The Mac Mini remains central because the CSV collection step depends on the local browser/network environment. GitHub and Cloudflare host the resulting static artifacts; they do not currently collect Trac data.
+
+## Public / Private Split
+
+```text
+/radar/          Public, static dashboard
+/radar/admin/    Future authenticated admin UI
+```
+
+The public dashboard is read-only. It is safe to publish because it contains scored ticket recommendations and review metadata only.
+
+Admin write-back should remain narrowly scoped to `data/reviews/reviews.json`. It should not become a general repository editor.
+
+## Data Flow
+
+1. Query tracks are configured in `config/queries.json`.
+2. `scripts/browser-fetch.py` opens each configured query in Firefox and waits for `query.csv`.
+3. `scripts/import-download.py` archives the downloaded CSV under `data/raw/manual/YYYY-MM-DD/`.
+4. `scripts/radarlib.py` discovers datasets, normalizes ticket rows, loads outcomes/reviews, scores tickets, and groups workflow sections.
+5. `scripts/generate-report.py` writes `reports/latest.md` and a dated report.
+6. `scripts/generate-dashboard.py` writes `docs/radar/index.html`.
+7. Cloudflare deploys the static dashboard after the repo is pushed.
+
+## Shared Logic
+
+Core parsing, scoring, grouping, review status handling, and presentation labels belong in `scripts/radarlib.py`.
+
+Script-specific files should focus on their output format:
+
+- `generate-dashboard.py` renders public HTML.
+- `generate-report.py` renders Markdown.
+- `review-server.py` renders the local admin console.
+- `run-radar.py` orchestrates collection and generation.
 
 ## Guardrails
 
 Radar never auto-comments on Trac and never attempts to automate contribution activity. It identifies opportunities, explains why they ranked, and leaves contribution decisions to a human reviewer.
 
-## Phase 2 additions
-
-Phase 2 adds multi-query support and unified reporting:
-
-- `config/queries.json` defines enabled Trac query tracks.
-- `scripts/run-radar.py` loops through enabled queries.
-- `scripts/discover-datasets.py` inventories archived CSV files.
-- `scripts/generate-report.py` discovers all datasets and writes a unified ranked report.
-- `scripts/radarlib.py` centralizes parsing, scoring, outcome loading, and report helpers.
-
-## Dataset conventions
+## Dataset Conventions
 
 Preferred archive convention:
 
@@ -46,37 +66,10 @@ Preferred archive convention:
 data/raw/<source>/<YYYY-MM-DD>/<query_slug>.csv
 ```
 
-The discovery layer is intentionally tolerant. If older imports used `query.csv`, Radar still attempts to infer the source from the path.
+Current browser-assisted imports use:
 
-## Scoring principles
+```text
+data/raw/manual/YYYY-MM-DD/<query_slug>.csv
+```
 
-Scoring is deterministic and explainable. Each ranked ticket includes the major score reasons so the report is useful as a portfolio artifact and as a real contribution workflow tool.
-
-Initial scoring includes:
-
-- Query/track priority
-- Has patch
-- Needs testing
-- Dev feedback
-- Reporter feedback
-- Good first bug
-- Preferred components such as Media
-- Accessibility signals
-- Recent activity
-- Ticket age
-- Comment count
-- Known outcomes
-
-## Human workflow
-
-The report's recommended next step is always:
-
-1. Open the Trac ticket.
-2. Verify the current ticket state.
-3. Test locally if appropriate.
-4. Decide whether to comment manually.
-5. Record contribution outcomes in `data/outcomes/outcomes.csv` and review decisions in `data/reviews/reviews.json`.
-
-## Public and admin boundaries
-
-The public dashboard is static and published under `/radar/`. The admin workflow is intentionally a separate, authenticated path for future deployment. Admin write-back should remain narrowly scoped to review metadata in `data/reviews/reviews.json`; it should not become a general repository editor.
+The discovery layer remains tolerant of older archived paths, but new imports should follow the current convention.

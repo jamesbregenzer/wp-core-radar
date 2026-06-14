@@ -1,12 +1,26 @@
 # Mac Mini Collector
 
-The collector is designed to run from the local Mac Mini environment where browser-assisted Trac CSV downloads are reliable.
+The Mac Mini is an intentional part of the WP Core Radar architecture. It is the collection/build runner because the Trac CSV export workflow is most reliable from the local browser/network environment.
 
-## Why browser-assisted collection exists
+## Responsibilities
 
-WordPress Trac CSV exports can be easiest to collect through a normal browser session. The collector opens Firefox, waits for `query.csv` to download, imports it into the repository archive, and then closes Firefox.
+The Mac Mini is responsible for:
 
-## Collection command
+1. Opening configured WordPress Trac CSV queries in Firefox.
+2. Waiting for `query.csv` to finish downloading.
+3. Importing the CSV into `data/raw/manual/YYYY-MM-DD/<query_slug>.csv`.
+4. Regenerating the Markdown report and public dashboard.
+5. Committing and pushing changed data/report files when updates are ready.
+
+GitHub and Cloudflare are responsible for source control and static hosting after the Mac Mini pushes changes.
+
+## Why GitHub Actions does not collect data
+
+GitHub-hosted runners do not have the same local browser/network context as the Mac Mini. Because the Trac export flow depends on that environment, normal GitHub Actions should not replace the collector.
+
+GitHub Actions may be useful later for checks after the Mac Mini pushes, but not as the primary collector.
+
+## Main Commands
 
 Run all enabled query tracks:
 
@@ -26,7 +40,13 @@ Skip collection and rebuild reports only:
 python3 scripts/run-radar.py --skip-fetch
 ```
 
-## Archive convention
+Continue collecting remaining tracks if one browser fetch fails:
+
+```bash
+python3 scripts/run-radar.py --continue-on-error
+```
+
+## Archive Convention
 
 Imported CSV files are archived under:
 
@@ -34,4 +54,10 @@ Imported CSV files are archived under:
 data/raw/manual/YYYY-MM-DD/<query_slug>.csv
 ```
 
-This makes the dataset history inspectable and lets reports be regenerated from committed raw data.
+This makes dataset history inspectable and lets reports be regenerated from committed raw data.
+
+## Scheduling
+
+No scheduler should be assumed unless it exists in the Mac Mini environment. The intended future setup is a macOS LaunchAgent that runs `scripts/run-radar.py` on a predictable cadence.
+
+The LaunchAgent should call a small wrapper script rather than embedding complex logic directly in a `.plist` file.
