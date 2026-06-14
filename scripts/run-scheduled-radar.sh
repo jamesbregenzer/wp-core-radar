@@ -5,11 +5,17 @@ REPO_DIR="/Users/thor/Sites/wp-core-radar"
 LOG_PREFIX="[wp-core-radar]"
 PYTHON_BIN="/usr/local/opt/python@3.14/bin/python3.14"
 
-export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# LaunchAgents run with a minimal PATH. Put the Homebrew Python 3.14 bin
+# directory first so child scripts that call `python3` use the same runtime
+# as this wrapper instead of macOS' system Python.
+export PATH="/usr/local/opt/python@3.14/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PYTHON_BIN
 
 cd "$REPO_DIR"
 
 echo "$LOG_PREFIX Starting scheduled radar update at $(date)"
+echo "$LOG_PREFIX Using Python: $("$PYTHON_BIN" --version 2>&1)"
+echo "$LOG_PREFIX PATH: $PATH"
 
 git pull --rebase origin main
 
