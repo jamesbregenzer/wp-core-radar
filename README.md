@@ -1,58 +1,82 @@
 # WP Core Radar
 
-WP Core Radar is an intelligent contribution discovery and prioritization engine for WordPress Core contributors.
+WP Core Radar is a deterministic, human-in-the-loop contribution discovery and prioritization workflow for WordPress Core tickets.
 
-It helps identify high-value contribution opportunities, score them deterministically, and produce actionable recommendations so contributors can spend less time searching Trac and more time contributing.
+It collects ticket data from WordPress Trac, archives raw CSV exports, scores opportunities with explainable rules, and generates public and private review views so a human contributor can decide what to test, watch, reject, or act on manually.
 
-## Purpose
+## What this project is
 
 WP Core Radar helps answer:
 
 - Which WordPress Core tickets are worth reviewing today?
-- Which tickets are good patch-testing opportunities?
-- Which tickets match my strengths and available time?
-- Which opportunities are most likely to move Core forward?
+- Which tickets look like good patch-testing opportunities?
+- Which opportunities have clear signals such as patches, testing needs, owner activity, or feedback requests?
+- Which tickets have already been reviewed, rejected, watched, tested, commented on, or completed?
 
-## Initial Focus
+## What this project is not
 
-The first version focuses on:
+WP Core Radar does not auto-comment on Trac, automate contribution activity, or bypass WordPress.org access controls. It is intentionally a recommendation and review workflow, not a bot.
 
-- WordPress Core Trac tickets
-- Tickets with patches
-- Tickets needing testing
-- Media component opportunities
-- Recent contributor activity
-- Clear reproduction and testing paths
-
-## Core Principles
-
-- Human-in-the-loop contribution
-- Deterministic scoring before AI review
-- Transparent ranking reasons
-- Respectful use of WordPress.org resources
-- No auto-commenting on Trac
-- No spammy automation
-- No attempts to bypass access controls
-
-## Planned Workflow
+## Current workflow
 
 ```text
-Collect data
-Normalize opportunities
-Score deterministically
-Generate ranked reports
-Review top candidates
-Act manually and thoughtfully
-Track outcomes
+Collect Trac CSV exports
+Archive raw datasets under data/raw/
+Score tickets deterministically
+Generate Markdown and HTML reports
+Review candidates in the local admin console
+Act manually in Trac when appropriate
+Record outcomes and review decisions
 ```
 
-## Project Status
+## Main commands
 
-Early development.
+Run the full pipeline:
 
-Current milestone:
+```bash
+python3 scripts/run-radar.py
+```
 
-- Build the Thor-based Mac Mini collector
-- Fetch WordPress Core Trac data from a residential connection
-- Save raw opportunity data
-- Generate the first ranked report
+Regenerate reports without fetching new Trac data:
+
+```bash
+python3 scripts/run-radar.py --skip-fetch
+```
+
+Generate only the public dashboard:
+
+```bash
+python3 scripts/generate-dashboard.py
+```
+
+Generate only the Markdown report:
+
+```bash
+python3 scripts/generate-report.py
+```
+
+Run the local private review console:
+
+```bash
+python3 scripts/review-server.py
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8765/radar/admin
+```
+
+## Outputs
+
+- `docs/radar/index.html` is the public static dashboard.
+- `reports/latest.md` is the latest Markdown report.
+- `reports/radar-YYYY-MM-DD.md` is the dated Markdown report.
+- `data/reviews/reviews.csv` stores local review decisions.
+- `data/outcomes/outcomes.csv` stores contribution outcomes.
+
+## Deployment
+
+The public dashboard is designed to be served at `/radar/` through Cloudflare Pages/Workers routing.
+
+The local admin console is intentionally not published. `/radar/admin/` should remain local-only until authentication and access controls are intentionally added.
