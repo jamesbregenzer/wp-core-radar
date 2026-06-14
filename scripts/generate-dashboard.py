@@ -223,6 +223,19 @@ def dashboard_css() -> str:
       color: #646970;
       font-size: 13px;
     }
+    footer a {
+      color: #646970;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #2271b1;
+      text-decoration: underline;
+    }
+    .footer-separator {
+      margin: 0 6px;
+      color: #8c8f94;
+    }
     @media (max-width: 900px) {
       header { padding: 24px 18px; }
       header h1 { font-size: 26px; }
@@ -305,6 +318,8 @@ def build_dashboard() -> str:
 
   <footer>
     WP Core Radar does not auto-comment on Trac or automate contribution activity.
+    <span class="footer-separator">·</span>
+    <a href="/radar/admin/">Admin</a>
   </footer>
 </body>
 </html>
