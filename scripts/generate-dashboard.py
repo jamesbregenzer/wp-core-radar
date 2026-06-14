@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
-"""Generate an HTML dashboard for WP Core Radar."""
+"""Generate the public static WP Core Radar dashboard."""
 
 from __future__ import annotations
 
 import html
+import re
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from radarlib import (
+    KEYWORDS_KEYS,
+    STATUS_KEYS,
+    SUMMARY_KEYS,
     discover_datasets,
     first_value,
     load_outcomes,
@@ -17,45 +22,37 @@ from radarlib import (
     read_ticket_rows,
     score_ticket,
     trac_url,
-    SUMMARY_KEYS,
-    COMPONENT_KEYS,
-    KEYWORDS_KEYS,
-    STATUS_KEYS,
-    MILESTONE_KEYS,
 )
 
 
 PRIORITY_TARGET_LIMIT = 12
 PRIORITY_TARGET_MIN_SCORE = 150
+COMPLETED_REVIEW_STATUSES = {"tested", "commented", "props", "committed"}
 
 
-def review_status(item: dict) -> str:
+def review_status(item: dict[str, Any]) -> str:
     review = item.get("review") or {}
     return review.get("status", "").strip().lower()
 
 
-def priority_tier(item: dict) -> tuple[str, str]:
+def priority_tier(item: dict[str, Any]) -> tuple[str, str]:
     score = item.get("score", 0)
 
     if score >= 165:
         return "immediate", "Immediate Review"
-
     if score >= 150:
         return "strong", "Strong Candidate"
-
     if score >= 130:
         return "watching", "Worth Watching"
 
     return "standard", "Standard"
 
 
-def is_priority_target(item: dict) -> bool:
-    status = review_status(item)
-    if status:
+def is_priority_target(item: dict[str, Any]) -> bool:
+    if review_status(item):
         return False
 
-    score = item.get("score", 0)
-    if score < PRIORITY_TARGET_MIN_SCORE:
+    if item.get("score", 0) < PRIORITY_TARGET_MIN_SCORE:
         return False
 
     reasons = " ".join(item.get("reasons", [])).lower()
@@ -83,8 +80,8 @@ def is_priority_target(item: dict) -> bool:
     return has_action_signal and has_recent_or_manageable_signal and not has_stale_penalty
 
 
-def group_items(items: list[dict]) -> dict[str, list[dict]]:
-    groups = {
+def group_items(items: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    groups: dict[str, list[dict[str, Any]]] = {
         "priority": [],
         "top": [],
         "shortlist": [],
@@ -102,7 +99,7 @@ def group_items(items: list[dict]) -> dict[str, list[dict]]:
             groups["shortlist"].append(item)
         elif status == "watch":
             groups["watch"].append(item)
-        elif status in {"tested", "commented", "props", "committed"}:
+        elif status in COMPLETED_REVIEW_STATUSES:
             groups["completed"].append(item)
         elif is_priority_target(item) and len(groups["priority"]) < PRIORITY_TARGET_LIMIT:
             groups["priority"].append(item)
@@ -112,14 +109,14 @@ def group_items(items: list[dict]) -> dict[str, list[dict]]:
     return groups
 
 
-def collect_items() -> tuple[list[dict], dict[str, set[str]], dict]:
+def collect_items() -> tuple[list[dict[str, Any]], dict[str, set[str]], dict[str, Any]]:
     query_list = load_queries()
-    query_meta = {q["slug"]: q for q in query_list}
+    query_meta = {query["slug"]: query for query in query_list}
     outcomes = load_outcomes()
     reviews = load_reviews()
     datasets = discover_datasets()
 
-    scored_by_ticket: dict[str, dict] = {}
+    scored_by_ticket: dict[str, dict[str, Any]] = {}
     duplicate_sources: dict[str, set[str]] = defaultdict(set)
 
     for dataset in datasets:
@@ -150,31 +147,82 @@ def collect_items() -> tuple[list[dict], dict[str, set[str]], dict]:
         key=lambda item: (-item["score"], int(item["ticket_id"])),
     )
 
-    summary = {
+    return ranked, duplicate_sources, {
         "datasets": datasets,
         "outcomes": outcomes,
         "reviews": reviews,
     }
 
-    return ranked, duplicate_sources, summary
+
+def pretty_label(value: str) -> str:
+    words = value.replace("_", " ").replace("-", " ").strip().split()
+    return " ".join(word.upper() if word.lower() in {"ui", "ux"} else word.capitalize() for word in words)
 
 
-def ticket_row(item: dict, duplicate_sources: dict[str, set[str]]) -> str:
+def clean_reason_label(reason: str) -> str:
+    reason = re.sub(r"[+-]\d+", "", reason)
+    return pretty_label(reason.strip(" ,"))
+
+
+def signal_class(label: str) -> str:
+    lowered = label.lower()
+
+    if "priority" in lowered:
+        return "priority"
+    if "patch" in lowered:
+        return "patch"
+    if "testing" in lowered or "unit test" in lowered:
+        return "testing"
+    if "first bug" in lowered or "good first" in lowered:
+        return "first"
+    if "feedback" in lowered:
+        return "feedback"
+    if "owner" in lowered:
+        return "owner"
+    if "refresh" in lowered:
+        return "refresh"
+
+    return "standard"
+
+
+def signal_badge(label: str) -> str:
+    css_class = signal_class(label)
+    return f'<span class="signal-badge signal-{html.escape(css_class)}">{html.escape(label)}</span>'
+
+
+def signal_badges(keywords: str, reasons: list[str]) -> str:
+    labels = [pretty_label(keyword) for keyword in keywords.split()]
+    labels.extend(clean_reason_label(reason) for reason in reasons)
+
+    seen: set[str] = set()
+    badges: list[str] = []
+
+    for label in labels:
+        key = label.lower()
+        if not label or key in seen:
+            continue
+
+        seen.add(key)
+        badges.append(signal_badge(label))
+
+    return " ".join(badges)
+
+
+def discovery_track_label(sources: set[str]) -> str:
+    return ", ".join(pretty_label(source) for source in sorted(sources))
+
+
+def ticket_row(item: dict[str, Any], duplicate_sources: dict[str, set[str]]) -> str:
     row = item["row"]
     ticket_id = item["ticket_id"]
-    review = item.get("review") or {}
     tier_class, tier_label = priority_tier(item)
 
     summary = first_value(row, SUMMARY_KEYS, "Untitled ticket")
-    component = first_value(row, COMPONENT_KEYS, "Unknown")
     keywords = first_value(row, KEYWORDS_KEYS, "")
-    trac_status = first_value(row, STATUS_KEYS, "")
-    milestone = first_value(row, MILESTONE_KEYS, "")
-    sources = ", ".join(sorted(duplicate_sources[ticket_id]))
-    reasons = ", ".join(item["reasons"][:6])
-
-    review_state = review.get("status", "")
-    review_reason = review.get("reason", "")
+    signals = signal_badges(keywords, item["reasons"])
+    trac_status = pretty_label(first_value(row, STATUS_KEYS, ""))
+    discovery_track = discovery_track_label(duplicate_sources[ticket_id])
+    track = item["query"].get("name", item["query"].get("track", "unknown"))
 
     return f"""
 <tr class="tier-{html.escape(tier_class)}">
@@ -182,26 +230,20 @@ def ticket_row(item: dict, duplicate_sources: dict[str, set[str]]) -> str:
   <td data-label="Tier"><span class="tier-label tier-label-{html.escape(tier_class)}">{html.escape(tier_label)}</span></td>
   <td data-label="Ticket"><a href="{html.escape(trac_url(ticket_id))}">#{html.escape(ticket_id)}</a></td>
   <td data-label="Summary">{html.escape(summary)}</td>
-  <td data-label="Component">{html.escape(component)}</td>
-  <td data-label="Track">{html.escape(item["query"].get("name", item["query"].get("track", "unknown")))}</td>
+  <td data-label="Track">{html.escape(track)}</td>
   <td data-label="Trac Status">{html.escape(trac_status)}</td>
-  <td data-label="Milestone">{html.escape(milestone)}</td>
-  <td data-label="Keywords">{html.escape(keywords)}</td>
-  <td data-label="Sources">{html.escape(sources)}</td>
-  <td data-label="Review">{html.escape(review_state)}</td>
-  <td data-label="Reason">{html.escape(review_reason)}</td>
-  <td data-label="Why Ranked">{html.escape(reasons)}</td>
+  <td data-label="Discovery Track">{html.escape(discovery_track)}</td>
+  <td data-label="Signals" class="signals">{signals}</td>
 </tr>
 """
 
 
-def section_html(title: str, items: list[dict], duplicate_sources: dict[str, set[str]], limit: int | None = None) -> str:
+def section_html(title: str, items: list[dict[str, Any]], duplicate_sources: dict[str, set[str]], limit: int | None = None) -> str:
     display_items = items if limit is None else items[:limit]
-
     rows = "\n".join(ticket_row(item, duplicate_sources) for item in display_items)
 
     if not rows:
-        rows = '<tr><td colspan="13" class="empty">No tickets in this section.</td></tr>'
+        rows = '<tr><td colspan="8" class="empty">No tickets in this section.</td></tr>'
 
     return f"""
 <section>
@@ -214,15 +256,10 @@ def section_html(title: str, items: list[dict], duplicate_sources: dict[str, set
           <th>Tier</th>
           <th>Ticket</th>
           <th>Summary</th>
-          <th>Component</th>
           <th>Track</th>
           <th>Trac Status</th>
-          <th>Milestone</th>
-          <th>Keywords</th>
-          <th>Sources</th>
-          <th>Review</th>
-          <th>Reason</th>
-          <th>Why Ranked</th>
+          <th>Discovery Track</th>
+          <th>Signals</th>
         </tr>
       </thead>
       <tbody>
@@ -232,6 +269,203 @@ def section_html(title: str, items: list[dict], duplicate_sources: dict[str, set
   </div>
 </section>
 """
+
+
+def dashboard_css() -> str:
+    return """
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #f6f7f7;
+      color: #1d2327;
+    }
+    header {
+      padding: 32px;
+      background: #1d2327;
+      color: white;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+    }
+    header p {
+      margin: 0;
+      color: #c3c4c7;
+    }
+    main {
+      padding: 24px 32px 48px;
+    }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #dcdcde;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .card strong {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+    .card-blue { border-left: 6px solid #2563eb; }
+    .card-purple { border-left: 6px solid #7c3aed; }
+    .card-amber { border-left: 6px solid #d97706; }
+
+    section {
+      margin-top: 32px;
+    }
+    h2 {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+    }
+    h2 span {
+      font-size: 14px;
+      color: #646970;
+      font-weight: 500;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      background: white;
+      border: 1px solid #dcdcde;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th,
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #f0f0f1;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f0f0f1;
+      white-space: nowrap;
+      position: sticky;
+      top: 0;
+    }
+    tr.tier-immediate { border-left: 6px solid #2563eb; }
+    tr.tier-strong { border-left: 6px solid #7c3aed; }
+    tr.tier-watching { border-left: 6px solid #d97706; }
+    tr.tier-standard { border-left: 6px solid transparent; }
+
+    td.score {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .signals {
+      min-width: 300px;
+    }
+    .signal-badge,
+    .tier-label {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 8px;
+      margin: 0 4px 5px 0;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .signal-standard,
+    .tier-label-standard {
+      background: #f3f4f6;
+      color: #4b5563;
+    }
+    .signal-priority,
+    .signal-owner {
+      background: #e0f2fe;
+      color: #075985;
+    }
+    .signal-patch,
+    .tier-label-immediate {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+    .signal-testing {
+      background: #dcfce7;
+      color: #166534;
+    }
+    .signal-first,
+    .tier-label-watching {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    .signal-feedback,
+    .tier-label-strong {
+      background: #ede9fe;
+      color: #6d28d9;
+    }
+    .signal-refresh {
+      background: #ffedd5;
+      color: #9a3412;
+    }
+    a {
+      color: #2271b1;
+      font-weight: 600;
+    }
+    .empty {
+      color: #646970;
+      font-style: italic;
+    }
+    footer {
+      padding: 24px 32px;
+      color: #646970;
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      header { padding: 24px 18px; }
+      header h1 { font-size: 26px; }
+      main { padding: 18px; }
+      .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead { display: none; }
+
+      tr {
+        padding: 14px;
+        border-bottom: 1px solid #dcdcde;
+      }
+
+      td {
+        border: 0;
+        padding: 6px 0;
+      }
+
+      td::before {
+        content: attr(data-label);
+        display: block;
+        color: #646970;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+      }
+
+      td.score { font-size: 24px; }
+    }
+
+    @media (max-width: 520px) {
+      .summary { grid-template-columns: 1fr; }
+    }
+    """
 
 
 def build_dashboard() -> str:
@@ -250,199 +484,7 @@ def build_dashboard() -> str:
   <title>WP Core Radar Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {{
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      background: #f6f7f7;
-      color: #1d2327;
-    }}
-    header {{
-      padding: 32px;
-      background: #1d2327;
-      color: white;
-    }}
-    header h1 {{
-      margin: 0 0 8px;
-      font-size: 32px;
-    }}
-    header p {{
-      margin: 0;
-      color: #c3c4c7;
-    }}
-    main {{
-      padding: 24px 32px 48px;
-    }}
-    .summary {{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      margin-bottom: 24px;
-    }}
-    .card {{
-      background: white;
-      border: 1px solid #dcdcde;
-      border-radius: 8px;
-      padding: 16px;
-    }}
-    .card strong {{
-      display: block;
-      font-size: 28px;
-      margin-bottom: 4px;
-    }}
-    .card-blue {{
-      border-left: 6px solid #2563eb;
-    }}
-    .card-purple {{
-      border-left: 6px solid #7c3aed;
-    }}
-    .card-amber {{
-      border-left: 6px solid #d97706;
-    }}
-    section {{
-      margin-top: 32px;
-    }}
-    h2 {{
-      display: flex;
-      gap: 8px;
-      align-items: baseline;
-    }}
-    h2 span {{
-      font-size: 14px;
-      color: #646970;
-      font-weight: 500;
-    }}
-    .table-wrap {{
-      overflow-x: auto;
-      background: white;
-      border: 1px solid #dcdcde;
-      border-radius: 8px;
-    }}
-    table {{
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }}
-    th, td {{
-      padding: 10px 12px;
-      border-bottom: 1px solid #f0f0f1;
-      text-align: left;
-      vertical-align: top;
-    }}
-    th {{
-      background: #f0f0f1;
-      white-space: nowrap;
-      position: sticky;
-      top: 0;
-    }}
-    tr.tier-immediate {{
-      border-left: 6px solid #2563eb;
-    }}
-    tr.tier-strong {{
-      border-left: 6px solid #7c3aed;
-    }}
-    tr.tier-watching {{
-      border-left: 6px solid #d97706;
-    }}
-    tr.tier-standard {{
-      border-left: 6px solid transparent;
-    }}
-    td.score {{
-      font-weight: 700;
-      font-size: 18px;
-    }}
-    .tier-label {{
-      display: inline-block;
-      border-radius: 999px;
-      padding: 4px 8px;
-      font-size: 12px;
-      font-weight: 700;
-      white-space: nowrap;
-    }}
-    .tier-label-immediate {{
-      background: #dbeafe;
-      color: #1d4ed8;
-    }}
-    .tier-label-strong {{
-      background: #ede9fe;
-      color: #6d28d9;
-    }}
-    .tier-label-watching {{
-      background: #fef3c7;
-      color: #92400e;
-    }}
-    .tier-label-standard {{
-      background: #f3f4f6;
-      color: #4b5563;
-    }}
-    a {{
-      color: #2271b1;
-      font-weight: 600;
-    }}
-    .empty {{
-      color: #646970;
-      font-style: italic;
-    }}
-    footer {{
-      padding: 24px 32px;
-      color: #646970;
-      font-size: 13px;
-    }}
-
-    @media (max-width: 900px) {{
-      header {{
-        padding: 24px 18px;
-      }}
-
-      header h1 {{
-        font-size: 26px;
-      }}
-
-      main {{
-        padding: 18px;
-      }}
-
-      .summary {{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }}
-
-      table, thead, tbody, th, td, tr {{
-        display: block;
-      }}
-
-      thead {{
-        display: none;
-      }}
-
-      tr {{
-        padding: 14px;
-        border-bottom: 1px solid #dcdcde;
-      }}
-
-      td {{
-        border: 0;
-        padding: 6px 0;
-      }}
-
-      td::before {{
-        content: attr(data-label);
-        display: block;
-        color: #646970;
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 2px;
-      }}
-
-      td.score {{
-        font-size: 24px;
-      }}
-    }}
-
-    @media (max-width: 520px) {{
-      .summary {{
-        grid-template-columns: 1fr;
-      }}
-    }}
+{dashboard_css()}
   </style>
 </head>
 <body>
@@ -478,13 +520,11 @@ def build_dashboard() -> str:
 
 
 def main() -> int:
-    docs_dir = Path("docs")
-    radar_dir = docs_dir / "radar"
+    radar_dir = Path("docs") / "radar"
     radar_dir.mkdir(parents=True, exist_ok=True)
 
     dashboard = build_dashboard()
     output = radar_dir / "index.html"
-
     output.write_text(dashboard, encoding="utf-8")
 
     print(f"Wrote {output}")

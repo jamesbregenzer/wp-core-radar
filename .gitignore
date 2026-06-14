@@ -19,3 +19,14 @@ reports/*.html
 scripts/*.bak
 scripts/*.before-*.py
 scripts/*.pre-*.py
+
+# Local OS/editor artifacts
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local script backups from manual patching
+scripts/*.bak
+scripts/*.pre-*.py
+scripts/*.before-*.py
+scripts/*.drift-cleanup-backup.py
