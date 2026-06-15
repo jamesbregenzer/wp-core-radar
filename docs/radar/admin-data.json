@@ -1,15 +1,422 @@
 {
-  "generated": "2026-06-15T23:25:20",
+  "generated": "2026-06-15T18:29:14",
   "summary": {
     "unique_tickets": 280,
-    "priority_targets": 7,
-    "immediate": 0,
-    "strong": 7,
-    "watching": 109,
+    "priority_targets": 12,
+    "immediate": 2,
+    "strong": 10,
+    "watching": 98,
     "reviews_loaded": 3
   },
   "groups": {
     "priority": [
+      {
+        "ticket_id": "43178",
+        "url": "https://core.trac.wordpress.org/ticket/43178",
+        "score": 179,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Rethinking what \u201ccaptions\u201d means for video",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "01/29/2018 04:32:59 PM",
+        "modified": "04/23/2026 03:37:20 PM",
+        "keywords": "has-patch reporter-feedback has-ux-feedback has-ui-feedback phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Reporter Feedback +10",
+            "class": "feedback"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Reporter Feedback",
+            "detail": "",
+            "display": "Reporter Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "60628",
+        "url": "https://core.trac.wordpress.org/ticket/60628",
+        "score": 166,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Issues with avif image  imagecreatefromavif not working. Resizing not possible.",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "adamsilverstein",
+        "comments": "Unknown",
+        "created": "02/24/2024 12:46:16 PM",
+        "modified": "09/08/2025 01:13:55 PM",
+        "keywords": "avif has-patch has-unit-tests early reporter-feedback needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Reporter Feedback +10",
+            "class": "feedback"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Reporter Feedback",
+            "detail": "",
+            "display": "Reporter Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65329",
+        "url": "https://core.trac.wordpress.org/ticket/65329",
+        "score": 164,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Move sideload metadata writes to the finalize endpoint",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "adamsilverstein",
+        "comments": "Unknown",
+        "created": "05/22/2026 10:26:49 PM",
+        "modified": "06/04/2026 01:56:16 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "39004",
+        "url": "https://core.trac.wordpress.org/ticket/39004",
+        "score": 161,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Alt attributes should be searchable in media library",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "12/01/2016 03:58:50 PM",
+        "modified": "01/05/2026 02:36:09 PM",
+        "keywords": "has-patch has-unit-tests phase-3-media-triage needs-design",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "44641",
+        "url": "https://core.trac.wordpress.org/ticket/44641",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Customizing Button Text in Custom Media Manager Frame Doesn't Work Anymore",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "antpb",
+        "comments": "Unknown",
+        "created": "07/25/2018 12:16:47 PM",
+        "modified": "01/30/2022 04:52:29 PM",
+        "keywords": "has-patch needs-testing 2nd-opinion",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
       {
         "ticket_id": "21989",
         "url": "https://core.trac.wordpress.org/ticket/21989",
@@ -473,23 +880,23 @@
         "review": {}
       },
       {
-        "ticket_id": "43178",
-        "url": "https://core.trac.wordpress.org/ticket/43178",
-        "score": 151,
+        "ticket_id": "64921",
+        "url": "https://core.trac.wordpress.org/ticket/64921",
+        "score": 154,
         "tier_class": "strong",
         "tier_label": "Strong Candidate",
-        "summary": "Rethinking what \u201ccaptions\u201d means for video",
-        "track": "Media: Has Patch",
+        "summary": "REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)",
+        "track": "General: Needs Testing",
         "status": "Accepted",
-        "component": "Unknown",
-        "owner": "joedolson",
+        "component": "General",
+        "owner": "westonruter",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch reporter-feedback has-ux-feedback has-ui-feedback phase-3-media-triage",
+        "created": "03/21/2026 06:37:01 PM",
+        "modified": "03/24/2026 02:56:52 PM",
+        "keywords": "has-patch needs-testing needs-test-info reporter-feedback",
         "signals": [
           {
-            "label": "Track Priority: Media: Has Patch +100",
+            "label": "Track Priority: General: Needs Testing +65",
             "class": "priority"
           },
           {
@@ -497,8 +904,16 @@
             "class": "patch"
           },
           {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
             "label": "Reporter Feedback +10",
             "class": "feedback"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
           },
           {
             "label": "Has Owner +6",
@@ -507,10 +922,10 @@
         ],
         "score_breakdown": [
           {
-            "points": "+100",
+            "points": "+65",
             "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
             "polarity": "positive"
           },
           {
@@ -521,10 +936,24 @@
             "polarity": "positive"
           },
           {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
             "points": "+10",
             "label": "Reporter Feedback",
             "detail": "",
             "display": "Reporter Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
             "polarity": "positive"
           },
           {
@@ -535,7 +964,7 @@
             "polarity": "positive"
           }
         ],
-        "discovery_track": "Media Has Patch",
+        "discovery_track": "General Needs Testing",
         "review": {}
       }
     ],
@@ -543,17 +972,17 @@
       {
         "ticket_id": "40370",
         "url": "https://core.trac.wordpress.org/ticket/40370",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
+        "score": 170,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
         "summary": "add_image_sizes does not create the \"crop position\" versions of the image",
         "track": "General: Needs Testing",
         "status": "Reopened",
-        "component": "Unknown",
+        "component": "Media",
         "owner": "",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
+        "created": "04/05/2017 01:29:32 PM",
+        "modified": "05/20/2024 05:16:01 PM",
         "keywords": "good-first-bug has-patch 2nd-opinion has-unit-tests needs-testing",
         "signals": [
           {
@@ -571,6 +1000,10 @@
           {
             "label": "Good First Bug +20",
             "class": "first"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
           }
         ],
         "score_breakdown": [
@@ -600,6 +1033,233 @@
             "label": "Good First Bug",
             "detail": "",
             "display": "Good First Bug",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "56886",
+        "url": "https://core.trac.wordpress.org/ticket/56886",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Admin facing add site screen missing search engine visibility field",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Networks and Sites",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "10/22/2022 11:05:39 AM",
+        "modified": "06/04/2026 01:49:33 PM",
+        "keywords": "good-first-bug has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Good First Bug +20",
+            "class": "first"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Good First Bug",
+            "detail": "",
+            "display": "Good First Bug",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "45354",
+        "url": "https://core.trac.wordpress.org/ticket/45354",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Adding index for meta_key and post_id in postmeta",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Database",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "11/14/2018 09:43:31 PM",
+        "modified": "06/04/2026 09:13:21 AM",
+        "keywords": "needs-testing dev-feedback has-patch has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "35593",
+        "url": "https://core.trac.wordpress.org/ticket/35593",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Metadata from wrong file in media_handle_upload",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "01/24/2016 03:14:20 PM",
+        "modified": "02/06/2023 03:07:08 PM",
+        "keywords": "has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
             "polarity": "positive"
           }
         ],
@@ -673,20 +1333,20 @@
         "review": {}
       },
       {
-        "ticket_id": "56886",
-        "url": "https://core.trac.wordpress.org/ticket/56886",
+        "ticket_id": "51058",
+        "url": "https://core.trac.wordpress.org/ticket/51058",
         "score": 150,
         "tier_class": "strong",
         "tier_label": "Strong Candidate",
-        "summary": "Admin facing add site screen missing search engine visibility field",
+        "summary": "attachment_url_to_postid does not retrieve post ID of really large images",
         "track": "General: Needs Testing",
         "status": "New",
-        "component": "Unknown",
+        "component": "Media",
         "owner": "",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "good-first-bug has-patch needs-testing",
+        "created": "08/19/2020 02:12:58 AM",
+        "modified": "11/14/2021 01:59:45 PM",
+        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -701,8 +1361,8 @@
             "class": "testing"
           },
           {
-            "label": "Good First Bug +20",
-            "class": "first"
+            "label": "Preferred Component: Media +20",
+            "class": "component"
           }
         ],
         "score_breakdown": [
@@ -729,9 +1389,273 @@
           },
           {
             "points": "+20",
-            "label": "Good First Bug",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "54016",
+        "url": "https://core.trac.wordpress.org/ticket/54016",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Media Library: Bulk delete elements in grid view takes very long",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "08/26/2021 03:10:47 PM",
+        "modified": "04/14/2026 10:33:21 AM",
+        "keywords": "has-patch 2nd-opinion needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
             "detail": "",
-            "display": "Good First Bug",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "58416",
+        "url": "https://core.trac.wordpress.org/ticket/58416",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "05/26/2023 08:48:37 PM",
+        "modified": "05/12/2025 01:38:09 AM",
+        "keywords": "has-patch has-screenshots has-test-info needs-testing needs-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "64056",
+        "url": "https://core.trac.wordpress.org/ticket/64056",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "09/30/2025 02:27:40 PM",
+        "modified": "10/01/2025 08:28:56 AM",
+        "keywords": "has-patch needs-testing close",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "64902",
+        "url": "https://core.trac.wordpress.org/ticket/64902",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "wp_save_image() fatal error when wp_save_image_file() returns WP_Error",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "03/19/2026 02:52:41 PM",
+        "modified": "06/11/2026 08:42:29 PM",
+        "keywords": "has-patch needs-testing has-test-info",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
             "polarity": "positive"
           }
         ],
@@ -1083,72 +2007,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "dev-feedback has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "45354",
-        "url": "https://core.trac.wordpress.org/ticket/45354",
-        "score": 148,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Adding index for meta_key and post_id in postmeta",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing dev-feedback has-patch has-unit-tests",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -2015,20 +2873,97 @@
         "review": {}
       },
       {
-        "ticket_id": "60628",
-        "url": "https://core.trac.wordpress.org/ticket/60628",
-        "score": 146,
+        "ticket_id": "22116",
+        "url": "https://core.trac.wordpress.org/ticket/22116",
+        "score": 144,
         "tier_class": "watching",
         "tier_label": "Worth Watching",
-        "summary": "Issues with avif image  imagecreatefromavif not working. Resizing not possible.",
+        "summary": "bug in dynamic_sidebar function",
         "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
+        "status": "Reviewing",
+        "component": "Widgets",
+        "owner": "SergeyBiryukov",
+        "comments": "Unknown",
+        "created": "10/06/2012 12:19:48 PM",
+        "modified": "06/13/2026 10:40:32 PM",
+        "keywords": "needs-testing has-patch",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "56320",
+        "url": "https://core.trac.wordpress.org/ticket/56320",
+        "score": 144,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Update mediaelement.js to the latest version",
+        "track": "General: Needs Testing",
+        "status": "Accepted",
+        "component": "External Libraries",
         "owner": "adamsilverstein",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "avif has-patch has-unit-tests early reporter-feedback needs-testing",
+        "created": "08/01/2022 06:20:19 PM",
+        "modified": "06/04/2026 01:59:04 PM",
+        "keywords": "has-patch needs-testing 2nd-opinion",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -2043,8 +2978,8 @@
             "class": "testing"
           },
           {
-            "label": "Reporter Feedback +10",
-            "class": "feedback"
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
           },
           {
             "label": "Has Owner +6",
@@ -2074,10 +3009,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+10",
-            "label": "Reporter Feedback",
+            "points": "+8",
+            "label": "Has Concrete Milestone",
             "detail": "",
-            "display": "Reporter Feedback",
+            "display": "Has Concrete Milestone",
             "polarity": "positive"
           },
           {
@@ -2092,20 +3027,251 @@
         "review": {}
       },
       {
-        "ticket_id": "64921",
-        "url": "https://core.trac.wordpress.org/ticket/64921",
-        "score": 146,
+        "ticket_id": "60029",
+        "url": "https://core.trac.wordpress.org/ticket/60029",
+        "score": 144,
         "tier_class": "watching",
         "tier_label": "Worth Watching",
-        "summary": "REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)",
+        "summary": "Admin unable to create new Application Password for user with no role on main site (multisite)",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Application Passwords",
+        "owner": "audrasjb",
+        "comments": "Unknown",
+        "created": "12/07/2023 01:40:27 PM",
+        "modified": "06/04/2026 09:11:29 AM",
+        "keywords": "changes-requested has-patch has-test-info has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "63256",
+        "url": "https://core.trac.wordpress.org/ticket/63256",
+        "score": 144,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Unnecessary array_map() call in get_terms() when object_ids is not set",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Taxonomy",
+        "owner": "audrasjb",
+        "comments": "Unknown",
+        "created": "04/09/2025 11:10:53 AM",
+        "modified": "06/13/2026 02:21:45 AM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65051",
+        "url": "https://core.trac.wordpress.org/ticket/65051",
+        "score": 144,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "$_REQUEST['term'] used unsanitized in user search query",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Networks and Sites",
+        "owner": "rajeshcp",
+        "comments": "Unknown",
+        "created": "04/09/2026 10:29:50 AM",
+        "modified": "05/14/2026 04:09:08 PM",
+        "keywords": "has-patch needs-testing has-test-info has-unit-tests has-screenshots",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65419",
+        "url": "https://core.trac.wordpress.org/ticket/65419",
+        "score": 144,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode",
         "track": "General: Needs Testing",
         "status": "Accepted",
-        "component": "Unknown",
-        "owner": "westonruter",
+        "component": "General",
+        "owner": "joedolson",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing needs-test-info reporter-feedback",
+        "created": "06/05/2026 09:11:00 AM",
+        "modified": "06/09/2026 04:50:17 PM",
+        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -2120,8 +3286,8 @@
             "class": "testing"
           },
           {
-            "label": "Reporter Feedback +10",
-            "class": "feedback"
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
           },
           {
             "label": "Has Owner +6",
@@ -2151,10 +3317,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+10",
-            "label": "Reporter Feedback",
+            "points": "+8",
+            "label": "Has Concrete Milestone",
             "detail": "",
-            "display": "Reporter Feedback",
+            "display": "Has Concrete Milestone",
             "polarity": "positive"
           },
           {
@@ -2169,28 +3335,36 @@
         "review": {}
       },
       {
-        "ticket_id": "39004",
-        "url": "https://core.trac.wordpress.org/ticket/39004",
-        "score": 141,
+        "ticket_id": "41445",
+        "url": "https://core.trac.wordpress.org/ticket/41445",
+        "score": 139,
         "tier_class": "watching",
         "tier_label": "Worth Watching",
-        "summary": "Alt attributes should be searchable in media library",
-        "track": "Media: Has Patch",
-        "status": "Accepted",
-        "component": "Unknown",
-        "owner": "joedolson",
+        "summary": "post_parent can prevent media from embedding correctly",
+        "track": "General: Needs Testing",
+        "status": "Reopened",
+        "component": "Media",
+        "owner": "adamsilverstein",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch has-unit-tests phase-3-media-triage needs-design",
+        "created": "07/26/2017 06:29:28 AM",
+        "modified": "05/12/2025 01:35:38 AM",
+        "keywords": "dev-feedback needs-unit-tests has-test-info needs-patch needs-testing",
         "signals": [
           {
-            "label": "Track Priority: Media: Has Patch +100",
+            "label": "Track Priority: General: Needs Testing +65",
             "class": "priority"
           },
           {
-            "label": "Has Patch +35",
-            "class": "patch"
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
           },
           {
             "label": "Has Owner +6",
@@ -2199,17 +3373,31 @@
         ],
         "score_breakdown": [
           {
-            "points": "+100",
+            "points": "+65",
             "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
             "polarity": "positive"
           },
           {
-            "points": "+35",
-            "label": "Has Patch",
+            "points": "+30",
+            "label": "Needs Testing",
             "detail": "",
-            "display": "Has Patch",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
             "polarity": "positive"
           },
           {
@@ -2220,7 +3408,73 @@
             "polarity": "positive"
           }
         ],
-        "discovery_track": "Media Has Patch",
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65417",
+        "url": "https://core.trac.wordpress.org/ticket/65417",
+        "score": 138,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/05/2026 06:35:50 AM",
+        "modified": "06/15/2026 12:23:04 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
         "review": {}
       },
       {
@@ -2238,72 +3492,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "22116",
-        "url": "https://core.trac.wordpress.org/ticket/22116",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "bug in dynamic_sidebar function",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Unknown",
-        "owner": "SergeyBiryukov",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing has-patch",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -2752,72 +3940,6 @@
         "review": {}
       },
       {
-        "ticket_id": "44641",
-        "url": "https://core.trac.wordpress.org/ticket/44641",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Customizing Button Text in Custom Media Manager Frame Doesn't Work Anymore",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "antpb",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing 2nd-opinion",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "44921",
         "url": "https://core.trac.wordpress.org/ticket/44921",
         "score": 136,
@@ -2950,204 +4072,6 @@
         "review": {}
       },
       {
-        "ticket_id": "56320",
-        "url": "https://core.trac.wordpress.org/ticket/56320",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Update mediaelement.js to the latest version",
-        "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "Unknown",
-        "owner": "adamsilverstein",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing 2nd-opinion",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "60029",
-        "url": "https://core.trac.wordpress.org/ticket/60029",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Admin unable to create new Application Password for user with no role on main site (multisite)",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Unknown",
-        "owner": "audrasjb",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "changes-requested has-patch has-test-info has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "63256",
-        "url": "https://core.trac.wordpress.org/ticket/63256",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Unnecessary array_map() call in get_terms() when object_ids is not set",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Unknown",
-        "owner": "audrasjb",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "65048",
         "url": "https://core.trac.wordpress.org/ticket/65048",
         "score": 136,
@@ -3162,72 +4086,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch needs-testing has-test-info",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65051",
-        "url": "https://core.trac.wordpress.org/ticket/65051",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "$_REQUEST['term'] used unsanitized in user search query",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "rajeshcp",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing has-test-info has-unit-tests has-screenshots",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -3360,138 +4218,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch needs-testing has-test-info has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65329",
-        "url": "https://core.trac.wordpress.org/ticket/65329",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Move sideload metadata writes to the finalize endpoint",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "adamsilverstein",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65419",
-        "url": "https://core.trac.wordpress.org/ticket/65419",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode",
-        "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "Unknown",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -3888,61 +4614,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch needs-testing 2nd-opinion needs-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "35593",
-        "url": "https://core.trac.wordpress.org/ticket/35593",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Metadata from wrong file in media_handle_upload",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -5084,61 +5755,6 @@
         "review": {}
       },
       {
-        "ticket_id": "51058",
-        "url": "https://core.trac.wordpress.org/ticket/51058",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "attachment_url_to_postid does not retrieve post ID of really large images",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "52376",
         "url": "https://core.trac.wordpress.org/ticket/52376",
         "score": 130,
@@ -5263,61 +5879,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch has-unit-tests needs-testing changes-requested",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "54016",
-        "url": "https://core.trac.wordpress.org/ticket/54016",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Media Library: Bulk delete elements in grid view takes very long",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch 2nd-opinion needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -5744,61 +6305,6 @@
         "review": {}
       },
       {
-        "ticket_id": "58416",
-        "url": "https://core.trac.wordpress.org/ticket/58416",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch has-screenshots has-test-info needs-testing needs-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "58871",
         "url": "https://core.trac.wordpress.org/ticket/58871",
         "score": 130,
@@ -6143,61 +6649,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch needs-testing has-test-info",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "64056",
-        "url": "https://core.trac.wordpress.org/ticket/64056",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing close",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -6789,61 +7240,6 @@
         "review": {}
       },
       {
-        "ticket_id": "64902",
-        "url": "https://core.trac.wordpress.org/ticket/64902",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "wp_save_image() fatal error when wp_save_image_file() returns WP_Error",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing has-test-info",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "64991",
         "url": "https://core.trac.wordpress.org/ticket/64991",
         "score": 130,
@@ -7174,32 +7570,366 @@
         "review": {}
       },
       {
-        "ticket_id": "65417",
-        "url": "https://core.trac.wordpress.org/ticket/65417",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
+        "ticket_id": "23436",
+        "url": "https://core.trac.wordpress.org/ticket/23436",
+        "score": 126,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Media Gallery - Cropping Image and then Cropping a thumbnail from that crop doesn't work.",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch has-unit-tests needs-testing",
+        "created": "02/10/2013 05:20:00 PM",
+        "modified": "05/01/2024 06:42:48 PM",
+        "keywords": "needs-patch 2nd-opinion media-edit",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "31177",
+        "url": "https://core.trac.wordpress.org/ticket/31177",
+        "score": 126,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Captions video not saved with the post and are lost on attachment page",
+        "track": "Media: Has Patch",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "postphotos",
+        "comments": "Unknown",
+        "created": "01/29/2015 04:13:09 PM",
+        "modified": "01/24/2024 05:36:59 PM",
+        "keywords": "needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "39358",
+        "url": "https://core.trac.wordpress.org/ticket/39358",
+        "score": 126,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Media search speed has been dramatically reduced",
+        "track": "Media: Has Patch",
+        "status": "Reopened",
+        "component": "Media",
+        "owner": "joemcgill",
+        "comments": "Unknown",
+        "created": "12/21/2016 08:07:18 AM",
+        "modified": "09/24/2025 01:46:32 AM",
+        "keywords": "needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "47456",
+        "url": "https://core.trac.wordpress.org/ticket/47456",
+        "score": 126,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Improve the user interface to ensure correct usage of the image alt text",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "06/01/2019 11:15:23 AM",
+        "modified": "11/25/2025 04:13:45 PM",
+        "keywords": "wpcampus-report needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "53013",
+        "url": "https://core.trac.wordpress.org/ticket/53013",
+        "score": 126,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Improve media library grid management tools",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "04/09/2021 07:07:03 PM",
+        "modified": "07/02/2024 03:35:19 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "60250",
+        "url": "https://core.trac.wordpress.org/ticket/60250",
+        "score": 126,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Feature Req \u2013 Media Library Grid-List",
+        "track": "Media: Has Patch",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "antpb",
+        "comments": "Unknown",
+        "created": "01/14/2024 04:18:41 PM",
+        "modified": "09/30/2024 02:37:11 AM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "26848",
+        "url": "https://core.trac.wordpress.org/ticket/26848",
+        "score": 121,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Image thumbnail on large images with ratio of 4:1",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "markoheijnen",
+        "comments": "Unknown",
+        "created": "01/16/2014 04:12:43 PM",
+        "modified": "06/04/2019 08:06:26 PM",
+        "keywords": "needs-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
             "class": "priority"
           },
           {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
             "label": "Needs Testing +30",
             "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
           }
         ],
         "score_breakdown": [
@@ -7211,10 +7941,69 @@
             "polarity": "positive"
           },
           {
-            "points": "+35",
-            "label": "Has Patch",
+            "points": "+30",
+            "label": "Needs Testing",
             "detail": "",
-            "display": "Has Patch",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "37255",
+        "url": "https://core.trac.wordpress.org/ticket/37255",
+        "score": 121,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Update attachment functions to accept a post object in addition to ID",
+        "track": "General: Needs Testing",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "johnbillion",
+        "comments": "Unknown",
+        "created": "07/02/2016 09:26:02 AM",
+        "modified": "05/12/2025 01:35:34 AM",
+        "keywords": "needs-testing needs-dev-note needs-test-info 2nd-opinion close",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
             "polarity": "positive"
           },
           {
@@ -7223,9 +8012,859 @@
             "detail": "",
             "display": "Needs Testing",
             "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
           }
         ],
         "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "48361",
+        "url": "https://core.trac.wordpress.org/ticket/48361",
+        "score": 121,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Select Files on iOS doesn't trigger on modal if start on Upload Files tab and switch to Media Library tab",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "adamsilverstein",
+        "comments": "Unknown",
+        "created": "10/17/2019 11:27:06 PM",
+        "modified": "11/03/2019 07:46:59 PM",
+        "keywords": "needs-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "55036",
+        "url": "https://core.trac.wordpress.org/ticket/55036",
+        "score": 121,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Sharpen thumbnails with Imagick adaptiveSharpenImage()",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "antpb",
+        "comments": "Unknown",
+        "created": "02/02/2022 04:58:14 AM",
+        "modified": "05/10/2023 03:13:27 PM",
+        "keywords": "needs-patch needs-testing close",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "17255",
+        "url": "https://core.trac.wordpress.org/ticket/17255",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "More statuses (like draft and/or private) for media files",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "04/27/2011 11:48:11 AM",
+        "modified": "10/25/2023 03:39:32 PM",
+        "keywords": "needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "22894",
+        "url": "https://core.trac.wordpress.org/ticket/22894",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Need WordPress Media Uploader Stop or Cancel Button in WP Version 3.5",
+        "track": "Media: Has Patch",
+        "status": "Reopened",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "12/12/2012 05:34:01 PM",
+        "modified": "10/18/2023 04:05:38 PM",
+        "keywords": "needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "22937",
+        "url": "https://core.trac.wordpress.org/ticket/22937",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Bulk Actions > Edit could allow batch-assignment of taxonomies to Media following the WP 3.5 media changes",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "12/14/2012 01:59:37 PM",
+        "modified": "10/18/2023 03:53:15 PM",
+        "keywords": "needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "28321",
+        "url": "https://core.trac.wordpress.org/ticket/28321",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Media uploader confuses user with description, caption, alt and title, without explanation",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "05/21/2014 08:07:21 AM",
+        "modified": "10/18/2023 04:08:48 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "31395",
+        "url": "https://core.trac.wordpress.org/ticket/31395",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Indicate difference of two visually equal, but otherwise different images in non-list media views",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "02/20/2015 06:19:09 PM",
+        "modified": "10/18/2023 04:17:30 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "32849",
+        "url": "https://core.trac.wordpress.org/ticket/32849",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Allow option of Grid AND List View of the gallery when inserting media into post",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/01/2015 12:24:57 AM",
+        "modified": "10/18/2023 04:27:12 PM",
+        "keywords": "needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "32965",
+        "url": "https://core.trac.wordpress.org/ticket/32965",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Add new Credit field to media attachment details",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/12/2015 05:14:33 AM",
+        "modified": "10/18/2023 04:35:53 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "34223",
+        "url": "https://core.trac.wordpress.org/ticket/34223",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Core support for image regeneration",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "10/08/2015 08:26:48 PM",
+        "modified": "10/18/2023 03:52:00 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "35887",
+        "url": "https://core.trac.wordpress.org/ticket/35887",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Adding multiple media to post - selecting image size",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "02/20/2016 12:03:10 PM",
+        "modified": "10/25/2023 04:35:24 AM",
+        "keywords": "needs-patch has-needs-design-feedback phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "40126",
+        "url": "https://core.trac.wordpress.org/ticket/40126",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Mobile has two media editing experiences",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "03/12/2017 12:38:39 PM",
+        "modified": "10/25/2023 05:04:49 AM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "41462",
+        "url": "https://core.trac.wordpress.org/ticket/41462",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Promote media details admin page to full post page",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/27/2017 05:43:26 PM",
+        "modified": "10/18/2023 04:01:34 PM",
+        "keywords": "needs-design phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "42751",
+        "url": "https://core.trac.wordpress.org/ticket/42751",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Can we please  enqueue media-views independently ?",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "11/29/2017 10:14:11 PM",
+        "modified": "06/13/2024 01:56:59 AM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "43658",
+        "url": "https://core.trac.wordpress.org/ticket/43658",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Media attachment filter drop-down mime types in grid mode is not properly filtered by available mime types",
+        "track": "Media: Has Patch",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "03/29/2018 07:07:42 AM",
+        "modified": "10/18/2023 04:51:19 PM",
+        "keywords": "has-screenshots phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "59742",
+        "url": "https://core.trac.wordpress.org/ticket/59742",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Media library should display the number of pages/posts/urls a particular media file is being used in.",
+        "track": "Media: Has Patch",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "10/26/2023 08:19:37 AM",
+        "modified": "08/07/2024 03:49:27 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "59753",
+        "url": "https://core.trac.wordpress.org/ticket/59753",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Attach image to existing content functionality not working properly",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "10/27/2023 07:14:55 AM",
+        "modified": "04/18/2024 08:37:08 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "60345",
+        "url": "https://core.trac.wordpress.org/ticket/60345",
+        "score": 120,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Add duplicate checking for uploaded attachments",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "01/25/2024 04:39:34 PM",
+        "modified": "05/01/2024 03:51:05 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
@@ -7361,72 +9000,6 @@
         "review": {}
       },
       {
-        "ticket_id": "41445",
-        "url": "https://core.trac.wordpress.org/ticket/41445",
-        "score": 119,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "post_parent can prevent media from embedding correctly",
-        "track": "General: Needs Testing",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "adamsilverstein",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "dev-feedback needs-unit-tests has-test-info needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "44445",
         "url": "https://core.trac.wordpress.org/ticket/44445",
         "score": 119,
@@ -7486,6 +9059,281 @@
             "label": "Has Owner",
             "detail": "",
             "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "22558",
+        "url": "https://core.trac.wordpress.org/ticket/22558",
+        "score": 115,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Attachment term counts feels/are inaccurate",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "11/23/2012 04:21:26 PM",
+        "modified": "03/03/2021 05:04:28 PM",
+        "keywords": "2nd-opinion needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "29368",
+        "url": "https://core.trac.wordpress.org/ticket/29368",
+        "score": 115,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Pasted media do not appear in the library",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "08/25/2014 05:49:15 PM",
+        "modified": "06/04/2019 08:08:45 PM",
+        "keywords": "needs-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "46970",
+        "url": "https://core.trac.wordpress.org/ticket/46970",
+        "score": 115,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Remove white Space - iPhone 6/7/8",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "04/18/2019 08:42:03 AM",
+        "modified": "05/20/2023 07:27:13 AM",
+        "keywords": "needs-design has-screenshots needs-testing needs-patch",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "48522",
+        "url": "https://core.trac.wordpress.org/ticket/48522",
+        "score": 115,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Attachment size not generated when large images uploaded",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "11/07/2019 01:33:39 AM",
+        "modified": "06/11/2026 02:07:19 AM",
+        "keywords": "2nd-opinion needs-testing needs-unit-tests needs-refresh",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "54205",
+        "url": "https://core.trac.wordpress.org/ticket/54205",
+        "score": 115,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "jqxhr is undefined inside of deferred.done() when using wp.media to add a custom image upload",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "09/30/2021 08:55:42 PM",
+        "modified": "05/12/2025 01:37:52 AM",
+        "keywords": "needs-patch needs-testing has-test-info",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
             "polarity": "positive"
           }
         ],
@@ -7765,270 +9613,6 @@
           }
         ],
         "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "23436",
-        "url": "https://core.trac.wordpress.org/ticket/23436",
-        "score": 106,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Media Gallery - Cropping Image and then Cropping a thumbnail from that crop doesn't work.",
-        "track": "Media: Has Patch",
-        "status": "Accepted",
-        "component": "Unknown",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch 2nd-opinion media-edit",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "31177",
-        "url": "https://core.trac.wordpress.org/ticket/31177",
-        "score": 106,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Captions video not saved with the post and are lost on attachment page",
-        "track": "Media: Has Patch",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "postphotos",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "39358",
-        "url": "https://core.trac.wordpress.org/ticket/39358",
-        "score": 106,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Media search speed has been dramatically reduced",
-        "track": "Media: Has Patch",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "joemcgill",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "47456",
-        "url": "https://core.trac.wordpress.org/ticket/47456",
-        "score": 106,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Improve the user interface to ensure correct usage of the image alt text",
-        "track": "Media: Has Patch",
-        "status": "Accepted",
-        "component": "Unknown",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "wpcampus-report needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "53013",
-        "url": "https://core.trac.wordpress.org/ticket/53013",
-        "score": 106,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Improve media library grid management tools",
-        "track": "Media: Has Patch",
-        "status": "Accepted",
-        "component": "Unknown",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "60250",
-        "url": "https://core.trac.wordpress.org/ticket/60250",
-        "score": 106,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Feature Req \u2013 Media Library Grid-List",
-        "track": "Media: Has Patch",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "antpb",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
@@ -8692,6 +10276,116 @@
         "review": {}
       },
       {
+        "ticket_id": "60478",
+        "url": "https://core.trac.wordpress.org/ticket/60478",
+        "score": 103,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Upgrade to jQuery 4.0",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "External Libraries",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "02/08/2024 08:52:50 PM",
+        "modified": "02/17/2026 06:36:55 PM",
+        "keywords": "needs-patch needs-testing early",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65263",
+        "url": "https://core.trac.wordpress.org/ticket/65263",
+        "score": 103,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Colors from theme.json doesnt parse for hover states",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "05/19/2026 02:18:53 AM",
+        "modified": "06/07/2026 06:55:14 AM",
+        "keywords": "needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "15955",
         "url": "https://core.trac.wordpress.org/ticket/15955",
         "score": 101,
@@ -8816,116 +10510,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "26848",
-        "url": "https://core.trac.wordpress.org/ticket/26848",
-        "score": 101,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Image thumbnail on large images with ratio of 4:1",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "markoheijnen",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "37255",
-        "url": "https://core.trac.wordpress.org/ticket/37255",
-        "score": 101,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Update attachment functions to accept a post object in addition to ID",
-        "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "Unknown",
-        "owner": "johnbillion",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing needs-dev-note needs-test-info 2nd-opinion close",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -9132,61 +10716,6 @@
         "review": {}
       },
       {
-        "ticket_id": "48361",
-        "url": "https://core.trac.wordpress.org/ticket/48361",
-        "score": 101,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Select Files on iOS doesn't trigger on modal if start on Upload Files tab and switch to Media Library tab",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "adamsilverstein",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "50787",
         "url": "https://core.trac.wordpress.org/ticket/50787",
         "score": 101,
@@ -9239,589 +10768,6 @@
           }
         ],
         "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "55036",
-        "url": "https://core.trac.wordpress.org/ticket/55036",
-        "score": 101,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Sharpen thumbnails with Imagick adaptiveSharpenImage()",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "antpb",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch needs-testing close",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "17255",
-        "url": "https://core.trac.wordpress.org/ticket/17255",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "More statuses (like draft and/or private) for media files",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "22894",
-        "url": "https://core.trac.wordpress.org/ticket/22894",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Need WordPress Media Uploader Stop or Cancel Button in WP Version 3.5",
-        "track": "Media: Has Patch",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "22937",
-        "url": "https://core.trac.wordpress.org/ticket/22937",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Bulk Actions > Edit could allow batch-assignment of taxonomies to Media following the WP 3.5 media changes",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "28321",
-        "url": "https://core.trac.wordpress.org/ticket/28321",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Media uploader confuses user with description, caption, alt and title, without explanation",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "31395",
-        "url": "https://core.trac.wordpress.org/ticket/31395",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Indicate difference of two visually equal, but otherwise different images in non-list media views",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "32849",
-        "url": "https://core.trac.wordpress.org/ticket/32849",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Allow option of Grid AND List View of the gallery when inserting media into post",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "32965",
-        "url": "https://core.trac.wordpress.org/ticket/32965",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Add new Credit field to media attachment details",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "34223",
-        "url": "https://core.trac.wordpress.org/ticket/34223",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Core support for image regeneration",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "35887",
-        "url": "https://core.trac.wordpress.org/ticket/35887",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Adding multiple media to post - selecting image size",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch has-needs-design-feedback phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "40126",
-        "url": "https://core.trac.wordpress.org/ticket/40126",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Mobile has two media editing experiences",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "41462",
-        "url": "https://core.trac.wordpress.org/ticket/41462",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Promote media details admin page to full post page",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-design phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "42751",
-        "url": "https://core.trac.wordpress.org/ticket/42751",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Can we please  enqueue media-views independently ?",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "43658",
-        "url": "https://core.trac.wordpress.org/ticket/43658",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Media attachment filter drop-down mime types in grid mode is not properly filtered by available mime types",
-        "track": "Media: Has Patch",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-screenshots phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "59742",
-        "url": "https://core.trac.wordpress.org/ticket/59742",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Media library should display the number of pages/posts/urls a particular media file is being used in.",
-        "track": "Media: Has Patch",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "59753",
-        "url": "https://core.trac.wordpress.org/ticket/59753",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Attach image to existing content functionality not working properly",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "60345",
-        "url": "https://core.trac.wordpress.org/ticket/60345",
-        "score": 100,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Add duplicate checking for uploaded attachments",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
@@ -10397,50 +11343,6 @@
         "review": {}
       },
       {
-        "ticket_id": "22558",
-        "url": "https://core.trac.wordpress.org/ticket/22558",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Attachment term counts feels/are inaccurate",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "2nd-opinion needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "23464",
         "url": "https://core.trac.wordpress.org/ticket/23464",
         "score": 95,
@@ -10939,50 +11841,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "29368",
-        "url": "https://core.trac.wordpress.org/ticket/29368",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Pasted media do not appear in the library",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -12465,50 +13323,6 @@
         "review": {}
       },
       {
-        "ticket_id": "46970",
-        "url": "https://core.trac.wordpress.org/ticket/46970",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Remove white Space - iPhone 6/7/8",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-design has-screenshots needs-testing needs-patch",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "48328",
         "url": "https://core.trac.wordpress.org/ticket/48328",
         "score": 95,
@@ -12523,50 +13337,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "48522",
-        "url": "https://core.trac.wordpress.org/ticket/48522",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Attachment size not generated when large images uploaded",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "2nd-opinion needs-testing needs-unit-tests needs-refresh",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -13227,50 +13997,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "needs-testing needs-patch needs-design",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "54205",
-        "url": "https://core.trac.wordpress.org/ticket/54205",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "jqxhr is undefined inside of deferred.done() when using wp.media to add a custom image upload",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch needs-testing has-test-info",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -14005,50 +14731,6 @@
         "review": {}
       },
       {
-        "ticket_id": "60478",
-        "url": "https://core.trac.wordpress.org/ticket/60478",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Upgrade to jQuery 4.0",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch needs-testing early",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "61750",
         "url": "https://core.trac.wordpress.org/ticket/61750",
         "score": 95,
@@ -14313,50 +14995,6 @@
         "review": {}
       },
       {
-        "ticket_id": "65263",
-        "url": "https://core.trac.wordpress.org/ticket/65263",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Colors from theme.json doesnt parse for hover states",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "65350",
         "url": "https://core.trac.wordpress.org/ticket/65350",
         "score": 95,
@@ -14583,17 +15221,17 @@
       {
         "ticket_id": "65345",
         "url": "https://core.trac.wordpress.org/ticket/65345",
-        "score": 110,
-        "tier_class": "standard",
-        "tier_label": "Standard",
+        "score": 138,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
         "summary": "Site Icon subsizes use wrong array key 'width ' instead of 'width'",
         "track": "General: Needs Testing",
         "status": "New",
-        "component": "Unknown",
+        "component": "Media",
         "owner": "",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
+        "created": "05/26/2026 10:59:28 AM",
+        "modified": "06/15/2026 12:31:02 PM",
         "keywords": "has-patch needs-testing has-unit-tests",
         "signals": [
           {
@@ -14607,6 +15245,14 @@
           {
             "label": "Needs Testing +30",
             "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
           }
         ],
         "score_breakdown": [
@@ -14629,6 +15275,20 @@
             "label": "Needs Testing",
             "detail": "",
             "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
             "polarity": "positive"
           },
           {
