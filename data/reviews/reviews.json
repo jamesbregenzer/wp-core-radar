@@ -6,10 +6,10 @@
     "updated_at": "2026-06-14T08:11:40.103Z"
   },
   "41081": {
-    "status": "shortlist",
-    "reason": "Active patch + needs testing + good first bug",
-    "notes": "Strong candidate.\r\n\r\nHas active patch, good-first-bug, needs-testing, and needs-screenshots keywords. Discussion appears largely settled with no major architectural concerns. Scope is limited to Custom Menu widget UX feedback when no menu is selected or selected menu is empty.\r\n\r\nNext step:\r\n- Verify issue still reproduces on current trunk\r\n- Confirm patch applies cleanly\r\n- Test widget and Customizer behavior\r\n- Provide screenshots and testing feedback if successful",
-    "updated_at": "2026-06-15T20:35:54.494Z"
+    "status": "tested",
+    "reason": "Issue reproduced and refreshed patch behavior validated against current trunk.",
+    "notes": "Tested against current WordPress trunk using Twenty Twenty-One.\r\n\r\nBefore patch:\r\n- No menu selected displayed nothing.\r\n- Empty menu displayed nothing.\r\n- Populated menu displayed normally.\r\n\r\nRefreshed implementation tested:\r\n- No menu selected displays notice.\r\n- Empty menu displays notice.\r\n- Populated menu continues to display menu normally.\r\n\r\nPatch behavior matches ticket intent.\r\n\r\nOriginal attachment does not appear to apply cleanly against current trunk and likely requires refresh.",
+    "updated_at": "2026-06-15T21:15:34.105Z"
   },
   "65345": {
     "notes": "",
