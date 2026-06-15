@@ -2,7 +2,7 @@
 
 WP Core Radar tracks contribution outcomes and review decisions so scoring and workflow sections can improve over time without automating contribution activity.
 
-## Contribution Outcomes
+## Contribution outcomes
 
 Contribution outcomes describe what happened after a ticket was acted on manually in WordPress Trac.
 
@@ -23,7 +23,7 @@ data/outcomes/outcomes.csv
 
 This file remains intentionally simple because outcomes are low-volume and manually maintained.
 
-## Review Decisions
+## Review decisions
 
 Review decisions describe how Radar triaged a ticket before or after human review.
 
@@ -43,7 +43,7 @@ Review decisions live in:
 data/reviews/reviews.json
 ```
 
-Reviews are stored as JSON keyed by ticket ID because this format is easy for both the local development console and the protected Cloudflare Worker admin route to validate safely.
+Reviews are stored as JSON keyed by ticket ID because this format is easy for both local tooling and the protected Cloudflare Worker admin route to validate safely.
 
 Example:
 
@@ -60,8 +60,9 @@ Example:
 
 The review data file should remain constrained metadata only. It should not become a general-purpose repository write surface.
 
+Because the repository is public, review notes should be written as publishable metadata. Do not store secrets, private credentials, or sensitive personal notes in `data/reviews/reviews.json`.
 
-## Protected Admin Write Path
+## Protected admin write path
 
 The production `/radar/admin/` console is rendered by the Cloudflare Worker. It authenticates the user, loads generated ticket data from `docs/radar/admin-data.json`, and writes review decisions to `data/reviews/reviews.json` through the GitHub API.
 

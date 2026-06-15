@@ -12,6 +12,8 @@ The Mac Mini is responsible for:
 4. Regenerating the Markdown report, public dashboard, and admin data export.
 5. Committing and pushing changed data/report/dashboard files to GitHub.
 
+The Mac Mini creates `docs/radar/admin-data.json`, which the protected Worker admin console reads. It does not create, host, or authenticate the production `/radar/admin/` page.
+
 GitHub is the source of truth after the Mac Mini pushes changes. Cloudflare Pages deploys the public dashboard from the committed `docs/` output, and the Cloudflare Worker serves the protected admin UI.
 
 ## Why GitHub Actions does not collect data
@@ -20,7 +22,7 @@ GitHub-hosted runners do not have the same local browser/network context as the 
 
 GitHub Actions may still be useful for checks after the Mac Mini pushes, but not as the primary collector.
 
-## Main Commands
+## Main commands
 
 Run all enabled query tracks:
 
@@ -46,8 +48,7 @@ Continue collecting remaining tracks if one browser fetch fails:
 python3 scripts/run-radar.py --continue-on-error
 ```
 
-
-## Generated Dashboard Files
+## Generated dashboard files
 
 The dashboard generation step writes both the public dashboard and the data payload consumed by the protected Worker admin console:
 
@@ -58,7 +59,7 @@ docs/radar/admin-data.json
 
 The public dashboard includes a header link to `/radar/admin/`. The protected admin route itself is rendered by the Cloudflare Worker, not by the static Pages output.
 
-## Scheduled Runner
+## Scheduled runner
 
 Scheduled collection should use the wrapper script:
 
@@ -121,7 +122,7 @@ then grant Full Disk Access, or at minimum Files and Folders access for Download
 
 This is a macOS permission issue, not a repository or GitHub issue. The manual run can succeed because Terminal already has access, while the LaunchAgent process does not.
 
-## Archive Convention
+## Archive convention
 
 Imported CSV files are archived under:
 

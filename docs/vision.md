@@ -28,4 +28,10 @@ The project should remain:
 
 The public dashboard should be a polished, read-only artifact.
 
-The admin console should remain protected because it writes review state and supports the human review workflow. The public dashboard should stay read-only and polished, while `/radar/admin/` should remain narrowly scoped to authenticated review metadata updates.
+The admin console should remain protected because it writes review state and supports the human review workflow. The public dashboard should stay read-only, while `/radar/admin/` should remain narrowly scoped to authenticated review metadata updates.
+
+## Portfolio domain direction
+
+`james.bregenzer.dev` can act as a portfolio-style routing layer where individual projects live under path prefixes such as `/radar/`. Static project output can come from separate Cloudflare Pages or GitHub Pages origins, while protected or dynamic project tools can be rendered directly by the Worker.
+
+This lets Radar remain its own focused repository while still appearing as part of a broader personal portfolio domain.

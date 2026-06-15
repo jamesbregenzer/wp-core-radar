@@ -120,8 +120,8 @@ def load_reviews(path: Path = REVIEWS_JSON) -> dict[str, dict[str, str]]:
     """Load human review decisions from JSON.
 
     Reviews are keyed by normalized ticket ID so the admin workflow can update
-    exactly one constrained data file. This is intentionally easier for a
-    future Worker-backed admin endpoint to validate than CSV rows.
+    exactly one constrained data file. This is intentionally easier for the
+    Worker-backed admin endpoint to validate than CSV rows.
     """
     if not path.exists():
         return {}
