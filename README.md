@@ -15,7 +15,7 @@
 
 WP Core Radar is a deterministic, human-in-the-loop contribution discovery and prioritization workflow for WordPress Core tickets.
 
-It collects public ticket data from WordPress Trac, archives raw CSV exports, scores opportunities with explainable rules, and publishes a public dashboard plus a protected review console so a human contributor can decide what to test, watch, reject, or act on manually.
+It collects public ticket data from WordPress Trac, archives raw CSV exports, scores opportunities with explainable rules including freshness and activity momentum, and publishes a public dashboard plus a protected review console so a human contributor can decide what to test, watch, reject, or act on manually.
 
 ## What this project is
 
@@ -23,6 +23,7 @@ WP Core Radar helps answer:
 
 - Which WordPress Core tickets are worth reviewing today?
 - Which tickets look like good patch-testing opportunities?
+- Which tickets are fresh or recently active enough to be worth prioritizing now?
 - Which opportunities have clear signals such as patches, testing needs, owner activity, or feedback requests?
 - Which tickets have already been reviewed, rejected, watched, tested, commented on, or completed?
 

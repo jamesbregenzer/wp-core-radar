@@ -20,6 +20,12 @@ Current enabled tracks:
 
 Unknown archived datasets fall back to a baseline of +50.
 
+## Freshness and Momentum
+
+Freshness is scored from the ticket's `created` date and momentum is scored from the ticket's `modified` or change time. These signals are intentionally modest, but they help keep Priority Targets focused on current, approachable work instead of allowing very old tickets to rank highly only because they accumulated useful keywords years ago.
+
+Ticket age and activity age are scored separately. A ticket can be old but still receive a small momentum boost when it was recently updated; a fresh ticket can still be penalized later if it stops receiving activity.
+
 ## Positive Ticket Signals
 
 | Signal | Points | Source |
@@ -28,15 +34,18 @@ Unknown archived datasets fall back to a baseline of +50.
 | Needs testing | +30 | `keywords` contains `needs-testing` or `needs testing` |
 | Good first bug | +20 | `keywords` contains `good-first-bug` or `good first bug` |
 | Media component | +20 | `component` is `Media` |
-| Recent activity within 14 days | +20 | modified/change time |
 | Accessibility signal | +18 | component or keywords mention accessibility |
 | Dev feedback | +18 | `keywords` contains `dev-feedback` or `dev feedback` |
 | Reporter feedback | +10 | `keywords` contains `reporter-feedback` or `reporter feedback` |
-| Recent activity within 60 days | +10 | modified/change time |
+| Fresh ticket within 30 days | +8 | created date |
+| Recent activity within 7 days | +8 | modified/change time |
 | Concrete milestone | +8 | milestone is present and not `Awaiting Review` or `Future Release` |
-| Mature but not ancient | +8 | created between 30 and 730 days ago |
 | Healthy comment count | +7 | 2–20 comments |
 | Has owner | +6 | owner exists and is not `anonymous` or `nobody` |
+| Fresh ticket within 90 days | +5 | created date |
+| Recent activity within 30 days | +5 | modified/change time |
+| Fresh ticket within 180 days | +2 | created date |
+| Recent activity within 90 days | +2 | modified/change time |
 
 ## Negative Ticket Signals
 
@@ -45,10 +54,13 @@ Unknown archived datasets fall back to a baseline of +50.
 | Closed or non-actionable status | -100 | status is `closed`, `fixed`, `wontfix`, `duplicate`, or `invalid` |
 | Already produced props | -60 | `data/outcomes/outcomes.csv` records `props` |
 | Already tested | -20 | `data/outcomes/outcomes.csv` records `tested` |
-| Stale activity over two years | -10 | modified/change time older than 730 days |
+| Very old ticket over five years | -12 | created date older than 1825 days |
+| Stale activity over one year | -10 | modified/change time older than 365 days |
 | Missing summary | -10 | summary field is empty |
-| Very old ticket | -8 | created more than 3650 days ago |
+| Old ticket over three years | -8 | created date older than 1095 days |
 | Very large thread | -8 | more than 80 comments |
+| Stale activity over six months | -5 | modified/change time older than 180 days |
+| Older ticket over one year | -4 | created date older than 365 days |
 
 ## Priority Target Rules
 

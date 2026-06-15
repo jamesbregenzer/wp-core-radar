@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-06-15 13:00
+Generated: 2026-06-15 20:27
 
 ## Summary
 
@@ -1049,21 +1049,21 @@ No tickets in this section.
 
 | Query | Date | Rows | File |
 |---|---:|---:|---|
-| accessibility_has_patch | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-13 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/good_first_bugs.csv` |
-| media_has_patch | 2026-06-13 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-14 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/good_first_bugs.csv` |
-| media_has_patch | 2026-06-14 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-15 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/good_first_bugs.csv` |
-| media_has_patch | 2026-06-15 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-13 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-13 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-13 | 256 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-13 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/good_first_bugs.csv` |
+| media_has_patch | 2026-06-13 | 24 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-14 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-14 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-14 | 256 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-14 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/good_first_bugs.csv` |
+| media_has_patch | 2026-06-14 | 24 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-15 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-15 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-15 | 256 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-15 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/good_first_bugs.csv` |
+| media_has_patch | 2026-06-15 | 24 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/media_has_patch.csv` |
 
 ## Guardrail
 
