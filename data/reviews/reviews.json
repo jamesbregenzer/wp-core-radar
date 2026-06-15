@@ -7,9 +7,9 @@
   },
   "41081": {
     "status": "tested",
-    "reason": "Issue reproduced and refreshed patch behavior validated against current trunk.",
-    "notes": "Tested against current WordPress trunk using Twenty Twenty-One.\r\n\r\nBefore patch:\r\n- No menu selected displayed nothing.\r\n- Empty menu displayed nothing.\r\n- Populated menu displayed normally.\r\n\r\nRefreshed implementation tested:\r\n- No menu selected displays notice.\r\n- Empty menu displays notice.\r\n- Populated menu continues to display menu normally.\r\n\r\nPatch behavior matches ticket intent.\r\n\r\nOriginal attachment does not appear to apply cleanly against current trunk and likely requires refresh.",
-    "updated_at": "2026-06-15T21:15:34.105Z"
+    "reason": "Refreshed stale patch and validated behavior against current trunk.",
+    "notes": "Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.",
+    "updated_at": "2026-06-15T21:48:04.323Z"
   },
   "65345": {
     "notes": "",
