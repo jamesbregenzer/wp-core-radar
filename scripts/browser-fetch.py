@@ -15,6 +15,22 @@ from radarlib import ROOT, load_queries
 DOWNLOADS = Path.home() / "Downloads"
 DEFAULT_TIMEOUT_SECONDS = 90
 
+QUERY_COLUMNS = (
+    "id",
+    "summary",
+    "status",
+    "component",
+    "owner",
+    "type",
+    "priority",
+    "milestone",
+    "version",
+    "keywords",
+    "time",
+    "changetime",
+)
+
+
 
 def query_url(query: dict) -> str:
     if query.get("url"):
@@ -24,7 +40,15 @@ def query_url(query: dict) -> str:
     if not track:
         raise ValueError(f"Query {query.get('slug', '<unknown>')} is missing both url and track.")
 
-    params = urlencode({"status": "!closed", "keywords": f"~{track}", "format": "csv"})
+    params = urlencode(
+        {
+            "status": "!closed",
+            "keywords": f"~{track}",
+            "format": "csv",
+            "col": list(QUERY_COLUMNS),
+        },
+        doseq=True,
+    )
     return f"https://core.trac.wordpress.org/query?{params}"
 
 

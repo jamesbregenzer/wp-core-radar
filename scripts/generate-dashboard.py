@@ -34,7 +34,19 @@ def html_badge(label: str, css_prefix: str = "signal") -> str:
 
 
 def signal_badges(keywords: str, reasons: list[str]) -> str:
-    return " ".join(html_badge(label, "signal") for label in signal_labels(keywords, reasons))
+    """Render compact public signal pills with explicit scoring context."""
+    labels = ranking_signal_labels(reasons)
+
+    # Keep non-scoring Trac keywords visible after the scoring rationale because
+    # keywords like needs-refresh and needs-screenshots are still useful triage
+    # context even when they do not directly affect the score.
+    scored_keys = {label.lower().replace("-", " ") for label in labels}
+    for keyword_label in signal_labels(keywords, []):
+        normalized = keyword_label.lower().replace("-", " ")
+        if normalized not in scored_keys:
+            labels.append(keyword_label)
+
+    return " ".join(html_badge(label, "signal") for label in labels)
 
 
 def ticket_row(item: dict[str, Any], duplicate_sources: dict[str, set[str]]) -> str:
@@ -236,7 +248,10 @@ def dashboard_css() -> str:
     .signal-feedback,
     .tier-label-strong { background: #ede9fe; color: #6d28d9; }
     .signal-refresh { background: #ffedd5; color: #9a3412; }
-    .signal-recent { background: #ccfbf1; color: #115e59; }
+    .signal-recent,
+    .signal-freshness { background: #ccfbf1; color: #115e59; }
+    .signal-momentum { background: #ecfccb; color: #365314; }
+    .signal-age { background: #fef9c3; color: #854d0e; }
     .signal-component { background: #fce7f3; color: #9d174d; }
     a {
       color: #2271b1;

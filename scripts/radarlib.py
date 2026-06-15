@@ -204,8 +204,10 @@ def read_ticket_rows(dataset: Dataset) -> list[dict[str, Any]]:
 
 
 def score_ticket(row: dict[str, Any], query_meta: dict[str, Any], outcomes: dict[str, str]) -> tuple[int, list[str]]:
-    score = int(query_meta.get("priority", 50))
-    reasons: list[str] = [f"track priority +{query_meta.get('priority', 50)}"]
+    priority = int(query_meta.get("priority", 50))
+    score = priority
+    track_label = query_meta.get("name", query_meta.get("track", "configured track"))
+    reasons: list[str] = [f"track priority: {track_label} +{priority}"]
 
     ticket_id = row.get("ticket_id", "")
     keywords = first_value(row, KEYWORDS_KEYS).lower()
@@ -250,32 +252,32 @@ def score_ticket(row: dict[str, Any], query_meta: dict[str, Any], outcomes: dict
     if modified_age is not None:
         if modified_age <= 14:
             score += 20
-            reasons.append("recent activity <=14 days +20")
+            reasons.append("freshness: recently updated <=14 days +20")
         elif modified_age <= 60:
             score += 10
-            reasons.append("recent activity <=60 days +10")
+            reasons.append("freshness: updated within 60 days +10")
         elif modified_age > 730:
             score -= 10
-            reasons.append("stale activity >2 years -10")
+            reasons.append("freshness: stale activity >2 years -10")
 
     created_age = days_since(first_value(row, CREATED_KEYS))
     if created_age is not None:
         if 30 <= created_age <= 730:
             score += 8
-            reasons.append("mature but not ancient +8")
+            reasons.append("ticket age: mature but not ancient +8")
         elif created_age > 3650:
             score -= 8
-            reasons.append("very old ticket -8")
+            reasons.append("ticket age: very old ticket -8")
 
     comments_raw = first_value(row, COMMENTS_KEYS)
     if comments_raw.isdigit():
         comments = int(comments_raw)
         if 2 <= comments <= 20:
             score += 7
-            reasons.append("healthy comment count +7")
+            reasons.append("momentum: healthy comment count +7")
         elif comments > 80:
             score -= 8
-            reasons.append("very large thread -8")
+            reasons.append("momentum: very large thread -8")
 
     if ticket_id in outcomes:
         outcome = outcomes[ticket_id]
@@ -346,7 +348,7 @@ def is_priority_target(item: dict[str, Any]) -> bool:
     )
     has_manageable_signal = any(
         signal in reasons
-        for signal in ("recent activity", "healthy comment count", "has owner")
+        for signal in ("freshness:", "momentum:", "recent activity", "healthy comment count", "has owner")
     )
     has_stale_penalty = any(
         penalty in reasons
@@ -466,8 +468,12 @@ def signal_class(label: str) -> str:
         return "owner"
     if "refresh" in lowered:
         return "refresh"
-    if "recent" in lowered:
-        return "recent"
+    if "freshness" in lowered or "recent" in lowered or "stale" in lowered:
+        return "freshness"
+    if "momentum" in lowered or "comment count" in lowered or "large thread" in lowered:
+        return "momentum"
+    if "ticket age" in lowered or "very old" in lowered or "mature" in lowered:
+        return "age"
     if "component" in lowered:
         return "component"
 
@@ -491,27 +497,70 @@ def signal_labels(keywords: str, reasons: list[str]) -> list[str]:
     return unique
 
 
+def reason_points(reason: str) -> str:
+    match = re.search(r"([+-]\d+)", reason)
+    return match.group(1) if match else ""
+
+
+def reason_without_points(reason: str) -> str:
+    points = reason_points(reason)
+    return reason.replace(points, "").strip(" ,") if points else reason.strip()
+
+
+def split_reason(reason: str) -> tuple[str, str]:
+    """Return a human category/detail pair for a score reason."""
+    label = reason_without_points(reason)
+
+    if ":" in label:
+        category, detail = label.split(":", 1)
+        return pretty_label(category.strip()), pretty_label(detail.strip())
+
+    return pretty_label(label), ""
+
+
+def scoring_signal_label(reason: str) -> str:
+    """Return a concise pill label that keeps score context visible."""
+    category, detail = split_reason(reason)
+    points = reason_points(reason)
+
+    if detail:
+        label = f"{category}: {detail}"
+    else:
+        label = category
+
+    return f"{label} {points}".strip()
+
+
 def ranking_signal_labels(reasons: list[str]) -> list[str]:
+    """Return scored signal labels for dashboard/admin pills.
+
+    These labels intentionally expose the actual ranking rationale, not just
+    raw Trac keywords, so reviewers can see why a ticket rose or fell without
+    reading the full score table.
+    """
     labels: list[str] = []
 
     for reason in reasons:
         lower = reason.lower()
-        if "has patch" in lower:
-            labels.append("Has Patch")
-        elif "needs testing" in lower:
-            labels.append("Needs Testing")
-        elif "good first bug" in lower:
-            labels.append("Good First Bug")
-        elif "dev feedback" in lower:
-            labels.append("Dev Feedback")
-        elif "reporter feedback" in lower:
-            labels.append("Reporter Feedback")
-        elif "has owner" in lower:
-            labels.append("Has Owner")
-        elif "recent activity" in lower:
-            labels.append("Recent Activity")
-        elif "preferred component" in lower:
-            labels.append("Preferred Component")
+        if any(
+            signal in lower
+            for signal in (
+                "track priority",
+                "has patch",
+                "needs testing",
+                "good first bug",
+                "dev feedback",
+                "reporter feedback",
+                "has owner",
+                "freshness:",
+                "ticket age:",
+                "momentum:",
+                "preferred component",
+                "accessibility signal",
+                "concrete milestone",
+            )
+        ):
+            labels.append(scoring_signal_label(reason))
 
     return labels or ["Scored Candidate"]
 
@@ -520,14 +569,18 @@ def score_breakdown(reasons: list[str]) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
 
     for reason in reasons:
-        match = re.search(r"([+-]\d+)", reason)
-        points = match.group(1) if match else ""
-        label = reason.replace(points, "").strip(" ,") if points else reason
+        points = reason_points(reason)
+        category, detail = split_reason(reason)
         polarity = "positive" if points.startswith("+") else "negative" if points.startswith("-") else "neutral"
-        rows.append({"points": points, "label": pretty_label(label), "polarity": polarity})
+        rows.append({
+            "points": points,
+            "label": category,
+            "detail": detail,
+            "display": f"{category}: {detail}" if detail else category,
+            "polarity": polarity,
+        })
 
     return rows
-
 
 def discovery_track_label(sources: set[str]) -> str:
     return ", ".join(pretty_label(source) for source in sorted(sources))

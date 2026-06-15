@@ -45,6 +45,7 @@ Admin write-back should remain narrowly scoped to `data/reviews/reviews.json`. T
 4. `scripts/radarlib.py` discovers datasets, normalizes ticket rows, loads outcomes/reviews, scores tickets, and groups workflow sections.
 5. `scripts/generate-report.py` writes `reports/latest.md` and a dated report.
 6. `scripts/generate-dashboard.py` writes `docs/radar/index.html` and `docs/radar/admin-data.json`.
+7. Local review writes through `scripts/review-ticket.py` regenerate dashboard files immediately so workflow sections do not remain stale after a decision change.
 7. The Mac Mini commits and pushes changed data, docs, and report files to GitHub.
 8. Cloudflare Pages deploys the static dashboard output.
 9. The Cloudflare Worker routes `/radar/` to the Pages origin and handles `/radar/admin/` directly.

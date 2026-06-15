@@ -12,7 +12,7 @@ The Mac Mini is responsible for:
 4. Regenerating the Markdown report, public dashboard, and admin data export.
 5. Committing and pushing changed data/report/dashboard files to GitHub.
 
-The Mac Mini creates `docs/radar/admin-data.json`, which the protected Worker admin console reads. It does not create, host, or authenticate the production `/radar/admin/` page.
+The Mac Mini creates `docs/radar/admin-data.json`, which the protected Worker admin console reads. It does not create, host, or authenticate the production `/radar/admin/` page. The scheduled run remains the production mechanism that reconciles review writes from GitHub with regenerated dashboard/admin data.
 
 GitHub is the source of truth after the Mac Mini pushes changes. Cloudflare Pages deploys the public dashboard from the committed `docs/` output, and the Cloudflare Worker serves the protected admin UI.
 

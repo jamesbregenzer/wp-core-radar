@@ -18,16 +18,16 @@ positive:
   accessibility-signal: 18
   concrete-milestone: 8
   owner-assigned: 6
-  recent-activity-14-days: 20
-  recent-activity-60-days: 10
-  mature-ticket-30-to-730-days: 8
-  healthy-comment-count-2-to-20: 7
+  freshness-recently-updated-14-days: 20
+  freshness-updated-within-60-days: 10
+  ticket-age-mature-30-to-730-days: 8
+  momentum-healthy-comment-count-2-to-20: 7
 
 negative:
   closed-or-non-actionable-status: -100
-  stale-activity-over-2-years: -10
-  very-old-ticket-over-10-years: -8
-  very-large-thread-over-80-comments: -8
+  freshness-stale-activity-over-2-years: -10
+  ticket-age-very-old-over-10-years: -8
+  momentum-very-large-thread-over-80-comments: -8
   already-produced-props: -60
   already-tested: -20
   missing-summary: -10

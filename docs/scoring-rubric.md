@@ -20,11 +20,17 @@ Current enabled tracks:
 
 Unknown archived datasets fall back to a baseline of +50.
 
-## Freshness and Momentum
+## Freshness, Momentum, and Ticket Age
 
-Freshness is scored from the ticket's `created` date and momentum is scored from the ticket's `modified` or change time. These signals are intentionally modest, but they help keep Priority Targets focused on current, approachable work instead of allowing very old tickets to rank highly only because they accumulated useful keywords years ago.
+Freshness, momentum, and ticket age are scored separately and shown as explicit score details in the dashboard/admin payload. This keeps the scoring explainable enough for review decisions such as `Freshness: Recently updated <=14 days +20`, `Momentum: Healthy comment count +7`, or `Ticket age: Very old ticket -8`.
 
-Ticket age and activity age are scored separately. A ticket can be old but still receive a small momentum boost when it was recently updated; a fresh ticket can still be penalized later if it stops receiving activity.
+- **Freshness** is based on the ticket's `modified` or change time. It answers: has this ticket moved recently?
+- **Momentum** is based on the comment count. It answers: does the ticket have enough discussion to be actionable without becoming a huge thread?
+- **Ticket age** is based on the ticket's `created` date. It answers: is the ticket mature enough to have context, or so old that it may need extra caution?
+
+A ticket can be old but still receive a freshness boost when it was recently updated. A mature ticket can receive a small ticket-age boost, while a very old ticket can be penalized if age suggests extra risk.
+
+Freshness and ticket-age signals depend on Trac CSV fields such as `time` and `changetime`. New browser-fetch runs request those columns explicitly so future generated dashboards can show these details when Trac provides them.
 
 ## Positive Ticket Signals
 
@@ -37,15 +43,12 @@ Ticket age and activity age are scored separately. A ticket can be old but still
 | Accessibility signal | +18 | component or keywords mention accessibility |
 | Dev feedback | +18 | `keywords` contains `dev-feedback` or `dev feedback` |
 | Reporter feedback | +10 | `keywords` contains `reporter-feedback` or `reporter feedback` |
-| Fresh ticket within 30 days | +8 | created date |
-| Recent activity within 7 days | +8 | modified/change time |
+| Freshness: recently updated <=14 days | +20 | modified/change time |
+| Freshness: updated within 60 days | +10 | modified/change time |
+| Ticket age: mature but not ancient | +8 | created date is 30–730 days old |
 | Concrete milestone | +8 | milestone is present and not `Awaiting Review` or `Future Release` |
-| Healthy comment count | +7 | 2–20 comments |
+| Momentum: healthy comment count | +7 | 2–20 comments |
 | Has owner | +6 | owner exists and is not `anonymous` or `nobody` |
-| Fresh ticket within 90 days | +5 | created date |
-| Recent activity within 30 days | +5 | modified/change time |
-| Fresh ticket within 180 days | +2 | created date |
-| Recent activity within 90 days | +2 | modified/change time |
 
 ## Negative Ticket Signals
 
@@ -54,13 +57,10 @@ Ticket age and activity age are scored separately. A ticket can be old but still
 | Closed or non-actionable status | -100 | status is `closed`, `fixed`, `wontfix`, `duplicate`, or `invalid` |
 | Already produced props | -60 | `data/outcomes/outcomes.csv` records `props` |
 | Already tested | -20 | `data/outcomes/outcomes.csv` records `tested` |
-| Very old ticket over five years | -12 | created date older than 1825 days |
-| Stale activity over one year | -10 | modified/change time older than 365 days |
+| Freshness: stale activity >2 years | -10 | modified/change time older than 730 days |
 | Missing summary | -10 | summary field is empty |
-| Old ticket over three years | -8 | created date older than 1095 days |
-| Very large thread | -8 | more than 80 comments |
-| Stale activity over six months | -5 | modified/change time older than 180 days |
-| Older ticket over one year | -4 | created date older than 365 days |
+| Ticket age: very old ticket | -8 | created date older than 3650 days |
+| Momentum: very large thread | -8 | more than 80 comments |
 
 ## Priority Target Rules
 
@@ -69,7 +69,7 @@ A ticket appears in **Priority Targets** only when all of these are true:
 1. It has no existing review decision.
 2. Its score is at least 150.
 3. It has at least one action signal: `needs testing`, `has patch`, or `good first bug`.
-4. It has at least one manageability signal: `recent activity`, `healthy comment count`, or `has owner`.
+4. It has at least one manageability signal: ``freshness`, `momentum`, or `has owner`.
 5. It does not include stale or already-acted-on penalties such as `very old ticket`, `stale activity`, `very large thread`, `already produced props`, or `already tested`.
 
 Only the first 12 matching tickets are shown as Priority Targets.

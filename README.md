@@ -97,13 +97,13 @@ Record a review decision locally:
 python3 scripts/review-ticket.py 33073 shortlist "Good first contribution candidate"
 ```
 
-The local review command updates `data/reviews/reviews.json` directly. In production, review decisions should normally be recorded through the protected `/radar/admin/` Worker console.
+The local review command updates `data/reviews/reviews.json` directly and regenerates `docs/radar/index.html` plus `docs/radar/admin-data.json` so local review grouping does not become stale. In production, review decisions should normally be recorded through the protected `/radar/admin/` Worker console.
 
 ## Review workflow
 
 Normal review decisions should be made in the protected Cloudflare Worker admin console at `/radar/admin/`.
 
-For local-only maintenance or recovery work, `scripts/review-ticket.py` can update `data/reviews/reviews.json` directly. After using the local script, commit and push the changed review file so the public dashboard and protected admin console stay in sync.
+For local-only maintenance or recovery work, `scripts/review-ticket.py` can update `data/reviews/reviews.json` directly. After using the local script, commit and push the changed review file and regenerated dashboard files so the public dashboard and protected admin console stay in sync.
 
 ## Outputs
 

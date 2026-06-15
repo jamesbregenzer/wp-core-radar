@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-06-15 15:43
+Generated: 2026-06-15 22:54
 
 ## Summary
 
@@ -16,9 +16,9 @@ Generated: 2026-06-15 15:43
 |---|---:|---|
 | Priority Targets | 7 | Highest-scoring unreviewed tickets with clear action and manageability signals. |
 | Top Opportunities | 270 | Remaining unreviewed tickets ranked by score. |
-| Shortlisted | 1 | Tickets manually marked as strong candidates. |
+| Shortlisted | 0 | Tickets manually marked as strong candidates. |
 | Watching | 1 | Tickets worth monitoring but not acting on yet. |
-| Completed / Acted On | 0 | Tickets already tested, commented on, propped, or committed. |
+| Completed / Acted On | 1 | Tickets already tested, commented on, propped, or committed. |
 | Rejected | 1 | Tickets manually rejected as poor fits. |
 
 ## Priority Targets
@@ -32,7 +32,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Accepted
 - Owner: pbearne
 - Keywords: dev-feedback has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -50,7 +50,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: timothyblynjacobs
 - Keywords: has-patch early dev-feedback needs-testing has-unit-tests
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -68,7 +68,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: brianhenryie
 - Keywords: has-unit-tests needs-testing has-patch has-test-info dev-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -86,7 +86,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: Hareesh Pillai
 - Keywords: has-patch needs-testing needs-test-info dev-feedback changes-requested
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -104,7 +104,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: adamsilverstein
 - Keywords: dev-feedback needs-unit-tests needs-testing has-patch
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -122,7 +122,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Accepted
 - Owner: audrasjb
 - Keywords: has-patch has-test-info has-screenshots has-unit-tests needs-testing dev-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -140,7 +140,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Accepted
 - Owner: joedolson
 - Keywords: has-patch reporter-feedback has-ux-feedback has-ui-feedback phase-3-media-triage
-- Why it ranked: track priority +100, has patch +35, reporter feedback +10, has owner +6
+- Why it ranked: track priority: Media: Has Patch +100, has patch +35, reporter feedback +10, has owner +6
 - Score breakdown:
   - +100: Track Priority
   - +35: Has Patch
@@ -158,7 +158,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: Reopened
 - Keywords: good-first-bug has-patch 2nd-opinion has-unit-tests needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, good first bug +20
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -174,7 +174,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: good-first-bug has-test-info has-patch has-unit-tests needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, good first bug +20
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -190,7 +190,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: good-first-bug has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, good first bug +20
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -206,7 +206,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: Reopened
 - Keywords: has-patch needs-testing needs-unit-tests dev-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -222,7 +222,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: Reopened
 - Keywords: needs-testing has-patch dev-feedback 2nd-opinion
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -238,7 +238,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: Reopened
 - Keywords: has-patch needs-testing dev-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -254,7 +254,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch needs-testing dev-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -270,7 +270,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch dev-feedback needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -286,7 +286,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: dev-feedback has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -302,7 +302,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: needs-testing dev-feedback has-patch has-unit-tests
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -318,7 +318,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: servehappy dev-feedback has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -334,7 +334,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch dev-feedback needs-testing has-unit-tests 2nd-opinion
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -350,7 +350,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch needs-testing dev-feedback has-unit-tests needs-refresh
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -366,7 +366,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: dev-feedback has-patch has-unit-tests early early-like-actually-early needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -382,7 +382,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch dev-feedback needs-testing early has-unit-tests changes-requested
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -398,7 +398,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: needs-testing has-patch dev-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -414,7 +414,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch dev-feedback early needs-dev-note needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -430,7 +430,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-test-info has-patch needs-testing dev-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -446,7 +446,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: needs-testing dev-feedback has-test-info has-patch
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -462,7 +462,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: Assigned
 - Keywords: has-patch 2nd-opinion dev-feedback needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -479,7 +479,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: SergeyBiryukov
 - Keywords: has-patch needs-unit-tests needs-testing needs-test-info reporter-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -497,7 +497,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: audrasjb
 - Keywords: needs-testing has-patch needs-test-info reporter-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -515,7 +515,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: adamsilverstein
 - Keywords: avif has-patch has-unit-tests early reporter-feedback needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -533,7 +533,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Accepted
 - Owner: westonruter
 - Keywords: has-patch needs-testing needs-test-info reporter-feedback
-- Why it ranked: track priority +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -551,7 +551,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Accepted
 - Owner: joedolson
 - Keywords: has-patch has-unit-tests phase-3-media-triage needs-design
-- Why it ranked: track priority +100, has patch +35, has owner +6
+- Why it ranked: track priority: Media: Has Patch +100, has patch +35, has owner +6
 - Score breakdown:
   - +100: Track Priority
   - +35: Has Patch
@@ -567,7 +567,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reopened
 - Owner: azaozz
 - Keywords: has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -584,7 +584,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: SergeyBiryukov
 - Keywords: needs-testing has-patch
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -601,7 +601,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: johnjamesjacoby
 - Keywords: has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -618,7 +618,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: chriscct7
 - Keywords: has-patch needs-testing needs-refresh needs-docs
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -635,7 +635,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: chriscct7
 - Keywords: has-patch has-unit-tests needs-testing close
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -652,7 +652,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: helen
 - Keywords: has-patch has-unit-tests needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -669,7 +669,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: SergeyBiryukov
 - Keywords: 2nd-opinion has-patch needs-testing has-unit-tests
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -686,7 +686,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: tz-media
 - Keywords: has-patch, needs-testing, needs-unit-tests, 2nd-opinion
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -703,7 +703,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: antpb
 - Keywords: has-patch needs-testing 2nd-opinion
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -720,7 +720,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Accepted
 - Owner: pbearne
 - Keywords: has-patch needs-testing has-unit-tests needs-refresh
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -737,7 +737,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: justinahinon
 - Keywords: has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -754,7 +754,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Accepted
 - Owner: adamsilverstein
 - Keywords: has-patch needs-testing 2nd-opinion
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -771,7 +771,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: audrasjb
 - Keywords: changes-requested has-patch has-test-info has-unit-tests needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -788,7 +788,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Reviewing
 - Owner: audrasjb
 - Keywords: has-patch has-unit-tests needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -805,7 +805,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: rajeshcp
 - Keywords: has-patch needs-testing has-test-info
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -822,7 +822,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: rajeshcp
 - Keywords: has-patch needs-testing has-test-info has-unit-tests has-screenshots
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -839,7 +839,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: rajeshcp
 - Keywords: has-patch needs-testing has-test-info has-unit-tests
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -856,7 +856,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: rajeshcp
 - Keywords: has-patch needs-testing has-test-info has-unit-tests
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -873,7 +873,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Assigned
 - Owner: adamsilverstein
 - Keywords: has-patch has-unit-tests needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -890,7 +890,7 @@ Generated: 2026-06-15 15:43
 - Trac status: Accepted
 - Owner: joedolson
 - Keywords: has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -906,7 +906,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -921,7 +921,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: Reopened
 - Keywords: has-patch has-screenshots needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -936,7 +936,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch needs-unit-tests needs-testing
-- Why it ranked: track priority +65, has patch +35, needs testing +30
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -951,7 +951,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: Reopened
 - Keywords: needs-testing has-patch
-- Why it ranked: track priority +65, has patch +35, needs testing +30
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -966,7 +966,7 @@ Generated: 2026-06-15 15:43
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch needs-testing has-unit-tests needs-refresh
-- Why it ranked: track priority +65, has patch +35, needs testing +30
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -975,35 +975,7 @@ Generated: 2026-06-15 15:43
 
 ## Shortlisted
 
-#### 1. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
-
-- Score: **156**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Assigned
-- Owner: mdifelice
-- Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
-- Review status: shortlist
-- Review reason: Active patch + needs testing + good first bug
-- Review notes: Strong candidate.
-
-Has active patch, good-first-bug, needs-testing, and needs-screenshots keywords. Discussion appears largely settled with no major architectural concerns. Scope is limited to Custom Menu widget UX feedback when no menu is selected or selected menu is empty.
-
-Next step:
-- Verify issue still reproduces on current trunk
-- Confirm patch applies cleanly
-- Test widget and Customizer behavior
-- Provide screenshots and testing feedback if successful
-- Review updated: 2026-06-15T20:35:54.494Z
-- Why it ranked: track priority +65, has patch +35, needs testing +30, good first bug +20, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Good First Bug
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+No tickets in this section.
 
 ## Watching
 
@@ -1020,7 +992,7 @@ Next step:
 - Review reason: Needs refresh/dev feedback
 - Review notes: Good candidate, but verify latest patch applies and dev feedback is addressed before testing.
 - Review updated: 2026-06-14T08:11:40.103Z
-- Why it ranked: track priority +65, has patch +35, needs testing +30, dev feedback +18, good first bug +20, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, good first bug +20, has owner +6
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -1032,7 +1004,27 @@ Next step:
 
 ## Completed / Acted On
 
-No tickets in this section.
+#### 1. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Unknown
+- Trac status: Assigned
+- Owner: mdifelice
+- Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
+- Review status: tested
+- Review reason: Refreshed stale patch and validated behavior against current trunk.
+- Review notes: Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.
+- Review updated: 2026-06-15T21:48:04.323Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has owner +6
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +6: Has Owner
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Rejected
 
@@ -1047,7 +1039,7 @@ No tickets in this section.
 - Review status: reject
 - Review reason: Too complex for quick testing
 - Review updated: 2026-06-14T06:02:20Z
-- Why it ranked: track priority +65, has patch +35, needs testing +30, already tested -20
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, already tested -20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -1059,21 +1051,21 @@ No tickets in this section.
 
 | Query | Date | Rows | File |
 |---|---:|---:|---|
-| accessibility_has_patch | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-13 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/good_first_bugs.csv` |
-| media_has_patch | 2026-06-13 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-14 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/good_first_bugs.csv` |
-| media_has_patch | 2026-06-14 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-15 | 255 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/good_first_bugs.csv` |
-| media_has_patch | 2026-06-15 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-13 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-13/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-13 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-13/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-13 | 256 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-13/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-13 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-13/good_first_bugs.csv` |
+| media_has_patch | 2026-06-13 | 24 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-13/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-14 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-14/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-14 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-14/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-14 | 256 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-14/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-14 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-14/good_first_bugs.csv` |
+| media_has_patch | 2026-06-14 | 24 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-14/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-15 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-15/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-15 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-15/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-15 | 255 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-15/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-15 | 0 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-15/good_first_bugs.csv` |
+| media_has_patch | 2026-06-15 | 24 | `/mnt/data/wpradar/wp-core-radar-main/data/raw/manual/2026-06-15/media_has_patch.csv` |
 
 ## Guardrail
 
