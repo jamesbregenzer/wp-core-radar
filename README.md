@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="docs/assets/banner.svg" alt="WP Core Radar — A scheduled intelligence dashboard for finding approachable WordPress Core contribution opportunities.">
+</p>
+
+<p align="center">
+  <img alt="Project Status" src="https://img.shields.io/badge/status-active-brightgreen">
+  <img alt="Built with Python" src="https://img.shields.io/badge/python-3.14-blue">
+  <img alt="Cloudflare Pages" src="https://img.shields.io/badge/deploy-Cloudflare%20Pages-f38020">
+  <img alt="Cloudflare Worker" src="https://img.shields.io/badge/admin-Cloudflare%20Worker-f38020">
+  <img alt="WordPress Core" src="https://img.shields.io/badge/focus-WordPress%20Core-21759b">
+  <img alt="Maintained by James Bregenzer" src="https://img.shields.io/badge/maintained%20by-James%20Bregenzer-111827">
+</p>
+
 # WP Core Radar
 
 WP Core Radar is a deterministic, human-in-the-loop contribution discovery and prioritization workflow for WordPress Core tickets.
