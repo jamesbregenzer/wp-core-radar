@@ -96,19 +96,13 @@ Record a review decision locally:
 python3 scripts/review-ticket.py 33073 shortlist "Good first contribution candidate"
 ```
 
-Run the local development review console:
+The local review command updates `data/reviews/reviews.json` directly. In production, review decisions should normally be recorded through the protected `/radar/admin/` Worker console.
 
-```bash
-python3 scripts/review-server.py
-```
+## Review workflow
 
-Then open:
+Normal review decisions should be made in the protected Cloudflare Worker admin console at `/radar/admin/`.
 
-```text
-http://127.0.0.1:8765/radar/admin
-```
-
-`scripts/review-server.py` is local development tooling only. Do not expose it to the public internet. Production review writes should go through the Cloudflare Worker.
+For local-only maintenance or recovery work, `scripts/review-ticket.py` can update `data/reviews/reviews.json` directly. After using the local script, commit and push the changed review file so the public dashboard and protected admin console stay in sync.
 
 ## Outputs
 
@@ -132,7 +126,7 @@ The protected `/radar/admin/` route is rendered by a Cloudflare Worker. It shoul
 
 The Worker should remain narrowly scoped. It may read the generated admin data JSON and update `data/reviews/reviews.json`; it should not become a general-purpose repository editor.
 
-The repository may safely include local helper scripts such as `scripts/review-server.py` as long as they contain no secrets and are not deployed or exposed publicly. Secrets, passwords, API tokens, and Cloudflare Worker environment variables must never be committed.
+Local helper scripts may be committed when they contain no secrets and do not expose a public service. Secrets, passwords, API tokens, and Cloudflare Worker environment variables must never be committed.
 
 ## Project docs
 

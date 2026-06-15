@@ -2,13 +2,13 @@
 
 This file records approaches that were tried or considered and should not be repeated without a clear reason.
 
-## Publishing the local development admin console directly
+## Reintroducing a local Python admin server
 
-The local `scripts/review-server.py` console is useful for development, but it should not be exposed directly to the public internet.
+An earlier local Python review-console workflow was retired after the production admin console moved into the Cloudflare Worker.
 
-The production `/radar/admin/` route should remain Worker-rendered, authenticated, and narrowly scoped to writing constrained review metadata to `data/reviews/reviews.json`.
+Do not reintroduce or expose a local admin server without a clear reason. The production `/radar/admin/` route should remain Worker-rendered, authenticated, and narrowly scoped to writing constrained review metadata to `data/reviews/reviews.json`.
 
-Keeping `scripts/review-server.py` in a public repository is acceptable because it is source code, not a running service. The unsafe version would be committing secrets, running it on a public port, exposing it through a tunnel, or deploying it as the production admin interface.
+The unsafe version of this pattern would be committing secrets, running a local write-capable admin server on a public port, exposing it through a tunnel, or deploying it as the production admin interface.
 
 ## Treating Radar as a Trac automation bot
 
