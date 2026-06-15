@@ -27,6 +27,11 @@ if git diff --cached --quiet; then
   echo "$LOG_PREFIX No changes to commit."
 else
   git commit -m "Update radar data"
+
+  # Review-only dashboard refreshes may be committed by GitHub Actions while
+  # this longer collection job is running. Rebase immediately before pushing so
+  # the scheduled collector publishes cleanly instead of failing on a non-fast-forward.
+  git pull --rebase origin main
   git push origin main
   echo "$LOG_PREFIX Pushed radar update."
 fi

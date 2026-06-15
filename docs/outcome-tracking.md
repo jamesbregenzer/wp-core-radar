@@ -64,6 +64,12 @@ Because the repository is public, review notes should be written as publishable 
 
 ## Protected admin write path
 
-The production `/radar/admin/` console is rendered by the Cloudflare Worker. It authenticates the user, loads generated ticket data from `docs/radar/admin-data.json`, and writes review decisions to `data/reviews/reviews.json` through the GitHub API. Local review writes through `scripts/review-ticket.py` also regenerate dashboard files immediately so review grouping stays in sync during manual maintenance.
+The production `/radar/admin/` console is rendered by the Cloudflare Worker. It authenticates the user, loads generated ticket data from `docs/radar/admin-data.json`, and writes review decisions to `data/reviews/reviews.json` through the GitHub API.
+
+The Worker does not regenerate dashboard files itself. When `data/reviews/reviews.json` changes on `main`, `.github/workflows/refresh-dashboard.yml` runs `scripts/generate-dashboard.py` and commits regenerated `docs/radar/index.html` and `docs/radar/admin-data.json`. This keeps workflow sections like Shortlisted, Watching, Completed / Acted On, and Rejected current shortly after review saves.
+
+Local review writes through `scripts/review-ticket.py` also regenerate dashboard files immediately so review grouping stays in sync during manual maintenance.
 
 Allowed review statuses are intentionally limited to the workflow states above. This keeps the admin route useful for review decisions without turning it into a broad repository write surface.
+
+Statuses are currently used both as triage decisions and contribution outcomes. `shortlist`, `watch`, and `reject` represent planning states. `tested`, `commented`, `props`, and `committed` represent acted-on outcomes and are grouped under Completed / Acted On in the dashboard.

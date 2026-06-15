@@ -11,8 +11,9 @@ The Mac Mini is responsible for:
 3. Importing the CSV into `data/raw/manual/YYYY-MM-DD/<query_slug>.csv`.
 4. Regenerating the Markdown report, public dashboard, and admin data export.
 5. Committing and pushing changed data/report/dashboard files to GitHub.
+6. Reconciling the latest review state during scheduled full radar runs.
 
-The Mac Mini creates `docs/radar/admin-data.json`, which the protected Worker admin console reads. It does not create, host, or authenticate the production `/radar/admin/` page. The scheduled run remains the production mechanism that reconciles review writes from GitHub with regenerated dashboard/admin data.
+The Mac Mini creates `docs/radar/admin-data.json`, which the protected Worker admin console reads. It does not create, host, or authenticate the production `/radar/admin/` page. Scheduled runs still reconcile review writes from GitHub with regenerated dashboard/admin data, but they are no longer the only review-sync mechanism. Review-only commits to `data/reviews/reviews.json` are also handled by GitHub Actions so the dashboard does not remain stale for up to six hours.
 
 GitHub is the source of truth after the Mac Mini pushes changes. Cloudflare Pages deploys the public dashboard from the committed `docs/` output, and the Cloudflare Worker serves the protected admin UI.
 
@@ -20,7 +21,7 @@ GitHub is the source of truth after the Mac Mini pushes changes. Cloudflare Page
 
 GitHub-hosted runners do not have the same local browser/network context as the Mac Mini. Because the Trac export flow depends on that environment, normal GitHub Actions should not replace the collector.
 
-GitHub Actions may still be useful for checks after the Mac Mini pushes, but not as the primary collector.
+GitHub Actions may still be useful for checks and review-only dashboard regeneration after review commits, but not as the primary collector.
 
 ## Main commands
 
@@ -48,6 +49,13 @@ Continue collecting remaining tracks if one browser fetch fails:
 python3 scripts/run-radar.py --continue-on-error
 ```
 
+
+## Review-only dashboard refreshes
+
+Review decisions saved from `/radar/admin/` are committed directly to `data/reviews/reviews.json` by the Cloudflare Worker. Those commits trigger `.github/workflows/refresh-dashboard.yml`, which runs `scripts/generate-dashboard.py` and commits regenerated dashboard files.
+
+That Action is expected to keep the public dashboard and admin grouping accurate shortly after review saves. The Mac Mini remains the source of fresh Trac data and still regenerates dashboard files during full collection runs.
+
 ## Generated dashboard files
 
 The dashboard generation step writes both the public dashboard and the data payload consumed by the protected Worker admin console:
@@ -73,7 +81,10 @@ The wrapper intentionally keeps scheduling, Git synchronization, and publishing 
 2. `python3 scripts/run-radar.py`
 3. `git add data docs reports`
 4. Commit changed files with `Update radar data`
-5. Push to `origin/main`
+5. `git pull --rebase origin main` again immediately before push
+6. Push to `origin/main`
+
+The final pre-push rebase is intentional. Review-only dashboard refreshes may be committed by GitHub Actions while the longer Mac Mini collection job is running; rebasing immediately before push makes the scheduled collector more resilient to those near-real-time updates.
 
 The local LaunchAgent should call the wrapper rather than embedding workflow logic directly in the `.plist` file.
 
