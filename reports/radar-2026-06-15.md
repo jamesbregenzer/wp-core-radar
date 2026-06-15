@@ -1,47 +1,29 @@
 # WP Core Radar Report
 
-Generated: 2026-06-15 20:27
+Generated: 2026-06-15 15:43
 
 ## Summary
 
 - Datasets discovered: 15
 - Unique tickets scored: 280
 - Outcomes loaded: 4
-- Reviews loaded: 2
+- Reviews loaded: 3
 - Top opportunity limit: 50
 
 ## Review Workflow
 
 | Section | Count | Meaning |
 |---|---:|---|
-| Priority Targets | 8 | Highest-scoring unreviewed tickets with clear action and manageability signals. |
+| Priority Targets | 7 | Highest-scoring unreviewed tickets with clear action and manageability signals. |
 | Top Opportunities | 270 | Remaining unreviewed tickets ranked by score. |
-| Shortlisted | 0 | Tickets manually marked as strong candidates. |
+| Shortlisted | 1 | Tickets manually marked as strong candidates. |
 | Watching | 1 | Tickets worth monitoring but not acting on yet. |
 | Completed / Acted On | 0 | Tickets already tested, commented on, propped, or committed. |
 | Rejected | 1 | Tickets manually rejected as poor fits. |
 
 ## Priority Targets
 
-#### 1. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
-
-- Score: **156**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Assigned
-- Owner: mdifelice
-- Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
-- Why it ranked: track priority +65, has patch +35, needs testing +30, good first bug +20, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Good First Bug
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 2. [#21989](https://core.trac.wordpress.org/ticket/21989) — update_option() calls sanitize_option() twice when option does not exist
+#### 1. [#21989](https://core.trac.wordpress.org/ticket/21989) — update_option() calls sanitize_option() twice when option does not exist
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -59,7 +41,7 @@ Generated: 2026-06-15 20:27
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#41305](https://core.trac.wordpress.org/ticket/41305) — Add lazily evaluated translations
+#### 2. [#41305](https://core.trac.wordpress.org/ticket/41305) — Add lazily evaluated translations
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -77,7 +59,7 @@ Generated: 2026-06-15 20:27
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
+#### 3. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -95,7 +77,7 @@ Generated: 2026-06-15 20:27
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#54034](https://core.trac.wordpress.org/ticket/54034) — Update jQuery UI Touch Punch to the latest version
+#### 4. [#54034](https://core.trac.wordpress.org/ticket/54034) — Update jQuery UI Touch Punch to the latest version
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -113,7 +95,7 @@ Generated: 2026-06-15 20:27
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#58801](https://core.trac.wordpress.org/ticket/58801) — Prefetch Block Editor from Posts page
+#### 5. [#58801](https://core.trac.wordpress.org/ticket/58801) — Prefetch Block Editor from Posts page
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -131,7 +113,7 @@ Generated: 2026-06-15 20:27
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+#### 6. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -149,7 +131,7 @@ Generated: 2026-06-15 20:27
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#43178](https://core.trac.wordpress.org/ticket/43178) — Rethinking what “captions” means for video
+#### 7. [#43178](https://core.trac.wordpress.org/ticket/43178) — Rethinking what “captions” means for video
 
 - Score: **151**
 - Track/query: Media: Has Patch
@@ -993,7 +975,35 @@ Generated: 2026-06-15 20:27
 
 ## Shortlisted
 
-No tickets in this section.
+#### 1. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Unknown
+- Trac status: Assigned
+- Owner: mdifelice
+- Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
+- Review status: shortlist
+- Review reason: Active patch + needs testing + good first bug
+- Review notes: Strong candidate.
+
+Has active patch, good-first-bug, needs-testing, and needs-screenshots keywords. Discussion appears largely settled with no major architectural concerns. Scope is limited to Custom Menu widget UX feedback when no menu is selected or selected menu is empty.
+
+Next step:
+- Verify issue still reproduces on current trunk
+- Confirm patch applies cleanly
+- Test widget and Customizer behavior
+- Provide screenshots and testing feedback if successful
+- Review updated: 2026-06-15T20:35:54.494Z
+- Why it ranked: track priority +65, has patch +35, needs testing +30, good first bug +20, has owner +6
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +6: Has Owner
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Watching
 
@@ -1049,21 +1059,21 @@ No tickets in this section.
 
 | Query | Date | Rows | File |
 |---|---:|---:|---|
-| accessibility_has_patch | 2026-06-13 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-13 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-13 | 256 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-13 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/good_first_bugs.csv` |
-| media_has_patch | 2026-06-13 | 24 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-13/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-14 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-14 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-14 | 256 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-14 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/good_first_bugs.csv` |
-| media_has_patch | 2026-06-14 | 24 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-14/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-15 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-15 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-15 | 256 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-15 | 0 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/good_first_bugs.csv` |
-| media_has_patch | 2026-06-15 | 24 | `/mnt/data/radar_age_work/wp-core-radar-main/data/raw/manual/2026-06-15/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-13 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/good_first_bugs.csv` |
+| media_has_patch | 2026-06-13 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-14 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/good_first_bugs.csv` |
+| media_has_patch | 2026-06-14 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-15 | 255 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/good_first_bugs.csv` |
+| media_has_patch | 2026-06-15 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/media_has_patch.csv` |
 
 ## Guardrail
 

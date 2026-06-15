@@ -1,78 +1,15 @@
 {
-  "generated": "2026-06-15T20:27:23",
+  "generated": "2026-06-15T15:43:59",
   "summary": {
     "unique_tickets": 280,
-    "priority_targets": 8,
+    "priority_targets": 7,
     "immediate": 0,
-    "strong": 8,
+    "strong": 7,
     "watching": 109,
-    "reviews_loaded": 2
+    "reviews_loaded": 3
   },
   "groups": {
     "priority": [
-      {
-        "ticket_id": "41081",
-        "url": "https://core.trac.wordpress.org/ticket/41081",
-        "score": 156,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Improve Custom Menu widget, show notification if menu is empty or no menu selected",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "mdifelice",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh",
-        "signals": [
-          {
-            "label": "Has Patch",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing",
-            "class": "testing"
-          },
-          {
-            "label": "Good First Bug",
-            "class": "first"
-          },
-          {
-            "label": "Has Owner",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Good First Bug",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
       {
         "ticket_id": "21989",
         "url": "https://core.trac.wordpress.org/ticket/21989",
@@ -11912,7 +11849,76 @@
         "review": {}
       }
     ],
-    "shortlist": [],
+    "shortlist": [
+      {
+        "ticket_id": "41081",
+        "url": "https://core.trac.wordpress.org/ticket/41081",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Improve Custom Menu widget, show notification if menu is empty or no menu selected",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Unknown",
+        "owner": "mdifelice",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh",
+        "signals": [
+          {
+            "label": "Has Patch",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing",
+            "class": "testing"
+          },
+          {
+            "label": "Good First Bug",
+            "class": "first"
+          },
+          {
+            "label": "Has Owner",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Good First Bug",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "shortlist",
+          "reason": "Active patch + needs testing + good first bug",
+          "notes": "Strong candidate.\r\n\r\nHas active patch, good-first-bug, needs-testing, and needs-screenshots keywords. Discussion appears largely settled with no major architectural concerns. Scope is limited to Custom Menu widget UX feedback when no menu is selected or selected menu is empty.\r\n\r\nNext step:\r\n- Verify issue still reproduces on current trunk\r\n- Confirm patch applies cleanly\r\n- Test widget and Customizer behavior\r\n- Provide screenshots and testing feedback if successful",
+          "updated_at": "2026-06-15T20:35:54.494Z"
+        }
+      }
+    ],
     "watch": [
       {
         "ticket_id": "33073",

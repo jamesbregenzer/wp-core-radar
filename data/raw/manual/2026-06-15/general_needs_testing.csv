@@ -249,7 +249,6 @@
 65345,Site Icon subsizes use wrong array key 'width ' instead of 'width',new,has-patch needs-testing has-unit-tests,,defect (bug),normal
 65350,Possible duplicate update event firing during wp_maybe_auto_update,new,needs-testing 2nd-opinion,,defect (bug),normal
 65381,Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0,new,needs-testing reporter-feedback,,defect (bug),normal
-65391,Build/Test Tools: Update stale step comment lists in reusable workflow files,new,has-patch needs-testing,,defect (bug),normal
 65392,"""Show more comments"" button in comments metabox doesn't load new comments if they are of a type different than 'comment'",assigned,has-patch 2nd-opinion dev-feedback needs-testing,,defect (bug),normal
 65395,"Site Health falsely reports ""Opcode cache is not enabled"" on shared hosting (WP 7.0)",new,has-patch has-unit-tests needs-testing,,defect (bug),normal
 65417,Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol,new,has-patch has-unit-tests needs-testing,,defect (bug),normal
