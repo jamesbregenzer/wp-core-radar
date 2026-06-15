@@ -12,9 +12,9 @@
     "updated_at": "2026-06-15T21:48:04.323Z"
   },
   "65345": {
-    "notes": "",
-    "reason": "Too complex for quick testing",
-    "status": "reject",
-    "updated_at": "2026-06-14T06:02:20Z"
+    "status": "tested",
+    "reason": "Verified patch behavior locally and reported results on Trac.",
+    "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
+    "updated_at": "2026-06-15T23:07:33.995Z"
   }
 }
