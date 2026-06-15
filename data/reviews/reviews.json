@@ -5,6 +5,12 @@
     "notes": "Good candidate, but verify latest patch applies and dev feedback is addressed before testing.",
     "updated_at": "2026-06-14T08:11:40.103Z"
   },
+  "41081": {
+    "status": "shortlist",
+    "reason": "Active patch + needs testing + good first bug",
+    "notes": "Strong candidate.\r\n\r\nHas active patch, good-first-bug, needs-testing, and needs-screenshots keywords. Discussion appears largely settled with no major architectural concerns. Scope is limited to Custom Menu widget UX feedback when no menu is selected or selected menu is empty.\r\n\r\nNext step:\r\n- Verify issue still reproduces on current trunk\r\n- Confirm patch applies cleanly\r\n- Test widget and Customizer behavior\r\n- Provide screenshots and testing feedback if successful",
+    "updated_at": "2026-06-15T20:35:54.494Z"
+  },
   "65345": {
     "notes": "",
     "reason": "Too complex for quick testing",
