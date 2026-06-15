@@ -110,9 +110,13 @@ def dashboard_css() -> str:
       color: #1d2327;
     }
     header {
+      position: relative;
       padding: 32px;
       background: #1d2327;
       color: white;
+    }
+    .header-content {
+      max-width: calc(100% - 160px);
     }
     header h1 {
       margin: 0 0 8px;
@@ -121,6 +125,27 @@ def dashboard_css() -> str:
     header p {
       margin: 0;
       color: #c3c4c7;
+    }
+    .admin-link {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 13px;
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .1);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+    }
+    .admin-link:hover {
+      background: rgba(255, 255, 255, .18);
+      color: #fff;
+      text-decoration: none;
     }
     main {
       padding: 24px 32px 48px;
@@ -241,6 +266,11 @@ def dashboard_css() -> str:
     }
     @media (max-width: 900px) {
       header { padding: 24px 18px; }
+      .header-content { max-width: none; }
+      .admin-link {
+        position: static;
+        margin-top: 16px;
+      }
       header h1 { font-size: 26px; }
       main { padding: 18px; }
       .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -351,8 +381,11 @@ def build_dashboard() -> str:
 </head>
 <body>
   <header>
-    <h1>WP Core Radar Dashboard</h1>
-    <p>Generated {html.escape(generated)}. Radar recommends opportunities only. Humans make contribution decisions.</p>
+    <div class="header-content">
+      <h1>WP Core Radar Dashboard</h1>
+      <p>Generated {html.escape(generated)}. Radar recommends opportunities only. Humans make contribution decisions.</p>
+    </div>
+    <a class="admin-link" href="/radar/admin/">Admin Console</a>
   </header>
 
   <main>
@@ -375,8 +408,6 @@ def build_dashboard() -> str:
 
   <footer>
     WP Core Radar does not auto-comment on Trac or automate contribution activity.
-    <span class="footer-separator">·</span>
-    <a href="/radar/admin/">Admin</a>
   </footer>
 </body>
 </html>
