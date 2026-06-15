@@ -43,7 +43,7 @@ Review decisions live in:
 data/reviews/reviews.json
 ```
 
-Reviews are stored as JSON keyed by ticket ID because this format is easy for both the local admin console and a future protected Worker endpoint to validate safely.
+Reviews are stored as JSON keyed by ticket ID because this format is easy for both the local development console and the protected Cloudflare Worker admin route to validate safely.
 
 Example:
 
@@ -59,3 +59,10 @@ Example:
 ```
 
 The review data file should remain constrained metadata only. It should not become a general-purpose repository write surface.
+
+
+## Protected Admin Write Path
+
+The production `/radar/admin/` console is rendered by the Cloudflare Worker. It authenticates the user, loads generated ticket data from `docs/radar/admin-data.json`, and writes review decisions to `data/reviews/reviews.json` through the GitHub API.
+
+Allowed review statuses are intentionally limited to the workflow states above. This keeps the admin route useful for review decisions without turning it into a broad repository write surface.

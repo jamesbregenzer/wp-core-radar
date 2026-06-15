@@ -2,11 +2,11 @@
 
 This file records approaches that were tried or considered and should not be repeated without a clear reason.
 
-## Publishing the local admin console directly
+## Publishing the local development admin console directly
 
-The local review console writes review state and runs follow-up scripts. It should not be exposed directly to the public internet.
+The local `scripts/review-server.py` console is useful for development, but it should not be exposed directly to the public internet.
 
-A future public `/radar/admin/` route should authenticate first and only write constrained review metadata to `data/reviews/reviews.json`.
+The production `/radar/admin/` route should remain Worker-rendered, authenticated, and narrowly scoped to writing constrained review metadata to `data/reviews/reviews.json`.
 
 ## Treating Radar as a Trac automation bot
 

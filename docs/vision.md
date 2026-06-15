@@ -28,4 +28,4 @@ The project should remain:
 
 The public dashboard should be a polished, read-only artifact.
 
-The local admin console should remain private because it writes review state and supports the human review workflow.
+The admin console should remain protected because it writes review state and supports the human review workflow. The public dashboard should stay read-only and polished, while `/radar/admin/` should remain narrowly scoped to authenticated review metadata updates.

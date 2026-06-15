@@ -46,6 +46,18 @@ Continue collecting remaining tracks if one browser fetch fails:
 python3 scripts/run-radar.py --continue-on-error
 ```
 
+
+## Generated Dashboard Files
+
+The dashboard generation step writes both the public dashboard and the data payload consumed by the protected Worker admin console:
+
+```text
+docs/radar/index.html
+docs/radar/admin-data.json
+```
+
+The public dashboard includes a header link to `/radar/admin/`. The protected admin route itself is rendered by the Cloudflare Worker, not by the static Pages output.
+
 ## Scheduled Runner
 
 Scheduled collection should use the wrapper script:
