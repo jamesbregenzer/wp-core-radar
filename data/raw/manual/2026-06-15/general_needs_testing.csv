@@ -229,7 +229,7 @@
 64523,_do_query needs exception processing in class-wpdb.php,new,General,,defect (bug),normal,Awaiting Review,6.9,has-patch needs-testing needs-unit-tests has-pr,01/16/2026 09:40:38 PM,01/23/2026 05:36:40 AM
 64581,Allow serialized options read-only view,new,"Options, Meta APIs",,feature request,normal,Awaiting Review,2.0.2,has-patch has-screenshots needs-testing,02/01/2026 10:55:10 PM,05/24/2026 08:42:40 AM
 64670,WP_REST_Posts_Controller::update_item() not passing parent to wp_unique_post_slug() for draft child,new,REST API,,defect (bug),normal,Awaiting Review,6.9.1,has-patch needs-testing,02/18/2026 05:35:30 PM,05/26/2026 12:02:55 PM
-64707,opcache,new,Site Health,,defect (bug),normal,Awaiting Review,,has-patch needs-testing changes-requested,02/23/2026 03:51:38 PM,06/14/2026 03:43:40 PM
+64707,Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode,accepted,Site Health,westonruter,defect (bug),normal,7.0.1,7.0,has-patch needs-testing,02/23/2026 03:51:38 PM,06/16/2026 01:34:12 AM
 64714,"Inconsistent vertical spacing between the headings and their content in the dashboard widgets: Site Health Status, Quick Edit, Activity, and WordPress Events and News.",new,Widgets,,defect (bug),normal,Awaiting Review,,has-patch needs-testing,02/24/2026 12:58:08 PM,05/19/2026 08:50:32 PM
 64830,"Introduce a helper function to extract the major.minor ""branch"" version",new,General,,enhancement,normal,Awaiting Review,3.2,has-patch needs-refresh needs-testing,03/09/2026 07:19:41 AM,03/10/2026 07:31:50 AM
 64842,Upload problems with Umlauts in ID3 Tags,new,Upload,,defect (bug),normal,Awaiting Review,6.9.1,has-patch needs-testing,03/11/2026 03:42:33 PM,03/19/2026 10:17:02 PM

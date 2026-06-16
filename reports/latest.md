@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-06-15 18:29
+Generated: 2026-06-15 21:44
 
 ## Summary
 
@@ -828,7 +828,28 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 33. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+#### 33. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
+
+- Score: **144**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Site Health
+- Trac status: Accepted
+- Milestone: 7.0.1
+- Owner: westonruter
+- Keywords: has-patch needs-testing
+- Created: 02/23/2026 03:51:38 PM
+- Modified: 06/16/2026 01:34:12 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 34. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
 
 - Score: **144**
 - Track/query: General: Needs Testing
@@ -849,7 +870,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 34. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
+#### 35. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
 
 - Score: **144**
 - Track/query: General: Needs Testing
@@ -870,7 +891,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 35. [#41445](https://core.trac.wordpress.org/ticket/41445) — post_parent can prevent media from embedding correctly
+#### 36. [#41445](https://core.trac.wordpress.org/ticket/41445) — post_parent can prevent media from embedding correctly
 
 - Score: **139**
 - Track/query: General: Needs Testing
@@ -891,7 +912,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 36. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
+#### 37. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
 
 - Score: **138**
 - Track/query: General: Needs Testing
@@ -910,7 +931,7 @@ Generated: 2026-06-15 18:29
   - +8: Has Concrete Milestone
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 37. [#19173](https://core.trac.wordpress.org/ticket/19173) — Issues with wp_editor() when used inside of a meta box.
+#### 38. [#19173](https://core.trac.wordpress.org/ticket/19173) — Issues with wp_editor() when used inside of a meta box.
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -927,7 +948,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 38. [#22367](https://core.trac.wordpress.org/ticket/22367) — Usernames with "@" char are assumed email addresses, causing incorrect look-up in several places
+#### 39. [#22367](https://core.trac.wordpress.org/ticket/22367) — Usernames with "@" char are assumed email addresses, causing incorrect look-up in several places
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -944,7 +965,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 39. [#26571](https://core.trac.wordpress.org/ticket/26571) — Increase flexibility of "At a Glance" Dashboard Widget to match "Right Now" Widget
+#### 40. [#26571](https://core.trac.wordpress.org/ticket/26571) — Increase flexibility of "At a Glance" Dashboard Widget to match "Right Now" Widget
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -961,7 +982,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 40. [#34848](https://core.trac.wordpress.org/ticket/34848) — Add support for updating post meta in bulk
+#### 41. [#34848](https://core.trac.wordpress.org/ticket/34848) — Add support for updating post meta in bulk
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -978,7 +999,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 41. [#38238](https://core.trac.wordpress.org/ticket/38238) — Sorting a list table by some kind of count should default to DESC initially
+#### 42. [#38238](https://core.trac.wordpress.org/ticket/38238) — Sorting a list table by some kind of count should default to DESC initially
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -995,7 +1016,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 42. [#43746](https://core.trac.wordpress.org/ticket/43746) — Custom post type single post feed returns a 404 if has_archive is set to false when calling register_post_type()
+#### 43. [#43746](https://core.trac.wordpress.org/ticket/43746) — Custom post type single post feed returns a 404 if has_archive is set to false when calling register_post_type()
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -1012,7 +1033,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 43. [#43879](https://core.trac.wordpress.org/ticket/43879) — Add tools for anonymizing of post authors
+#### 44. [#43879](https://core.trac.wordpress.org/ticket/43879) — Add tools for anonymizing of post authors
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -1029,7 +1050,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 44. [#44921](https://core.trac.wordpress.org/ticket/44921) — User nicename discovery is slow to return
+#### 45. [#44921](https://core.trac.wordpress.org/ticket/44921) — User nicename discovery is slow to return
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -1046,7 +1067,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 45. [#54151](https://core.trac.wordpress.org/ticket/54151) — Dashboard widgets e2e tests
+#### 46. [#54151](https://core.trac.wordpress.org/ticket/54151) — Dashboard widgets e2e tests
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -1063,7 +1084,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 46. [#65048](https://core.trac.wordpress.org/ticket/65048) — wp_ajax_fetch_list(): Sanitize $_GET input before nonce construction
+#### 47. [#65048](https://core.trac.wordpress.org/ticket/65048) — wp_ajax_fetch_list(): Sanitize $_GET input before nonce construction
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -1080,7 +1101,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 47. [#65052](https://core.trac.wordpress.org/ticket/65052) — Nonce check order flaw in post-quickdraft-save
+#### 48. [#65052](https://core.trac.wordpress.org/ticket/65052) — Nonce check order flaw in post-quickdraft-save
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -1097,7 +1118,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 48. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
+#### 49. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
 
 - Score: **136**
 - Track/query: General: Needs Testing
@@ -1114,7 +1135,7 @@ Generated: 2026-06-15 18:29
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 49. [#7965](https://core.trac.wordpress.org/ticket/7965) — Database upgrade complete message should be an admin notice
+#### 50. [#7965](https://core.trac.wordpress.org/ticket/7965) — Database upgrade complete message should be an admin notice
 
 - Score: **130**
 - Track/query: General: Needs Testing
@@ -1122,21 +1143,6 @@ Generated: 2026-06-15 18:29
 - Component: Unknown
 - Trac status: New
 - Keywords: has-patch needs-testing
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 50. [#13743](https://core.trac.wordpress.org/ticket/13743) — Ability to choose a network default theme
-
-- Score: **130**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Reopened
-- Keywords: has-patch has-screenshots needs-testing
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30
 - Score breakdown:
   - +65: Track Priority

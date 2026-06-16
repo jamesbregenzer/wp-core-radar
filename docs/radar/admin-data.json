@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-15T18:29:14",
+  "generated": "2026-06-15T21:44:32",
   "summary": {
     "unique_tickets": 280,
     "priority_targets": 12,
@@ -3118,6 +3118,83 @@
         "created": "04/09/2025 11:10:53 AM",
         "modified": "06/13/2026 02:21:45 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "64707",
+        "url": "https://core.trac.wordpress.org/ticket/64707",
+        "score": 144,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode",
+        "track": "General: Needs Testing",
+        "status": "Accepted",
+        "component": "Site Health",
+        "owner": "westonruter",
+        "comments": "Unknown",
+        "created": "02/23/2026 03:51:38 PM",
+        "modified": "06/16/2026 01:34:12 AM",
+        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -6924,61 +7001,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "64707",
-        "url": "https://core.trac.wordpress.org/ticket/64707",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "opcache",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing changes-requested",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
