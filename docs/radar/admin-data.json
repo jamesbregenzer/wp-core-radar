@@ -1,114 +1,15 @@
 {
-  "generated": "2026-06-16T10:04:09",
+  "generated": "2026-06-16T06:33:57",
   "summary": {
     "unique_tickets": 281,
     "priority_targets": 12,
-    "immediate": 10,
-    "strong": 2,
+    "immediate": 9,
+    "strong": 3,
     "watching": 86,
-    "reviews_loaded": 3
+    "reviews_loaded": 4
   },
   "groups": {
     "priority": [
-      {
-        "ticket_id": "43178",
-        "url": "https://core.trac.wordpress.org/ticket/43178",
-        "score": 189,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Rethinking what \u201ccaptions\u201d means for video",
-        "track": "Media: Has Patch",
-        "status": "Accepted",
-        "component": "Media",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "01/29/2018 04:32:59 PM",
-        "modified": "04/23/2026 03:37:20 PM",
-        "keywords": "has-patch reporter-feedback has-ux-feedback has-ui-feedback phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Reporter Feedback +10",
-            "class": "feedback"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Reporter Feedback",
-            "detail": "",
-            "display": "Reporter Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
       {
         "ticket_id": "65329",
         "url": "https://core.trac.wordpress.org/ticket/65329",
@@ -1109,9 +1010,7 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      }
-    ],
-    "top": [
+      },
       {
         "ticket_id": "65419",
         "url": "https://core.trac.wordpress.org/ticket/65419",
@@ -1199,7 +1098,9 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      },
+      }
+    ],
+    "top": [
       {
         "ticket_id": "63568",
         "url": "https://core.trac.wordpress.org/ticket/63568",
@@ -16489,6 +16390,110 @@
       }
     ],
     "completed": [
+      {
+        "ticket_id": "43178",
+        "url": "https://core.trac.wordpress.org/ticket/43178",
+        "score": 189,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Rethinking what \u201ccaptions\u201d means for video",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "01/29/2018 04:32:59 PM",
+        "modified": "04/23/2026 03:37:20 PM",
+        "keywords": "has-patch reporter-feedback has-ux-feedback has-ui-feedback phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Reporter Feedback +10",
+            "class": "feedback"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Reporter Feedback",
+            "detail": "",
+            "display": "Reporter Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
+        "review": {
+          "status": "tested",
+          "reason": "Verified PR behavior in WordPress Playground.",
+          "notes": "Tested PR #11634 using the WordPress Playground preview.\r\n\r\nVerified image attachments display \"Image Caption\" and video attachments display \"Video Description\".\r\n\r\nConfirmed values persist after save and reload.\r\n\r\nVerified existing Description field remains functional.\r\n\r\nNo regressions observed during testing. Watch for commit during 7.1 cycle.",
+          "updated_at": "2026-06-16T11:08:17.948Z"
+        }
+      },
       {
         "ticket_id": "41081",
         "url": "https://core.trac.wordpress.org/ticket/41081",
