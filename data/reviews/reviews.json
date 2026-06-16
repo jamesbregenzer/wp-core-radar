@@ -17,6 +17,12 @@
     "notes": "Tested PR #11634 using the WordPress Playground preview.\r\n\r\nVerified image attachments display \"Image Caption\" and video attachments display \"Video Description\".\r\n\r\nConfirmed values persist after save and reload.\r\n\r\nVerified existing Description field remains functional.\r\n\r\nNo regressions observed during testing. Watch for commit during 7.1 cycle.",
     "updated_at": "2026-06-16T11:08:17.948Z"
   },
+  "56886": {
+    "status": "tested",
+    "reason": "Positive test result",
+    "notes": "Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.",
+    "updated_at": "2026-06-16T18:01:22.376Z"
+  },
   "65329": {
     "status": "tested",
     "reason": "Positive test result",
