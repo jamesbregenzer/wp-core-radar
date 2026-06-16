@@ -1,114 +1,15 @@
 {
-  "generated": "2026-06-16T06:33:57",
+  "generated": "2026-06-16T13:54:00",
   "summary": {
     "unique_tickets": 281,
     "priority_targets": 12,
-    "immediate": 9,
-    "strong": 3,
+    "immediate": 8,
+    "strong": 4,
     "watching": 86,
-    "reviews_loaded": 4
+    "reviews_loaded": 5
   },
   "groups": {
     "priority": [
-      {
-        "ticket_id": "65329",
-        "url": "https://core.trac.wordpress.org/ticket/65329",
-        "score": 184,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Move sideload metadata writes to the finalize endpoint",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Media",
-        "owner": "adamsilverstein",
-        "comments": "Unknown",
-        "created": "05/22/2026 10:26:49 PM",
-        "modified": "06/04/2026 01:56:16 PM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
       {
         "ticket_id": "56886",
         "url": "https://core.trac.wordpress.org/ticket/56886",
@@ -1098,9 +999,7 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      }
-    ],
-    "top": [
+      },
       {
         "ticket_id": "63568",
         "url": "https://core.trac.wordpress.org/ticket/63568",
@@ -1188,7 +1087,9 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      },
+      }
+    ],
+    "top": [
       {
         "ticket_id": "64921",
         "url": "https://core.trac.wordpress.org/ticket/64921",
@@ -16492,6 +16393,110 @@
           "reason": "Verified PR behavior in WordPress Playground.",
           "notes": "Tested PR #11634 using the WordPress Playground preview.\r\n\r\nVerified image attachments display \"Image Caption\" and video attachments display \"Video Description\".\r\n\r\nConfirmed values persist after save and reload.\r\n\r\nVerified existing Description field remains functional.\r\n\r\nNo regressions observed during testing. Watch for commit during 7.1 cycle.",
           "updated_at": "2026-06-16T11:08:17.948Z"
+        }
+      },
+      {
+        "ticket_id": "65329",
+        "url": "https://core.trac.wordpress.org/ticket/65329",
+        "score": 184,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Move sideload metadata writes to the finalize endpoint",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "adamsilverstein",
+        "comments": "Unknown",
+        "created": "05/22/2026 10:26:49 PM",
+        "modified": "06/04/2026 01:56:16 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "tested",
+          "reason": "Positive test result",
+          "notes": "Verified media upload, scaling, metadata, frontend display, and image editing workflows in Playground.",
+          "updated_at": "2026-06-16T13:53:37.124Z"
         }
       },
       {
