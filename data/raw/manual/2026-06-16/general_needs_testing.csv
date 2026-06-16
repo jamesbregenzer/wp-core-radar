@@ -246,7 +246,7 @@
 65171,wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs,new,Editor,,defect (bug),normal,Awaiting Review,,has-patch needs-unit-tests needs-testing,05/05/2026 09:12:28 PM,05/14/2026 11:31:38 AM
 65263,Colors from theme.json doesnt parse for hover states,new,Editor,,defect (bug),normal,7.0.1,7.0,needs-testing,05/19/2026 02:18:53 AM,06/07/2026 06:55:14 AM
 65281,Custom Time & Date Format Fields Allow Empty Save Instead of Validation,new,Date/Time,,defect (bug),normal,Awaiting Review,,has-patch has-unit-tests has-test-info needs-testing,05/20/2026 06:43:42 PM,06/15/2026 02:26:48 PM
-65329,Move sideload metadata writes to the finalize endpoint,assigned,Media,adamsilverstein,enhancement,normal,7.1,,has-patch has-unit-tests needs-testing,05/22/2026 10:26:49 PM,06/04/2026 01:56:16 PM
+65329,Move sideload metadata writes to the finalize endpoint,assigned,Media,adamsilverstein,enhancement,normal,7.1,,has-patch has-unit-tests needs-testing,05/22/2026 10:26:49 PM,06/16/2026 01:52:30 PM
 65345,Site Icon subsizes use wrong array key 'width ' instead of 'width',new,Media,,defect (bug),normal,7.1,4.3,has-patch needs-testing has-unit-tests,05/26/2026 10:59:28 AM,06/15/2026 12:31:02 PM
 65350,Possible duplicate update event firing during wp_maybe_auto_update,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,7.0,needs-testing 2nd-opinion,05/26/2026 02:22:13 PM,06/06/2026 03:27:02 AM
 65381,Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0,new,Editor,,defect (bug),normal,Awaiting Review,,needs-testing reporter-feedback,06/01/2026 07:07:17 AM,06/11/2026 10:45:49 PM

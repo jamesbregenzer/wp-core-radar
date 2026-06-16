@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-16T14:26:55",
+  "generated": "2026-06-16T09:45:40",
   "summary": {
     "unique_tickets": 281,
     "priority_targets": 12,
@@ -16294,7 +16294,7 @@
       {
         "ticket_id": "43178",
         "url": "https://core.trac.wordpress.org/ticket/43178",
-        "score": 189,
+        "score": 199,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "Rethinking what \u201ccaptions\u201d means for video",
@@ -16304,7 +16304,7 @@
         "owner": "joedolson",
         "comments": "Unknown",
         "created": "01/29/2018 04:32:59 PM",
-        "modified": "04/23/2026 03:37:20 PM",
+        "modified": "06/16/2026 11:06:16 AM",
         "keywords": "has-patch reporter-feedback has-ux-feedback has-ui-feedback phase-3-media-triage",
         "signals": [
           {
@@ -16332,7 +16332,7 @@
             "class": "owner"
           },
           {
-            "label": "Freshness: Updated Within 60 Days +10",
+            "label": "Freshness: Recently Updated <=14 Days +20",
             "class": "freshness"
           }
         ],
@@ -16380,10 +16380,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+10",
+            "points": "+20",
             "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
