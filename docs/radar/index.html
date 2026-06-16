@@ -29,10 +29,17 @@
       margin: 0;
       color: #c3c4c7;
     }
-    .admin-link {
+    .header-actions {
       position: absolute;
       top: 32px;
       right: 32px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .admin-link,
+    .header-pill {
       display: inline-flex;
       align-items: center;
       padding: 9px 13px;
@@ -45,7 +52,8 @@
       line-height: 1;
       text-decoration: none;
     }
-    .admin-link:hover {
+    .admin-link:hover,
+    .header-pill:hover {
       background: rgba(255, 255, 255, .18);
       color: #fff;
       text-decoration: none;
@@ -173,9 +181,10 @@
     @media (max-width: 900px) {
       header { padding: 24px 18px; }
       .header-content { max-width: none; }
-      .admin-link {
+      .header-actions {
         position: static;
         margin-top: 16px;
+        justify-content: flex-start;
       }
       header h1 { font-size: 26px; }
       main { padding: 18px; }
@@ -216,9 +225,12 @@
   <header>
     <div class="header-content">
       <h1>WP Core Radar Dashboard</h1>
-      <p>Generated 2026-06-16 13:54. Radar recommends opportunities only. Humans make contribution decisions.</p>
+      <p>Generated 2026-06-16 14:13. Radar recommends opportunities only. Humans make contribution decisions.</p>
     </div>
-    <a class="admin-link" href="/radar/admin/">Admin Console</a>
+    <div class="header-actions">
+      <a class="header-pill" href="/radar/contributions/">Contributions</a>
+      <a class="admin-link" href="/radar/admin/">Admin Console</a>
+    </div>
   </header>
 
   <main>

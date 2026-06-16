@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from collections import Counter
 import html
 import json
 from datetime import datetime
@@ -138,10 +139,17 @@ def dashboard_css() -> str:
       margin: 0;
       color: #c3c4c7;
     }
-    .admin-link {
+    .header-actions {
       position: absolute;
       top: 32px;
       right: 32px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .admin-link,
+    .header-pill {
       display: inline-flex;
       align-items: center;
       padding: 9px 13px;
@@ -154,7 +162,8 @@ def dashboard_css() -> str:
       line-height: 1;
       text-decoration: none;
     }
-    .admin-link:hover {
+    .admin-link:hover,
+    .header-pill:hover {
       background: rgba(255, 255, 255, .18);
       color: #fff;
       text-decoration: none;
@@ -282,9 +291,10 @@ def dashboard_css() -> str:
     @media (max-width: 900px) {
       header { padding: 24px 18px; }
       .header-content { max-width: none; }
-      .admin-link {
+      .header-actions {
         position: static;
         margin-top: 16px;
+        justify-content: flex-start;
       }
       header h1 { font-size: 26px; }
       main { padding: 18px; }
@@ -375,6 +385,285 @@ def admin_data_payload() -> dict[str, Any]:
     }
 
 
+def parse_review_datetime(value: str) -> datetime | None:
+    """Parse review timestamps for contribution-history ordering."""
+    if not value:
+        return None
+    cleaned = value.strip().replace("Z", "+00:00")
+    try:
+        return datetime.fromisoformat(cleaned)
+    except ValueError:
+        return None
+
+
+def status_label(status: str) -> str:
+    return pretty_label(status or "reviewed")
+
+
+def contribution_records(
+    ranked: list[dict[str, Any]],
+    reviews: dict[str, dict[str, str]],
+) -> list[dict[str, Any]]:
+    """Return public-safe contribution/review records enriched with ticket data."""
+    items_by_ticket = {item["ticket_id"]: item for item in ranked}
+    records: list[dict[str, Any]] = []
+
+    for ticket_id, review in reviews.items():
+        item = items_by_ticket.get(ticket_id)
+        row = item["row"] if item else {}
+        tier_class, tier_label = priority_tier(item) if item else ("standard", "Standard")
+        updated_at = review.get("updated_at", "")
+        parsed_updated = parse_review_datetime(updated_at)
+
+        records.append(
+            {
+                "ticket_id": ticket_id,
+                "url": trac_url(ticket_id),
+                "summary": first_value(row, SUMMARY_KEYS, "Ticket not present in current dataset"),
+                "component": first_value(row, ("component", "Component"), "Unknown") or "Unknown",
+                "track": item["query"].get("name", item["query"].get("track", "unknown")) if item else "Unknown",
+                "score": item["score"] if item else "",
+                "tier_class": tier_class,
+                "tier_label": tier_label,
+                "status": str(review.get("status", "")).strip().lower() or "reviewed",
+                "reason": review.get("reason", ""),
+                "notes": review.get("notes", ""),
+                "updated_at": updated_at,
+                "updated_dt": parsed_updated,
+                "updated_label": parsed_updated.strftime("%b %d, %Y") if parsed_updated else "Unknown",
+                "month_label": parsed_updated.strftime("%b %Y") if parsed_updated else "Unknown",
+            }
+        )
+
+    return sorted(records, key=lambda record: record["updated_dt"] or datetime.min, reverse=True)
+
+
+def contribution_css() -> str:
+    return dashboard_css() + """
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(300px, .8fr);
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 24px;
+    }
+    .hero-card {
+      background: white;
+      border: 1px solid #dcdcde;
+      border-radius: 12px;
+      padding: 22px;
+    }
+    .hero-card h2,
+    .hero-card h3 { margin-top: 0; }
+    .hero-card p { color: #50575e; line-height: 1.55; }
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .mini-metric {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 14px;
+      background: #f9fafb;
+    }
+    .mini-metric strong { display: block; font-size: 28px; margin-bottom: 2px; }
+    .mini-metric span { color: #646970; font-size: 13px; }
+    .chart-card {
+      background: white;
+      border: 1px solid #dcdcde;
+      border-radius: 12px;
+      padding: 22px;
+      margin-top: 18px;
+    }
+    .bar-list { display: grid; gap: 12px; }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr) 44px;
+      gap: 12px;
+      align-items: center;
+      font-size: 14px;
+    }
+    .bar-label { font-weight: 700; }
+    .bar-track {
+      height: 12px;
+      border-radius: 999px;
+      background: #eef2f7;
+      overflow: hidden;
+    }
+    .bar-fill {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
+    }
+    .timeline { display: grid; gap: 12px; }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 120px minmax(0, 1fr);
+      gap: 16px;
+      padding: 16px;
+      border: 1px solid #dcdcde;
+      border-radius: 12px;
+      background: white;
+    }
+    .timeline-date { color: #646970; font-weight: 700; font-size: 13px; }
+    .timeline-main strong { display: block; margin-bottom: 6px; }
+    .timeline-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .note-preview { margin-top: 8px; color: #50575e; line-height: 1.45; max-width: 860px; }
+    .component-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .component-card { background: white; border: 1px solid #dcdcde; border-radius: 10px; padding: 16px; }
+    .component-card strong { display: block; font-size: 22px; }
+    .component-card span { color: #646970; }
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 110px minmax(0, 1fr) 36px; }
+      .timeline-item { grid-template-columns: 1fr; }
+    }
+    """
+
+
+def contribution_bar_chart(title: str, counts: Counter[str], labeler=status_label) -> str:
+    if not counts:
+        return '<p class="empty">No contribution data yet.</p>'
+    max_count = max(counts.values()) or 1
+    rows = []
+    for key, count in counts.most_common():
+        width = max(6, round(count / max_count * 100))
+        rows.append(
+            f'''<div class="bar-row">
+  <div class="bar-label">{html.escape(labeler(key))}</div>
+  <div class="bar-track"><span class="bar-fill" style="width: {width}%"></span></div>
+  <div>{count}</div>
+</div>'''
+        )
+    return f'''<div class="chart-card"><h3>{html.escape(title)}</h3><div class="bar-list">{"".join(rows)}</div></div>'''
+
+
+def build_contributions_page() -> str:
+    ranked, duplicate_sources, summary = collect_items()
+    records = contribution_records(ranked, summary["reviews"])
+    generated = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+    status_counts = Counter(record["status"] for record in records)
+    component_counts = Counter(record["component"] for record in records)
+    month_counts = Counter(record["month_label"] for record in records)
+    month_order = Counter(dict(sorted(month_counts.items(), key=lambda item: next((record["updated_dt"] for record in records if record["month_label"] == item[0]), datetime.min), reverse=True)))
+    acted_on_count = sum(status_counts.get(status, 0) for status in ("tested", "commented", "props", "committed"))
+    latest = records[0] if records else None
+
+    component_cards = "".join(
+        f'''<div class="component-card"><strong>{count}</strong><span>{html.escape(component)}</span></div>'''
+        for component, count in component_counts.most_common(8)
+    ) or '<p class="empty">No components recorded yet.</p>'
+
+    timeline_rows = []
+    for record in records[:20]:
+        note = record["notes"].replace("\r\n", "\n").replace("\r", "\n").strip()
+        note_preview = " ".join(line.strip() for line in note.splitlines() if line.strip())
+        if len(note_preview) > 260:
+            note_preview = note_preview[:257].rstrip() + "..."
+        timeline_rows.append(
+            f'''<article class="timeline-item tier-{html.escape(record["tier_class"])}">
+  <div class="timeline-date">{html.escape(record["updated_label"])}</div>
+  <div class="timeline-main">
+    <strong><a href="{html.escape(record["url"])}">#{html.escape(record["ticket_id"])}</a> {html.escape(record["summary"])}</strong>
+    <div class="timeline-meta">
+      {html_badge(status_label(record["status"]), "signal")}
+      {html_badge(record["component"], "signal")}
+      {html_badge(record["tier_label"], "tier-label")}
+    </div>
+    <p class="note-preview">{html.escape(record["reason"] or note_preview or "Review recorded.")}</p>
+  </div>
+</article>'''
+        )
+
+    timeline = "".join(timeline_rows) or '<p class="empty">No review activity recorded yet.</p>'
+    latest_html = '<p>No activity recorded yet.</p>'
+    if latest:
+        latest_html = f'''<p><strong><a href="{html.escape(latest["url"])}">#{html.escape(latest["ticket_id"])}</a></strong><br>{html.escape(status_label(latest["status"]))} — {html.escape(latest["summary"])}</p><p>{html.escape(latest["updated_label"])}</p>'''
+
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WP Core Radar Contributions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+{contribution_css()}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>WP Core Radar Contributions</h1>
+      <p>Generated {html.escape(generated)}. A public record of human review and testing activity powered by WP Core Radar.</p>
+    </div>
+    <div class="header-actions">
+      <a class="header-pill" href="/radar/">Dashboard</a>
+      <div class="header-actions">
+      <a class="header-pill" href="/radar/contributions/">Contributions</a>
+      <a class="admin-link" href="/radar/admin/">Admin Console</a>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-grid">
+      <section class="hero-card">
+        <h2>Contribution history</h2>
+        <p>This page turns Radar review decisions into a public contribution record: tickets reviewed, patches tested, areas of focus, and recent activity. Radar still only recommends opportunities; all WordPress Core contribution actions remain manual and human-reviewed.</p>
+        <div class="metric-row">
+          <div class="mini-metric"><strong>{len(records)}</strong><span>Tickets reviewed</span></div>
+          <div class="mini-metric"><strong>{status_counts.get("tested", 0)}</strong><span>Tickets tested</span></div>
+          <div class="mini-metric"><strong>{acted_on_count}</strong><span>Completed / acted on</span></div>
+          <div class="mini-metric"><strong>{len(component_counts)}</strong><span>Components touched</span></div>
+        </div>
+      </section>
+      <aside class="hero-card">
+        <h3>Latest activity</h3>
+        {latest_html}
+      </aside>
+    </div>
+
+    <div class="summary">
+      <div class="card card-blue"><strong>{status_counts.get("tested", 0)}</strong>Tested</div>
+      <div class="card"><strong>{status_counts.get("commented", 0)}</strong>Commented</div>
+      <div class="card"><strong>{status_counts.get("watch", 0)}</strong>Watching</div>
+      <div class="card"><strong>{status_counts.get("shortlist", 0)}</strong>Shortlisted</div>
+      <div class="card"><strong>{status_counts.get("reject", 0)}</strong>Rejected</div>
+      <div class="card card-purple"><strong>{status_counts.get("committed", 0)}</strong>Committed</div>
+    </div>
+
+    <section>
+      <h2>Decision breakdown <span>{len(records)}</span></h2>
+      {contribution_bar_chart("Reviews by decision", status_counts)}
+    </section>
+
+    <section>
+      <h2>Activity by month <span>{sum(month_counts.values())}</span></h2>
+      {contribution_bar_chart("Review activity over time", month_order, lambda value: value)}
+    </section>
+
+    <section>
+      <h2>Component focus <span>{len(component_counts)}</span></h2>
+      <div class="component-grid">{component_cards}</div>
+    </section>
+
+    <section>
+      <h2>Recent activity <span>{len(records)}</span></h2>
+      <div class="timeline">{timeline}</div>
+    </section>
+  </main>
+
+  <footer>
+    Generated from public-safe review metadata in <code>data/reviews/reviews.json</code>. <a href="/radar/">Back to dashboard</a>.
+  </footer>
+</body>
+</html>
+'''
+
 def build_dashboard() -> str:
     ranked, duplicate_sources, summary = collect_items()
     groups = group_items(ranked)
@@ -400,7 +689,10 @@ def build_dashboard() -> str:
       <h1>WP Core Radar Dashboard</h1>
       <p>Generated {html.escape(generated)}. Radar recommends opportunities only. Humans make contribution decisions.</p>
     </div>
-    <a class="admin-link" href="/radar/admin/">Admin Console</a>
+    <div class="header-actions">
+      <a class="header-pill" href="/radar/contributions/">Contributions</a>
+      <a class="admin-link" href="/radar/admin/">Admin Console</a>
+    </div>
   </header>
 
   <main>
@@ -439,8 +731,14 @@ def main() -> int:
     admin_data = radar_dir / "admin-data.json"
     admin_data.write_text(json.dumps(admin_data_payload(), indent=2) + "\n", encoding="utf-8")
 
+    contributions_dir = radar_dir / "contributions"
+    contributions_dir.mkdir(parents=True, exist_ok=True)
+    contributions_output = contributions_dir / "index.html"
+    contributions_output.write_text(build_contributions_page(), encoding="utf-8")
+
     print(f"Wrote {output}")
     print(f"Wrote {admin_data}")
+    print(f"Wrote {contributions_output}")
     return 0
 
 
