@@ -28,6 +28,10 @@ QUERY_COLUMNS = (
     "keywords",
     "time",
     "changetime",
+    # Trac custom query may ignore unsupported columns; keep likely comment
+    # count aliases here so momentum scoring starts working if Trac exposes one.
+    "comments",
+    "_comments",
 )
 
 

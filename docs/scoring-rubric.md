@@ -30,7 +30,9 @@ Freshness, momentum, and ticket age are scored separately and shown as explicit 
 
 A ticket can be old but still receive a freshness boost when it was recently updated. A mature ticket can receive a small ticket-age boost, while a very old ticket can be penalized if age suggests extra risk.
 
-Freshness and ticket-age signals depend on Trac CSV fields such as `time` and `changetime`. New browser-fetch runs request those columns explicitly so future generated dashboards can show these details when Trac provides them.
+Freshness and ticket-age signals depend on Trac CSV fields such as `time`/`Created` and `changetime`/`Modified`. Browser-fetch requests those columns explicitly, and the parser accepts both ISO-style timestamps and Trac's AM/PM CSV timestamps such as `04/23/2026 03:37:20 PM`.
+
+Momentum scoring depends on a usable comment-count column. Browser-fetch requests likely comment-count aliases (`comments` and `_comments`), and the scorer also recognizes stored aliases such as `comment_count` and `Comment Count`. If Trac does not return one of those fields for a query, momentum is omitted rather than guessed.
 
 ## Positive Ticket Signals
 

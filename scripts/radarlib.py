@@ -33,7 +33,7 @@ MILESTONE_KEYS = ("milestone", "Milestone")
 OWNER_KEYS = ("owner", "Owner")
 MODIFIED_KEYS = ("modified", "Modified", "changetime", "Change Time")
 CREATED_KEYS = ("created", "Created", "time", "Created Time")
-COMMENTS_KEYS = ("comments", "Comments")
+COMMENTS_KEYS = ("comments", "Comments", "comment_count", "Comment Count", "Comment count", "_comments", "_comment_count")
 
 
 def first_value(row: dict[str, Any], keys: Iterable[str], default: str = "") -> str:
@@ -56,7 +56,10 @@ def parse_datetime(value: str) -> datetime | None:
         "%Y-%m-%d %H:%M:%S%z",
         "%Y-%m-%d %H:%M:%S",
         "%Y-%m-%d",
+        "%m/%d/%Y %I:%M:%S %p",
+        "%m/%d/%Y %I:%M %p",
         "%m/%d/%Y %H:%M:%S",
+        "%m/%d/%Y %H:%M",
         "%m/%d/%Y",
     )
     for fmt in formats:

@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-06-16 03:45
+Generated: 2026-06-16 10:04
 
 ## Summary
 
@@ -25,7 +25,7 @@ Generated: 2026-06-16 03:45
 
 #### 1. [#43178](https://core.trac.wordpress.org/ticket/43178) — Rethinking what “captions” means for video
 
-- Score: **179**
+- Score: **189**
 - Track/query: Media: Has Patch
 - Discovery track: Media Has Patch
 - Component: Media
@@ -35,7 +35,7 @@ Generated: 2026-06-16 03:45
 - Keywords: has-patch reporter-feedback has-ux-feedback has-ui-feedback phase-3-media-triage
 - Created: 01/29/2018 04:32:59 PM
 - Modified: 04/23/2026 03:37:20 PM
-- Why it ranked: track priority: Media: Has Patch +100, has patch +35, reporter feedback +10, preferred component: Media +20, has concrete milestone +8, has owner +6
+- Why it ranked: track priority: Media: Has Patch +100, has patch +35, reporter feedback +10, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10
 - Score breakdown:
   - +100: Track Priority
   - +35: Has Patch
@@ -43,9 +43,185 @@ Generated: 2026-06-16 03:45
   - +20: Preferred Component
   - +8: Has Concrete Milestone
   - +6: Has Owner
+  - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 2. [#60628](https://core.trac.wordpress.org/ticket/60628) — Issues with avif image  imagecreatefromavif not working. Resizing not possible.
+#### 2. [#65329](https://core.trac.wordpress.org/ticket/65329) — Move sideload metadata writes to the finalize endpoint
+
+- Score: **184**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: Assigned
+- Milestone: 7.1
+- Owner: adamsilverstein
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 05/22/2026 10:26:49 PM
+- Modified: 06/04/2026 01:56:16 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 3. [#56886](https://core.trac.wordpress.org/ticket/56886) — Admin facing add site screen missing search engine visibility field
+
+- Score: **178**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Networks and Sites
+- Trac status: New
+- Milestone: 7.1
+- Keywords: good-first-bug has-patch needs-testing
+- Created: 10/22/2022 11:05:39 AM
+- Modified: 06/04/2026 01:49:33 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has concrete milestone +8, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +8: Has Concrete Milestone
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 4. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
+
+- Score: **178**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-testing has-test-info
+- Created: 03/19/2026 02:52:41 PM
+- Modified: 06/11/2026 08:42:29 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +20: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 5. [#45354](https://core.trac.wordpress.org/ticket/45354) — Adding index for meta_key and post_id in postmeta
+
+- Score: **176**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Database
+- Trac status: New
+- Milestone: 7.1
+- Keywords: needs-testing dev-feedback has-patch has-unit-tests
+- Created: 11/14/2018 09:43:31 PM
+- Modified: 06/04/2026 09:13:21 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has concrete milestone +8, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +8: Has Concrete Milestone
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 6. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
+
+- Score: **172**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Taxonomy
+- Trac status: Reviewing
+- Milestone: 7.1
+- Owner: audrasjb
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 04/09/2025 11:10:53 AM
+- Modified: 06/13/2026 02:21:45 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 7. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
+
+- Score: **172**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Site Health
+- Trac status: Accepted
+- Milestone: 7.0.1
+- Owner: westonruter
+- Keywords: has-patch needs-testing
+- Created: 02/23/2026 03:51:38 PM
+- Modified: 06/16/2026 01:34:12 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 8. [#64877](https://core.trac.wordpress.org/ticket/64877) — Default site icon fallback still uses blue logo
+
+- Score: **172**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: General
+- Trac status: Assigned
+- Milestone: 7.1
+- Owner: sabernhardt
+- Keywords: has-patch needs-testing
+- Created: 03/17/2026 11:22:51 PM
+- Modified: 06/16/2026 06:02:24 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 9. [#65392](https://core.trac.wordpress.org/ticket/65392) — "Show more comments" button in comments metabox doesn't load new comments if they are of a type different than 'comment'
+
+- Score: **168**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Comments
+- Trac status: Assigned
+- Milestone: Awaiting Review
+- Keywords: has-patch 2nd-opinion dev-feedback needs-testing
+- Created: 06/02/2026 01:35:42 PM
+- Modified: 06/05/2026 11:39:53 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 10. [#60628](https://core.trac.wordpress.org/ticket/60628) — Issues with avif image  imagecreatefromavif not working. Resizing not possible.
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -67,29 +243,143 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#65329](https://core.trac.wordpress.org/ticket/65329) — Move sideload metadata writes to the finalize endpoint
+#### 11. [#56320](https://core.trac.wordpress.org/ticket/56320) — Update mediaelement.js to the latest version
 
 - Score: **164**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Media
-- Trac status: Assigned
+- Component: External Libraries
+- Trac status: Accepted
 - Milestone: 7.1
 - Owner: adamsilverstein
-- Keywords: has-patch has-unit-tests needs-testing
-- Created: 05/22/2026 10:26:49 PM
-- Modified: 06/04/2026 01:56:16 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6
+- Keywords: has-patch needs-testing 2nd-opinion
+- Created: 08/01/2022 06:20:19 PM
+- Modified: 06/04/2026 01:59:04 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +20: Preferred Component
   - +8: Has Concrete Milestone
   - +6: Has Owner
+  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+#### 12. [#60029](https://core.trac.wordpress.org/ticket/60029) — Admin unable to create new Application Password for user with no role on main site (multisite)
+
+- Score: **164**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Application Passwords
+- Trac status: Reviewing
+- Milestone: 7.1
+- Owner: audrasjb
+- Keywords: changes-requested has-patch has-test-info has-unit-tests needs-testing
+- Created: 12/07/2023 01:40:27 PM
+- Modified: 06/04/2026 09:11:29 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+## Top Opportunities
+
+#### 1. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
+
+- Score: **164**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: General
+- Trac status: Accepted
+- Milestone: 7.1
+- Owner: joedolson
+- Keywords: has-patch needs-testing
+- Created: 06/05/2026 09:11:00 AM
+- Modified: 06/09/2026 04:50:17 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 2. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+
+- Score: **162**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Editor
+- Trac status: Accepted
+- Milestone: Future Release
+- Owner: audrasjb
+- Keywords: has-patch has-test-info has-screenshots has-unit-tests needs-testing dev-feedback
+- Created: 06/14/2025 01:01:14 PM
+- Modified: 03/30/2026 09:24:46 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +6: Has Owner
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 3. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+
+- Score: **162**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: General
+- Trac status: Accepted
+- Milestone: 7.1
+- Owner: westonruter
+- Keywords: has-patch needs-testing needs-test-info reporter-feedback
+- Created: 03/21/2026 06:37:01 PM
+- Modified: 03/24/2026 02:56:52 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Reporter Feedback
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 4. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+
+- Score: **162**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Networks and Sites
+- Trac status: Assigned
+- Milestone: 7.1
+- Owner: rajeshcp
+- Keywords: has-patch needs-testing has-test-info has-unit-tests has-screenshots
+- Created: 04/09/2026 10:29:50 AM
+- Modified: 05/14/2026 04:09:08 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 5. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
 
 - Score: **161**
 - Track/query: Media: Has Patch
@@ -109,28 +399,151 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#44641](https://core.trac.wordpress.org/ticket/44641) — Customizing Button Text in Custom Media Manager Frame Doesn't Work Anymore
+#### 6. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
 
-- Score: **156**
+- Score: **160**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Media
-- Trac status: Assigned
+- Trac status: Reopened
 - Milestone: Future Release
-- Owner: antpb
-- Keywords: has-patch needs-testing 2nd-opinion
-- Created: 07/25/2018 12:16:47 PM
-- Modified: 01/30/2022 04:52:29 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has owner +6
+- Keywords: good-first-bug has-patch 2nd-opinion has-unit-tests needs-testing
+- Created: 04/05/2017 01:29:32 PM
+- Modified: 05/20/2024 05:16:01 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, preferred component: Media +20, freshness: stale activity >2 years -10
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +20: Preferred Component
+  - -10: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 7. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
+
+- Score: **160**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Posts, Post Types
+- Trac status: New
+- Milestone: Future Release
+- Keywords: good-first-bug has-test-info has-patch has-unit-tests needs-testing
+- Created: 09/06/2019 02:49:20 AM
+- Modified: 04/24/2026 07:08:08 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, freshness: updated within 60 days +10
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +10: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 8. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
+
+- Score: **158**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-testing close
+- Created: 09/30/2025 02:27:40 PM
+- Modified: 10/01/2025 08:28:56 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
   - +20: Preferred Component
-  - +6: Has Owner
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#21989](https://core.trac.wordpress.org/ticket/21989) — update_option() calls sanitize_option() twice when option does not exist
+#### 9. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
+
+- Score: **158**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Editor
+- Trac status: New
+- Milestone: 7.1
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 06/05/2026 06:35:50 AM
+- Modified: 06/15/2026 12:23:04 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 10. [#22116](https://core.trac.wordpress.org/ticket/22116) — bug in dynamic_sidebar function
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Widgets
+- Trac status: Reviewing
+- Milestone: 7.1
+- Owner: SergeyBiryukov
+- Keywords: needs-testing has-patch
+- Created: 10/06/2012 12:19:48 PM
+- Modified: 06/13/2026 10:40:32 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: very old ticket -8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+  - -8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 11. [#63109](https://core.trac.wordpress.org/ticket/63109) — test_get_block_editor_settings_theme_json_settings failing
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Editor
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-test-info has-patch needs-testing dev-feedback
+- Created: 03/16/2025 02:05:07 AM
+- Modified: 12/01/2025 02:58:51 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 12. [#63197](https://core.trac.wordpress.org/ticket/63197) — Sanity Checks in mkdir and delete for FTPext Filesystem
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Filesystem API
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: needs-testing dev-feedback has-test-info has-patch
+- Created: 03/29/2025 01:55:16 PM
+- Modified: 12/01/2025 03:01:29 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 13. [#21989](https://core.trac.wordpress.org/ticket/21989) — update_option() calls sanitize_option() twice when option does not exist
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -148,7 +561,7 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#41305](https://core.trac.wordpress.org/ticket/41305) — Add lazily evaluated translations
+#### 14. [#41305](https://core.trac.wordpress.org/ticket/41305) — Add lazily evaluated translations
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -166,7 +579,7 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
+#### 15. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -184,7 +597,7 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#54034](https://core.trac.wordpress.org/ticket/54034) — Update jQuery UI Touch Punch to the latest version
+#### 16. [#54034](https://core.trac.wordpress.org/ticket/54034) — Update jQuery UI Touch Punch to the latest version
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -202,7 +615,7 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#58801](https://core.trac.wordpress.org/ticket/58801) — Prefetch Block Editor from Posts page
+#### 17. [#58801](https://core.trac.wordpress.org/ticket/58801) — Prefetch Block Editor from Posts page
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -220,163 +633,73 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+#### 18. [#65048](https://core.trac.wordpress.org/ticket/65048) — wp_ajax_fetch_list(): Sanitize $_GET input before nonce construction
 
 - Score: **154**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Accepted
-- Owner: audrasjb
-- Keywords: has-patch has-test-info has-screenshots has-unit-tests needs-testing dev-feedback
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6
+- Component: Administration
+- Trac status: Assigned
+- Milestone: Awaiting Review
+- Owner: rajeshcp
+- Keywords: has-patch needs-testing has-test-info
+- Created: 04/09/2026 10:09:59 AM
+- Modified: 04/23/2026 04:22:59 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +18: Dev Feedback
   - +6: Has Owner
+  - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+#### 19. [#65052](https://core.trac.wordpress.org/ticket/65052) — Nonce check order flaw in post-quickdraft-save
 
 - Score: **154**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: General
-- Trac status: Accepted
-- Milestone: 7.1
-- Owner: westonruter
-- Keywords: has-patch needs-testing needs-test-info reporter-feedback
-- Created: 03/21/2026 06:37:01 PM
-- Modified: 03/24/2026 02:56:52 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6
+- Component: Security
+- Trac status: Assigned
+- Milestone: Awaiting Review
+- Owner: rajeshcp
+- Keywords: has-patch needs-testing has-test-info has-unit-tests
+- Created: 04/09/2026 01:06:03 PM
+- Modified: 05/19/2026 08:54:37 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +10: Reporter Feedback
-  - +8: Has Concrete Milestone
   - +6: Has Owner
+  - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-## Top Opportunities
+#### 20. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
 
-#### 1. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
-
-- Score: **170**
+- Score: **154**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Media
-- Trac status: Reopened
-- Milestone: Future Release
-- Keywords: good-first-bug has-patch 2nd-opinion has-unit-tests needs-testing
-- Created: 04/05/2017 01:29:32 PM
-- Modified: 05/20/2024 05:16:01 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, preferred component: Media +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Good First Bug
-  - +20: Preferred Component
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 2. [#56886](https://core.trac.wordpress.org/ticket/56886) — Admin facing add site screen missing search engine visibility field
-
-- Score: **158**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Networks and Sites
-- Trac status: New
-- Milestone: 7.1
-- Keywords: good-first-bug has-patch needs-testing
-- Created: 10/22/2022 11:05:39 AM
-- Modified: 06/04/2026 01:49:33 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has concrete milestone +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Good First Bug
-  - +8: Has Concrete Milestone
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 3. [#45354](https://core.trac.wordpress.org/ticket/45354) — Adding index for meta_key and post_id in postmeta
-
-- Score: **156**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Database
-- Trac status: New
-- Milestone: 7.1
-- Keywords: needs-testing dev-feedback has-patch has-unit-tests
-- Created: 11/14/2018 09:43:31 PM
-- Modified: 06/04/2026 09:13:21 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has concrete milestone +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +18: Dev Feedback
-  - +8: Has Concrete Milestone
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 4. [#35593](https://core.trac.wordpress.org/ticket/35593) — Metadata from wrong file in media_handle_upload
-
-- Score: **150**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: Reviewing
+- Component: Security
+- Trac status: Assigned
 - Milestone: Awaiting Review
-- Keywords: has-patch needs-testing
-- Created: 01/24/2016 03:14:20 PM
-- Modified: 02/06/2023 03:07:08 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20
+- Owner: rajeshcp
+- Keywords: has-patch needs-testing has-test-info has-unit-tests
+- Created: 04/09/2026 04:50:52 PM
+- Modified: 05/19/2026 08:54:48 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +20: Preferred Component
+  - +6: Has Owner
+  - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
-
-- Score: **150**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: New
-- Keywords: good-first-bug has-test-info has-patch has-unit-tests needs-testing
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Good First Bug
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 6. [#51058](https://core.trac.wordpress.org/ticket/51058) — attachment_url_to_postid does not retrieve post ID of really large images
-
-- Score: **150**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: New
-- Milestone: Awaiting Review
-- Keywords: has-patch needs-testing
-- Created: 08/19/2020 02:12:58 AM
-- Modified: 11/14/2021 01:59:45 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 7. [#54016](https://core.trac.wordpress.org/ticket/54016) — Media Library: Bulk delete elements in grid view takes very long
+#### 21. [#54016](https://core.trac.wordpress.org/ticket/54016) — Media Library: Bulk delete elements in grid view takes very long
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -395,7 +718,7 @@ Generated: 2026-06-16 03:45
   - +20: Preferred Component
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#58416](https://core.trac.wordpress.org/ticket/58416) — Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.
+#### 22. [#58416](https://core.trac.wordpress.org/ticket/58416) — Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -414,45 +737,45 @@ Generated: 2026-06-16 03:45
   - +20: Preferred Component
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
+#### 23. [#65281](https://core.trac.wordpress.org/ticket/65281) — Custom Time & Date Format Fields Allow Empty Save Instead of Validation
 
 - Score: **150**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Media
+- Component: Date/Time
 - Trac status: New
 - Milestone: Awaiting Review
-- Keywords: has-patch needs-testing close
-- Created: 09/30/2025 02:27:40 PM
-- Modified: 10/01/2025 08:28:56 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20
+- Keywords: has-patch has-unit-tests has-test-info needs-testing
+- Created: 05/20/2026 06:43:42 PM
+- Modified: 06/15/2026 02:26:48 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +20: Preferred Component
+  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
+#### 24. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
 
 - Score: **150**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Media
+- Component: Site Health
 - Trac status: New
 - Milestone: Awaiting Review
-- Keywords: has-patch needs-testing has-test-info
-- Created: 03/19/2026 02:52:41 PM
-- Modified: 06/11/2026 08:42:29 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 06/02/2026 09:05:13 PM
+- Modified: 06/08/2026 12:22:02 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +20: Preferred Component
+  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#16293](https://core.trac.wordpress.org/ticket/16293) — In multisite installs, users with id 1 can't be deleted
+#### 25. [#16293](https://core.trac.wordpress.org/ticket/16293) — In multisite installs, users with id 1 can't be deleted
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -468,7 +791,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#20746](https://core.trac.wordpress.org/ticket/20746) — Accessing non-existing theme folder in Network install gives 500 error
+#### 26. [#20746](https://core.trac.wordpress.org/ticket/20746) — Accessing non-existing theme folder in Network install gives 500 error
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -484,7 +807,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 13. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
+#### 27. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -500,7 +823,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 14. [#40790](https://core.trac.wordpress.org/ticket/40790) — Ability to filter $post_type in _get_last_post_time
+#### 28. [#40790](https://core.trac.wordpress.org/ticket/40790) — Ability to filter $post_type in _get_last_post_time
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -516,7 +839,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 15. [#41358](https://core.trac.wordpress.org/ticket/41358) — Shutdown hooks can significantly slow down REST API responses
+#### 29. [#41358](https://core.trac.wordpress.org/ticket/41358) — Shutdown hooks can significantly slow down REST API responses
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -532,7 +855,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 16. [#43885](https://core.trac.wordpress.org/ticket/43885) — WP_Role and WP_Roles::get_role() missing Display Name
+#### 30. [#43885](https://core.trac.wordpress.org/ticket/43885) — WP_Role and WP_Roles::get_role() missing Display Name
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -548,7 +871,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 17. [#47352](https://core.trac.wordpress.org/ticket/47352) — Take into account the current admin email address when rate limiting the recovery mode email
+#### 31. [#47352](https://core.trac.wordpress.org/ticket/47352) — Take into account the current admin email address when rate limiting the recovery mode email
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -564,7 +887,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 18. [#48193](https://core.trac.wordpress.org/ticket/48193) — Improve the WordPress loop
+#### 32. [#48193](https://core.trac.wordpress.org/ticket/48193) — Improve the WordPress loop
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -580,7 +903,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 19. [#51446](https://core.trac.wordpress.org/ticket/51446) — CORS issues with QUnit while running tests
+#### 33. [#51446](https://core.trac.wordpress.org/ticket/51446) — CORS issues with QUnit while running tests
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -596,7 +919,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 20. [#53450](https://core.trac.wordpress.org/ticket/53450) — [WP_Meta_Query] Add faster LIKE based 'STARTSWITH' and 'ENDSWITH' compare modes for value query
+#### 34. [#53450](https://core.trac.wordpress.org/ticket/53450) — [WP_Meta_Query] Add faster LIKE based 'STARTSWITH' and 'ENDSWITH' compare modes for value query
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -612,7 +935,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 21. [#54042](https://core.trac.wordpress.org/ticket/54042) — Extending wpdb::prepare() to support IN() operator
+#### 35. [#54042](https://core.trac.wordpress.org/ticket/54042) — Extending wpdb::prepare() to support IN() operator
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -628,7 +951,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 22. [#54546](https://core.trac.wordpress.org/ticket/54546) — Fatal error receive while updating WP 5.8.2 to WP 5.9.
+#### 36. [#54546](https://core.trac.wordpress.org/ticket/54546) — Fatal error receive while updating WP 5.8.2 to WP 5.9.
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -644,7 +967,7 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 23. [#57586](https://core.trac.wordpress.org/ticket/57586) — term_exists() return type not consistent regarding wp_insert_term()
+#### 37. [#57586](https://core.trac.wordpress.org/ticket/57586) — term_exists() return type not consistent regarding wp_insert_term()
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -660,55 +983,169 @@ Generated: 2026-06-16 03:45
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 24. [#63109](https://core.trac.wordpress.org/ticket/63109) — test_get_block_editor_settings_theme_json_settings failing
+#### 38. [#64581](https://core.trac.wordpress.org/ticket/64581) — Allow serialized options read-only view
 
 - Score: **148**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Unknown
+- Component: Options, Meta APIs
 - Trac status: New
-- Keywords: has-test-info has-patch needs-testing dev-feedback
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
+- Milestone: Awaiting Review
+- Keywords: has-patch has-screenshots needs-testing
+- Created: 02/01/2026 10:55:10 PM
+- Modified: 05/24/2026 08:42:40 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +18: Dev Feedback
+  - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 25. [#63197](https://core.trac.wordpress.org/ticket/63197) — Sanity Checks in mkdir and delete for FTPext Filesystem
+#### 39. [#64670](https://core.trac.wordpress.org/ticket/64670) — WP_REST_Posts_Controller::update_item() not passing parent to wp_unique_post_slug() for draft child
 
 - Score: **148**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Unknown
+- Component: REST API
 - Trac status: New
-- Keywords: needs-testing dev-feedback has-test-info has-patch
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-testing
+- Created: 02/18/2026 05:35:30 PM
+- Modified: 05/26/2026 12:02:55 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +18: Dev Feedback
+  - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 26. [#65392](https://core.trac.wordpress.org/ticket/65392) — "Show more comments" button in comments metabox doesn't load new comments if they are of a type different than 'comment'
+#### 40. [#64714](https://core.trac.wordpress.org/ticket/64714) — Inconsistent vertical spacing between the headings and their content in the dashboard widgets: Site Health Status, Quick Edit, Activity, and WordPress Events and News.
 
 - Score: **148**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Unknown
+- Component: Widgets
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-testing
+- Created: 02/24/2026 12:58:08 PM
+- Modified: 05/19/2026 08:50:32 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 41. [#64863](https://core.trac.wordpress.org/ticket/64863) — Eliminate switch_to_blog() from get_blog_option(), update_blog_option(), WP_Site::get_details(), and get_blog_post() using $wpdb->get_blog_prefix()
+
+- Score: **148**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Networks and Sites
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-testing has-unit-tests
+- Created: 03/14/2026 10:37:58 PM
+- Modified: 04/30/2026 06:36:50 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 42. [#64991](https://core.trac.wordpress.org/ticket/64991) — New param "allow_multiple_terms" in `register_taxonomy` for single term restriction
+
+- Score: **148**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Taxonomy
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 03/30/2026 10:13:26 AM
+- Modified: 04/24/2026 06:12:03 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 43. [#65120](https://core.trac.wordpress.org/ticket/65120) — Add `wp_elements_block_supports_class_name` filter to `wp_get_elements_class_name()`
+
+- Score: **148**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Editor
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-testing has-test-info 2nd-opinion
+- Created: 04/23/2026 06:57:36 PM
+- Modified: 05/20/2026 05:57:15 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 44. [#65171](https://core.trac.wordpress.org/ticket/65171) — wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs
+
+- Score: **148**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Editor
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-unit-tests needs-testing
+- Created: 05/05/2026 09:12:28 PM
+- Modified: 05/14/2026 11:31:38 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 45. [#44641](https://core.trac.wordpress.org/ticket/44641) — Customizing Button Text in Custom Media Manager Frame Doesn't Work Anymore
+
+- Score: **146**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
 - Trac status: Assigned
-- Keywords: has-patch 2nd-opinion dev-feedback needs-testing
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
+- Milestone: Future Release
+- Owner: antpb
+- Keywords: has-patch needs-testing 2nd-opinion
+- Created: 07/25/2018 12:16:47 PM
+- Modified: 01/30/2022 04:52:29 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has owner +6, freshness: stale activity >2 years -10
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +18: Dev Feedback
+  - +20: Preferred Component
+  - +6: Has Owner
+  - -10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 27. [#52464](https://core.trac.wordpress.org/ticket/52464) — The value of argument passed to the update_option_new_admin_email() is not a valid email.
+#### 46. [#52464](https://core.trac.wordpress.org/ticket/52464) — The value of argument passed to the update_option_new_admin_email() is not a valid email.
 
 - Score: **146**
 - Track/query: General: Needs Testing
@@ -726,7 +1163,7 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 28. [#55691](https://core.trac.wordpress.org/ticket/55691) — New site editor uses WP_SITEURL instead of WP_HOME
+#### 47. [#55691](https://core.trac.wordpress.org/ticket/55691) — New site editor uses WP_SITEURL instead of WP_HOME
 
 - Score: **146**
 - Track/query: General: Needs Testing
@@ -744,175 +1181,27 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 29. [#22116](https://core.trac.wordpress.org/ticket/22116) — bug in dynamic_sidebar function
+#### 48. [#51058](https://core.trac.wordpress.org/ticket/51058) — attachment_url_to_postid does not retrieve post ID of really large images
 
-- Score: **144**
+- Score: **140**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Widgets
-- Trac status: Reviewing
-- Milestone: 7.1
-- Owner: SergeyBiryukov
-- Keywords: needs-testing has-patch
-- Created: 10/06/2012 12:19:48 PM
-- Modified: 06/13/2026 10:40:32 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 30. [#56320](https://core.trac.wordpress.org/ticket/56320) — Update mediaelement.js to the latest version
-
-- Score: **144**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: External Libraries
-- Trac status: Accepted
-- Milestone: 7.1
-- Owner: adamsilverstein
-- Keywords: has-patch needs-testing 2nd-opinion
-- Created: 08/01/2022 06:20:19 PM
-- Modified: 06/04/2026 01:59:04 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 31. [#60029](https://core.trac.wordpress.org/ticket/60029) — Admin unable to create new Application Password for user with no role on main site (multisite)
-
-- Score: **144**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Application Passwords
-- Trac status: Reviewing
-- Milestone: 7.1
-- Owner: audrasjb
-- Keywords: changes-requested has-patch has-test-info has-unit-tests needs-testing
-- Created: 12/07/2023 01:40:27 PM
-- Modified: 06/04/2026 09:11:29 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 32. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
-
-- Score: **144**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Taxonomy
-- Trac status: Reviewing
-- Milestone: 7.1
-- Owner: audrasjb
-- Keywords: has-patch has-unit-tests needs-testing
-- Created: 04/09/2025 11:10:53 AM
-- Modified: 06/13/2026 02:21:45 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 33. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
-
-- Score: **144**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Site Health
-- Trac status: Accepted
-- Milestone: 7.0.1
-- Owner: westonruter
+- Component: Media
+- Trac status: New
+- Milestone: Awaiting Review
 - Keywords: has-patch needs-testing
-- Created: 02/23/2026 03:51:38 PM
-- Modified: 06/16/2026 01:34:12 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
+- Created: 08/19/2020 02:12:58 AM
+- Modified: 11/14/2021 01:59:45 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: stale activity >2 years -10
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
+  - +20: Preferred Component
+  - -10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 34. [#64877](https://core.trac.wordpress.org/ticket/64877) — Default site icon fallback still uses blue logo
-
-- Score: **144**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: General
-- Trac status: Assigned
-- Milestone: 7.1
-- Owner: sabernhardt
-- Keywords: has-patch needs-testing
-- Created: 03/17/2026 11:22:51 PM
-- Modified: 06/16/2026 06:02:24 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 35. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
-
-- Score: **144**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Networks and Sites
-- Trac status: Assigned
-- Milestone: 7.1
-- Owner: rajeshcp
-- Keywords: has-patch needs-testing has-test-info has-unit-tests has-screenshots
-- Created: 04/09/2026 10:29:50 AM
-- Modified: 05/14/2026 04:09:08 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 36. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
-
-- Score: **144**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: General
-- Trac status: Accepted
-- Milestone: 7.1
-- Owner: joedolson
-- Keywords: has-patch needs-testing
-- Created: 06/05/2026 09:11:00 AM
-- Modified: 06/09/2026 04:50:17 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 37. [#41445](https://core.trac.wordpress.org/ticket/41445) — post_parent can prevent media from embedding correctly
+#### 49. [#41445](https://core.trac.wordpress.org/ticket/41445) — post_parent can prevent media from embedding correctly
 
 - Score: **139**
 - Track/query: General: Needs Testing
@@ -933,227 +1222,23 @@ Generated: 2026-06-16 03:45
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 38. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
+#### 50. [#61889](https://core.trac.wordpress.org/ticket/61889) — Function dbDelta() splits queries on semi-colon in column COMMENT and table COMMENT
 
 - Score: **138**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Editor
+- Component: Database
 - Trac status: New
-- Milestone: 7.1
-- Keywords: has-patch has-unit-tests needs-testing
-- Created: 06/05/2026 06:35:50 AM
-- Modified: 06/15/2026 12:23:04 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 39. [#19173](https://core.trac.wordpress.org/ticket/19173) — Issues with wp_editor() when used inside of a meta box.
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Reopened
-- Owner: azaozz
+- Milestone: Awaiting Review
 - Keywords: has-patch needs-testing
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
+- Created: 08/16/2024 07:06:04 PM
+- Modified: 04/28/2025 05:46:54 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 40. [#22367](https://core.trac.wordpress.org/ticket/22367) — Usernames with "@" char are assumed email addresses, causing incorrect look-up in several places
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Reviewing
-- Owner: johnjamesjacoby
-- Keywords: has-patch needs-testing
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 41. [#26571](https://core.trac.wordpress.org/ticket/26571) — Increase flexibility of "At a Glance" Dashboard Widget to match "Right Now" Widget
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Reviewing
-- Owner: chriscct7
-- Keywords: has-patch needs-testing needs-refresh needs-docs
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 42. [#34848](https://core.trac.wordpress.org/ticket/34848) — Add support for updating post meta in bulk
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Assigned
-- Owner: chriscct7
-- Keywords: has-patch has-unit-tests needs-testing close
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 43. [#38238](https://core.trac.wordpress.org/ticket/38238) — Sorting a list table by some kind of count should default to DESC initially
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Reviewing
-- Owner: helen
-- Keywords: has-patch has-unit-tests needs-testing
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 44. [#43746](https://core.trac.wordpress.org/ticket/43746) — Custom post type single post feed returns a 404 if has_archive is set to false when calling register_post_type()
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Reviewing
-- Owner: SergeyBiryukov
-- Keywords: 2nd-opinion has-patch needs-testing has-unit-tests
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 45. [#43879](https://core.trac.wordpress.org/ticket/43879) — Add tools for anonymizing of post authors
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Assigned
-- Owner: tz-media
-- Keywords: has-patch, needs-testing, needs-unit-tests, 2nd-opinion
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 46. [#44921](https://core.trac.wordpress.org/ticket/44921) — User nicename discovery is slow to return
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Accepted
-- Owner: pbearne
-- Keywords: has-patch needs-testing has-unit-tests needs-refresh
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 47. [#54151](https://core.trac.wordpress.org/ticket/54151) — Dashboard widgets e2e tests
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Assigned
-- Owner: justinahinon
-- Keywords: has-patch needs-testing
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 48. [#65048](https://core.trac.wordpress.org/ticket/65048) — wp_ajax_fetch_list(): Sanitize $_GET input before nonce construction
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Assigned
-- Owner: rajeshcp
-- Keywords: has-patch needs-testing has-test-info
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 49. [#65052](https://core.trac.wordpress.org/ticket/65052) — Nonce check order flaw in post-quickdraft-save
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Assigned
-- Owner: rajeshcp
-- Keywords: has-patch needs-testing has-test-info has-unit-tests
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 50. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
-
-- Score: **136**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Assigned
-- Owner: rajeshcp
-- Keywords: has-patch needs-testing has-test-info has-unit-tests
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +6: Has Owner
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Shortlisted
@@ -1189,29 +1274,33 @@ No tickets in this section.
 
 #### 1. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
 
-- Score: **156**
+- Score: **176**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Unknown
+- Component: Widgets
 - Trac status: Assigned
+- Milestone: Future Release
 - Owner: mdifelice
 - Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
+- Created: 06/16/2017 01:33:58 PM
+- Modified: 06/15/2026 09:46:17 PM
 - Review status: tested
 - Review reason: Refreshed stale patch and validated behavior against current trunk.
 - Review notes: Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.
 - Review updated: 2026-06-15T21:48:04.323Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has owner +6
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has owner +6, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
   - +20: Good First Bug
   - +6: Has Owner
+  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 2. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
 
-- Score: **138**
+- Score: **158**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Media
@@ -1238,13 +1327,14 @@ Confirmed generated site icon sizes are square as expected:
 
 Posted testing results to Trac.
 - Review updated: 2026-06-15T23:07:33.995Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, already tested -20
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, freshness: recently updated <=14 days +20, already tested -20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
   - +20: Preferred Component
   - +8: Has Concrete Milestone
+  - +20: Freshness
   - -20: Already Tested
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
@@ -1256,26 +1346,26 @@ No tickets in this section.
 
 | Query | Date | Rows | File |
 |---|---:|---:|---|
-| accessibility_has_patch | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-13 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/good_first_bugs.csv` |
-| media_has_patch | 2026-06-13 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-13/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-14 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/good_first_bugs.csv` |
-| media_has_patch | 2026-06-14 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-14/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-15 | 255 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-15 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/good_first_bugs.csv` |
-| media_has_patch | 2026-06-15 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-15/media_has_patch.csv` |
-| accessibility_has_patch | 2026-06-16 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-16/accessibility_has_patch.csv` |
-| docs_needs_testing | 2026-06-16 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-16/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-16 | 255 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-16/general_needs_testing.csv` |
-| good_first_bugs | 2026-06-16 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-16/good_first_bugs.csv` |
-| media_has_patch | 2026-06-16 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-16/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-13 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-13/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-13 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-13/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-13 | 256 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-13/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-13 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-13/good_first_bugs.csv` |
+| media_has_patch | 2026-06-13 | 24 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-13/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-14 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-14/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-14 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-14/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-14 | 256 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-14/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-14 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-14/good_first_bugs.csv` |
+| media_has_patch | 2026-06-14 | 24 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-14/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-15 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-15/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-15 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-15/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-15 | 255 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-15/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-15 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-15/good_first_bugs.csv` |
+| media_has_patch | 2026-06-15 | 24 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-15/media_has_patch.csv` |
+| accessibility_has_patch | 2026-06-16 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-16/accessibility_has_patch.csv` |
+| docs_needs_testing | 2026-06-16 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-16/docs_needs_testing.csv` |
+| general_needs_testing | 2026-06-16 | 255 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-16/general_needs_testing.csv` |
+| good_first_bugs | 2026-06-16 | 0 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-16/good_first_bugs.csv` |
+| media_has_patch | 2026-06-16 | 24 | `/mnt/data/wpr25/wp-core-radar-main/data/raw/manual/2026-06-16/media_has_patch.csv` |
 
 ## Guardrail
 
