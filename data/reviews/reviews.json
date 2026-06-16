@@ -11,6 +11,12 @@
     "notes": "Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.",
     "updated_at": "2026-06-15T21:48:04.323Z"
   },
+  "43178": {
+    "status": "tested",
+    "reason": "Verified PR behavior in WordPress Playground.",
+    "notes": "Tested PR #11634 using the WordPress Playground preview.\r\n\r\nVerified image attachments display \"Image Caption\" and video attachments display \"Video Description\".\r\n\r\nConfirmed values persist after save and reload.\r\n\r\nVerified existing Description field remains functional.\r\n\r\nNo regressions observed during testing. Watch for commit during 7.1 cycle.",
+    "updated_at": "2026-06-16T11:08:17.948Z"
+  },
   "65345": {
     "status": "tested",
     "reason": "Verified patch behavior locally and reported results on Trac.",
