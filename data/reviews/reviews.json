@@ -17,6 +17,12 @@
     "notes": "Tested PR #11634 using the WordPress Playground preview.\r\n\r\nVerified image attachments display \"Image Caption\" and video attachments display \"Video Description\".\r\n\r\nConfirmed values persist after save and reload.\r\n\r\nVerified existing Description field remains functional.\r\n\r\nNo regressions observed during testing. Watch for commit during 7.1 cycle.",
     "updated_at": "2026-06-16T11:08:17.948Z"
   },
+  "45354": {
+    "status": "watch",
+    "reason": "Awaiting PR/test stability",
+    "notes": "Database index change with active PR discussion and test failures still being worked through. Worth revisiting after tests are passing and maintainers clarify whether additional performance or upgrade testing is needed.",
+    "updated_at": "2026-06-16T18:16:01.070Z"
+  },
   "56886": {
     "status": "tested",
     "reason": "Positive test result",
