@@ -17,6 +17,12 @@
     "notes": "Tested PR #11634 using the WordPress Playground preview.\r\n\r\nVerified image attachments display \"Image Caption\" and video attachments display \"Video Description\".\r\n\r\nConfirmed values persist after save and reload.\r\n\r\nVerified existing Description field remains functional.\r\n\r\nNo regressions observed during testing. Watch for commit during 7.1 cycle.",
     "updated_at": "2026-06-16T11:08:17.948Z"
   },
+  "65329": {
+    "status": "tested",
+    "reason": "Positive test result",
+    "notes": "Verified media upload, scaling, metadata, frontend display, and image editing workflows in Playground.",
+    "updated_at": "2026-06-16T13:53:37.124Z"
+  },
   "65345": {
     "status": "tested",
     "reason": "Verified patch behavior locally and reported results on Trac.",
