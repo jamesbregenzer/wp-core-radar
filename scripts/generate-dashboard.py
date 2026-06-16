@@ -452,9 +452,17 @@ def contribution_css() -> str:
       border: 1px solid #dcdcde;
       border-radius: 12px;
       padding: 22px;
+      margin-top: 0;
+      box-sizing: border-box;
+      height: 100%;
     }
     .hero-card h2,
     .hero-card h3 { margin-top: 0; }
+    .latest-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .latest-card p:last-child { margin-bottom: 0; }
     .hero-card p { color: #50575e; line-height: 1.55; }
     .metric-row {
       display: grid;
@@ -516,6 +524,33 @@ def contribution_css() -> str:
     .component-card { background: white; border: 1px solid #dcdcde; border-radius: 10px; padding: 16px; }
     .component-card strong { display: block; font-size: 22px; }
     .component-card span { color: #646970; }
+    .contribution-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 13px;
+      border: 1px solid #c3c4c7;
+      border-radius: 999px;
+      background: #fff;
+      color: #1d2327;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .footer-pill:hover {
+      border-color: #2271b1;
+      background: #f0f6fc;
+      color: #135e96;
+      text-decoration: none;
+    }
     @media (max-width: 900px) {
       .hero-grid { grid-template-columns: 1fr; }
       .bar-row { grid-template-columns: 110px minmax(0, 1fr) 36px; }
@@ -602,10 +637,8 @@ def build_contributions_page() -> str:
     </div>
     <div class="header-actions">
       <a class="header-pill" href="/radar/">Dashboard</a>
-      <div class="header-actions">
       <a class="header-pill" href="/radar/contributions/">Contributions</a>
       <a class="admin-link" href="/radar/admin/">Admin Console</a>
-    </div>
     </div>
   </header>
 
@@ -621,7 +654,7 @@ def build_contributions_page() -> str:
           <div class="mini-metric"><strong>{len(component_counts)}</strong><span>Components touched</span></div>
         </div>
       </section>
-      <aside class="hero-card">
+      <aside class="hero-card latest-card">
         <h3>Latest activity</h3>
         {latest_html}
       </aside>
@@ -657,8 +690,9 @@ def build_contributions_page() -> str:
     </section>
   </main>
 
-  <footer>
-    Generated from public-safe review metadata in <code>data/reviews/reviews.json</code>. <a href="/radar/">Back to dashboard</a>.
+  <footer class="contribution-footer">
+    <span>Generated from public-safe review metadata in <code>data/reviews/reviews.json</code>.</span>
+    <a class="footer-pill" href="/radar/">Back to dashboard</a>
   </footer>
 </body>
 </html>
