@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-15T21:44:32",
+  "generated": "2026-06-16T03:45:06",
   "summary": {
-    "unique_tickets": 280,
+    "unique_tickets": 281,
     "priority_targets": 12,
     "immediate": 2,
     "strong": 10,
-    "watching": 98,
+    "watching": 99,
     "reviews_loaded": 3
   },
   "groups": {
@@ -3194,6 +3194,83 @@
         "comments": "Unknown",
         "created": "02/23/2026 03:51:38 PM",
         "modified": "06/16/2026 01:34:12 AM",
+        "keywords": "has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "64877",
+        "url": "https://core.trac.wordpress.org/ticket/64877",
+        "score": 144,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Default site icon fallback still uses blue logo",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "General",
+        "owner": "sabernhardt",
+        "comments": "Unknown",
+        "created": "03/17/2026 11:22:51 PM",
+        "modified": "06/16/2026 06:02:24 AM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
