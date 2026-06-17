@@ -1,5 +1,6 @@
-# WP Core Radar scoring reference
+# WP Core Radar scoring configuration
 #
+# Scores are intentionally deterministic and explainable.
 # The runtime scoring rules currently live in scripts/radarlib.py so the
 # project has no non-stdlib YAML dependency. This file is documentation for
 # reviewers and should match score_ticket() exactly.
@@ -25,9 +26,16 @@ positive:
 
 negative:
   closed-or-non-actionable-status: -100
-  freshness-stale-activity-over-2-years: -10
-  ticket-age-very-old-over-10-years: -8
-  momentum-very-large-thread-over-80-comments: -8
   already-produced-props: -60
   already-tested: -20
+  setup-complexity-requires-woocommerce: -18
+  setup-complexity-specialized-image-library: -18
+  setup-complexity-server-runtime-configuration: -16
+  setup-complexity-external-service-or-api: -16
+  setup-complexity-multisite-environment: -14
+  setup-complexity-custom-content-type-setup: -12
+  setup-complexity-browser-specific-behavior: -12
+  freshness-stale-activity-over-2-years: -10
   missing-summary: -10
+  ticket-age-very-old-over-10-years: -8
+  momentum-very-large-thread-over-80-comments: -8

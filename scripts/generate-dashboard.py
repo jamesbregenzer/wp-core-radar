@@ -262,6 +262,7 @@ def dashboard_css() -> str:
     .signal-momentum { background: #ecfccb; color: #365314; }
     .signal-age { background: #fef9c3; color: #854d0e; }
     .signal-component { background: #fce7f3; color: #9d174d; }
+    .signal-complexity { background: #fee2e2; color: #991b1b; }
     a {
       color: #2271b1;
       font-weight: 600;

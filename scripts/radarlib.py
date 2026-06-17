@@ -219,6 +219,7 @@ def score_ticket(row: dict[str, Any], query_meta: dict[str, Any], outcomes: dict
     milestone = first_value(row, MILESTONE_KEYS).lower()
     owner = first_value(row, OWNER_KEYS).lower()
     summary = first_value(row, SUMMARY_KEYS)
+    searchable = " ".join((summary, keywords, component)).lower()
 
     if "has-patch" in keywords or "has patch" in keywords:
         score += 35
@@ -281,6 +282,44 @@ def score_ticket(row: dict[str, Any], query_meta: dict[str, Any], outcomes: dict
         elif comments > 80:
             score -= 8
             reasons.append("momentum: very large thread -8")
+
+    if any(term in searchable for term in ("woocommerce", "woo commerce")):
+        score -= 18
+        reasons.append("setup complexity: requires WooCommerce -18")
+    if any(
+        term in searchable
+        for term in (
+            "custom post type",
+            "custom post types",
+            " cpt",
+            " cpts",
+            "comment type",
+            "comment types",
+            "type different than 'comment'",
+            'type different than "comment"',
+            "type different from 'comment'",
+            'type different from "comment"',
+            "other than 'comment'",
+            'other than "comment"',
+        )
+    ):
+        score -= 12
+        reasons.append("setup complexity: custom content type setup -12")
+    if any(term in searchable for term in ("avif", "imagecreatefrom", "imagemagick", "imagick", " gd ", "image library", "image libraries")):
+        score -= 18
+        reasons.append("setup complexity: specialized image library -18")
+    if any(term in searchable for term in ("opcache", "php.ini", "php ini", "server config", "server configuration", "x-robots", "header", "headers")):
+        score -= 16
+        reasons.append("setup complexity: server/runtime configuration -16")
+    if "multisite" in searchable or "multi-site" in searchable:
+        score -= 14
+        reasons.append("setup complexity: multisite environment -14")
+    if any(term in searchable for term in ("browser-specific", "safari", "firefox", "chrome", "edge", "webkit")):
+        score -= 12
+        reasons.append("setup complexity: browser-specific behavior -12")
+    if any(term in searchable for term in ("external api", "third-party api", "oauth", "oembed", "remote request", "external-http", "api endpoint")):
+        score -= 16
+        reasons.append("setup complexity: external service or API -16")
 
     if ticket_id in outcomes:
         outcome = outcomes[ticket_id]
@@ -479,6 +518,8 @@ def signal_class(label: str) -> str:
         return "age"
     if "component" in lowered:
         return "component"
+    if "setup complexity" in lowered:
+        return "complexity"
 
     return "standard"
 
@@ -561,6 +602,7 @@ def ranking_signal_labels(reasons: list[str]) -> list[str]:
                 "preferred component",
                 "accessibility signal",
                 "concrete milestone",
+                "setup complexity",
             )
         ):
             labels.append(scoring_signal_label(reason))

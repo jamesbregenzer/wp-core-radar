@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-17T03:14:28",
+  "generated": "2026-06-17T03:41:31",
   "summary": {
     "unique_tickets": 280,
     "priority_targets": 12,
     "immediate": 0,
     "strong": 12,
-    "watching": 86,
+    "watching": 84,
     "reviews_loaded": 13
   },
   "groups": {
@@ -25,94 +25,6 @@
         "created": "08/01/2022 06:20:19 PM",
         "modified": "06/04/2026 01:59:04 PM",
         "keywords": "has-patch needs-testing 2nd-opinion",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "60029",
-        "url": "https://core.trac.wordpress.org/ticket/60029",
-        "score": 164,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Admin unable to create new Application Password for user with no role on main site (multisite)",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Application Passwords",
-        "owner": "audrasjb",
-        "comments": "Unknown",
-        "created": "12/07/2023 01:40:27 PM",
-        "modified": "06/04/2026 09:11:29 AM",
-        "keywords": "changes-requested has-patch has-test-info has-unit-tests needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -1010,6 +922,83 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
+      },
+      {
+        "ticket_id": "54034",
+        "url": "https://core.trac.wordpress.org/ticket/54034",
+        "score": 154,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Update jQuery UI Touch Punch to the latest version",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Unknown",
+        "owner": "Hareesh Pillai",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "has-patch needs-testing needs-test-info dev-feedback changes-requested",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
       }
     ],
     "top": [
@@ -1425,83 +1414,6 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "54034",
-        "url": "https://core.trac.wordpress.org/ticket/54034",
-        "score": 154,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Update jQuery UI Touch Punch to the latest version",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "Hareesh Pillai",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing needs-test-info dev-feedback changes-requested",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
             "polarity": "positive"
           }
         ],
@@ -1982,6 +1894,105 @@
         "review": {}
       },
       {
+        "ticket_id": "60029",
+        "url": "https://core.trac.wordpress.org/ticket/60029",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Admin unable to create new Application Password for user with no role on main site (multisite)",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Application Passwords",
+        "owner": "audrasjb",
+        "comments": "Unknown",
+        "created": "12/07/2023 01:40:27 PM",
+        "modified": "06/04/2026 09:11:29 AM",
+        "keywords": "changes-requested has-patch has-test-info has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Setup Complexity: Multisite Environment -14",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "-14",
+            "label": "Setup Complexity",
+            "detail": "Multisite Environment",
+            "display": "Setup Complexity: Multisite Environment",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "65281",
         "url": "https://core.trac.wordpress.org/ticket/65281",
         "score": 150,
@@ -2107,72 +2118,6 @@
             "label": "Freshness",
             "detail": "Recently Updated <=14 Days",
             "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "16293",
-        "url": "https://core.trac.wordpress.org/ticket/16293",
-        "score": 148,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "In multisite installs, users with id 1 can't be deleted",
-        "track": "General: Needs Testing",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing needs-unit-tests dev-feedback",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
             "polarity": "positive"
           }
         ],
@@ -4831,72 +4776,6 @@
         "review": {}
       },
       {
-        "ticket_id": "43746",
-        "url": "https://core.trac.wordpress.org/ticket/43746",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Custom post type single post feed returns a 404 if has_archive is set to false when calling register_post_type()",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Unknown",
-        "owner": "SergeyBiryukov",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "2nd-opinion has-patch needs-testing has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "43879",
         "url": "https://core.trac.wordpress.org/ticket/43879",
         "score": 136,
@@ -5155,6 +5034,83 @@
             "detail": "Recently Updated <=14 Days",
             "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "16293",
+        "url": "https://core.trac.wordpress.org/ticket/16293",
+        "score": 134,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "In multisite installs, users with id 1 can't be deleted",
+        "track": "General: Needs Testing",
+        "status": "Reopened",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "has-patch needs-testing needs-unit-tests dev-feedback",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Setup Complexity: Multisite Environment -14",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "-14",
+            "label": "Setup Complexity",
+            "detail": "Multisite Environment",
+            "display": "Setup Complexity: Multisite Environment",
+            "polarity": "negative"
           }
         ],
         "discovery_track": "General Needs Testing",
@@ -6253,61 +6209,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-screenshots has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "45033",
-        "url": "https://core.trac.wordpress.org/ticket/45033",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Add TIDAL to oEmbed whitelist",
-        "track": "General: Needs Testing",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -7790,6 +7691,83 @@
         "review": {}
       },
       {
+        "ticket_id": "43746",
+        "url": "https://core.trac.wordpress.org/ticket/43746",
+        "score": 124,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Custom post type single post feed returns a 404 if has_archive is set to false when calling register_post_type()",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Unknown",
+        "owner": "SergeyBiryukov",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "2nd-opinion has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Setup Complexity: Custom Content Type Setup -12",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "-12",
+            "label": "Setup Complexity",
+            "detail": "Custom Content Type Setup",
+            "display": "Setup Complexity: Custom Content Type Setup",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "65263",
         "url": "https://core.trac.wordpress.org/ticket/65263",
         "score": 123,
@@ -8340,6 +8318,72 @@
         "review": {}
       },
       {
+        "ticket_id": "45033",
+        "url": "https://core.trac.wordpress.org/ticket/45033",
+        "score": 114,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Add TIDAL to oEmbed whitelist",
+        "track": "General: Needs Testing",
+        "status": "Reopened",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: External Service Or Api -16",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-16",
+            "label": "Setup Complexity",
+            "detail": "External Service Or Api",
+            "display": "Setup Complexity: External Service Or Api",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "38936",
         "url": "https://core.trac.wordpress.org/ticket/38936",
         "score": 113,
@@ -8629,83 +8673,6 @@
         "created": "10/17/2019 11:27:06 PM",
         "modified": "11/03/2019 07:46:59 PM",
         "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Stale Activity >2 Years -10",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "-10",
-            "label": "Freshness",
-            "detail": "Stale Activity >2 Years",
-            "display": "Freshness: Stale Activity >2 Years",
-            "polarity": "negative"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "55036",
-        "url": "https://core.trac.wordpress.org/ticket/55036",
-        "score": 111,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Sharpen thumbnails with Imagick adaptiveSharpenImage()",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Media",
-        "owner": "antpb",
-        "comments": "Unknown",
-        "created": "02/02/2022 04:58:14 AM",
-        "modified": "05/10/2023 03:13:27 PM",
-        "keywords": "needs-patch needs-testing close",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -10232,61 +10199,6 @@
         "review": {}
       },
       {
-        "ticket_id": "63188",
-        "url": "https://core.trac.wordpress.org/ticket/63188",
-        "score": 103,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Getting Header \"REMOTE_ADDR\" is user-controlled and should be properly validated before use errors into the core files.",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "General",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "03/28/2025 10:38:01 AM",
-        "modified": "03/28/2025 10:19:47 PM",
-        "keywords": "needs-testing 2nd-opinion changes-requested",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "63768",
         "url": "https://core.trac.wordpress.org/ticket/63768",
         "score": 103,
@@ -11596,50 +11508,6 @@
         "review": {}
       },
       {
-        "ticket_id": "15467",
-        "url": "https://core.trac.wordpress.org/ticket/15467",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Multisite with separate users table",
-        "track": "General: Needs Testing",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-codex needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "15865",
         "url": "https://core.trac.wordpress.org/ticket/15865",
         "score": 95,
@@ -12036,50 +11904,6 @@
         "review": {}
       },
       {
-        "ticket_id": "22041",
-        "url": "https://core.trac.wordpress.org/ticket/22041",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Importer dies silently when multisite upload limit is reached",
-        "track": "General: Needs Testing",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "23464",
         "url": "https://core.trac.wordpress.org/ticket/23464",
         "score": 95,
@@ -12094,50 +11918,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "24963",
-        "url": "https://core.trac.wordpress.org/ticket/24963",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "IIS Multisite, Suspected bug in web.config code for URL Rewrite (404 wp-login)",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -12828,50 +12608,6 @@
         "review": {}
       },
       {
-        "ticket_id": "34683",
-        "url": "https://core.trac.wordpress.org/ticket/34683",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Default .htaccess config creates rewrite infinite loops for path-based multisite installations",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "35204",
         "url": "https://core.trac.wordpress.org/ticket/35204",
         "score": 95,
@@ -13326,50 +13062,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "42329",
-        "url": "https://core.trac.wordpress.org/ticket/42329",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Customizer: interacting with text fields in a \"wide\" widget shifts child panel position in Safari.",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -13928,50 +13620,6 @@
         "review": {}
       },
       {
-        "ticket_id": "46190",
-        "url": "https://core.trac.wordpress.org/ticket/46190",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Firefox Emoji Detection Slow",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "46869",
         "url": "https://core.trac.wordpress.org/ticket/46869",
         "score": 95,
@@ -14368,50 +14016,6 @@
         "review": {}
       },
       {
-        "ticket_id": "51004",
-        "url": "https://core.trac.wordpress.org/ticket/51004",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "New sitemaps feature work only on root site in a multisite subdirectory setup",
-        "track": "General: Needs Testing",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "51623",
         "url": "https://core.trac.wordpress.org/ticket/51623",
         "score": 95,
@@ -14646,50 +14250,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "2nd-opinion needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "53529",
-        "url": "https://core.trac.wordpress.org/ticket/53529",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Block based widget admin screen causes a NS_ERROR_FAILURE error in Firefox",
-        "track": "General: Needs Testing",
-        "status": "Reopened",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing needs-patch",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -15466,6 +15026,600 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
+      },
+      {
+        "ticket_id": "55036",
+        "url": "https://core.trac.wordpress.org/ticket/55036",
+        "score": 93,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Sharpen thumbnails with Imagick adaptiveSharpenImage()",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "antpb",
+        "comments": "Unknown",
+        "created": "02/02/2022 04:58:14 AM",
+        "modified": "05/10/2023 03:13:27 PM",
+        "keywords": "needs-patch needs-testing close",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Stale Activity >2 Years -10",
+            "class": "freshness"
+          },
+          {
+            "label": "Setup Complexity: Specialized Image Library -18",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "-10",
+            "label": "Freshness",
+            "detail": "Stale Activity >2 Years",
+            "display": "Freshness: Stale Activity >2 Years",
+            "polarity": "negative"
+          },
+          {
+            "points": "-18",
+            "label": "Setup Complexity",
+            "detail": "Specialized Image Library",
+            "display": "Setup Complexity: Specialized Image Library",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "63188",
+        "url": "https://core.trac.wordpress.org/ticket/63188",
+        "score": 87,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Getting Header \"REMOTE_ADDR\" is user-controlled and should be properly validated before use errors into the core files.",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "General",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "03/28/2025 10:38:01 AM",
+        "modified": "03/28/2025 10:19:47 PM",
+        "keywords": "needs-testing 2nd-opinion changes-requested",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          },
+          {
+            "label": "Setup Complexity: Server/runtime Configuration -16",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          },
+          {
+            "points": "-16",
+            "label": "Setup Complexity",
+            "detail": "Server/runtime Configuration",
+            "display": "Setup Complexity: Server/runtime Configuration",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "42329",
+        "url": "https://core.trac.wordpress.org/ticket/42329",
+        "score": 83,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Customizer: interacting with text fields in a \"wide\" widget shifts child panel position in Safari.",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: Browser Specific Behavior -12",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-12",
+            "label": "Setup Complexity",
+            "detail": "Browser Specific Behavior",
+            "display": "Setup Complexity: Browser Specific Behavior",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "46190",
+        "url": "https://core.trac.wordpress.org/ticket/46190",
+        "score": 83,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Firefox Emoji Detection Slow",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: Browser Specific Behavior -12",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-12",
+            "label": "Setup Complexity",
+            "detail": "Browser Specific Behavior",
+            "display": "Setup Complexity: Browser Specific Behavior",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "53529",
+        "url": "https://core.trac.wordpress.org/ticket/53529",
+        "score": 83,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Block based widget admin screen causes a NS_ERROR_FAILURE error in Firefox",
+        "track": "General: Needs Testing",
+        "status": "Reopened",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-testing needs-patch",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: Browser Specific Behavior -12",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-12",
+            "label": "Setup Complexity",
+            "detail": "Browser Specific Behavior",
+            "display": "Setup Complexity: Browser Specific Behavior",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "15467",
+        "url": "https://core.trac.wordpress.org/ticket/15467",
+        "score": 81,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Multisite with separate users table",
+        "track": "General: Needs Testing",
+        "status": "Reopened",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-codex needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: Multisite Environment -14",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-14",
+            "label": "Setup Complexity",
+            "detail": "Multisite Environment",
+            "display": "Setup Complexity: Multisite Environment",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "22041",
+        "url": "https://core.trac.wordpress.org/ticket/22041",
+        "score": 81,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Importer dies silently when multisite upload limit is reached",
+        "track": "General: Needs Testing",
+        "status": "Reopened",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: Multisite Environment -14",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-14",
+            "label": "Setup Complexity",
+            "detail": "Multisite Environment",
+            "display": "Setup Complexity: Multisite Environment",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "24963",
+        "url": "https://core.trac.wordpress.org/ticket/24963",
+        "score": 81,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "IIS Multisite, Suspected bug in web.config code for URL Rewrite (404 wp-login)",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: Multisite Environment -14",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-14",
+            "label": "Setup Complexity",
+            "detail": "Multisite Environment",
+            "display": "Setup Complexity: Multisite Environment",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "34683",
+        "url": "https://core.trac.wordpress.org/ticket/34683",
+        "score": 81,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Default .htaccess config creates rewrite infinite loops for path-based multisite installations",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: Multisite Environment -14",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-14",
+            "label": "Setup Complexity",
+            "detail": "Multisite Environment",
+            "display": "Setup Complexity: Multisite Environment",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "51004",
+        "url": "https://core.trac.wordpress.org/ticket/51004",
+        "score": 81,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "New sitemaps feature work only on root site in a multisite subdirectory setup",
+        "track": "General: Needs Testing",
+        "status": "Reopened",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Setup Complexity: Multisite Environment -14",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "-14",
+            "label": "Setup Complexity",
+            "detail": "Multisite Environment",
+            "display": "Setup Complexity: Multisite Environment",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
       }
     ],
     "shortlist": [],
@@ -15659,9 +15813,9 @@
       {
         "ticket_id": "65392",
         "url": "https://core.trac.wordpress.org/ticket/65392",
-        "score": 168,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
         "summary": "\"Show more comments\" button in comments metabox doesn't load new comments if they are of a type different than 'comment'",
         "track": "General: Needs Testing",
         "status": "Assigned",
@@ -15691,6 +15845,10 @@
           {
             "label": "Freshness: Recently Updated <=14 Days +20",
             "class": "freshness"
+          },
+          {
+            "label": "Setup Complexity: Custom Content Type Setup -12",
+            "class": "complexity"
           }
         ],
         "score_breakdown": [
@@ -15728,6 +15886,13 @@
             "detail": "Recently Updated <=14 Days",
             "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
+          },
+          {
+            "points": "-12",
+            "label": "Setup Complexity",
+            "detail": "Custom Content Type Setup",
+            "display": "Setup Complexity: Custom Content Type Setup",
+            "polarity": "negative"
           }
         ],
         "discovery_track": "General Needs Testing",
@@ -15741,9 +15906,9 @@
       {
         "ticket_id": "60628",
         "url": "https://core.trac.wordpress.org/ticket/60628",
-        "score": 166,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
+        "score": 148,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
         "summary": "Issues with avif image  imagecreatefromavif not working. Resizing not possible.",
         "track": "General: Needs Testing",
         "status": "Assigned",
@@ -15777,6 +15942,10 @@
           {
             "label": "Has Owner +6",
             "class": "owner"
+          },
+          {
+            "label": "Setup Complexity: Specialized Image Library -18",
+            "class": "complexity"
           }
         ],
         "score_breakdown": [
@@ -15821,6 +15990,13 @@
             "detail": "",
             "display": "Has Owner",
             "polarity": "positive"
+          },
+          {
+            "points": "-18",
+            "label": "Setup Complexity",
+            "detail": "Specialized Image Library",
+            "display": "Setup Complexity: Specialized Image Library",
+            "polarity": "negative"
           }
         ],
         "discovery_track": "General Needs Testing",
@@ -16425,110 +16601,6 @@
         }
       },
       {
-        "ticket_id": "64707",
-        "url": "https://core.trac.wordpress.org/ticket/64707",
-        "score": 172,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode",
-        "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "Site Health",
-        "owner": "westonruter",
-        "comments": "Unknown",
-        "created": "02/23/2026 03:51:38 PM",
-        "modified": "06/16/2026 01:34:12 AM",
-        "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "commented",
-          "reason": "Reviewed patch, tested in Playground, submitted Trac feedback.",
-          "notes": "Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.",
-          "updated_at": "2026-06-17T01:45:15.293Z"
-        }
-      },
-      {
         "ticket_id": "65345",
         "url": "https://core.trac.wordpress.org/ticket/65345",
         "score": 158,
@@ -16626,6 +16698,121 @@
           "reason": "Verified patch behavior locally and reported results on Trac.",
           "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
           "updated_at": "2026-06-15T23:07:33.995Z"
+        }
+      },
+      {
+        "ticket_id": "64707",
+        "url": "https://core.trac.wordpress.org/ticket/64707",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode",
+        "track": "General: Needs Testing",
+        "status": "Accepted",
+        "component": "Site Health",
+        "owner": "westonruter",
+        "comments": "Unknown",
+        "created": "02/23/2026 03:51:38 PM",
+        "modified": "06/16/2026 01:34:12 AM",
+        "keywords": "has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          },
+          {
+            "label": "Setup Complexity: Server/runtime Configuration -16",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          },
+          {
+            "points": "-16",
+            "label": "Setup Complexity",
+            "detail": "Server/runtime Configuration",
+            "display": "Setup Complexity: Server/runtime Configuration",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "commented",
+          "reason": "Reviewed patch, tested in Playground, submitted Trac feedback.",
+          "notes": "Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.",
+          "updated_at": "2026-06-17T01:45:15.293Z"
         }
       }
     ],

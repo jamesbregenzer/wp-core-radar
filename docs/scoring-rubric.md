@@ -63,6 +63,19 @@ Momentum scoring depends on a usable comment-count column. Browser-fetch request
 | Missing summary | -10 | summary field is empty |
 | Ticket age: very old ticket | -8 | created date older than 3650 days |
 | Momentum: very large thread | -8 | more than 80 comments |
+| Setup complexity: requires WooCommerce | -18 | summary, keywords, or component mention WooCommerce |
+| Setup complexity: specialized image library | -18 | summary, keywords, or component mention AVIF, ImageMagick, Imagick, GD, or image library setup |
+| Setup complexity: server/runtime configuration | -16 | summary, keywords, or component mention OPcache, PHP ini, server configuration, or header-level behavior |
+| Setup complexity: external service or API | -16 | summary, keywords, or component mention external API/service integration or remote requests |
+| Setup complexity: multisite environment | -14 | summary, keywords, or component mention multisite |
+| Setup complexity: custom content type setup | -12 | summary, keywords, or component mention CPTs, custom post types, or custom comment types |
+| Setup complexity: browser-specific behavior | -12 | summary, keywords, or component mention browser-specific behavior or a named browser engine |
+
+## Complexity Guardrails
+
+Radar is optimized for fast, legitimate contribution opportunities: tickets where a reviewer can read the discussion, reproduce the issue, test a patch, and leave useful feedback without spending most of the session building a special environment. Some tickets are still valuable Core work but are less efficient for this workflow because they require third-party plugins, seeded custom data, unusual PHP configuration, specific image-library support, multisite setup, browser-specific debugging, or external services.
+
+Those tickets now receive explicit setup-complexity penalties. The penalties do not reject tickets automatically; they lower ranking so quick, stock-WordPress testing opportunities rise first while more specialized tickets remain available in Top Opportunities or can be manually shortlisted.
 
 ## Priority Target Rules
 

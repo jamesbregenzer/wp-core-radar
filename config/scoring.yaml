@@ -1,26 +1,41 @@
 # WP Core Radar scoring configuration
 #
 # Scores are intentionally deterministic and explainable.
-# The model/review layer should only evaluate already-scored opportunities.
+# The runtime scoring rules currently live in scripts/radarlib.py so the
+# project has no non-stdlib YAML dependency. This file is documentation for
+# reviewers and should match score_ticket() exactly.
+
+baseline:
+  default_query_priority: 50
+  query_priority_source: config/queries.json
 
 positive:
-  has-patch: 30
+  has-patch: 35
   needs-testing: 30
-  dev-feedback: 25
-  reporter-feedback: 15
-  has-screenshots: 10
-  has-unit-tests: 10
-  assigned-status: 10
-  media-component: 15
-  admin-ui-focus: 10
-  recent-activity: 15
+  dev-feedback: 18
+  reporter-feedback: 10
+  good-first-bug: 20
+  media-component: 20
+  accessibility-signal: 18
+  concrete-milestone: 8
+  owner-assigned: 6
+  freshness-recently-updated-14-days: 20
+  freshness-updated-within-60-days: 10
+  ticket-age-mature-30-to-730-days: 8
+  momentum-healthy-comment-count-2-to-20: 7
 
 negative:
-  closed-ticket: -100
-  no-patch: -20
-  feature-request: -10
-  owner-assigned: -5
-  stale-ticket: -25
-  complex-environment: -20
-  multiple-recent-test-reports: -15
-  unclear-reproduction: -20
+  closed-or-non-actionable-status: -100
+  already-produced-props: -60
+  already-tested: -20
+  setup-complexity-requires-woocommerce: -18
+  setup-complexity-specialized-image-library: -18
+  setup-complexity-server-runtime-configuration: -16
+  setup-complexity-external-service-or-api: -16
+  setup-complexity-multisite-environment: -14
+  setup-complexity-custom-content-type-setup: -12
+  setup-complexity-browser-specific-behavior: -12
+  freshness-stale-activity-over-2-years: -10
+  missing-summary: -10
+  ticket-age-very-old-over-10-years: -8
+  momentum-very-large-thread-over-80-comments: -8
