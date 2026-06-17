@@ -29,6 +29,12 @@
     "notes": "Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.",
     "updated_at": "2026-06-16T18:01:22.376Z"
   },
+  "60628": {
+    "status": "watch",
+    "reason": "Valid Media ticket, but AVIF testing depends on local image library support.",
+    "notes": "Ticket has a patch, unit tests, and Media component relevance, but useful testing requires an environment with working AVIF support through GD or ImageMagick. This is likely not a quick Playground ticket and may require local image-processing setup before meaningful feedback can be left. No Trac/GitHub comment left and no keywords updated.",
+    "updated_at": "2026-06-17T03:14:18.844Z"
+  },
   "63256": {
     "status": "tested",
     "reason": "Positive test result",
