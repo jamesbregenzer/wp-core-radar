@@ -64,5 +64,11 @@
     "reason": "Verified patch behavior locally and reported results on Trac.",
     "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
     "updated_at": "2026-06-15T23:07:33.995Z"
+  },
+  "65392": {
+    "status": "watch",
+    "reason": "PR exists, but useful testing requires WooCommerce/custom comment-type setup.",
+    "notes": "PR #12055 exists, but Playground does not provide the needed WooCommerce/custom comment-type scenario out of the box. Testing likely requires a local setup with seeded non-comment comment types, probably via WooCommerce order notes or direct comment data creation. No Trac/GitHub comment left yet and no keywords updated.",
+    "updated_at": "2026-06-17T03:10:34.142Z"
   }
 }
