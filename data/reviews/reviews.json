@@ -35,6 +35,12 @@
     "notes": "Applied PR #11534 locally, ran Tests_Term successfully, and verified basic category/post taxonomy workflows in wp-admin and on the front end.",
     "updated_at": "2026-06-16T22:30:13.948Z"
   },
+  "64707": {
+    "status": "commented",
+    "reason": "Reviewed patch, tested in Playground, submitted Trac feedback.",
+    "notes": "Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.",
+    "updated_at": "2026-06-17T01:45:15.293Z"
+  },
   "64902": {
     "status": "tested",
     "reason": "Positive test result",
