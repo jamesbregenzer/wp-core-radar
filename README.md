@@ -15,6 +15,8 @@
 
 WP Core Radar is a deterministic, human-in-the-loop contribution discovery and prioritization workflow for WordPress Core tickets.
 
+**Live project:** [View WP Core Radar running on james.bregenzer.dev](https://james.bregenzer.dev/radar/)
+
 It collects public ticket data from WordPress Trac, archives raw CSV exports, scores opportunities with explainable rules including freshness and activity momentum, and publishes a public dashboard, public contribution history page, plus a protected review console so a human contributor can decide what to test, watch, reject, or act on manually.
 
 Freshness and ticket-age signals are calculated from Trac `Created`/`Modified` timestamps, including Trac's AM/PM CSV format. Momentum is calculated when a collected CSV includes a usable comment-count field; when Trac does not provide that field, Radar leaves momentum out instead of inventing it.
