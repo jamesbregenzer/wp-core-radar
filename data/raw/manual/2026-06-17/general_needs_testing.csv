@@ -57,7 +57,7 @@
 35593,Metadata from wrong file in media_handle_upload,reviewing,Media,,defect (bug),normal,Awaiting Review,,has-patch needs-testing,01/24/2016 03:14:20 PM,02/06/2023 03:07:08 PM
 35871,before_delete_post incorrectly triggered from edit.php to post.php,new,"Posts, Post Types",,defect (bug),normal,Future Release,,needs-testing,02/19/2016 10:44:18 AM,12/04/2025 03:23:37 PM
 36171,Proposed clean up of get_the_category_list() and link filter,new,Taxonomy,,enhancement,normal,,4.4.2,needs-testing needs-unit-tests,03/08/2016 05:09:25 PM,06/04/2019 09:20:57 PM
-36201,Admin Pagination URLs Use Wrong Hostname,reopened,Administration,,defect (bug),normal,Future Release,,has-patch needs-testing dev-feedback,03/10/2016 09:18:06 PM,07/22/2024 01:58:40 PM
+36201,Admin Pagination URLs Use Wrong Hostname,reopened,Administration,,defect (bug),normal,Future Release,,has-patch needs-testing dev-feedback,03/10/2016 09:18:06 PM,06/17/2026 12:45:20 PM
 37255,Update attachment functions to accept a post object in addition to ID,accepted,Media,johnbillion,enhancement,normal,Future Release,4.6,needs-testing needs-dev-note needs-test-info 2nd-opinion close,07/02/2016 09:26:02 AM,05/12/2025 01:35:34 AM
 38067,New filter `wp_post_lock_status`,new,"Posts, Post Types",,enhancement,normal,Future Release,2.5,has-patch has-test-info needs-testing needs-unit-tests,09/15/2016 01:23:37 PM,02/10/2026 03:04:08 PM
 38238,Sorting a list table by some kind of count should default to DESC initially,reviewing,Administration,helen,enhancement,normal,Awaiting Review,,has-patch has-unit-tests needs-testing,10/05/2016 09:32:01 PM,03/03/2026 04:37:11 PM
@@ -181,7 +181,7 @@
 55691,New site editor uses WP_SITEURL instead of WP_HOME,reviewing,Themes,audrasjb,defect (bug),normal,Awaiting Review,5.9,needs-testing has-patch needs-test-info reporter-feedback,05/06/2022 07:10:55 PM,05/12/2025 01:37:56 AM
 56089,Meta data of menu items not removed from wp_postmeta table after removing the menu item before being saved.,new,Menus,,defect (bug),normal,Awaiting Review,6.0,needs-test-info needs-testing,06/28/2022 04:16:22 PM,05/12/2025 01:37:57 AM
 56090,wp_update_user doesn't update user_activation_key on users with apostrophes in their email,new,Users,,defect (bug),normal,Awaiting Review,,needs-testing needs-test-info,06/28/2022 05:33:30 PM,05/12/2025 01:37:57 AM
-56320,Update mediaelement.js to the latest version,accepted,External Libraries,adamsilverstein,defect (bug),normal,7.1,,has-patch needs-testing 2nd-opinion,08/01/2022 06:20:19 PM,06/04/2026 01:59:04 PM
+56320,Update mediaelement.js to the latest version,accepted,External Libraries,adamsilverstein,defect (bug),normal,7.1,,has-patch needs-testing 2nd-opinion,08/01/2022 06:20:19 PM,06/17/2026 12:09:06 PM
 56381,WordPress creates invalid web.config -file,new,Rewrite Rules,,defect (bug),normal,Awaiting Review,6.0,needs-testing,08/15/2022 06:12:27 PM,01/04/2023 07:00:30 PM
 56615,Running `build` scripts on Windows machines produces different results,assigned,Build/Test Tools,,defect (bug),normal,Future Release,6.1,needs-testing needs-patch,09/21/2022 02:21:34 PM,03/30/2026 07:34:21 AM
 56821,meta_query late row lookup for performance improvement,new,"Options, Meta APIs",,enhancement,normal,Awaiting Review,,needs-patch needs-testing,10/13/2022 08:46:34 PM,10/14/2022 11:59:24 AM

@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-06-17 03:47
+Generated: 2026-06-17 09:48
 
 ## Summary
 
@@ -269,7 +269,28 @@ Generated: 2026-06-17 03:47
 
 ## Top Opportunities
 
-#### 1. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
+#### 1. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
+
+- Score: **160**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Administration
+- Trac status: Reopened
+- Milestone: Future Release
+- Keywords: has-patch needs-testing dev-feedback
+- Created: 03/10/2016 09:18:06 PM
+- Modified: 06/17/2026 12:45:20 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: recently updated <=14 days +20, ticket age: very old ticket -8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +20: Freshness
+  - -8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 2. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
 
 - Score: **160**
 - Track/query: General: Needs Testing
@@ -290,7 +311,7 @@ Generated: 2026-06-17 03:47
   - -10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 2. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
+#### 3. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -310,7 +331,7 @@ Generated: 2026-06-17 03:47
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#22116](https://core.trac.wordpress.org/ticket/22116) — bug in dynamic_sidebar function
+#### 4. [#22116](https://core.trac.wordpress.org/ticket/22116) — bug in dynamic_sidebar function
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -333,7 +354,7 @@ Generated: 2026-06-17 03:47
   - -8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#63109](https://core.trac.wordpress.org/ticket/63109) — test_get_block_editor_settings_theme_json_settings failing
+#### 5. [#63109](https://core.trac.wordpress.org/ticket/63109) — test_get_block_editor_settings_theme_json_settings failing
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -353,7 +374,7 @@ Generated: 2026-06-17 03:47
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#63197](https://core.trac.wordpress.org/ticket/63197) — Sanity Checks in mkdir and delete for FTPext Filesystem
+#### 6. [#63197](https://core.trac.wordpress.org/ticket/63197) — Sanity Checks in mkdir and delete for FTPext Filesystem
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -373,7 +394,7 @@ Generated: 2026-06-17 03:47
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#58801](https://core.trac.wordpress.org/ticket/58801) — Prefetch Block Editor from Posts page
+#### 7. [#58801](https://core.trac.wordpress.org/ticket/58801) — Prefetch Block Editor from Posts page
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -391,7 +412,7 @@ Generated: 2026-06-17 03:47
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65048](https://core.trac.wordpress.org/ticket/65048) — wp_ajax_fetch_list(): Sanitize $_GET input before nonce construction
+#### 8. [#65048](https://core.trac.wordpress.org/ticket/65048) — wp_ajax_fetch_list(): Sanitize $_GET input before nonce construction
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -413,7 +434,7 @@ Generated: 2026-06-17 03:47
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#65052](https://core.trac.wordpress.org/ticket/65052) — Nonce check order flaw in post-quickdraft-save
+#### 9. [#65052](https://core.trac.wordpress.org/ticket/65052) — Nonce check order flaw in post-quickdraft-save
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -435,7 +456,7 @@ Generated: 2026-06-17 03:47
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
+#### 10. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -457,7 +478,7 @@ Generated: 2026-06-17 03:47
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#54016](https://core.trac.wordpress.org/ticket/54016) — Media Library: Bulk delete elements in grid view takes very long
+#### 11. [#54016](https://core.trac.wordpress.org/ticket/54016) — Media Library: Bulk delete elements in grid view takes very long
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -476,7 +497,7 @@ Generated: 2026-06-17 03:47
   - +20: Preferred Component
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#58416](https://core.trac.wordpress.org/ticket/58416) — Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.
+#### 12. [#58416](https://core.trac.wordpress.org/ticket/58416) — Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -495,7 +516,7 @@ Generated: 2026-06-17 03:47
   - +20: Preferred Component
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#60029](https://core.trac.wordpress.org/ticket/60029) — Admin unable to create new Application Password for user with no role on main site (multisite)
+#### 13. [#60029](https://core.trac.wordpress.org/ticket/60029) — Admin unable to create new Application Password for user with no role on main site (multisite)
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -518,7 +539,7 @@ Generated: 2026-06-17 03:47
   - -14: Setup Complexity
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 13. [#65281](https://core.trac.wordpress.org/ticket/65281) — Custom Time & Date Format Fields Allow Empty Save Instead of Validation
+#### 14. [#65281](https://core.trac.wordpress.org/ticket/65281) — Custom Time & Date Format Fields Allow Empty Save Instead of Validation
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -537,7 +558,7 @@ Generated: 2026-06-17 03:47
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 14. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
+#### 15. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -556,7 +577,7 @@ Generated: 2026-06-17 03:47
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 15. [#20746](https://core.trac.wordpress.org/ticket/20746) — Accessing non-existing theme folder in Network install gives 500 error
+#### 16. [#20746](https://core.trac.wordpress.org/ticket/20746) — Accessing non-existing theme folder in Network install gives 500 error
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -564,22 +585,6 @@ Generated: 2026-06-17 03:47
 - Component: Unknown
 - Trac status: Reopened
 - Keywords: needs-testing has-patch dev-feedback 2nd-opinion
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +18: Dev Feedback
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 16. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
-
-- Score: **148**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Unknown
-- Trac status: Reopened
-- Keywords: has-patch needs-testing dev-feedback
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
