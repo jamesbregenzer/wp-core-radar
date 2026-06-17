@@ -41,6 +41,12 @@
     "notes": "Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.",
     "updated_at": "2026-06-17T01:45:15.293Z"
   },
+  "64877": {
+    "status": "tested",
+    "reason": "Positive test result",
+    "notes": "favicon.ico redirected to w-logo-blue-white-bg.png. After checking out PR #11293, favicon.ico redirected to w-logo-gray-white-bg.png and the browser tab icon updated accordingly. Verified via Firefox Network Inspector. PR also updates corresponding SVG asset. Change appears to resolve the issue as described.",
+    "updated_at": "2026-06-17T02:11:21.026Z"
+  },
   "64902": {
     "status": "tested",
     "reason": "Positive test result",
