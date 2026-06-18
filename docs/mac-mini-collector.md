@@ -13,7 +13,7 @@ The Mac Mini is responsible for:
 5. Committing and pushing changed data/report/dashboard files to GitHub.
 6. Reconciling the latest review state during scheduled full radar runs.
 
-The Mac Mini creates `docs/radar/admin-data.json`, which the protected Worker admin console reads. It does not create, host, or authenticate the production `/radar/admin/` page. Scheduled runs still reconcile review writes from GitHub with regenerated dashboard/admin data, but they are no longer the only review-sync mechanism. Review-only commits to `data/reviews/reviews.json` are also handled by GitHub Actions so the dashboard does not remain stale for up to six hours.
+The Mac Mini creates `docs/radar/admin-data.json`, which the protected Worker admin console reads. It does not create, host, or authenticate the production `/admin/` page on `radar.james.bregenzer.dev`. Scheduled runs still reconcile review writes from GitHub with regenerated dashboard/admin data, but they are no longer the only review-sync mechanism. Review-only commits to `data/reviews/reviews.json` are also handled by GitHub Actions so the dashboard does not remain stale for up to six hours.
 
 GitHub is the source of truth after the Mac Mini pushes changes. Cloudflare Pages deploys the public dashboard from the committed `docs/` output, and the Cloudflare Worker serves the protected admin UI.
 
@@ -52,7 +52,7 @@ python3 scripts/run-radar.py --continue-on-error
 
 ## Review-only dashboard refreshes
 
-Review decisions saved from `/radar/admin/` are committed directly to `data/reviews/reviews.json` by the Cloudflare Worker. Those commits trigger `.github/workflows/refresh-dashboard.yml`, which runs `scripts/generate-dashboard.py` and commits regenerated dashboard files.
+Review decisions saved from the protected Worker admin console are committed directly to `data/reviews/reviews.json` by the Cloudflare Worker. Those commits trigger `.github/workflows/refresh-dashboard.yml`, which runs `scripts/generate-dashboard.py` and commits regenerated dashboard files.
 
 That Action is expected to keep the public dashboard and admin grouping accurate shortly after review saves. The Mac Mini remains the source of fresh Trac data and still regenerates dashboard files during full collection runs.
 
@@ -65,7 +65,7 @@ docs/radar/index.html
 docs/radar/admin-data.json
 ```
 
-The public dashboard includes a header link to `/radar/admin/`. The protected admin route itself is rendered by the Cloudflare Worker, not by the static Pages output.
+The public dashboard includes a header link to the protected admin console. The protected admin route itself is rendered by the Cloudflare Worker, not by the static Pages output.
 
 ## Scheduled runner
 
@@ -80,9 +80,10 @@ The wrapper intentionally keeps scheduling, Git synchronization, and publishing 
 1. `git pull --rebase origin main`
 2. `python3 scripts/run-radar.py`
 3. `git add data docs reports`
-4. Commit changed files with `Update radar data`
-5. `git pull --rebase origin main` again immediately before push
-6. Push to `origin/main`
+4. If only generated timestamps changed, restore those generated files and skip the commit
+5. Otherwise, commit changed files with `Update radar data`
+6. `git pull --rebase origin main` again immediately before push
+7. Push to `origin/main`
 
 The final pre-push rebase is intentional. Review-only dashboard refreshes may be committed by GitHub Actions while the longer Mac Mini collection job is running; rebasing immediately before push makes the scheduled collector more resilient to those near-real-time updates.
 
@@ -142,3 +143,18 @@ data/raw/manual/YYYY-MM-DD/<query_slug>.csv
 ```
 
 This makes dataset history inspectable and lets reports be regenerated from committed raw data.
+
+## Timestamp-only change guard
+
+The scheduled wrapper intentionally avoids commits that only update generated timestamps in report/dashboard output. This keeps the repository history useful: scheduled commits should represent fresh raw CSV data, review state changes, or meaningful dashboard/report changes, not a six-hour heartbeat.
+
+The guard currently normalizes timestamp-only differences in:
+
+```text
+docs/radar/index.html
+docs/radar/admin-data.json
+reports/latest.md
+reports/radar-YYYY-MM-DD.md
+```
+
+If any raw CSV, review JSON, contribution history, or substantive dashboard/report content changes, the wrapper still commits and pushes normally.
