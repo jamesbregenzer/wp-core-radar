@@ -19,7 +19,7 @@ echo "$LOG_PREFIX PATH: $PATH"
 
 git pull --rebase origin main
 
-"$PYTHON_BIN" scripts/run-radar.py
+"$PYTHON_BIN" scripts/run-radar.py --continue-on-error
 
 git add data docs reports
 
