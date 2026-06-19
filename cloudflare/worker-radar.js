@@ -627,7 +627,7 @@ function renderTicketDrawer(item, session, reviews) {
               <h4>Review tools & decision</h4>
               <div class="tools">
                 <a class="button-link" href="${esc(item.url)}" target="_blank">Open Trac ↗</a>
-                <button type="button" class="copy-button" data-context="${esc(copyContext(item))}">Copy Details ⧉</button>
+                <button type="button" class="copy-button" data-context="${esc(copyContext(item))}">Copy ⧉</button>
               </div>
               <form method="post" action="/admin/save" class="review-form">
                 <input type="hidden" name="csrf" value="${esc(session.csrf)}">
@@ -760,7 +760,7 @@ async function adminPage(request, env) {
         if (copyButton) {
           await navigator.clipboard.writeText(copyButton.dataset.context || "");
           copyButton.textContent = "Copied";
-          setTimeout(() => copyButton.textContent = "Copy Details ⧉", 1200);
+          setTimeout(() => copyButton.textContent = "Copy ⧉", 1200);
         }
       });
 
