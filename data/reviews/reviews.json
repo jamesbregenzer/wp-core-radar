@@ -23,6 +23,12 @@
     "notes": "Database index change with active PR discussion and test failures still being worked through. Worth revisiting after tests are passing and maintainers clarify whether additional performance or upgrade testing is needed.",
     "updated_at": "2026-06-16T18:16:01.070Z"
   },
+  "56320": {
+    "status": "watch",
+    "reason": "Valid Core testing opportunity, but mediaelement upgrade testing is too broad for today’s easy-win queue.",
+    "notes": "This ticket has an active PR, patch, owner, and needs-testing, so it is a legitimate contribution candidate. However, the update touches a large external library upgrade with prior UI/icon, shortcode, and accessibility concerns, making it better suited for a focused local testing pass rather than a quick comment. No testing or Core comment left today. Revisit when there is time for shortcode audio/video testing, browser console checks, and keyboard accessibility validation.",
+    "updated_at": "2026-06-19T17:15:33.912Z"
+  },
   "56886": {
     "status": "tested",
     "reason": "Positive test result",
