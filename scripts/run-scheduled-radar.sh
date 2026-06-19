@@ -47,6 +47,7 @@ files = subprocess.check_output(["git", "diff", "--cached", "--name-only"], text
 TIMESTAMP_ONLY_FILES = {
     "docs/radar/index.html",
     "docs/radar/admin-data.json",
+    "docs/radar/contributions/index.html",
     "reports/latest.md",
 }
 
@@ -54,7 +55,7 @@ DATED_REPORT_RE = re.compile(r"^reports/radar-\d{4}-\d{2}-\d{2}\.md$")
 
 
 def normalize(path: str, content: str) -> str:
-    if path == "docs/radar/index.html":
+    if path in {"docs/radar/index.html", "docs/radar/contributions/index.html"}:
         content = re.sub(
             r"Generated \d{4}-\d{2}-\d{2} \d{2}:\d{2}",
             "Generated <timestamp>",
