@@ -68,6 +68,15 @@
     "notes": "Reproduced the reported fatal error by forcing wp_save_image_file() to return a WP_Error. Verified that the patch prevents the fatal error and returns the WP_Error message as the image edit error response. No regressions observed during testing.",
     "updated_at": "2026-06-16T18:07:20.633Z"
   },
+  "64937": {
+    "status": "committed",
+    "reason": "Props received",
+    "notes": "",
+    "received_props": true,
+    "props_recorded_at": "2026-06-19T22:22:51.158Z",
+    "updated_at": "2026-06-19T22:22:51.158Z",
+    "changeset": "62481"
+  },
   "65329": {
     "status": "tested",
     "reason": "Positive test result",
