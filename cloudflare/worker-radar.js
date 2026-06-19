@@ -3,7 +3,7 @@ const GITHUB_OWNER = "jamesbregenzer";
 const GITHUB_REPO = "wp-core-radar";
 const REVIEWS_PATH = "data/reviews/reviews.json";
 const ADMIN_DATA_URL = `https://${RADAR_ORIGIN}/radar/admin-data.json`;
-const ALLOWED_STATUSES = new Set(["", "shortlist", "watch", "reject", "tested", "commented", "props", "committed"]);
+const ALLOWED_STATUSES = new Set(["", "shortlist", "watch", "reject", "tested", "commented", "committed"]);
 
 function html(body, status = 200) {
   return new Response(body, {
@@ -133,18 +133,18 @@ function layout(title, body) {
     table { width: 100%; border-collapse: collapse; font-size: 14px; }
     th, td { padding: 11px 12px; border-bottom: 1px solid #f0f0f1; text-align: left; vertical-align: top; }
     th { background: #f0f0f1; white-space: nowrap; }
-    .ticket-row { cursor:pointer; }
-    .ticket-row:hover td { background:#f8fafc; }
+    .ticket-row { cursor: pointer; }
+    .ticket-row:hover td { background: #f8fafc; }
+    .ticket-row:focus-within td { background: #f8fafc; }
     .ticket-row.tier-immediate { border-left: 6px solid #2563eb; } .ticket-row.tier-strong { border-left: 6px solid #7c3aed; } .ticket-row.tier-watching { border-left: 6px solid #d97706; }
     .score { font-weight: 800; font-size: 18px; }
-    .expand-button { background: transparent; border: 0; cursor: pointer; color: #646970; font-size: 16px; }
     .tray-row { display: none; } .tray-row.is-open { display: table-row; }
     .tray-row td { background: #fbfbfc; padding: 0; }
     .tray { padding: 18px 22px 22px; }
     .tray-header { display: flex; justify-content: space-between; gap: 18px; background: #fff; border: 1px solid #dcdcde; border-left: 6px solid #2271b1; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
     .tray-header h3 { margin: 0 0 6px; font-size: 22px; } .tray-header p { margin: 0; font-weight: 700; }
-    .tray-meta { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
-    .tray-grid { display: grid; grid-template-columns: minmax(220px, 1fr) minmax(260px, 1.15fr) minmax(280px, .95fr); gap: 14px; align-items: stretch; }
+    .tray-meta { display: flex; align-items: center; gap: 10px; white-space: nowrap; flex-wrap: wrap; justify-content: flex-end; }
+    .tray-grid { display: grid; grid-template-columns: minmax(320px, 1.25fr) minmax(220px, .75fr) minmax(300px, .95fr); gap: 14px; align-items: stretch; }
     .tray-panel { background: #fff; border: 1px solid #dcdcde; border-radius: 10px; padding: 14px; }
     .tray-panel h4 { margin: 0 0 12px; color: #3c434a; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
     .ticket-meta { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 10px 0 0; color: #3c434a; }
@@ -169,6 +169,9 @@ function layout(title, body) {
     textarea { min-height: 84px; }
     .review-form { margin-top: 4px; }
     .review-form button[type="submit"] { margin-top: 12px; }
+    .checkbox-field { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-weight: 800; }
+    .checkbox-field input { width: auto; margin: 0; }
+    .outcome-help { margin: 5px 0 0; font-size: 12px; color: #646970; }
     .notice { background: #fff; border-left: 5px solid #008a20; border-radius: 8px; padding: 14px 16px; margin-bottom: 18px; }
     .muted { color: #646970; }
 
@@ -471,10 +474,28 @@ function statusOptions(current) {
     reject: "Reject",
     tested: "Tested",
     commented: "Commented",
-    props: "Props",
     committed: "Committed",
   };
   return Object.entries(labels).map(([value, label]) => `<option value="${esc(value)}" ${value === current ? "selected" : ""}>${esc(label)}</option>`).join("");
+}
+
+function hasReceivedProps(review) {
+  return review?.received_props === true;
+}
+
+function reviewStats(reviews) {
+  const entries = Object.values(reviews || {});
+  const reviewed = entries.length;
+  const propsReceived = entries.filter(hasReceivedProps).length;
+  const actedOn = entries.filter((review) => ["tested", "commented", "committed"].includes(review.status)).length;
+  const propsRate = actedOn ? Math.round((propsReceived / actedOn) * 100) : 0;
+
+  return {
+    reviewed,
+    propsReceived,
+    actedOn,
+    propsRate,
+  };
 }
 
 function renderBadges(signals) {
@@ -528,7 +549,8 @@ function copyContext(item) {
     "- Risk of wasting time: High, Medium, or Low",
     "",
     "Radar entry format requested:",
-    "- Recommended Action: Shortlist, Watch, Reject, Tested, Commented, Props, or Committed",
+    "- Recommended Decision: Shortlist, Watch, Reject, Tested, Commented, or Committed",
+    "- Props should not be recommended as a decision; props are tracked later only if I actually receive contributor credit.",
     "- Short Reason: one concise sentence suitable for the Radar reason field",
     "- Review Notes: 2-6 concise sentences suitable for the Radar review notes field, including testing performed, outcome, whether a Trac/GitHub comment was left, and whether keywords were updated",
     "",
@@ -538,18 +560,21 @@ function copyContext(item) {
   ].join("\n");
 }
 
-function renderRow(item, session, reviews) {
+function renderRow(item, session, reviews, activeTicket = "") {
   const review = reviews[item.ticket_id] || item.review || {};
   const ticket = esc(item.ticket_id);
   const tier = esc(item.tier_class);
+  const receivedProps = hasReceivedProps(review);
+  const isActive = String(item.ticket_id) === String(activeTicket);
+  const propsBadge = receivedProps ? '<span class="badge props-badge">🏆 Props Received</span>' : "";
   return `
-    <tr class="ticket-row tier-${tier}" data-ticket="${ticket}">
+    <tr class="ticket-row tier-${tier}" data-ticket="${ticket}" tabindex="0" role="button" aria-expanded="${isActive ? "true" : "false"}">
       <td class="score">${esc(item.score)}</td>
       <td><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span></td>
       <td><a href="${esc(item.url)}" target="_blank">#${ticket}</a></td>
       <td>${esc(item.summary)}</td>
     </tr>
-    <tr class="tray-row" data-tray="${ticket}">
+    <tr class="tray-row ${isActive ? "is-open" : ""}" data-tray="${ticket}">
       <td colspan="4">
         <div class="tray">
           <div class="tray-header">
@@ -563,7 +588,7 @@ function renderRow(item, session, reviews) {
                 <span>Updated: <strong>${esc(item.modified || "Unknown")}</strong></span>
               </div>
             </div>
-            <div class="tray-meta"><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong></div>
+            <div class="tray-meta">${propsBadge}<span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong></div>
           </div>
           <div class="tray-grid">
             <div class="tray-panel">
@@ -591,6 +616,11 @@ function renderRow(item, session, reviews) {
                 <input name="reason" maxlength="160" value="${esc(review.reason || "")}" placeholder="Short reason">
                 <label>Review notes</label>
                 <textarea name="notes" maxlength="1000" placeholder="Add notes about this ticket...">${esc(review.notes || "")}</textarea>
+                <label class="checkbox-field">
+                  <input type="checkbox" name="received_props" value="1" ${receivedProps ? "checked" : ""}>
+                  Received props
+                </label>
+                <p class="outcome-help">Use this only after contributor credit has actually been received for this ticket.</p>
                 <button type="submit">Save review</button>
               </form>
             </div>
@@ -600,9 +630,9 @@ function renderRow(item, session, reviews) {
     </tr>`;
 }
 
-function renderSection(title, items, session, reviews, limit = null) {
+function renderSection(title, items, session, reviews, activeTicket = "", limit = null) {
   const display = limit ? items.slice(0, limit) : items;
-  const rows = display.map((item) => renderRow(item, session, reviews)).join("") || `<tr><td colspan="5" class="muted">No tickets in this section.</td></tr>`;
+  const rows = display.map((item) => renderRow(item, session, reviews, activeTicket)).join("") || `<tr><td colspan="4" class="muted">No tickets in this section.</td></tr>`;
   return `<section><h2>${esc(title)} <span>${items.length}</span></h2><div class="table-wrap"><table><thead><tr><th>Score</th><th>Tier</th><th>Ticket</th><th>Summary</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
 }
 
@@ -610,8 +640,15 @@ async function adminPage(request, env, notice = "") {
   const session = await readSession(request, env);
   if (!session) return loginPage();
 
+  const url = new URL(request.url);
+  const savedTicket = url.searchParams.get("saved");
+  const ticketMatch = url.pathname.match(/^\/admin\/ticket\/(\d+)\/?$/);
+  const activeTicket = ticketMatch ? ticketMatch[1] : savedTicket || "";
+  const displayNotice = notice || (savedTicket ? `Saved review decision for #${savedTicket}.` : "");
+
   const [data, reviewFile] = await Promise.all([getAdminData(), getReviews(env)]);
   const reviews = reviewFile.reviews || {};
+  const reviewSummary = reviewStats(reviews);
   const summary = data.summary || {};
   const groups = data.groups || {};
 
@@ -625,21 +662,23 @@ async function adminPage(request, env, notice = "") {
       </nav>
     </header>
     <main>
-      ${notice ? `<div class="notice"><strong>${esc(notice)}</strong></div>` : ""}
+      ${displayNotice ? `<div class="notice"><strong>${esc(displayNotice)}</strong></div>` : ""}
       <div class="summary">
         <div class="stat"><strong>${esc(summary.unique_tickets || 0)}</strong>Unique tickets</div>
         <div class="stat"><strong>${esc(summary.priority_targets || 0)}</strong>Priority targets</div>
         <div class="stat stat-blue"><strong>${esc(summary.immediate || 0)}</strong>Immediate Review</div>
         <div class="stat stat-purple"><strong>${esc(summary.strong || 0)}</strong>Strong Candidates</div>
         <div class="stat stat-amber"><strong>${esc(summary.watching || 0)}</strong>Worth Watching</div>
-        <div class="stat"><strong>${Object.keys(reviews).length}</strong>Reviews loaded</div>
+        <div class="stat"><strong>${esc(reviewSummary.reviewed)}</strong>Reviews loaded</div>
+        <div class="stat"><strong>${esc(reviewSummary.propsReceived)}</strong>Props received</div>
+        <div class="stat"><strong>${esc(reviewSummary.propsRate)}%</strong>Props rate</div>
       </div>
-      ${renderSection("Priority Targets", groups.priority || [], session, reviews)}
-      ${renderSection("Shortlisted", groups.shortlist || [], session, reviews)}
-      ${renderSection("Watching", groups.watch || [], session, reviews)}
-      ${renderSection("Completed / Acted On", groups.completed || [], session, reviews)}
-      ${renderSection("Rejected", groups.rejected || [], session, reviews)}
-      ${renderSection("Top Opportunities", groups.top || [], session, reviews, 50)}
+      ${renderSection("Priority Targets", groups.priority || [], session, reviews, activeTicket)}
+      ${renderSection("Shortlisted", groups.shortlist || [], session, reviews, activeTicket)}
+      ${renderSection("Watching", groups.watch || [], session, reviews, activeTicket)}
+      ${renderSection("Completed / Acted On", groups.completed || [], session, reviews, activeTicket)}
+      ${renderSection("Rejected", groups.rejected || [], session, reviews, activeTicket)}
+      ${renderSection("Top Opportunities", groups.top || [], session, reviews, activeTicket, 50)}
     </main>
     <script>
       document.addEventListener("click", async (event) => {
@@ -648,7 +687,13 @@ async function adminPage(request, env, notice = "") {
           const ticket = row.dataset.ticket;
           const tray = document.querySelector('[data-tray="' + ticket + '"]');
           if (!tray) return;
-          tray.classList.toggle("is-open");
+          const isOpen = tray.classList.toggle("is-open");
+          row.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          if (isOpen) {
+            history.replaceState(null, "", "/admin/ticket/" + ticket);
+          } else if (location.pathname === "/admin/ticket/" + ticket) {
+            history.replaceState(null, "", "/admin/");
+          }
           return;
         }
         const copyButton = event.target.closest(".copy-button");
@@ -657,6 +702,13 @@ async function adminPage(request, env, notice = "") {
           copyButton.textContent = "Copied";
           setTimeout(() => copyButton.textContent = "Copy Details ⧉", 1200);
         }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        const row = event.target.closest(".ticket-row");
+        if (!row || (event.key !== "Enter" && event.key !== " ")) return;
+        event.preventDefault();
+        row.click();
       });
     </script>
   `));
@@ -724,13 +776,26 @@ export default {
       const status = String(form.get("status") || "").trim();
       const reason = String(form.get("reason") || "").trim();
       const notes = String(form.get("notes") || "").trim();
+      const receivedProps = form.get("received_props") === "1";
       if (!/^[0-9]+$/.test(ticket)) return html("Invalid ticket ID.", 400);
       if (!ALLOWED_STATUSES.has(status) || !status) return html("Invalid status.", 400);
 
       const { reviews, sha } = await getReviews(env);
-      reviews[ticket] = { status, reason, notes, updated_at: new Date().toISOString() };
+      reviews[ticket] = {
+        ...(reviews[ticket] || {}),
+        status,
+        reason,
+        notes,
+        received_props: receivedProps,
+        updated_at: new Date().toISOString(),
+      };
       await saveReviews(env, reviews, sha, ticket);
-      return adminPage(request, env, `Saved review decision for #${ticket}.`);
+      return new Response(null, {
+        status: 303,
+        headers: {
+          location: `/admin/ticket/${ticket}?saved=1`,
+        },
+      });
     }
 
     if (url.pathname === "/admin" || url.pathname.startsWith("/admin/")) {
