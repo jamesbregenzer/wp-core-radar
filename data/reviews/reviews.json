@@ -86,6 +86,15 @@
     "notes": "PR #12055 exists, but Playground does not provide the needed WooCommerce/custom comment-type scenario out of the box. Testing likely requires a local setup with seeded non-comment comment types, probably via WooCommerce order notes or direct comment data creation. No Trac/GitHub comment left yet and no keywords updated.",
     "updated_at": "2026-06-17T03:10:34.142Z"
   },
+  "65397": {
+    "status": "committed",
+    "reason": "Props received",
+    "notes": "",
+    "received_props": true,
+    "props_recorded_at": "2026-06-19T22:21:31.662Z",
+    "updated_at": "2026-06-19T22:21:31.662Z",
+    "changeset": "62494"
+  },
   "65419": {
     "status": "tested",
     "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
