@@ -133,24 +133,26 @@ function layout(title, body) {
     table { width: 100%; border-collapse: collapse; font-size: 14px; }
     th, td { padding: 11px 12px; border-bottom: 1px solid #f0f0f1; text-align: left; vertical-align: top; }
     th { background: #f0f0f1; white-space: nowrap; }
+    .ticket-row { cursor: pointer; }
+    .ticket-row:hover td, .ticket-row:focus-within td, .ticket-row.is-active td { background: #f8fafc; }
     .ticket-row.tier-immediate { border-left: 6px solid #2563eb; } .ticket-row.tier-strong { border-left: 6px solid #7c3aed; } .ticket-row.tier-watching { border-left: 6px solid #d97706; }
     .score { font-weight: 800; font-size: 18px; }
-    .expand-button { background: transparent; border: 0; cursor: pointer; color: #646970; font-size: 16px; }
     .tray-row { display: none; }
     .tray-row.is-open { display: block; position: fixed; inset: 0; z-index: 50; background: rgba(15, 23, 42, .54); }
-    .tray-row.is-open td { display: block; width: min(920px, calc(100vw - 32px)); height: calc(100vh - 32px); margin: 16px 16px 16px auto; overflow: auto; background: #fbfbfc; border-radius: 14px; box-shadow: -18px 0 45px rgba(15, 23, 42, .28); }
+    .tray-row.is-open td { display: block; width: min(980px, calc(100vw - 32px)); height: calc(100vh - 32px); margin: 16px 16px 16px auto; overflow: auto; background: #fbfbfc; border-radius: 14px; box-shadow: -18px 0 45px rgba(15, 23, 42, .28); }
     .tray-row td { background: #fbfbfc; padding: 0; }
     .tray { padding: 18px 22px 22px; }
     .tray-header { display: flex; justify-content: space-between; gap: 18px; background: #fff; border: 1px solid #dcdcde; border-left: 6px solid #2271b1; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
     .tray-close { align-self: start; border: 1px solid #dcdcde; border-radius: 999px; padding: 7px 10px; background: #fff; color: #3c434a; font-weight: 800; text-decoration: none; }
     .tray-header h3 { margin: 0 0 6px; font-size: 22px; } .tray-header p { margin: 0; font-weight: 700; }
     .tray-meta { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
-    .tray-grid { display: grid; grid-template-columns: minmax(220px, 1fr) minmax(260px, 1.15fr) minmax(280px, .95fr); gap: 14px; align-items: stretch; }
+    .tray-grid { display: grid; grid-template-columns: minmax(340px, 1.3fr) minmax(210px, .72fr) minmax(300px, .95fr); gap: 14px; align-items: stretch; }
     .tray-panel { background: #fff; border: 1px solid #dcdcde; border-radius: 10px; padding: 14px; }
     .tray-panel h4 { margin: 0 0 12px; color: #3c434a; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
     .ticket-meta { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 10px 0 0; color: #3c434a; }
     .ticket-meta span { white-space: nowrap; }
     .badge, .tier-label { display: inline-block; border-radius: 999px; padding: 4px 8px; margin: 0 4px 7px 0; font-size: 12px; font-weight: 800; white-space: nowrap; }
+    .tray-panel .badge { margin-bottom: 8px; line-height: 1.3; }
     .signal-standard, .tier-label-standard { background: #f3f4f6; color: #4b5563; }
     .signal-priority, .signal-owner { background: #e0f2fe; color: #075985; }
     .signal-patch, .tier-label-immediate { background: #dbeafe; color: #1d4ed8; }
@@ -159,7 +161,7 @@ function layout(title, body) {
     .signal-feedback, .tier-label-strong { background: #ede9fe; color: #6d28d9; }
     .signal-refresh { background: #ffedd5; color: #9a3412; } .signal-recent, .signal-freshness { background: #ccfbf1; color: #115e59; } .signal-age { background: #fee2e2; color: #991b1b; } .signal-momentum { background: #e0e7ff; color: #3730a3; } .signal-component { background: #fce7f3; color: #9d174d; } .signal-complexity { background: #fee2e2; color: #991b1b; }
     .score-breakdown { list-style: none; padding: 0; margin: 0; display: grid; gap: 7px; }
-    .score-breakdown li { display: grid; grid-template-columns: 48px 1fr; gap: 8px; align-items: baseline; }
+    .score-breakdown li { display: grid; grid-template-columns: 44px 1fr; gap: 8px; align-items: baseline; }
     .score-positive { color: #008a20; font-weight: 900; } .score-negative { color: #b32d2e; font-weight: 900; } .score-neutral { color: #646970; font-weight: 900; }
     .score-total { border-top: 1px solid #dcdcde; margin-top: 12px; padding-top: 10px; font-size: 15px; }
     .tools { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
@@ -539,23 +541,20 @@ function copyContext(item) {
   ].join("\n");
 }
 
-function renderRow(item, session, reviews, activeTicket = "") {
+function renderRow(item, session, reviews, openTicketId = "") {
   const review = reviews[item.ticket_id] || item.review || {};
   const ticket = esc(item.ticket_id);
   const tier = esc(item.tier_class);
-  const isActive = String(item.ticket_id) === String(activeTicket);
-  const trayClass = isActive ? "tray-row is-open" : "tray-row";
-  const toggleLabel = isActive ? "▼" : "▶";
+  const isOpen = String(item.ticket_id) === String(openTicketId);
   return `
-    <tr class="ticket-row tier-${tier}" data-ticket-row="${ticket}">
-      <td><button type="button" class="expand-button" data-ticket="${ticket}" aria-expanded="${isActive ? "true" : "false"}">${toggleLabel}</button></td>
+    <tr class="ticket-row tier-${tier}${isOpen ? " is-active" : ""}" data-ticket="${ticket}" data-ticket-url="/admin/ticket/${ticket}" tabindex="0" aria-expanded="${isOpen ? "true" : "false"}">
       <td class="score">${esc(item.score)}</td>
       <td><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span></td>
-      <td><a href="${esc(item.url)}" target="_blank">#${ticket}</a></td>
+      <td><a href="${esc(item.url)}" target="_blank" data-row-ignore>#${ticket}</a></td>
       <td>${esc(item.summary)}</td>
     </tr>
-    <tr class="${trayClass}" data-tray="${ticket}">
-      <td colspan="5">
+    <tr class="tray-row${isOpen ? " is-open" : ""}" data-tray="${ticket}">
+      <td colspan="4">
         <div class="tray">
           <div class="tray-header">
             <div>
@@ -568,7 +567,7 @@ function renderRow(item, session, reviews, activeTicket = "") {
                 <span>Updated: <strong>${esc(item.modified || "Unknown")}</strong></span>
               </div>
             </div>
-            <div class="tray-meta"><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong><a class="tray-close" href="/admin/" data-close-tray>Close</a></div>
+            <div class="tray-meta"><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong><a class="tray-close" href="/admin/" data-row-ignore>Close</a></div>
           </div>
           <div class="tray-grid">
             <div class="tray-panel">
@@ -605,28 +604,13 @@ function renderRow(item, session, reviews, activeTicket = "") {
     </tr>`;
 }
 
-function renderSection(title, items, session, reviews, activeTicket = "", limit = null) {
+function renderSection(title, items, session, reviews, limit = null, openTicketId = "") {
   const display = limit ? items.slice(0, limit) : items;
-  const rows = display.map((item) => renderRow(item, session, reviews, activeTicket)).join("") || `<tr><td colspan="5" class="muted">No tickets in this section.</td></tr>`;
-  return `<section><h2>${esc(title)} <span>${items.length}</span></h2><div class="table-wrap"><table><thead><tr><th></th><th>Score</th><th>Tier</th><th>Ticket</th><th>Summary</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+  const rows = display.map((item) => renderRow(item, session, reviews, openTicketId)).join("") || `<tr><td colspan="4" class="muted">No tickets in this section.</td></tr>`;
+  return `<section><h2>${esc(title)} <span>${items.length}</span></h2><div class="table-wrap"><table><thead><tr><th>Score</th><th>Tier</th><th>Ticket</th><th>Summary</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
 }
 
-
-function activeTicketFromPath(pathname) {
-  const match = pathname.match(/^\/admin\/ticket\/(\d+)\/?$/);
-  return match ? match[1] : "";
-}
-
-function noticeFromUrl(url) {
-  const saved = url.searchParams.get("saved");
-  if (/^\d+$/.test(saved || "")) {
-    return `Saved review decision for #${saved}.`;
-  }
-  return "";
-}
-
-
-async function adminPage(request, env) {
+async function adminPage(request, env, notice = "", openTicketId = "") {
   const session = await readSession(request, env);
   if (!session) return loginPage();
 
@@ -634,9 +618,6 @@ async function adminPage(request, env) {
   const reviews = reviewFile.reviews || {};
   const summary = data.summary || {};
   const groups = data.groups || {};
-  const url = new URL(request.url);
-  const activeTicket = activeTicketFromPath(url.pathname);
-  const notice = noticeFromUrl(url);
 
   return html(layout("WP Core Radar Admin", `
     <header>
@@ -657,66 +638,49 @@ async function adminPage(request, env) {
         <div class="stat stat-amber"><strong>${esc(summary.watching || 0)}</strong>Worth Watching</div>
         <div class="stat"><strong>${Object.keys(reviews).length}</strong>Reviews loaded</div>
       </div>
-      ${renderSection("Priority Targets", groups.priority || [], session, reviews, activeTicket)}
-      ${renderSection("Shortlisted", groups.shortlist || [], session, reviews, activeTicket)}
-      ${renderSection("Watching", groups.watch || [], session, reviews, activeTicket)}
-      ${renderSection("Completed / Acted On", groups.completed || [], session, reviews, activeTicket)}
-      ${renderSection("Rejected", groups.rejected || [], session, reviews, activeTicket)}
-      ${renderSection("Top Opportunities", groups.top || [], session, reviews, activeTicket, 50)}
+      ${renderSection("Priority Targets", groups.priority || [], session, reviews, null, openTicketId)}
+      ${renderSection("Shortlisted", groups.shortlist || [], session, reviews, null, openTicketId)}
+      ${renderSection("Watching", groups.watch || [], session, reviews, null, openTicketId)}
+      ${renderSection("Completed / Acted On", groups.completed || [], session, reviews, null, openTicketId)}
+      ${renderSection("Rejected", groups.rejected || [], session, reviews, null, openTicketId)}
+      ${renderSection("Top Opportunities", groups.top || [], session, reviews, 50, openTicketId)}
     </main>
     <script>
+      function isInteractiveTarget(target) {
+        return Boolean(target.closest("a, button, input, select, textarea, label, [data-row-ignore]"));
+      }
+
       document.addEventListener("click", async (event) => {
-        const expandButton = event.target.closest(".expand-button");
-        if (expandButton) {
-          const ticket = expandButton.dataset.ticket;
-          const tray = document.querySelector('[data-tray="' + ticket + '"]');
-          if (!tray) return;
-
-          document.querySelectorAll(".tray-row.is-open").forEach((openTray) => {
-            if (openTray !== tray) openTray.classList.remove("is-open");
-          });
-          document.querySelectorAll(".expand-button").forEach((button) => {
-            if (button !== expandButton) {
-              button.textContent = "▶";
-              button.setAttribute("aria-expanded", "false");
-            }
-          });
-
-          const isOpen = tray.classList.toggle("is-open");
-          expandButton.textContent = isOpen ? "▼" : "▶";
-          expandButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
-          history.pushState(null, "", isOpen ? "/admin/ticket/" + ticket : "/admin/");
-          return;
-        }
-
-        const closeTray = event.target.closest("[data-close-tray]");
-        if (closeTray) {
-          event.preventDefault();
-          document.querySelectorAll(".tray-row.is-open").forEach((tray) => tray.classList.remove("is-open"));
-          document.querySelectorAll(".expand-button").forEach((button) => {
-            button.textContent = "▶";
-            button.setAttribute("aria-expanded", "false");
-          });
-          history.pushState(null, "", "/admin/");
-          return;
-        }
-
-        const openTray = event.target.closest(".tray-row.is-open");
-        if (event.target.classList && event.target.classList.contains("tray-row")) {
-          document.querySelectorAll(".tray-row.is-open").forEach((tray) => tray.classList.remove("is-open"));
-          document.querySelectorAll(".expand-button").forEach((button) => {
-            button.textContent = "▶";
-            button.setAttribute("aria-expanded", "false");
-          });
-          history.pushState(null, "", "/admin/");
-          return;
-        }
-
         const copyButton = event.target.closest(".copy-button");
         if (copyButton) {
           await navigator.clipboard.writeText(copyButton.dataset.context || "");
           copyButton.textContent = "Copied";
           setTimeout(() => copyButton.textContent = "Copy Details ⧉", 1200);
+          return;
+        }
+
+        const openTray = event.target.closest(".tray-row.is-open");
+        if (openTray && event.target === openTray) {
+          window.location.href = "/admin/";
+          return;
+        }
+
+        const ticketRow = event.target.closest(".ticket-row");
+        if (ticketRow && !isInteractiveTarget(event.target)) {
+          window.location.href = ticketRow.dataset.ticketUrl;
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && document.querySelector(".tray-row.is-open")) {
+          window.location.href = "/admin/";
+          return;
+        }
+
+        const ticketRow = event.target.closest?.(".ticket-row");
+        if (ticketRow && (event.key === "Enter" || event.key === " ")) {
+          event.preventDefault();
+          window.location.href = ticketRow.dataset.ticketUrl;
         }
       });
     </script>
@@ -799,14 +763,22 @@ export default {
       await saveReviews(env, reviews, sha, ticket);
       return new Response(null, {
         status: 303,
-        headers: {
-          location: `/admin/ticket/${ticket}?saved=${ticket}`,
-        },
+        headers: { location: `/admin/ticket/${ticket}?saved=1` },
       });
     }
 
-    if (url.pathname === "/admin" || url.pathname.startsWith("/admin/")) {
+    const ticketMatch = url.pathname.match(/^\/admin\/ticket\/(\d+)\/?$/);
+    if (ticketMatch) {
+      const notice = url.searchParams.get("saved") === "1" ? `Saved review decision for #${ticketMatch[1]}.` : "";
+      return adminPage(request, env, notice, ticketMatch[1]);
+    }
+
+    if (url.pathname === "/admin" || url.pathname === "/admin/") {
       return adminPage(request, env);
+    }
+
+    if (url.pathname.startsWith("/admin/")) {
+      return Response.redirect(`${url.origin}/admin/`, 302);
     }
 
     // Public Radar pages remain built by the wp-core-radar Pages project,
