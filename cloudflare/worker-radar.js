@@ -136,10 +136,13 @@ function layout(title, body) {
     .ticket-row.tier-immediate { border-left: 6px solid #2563eb; } .ticket-row.tier-strong { border-left: 6px solid #7c3aed; } .ticket-row.tier-watching { border-left: 6px solid #d97706; }
     .score { font-weight: 800; font-size: 18px; }
     .expand-button { background: transparent; border: 0; cursor: pointer; color: #646970; font-size: 16px; }
-    .tray-row { display: none; } .tray-row.is-open { display: table-row; }
+    .tray-row { display: none; }
+    .tray-row.is-open { display: block; position: fixed; inset: 0; z-index: 50; background: rgba(15, 23, 42, .54); }
+    .tray-row.is-open td { display: block; width: min(920px, calc(100vw - 32px)); height: calc(100vh - 32px); margin: 16px 16px 16px auto; overflow: auto; background: #fbfbfc; border-radius: 14px; box-shadow: -18px 0 45px rgba(15, 23, 42, .28); }
     .tray-row td { background: #fbfbfc; padding: 0; }
     .tray { padding: 18px 22px 22px; }
     .tray-header { display: flex; justify-content: space-between; gap: 18px; background: #fff; border: 1px solid #dcdcde; border-left: 6px solid #2271b1; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
+    .tray-close { align-self: start; border: 1px solid #dcdcde; border-radius: 999px; padding: 7px 10px; background: #fff; color: #3c434a; font-weight: 800; text-decoration: none; }
     .tray-header h3 { margin: 0 0 6px; font-size: 22px; } .tray-header p { margin: 0; font-weight: 700; }
     .tray-meta { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
     .tray-grid { display: grid; grid-template-columns: minmax(220px, 1fr) minmax(260px, 1.15fr) minmax(280px, .95fr); gap: 14px; align-items: stretch; }
@@ -536,19 +539,22 @@ function copyContext(item) {
   ].join("\n");
 }
 
-function renderRow(item, session, reviews) {
+function renderRow(item, session, reviews, activeTicket = "") {
   const review = reviews[item.ticket_id] || item.review || {};
   const ticket = esc(item.ticket_id);
   const tier = esc(item.tier_class);
+  const isActive = String(item.ticket_id) === String(activeTicket);
+  const trayClass = isActive ? "tray-row is-open" : "tray-row";
+  const toggleLabel = isActive ? "▼" : "▶";
   return `
-    <tr class="ticket-row tier-${tier}">
-      <td><button type="button" class="expand-button" data-ticket="${ticket}">▶</button></td>
+    <tr class="ticket-row tier-${tier}" data-ticket-row="${ticket}">
+      <td><button type="button" class="expand-button" data-ticket="${ticket}" aria-expanded="${isActive ? "true" : "false"}">${toggleLabel}</button></td>
       <td class="score">${esc(item.score)}</td>
       <td><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span></td>
       <td><a href="${esc(item.url)}" target="_blank">#${ticket}</a></td>
       <td>${esc(item.summary)}</td>
     </tr>
-    <tr class="tray-row" data-tray="${ticket}">
+    <tr class="${trayClass}" data-tray="${ticket}">
       <td colspan="5">
         <div class="tray">
           <div class="tray-header">
@@ -562,7 +568,7 @@ function renderRow(item, session, reviews) {
                 <span>Updated: <strong>${esc(item.modified || "Unknown")}</strong></span>
               </div>
             </div>
-            <div class="tray-meta"><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong></div>
+            <div class="tray-meta"><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong><a class="tray-close" href="/admin/" data-close-tray>Close</a></div>
           </div>
           <div class="tray-grid">
             <div class="tray-panel">
@@ -599,13 +605,28 @@ function renderRow(item, session, reviews) {
     </tr>`;
 }
 
-function renderSection(title, items, session, reviews, limit = null) {
+function renderSection(title, items, session, reviews, activeTicket = "", limit = null) {
   const display = limit ? items.slice(0, limit) : items;
-  const rows = display.map((item) => renderRow(item, session, reviews)).join("") || `<tr><td colspan="5" class="muted">No tickets in this section.</td></tr>`;
+  const rows = display.map((item) => renderRow(item, session, reviews, activeTicket)).join("") || `<tr><td colspan="5" class="muted">No tickets in this section.</td></tr>`;
   return `<section><h2>${esc(title)} <span>${items.length}</span></h2><div class="table-wrap"><table><thead><tr><th></th><th>Score</th><th>Tier</th><th>Ticket</th><th>Summary</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
 }
 
-async function adminPage(request, env, notice = "") {
+
+function activeTicketFromPath(pathname) {
+  const match = pathname.match(/^\/admin\/ticket\/(\d+)\/?$/);
+  return match ? match[1] : "";
+}
+
+function noticeFromUrl(url) {
+  const saved = url.searchParams.get("saved");
+  if (/^\d+$/.test(saved || "")) {
+    return `Saved review decision for #${saved}.`;
+  }
+  return "";
+}
+
+
+async function adminPage(request, env) {
   const session = await readSession(request, env);
   if (!session) return loginPage();
 
@@ -613,6 +634,9 @@ async function adminPage(request, env, notice = "") {
   const reviews = reviewFile.reviews || {};
   const summary = data.summary || {};
   const groups = data.groups || {};
+  const url = new URL(request.url);
+  const activeTicket = activeTicketFromPath(url.pathname);
+  const notice = noticeFromUrl(url);
 
   return html(layout("WP Core Radar Admin", `
     <header>
@@ -633,23 +657,61 @@ async function adminPage(request, env, notice = "") {
         <div class="stat stat-amber"><strong>${esc(summary.watching || 0)}</strong>Worth Watching</div>
         <div class="stat"><strong>${Object.keys(reviews).length}</strong>Reviews loaded</div>
       </div>
-      ${renderSection("Priority Targets", groups.priority || [], session, reviews)}
-      ${renderSection("Shortlisted", groups.shortlist || [], session, reviews)}
-      ${renderSection("Watching", groups.watch || [], session, reviews)}
-      ${renderSection("Completed / Acted On", groups.completed || [], session, reviews)}
-      ${renderSection("Rejected", groups.rejected || [], session, reviews)}
-      ${renderSection("Top Opportunities", groups.top || [], session, reviews, 50)}
+      ${renderSection("Priority Targets", groups.priority || [], session, reviews, activeTicket)}
+      ${renderSection("Shortlisted", groups.shortlist || [], session, reviews, activeTicket)}
+      ${renderSection("Watching", groups.watch || [], session, reviews, activeTicket)}
+      ${renderSection("Completed / Acted On", groups.completed || [], session, reviews, activeTicket)}
+      ${renderSection("Rejected", groups.rejected || [], session, reviews, activeTicket)}
+      ${renderSection("Top Opportunities", groups.top || [], session, reviews, activeTicket, 50)}
     </main>
     <script>
       document.addEventListener("click", async (event) => {
         const expandButton = event.target.closest(".expand-button");
         if (expandButton) {
-          const tray = document.querySelector('[data-tray="' + expandButton.dataset.ticket + '"]');
+          const ticket = expandButton.dataset.ticket;
+          const tray = document.querySelector('[data-tray="' + ticket + '"]');
           if (!tray) return;
+
+          document.querySelectorAll(".tray-row.is-open").forEach((openTray) => {
+            if (openTray !== tray) openTray.classList.remove("is-open");
+          });
+          document.querySelectorAll(".expand-button").forEach((button) => {
+            if (button !== expandButton) {
+              button.textContent = "▶";
+              button.setAttribute("aria-expanded", "false");
+            }
+          });
+
           const isOpen = tray.classList.toggle("is-open");
           expandButton.textContent = isOpen ? "▼" : "▶";
+          expandButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          history.pushState(null, "", isOpen ? "/admin/ticket/" + ticket : "/admin/");
           return;
         }
+
+        const closeTray = event.target.closest("[data-close-tray]");
+        if (closeTray) {
+          event.preventDefault();
+          document.querySelectorAll(".tray-row.is-open").forEach((tray) => tray.classList.remove("is-open"));
+          document.querySelectorAll(".expand-button").forEach((button) => {
+            button.textContent = "▶";
+            button.setAttribute("aria-expanded", "false");
+          });
+          history.pushState(null, "", "/admin/");
+          return;
+        }
+
+        const openTray = event.target.closest(".tray-row.is-open");
+        if (event.target.classList && event.target.classList.contains("tray-row")) {
+          document.querySelectorAll(".tray-row.is-open").forEach((tray) => tray.classList.remove("is-open"));
+          document.querySelectorAll(".expand-button").forEach((button) => {
+            button.textContent = "▶";
+            button.setAttribute("aria-expanded", "false");
+          });
+          history.pushState(null, "", "/admin/");
+          return;
+        }
+
         const copyButton = event.target.closest(".copy-button");
         if (copyButton) {
           await navigator.clipboard.writeText(copyButton.dataset.context || "");
@@ -735,7 +797,12 @@ export default {
         updated_at: new Date().toISOString(),
       };
       await saveReviews(env, reviews, sha, ticket);
-      return adminPage(request, env, `Saved review decision for #${ticket}.`);
+      return new Response(null, {
+        status: 303,
+        headers: {
+          location: `/admin/ticket/${ticket}?saved=${ticket}`,
+        },
+      });
     }
 
     if (url.pathname === "/admin" || url.pathname.startsWith("/admin/")) {
