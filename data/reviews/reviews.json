@@ -82,5 +82,11 @@
     "reason": "PR exists, but useful testing requires WooCommerce/custom comment-type setup.",
     "notes": "PR #12055 exists, but Playground does not provide the needed WooCommerce/custom comment-type scenario out of the box. Testing likely requires a local setup with seeded non-comment comment types, probably via WooCommerce order notes or direct comment data creation. No Trac/GitHub comment left yet and no keywords updated.",
     "updated_at": "2026-06-17T03:10:34.142Z"
+  },
+  "65419": {
+    "status": "tested",
+    "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
+    "notes": "Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.",
+    "updated_at": "2026-06-19T17:38:19.873Z"
   }
 }
