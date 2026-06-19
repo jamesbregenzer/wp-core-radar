@@ -11,8 +11,9 @@ Radar should make it easy to:
 - find contribution opportunities that match available time and skill level
 - understand why a ticket ranked highly
 - avoid repeatedly reviewing tickets that have already been rejected, watched, tested, or completed
+- record props after contributor credit appears on WordPress.org
 - copy useful review context for deeper human evaluation
-- keep a visible record of contribution intent and follow-through
+- keep a visible record of contribution intent, follow-through, and outcomes
 
 ## Technical direction
 
@@ -26,12 +27,12 @@ The project should remain:
 
 ## Public/private split
 
-The public dashboard should be a polished, read-only artifact.
+The public dashboard should be a polished, read-only artifact. The public contribution-history page should summarize safe review and props outcomes without exposing admin notes or write access.
 
-The admin console should remain protected because it writes review state and supports the human review workflow. The public dashboard should stay read-only, while `/radar/admin/` should remain narrowly scoped to authenticated review metadata updates.
+The admin console should remain protected because it writes review state and supports the human review workflow. The public dashboard should stay read-only, while `/admin/` should remain narrowly scoped to authenticated review metadata and historical props updates.
 
 ## Portfolio domain direction
 
-`james.bregenzer.dev` can act as a portfolio-style routing layer where individual projects live under path prefixes such as `/radar/`. Static project output can come from separate Cloudflare Pages or GitHub Pages origins, while protected or dynamic project tools can be rendered directly by the Worker.
+`radar.james.bregenzer.dev` is the dedicated production host for WP Core Radar. The same Worker-router pattern can later be reused on `james.bregenzer.dev` if that broader portfolio domain mounts multiple projects under paths such as `/radar/`, `/darkrai/`, or `/tools/`.
 
-This lets Radar remain its own focused repository while still appearing as part of a broader personal portfolio domain.
+This lets Radar remain its own focused repository while still fitting into a broader personal portfolio architecture later.

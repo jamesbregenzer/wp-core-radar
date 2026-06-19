@@ -344,7 +344,7 @@ def trac_url(ticket_id: str) -> str:
 
 PRIORITY_TARGET_LIMIT = 12
 PRIORITY_TARGET_MIN_SCORE = 150
-COMPLETED_REVIEW_STATUSES = {"tested", "commented", "props", "committed"}
+COMPLETED_REVIEW_STATUSES = {"tested", "commented", "committed"}
 VALID_REVIEW_STATUSES = {
     "new",
     "shortlist",
@@ -352,9 +352,16 @@ VALID_REVIEW_STATUSES = {
     "reject",
     "tested",
     "commented",
-    "props",
     "committed",
 }
+
+
+def review_received_props(item: dict[str, Any]) -> bool:
+    review = item.get("review") or {}
+    # ``status: props`` is retained as legacy read-only compatibility from the
+    # early admin prototype. New writes should use ``received_props: true``
+    # while preserving the workflow status that led to the contribution.
+    return review.get("received_props") is True or str(review.get("status", "")).strip().lower() == "props"
 
 
 def review_status(item: dict[str, Any]) -> str:
@@ -425,7 +432,7 @@ def group_items(items: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
             groups["shortlist"].append(item)
         elif status == "watch":
             groups["watch"].append(item)
-        elif status in COMPLETED_REVIEW_STATUSES:
+        elif status in COMPLETED_REVIEW_STATUSES or review_received_props(item):
             groups["completed"].append(item)
         elif is_priority_target(item) and len(groups["priority"]) < PRIORITY_TARGET_LIMIT:
             groups["priority"].append(item)

@@ -34,8 +34,9 @@ Examples:
 - `reject` — poor fit for this workflow
 - `tested` — patch or behavior tested
 - `commented` — manual Trac comment posted
-- `props` — contribution resulted in props
 - `committed` — ticket was committed
+
+Props are not a review decision. They are recorded as an independent outcome after contributor credit appears on WordPress.org.
 
 Review decisions live in:
 
@@ -50,10 +51,13 @@ Example:
 ```json
 {
   "33073": {
-    "status": "shortlist",
-    "reason": "Good first contribution candidate",
-    "notes": "Patch exists and needs testing.",
-    "updated_at": "2026-06-14T00:00:00Z"
+    "status": "tested",
+    "reason": "Patch tested successfully",
+    "notes": "Verified locally and reported results on Trac.",
+    "received_props": true,
+    "props_recorded_at": "2026-06-19T00:00:00Z",
+    "changeset": "62481",
+    "updated_at": "2026-06-19T00:00:00Z"
   }
 }
 ```
@@ -70,16 +74,16 @@ Review decisions also power a public contribution history page generated at:
 docs/radar/contributions/index.html
 ```
 
-This static page is served at `/radar/contributions/` and is intentionally public. It summarizes public-safe review metadata only: total reviewed tickets, tested/commented/watch counts, component focus, activity by month, and recent review activity. It does not expose admin authentication, secrets, or private notes.
+This static page is served at `/contributions/` on `radar.james.bregenzer.dev` and is intentionally public. It summarizes public-safe review metadata only: total reviewed tickets, tested/commented/watch counts, props received, component focus, activity by month, and recent review activity. It does not expose admin authentication, secrets, or private notes.
 
 ## Protected admin write path
 
-The production `/radar/admin/` console is rendered by the Cloudflare Worker. It authenticates the user, loads generated ticket data from `docs/radar/admin-data.json`, and writes review decisions to `data/reviews/reviews.json` through the GitHub API.
+The production `/admin/` console is rendered by the Cloudflare Worker. It authenticates the user, loads generated ticket data from `docs/radar/admin-data.json`, and writes review decisions and historical props records to `data/reviews/reviews.json` through the GitHub API.
 
-The Worker does not regenerate dashboard files itself. When `data/reviews/reviews.json` changes on `main`, `.github/workflows/refresh-dashboard.yml` runs `scripts/generate-dashboard.py` and commits regenerated `docs/radar/index.html` and `docs/radar/admin-data.json`. This keeps workflow sections like Shortlisted, Watching, Completed / Acted On, and Rejected current shortly after review saves.
+The Worker does not regenerate dashboard files itself. When `data/reviews/reviews.json` changes on `main`, `.github/workflows/refresh-dashboard.yml` runs `scripts/generate-dashboard.py` and commits regenerated `docs/radar/index.html`, `docs/radar/contributions/index.html`, and `docs/radar/admin-data.json`. This keeps workflow sections like Shortlisted, Watching, Completed / Acted On, and Rejected current shortly after review saves.
 
 Local review writes through `scripts/review-ticket.py` also regenerate dashboard files immediately so review grouping stays in sync during manual maintenance.
 
 Allowed review statuses are intentionally limited to the workflow states above. This keeps the admin route useful for review decisions without turning it into a broad repository write surface.
 
-Statuses are currently used both as triage decisions and contribution outcomes. `shortlist`, `watch`, and `reject` represent planning states. `tested`, `commented`, `props`, and `committed` represent acted-on outcomes and are grouped under Completed / Acted On in the dashboard.
+Statuses represent workflow state only. `shortlist`, `watch`, and `reject` are planning states. `tested`, `commented`, and `committed` are acted-on outcomes and are grouped under Completed / Acted On. Props are not a status; they are an independent outcome recorded as `received_props: true`, with optional `changeset` metadata for future reporting.

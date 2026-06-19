@@ -403,32 +403,43 @@ def status_label(status: str) -> str:
 
 def contribution_records(
     ranked: list[dict[str, Any]],
-    reviews: dict[str, dict[str, str]],
+    reviews: dict[str, dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    """Return public-safe contribution/review records enriched with ticket data."""
+    """Return public-safe contribution/review records enriched with ticket data.
+
+    Reviews are the long-lived archive. Some reviewed or props-producing tickets
+    may no longer exist in the current Trac CSV opportunity export, so the
+    contribution page must continue to render those historical records with
+    graceful fallback labels.
+    """
     items_by_ticket = {item["ticket_id"]: item for item in ranked}
     records: list[dict[str, Any]] = []
 
     for ticket_id, review in reviews.items():
         item = items_by_ticket.get(ticket_id)
         row = item["row"] if item else {}
-        tier_class, tier_label = priority_tier(item) if item else ("standard", "Standard")
-        updated_at = review.get("updated_at", "")
+        tier_class, tier_label = priority_tier(item) if item else ("standard", "Historical")
+        updated_at = str(review.get("updated_at", ""))
         parsed_updated = parse_review_datetime(updated_at)
+        status = str(review.get("status", "")).strip().lower() or "reviewed"
+        received_props = review.get("received_props") is True or status == "props"
 
         records.append(
             {
                 "ticket_id": ticket_id,
                 "url": trac_url(ticket_id),
-                "summary": first_value(row, SUMMARY_KEYS, "Ticket not present in current dataset"),
-                "component": first_value(row, ("component", "Component"), "Unknown") or "Unknown",
-                "track": item["query"].get("name", item["query"].get("track", "unknown")) if item else "Unknown",
+                "summary": first_value(row, SUMMARY_KEYS, "Historical ticket not present in current opportunity data"),
+                "component": first_value(row, ("component", "Component"), "Historical") or "Historical",
+                "track": item["query"].get("name", item["query"].get("track", "unknown")) if item else "Historical review",
                 "score": item["score"] if item else "",
                 "tier_class": tier_class,
                 "tier_label": tier_label,
-                "status": str(review.get("status", "")).strip().lower() or "reviewed",
-                "reason": review.get("reason", ""),
-                "notes": review.get("notes", ""),
+                "status": status,
+                "reason": str(review.get("reason", "")),
+                "notes": str(review.get("notes", "")),
+                "received_props": received_props,
+                "props_recorded_at": str(review.get("props_recorded_at", "")),
+                "changeset": str(review.get("changeset", "")),
                 "updated_at": updated_at,
                 "updated_dt": parsed_updated,
                 "updated_label": parsed_updated.strftime("%b %d, %Y") if parsed_updated else "Unknown",
@@ -437,7 +448,6 @@ def contribution_records(
         )
 
     return sorted(records, key=lambda record: record["updated_dt"] or datetime.min, reverse=True)
-
 
 def contribution_css() -> str:
     return dashboard_css() + """
@@ -479,6 +489,8 @@ def contribution_css() -> str:
     }
     .mini-metric strong { display: block; font-size: 28px; margin-bottom: 2px; }
     .mini-metric span { color: #646970; font-size: 13px; }
+    .props-card { border-left: 6px solid #d97706; }
+    .props-note { color: #646970; font-size: 13px; margin-top: 8px; }
     .chart-card {
       background: white;
       border: 1px solid #dcdcde;
@@ -520,6 +532,7 @@ def contribution_css() -> str:
     .timeline-date { color: #646970; font-weight: 700; font-size: 13px; }
     .timeline-main strong { display: block; margin-bottom: 6px; }
     .timeline-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .changeset-link { color: #2271b1; font-size: 12px; font-weight: 700; white-space: nowrap; }
     .note-preview { margin-top: 8px; color: #50575e; line-height: 1.45; max-width: 860px; }
     .component-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
     .component-card { background: white; border: 1px solid #dcdcde; border-radius: 10px; padding: 16px; }
@@ -586,7 +599,9 @@ def build_contributions_page() -> str:
     component_counts = Counter(record["component"] for record in records)
     month_counts = Counter(record["month_label"] for record in records)
     month_order = Counter(dict(sorted(month_counts.items(), key=lambda item: next((record["updated_dt"] for record in records if record["month_label"] == item[0]), datetime.min), reverse=True)))
-    acted_on_count = sum(status_counts.get(status, 0) for status in ("tested", "commented", "props", "committed"))
+    props_count = sum(1 for record in records if record["received_props"])
+    acted_on_count = sum(status_counts.get(status, 0) for status in ("tested", "commented", "committed"))
+    props_rate = round((props_count / acted_on_count) * 100) if acted_on_count else 0
     latest = records[0] if records else None
 
     component_cards = "".join(
@@ -600,6 +615,13 @@ def build_contributions_page() -> str:
         note_preview = " ".join(line.strip() for line in note.splitlines() if line.strip())
         if len(note_preview) > 260:
             note_preview = note_preview[:257].rstrip() + "..."
+
+        props_badge = html_badge("🏆 Props Received", "signal") if record["received_props"] else ""
+        changeset_link = ""
+        if record["changeset"]:
+            changeset = html.escape(record["changeset"])
+            changeset_link = f'<a class="changeset-link" href="https://core.trac.wordpress.org/changeset/{changeset}">Changeset {changeset}</a>'
+
         timeline_rows.append(
             f'''<article class="timeline-item tier-{html.escape(record["tier_class"])}">
   <div class="timeline-date">{html.escape(record["updated_label"])}</div>
@@ -609,6 +631,8 @@ def build_contributions_page() -> str:
       {html_badge(status_label(record["status"]), "signal")}
       {html_badge(record["component"], "signal")}
       {html_badge(record["tier_label"], "tier-label")}
+      {props_badge}
+      {changeset_link}
     </div>
     <p class="note-preview">{html.escape(record["reason"] or note_preview or "Review recorded.")}</p>
   </div>
@@ -618,7 +642,8 @@ def build_contributions_page() -> str:
     timeline = "".join(timeline_rows) or '<p class="empty">No review activity recorded yet.</p>'
     latest_html = '<p>No activity recorded yet.</p>'
     if latest:
-        latest_html = f'''<p><strong><a href="{html.escape(latest["url"])}">#{html.escape(latest["ticket_id"])}</a></strong><br>{html.escape(status_label(latest["status"]))} — {html.escape(latest["summary"])}</p><p>{html.escape(latest["updated_label"])}</p>'''
+        latest_props = '<br>🏆 Props received' if latest["received_props"] else ''
+        latest_html = f'''<p><strong><a href="{html.escape(latest["url"])}">#{html.escape(latest["ticket_id"])}</a></strong><br>{html.escape(status_label(latest["status"]))} — {html.escape(latest["summary"])}{latest_props}</p><p>{html.escape(latest["updated_label"])}</p>'''
 
     return f'''<!doctype html>
 <html lang="en">
@@ -634,12 +659,12 @@ def build_contributions_page() -> str:
   <header>
     <div class="header-content">
       <h1>WP Core Radar Contributions</h1>
-      <p>Generated {html.escape(generated)}. A public record of human review and testing activity powered by WP Core Radar.</p>
+      <p>Generated {html.escape(generated)}. A public record of human review, testing, and props outcomes powered by WP Core Radar.</p>
     </div>
     <div class="header-actions">
-      <a class="header-pill" href="/radar/">Dashboard</a>
-      <a class="header-pill" href="/radar/contributions/">Contributions</a>
-      <a class="admin-link" href="/radar/admin/">Admin Console</a>
+      <a class="header-pill" href="/">Dashboard</a>
+      <a class="header-pill" href="/contributions/">Contributions</a>
+      <a class="admin-link" href="/admin/">Admin Console</a>
     </div>
   </header>
 
@@ -647,11 +672,12 @@ def build_contributions_page() -> str:
     <div class="hero-grid">
       <section class="hero-card">
         <h2>Contribution history</h2>
-        <p>This page turns Radar review decisions into a public contribution record: tickets reviewed, patches tested, areas of focus, and recent activity. Radar still only recommends opportunities; all WordPress Core contribution actions remain manual and human-reviewed.</p>
+        <p>This page turns Radar review decisions into a public contribution record: tickets reviewed, patches tested, areas of focus, and props that were later recorded from WordPress.org. Radar still only recommends opportunities; all WordPress Core contribution actions remain manual and human-reviewed.</p>
         <div class="metric-row">
           <div class="mini-metric"><strong>{len(records)}</strong><span>Tickets reviewed</span></div>
           <div class="mini-metric"><strong>{status_counts.get("tested", 0)}</strong><span>Tickets tested</span></div>
           <div class="mini-metric"><strong>{acted_on_count}</strong><span>Completed / acted on</span></div>
+          <div class="mini-metric props-card"><strong>{props_count}</strong><span>Props received</span><div class="props-note">{props_rate}% of acted-on tickets</div></div>
           <div class="mini-metric"><strong>{len(component_counts)}</strong><span>Components touched</span></div>
         </div>
       </section>
@@ -668,6 +694,7 @@ def build_contributions_page() -> str:
       <div class="card"><strong>{status_counts.get("shortlist", 0)}</strong>Shortlisted</div>
       <div class="card"><strong>{status_counts.get("reject", 0)}</strong>Rejected</div>
       <div class="card card-purple"><strong>{status_counts.get("committed", 0)}</strong>Committed</div>
+      <div class="card card-amber"><strong>{props_count}</strong>Props received</div>
     </div>
 
     <section>
@@ -693,7 +720,7 @@ def build_contributions_page() -> str:
 
   <footer class="contribution-footer">
     <span>Generated from public-safe review metadata in <code>data/reviews/reviews.json</code>.</span>
-    <a class="footer-pill" href="/radar/">Back to dashboard</a>
+    <a class="footer-pill" href="/">Back to dashboard</a>
   </footer>
 </body>
 </html>
@@ -725,8 +752,8 @@ def build_dashboard() -> str:
       <p>Generated {html.escape(generated)}. Radar recommends opportunities only. Humans make contribution decisions.</p>
     </div>
     <div class="header-actions">
-      <a class="header-pill" href="/radar/contributions/">Contributions</a>
-      <a class="admin-link" href="/radar/admin/">Admin Console</a>
+      <a class="header-pill" href="/contributions/">Contributions</a>
+      <a class="admin-link" href="/admin/">Admin Console</a>
     </div>
   </header>
 

@@ -28,6 +28,7 @@ def main() -> int:
     reviews = load_reviews()
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     reviews[ticket] = {
+        **(reviews.get(ticket) or {}),
         "status": args.status,
         "reason": args.reason.strip(),
         "notes": args.notes.strip(),

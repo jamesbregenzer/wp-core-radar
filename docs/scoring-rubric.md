@@ -91,13 +91,13 @@ Only the first 12 matching tickets are shown as Priority Targets.
 
 ## Review Grouping
 
-Review decisions live in `data/reviews/reviews.json` and move tickets into workflow sections:
+Review decisions live in `data/reviews/reviews.json` and move tickets into workflow sections. Props are recorded separately as `received_props: true` and are included in contribution-history reporting without becoming a review status:
 
 | Review status | Section |
 |---|---|
 | `shortlist` | Shortlisted |
 | `watch` | Watching |
-| `tested`, `commented`, `props`, `committed` | Completed / Acted On |
+| `tested`, `commented`, `committed` | Completed / Acted On |
 | `reject` | Rejected |
 | no review status | Priority Targets or Top Opportunities |
 

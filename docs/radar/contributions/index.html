@@ -258,6 +258,8 @@
     }
     .mini-metric strong { display: block; font-size: 28px; margin-bottom: 2px; }
     .mini-metric span { color: #646970; font-size: 13px; }
+    .props-card { border-left: 6px solid #d97706; }
+    .props-note { color: #646970; font-size: 13px; margin-top: 8px; }
     .chart-card {
       background: white;
       border: 1px solid #dcdcde;
@@ -299,6 +301,7 @@
     .timeline-date { color: #646970; font-weight: 700; font-size: 13px; }
     .timeline-main strong { display: block; margin-bottom: 6px; }
     .timeline-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .changeset-link { color: #2271b1; font-size: 12px; font-weight: 700; white-space: nowrap; }
     .note-preview { margin-top: 8px; color: #50575e; line-height: 1.45; max-width: 860px; }
     .component-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
     .component-card { background: white; border: 1px solid #dcdcde; border-radius: 10px; padding: 16px; }
@@ -343,12 +346,12 @@
   <header>
     <div class="header-content">
       <h1>WP Core Radar Contributions</h1>
-      <p>Generated 2026-06-19 17:38. A public record of human review and testing activity powered by WP Core Radar.</p>
+      <p>Generated 2026-06-19 21:59. A public record of human review, testing, and props outcomes powered by WP Core Radar.</p>
     </div>
     <div class="header-actions">
-      <a class="header-pill" href="/radar/">Dashboard</a>
-      <a class="header-pill" href="/radar/contributions/">Contributions</a>
-      <a class="admin-link" href="/radar/admin/">Admin Console</a>
+      <a class="header-pill" href="/">Dashboard</a>
+      <a class="header-pill" href="/contributions/">Contributions</a>
+      <a class="admin-link" href="/admin/">Admin Console</a>
     </div>
   </header>
 
@@ -356,11 +359,12 @@
     <div class="hero-grid">
       <section class="hero-card">
         <h2>Contribution history</h2>
-        <p>This page turns Radar review decisions into a public contribution record: tickets reviewed, patches tested, areas of focus, and recent activity. Radar still only recommends opportunities; all WordPress Core contribution actions remain manual and human-reviewed.</p>
+        <p>This page turns Radar review decisions into a public contribution record: tickets reviewed, patches tested, areas of focus, and props that were later recorded from WordPress.org. Radar still only recommends opportunities; all WordPress Core contribution actions remain manual and human-reviewed.</p>
         <div class="metric-row">
           <div class="mini-metric"><strong>15</strong><span>Tickets reviewed</span></div>
           <div class="mini-metric"><strong>9</strong><span>Tickets tested</span></div>
           <div class="mini-metric"><strong>10</strong><span>Completed / acted on</span></div>
+          <div class="mini-metric props-card"><strong>0</strong><span>Props received</span><div class="props-note">0% of acted-on tickets</div></div>
           <div class="mini-metric"><strong>10</strong><span>Components touched</span></div>
         </div>
       </section>
@@ -377,6 +381,7 @@
       <div class="card"><strong>0</strong>Shortlisted</div>
       <div class="card"><strong>0</strong>Rejected</div>
       <div class="card card-purple"><strong>0</strong>Committed</div>
+      <div class="card card-amber"><strong>0</strong>Props received</div>
     </div>
 
     <section>
@@ -407,7 +412,7 @@
 
     <section>
       <h2>Component focus <span>10</span></h2>
-      <div class="component-grid"><div class="component-card"><strong>5</strong><span>Media</span></div><div class="component-card"><strong>2</strong><span>Unknown</span></div><div class="component-card"><strong>1</strong><span>General</span></div><div class="component-card"><strong>1</strong><span>External Libraries</span></div><div class="component-card"><strong>1</strong><span>Comments</span></div><div class="component-card"><strong>1</strong><span>Site Health</span></div><div class="component-card"><strong>1</strong><span>Taxonomy</span></div><div class="component-card"><strong>1</strong><span>Database</span></div></div>
+      <div class="component-grid"><div class="component-card"><strong>5</strong><span>Media</span></div><div class="component-card"><strong>2</strong><span>Historical</span></div><div class="component-card"><strong>1</strong><span>General</span></div><div class="component-card"><strong>1</strong><span>External Libraries</span></div><div class="component-card"><strong>1</strong><span>Comments</span></div><div class="component-card"><strong>1</strong><span>Site Health</span></div><div class="component-card"><strong>1</strong><span>Taxonomy</span></div><div class="component-card"><strong>1</strong><span>Database</span></div></div>
     </section>
 
     <section>
@@ -420,6 +425,8 @@
       <span class="signal-badge signal-standard">Tested</span>
       <span class="signal-badge signal-standard">General</span>
       <span class="tier-label-badge tier-label-standard">Strong Candidate</span>
+      
+      
     </div>
     <p class="note-preview">Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.</p>
   </div>
@@ -431,6 +438,8 @@
       <span class="signal-badge signal-standard">Watch</span>
       <span class="signal-badge signal-standard">External Libraries</span>
       <span class="tier-label-badge tier-label-standard">Strong Candidate</span>
+      
+      
     </div>
     <p class="note-preview">Valid Core testing opportunity, but mediaelement upgrade testing is too broad for today’s easy-win queue.</p>
   </div>
@@ -442,6 +451,8 @@
       <span class="signal-badge signal-standard">Watch</span>
       <span class="signal-badge signal-standard">Media</span>
       <span class="tier-label-badge tier-label-standard">Worth Watching</span>
+      
+      
     </div>
     <p class="note-preview">Valid Media ticket, but AVIF testing depends on local image library support.</p>
   </div>
@@ -453,17 +464,21 @@
       <span class="signal-badge signal-standard">Watch</span>
       <span class="signal-badge signal-standard">Comments</span>
       <span class="tier-label-badge tier-label-standard">Strong Candidate</span>
+      
+      
     </div>
     <p class="note-preview">PR exists, but useful testing requires WooCommerce/custom comment-type setup.</p>
   </div>
 </article><article class="timeline-item tier-standard">
   <div class="timeline-date">Jun 17, 2026</div>
   <div class="timeline-main">
-    <strong><a href="https://core.trac.wordpress.org/ticket/64877">#64877</a> Ticket not present in current dataset</strong>
+    <strong><a href="https://core.trac.wordpress.org/ticket/64877">#64877</a> Historical ticket not present in current opportunity data</strong>
     <div class="timeline-meta">
       <span class="signal-badge signal-standard">Tested</span>
-      <span class="signal-badge signal-standard">Unknown</span>
-      <span class="tier-label-badge tier-label-standard">Standard</span>
+      <span class="signal-badge signal-standard">Historical</span>
+      <span class="tier-label-badge tier-label-standard">Historical</span>
+      
+      
     </div>
     <p class="note-preview">Positive test result</p>
   </div>
@@ -475,6 +490,8 @@
       <span class="signal-badge signal-standard">Commented</span>
       <span class="signal-badge signal-standard">Site Health</span>
       <span class="tier-label-badge tier-label-standard">Strong Candidate</span>
+      
+      
     </div>
     <p class="note-preview">Reviewed patch, tested in Playground, submitted Trac feedback.</p>
   </div>
@@ -486,6 +503,8 @@
       <span class="signal-badge signal-standard">Tested</span>
       <span class="signal-badge signal-standard">Taxonomy</span>
       <span class="tier-label-badge tier-label-standard">Immediate Review</span>
+      
+      
     </div>
     <p class="note-preview">Positive test result</p>
   </div>
@@ -497,6 +516,8 @@
       <span class="signal-badge signal-standard">Watch</span>
       <span class="signal-badge signal-standard">Database</span>
       <span class="tier-label-badge tier-label-standard">Immediate Review</span>
+      
+      
     </div>
     <p class="note-preview">Awaiting PR/test stability</p>
   </div>
@@ -508,6 +529,8 @@
       <span class="signal-badge signal-standard">Tested</span>
       <span class="signal-badge signal-standard">Media</span>
       <span class="tier-label-badge tier-label-standard">Immediate Review</span>
+      
+      
     </div>
     <p class="note-preview">Positive test result</p>
   </div>
@@ -519,6 +542,8 @@
       <span class="signal-badge signal-standard">Tested</span>
       <span class="signal-badge signal-standard">Networks and Sites</span>
       <span class="tier-label-badge tier-label-standard">Immediate Review</span>
+      
+      
     </div>
     <p class="note-preview">Positive test result</p>
   </div>
@@ -530,6 +555,8 @@
       <span class="signal-badge signal-standard">Tested</span>
       <span class="signal-badge signal-standard">Media</span>
       <span class="tier-label-badge tier-label-standard">Immediate Review</span>
+      
+      
     </div>
     <p class="note-preview">Positive test result</p>
   </div>
@@ -541,6 +568,8 @@
       <span class="signal-badge signal-standard">Tested</span>
       <span class="signal-badge signal-standard">Media</span>
       <span class="tier-label-badge tier-label-standard">Immediate Review</span>
+      
+      
     </div>
     <p class="note-preview">Verified PR behavior in WordPress Playground.</p>
   </div>
@@ -552,6 +581,8 @@
       <span class="signal-badge signal-standard">Tested</span>
       <span class="signal-badge signal-standard">Media</span>
       <span class="tier-label-badge tier-label-standard">Strong Candidate</span>
+      
+      
     </div>
     <p class="note-preview">Verified patch behavior locally and reported results on Trac.</p>
   </div>
@@ -563,6 +594,8 @@
       <span class="signal-badge signal-standard">Tested</span>
       <span class="signal-badge signal-standard">Widgets</span>
       <span class="tier-label-badge tier-label-standard">Immediate Review</span>
+      
+      
     </div>
     <p class="note-preview">Refreshed stale patch and validated behavior against current trunk.</p>
   </div>
@@ -572,8 +605,10 @@
     <strong><a href="https://core.trac.wordpress.org/ticket/33073">#33073</a> Some strings need &quot;no HTML entities&quot; translator comments</strong>
     <div class="timeline-meta">
       <span class="signal-badge signal-standard">Watch</span>
-      <span class="signal-badge signal-standard">Unknown</span>
+      <span class="signal-badge signal-standard">Historical</span>
       <span class="tier-label-badge tier-label-standard">Immediate Review</span>
+      
+      
     </div>
     <p class="note-preview">Needs refresh/dev feedback</p>
   </div>
@@ -583,7 +618,7 @@
 
   <footer class="contribution-footer">
     <span>Generated from public-safe review metadata in <code>data/reviews/reviews.json</code>.</span>
-    <a class="footer-pill" href="/radar/">Back to dashboard</a>
+    <a class="footer-pill" href="/">Back to dashboard</a>
   </footer>
 </body>
 </html>

@@ -6,7 +6,7 @@ This file records approaches that were tried or considered and should not be rep
 
 An earlier local Python review-console workflow was retired after the production admin console moved into the Cloudflare Worker.
 
-Do not reintroduce or expose a local admin server without a clear reason. The production `/radar/admin/` route should remain Worker-rendered, authenticated, and narrowly scoped to writing constrained review metadata to `data/reviews/reviews.json`.
+Do not reintroduce or expose a local admin server without a clear reason. The production `/admin/` route should remain Worker-rendered, authenticated, and narrowly scoped to writing constrained review metadata to `data/reviews/reviews.json`.
 
 The unsafe version of this pattern would be committing secrets, running a local write-capable admin server on a public port, exposing it through a tunnel, or deploying it as the production admin interface.
 
@@ -28,9 +28,9 @@ Detailed scoring and action controls belong in the protected admin console, not 
 
 ## Publishing directly from a GitHub Pages custom domain
 
-GitHub Pages works for a single repository/domain mapping, but it does not preserve the desired long-term architecture where `james.bregenzer.dev` can become a portfolio site while `/radar/` serves this project.
+GitHub Pages works for a single repository/domain mapping, but it does not preserve the desired long-term architecture where a portfolio domain can mount multiple projects cleanly.
 
-Cloudflare Worker routing is the preferred direction because it allows multiple projects to live under path prefixes while still supporting protected dynamic routes like `/radar/admin/`.
+Cloudflare Worker routing is the preferred direction because it allows a dedicated host such as `radar.james.bregenzer.dev` today and can later support multiple projects under path prefixes while still supporting protected dynamic routes like `/admin/`.
 
 ## Replacing the Mac Mini collector with GitHub-hosted Actions
 
