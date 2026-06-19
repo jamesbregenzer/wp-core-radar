@@ -1,12 +1,12 @@
 {
-  "generated": "2026-06-19T22:19:51",
+  "generated": "2026-06-19T22:21:41",
   "summary": {
     "unique_tickets": 282,
     "priority_targets": 12,
     "immediate": 0,
     "strong": 12,
     "watching": 85,
-    "reviews_loaded": 15
+    "reviews_loaded": 16
   },
   "groups": {
     "priority": [
