@@ -134,22 +134,25 @@ function layout(title, body) {
     th, td { padding: 11px 12px; border-bottom: 1px solid #f0f0f1; text-align: left; vertical-align: top; }
     th { background: #f0f0f1; white-space: nowrap; }
     .ticket-row { cursor: pointer; }
-    .ticket-row:hover td { background: #f8fafc; }
-    .ticket-row:focus-within td { background: #f8fafc; }
+    .ticket-row:hover td,
+    .ticket-row:focus-within td,
+    .ticket-row.is-active td { background: #f8fafc; }
     .ticket-row.tier-immediate { border-left: 6px solid #2563eb; } .ticket-row.tier-strong { border-left: 6px solid #7c3aed; } .ticket-row.tier-watching { border-left: 6px solid #d97706; }
     .score { font-weight: 800; font-size: 18px; }
-    .tray-row { display: none; } .tray-row.is-open { display: table-row; }
-    .tray-row td { background: #fbfbfc; padding: 0; }
+    .drawer-backdrop { position: fixed; inset: 0; z-index: 40; background: rgba(15, 23, 42, .58); backdrop-filter: blur(2px); }
+    .ticket-drawer { position: fixed; top: 18px; right: 18px; bottom: 18px; z-index: 50; width: min(920px, calc(100vw - 36px)); overflow: auto; border-radius: 16px; background: #fbfbfc; box-shadow: -18px 0 60px rgba(0,0,0,.28); }
     .tray { padding: 18px 22px 22px; }
     .tray-header { display: flex; justify-content: space-between; gap: 18px; background: #fff; border: 1px solid #dcdcde; border-left: 6px solid #2271b1; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
     .tray-header h3 { margin: 0 0 6px; font-size: 22px; } .tray-header p { margin: 0; font-weight: 700; }
     .tray-meta { display: flex; align-items: center; gap: 10px; white-space: nowrap; flex-wrap: wrap; justify-content: flex-end; }
-    .tray-grid { display: grid; grid-template-columns: minmax(320px, 1.25fr) minmax(220px, .75fr) minmax(300px, .95fr); gap: 14px; align-items: stretch; }
+    .drawer-close { display: inline-flex; align-items: center; border: 1px solid #dcdcde; border-radius: 999px; padding: 7px 11px; color: #1d2327; background: #fff; font-weight: 800; text-decoration: none; }
+    .tray-grid { display: grid; grid-template-columns: minmax(300px, 1.25fr) minmax(220px, .75fr) minmax(300px, .95fr); gap: 14px; align-items: stretch; }
     .tray-panel { background: #fff; border: 1px solid #dcdcde; border-radius: 10px; padding: 14px; }
     .tray-panel h4 { margin: 0 0 12px; color: #3c434a; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
     .ticket-meta { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 10px 0 0; color: #3c434a; }
     .ticket-meta span { white-space: nowrap; }
     .badge, .tier-label { display: inline-block; border-radius: 999px; padding: 4px 8px; margin: 0 4px 7px 0; font-size: 12px; font-weight: 800; white-space: nowrap; }
+    .props-badge { background: #fef3c7; color: #92400e; }
     .signal-standard, .tier-label-standard { background: #f3f4f6; color: #4b5563; }
     .signal-priority, .signal-owner { background: #e0f2fe; color: #075985; }
     .signal-patch, .tier-label-immediate { background: #dbeafe; color: #1d4ed8; }
@@ -560,80 +563,109 @@ function copyContext(item) {
   ].join("\n");
 }
 
-function renderRow(item, session, reviews, activeTicket = "") {
+function renderTicketDetails(item, session, reviews) {
   const review = reviews[item.ticket_id] || item.review || {};
   const ticket = esc(item.ticket_id);
   const tier = esc(item.tier_class);
   const receivedProps = hasReceivedProps(review);
-  const isActive = String(item.ticket_id) === String(activeTicket);
   const propsBadge = receivedProps ? '<span class="badge props-badge">🏆 Props Received</span>' : "";
+
   return `
-    <tr class="ticket-row tier-${tier}" data-ticket="${ticket}" tabindex="0" role="button" aria-expanded="${isActive ? "true" : "false"}">
-      <td class="score">${esc(item.score)}</td>
-      <td><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span></td>
-      <td><a href="${esc(item.url)}" target="_blank">#${ticket}</a></td>
-      <td>${esc(item.summary)}</td>
-    </tr>
-    <tr class="tray-row ${isActive ? "is-open" : ""}" data-tray="${ticket}">
-      <td colspan="4">
-        <div class="tray">
-          <div class="tray-header">
-            <div>
-              <h3>#${ticket}</h3>
-              <p>${esc(item.summary)}</p>
-              <div class="ticket-meta">
-                <span>Component: <strong>${esc(item.component || "Unknown")}</strong></span>
-                <span>Status: <strong>${esc(item.status || "Unknown")}</strong></span>
-                <span>Created: <strong>${esc(item.created || "Unknown")}</strong></span>
-                <span>Updated: <strong>${esc(item.modified || "Unknown")}</strong></span>
-              </div>
-            </div>
-            <div class="tray-meta">${propsBadge}<span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong></div>
-          </div>
-          <div class="tray-grid">
-            <div class="tray-panel">
-              <h4>Ranking signals</h4>
-              <div>${renderBadges(item.signals)}</div>
-              <p class="muted">These signals contributed to this ticket's score.</p>
-            </div>
-            <div class="tray-panel">
-              <h4>Score breakdown</h4>
-              ${renderBreakdown(item.score_breakdown)}
-              <p class="score-total">Final score: <strong>${esc(item.score)}</strong></p>
-            </div>
-            <div class="tray-panel">
-              <h4>Review tools & decision</h4>
-              <div class="tools">
-                <a class="button-link" href="${esc(item.url)}" target="_blank">Open Trac ↗</a>
-                <button type="button" class="copy-button" data-context="${esc(copyContext(item))}">Copy Details ⧉</button>
-              </div>
-              <form method="post" action="/admin/save" class="review-form">
-                <input type="hidden" name="csrf" value="${esc(session.csrf)}">
-                <input type="hidden" name="ticket" value="${ticket}">
-                <label>Decision</label>
-                <select name="status" required>${statusOptions(review.status || "")}</select>
-                <label>Reason</label>
-                <input name="reason" maxlength="160" value="${esc(review.reason || "")}" placeholder="Short reason">
-                <label>Review notes</label>
-                <textarea name="notes" maxlength="1000" placeholder="Add notes about this ticket...">${esc(review.notes || "")}</textarea>
-                <label class="checkbox-field">
-                  <input type="checkbox" name="received_props" value="1" ${receivedProps ? "checked" : ""}>
-                  Received props
-                </label>
-                <p class="outcome-help">Use this only after contributor credit has actually been received for this ticket.</p>
-                <button type="submit">Save review</button>
-              </form>
-            </div>
+    <div class="tray">
+      <div class="tray-header">
+        <div>
+          <h3>#${ticket}</h3>
+          <p>${esc(item.summary)}</p>
+          <div class="ticket-meta">
+            <span>Component: <strong>${esc(item.component || "Unknown")}</strong></span>
+            <span>Status: <strong>${esc(item.status || "Unknown")}</strong></span>
+            <span>Created: <strong>${esc(item.created || "Unknown")}</strong></span>
+            <span>Updated: <strong>${esc(item.modified || "Unknown")}</strong></span>
           </div>
         </div>
-      </td>
+        <div class="tray-meta">
+          ${propsBadge}
+          <span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span>
+          <strong>Score ${esc(item.score)}</strong>
+          <a class="drawer-close" href="/admin/">Close</a>
+        </div>
+      </div>
+      <div class="tray-grid">
+        <div class="tray-panel">
+          <h4>Ranking signals</h4>
+          <div>${renderBadges(item.signals)}</div>
+          <p class="muted">These signals contributed to this ticket's score.</p>
+        </div>
+        <div class="tray-panel">
+          <h4>Score breakdown</h4>
+          ${renderBreakdown(item.score_breakdown)}
+          <p class="score-total">Final score: <strong>${esc(item.score)}</strong></p>
+        </div>
+        <div class="tray-panel">
+          <h4>Review tools & decision</h4>
+          <div class="tools">
+            <a class="button-link" href="${esc(item.url)}" target="_blank">Open Trac ↗</a>
+            <button type="button" class="copy-button" data-context="${esc(copyContext(item))}">Copy Details ⧉</button>
+          </div>
+          <form method="post" action="/admin/save" class="review-form">
+            <input type="hidden" name="csrf" value="${esc(session.csrf)}">
+            <input type="hidden" name="ticket" value="${ticket}">
+            <label>Decision</label>
+            <select name="status" required>${statusOptions(review.status || "")}</select>
+            <label>Reason</label>
+            <input name="reason" maxlength="160" value="${esc(review.reason || "")}" placeholder="Short reason">
+            <label>Review notes</label>
+            <textarea name="notes" maxlength="1000" placeholder="Add notes about this ticket...">${esc(review.notes || "")}</textarea>
+            <label class="checkbox-field">
+              <input type="checkbox" name="received_props" value="1" ${receivedProps ? "checked" : ""}>
+              Received props
+            </label>
+            <p class="outcome-help">Use this only after contributor credit has actually been received for this ticket.</p>
+            <button type="submit">Save review</button>
+          </form>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderRow(item, reviews, activeTicket = "") {
+  const review = reviews[item.ticket_id] || item.review || {};
+  const ticket = esc(item.ticket_id);
+  const tier = esc(item.tier_class);
+  const isActive = String(item.ticket_id) === String(activeTicket);
+  const propsMarker = hasReceivedProps(review) ? ' <span class="badge props-badge">🏆</span>' : "";
+
+  return `
+    <tr class="ticket-row tier-${tier} ${isActive ? "is-active" : ""}" data-ticket="${ticket}" tabindex="0" role="button" aria-expanded="${isActive ? "true" : "false"}">
+      <td class="score">${esc(item.score)}</td>
+      <td><span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span></td>
+      <td><a href="${esc(item.url)}" target="_blank">#${ticket}</a>${propsMarker}</td>
+      <td>${esc(item.summary)}</td>
     </tr>`;
 }
 
-function renderSection(title, items, session, reviews, activeTicket = "", limit = null) {
+function renderSection(title, items, reviews, activeTicket = "", limit = null) {
   const display = limit ? items.slice(0, limit) : items;
-  const rows = display.map((item) => renderRow(item, session, reviews, activeTicket)).join("") || `<tr><td colspan="4" class="muted">No tickets in this section.</td></tr>`;
+  const rows = display.map((item) => renderRow(item, reviews, activeTicket)).join("") || `<tr><td colspan="4" class="muted">No tickets in this section.</td></tr>`;
   return `<section><h2>${esc(title)} <span>${items.length}</span></h2><div class="table-wrap"><table><thead><tr><th>Score</th><th>Tier</th><th>Ticket</th><th>Summary</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+}
+
+function findTicket(groups, ticketId) {
+  if (!ticketId) return null;
+  for (const items of Object.values(groups || {})) {
+    const match = (items || []).find((item) => String(item.ticket_id) === String(ticketId));
+    if (match) return match;
+  }
+  return null;
+}
+
+function renderActiveTicketDrawer(activeItem, session, reviews) {
+  if (!activeItem) return "";
+  return `
+    <a class="drawer-backdrop" href="/admin/" aria-label="Close ticket details"></a>
+    <aside class="ticket-drawer" role="dialog" aria-modal="true" aria-label="Ticket #${esc(activeItem.ticket_id)} details">
+      ${renderTicketDetails(activeItem, session, reviews)}
+    </aside>`;
 }
 
 async function adminPage(request, env, notice = "") {
@@ -651,6 +683,7 @@ async function adminPage(request, env, notice = "") {
   const reviewSummary = reviewStats(reviews);
   const summary = data.summary || {};
   const groups = data.groups || {};
+  const activeItem = findTicket(groups, activeTicket);
 
   return html(layout("WP Core Radar Admin", `
     <header>
@@ -673,27 +706,19 @@ async function adminPage(request, env, notice = "") {
         <div class="stat"><strong>${esc(reviewSummary.propsReceived)}</strong>Props received</div>
         <div class="stat"><strong>${esc(reviewSummary.propsRate)}%</strong>Props rate</div>
       </div>
-      ${renderSection("Priority Targets", groups.priority || [], session, reviews, activeTicket)}
-      ${renderSection("Shortlisted", groups.shortlist || [], session, reviews, activeTicket)}
-      ${renderSection("Watching", groups.watch || [], session, reviews, activeTicket)}
-      ${renderSection("Completed / Acted On", groups.completed || [], session, reviews, activeTicket)}
-      ${renderSection("Rejected", groups.rejected || [], session, reviews, activeTicket)}
-      ${renderSection("Top Opportunities", groups.top || [], session, reviews, activeTicket, 50)}
+      ${renderSection("Priority Targets", groups.priority || [], reviews, activeTicket)}
+      ${renderSection("Shortlisted", groups.shortlist || [], reviews, activeTicket)}
+      ${renderSection("Watching", groups.watch || [], reviews, activeTicket)}
+      ${renderSection("Completed / Acted On", groups.completed || [], reviews, activeTicket)}
+      ${renderSection("Rejected", groups.rejected || [], reviews, activeTicket)}
+      ${renderSection("Top Opportunities", groups.top || [], reviews, activeTicket, 50)}
     </main>
+    ${renderActiveTicketDrawer(activeItem, session, reviews)}
     <script>
       document.addEventListener("click", async (event) => {
         const row = event.target.closest(".ticket-row");
         if (row && !event.target.closest("a, button, input, select, textarea, label")) {
-          const ticket = row.dataset.ticket;
-          const tray = document.querySelector('[data-tray="' + ticket + '"]');
-          if (!tray) return;
-          const isOpen = tray.classList.toggle("is-open");
-          row.setAttribute("aria-expanded", isOpen ? "true" : "false");
-          if (isOpen) {
-            history.replaceState(null, "", "/admin/ticket/" + ticket);
-          } else if (location.pathname === "/admin/ticket/" + ticket) {
-            history.replaceState(null, "", "/admin/");
-          }
+          window.location.href = "/admin/ticket/" + row.dataset.ticket;
           return;
         }
         const copyButton = event.target.closest(".copy-button");
