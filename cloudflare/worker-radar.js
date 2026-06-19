@@ -136,16 +136,17 @@ function layout(title, body) {
     .ticket-row.tier-immediate { border-left: 6px solid #2563eb; } .ticket-row.tier-strong { border-left: 6px solid #7c3aed; } .ticket-row.tier-watching { border-left: 6px solid #d97706; }
     .score { font-weight: 800; font-size: 18px; }
     .drawer-backdrop { position: fixed; inset: 0; z-index: 40; background: rgba(15, 23, 42, .42); backdrop-filter: blur(2px); }
-    .drawer { position: fixed; inset: 0 0 0 auto; z-index: 50; width: min(880px, 92vw); overflow-y: auto; background: #f6f7f7; box-shadow: -24px 0 70px rgba(0,0,0,.28); border-left: 1px solid #dcdcde; }
-    .drawer-inner { position: relative; padding: 22px; }
-    .drawer-close { position: absolute; top: 18px; right: 20px; z-index: 2; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border: 1px solid #dcdcde; border-radius: 999px; background: #fff; color: #1d2327; font-size: 20px; font-weight: 900; line-height: 1; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,.08); }
-    .drawer-close:hover, .drawer-close:focus { background: #f8fafc; color: #0f172a; text-decoration: none; }
-    .tray { padding: 0; }
-    .tray-header { display: flex; justify-content: space-between; gap: 18px; background: #fff; border: 1px solid #dcdcde; border-left: 6px solid #2271b1; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
-    .tray-header h3 { margin: 0 0 6px; font-size: 22px; } .tray-header p { margin: 0; font-weight: 700; }
-    .tray-meta { display: flex; align-items: center; gap: 10px; white-space: nowrap; flex-wrap: wrap; justify-content: flex-end; }
-    .tray-grid { display: grid; grid-template-columns: minmax(320px, 1.25fr) minmax(220px, .75fr) minmax(300px, .95fr); gap: 14px; align-items: stretch; }
-    .tray-panel { background: #fff; border: 1px solid #dcdcde; border-radius: 10px; padding: 14px; }
+    .drawer { position: fixed; inset: 0 0 0 auto; z-index: 50; width: min(880px, 92vw); overflow-y: auto; overflow-x: hidden; box-sizing: border-box; background: #f6f7f7; box-shadow: -24px 0 70px rgba(0,0,0,.28); border-left: 1px solid #dcdcde; }
+    .drawer-inner { padding: 22px; box-sizing: border-box; width: 100%; }
+    .tray { padding: 0; width: 100%; box-sizing: border-box; }
+    .tray-header { display: flex; justify-content: space-between; gap: 18px; background: #fff; border: 1px solid #dcdcde; border-left: 6px solid #2271b1; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; box-sizing: border-box; width: 100%; min-width: 0; }
+    .tray-header > div:first-child { min-width: 0; }
+    .tray-header h3 { margin: 0 0 6px; font-size: 22px; } .tray-header p { margin: 0; font-weight: 700; overflow-wrap: anywhere; }
+    .tray-meta { display: flex; align-items: center; gap: 10px; white-space: nowrap; flex-wrap: wrap; justify-content: flex-end; flex: 0 0 auto; }
+    .tray-close { color: #2271b1; font-size: 12px; font-weight: 900; text-decoration: underline; text-underline-offset: 2px; }
+    .tray-close:hover, .tray-close:focus { color: #135e96; }
+    .tray-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .75fr) minmax(280px, .95fr); gap: 14px; align-items: stretch; width: 100%; box-sizing: border-box; }
+    .tray-panel { min-width: 0; overflow-wrap: break-word; background: #fff; border: 1px solid #dcdcde; border-radius: 10px; padding: 14px; }
     .tray-panel h4 { margin: 0 0 12px; color: #3c434a; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
     .ticket-meta { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 10px 0 0; color: #3c434a; }
     .ticket-meta span { white-space: nowrap; }
@@ -165,7 +166,7 @@ function layout(title, body) {
     .button-link, .copy-button, button { display: inline-block; text-align: center; border: 0; border-radius: 7px; padding: 9px 11px; background: #2271b1; color: #fff; font-weight: 800; text-decoration: none; cursor: pointer; font: inherit; }
     .copy-button { background: #7c3aed; }
     label { display: block; margin-top: 10px; font-weight: 800; }
-    input, select, textarea { width: 100%; box-sizing: border-box; margin-top: 5px; padding: 9px; border: 1px solid #c3c4c7; border-radius: 7px; font: inherit; }
+    input, select, textarea { width: 100%; min-width: 0; box-sizing: border-box; margin-top: 5px; padding: 9px; border: 1px solid #c3c4c7; border-radius: 7px; font: inherit; }
     textarea { min-height: 84px; }
     .review-form { margin-top: 4px; }
     .review-form button[type="submit"] { margin-top: 12px; }
@@ -175,9 +176,11 @@ function layout(title, body) {
     .ticket-row { cursor: pointer; }
     .ticket-row:hover td, .ticket-row:focus-within td, .ticket-row.is-active td { background: #f8fafc; }
     .props-badge { background: #fef3c7; color: #92400e; }
-    .props-drawer .tray-header { margin-bottom: 14px; }
-    .props-form { display: grid; gap: 10px; }
-    .props-form button { margin-top: 8px; }
+    .utility-section { margin-top: 24px; }
+    .props-panel h2 { margin: 0 0 8px; }
+    .props-form { display: grid; grid-template-columns: repeat(2, minmax(180px, 1fr)); gap: 10px 14px; align-items: end; }
+    .props-form label { margin-top: 0; }
+    .props-form textarea, .props-form button { grid-column: 1 / -1; }
 
     .login-shell {
       min-height: 100vh;
@@ -502,37 +505,26 @@ function reviewStats(reviews) {
   };
 }
 
-function renderPropsDrawer(session, ticket = "") {
+function renderPropsForm(session, ticket = "") {
   return `
-    <div class="drawer-backdrop" data-close-drawer></div>
-    <aside class="drawer props-drawer" aria-label="Record historical props">
-      <div class="drawer-inner">
-        <a class="drawer-close" href="/admin/" data-close-drawer aria-label="Close">×</a>
-        <div class="tray">
-          <div class="tray-header">
-            <div>
-              <h3>Record historical props</h3>
-              <p>Use this when WordPress.org shows contributor credit for a ticket that is no longer in the active Radar opportunity data.</p>
-            </div>
-            <div class="tray-meta"><span class="badge props-badge">🏆 Props Outcome</span></div>
-          </div>
-          <div class="tray-panel props-panel">
-            <form method="post" action="/admin/props" class="review-form props-form">
-              <input type="hidden" name="csrf" value="${esc(session.csrf)}">
-              <label>Ticket ID</label>
-              <input name="ticket" inputmode="numeric" pattern="[0-9]+" value="${esc(ticket)}" placeholder="64937" required>
-              <label>Changeset <span class="muted">(optional)</span></label>
-              <input name="changeset" inputmode="numeric" pattern="[0-9]*" placeholder="62481">
-              <label>Reason</label>
-              <input name="reason" maxlength="160" value="Props received" placeholder="Props received">
-              <label>Notes <span class="muted">(optional)</span></label>
-              <textarea name="notes" maxlength="1000" placeholder="Add contribution details or profile/SVN context..."></textarea>
-              <button type="submit">Record props</button>
-            </form>
-          </div>
-        </div>
+    <section class="utility-section">
+      <div class="tray-panel props-panel">
+        <h2>Record historical props</h2>
+        <p class="muted">Use this when WordPress.org shows contributor credit for a ticket that is no longer in the active Radar opportunity data.</p>
+        <form method="post" action="/admin/props" class="review-form props-form">
+          <input type="hidden" name="csrf" value="${esc(session.csrf)}">
+          <label>Ticket ID</label>
+          <input name="ticket" inputmode="numeric" pattern="[0-9]+" value="${esc(ticket)}" placeholder="64937" required>
+          <label>Changeset <span class="muted">(optional)</span></label>
+          <input name="changeset" inputmode="numeric" pattern="[0-9]*" placeholder="62481">
+          <label>Reason</label>
+          <input name="reason" maxlength="160" value="Props received" placeholder="Props received">
+          <label>Notes <span class="muted">(optional)</span></label>
+          <textarea name="notes" maxlength="1000" placeholder="Add contribution details or profile/SVN context..."></textarea>
+          <button type="submit">Record props</button>
+        </form>
       </div>
-    </aside>`;
+    </section>`;
 }
 
 function renderBadges(signals) {
@@ -608,7 +600,6 @@ function renderTicketDrawer(item, session, reviews) {
     <div class="drawer-backdrop" data-close-drawer></div>
     <aside class="drawer" aria-label="Ticket details">
       <div class="drawer-inner">
-        <a class="drawer-close" href="/admin/" data-close-drawer aria-label="Close">×</a>
         <div class="tray">
           <div class="tray-header">
             <div>
@@ -622,7 +613,7 @@ function renderTicketDrawer(item, session, reviews) {
                 ${changesetMeta}
               </div>
             </div>
-            <div class="tray-meta">${propsBadge}<span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong></div>
+            <div class="tray-meta">${propsBadge}<span class="tier-label tier-label-${tier}">${esc(item.tier_label)}</span><strong>Score ${esc(item.score)}</strong><a class="tray-close" href="/admin/" data-close-drawer>Close</a></div>
           </div>
           <div class="tray-grid">
             <div class="tray-panel">
@@ -733,7 +724,7 @@ async function adminPage(request, env) {
     </header>
     <main>
       ${notice ? `<div class="notice"><strong>${esc(notice)}</strong></div>` : ""}
-      ${ticketNotInRadar ? `<div class="notice"><strong>Ticket #${esc(activeTicket)} is not in the current Radar opportunity data.</strong> Use the historical props drawer if this ticket received contributor credit.</div>` : ""}
+      ${ticketNotInRadar ? `<div class="notice"><strong>Ticket #${esc(activeTicket)} is not in the current Radar opportunity data.</strong> Use the historical props form below if this ticket received contributor credit.</div>` : ""}
       <div class="summary">
         <div class="stat"><strong>${esc(summary.unique_tickets || 0)}</strong>Unique tickets</div>
         <div class="stat"><strong>${esc(summary.priority_targets || 0)}</strong>Priority targets</div>
@@ -744,7 +735,7 @@ async function adminPage(request, env) {
         <div class="stat"><strong>${esc(reviewSummary.propsReceived)}</strong>Props received</div>
         <div class="stat"><strong>${esc(reviewSummary.propsRate)}%</strong>Props rate</div>
       </div>
-      ${(url.pathname === "/admin/props" || ticketNotInRadar) ? renderPropsDrawer(session, activeTicket || url.searchParams.get("ticket") || "") : ""}
+      ${(url.pathname === "/admin/props" || ticketNotInRadar) ? renderPropsForm(session, activeTicket || url.searchParams.get("ticket") || "") : ""}
       ${renderSection("Priority Targets", groups.priority || [], session, reviews, activeTicket)}
       ${renderSection("Shortlisted", groups.shortlist || [], session, reviews, activeTicket)}
       ${renderSection("Watching", groups.watch || [], session, reviews, activeTicket)}
