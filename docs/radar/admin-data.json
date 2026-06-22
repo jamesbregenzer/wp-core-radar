@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-22T16:55:42",
+  "generated": "2026-06-22T16:58:43",
   "summary": {
-    "unique_tickets": 285,
+    "unique_tickets": 286,
     "priority_targets": 12,
     "immediate": 0,
     "strong": 12,
@@ -671,6 +671,83 @@
         "review": {}
       },
       {
+        "ticket_id": "65517",
+        "url": "https://core.trac.wordpress.org/ticket/65517",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Sideload external images on the server via a `url` REST parameter",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "REST API",
+        "owner": "adamsilverstein",
+        "comments": "Unknown",
+        "created": "06/22/2026 09:49:28 PM",
+        "modified": "06/22/2026 09:50:55 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "21989",
         "url": "https://core.trac.wordpress.org/ticket/21989",
         "score": 154,
@@ -839,83 +916,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-unit-tests needs-testing has-patch has-test-info dev-feedback",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "54034",
-        "url": "https://core.trac.wordpress.org/ticket/54034",
-        "score": 154,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Update jQuery UI Touch Punch to the latest version",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "Hareesh Pillai",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing needs-test-info dev-feedback changes-requested",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -1480,6 +1480,83 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "54034",
+        "url": "https://core.trac.wordpress.org/ticket/54034",
+        "score": 154,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Update jQuery UI Touch Punch to the latest version",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Unknown",
+        "owner": "Hareesh Pillai",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "has-patch needs-testing needs-test-info dev-feedback changes-requested",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
             "polarity": "positive"
           }
         ],
@@ -16849,7 +16926,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/22/2026 12:12:45 PM",
-        "modified": "06/22/2026 03:11:04 PM",
+        "modified": "06/22/2026 04:54:19 PM",
         "keywords": "needs-testing needs-test-info has-screenshots has-patch",
         "signals": [
           {

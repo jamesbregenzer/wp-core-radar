@@ -1,13 +1,13 @@
 # WP Core Radar Report
 
-Generated: 2026-06-22 10:19
+Generated: 2026-06-22 16:58
 
 ## Summary
 
 - Datasets discovered: 35
-- Unique tickets scored: 285
+- Unique tickets scored: 286
 - Outcomes loaded: 4
-- Reviews loaded: 17
+- Reviews loaded: 18
 - Top opportunity limit: 50
 
 ## Review Workflow
@@ -18,32 +18,12 @@ Generated: 2026-06-22 10:19
 | Top Opportunities | 259 | Remaining unreviewed tickets ranked by score. |
 | Shortlisted | 0 | Tickets manually marked as strong candidates. |
 | Watching | 5 | Tickets worth monitoring but not acting on yet. |
-| Completed / Acted On | 9 | Tickets already tested, commented on, propped, or committed. |
+| Completed / Acted On | 10 | Tickets already tested, commented on, propped, or committed. |
 | Rejected | 0 | Tickets manually rejected as poor fits. |
 
 ## Priority Targets
 
-#### 1. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
-
-- Score: **170**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: New
-- Milestone: Awaiting Review
-- Keywords: needs-testing needs-test-info has-screenshots has-patch
-- Created: 06/22/2026 12:12:45 PM
-- Modified: 06/22/2026 03:11:04 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
-  - +20: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 2. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+#### 1. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -65,7 +45,7 @@ Generated: 2026-06-22 10:19
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+#### 2. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -88,7 +68,7 @@ Generated: 2026-06-22 10:19
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+#### 3. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -111,7 +91,7 @@ Generated: 2026-06-22 10:19
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+#### 4. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
 
 - Score: **161**
 - Track/query: Media: Has Patch
@@ -131,7 +111,7 @@ Generated: 2026-06-22 10:19
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
+#### 5. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
 
 - Score: **160**
 - Track/query: General: Needs Testing
@@ -151,7 +131,7 @@ Generated: 2026-06-22 10:19
   - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65281](https://core.trac.wordpress.org/ticket/65281) — Custom Time & Date Format Fields Allow Empty Save Instead of Validation
+#### 6. [#65281](https://core.trac.wordpress.org/ticket/65281) — Custom Time & Date Format Fields Allow Empty Save Instead of Validation
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -171,7 +151,7 @@ Generated: 2026-06-22 10:19
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
+#### 7. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -191,7 +171,7 @@ Generated: 2026-06-22 10:19
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#65481](https://core.trac.wordpress.org/ticket/65481) — REST API: Support registering one sideloaded file under multiple image sizes
+#### 8. [#65481](https://core.trac.wordpress.org/ticket/65481) — REST API: Support registering one sideloaded file under multiple image sizes
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -208,6 +188,27 @@ Generated: 2026-06-22 10:19
   - +35: Has Patch
   - +30: Needs Testing
   - +8: Has Concrete Milestone
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 9. [#65517](https://core.trac.wordpress.org/ticket/65517) — Sideload external images on the server via a `url` REST parameter
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: REST API
+- Trac status: Assigned
+- Milestone: Awaiting Review
+- Owner: adamsilverstein
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 06/22/2026 09:49:28 PM
+- Modified: 06/22/2026 09:50:55 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +6: Has Owner
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
@@ -1515,7 +1516,31 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
+#### 7. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
+
+- Score: **170**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: needs-testing needs-test-info has-screenshots has-patch
+- Created: 06/22/2026 12:12:45 PM
+- Modified: 06/22/2026 04:54:19 PM
+- Review status: commented
+- Review reason: PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.
+- Review notes: Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed “Showing 1 of 1 media items,” so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the “Could not retrieve the featured image data” message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.
+- Review updated: 2026-06-22T16:55:30.056Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 8. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -1541,7 +1566,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
+#### 9. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -1581,7 +1606,7 @@ Posted testing results to Trac.
   - -20: Already Tested
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
+#### 10. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -1649,7 +1674,7 @@ No tickets in this section.
 | media_has_patch | 2026-06-18 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-18/media_has_patch.csv` |
 | accessibility_has_patch | 2026-06-22 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-22/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-06-22 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-22/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-22 | 258 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-22/general_needs_testing.csv` |
+| general_needs_testing | 2026-06-22 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-22/general_needs_testing.csv` |
 | good_first_bugs | 2026-06-22 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-22/good_first_bugs.csv` |
 | media_has_patch | 2026-06-22 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-22/media_has_patch.csv` |
 
