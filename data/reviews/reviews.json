@@ -109,5 +109,11 @@
     "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
     "notes": "Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.",
     "updated_at": "2026-06-19T17:38:19.873Z"
+  },
+  "65513": {
+    "status": "commented",
+    "reason": "PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.",
+    "notes": "Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed “Showing 1 of 1 media items,” so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the “Could not retrieve the featured image data” message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.",
+    "updated_at": "2026-06-22T16:55:30.056Z"
   }
 }
