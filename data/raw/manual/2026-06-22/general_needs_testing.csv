@@ -181,7 +181,7 @@
 55691,New site editor uses WP_SITEURL instead of WP_HOME,reviewing,Themes,audrasjb,defect (bug),normal,Awaiting Review,5.9,needs-testing has-patch needs-test-info reporter-feedback,05/06/2022 07:10:55 PM,05/12/2025 01:37:56 AM
 56089,Meta data of menu items not removed from wp_postmeta table after removing the menu item before being saved.,new,Menus,,defect (bug),normal,Awaiting Review,6.0,needs-test-info needs-testing,06/28/2022 04:16:22 PM,05/12/2025 01:37:57 AM
 56090,wp_update_user doesn't update user_activation_key on users with apostrophes in their email,new,Users,,defect (bug),normal,Awaiting Review,,needs-testing needs-test-info,06/28/2022 05:33:30 PM,05/12/2025 01:37:57 AM
-56320,Update mediaelement.js to the latest version,accepted,External Libraries,adamsilverstein,defect (bug),normal,7.1,,has-patch needs-testing 2nd-opinion,08/01/2022 06:20:19 PM,06/17/2026 12:09:06 PM
+56320,Update mediaelement.js to the latest version,accepted,External Libraries,adamsilverstein,defect (bug),normal,7.1,,has-patch needs-testing 2nd-opinion,08/01/2022 06:20:19 PM,06/22/2026 11:09:42 PM
 56381,WordPress creates invalid web.config -file,new,Rewrite Rules,,defect (bug),normal,Awaiting Review,6.0,needs-testing,08/15/2022 06:12:27 PM,01/04/2023 07:00:30 PM
 56615,Running `build` scripts on Windows machines produces different results,assigned,Build/Test Tools,,defect (bug),normal,Future Release,6.1,needs-testing needs-patch,09/21/2022 02:21:34 PM,03/30/2026 07:34:21 AM
 56821,meta_query late row lookup for performance improvement,new,"Options, Meta APIs",,enhancement,normal,Awaiting Review,,needs-patch needs-testing,10/13/2022 08:46:34 PM,10/14/2022 11:59:24 AM
@@ -256,5 +256,4 @@
 65504,WP_AI_Client_Ability_Function_Resolver::execute_abilities() answers non-ability function calls with a spurious error,new,Abilities API,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/22/2026 05:58:27 AM,06/22/2026 06:01:16 AM
 65505,"WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",new,AI,,defect (bug),normal,Awaiting Review,trunk,has-patch has-unit-tests needs-testing,06/22/2026 06:46:10 AM,06/22/2026 06:52:14 AM
 65513,Media Library modal shows wrong count on first upload and does not reset after image deletion,new,Media,,defect (bug),normal,Awaiting Review,,needs-testing needs-test-info has-screenshots has-patch,06/22/2026 12:12:45 PM,06/22/2026 04:54:19 PM
-65517,Sideload external images on the server via a `url` REST parameter,assigned,REST API,adamsilverstein,defect (bug),normal,Awaiting Review,,has-patch has-unit-tests needs-testing,06/22/2026 09:49:28 PM,06/22/2026 09:50:55 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing,04/09/2025 11:10:53 AM,06/16/2026 10:29:38 PM
