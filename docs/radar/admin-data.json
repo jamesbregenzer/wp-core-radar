@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T11:02:53",
+  "generated": "2026-06-24T17:03:29",
   "summary": {
     "unique_tickets": 285,
     "priority_targets": 12,
@@ -3049,83 +3049,6 @@
         "review": {}
       },
       {
-        "ticket_id": "64991",
-        "url": "https://core.trac.wordpress.org/ticket/64991",
-        "score": 148,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "New param \"allow_multiple_terms\" in `register_taxonomy` for single term restriction",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Taxonomy",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "03/30/2026 10:13:26 AM",
-        "modified": "04/24/2026 06:12:03 PM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "65120",
         "url": "https://core.trac.wordpress.org/ticket/65120",
         "score": 148,
@@ -4460,6 +4383,72 @@
         "created": "03/11/2026 03:42:33 PM",
         "modified": "03/19/2026 10:17:02 PM",
         "keywords": "has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "64991",
+        "url": "https://core.trac.wordpress.org/ticket/64991",
+        "score": 138,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "New param \"allow_multiple_terms\" in `register_taxonomy` for single term restriction",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Taxonomy",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "03/30/2026 10:13:26 AM",
+        "modified": "04/24/2026 06:12:03 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -16931,7 +16920,7 @@
         "owner": "joedolson",
         "comments": "Unknown",
         "created": "06/05/2026 09:11:00 AM",
-        "modified": "06/09/2026 04:50:17 PM",
+        "modified": "06/16/2026 06:38:36 AM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
