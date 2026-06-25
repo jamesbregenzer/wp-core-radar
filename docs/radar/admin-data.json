@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T17:03:29",
+  "generated": "2026-06-25T05:04:39",
   "summary": {
     "unique_tickets": 285,
     "priority_targets": 12,
@@ -682,6 +682,83 @@
         "review": {}
       },
       {
+        "ticket_id": "65505",
+        "url": "https://core.trac.wordpress.org/ticket/65505",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "AI",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/22/2026 06:46:10 AM",
+        "modified": "06/25/2026 09:19:46 AM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "21989",
         "url": "https://core.trac.wordpress.org/ticket/21989",
         "score": 154,
@@ -850,83 +927,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-unit-tests needs-testing has-patch has-test-info dev-feedback",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "54034",
-        "url": "https://core.trac.wordpress.org/ticket/54034",
-        "score": 154,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Update jQuery UI Touch Punch to the latest version",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "Hareesh Pillai",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing needs-test-info dev-feedback changes-requested",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -1498,6 +1498,83 @@
         "review": {}
       },
       {
+        "ticket_id": "54034",
+        "url": "https://core.trac.wordpress.org/ticket/54034",
+        "score": 154,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Update jQuery UI Touch Punch to the latest version",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Unknown",
+        "owner": "Hareesh Pillai",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "has-patch needs-testing needs-test-info dev-feedback changes-requested",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "58801",
         "url": "https://core.trac.wordpress.org/ticket/58801",
         "score": 154,
@@ -1942,72 +2019,6 @@
             "label": "Preferred Component",
             "detail": "Media",
             "display": "Preferred Component: Media",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65505",
-        "url": "https://core.trac.wordpress.org/ticket/65505",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "AI",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/22/2026 06:46:10 AM",
-        "modified": "06/22/2026 06:52:14 AM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
