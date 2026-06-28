@@ -245,7 +245,7 @@
 65171,wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs,new,Editor,,defect (bug),normal,Awaiting Review,,has-patch needs-unit-tests needs-testing,05/05/2026 09:12:28 PM,05/14/2026 11:31:38 AM
 65263,Colors from theme.json doesnt parse for hover states,new,Editor,,defect (bug),normal,7.0.1,7.0,needs-testing,05/19/2026 02:18:53 AM,06/07/2026 06:55:14 AM
 65281,Custom Time & Date Format Fields Allow Empty Save Instead of Validation,new,Date/Time,,defect (bug),normal,Awaiting Review,,has-patch has-unit-tests has-test-info needs-testing,05/20/2026 06:43:42 PM,06/15/2026 02:26:48 PM
-65329,Move sideload metadata writes to the finalize endpoint,assigned,Media,adamsilverstein,enhancement,normal,7.1,,has-patch has-unit-tests needs-testing,05/22/2026 10:26:49 PM,06/16/2026 01:52:30 PM
+65329,Move sideload metadata writes to the finalize endpoint,assigned,Media,adamsilverstein,enhancement,normal,7.1,,has-patch has-unit-tests needs-testing,05/22/2026 10:26:49 PM,06/28/2026 12:25:36 AM
 65345,Site Icon subsizes use wrong array key 'width ' instead of 'width',new,Media,,defect (bug),normal,7.1,4.3,has-patch needs-testing has-unit-tests,05/26/2026 10:59:28 AM,06/15/2026 12:31:02 PM
 65350,Possible duplicate update event firing during wp_maybe_auto_update,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,7.0,needs-testing 2nd-opinion,05/26/2026 02:22:13 PM,06/06/2026 03:27:02 AM
 65381,Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0,new,Editor,,defect (bug),normal,Awaiting Review,,needs-testing reporter-feedback,06/01/2026 07:07:17 AM,06/11/2026 10:45:49 PM
@@ -255,4 +255,5 @@
 65481,REST API: Support registering one sideloaded file under multiple image sizes,new,REST API,,enhancement,normal,7.1,trunk,has-patch needs-testing has-unit-tests,06/18/2026 08:46:34 AM,06/25/2026 10:14:33 AM
 65505,"WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",new,AI,,defect (bug),normal,7.1,trunk,has-patch has-unit-tests needs-testing,06/22/2026 06:46:10 AM,06/25/2026 09:19:46 AM
 65513,Media Library modal shows wrong count on first upload and does not reset after image deletion,new,Media,,defect (bug),normal,Awaiting Review,,needs-testing needs-test-info has-screenshots needs-patch,06/22/2026 12:12:45 PM,06/24/2026 05:12:41 PM
+65549,Media: Sideload animated GIF → video companions and clean them up on delete,reviewing,Media,adamsilverstein,defect (bug),normal,Awaiting Review,,has-patch has-unit-tests needs-testing,06/27/2026 11:23:05 PM,06/27/2026 11:24:51 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing,04/09/2025 11:10:53 AM,06/16/2026 10:29:38 PM
