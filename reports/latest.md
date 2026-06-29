@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-06-29 11:15
+Generated: 2026-06-29 17:15
 
 ## Summary
 
@@ -1711,7 +1711,7 @@ No tickets in this section.
 | media_has_patch | 2026-06-28 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-28/media_has_patch.csv` |
 | accessibility_has_patch | 2026-06-29 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-29/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-06-29 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-29/docs_needs_testing.csv` |
-| general_needs_testing | 2026-06-29 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-29/general_needs_testing.csv` |
+| general_needs_testing | 2026-06-29 | 258 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-29/general_needs_testing.csv` |
 | good_first_bugs | 2026-06-29 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-29/good_first_bugs.csv` |
 | media_has_patch | 2026-06-29 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-29/media_has_patch.csv` |
 

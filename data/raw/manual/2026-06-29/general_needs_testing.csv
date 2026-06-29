@@ -20,7 +20,6 @@
 21700,Problem obtaining the Feed of an archive of tag “RSS”,new,Canonical,,defect (bug),normal,,3.4.1,needs-testing needs-patch,08/27/2012 10:40:33 AM,06/04/2019 07:23:18 PM
 21989,update_option() calls sanitize_option() twice when option does not exist,accepted,"Options, Meta APIs",pbearne,defect (bug),normal,Future Release,,dev-feedback has-patch needs-testing,09/25/2012 05:04:34 AM,11/19/2025 08:11:57 PM
 22041,Importer dies silently when multisite upload limit is reached,reopened,Import,,enhancement,normal,,,needs-patch needs-testing,09/28/2012 05:58:57 PM,06/04/2019 08:03:50 PM
-22116,bug in dynamic_sidebar function,reviewing,Widgets,SergeyBiryukov,defect (bug),normal,7.1,3.4.2,needs-testing has-patch,10/06/2012 12:19:48 PM,06/20/2026 11:27:42 AM
 22330,Optimize regexes to remove protocol from URL,new,Formatting,,enhancement,normal,,3.4.2,has-patch needs-unit-tests needs-testing,10/31/2012 09:30:48 AM,07/08/2025 03:20:35 AM
 22367,"Usernames with ""@"" char are assumed email addresses, causing incorrect look-up in several places",reviewing,Users,johnjamesjacoby,defect (bug),normal,Awaiting Review,,has-patch needs-testing,11/06/2012 12:45:19 AM,08/01/2022 07:50:23 PM
 22558,Attachment term counts feels/are inaccurate,new,Media,,defect (bug),normal,Awaiting Review,,2nd-opinion needs-testing,11/23/2012 04:21:26 PM,03/03/2021 05:04:28 PM
@@ -245,7 +244,7 @@
 65171,wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs,new,Editor,,defect (bug),normal,Awaiting Review,,has-patch needs-unit-tests needs-testing,05/05/2026 09:12:28 PM,05/14/2026 11:31:38 AM
 65263,Colors from theme.json doesnt parse for hover states,new,Editor,,defect (bug),normal,7.0.1,7.0,needs-testing,05/19/2026 02:18:53 AM,06/07/2026 06:55:14 AM
 65281,Custom Time & Date Format Fields Allow Empty Save Instead of Validation,new,Date/Time,,defect (bug),normal,Awaiting Review,,has-patch has-unit-tests has-test-info needs-testing,05/20/2026 06:43:42 PM,06/15/2026 02:26:48 PM
-65329,Move sideload metadata writes to the finalize endpoint,assigned,Media,adamsilverstein,enhancement,normal,7.1,,has-patch has-unit-tests needs-testing,05/22/2026 10:26:49 PM,06/28/2026 12:25:36 AM
+65329,Move sideload metadata writes to the finalize endpoint,assigned,Media,adamsilverstein,enhancement,normal,7.1,,has-patch has-unit-tests needs-testing,05/22/2026 10:26:49 PM,06/29/2026 06:13:34 PM
 65345,Site Icon subsizes use wrong array key 'width ' instead of 'width',new,Media,,defect (bug),normal,7.1,4.3,has-patch needs-testing has-unit-tests,05/26/2026 10:59:28 AM,06/15/2026 12:31:02 PM
 65350,Possible duplicate update event firing during wp_maybe_auto_update,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,7.0,needs-testing 2nd-opinion,05/26/2026 02:22:13 PM,06/06/2026 03:27:02 AM
 65381,Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0,new,Editor,,defect (bug),normal,Awaiting Review,,needs-testing reporter-feedback,06/01/2026 07:07:17 AM,06/11/2026 10:45:49 PM
