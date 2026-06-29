@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-06-28 05:11
+Generated: 2026-06-28 23:13
 
 ## Summary
 
@@ -346,7 +346,7 @@ Generated: 2026-06-28 05:11
 - Owner: SergeyBiryukov
 - Keywords: needs-testing has-patch
 - Created: 10/06/2012 12:19:48 PM
-- Modified: 06/13/2026 10:40:32 PM
+- Modified: 06/20/2026 11:27:42 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: very old ticket -8
 - Score breakdown:
   - +65: Track Priority
