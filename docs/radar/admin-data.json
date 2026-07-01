@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-01T11:20:43",
+  "generated": "2026-07-01T17:21:24",
   "summary": {
     "unique_tickets": 289,
     "priority_targets": 12,
@@ -111,7 +111,7 @@
         "owner": "rajeshcp",
         "comments": "Unknown",
         "created": "04/09/2026 04:50:52 PM",
-        "modified": "07/01/2026 03:42:53 PM",
+        "modified": "07/01/2026 05:42:12 PM",
         "keywords": "has-patch needs-testing has-test-info has-unit-tests",
         "signals": [
           {
@@ -180,94 +180,6 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65481",
-        "url": "https://core.trac.wordpress.org/ticket/65481",
-        "score": 164,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "REST API: Support registering one sideloaded file under multiple image sizes",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "REST API",
-        "owner": "adamsilverstein",
-        "comments": "Unknown",
-        "created": "06/18/2026 08:46:34 AM",
-        "modified": "07/01/2026 05:28:45 AM",
-        "keywords": "has-patch needs-testing has-unit-tests commit",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
@@ -712,6 +624,83 @@
           }
         ],
         "discovery_track": "Media Has Patch",
+        "review": {}
+      },
+      {
+        "ticket_id": "65481",
+        "url": "https://core.trac.wordpress.org/ticket/65481",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "REST API: Support registering one sideloaded file under multiple image sizes",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "REST API",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/18/2026 08:46:34 AM",
+        "modified": "06/18/2026 08:47:20 AM",
+        "keywords": "has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
         "review": {}
       },
       {
@@ -16796,7 +16785,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "10/22/2022 11:05:39 AM",
-        "modified": "06/16/2026 05:59:31 PM",
+        "modified": "06/23/2026 08:04:16 PM",
         "keywords": "good-first-bug has-patch needs-testing",
         "signals": [
           {

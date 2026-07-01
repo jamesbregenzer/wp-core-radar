@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-01 11:20
+Generated: 2026-07-01 17:21
 
 ## Summary
 
@@ -56,7 +56,7 @@ Generated: 2026-07-01 11:20
 - Owner: rajeshcp
 - Keywords: has-patch needs-testing has-test-info has-unit-tests
 - Created: 04/09/2026 04:50:52 PM
-- Modified: 07/01/2026 03:42:53 PM
+- Modified: 07/01/2026 05:42:12 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -67,29 +67,7 @@ Generated: 2026-07-01 11:20
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#65481](https://core.trac.wordpress.org/ticket/65481) — REST API: Support registering one sideloaded file under multiple image sizes
-
-- Score: **164**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: REST API
-- Trac status: Assigned
-- Milestone: 7.1
-- Owner: adamsilverstein
-- Keywords: has-patch needs-testing has-unit-tests commit
-- Created: 06/18/2026 08:46:34 AM
-- Modified: 07/01/2026 05:28:45 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +20: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 4. [#65504](https://core.trac.wordpress.org/ticket/65504) — WP_AI_Client_Ability_Function_Resolver::execute_abilities() answers non-ability function calls with a spurious error
+#### 3. [#65504](https://core.trac.wordpress.org/ticket/65504) — WP_AI_Client_Ability_Function_Resolver::execute_abilities() answers non-ability function calls with a spurious error
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -111,7 +89,7 @@ Generated: 2026-07-01 11:20
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+#### 4. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -133,7 +111,7 @@ Generated: 2026-07-01 11:20
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+#### 5. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -156,7 +134,7 @@ Generated: 2026-07-01 11:20
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+#### 6. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -179,7 +157,7 @@ Generated: 2026-07-01 11:20
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+#### 7. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
 
 - Score: **161**
 - Track/query: Media: Has Patch
@@ -197,6 +175,26 @@ Generated: 2026-07-01 11:20
   - +35: Has Patch
   - +20: Preferred Component
   - +6: Has Owner
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 8. [#65481](https://core.trac.wordpress.org/ticket/65481) — REST API: Support registering one sideloaded file under multiple image sizes
+
+- Score: **158**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: REST API
+- Trac status: New
+- Milestone: 7.1
+- Keywords: has-patch needs-testing has-unit-tests
+- Created: 06/18/2026 08:46:34 AM
+- Modified: 06/18/2026 08:47:20 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 9. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
@@ -1426,7 +1424,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Milestone: 7.1
 - Keywords: good-first-bug has-patch needs-testing
 - Created: 10/22/2022 11:05:39 AM
-- Modified: 06/16/2026 05:59:31 PM
+- Modified: 06/23/2026 08:04:16 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.
@@ -1723,7 +1721,7 @@ No tickets in this section.
 | media_has_patch | 2026-06-30 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-30/media_has_patch.csv` |
 | accessibility_has_patch | 2026-07-01 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-07-01 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/docs_needs_testing.csv` |
-| general_needs_testing | 2026-07-01 | 257 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/general_needs_testing.csv` |
+| general_needs_testing | 2026-07-01 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/general_needs_testing.csv` |
 | good_first_bugs | 2026-07-01 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/good_first_bugs.csv` |
 | media_has_patch | 2026-07-01 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/media_has_patch.csv` |
 
