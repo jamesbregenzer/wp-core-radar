@@ -16,7 +16,7 @@
 40126,Mobile has two media editing experiences,new,Media,,defect (bug),normal,Awaiting Review,,phase-3-media-triage,03/12/2017 12:38:39 PM,10/25/2023 05:04:49 AM
 41462,Promote media details admin page to full post page,new,Media,,enhancement,normal,Future Release,4.9,needs-design phase-3-media-triage,07/27/2017 05:43:26 PM,10/18/2023 04:01:34 PM
 42751,Can we please  enqueue media-views independently ?,new,Media,,defect (bug),normal,Awaiting Review,4.9,phase-3-media-triage,11/29/2017 10:14:11 PM,06/13/2024 01:56:59 AM
-43178,Rethinking what “captions” means for video,accepted,Media,joedolson,enhancement,normal,7.1,5.1,has-patch has-ux-feedback phase-3-media-triage needs-testing has-test-info,01/29/2018 04:32:59 PM,07/01/2026 07:12:19 AM
+43178,Rethinking what “captions” means for video,accepted,Media,joedolson,enhancement,normal,7.1,5.1,has-patch has-ux-feedback phase-3-media-triage needs-testing has-test-info,01/29/2018 04:32:59 PM,07/01/2026 02:05:04 PM
 43658,Media attachment filter drop-down mime types in grid mode is not properly filtered by available mime types,assigned,Media,,defect (bug),normal,Future Release,4.9.4,has-screenshots phase-3-media-triage,03/29/2018 07:07:42 AM,10/18/2023 04:51:19 PM
 53013,Improve media library grid management tools,accepted,Media,joedolson,enhancement,normal,Future Release,,phase-3-media-triage,04/09/2021 07:07:03 PM,07/02/2024 03:35:19 PM
 59742,Media library should display the number of pages/posts/urls a particular media file is being used in.,assigned,Media,,enhancement,normal,Future Release,,phase-3-media-triage,10/26/2023 08:19:37 AM,08/07/2024 03:49:27 PM
