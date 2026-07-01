@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T23:19:19",
+  "generated": "2026-07-01T05:20:02",
   "summary": {
     "unique_tickets": 289,
     "priority_targets": 12,
@@ -78,6 +78,182 @@
             "label": "Preferred Component",
             "detail": "Media",
             "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65054",
+        "url": "https://core.trac.wordpress.org/ticket/65054",
+        "score": 164,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "$_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Security",
+        "owner": "rajeshcp",
+        "comments": "Unknown",
+        "created": "04/09/2026 04:50:52 PM",
+        "modified": "07/01/2026 05:17:13 AM",
+        "keywords": "has-patch needs-testing has-test-info has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65481",
+        "url": "https://core.trac.wordpress.org/ticket/65481",
+        "score": 164,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "REST API: Support registering one sideloaded file under multiple image sizes",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "REST API",
+        "owner": "adamsilverstein",
+        "comments": "Unknown",
+        "created": "06/18/2026 08:46:34 AM",
+        "modified": "07/01/2026 05:28:45 AM",
+        "keywords": "has-patch needs-testing has-unit-tests commit",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
             "polarity": "positive"
           },
           {
@@ -539,83 +715,6 @@
         "review": {}
       },
       {
-        "ticket_id": "65481",
-        "url": "https://core.trac.wordpress.org/ticket/65481",
-        "score": 158,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "REST API: Support registering one sideloaded file under multiple image sizes",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "REST API",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/18/2026 08:46:34 AM",
-        "modified": "06/18/2026 08:47:20 AM",
-        "keywords": "has-patch needs-testing has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "65505",
         "url": "https://core.trac.wordpress.org/ticket/65505",
         "score": 158,
@@ -861,83 +960,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch early dev-feedback needs-testing has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "42670",
-        "url": "https://core.trac.wordpress.org/ticket/42670",
-        "score": 154,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Symlinked plugin makes plugin_basename function return wrong basename",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Unknown",
-        "owner": "brianhenryie",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-unit-tests needs-testing has-patch has-test-info dev-feedback",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -1509,6 +1531,83 @@
         "review": {}
       },
       {
+        "ticket_id": "42670",
+        "url": "https://core.trac.wordpress.org/ticket/42670",
+        "score": 154,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Symlinked plugin makes plugin_basename function return wrong basename",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Unknown",
+        "owner": "brianhenryie",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "has-unit-tests needs-testing has-patch has-test-info dev-feedback",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "54034",
         "url": "https://core.trac.wordpress.org/ticket/54034",
         "score": 154,
@@ -1676,94 +1775,6 @@
         "comments": "Unknown",
         "created": "04/09/2026 01:06:03 PM",
         "modified": "05/19/2026 08:54:37 PM",
-        "keywords": "has-patch needs-testing has-test-info has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65054",
-        "url": "https://core.trac.wordpress.org/ticket/65054",
-        "score": 154,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "$_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Security",
-        "owner": "rajeshcp",
-        "comments": "Unknown",
-        "created": "04/09/2026 04:50:52 PM",
-        "modified": "05/19/2026 08:54:48 PM",
         "keywords": "has-patch needs-testing has-test-info has-unit-tests",
         "signals": [
           {
@@ -8054,20 +8065,20 @@
         "review": {}
       },
       {
-        "ticket_id": "37255",
-        "url": "https://core.trac.wordpress.org/ticket/37255",
-        "score": 121,
+        "ticket_id": "65381",
+        "url": "https://core.trac.wordpress.org/ticket/65381",
+        "score": 123,
         "tier_class": "standard",
         "tier_label": "Standard",
-        "summary": "Update attachment functions to accept a post object in addition to ID",
+        "summary": "Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0",
         "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "Media",
-        "owner": "johnbillion",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
         "comments": "Unknown",
-        "created": "07/02/2016 09:26:02 AM",
-        "modified": "05/12/2025 01:35:34 AM",
-        "keywords": "needs-testing needs-dev-note needs-test-info 2nd-opinion close",
+        "created": "06/01/2026 07:07:17 AM",
+        "modified": "06/11/2026 10:45:49 PM",
+        "keywords": "needs-testing reporter-feedback",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -8078,12 +8089,16 @@
             "class": "testing"
           },
           {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
+            "label": "Reporter Feedback +10",
+            "class": "feedback"
           },
           {
-            "label": "Has Owner +6",
-            "class": "owner"
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
           }
         ],
         "score_breakdown": [
@@ -8102,17 +8117,24 @@
             "polarity": "positive"
           },
           {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
+            "points": "+10",
+            "label": "Reporter Feedback",
+            "detail": "",
+            "display": "Reporter Feedback",
             "polarity": "positive"
           },
           {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
           }
         ],
@@ -8560,72 +8582,6 @@
         "review": {}
       },
       {
-        "ticket_id": "65381",
-        "url": "https://core.trac.wordpress.org/ticket/65381",
-        "score": 115,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Editor",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/01/2026 07:07:17 AM",
-        "modified": "06/11/2026 10:45:49 PM",
-        "keywords": "needs-testing reporter-feedback",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Reporter Feedback +10",
-            "class": "feedback"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Reporter Feedback",
-            "detail": "",
-            "display": "Reporter Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "65480",
         "url": "https://core.trac.wordpress.org/ticket/65480",
         "score": 115,
@@ -8740,6 +8696,83 @@
             "label": "Setup Complexity",
             "detail": "External Service Or Api",
             "display": "Setup Complexity: External Service Or Api",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "37255",
+        "url": "https://core.trac.wordpress.org/ticket/37255",
+        "score": 113,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Update attachment functions to accept a post object in addition to ID",
+        "track": "General: Needs Testing",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "johnbillion",
+        "comments": "Unknown",
+        "created": "07/02/2016 09:26:02 AM",
+        "modified": "05/12/2025 01:35:34 AM",
+        "keywords": "needs-testing needs-dev-note needs-test-info 2nd-opinion close",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Ticket Age: Very Old Ticket -8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "-8",
+            "label": "Ticket Age",
+            "detail": "Very Old Ticket",
+            "display": "Ticket Age: Very Old Ticket",
             "polarity": "negative"
           }
         ],
@@ -17216,99 +17249,6 @@
         }
       },
       {
-        "ticket_id": "65419",
-        "url": "https://core.trac.wordpress.org/ticket/65419",
-        "score": 164,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode",
-        "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "General",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "06/05/2026 09:11:00 AM",
-        "modified": "06/16/2026 06:38:36 AM",
-        "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "tested",
-          "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
-          "notes": "Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.",
-          "updated_at": "2026-06-19T17:38:19.873Z"
-        }
-      },
-      {
         "ticket_id": "64707",
         "url": "https://core.trac.wordpress.org/ticket/64707",
         "score": 156,
@@ -17532,6 +17472,99 @@
           "reason": "Verified patch behavior locally and reported results on Trac.",
           "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
           "updated_at": "2026-06-15T23:07:33.995Z"
+        }
+      },
+      {
+        "ticket_id": "65419",
+        "url": "https://core.trac.wordpress.org/ticket/65419",
+        "score": 154,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode",
+        "track": "General: Needs Testing",
+        "status": "Accepted",
+        "component": "General",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "06/05/2026 09:11:00 AM",
+        "modified": "06/09/2026 04:50:17 PM",
+        "keywords": "has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "tested",
+          "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
+          "notes": "Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.",
+          "updated_at": "2026-06-19T17:38:19.873Z"
         }
       }
     ],
