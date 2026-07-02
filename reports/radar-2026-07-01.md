@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-01 17:21
+Generated: 2026-07-01 23:22
 
 ## Summary
 
@@ -1439,34 +1439,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
-
-- Score: **172**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Taxonomy
-- Trac status: Reviewing
-- Milestone: 7.1
-- Owner: audrasjb
-- Keywords: has-patch has-unit-tests needs-testing
-- Created: 04/09/2025 11:10:53 AM
-- Modified: 06/16/2026 10:29:38 PM
-- Review status: tested
-- Review reason: Positive test result
-- Review notes: Applied PR #11534 locally, ran Tests_Term successfully, and verified basic category/post taxonomy workflows in wp-admin and on the front end.
-- Review updated: 2026-06-16T22:30:13.948Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +20: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 5. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
+#### 4. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
 
 - Score: **170**
 - Track/query: General: Needs Testing
@@ -1490,7 +1463,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
+#### 5. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
 
 - Score: **168**
 - Track/query: General: Needs Testing
@@ -1515,7 +1488,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
+#### 6. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -1541,6 +1514,33 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
+#### 7. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
+
+- Score: **162**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Taxonomy
+- Trac status: Reviewing
+- Milestone: 7.1
+- Owner: audrasjb
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 04/09/2025 11:10:53 AM
+- Modified: 06/13/2026 02:21:45 AM
+- Review status: tested
+- Review reason: Positive test result
+- Review notes: Applied PR #11534 locally, ran Tests_Term successfully, and verified basic category/post taxonomy workflows in wp-admin and on the front end.
+- Review updated: 2026-06-16T22:30:13.948Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
 #### 8. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
 
 - Score: **156**
@@ -1552,7 +1552,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: westonruter
 - Keywords: has-patch needs-testing
 - Created: 02/23/2026 03:51:38 PM
-- Modified: 06/17/2026 01:41:12 AM
+- Modified: 06/23/2026 06:59:16 PM
 - Review status: commented
 - Review reason: Reviewed patch, tested in Playground, submitted Trac feedback.
 - Review notes: Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.
@@ -1721,7 +1721,7 @@ No tickets in this section.
 | media_has_patch | 2026-06-30 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-06-30/media_has_patch.csv` |
 | accessibility_has_patch | 2026-07-01 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-07-01 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/docs_needs_testing.csv` |
-| general_needs_testing | 2026-07-01 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/general_needs_testing.csv` |
+| general_needs_testing | 2026-07-01 | 255 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/general_needs_testing.csv` |
 | good_first_bugs | 2026-07-01 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/good_first_bugs.csv` |
 | media_has_patch | 2026-07-01 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-01/media_has_patch.csv` |
 
