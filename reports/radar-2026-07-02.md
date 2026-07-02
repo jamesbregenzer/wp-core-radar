@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-02 05:22
+Generated: 2026-07-02 11:23
 
 ## Summary
 
@@ -277,28 +277,7 @@ Generated: 2026-07-02 05:22
 
 ## Top Opportunities
 
-#### 1. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
-
-- Score: **160**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Administration
-- Trac status: Reopened
-- Milestone: Future Release
-- Keywords: has-patch needs-testing dev-feedback
-- Created: 03/10/2016 09:18:06 PM
-- Modified: 06/17/2026 12:45:20 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: recently updated <=14 days +20, ticket age: very old ticket -8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +18: Dev Feedback
-  - +20: Freshness
-  - -8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 2. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
+#### 1. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
 
 - Score: **160**
 - Track/query: General: Needs Testing
@@ -319,7 +298,7 @@ Generated: 2026-07-02 05:22
   - -10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
+#### 2. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -339,7 +318,7 @@ Generated: 2026-07-02 05:22
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#22116](https://core.trac.wordpress.org/ticket/22116) — bug in dynamic_sidebar function
+#### 3. [#22116](https://core.trac.wordpress.org/ticket/22116) — bug in dynamic_sidebar function
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -362,7 +341,7 @@ Generated: 2026-07-02 05:22
   - -8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#63109](https://core.trac.wordpress.org/ticket/63109) — test_get_block_editor_settings_theme_json_settings failing
+#### 4. [#63109](https://core.trac.wordpress.org/ticket/63109) — test_get_block_editor_settings_theme_json_settings failing
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -382,7 +361,7 @@ Generated: 2026-07-02 05:22
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#63197](https://core.trac.wordpress.org/ticket/63197) — Sanity Checks in mkdir and delete for FTPext Filesystem
+#### 5. [#63197](https://core.trac.wordpress.org/ticket/63197) — Sanity Checks in mkdir and delete for FTPext Filesystem
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -402,7 +381,7 @@ Generated: 2026-07-02 05:22
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#41305](https://core.trac.wordpress.org/ticket/41305) — Add lazily evaluated translations
+#### 6. [#41305](https://core.trac.wordpress.org/ticket/41305) — Add lazily evaluated translations
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -420,7 +399,7 @@ Generated: 2026-07-02 05:22
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
+#### 7. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -438,7 +417,7 @@ Generated: 2026-07-02 05:22
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#54034](https://core.trac.wordpress.org/ticket/54034) — Update jQuery UI Touch Punch to the latest version
+#### 8. [#54034](https://core.trac.wordpress.org/ticket/54034) — Update jQuery UI Touch Punch to the latest version
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -456,7 +435,7 @@ Generated: 2026-07-02 05:22
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#58801](https://core.trac.wordpress.org/ticket/58801) — Prefetch Block Editor from Posts page
+#### 9. [#58801](https://core.trac.wordpress.org/ticket/58801) — Prefetch Block Editor from Posts page
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -474,7 +453,7 @@ Generated: 2026-07-02 05:22
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#65052](https://core.trac.wordpress.org/ticket/65052) — Nonce check order flaw in post-quickdraft-save
+#### 10. [#65052](https://core.trac.wordpress.org/ticket/65052) — Nonce check order flaw in post-quickdraft-save
 
 - Score: **154**
 - Track/query: General: Needs Testing
@@ -494,6 +473,27 @@ Generated: 2026-07-02 05:22
   - +6: Has Owner
   - +10: Freshness
   - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 11. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
+
+- Score: **150**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Administration
+- Trac status: Reopened
+- Milestone: Future Release
+- Keywords: has-patch needs-testing dev-feedback
+- Created: 03/10/2016 09:18:06 PM
+- Modified: 06/17/2026 12:45:20 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: updated within 60 days +10, ticket age: very old ticket -8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +10: Freshness
+  - -8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 12. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
@@ -1282,7 +1282,7 @@ No tickets in this section.
 - Owner: adamsilverstein
 - Keywords: has-patch needs-testing 2nd-opinion
 - Created: 08/01/2022 06:20:19 PM
-- Modified: 06/17/2026 12:09:06 PM
+- Modified: 06/22/2026 11:09:42 PM
 - Review status: watch
 - Review reason: Valid Core testing opportunity, but mediaelement upgrade testing is too broad for today’s easy-win queue.
 - Review notes: This ticket has an active PR, patch, owner, and needs-testing, so it is a legitimate contribution candidate. However, the update touches a large external library upgrade with prior UI/icon, shortcode, and accessibility concerns, making it better suited for a focused local testing pass rather than a quick comment. No testing or Core comment left today. Revisit when there is time for shortcode audio/video testing, browser console checks, and keyboard accessibility validation.
@@ -1297,7 +1297,33 @@ No tickets in this section.
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#60628](https://core.trac.wordpress.org/ticket/60628) — Issues with avif image  imagecreatefromavif not working. Resizing not possible.
+#### 4. [#65392](https://core.trac.wordpress.org/ticket/65392) — "Show more comments" button in comments metabox doesn't load new comments if they are of a type different than 'comment'
+
+- Score: **154**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Comments
+- Trac status: Assigned
+- Milestone: Awaiting Review
+- Keywords: has-patch 2nd-opinion dev-feedback needs-testing
+- Created: 06/02/2026 01:35:42 PM
+- Modified: 06/05/2026 11:39:53 AM
+- Review status: watch
+- Review reason: PR exists, but useful testing requires WooCommerce/custom comment-type setup.
+- Review notes: PR #12055 exists, but Playground does not provide the needed WooCommerce/custom comment-type scenario out of the box. Testing likely requires a local setup with seeded non-comment comment types, probably via WooCommerce order notes or direct comment data creation. No Trac/GitHub comment left yet and no keywords updated.
+- Review updated: 2026-06-17T03:10:34.142Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: updated within 60 days +10, ticket age: mature but not ancient +8, setup complexity: custom content type setup -12
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +10: Freshness
+  - +8: Ticket Age
+  - -12: Setup Complexity
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 5. [#60628](https://core.trac.wordpress.org/ticket/60628) — Issues with avif image  imagecreatefromavif not working. Resizing not possible.
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1322,31 +1348,6 @@ No tickets in this section.
   - +20: Preferred Component
   - +6: Has Owner
   - -18: Setup Complexity
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 5. [#65392](https://core.trac.wordpress.org/ticket/65392) — "Show more comments" button in comments metabox doesn't load new comments if they are of a type different than 'comment'
-
-- Score: **146**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Comments
-- Trac status: Assigned
-- Milestone: Awaiting Review
-- Keywords: has-patch 2nd-opinion dev-feedback needs-testing
-- Created: 06/02/2026 01:35:42 PM
-- Modified: 06/05/2026 11:39:53 AM
-- Review status: watch
-- Review reason: PR exists, but useful testing requires WooCommerce/custom comment-type setup.
-- Review notes: PR #12055 exists, but Playground does not provide the needed WooCommerce/custom comment-type scenario out of the box. Testing likely requires a local setup with seeded non-comment comment types, probably via WooCommerce order notes or direct comment data creation. No Trac/GitHub comment left yet and no keywords updated.
-- Review updated: 2026-06-17T03:10:34.142Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: updated within 60 days +10, setup complexity: custom content type setup -12
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +18: Dev Feedback
-  - +10: Freshness
-  - -12: Setup Complexity
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Completed / Acted On

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-02T05:22:44",
+  "generated": "2026-07-02T11:23:28",
   "summary": {
     "unique_tickets": 289,
     "priority_targets": 12,
@@ -1014,94 +1014,6 @@
     ],
     "top": [
       {
-        "ticket_id": "36201",
-        "url": "https://core.trac.wordpress.org/ticket/36201",
-        "score": 160,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Admin Pagination URLs Use Wrong Hostname",
-        "track": "General: Needs Testing",
-        "status": "Reopened",
-        "component": "Administration",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "03/10/2016 09:18:06 PM",
-        "modified": "06/17/2026 12:45:20 PM",
-        "keywords": "has-patch needs-testing dev-feedback",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Very Old Ticket -8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "-8",
-            "label": "Ticket Age",
-            "detail": "Very Old Ticket",
-            "display": "Ticket Age: Very Old Ticket",
-            "polarity": "negative"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "40370",
         "url": "https://core.trac.wordpress.org/ticket/40370",
         "score": 160,
@@ -1910,6 +1822,94 @@
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "36201",
+        "url": "https://core.trac.wordpress.org/ticket/36201",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Admin Pagination URLs Use Wrong Hostname",
+        "track": "General: Needs Testing",
+        "status": "Reopened",
+        "component": "Administration",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "03/10/2016 09:18:06 PM",
+        "modified": "06/17/2026 12:45:20 PM",
+        "keywords": "has-patch needs-testing dev-feedback",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Very Old Ticket -8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "-8",
+            "label": "Ticket Age",
+            "detail": "Very Old Ticket",
+            "display": "Ticket Age: Very Old Ticket",
+            "polarity": "negative"
           }
         ],
         "discovery_track": "General Needs Testing",
@@ -16274,7 +16274,7 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "08/01/2022 06:20:19 PM",
-        "modified": "06/17/2026 12:09:06 PM",
+        "modified": "06/22/2026 11:09:42 PM",
         "keywords": "has-patch needs-testing 2nd-opinion",
         "signals": [
           {
@@ -16352,6 +16352,110 @@
           "reason": "Valid Core testing opportunity, but mediaelement upgrade testing is too broad for today\u2019s easy-win queue.",
           "notes": "This ticket has an active PR, patch, owner, and needs-testing, so it is a legitimate contribution candidate. However, the update touches a large external library upgrade with prior UI/icon, shortcode, and accessibility concerns, making it better suited for a focused local testing pass rather than a quick comment. No testing or Core comment left today. Revisit when there is time for shortcode audio/video testing, browser console checks, and keyboard accessibility validation.",
           "updated_at": "2026-06-19T17:15:33.912Z"
+        }
+      },
+      {
+        "ticket_id": "65392",
+        "url": "https://core.trac.wordpress.org/ticket/65392",
+        "score": 154,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "\"Show more comments\" button in comments metabox doesn't load new comments if they are of a type different than 'comment'",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Comments",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/02/2026 01:35:42 PM",
+        "modified": "06/05/2026 11:39:53 AM",
+        "keywords": "has-patch 2nd-opinion dev-feedback needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          },
+          {
+            "label": "Setup Complexity: Custom Content Type Setup -12",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          },
+          {
+            "points": "-12",
+            "label": "Setup Complexity",
+            "detail": "Custom Content Type Setup",
+            "display": "Setup Complexity: Custom Content Type Setup",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "watch",
+          "reason": "PR exists, but useful testing requires WooCommerce/custom comment-type setup.",
+          "notes": "PR #12055 exists, but Playground does not provide the needed WooCommerce/custom comment-type scenario out of the box. Testing likely requires a local setup with seeded non-comment comment types, probably via WooCommerce order notes or direct comment data creation. No Trac/GitHub comment left yet and no keywords updated.",
+          "updated_at": "2026-06-17T03:10:34.142Z"
         }
       },
       {
@@ -16456,99 +16560,6 @@
           "reason": "Valid Media ticket, but AVIF testing depends on local image library support.",
           "notes": "Ticket has a patch, unit tests, and Media component relevance, but useful testing requires an environment with working AVIF support through GD or ImageMagick. This is likely not a quick Playground ticket and may require local image-processing setup before meaningful feedback can be left. No Trac/GitHub comment left and no keywords updated.",
           "updated_at": "2026-06-17T03:14:18.844Z"
-        }
-      },
-      {
-        "ticket_id": "65392",
-        "url": "https://core.trac.wordpress.org/ticket/65392",
-        "score": 146,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "\"Show more comments\" button in comments metabox doesn't load new comments if they are of a type different than 'comment'",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Comments",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/02/2026 01:35:42 PM",
-        "modified": "06/05/2026 11:39:53 AM",
-        "keywords": "has-patch 2nd-opinion dev-feedback needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Setup Complexity: Custom Content Type Setup -12",
-            "class": "complexity"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "-12",
-            "label": "Setup Complexity",
-            "detail": "Custom Content Type Setup",
-            "display": "Setup Complexity: Custom Content Type Setup",
-            "polarity": "negative"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "watch",
-          "reason": "PR exists, but useful testing requires WooCommerce/custom comment-type setup.",
-          "notes": "PR #12055 exists, but Playground does not provide the needed WooCommerce/custom comment-type scenario out of the box. Testing likely requires a local setup with seeded non-comment comment types, probably via WooCommerce order notes or direct comment data creation. No Trac/GitHub comment left yet and no keywords updated.",
-          "updated_at": "2026-06-17T03:10:34.142Z"
         }
       }
     ],
