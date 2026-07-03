@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-03T05:25:42",
+  "generated": "2026-07-03T11:26:32",
   "summary": {
     "unique_tickets": 289,
     "priority_targets": 12,
@@ -7812,61 +7812,6 @@
         "review": {}
       },
       {
-        "ticket_id": "53013",
-        "url": "https://core.trac.wordpress.org/ticket/53013",
-        "score": 126,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Improve media library grid management tools",
-        "track": "Media: Has Patch",
-        "status": "Accepted",
-        "component": "Media",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "04/09/2021 07:07:03 PM",
-        "modified": "07/02/2024 03:35:19 PM",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
         "ticket_id": "60250",
         "url": "https://core.trac.wordpress.org/ticket/60250",
         "score": 126,
@@ -8524,6 +8469,72 @@
           }
         ],
         "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "53013",
+        "url": "https://core.trac.wordpress.org/ticket/53013",
+        "score": 116,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Improve media library grid management tools",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "04/09/2021 07:07:03 PM",
+        "modified": "07/02/2024 03:35:19 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Stale Activity >2 Years -10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "-10",
+            "label": "Freshness",
+            "detail": "Stale Activity >2 Years",
+            "display": "Freshness: Stale Activity >2 Years",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
