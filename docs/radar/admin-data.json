@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-02T17:24:11",
+  "generated": "2026-07-03T05:25:42",
   "summary": {
     "unique_tickets": 289,
     "priority_targets": 12,
@@ -716,7 +716,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/18/2026 08:46:34 AM",
-        "modified": "06/18/2026 08:47:20 AM",
+        "modified": "06/25/2026 10:14:33 AM",
         "keywords": "has-patch needs-testing has-unit-tests",
         "signals": [
           {
@@ -8594,8 +8594,8 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/18/2026 07:24:05 AM",
-        "modified": "06/18/2026 07:24:05 AM",
-        "keywords": "needs-testing",
+        "modified": "06/30/2026 04:18:18 PM",
+        "keywords": "needs-testing close",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
