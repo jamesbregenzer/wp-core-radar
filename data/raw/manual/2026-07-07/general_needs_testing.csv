@@ -90,7 +90,7 @@
 42833,WordPress forces non-ssl login in described circumstance even though FORCE_SSL_ADMIN is set in wp-config,new,Administration,,defect (bug),normal,Awaiting Review,4.9.1,needs-testing,12/07/2017 07:32:39 PM,09/21/2021 06:59:07 AM
 43010,Attribute Name Escape,new,Formatting,,enhancement,normal,Awaiting Review,,needs-testing needs-patch needs-unit-tests,01/02/2018 05:03:09 PM,01/18/2022 02:34:00 PM
 43019,Hook to validate post form data before save,new,Database,,enhancement,normal,Awaiting Review,,has-patch needs-testing,01/04/2018 01:23:07 PM,10/28/2021 03:26:41 AM
-43178,Rethinking what “captions” means for video,accepted,Media,joedolson,enhancement,normal,7.1,5.1,has-patch has-ux-feedback phase-3-media-triage needs-testing has-test-info,01/29/2018 04:32:59 PM,07/01/2026 10:17:33 PM
+43178,Rethinking what “captions” means for video,accepted,Media,joedolson,enhancement,normal,7.1,5.1,has-patch has-ux-feedback phase-3-media-triage needs-testing has-test-info,01/29/2018 04:32:59 PM,07/07/2026 04:26:40 PM
 43233,Network transients,new,Networks and Sites,,enhancement,normal,Future Release,2.9,has-patch 2nd-opinion needs-testing,02/06/2018 09:28:25 AM,04/01/2025 05:28:43 PM
 43746,Custom post type single post feed returns a 404 if has_archive is set to false when calling register_post_type(),reviewing,Rewrite Rules,SergeyBiryukov,defect (bug),normal,Future Release,4.9.5,2nd-opinion has-patch needs-testing has-unit-tests,04/12/2018 01:58:17 PM,04/13/2026 08:34:34 AM
 43749,Update zxcvbn to 4.4.2,assigned,External Libraries,,enhancement,normal,Future Release,,needs-testing needs-refresh,04/12/2018 04:32:33 PM,10/07/2025 10:45:45 AM
@@ -246,7 +246,7 @@
 65345,Site Icon subsizes use wrong array key 'width ' instead of 'width',new,Media,,defect (bug),normal,7.1,4.3,has-patch needs-testing has-unit-tests,05/26/2026 10:59:28 AM,07/02/2026 09:59:47 AM
 65350,Possible duplicate update event firing during wp_maybe_auto_update,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,7.0,needs-testing 2nd-opinion,05/26/2026 02:22:13 PM,06/06/2026 03:27:02 AM
 65381,Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0,new,Editor,,defect (bug),normal,Awaiting Review,,needs-testing reporter-feedback,06/01/2026 07:07:17 AM,06/11/2026 10:45:49 PM
-65395,"Site Health falsely reports ""Opcode cache is not enabled"" on shared hosting (WP 7.0)",new,Site Health,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/02/2026 09:05:13 PM,07/06/2026 11:03:48 AM
+65395,"Site Health falsely reports ""Opcode cache is not enabled"" on shared hosting (WP 7.0)",new,Site Health,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/02/2026 09:05:13 PM,07/07/2026 10:54:56 AM
 65417,Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol,new,Editor,,defect (bug),normal,7.1,,has-patch has-unit-tests needs-testing,06/05/2026 06:35:50 AM,07/02/2026 07:44:27 AM
 65480,Custom HTML Block hangs when switching tabs and scrolling (Gutenberg/WordPress 7.0),new,Editor,,defect (bug),normal,Awaiting Review,7.0,needs-testing close,06/18/2026 07:24:05 AM,06/30/2026 04:18:18 PM
 65496,Theme testing workflow will fail when multiple themes have uncommitted changes to built files.,new,Build/Test Tools,,defect (bug),normal,Future Release,,has-patch needs-testing,06/19/2026 06:39:45 PM,07/06/2026 08:17:47 AM
