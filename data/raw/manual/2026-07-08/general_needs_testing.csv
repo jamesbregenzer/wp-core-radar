@@ -224,7 +224,7 @@
 64025,wp_die() status code posts component updates (parent ticket: #64009),new,"Posts, Post Types",,enhancement,normal,Future Release,,has-patch needs-testing has-test-info,09/22/2025 04:46:04 PM,10/15/2025 02:37:09 PM
 64056,Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing close,09/30/2025 02:27:40 PM,10/01/2025 08:28:56 AM
 64155,Add stack trace to failed plugin update error notifications,new,Upgrade/Install,,enhancement,normal,Future Release,6.6,needs-testing has-patch,10/27/2025 03:53:33 PM,03/20/2026 01:17:36 AM
-64282,Erase personal data does not remove biographical info,new,Privacy,,defect (bug),normal,Awaiting Review,6.8.3,has-patch has-testing needs-unit-tests,11/20/2025 02:14:56 PM,05/31/2026 02:43:39 PM
+64282,Erase personal data does not remove biographical info,new,Privacy,,defect (bug),normal,Awaiting Review,6.8.3,has-patch has-testing needs-unit-tests,11/20/2025 02:14:56 PM,07/08/2026 07:24:18 PM
 64376,redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20),new,Canonical,,defect (bug),normal,Future Release,,has-patch has-unit-tests needs-testing,12/08/2025 11:00:27 AM,04/06/2026 02:07:16 AM
 64523,_do_query needs exception processing in class-wpdb.php,new,General,,defect (bug),normal,Awaiting Review,6.9,has-patch needs-testing needs-unit-tests has-pr,01/16/2026 09:40:38 PM,01/23/2026 05:36:40 AM
 64670,WP_REST_Posts_Controller::update_item() not passing parent to wp_unique_post_slug() for draft child,new,REST API,,defect (bug),normal,Awaiting Review,6.9.1,has-patch needs-testing,02/18/2026 05:35:30 PM,05/26/2026 12:02:55 PM
@@ -248,6 +248,7 @@
 65381,Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0,new,Editor,,defect (bug),normal,Awaiting Review,,needs-testing reporter-feedback,06/01/2026 07:07:17 AM,06/11/2026 10:45:49 PM
 65395,"Site Health falsely reports ""Opcode cache is not enabled"" on shared hosting (WP 7.0)",new,Site Health,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/02/2026 09:05:13 PM,07/07/2026 10:54:56 AM
 65480,Custom HTML Block hangs when switching tabs and scrolling (Gutenberg/WordPress 7.0),new,Editor,,defect (bug),normal,Awaiting Review,7.0,needs-testing close,06/18/2026 07:24:05 AM,06/30/2026 04:18:18 PM
+65491,Add support for the autofocus attribute within dialog elements,assigned,Formatting,afercia,enhancement,normal,7.1,,has-patch has-unit-tests needs-testing,06/19/2026 09:30:32 AM,07/08/2026 09:56:21 PM
 65496,Theme testing workflow will fail when multiple themes have uncommitted changes to built files.,new,Build/Test Tools,,defect (bug),normal,Future Release,,has-patch needs-testing,06/19/2026 06:39:45 PM,07/06/2026 08:17:47 AM
 65505,"WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",new,AI,,defect (bug),normal,7.1,trunk,has-patch has-unit-tests needs-testing has-test-info,06/22/2026 06:46:10 AM,07/08/2026 03:20:45 PM
 65515,"ThickBox ReferenceError: imgLoader is not defined due to ""use strict"" contamination in load-scripts.php",new,Script Loader,,defect (bug),normal,7.0.2,7.0,has-patch has-unit-tests needs-testing,06/22/2026 12:39:34 PM,07/06/2026 09:12:55 PM
