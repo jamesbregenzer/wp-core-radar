@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-09 11:46
+Generated: 2026-07-09 17:47
 
 ## Summary
 
@@ -1768,9 +1768,9 @@ No tickets in this section.
 | media_has_patch | 2026-07-08 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-08/media_has_patch.csv` |
 | accessibility_has_patch | 2026-07-09 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-09/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-07-09 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-09/docs_needs_testing.csv` |
-| general_needs_testing | 2026-07-09 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-09/general_needs_testing.csv` |
+| general_needs_testing | 2026-07-09 | 255 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-09/general_needs_testing.csv` |
 | good_first_bugs | 2026-07-09 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-09/good_first_bugs.csv` |
-| media_has_patch | 2026-07-09 | 24 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-09/media_has_patch.csv` |
+| media_has_patch | 2026-07-09 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-09/media_has_patch.csv` |
 
 ## Guardrail
 
