@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-10 05:49
+Generated: 2026-07-10 11:49
 
 ## Summary
 
@@ -110,7 +110,29 @@ Generated: 2026-07-10 05:49
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+#### 5. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
+
+- Score: **164**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: AI
+- Trac status: Reviewing
+- Milestone: 7.1
+- Owner: gziolo
+- Keywords: has-patch has-unit-tests needs-testing has-test-info 2nd-opinion
+- Created: 06/22/2026 06:46:10 AM
+- Modified: 07/10/2026 11:31:36 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 6. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -132,7 +154,7 @@ Generated: 2026-07-10 05:49
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+#### 7. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -155,7 +177,7 @@ Generated: 2026-07-10 05:49
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+#### 8. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -178,7 +200,7 @@ Generated: 2026-07-10 05:49
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+#### 9. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
 
 - Score: **161**
 - Track/query: Media: Has Patch
@@ -198,7 +220,7 @@ Generated: 2026-07-10 05:49
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#64714](https://core.trac.wordpress.org/ticket/64714) — Inconsistent vertical spacing between the headings and their content in the dashboard widgets: Site Health Status, Quick Edit, Activity, and WordPress Events and News.
+#### 10. [#64714](https://core.trac.wordpress.org/ticket/64714) — Inconsistent vertical spacing between the headings and their content in the dashboard widgets: Site Health Status, Quick Edit, Activity, and WordPress Events and News.
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -218,7 +240,7 @@ Generated: 2026-07-10 05:49
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
+#### 11. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -236,26 +258,6 @@ Generated: 2026-07-10 05:49
   - +30: Needs Testing
   - +20: Freshness
   - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 11. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
-
-- Score: **158**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: AI
-- Trac status: New
-- Milestone: 7.1
-- Keywords: has-patch has-unit-tests needs-testing has-test-info
-- Created: 06/22/2026 06:46:10 AM
-- Modified: 06/28/2026 08:48:41 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 12. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
@@ -1422,7 +1424,32 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
+#### 3. [#56886](https://core.trac.wordpress.org/ticket/56886) — Admin facing add site screen missing search engine visibility field
+
+- Score: **178**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Networks and Sites
+- Trac status: New
+- Milestone: 7.1
+- Keywords: good-first-bug has-patch needs-testing
+- Created: 10/22/2022 11:05:39 AM
+- Modified: 07/10/2026 01:36:37 PM
+- Review status: tested
+- Review reason: Positive test result
+- Review notes: Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.
+- Review updated: 2026-06-16T18:01:22.376Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has concrete milestone +8, freshness: recently updated <=14 days +20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +8: Has Concrete Milestone
+  - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 4. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -1449,32 +1476,34 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#56886](https://core.trac.wordpress.org/ticket/56886) — Admin facing add site screen missing search engine visibility field
+#### 5. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
 
-- Score: **168**
+- Score: **172**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
-- Component: Networks and Sites
-- Trac status: New
+- Component: General
+- Trac status: Accepted
 - Milestone: 7.1
-- Keywords: good-first-bug has-patch needs-testing
-- Created: 10/22/2022 11:05:39 AM
-- Modified: 06/04/2026 01:49:33 PM
+- Owner: joedolson
+- Keywords: has-patch needs-testing
+- Created: 06/05/2026 09:11:00 AM
+- Modified: 07/10/2026 11:42:30 AM
 - Review status: tested
-- Review reason: Positive test result
-- Review notes: Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.
-- Review updated: 2026-06-16T18:01:22.376Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has concrete milestone +8, freshness: updated within 60 days +10
+- Review reason: Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.
+- Review notes: Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.
+- Review updated: 2026-06-19T17:38:19.873Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
-  - +20: Good First Bug
   - +8: Has Concrete Milestone
-  - +10: Freshness
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
+#### 6. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
 
 - Score: **168**
 - Track/query: General: Needs Testing
@@ -1499,7 +1528,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
+#### 7. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -1525,7 +1554,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
+#### 8. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -1564,33 +1593,6 @@ Posted testing results to Trac.
   - +20: Freshness
   - +8: Ticket Age
   - -20: Already Tested
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 8. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
-
-- Score: **162**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: General
-- Trac status: Accepted
-- Milestone: 7.1
-- Owner: joedolson
-- Keywords: has-patch needs-testing
-- Created: 06/05/2026 09:11:00 AM
-- Modified: 06/09/2026 04:50:17 PM
-- Review status: tested
-- Review reason: Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.
-- Review notes: Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.
-- Review updated: 2026-06-19T17:38:19.873Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +10: Freshness
-  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 9. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
@@ -1775,7 +1777,7 @@ No tickets in this section.
 | media_has_patch | 2026-07-09 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-09/media_has_patch.csv` |
 | accessibility_has_patch | 2026-07-10 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-10/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-07-10 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-10/docs_needs_testing.csv` |
-| general_needs_testing | 2026-07-10 | 255 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-10/general_needs_testing.csv` |
+| general_needs_testing | 2026-07-10 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-10/general_needs_testing.csv` |
 | good_first_bugs | 2026-07-10 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-10/good_first_bugs.csv` |
 | media_has_patch | 2026-07-10 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-10/media_has_patch.csv` |
 

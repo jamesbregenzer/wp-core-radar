@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-10T05:49:12",
+  "generated": "2026-07-10T11:50:01",
   "summary": {
     "unique_tickets": 291,
     "priority_targets": 12,
@@ -289,6 +289,94 @@
         "created": "06/19/2026 09:30:32 AM",
         "modified": "07/08/2026 09:56:21 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65505",
+        "url": "https://core.trac.wordpress.org/ticket/65505",
+        "score": 164,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "AI",
+        "owner": "gziolo",
+        "comments": "Unknown",
+        "created": "06/22/2026 06:46:10 AM",
+        "modified": "07/10/2026 11:31:36 AM",
+        "keywords": "has-patch has-unit-tests needs-testing has-test-info 2nd-opinion",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -862,83 +950,6 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65505",
-        "url": "https://core.trac.wordpress.org/ticket/65505",
-        "score": 158,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "AI",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/22/2026 06:46:10 AM",
-        "modified": "06/28/2026 08:48:41 AM",
-        "keywords": "has-patch has-unit-tests needs-testing has-test-info",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
@@ -16982,6 +16993,99 @@
         }
       },
       {
+        "ticket_id": "56886",
+        "url": "https://core.trac.wordpress.org/ticket/56886",
+        "score": 178,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Admin facing add site screen missing search engine visibility field",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Networks and Sites",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "10/22/2022 11:05:39 AM",
+        "modified": "07/10/2026 01:36:37 PM",
+        "keywords": "good-first-bug has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Good First Bug +20",
+            "class": "first"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Good First Bug",
+            "detail": "",
+            "display": "Good First Bug",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "tested",
+          "reason": "Positive test result",
+          "notes": "Verified checkbox renders on Network Admin \u2192 Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.",
+          "updated_at": "2026-06-16T18:01:22.376Z"
+        }
+      },
+      {
         "ticket_id": "63256",
         "url": "https://core.trac.wordpress.org/ticket/63256",
         "score": 172,
@@ -17086,20 +17190,20 @@
         }
       },
       {
-        "ticket_id": "56886",
-        "url": "https://core.trac.wordpress.org/ticket/56886",
-        "score": 168,
+        "ticket_id": "65419",
+        "url": "https://core.trac.wordpress.org/ticket/65419",
+        "score": 172,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
-        "summary": "Admin facing add site screen missing search engine visibility field",
+        "summary": "In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode",
         "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Networks and Sites",
-        "owner": "",
+        "status": "Accepted",
+        "component": "General",
+        "owner": "joedolson",
         "comments": "Unknown",
-        "created": "10/22/2022 11:05:39 AM",
-        "modified": "06/04/2026 01:49:33 PM",
-        "keywords": "good-first-bug has-patch needs-testing",
+        "created": "06/05/2026 09:11:00 AM",
+        "modified": "07/10/2026 11:42:30 AM",
+        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -17114,16 +17218,20 @@
             "class": "testing"
           },
           {
-            "label": "Good First Bug +20",
-            "class": "first"
-          },
-          {
             "label": "Has Concrete Milestone +8",
             "class": "standard"
           },
           {
-            "label": "Freshness: Updated Within 60 Days +10",
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
             "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
           }
         ],
         "score_breakdown": [
@@ -17149,13 +17257,6 @@
             "polarity": "positive"
           },
           {
-            "points": "+20",
-            "label": "Good First Bug",
-            "detail": "",
-            "display": "Good First Bug",
-            "polarity": "positive"
-          },
-          {
             "points": "+8",
             "label": "Has Concrete Milestone",
             "detail": "",
@@ -17163,19 +17264,33 @@
             "polarity": "positive"
           },
           {
-            "points": "+10",
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
             "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
           }
         ],
         "discovery_track": "General Needs Testing",
         "review": {
           "status": "tested",
-          "reason": "Positive test result",
-          "notes": "Verified checkbox renders on Network Admin \u2192 Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.",
-          "updated_at": "2026-06-16T18:01:22.376Z"
+          "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
+          "notes": "Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.",
+          "updated_at": "2026-06-19T17:38:19.873Z"
         }
       },
       {
@@ -17473,110 +17588,6 @@
           "reason": "Verified patch behavior locally and reported results on Trac.",
           "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
           "updated_at": "2026-06-15T23:07:33.995Z"
-        }
-      },
-      {
-        "ticket_id": "65419",
-        "url": "https://core.trac.wordpress.org/ticket/65419",
-        "score": 162,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode",
-        "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "General",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "06/05/2026 09:11:00 AM",
-        "modified": "06/09/2026 04:50:17 PM",
-        "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "tested",
-          "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
-          "notes": "Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.",
-          "updated_at": "2026-06-19T17:38:19.873Z"
         }
       },
       {
