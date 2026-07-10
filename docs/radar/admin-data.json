@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-09T23:48:23",
+  "generated": "2026-07-10T05:49:12",
   "summary": {
     "unique_tickets": 291,
     "priority_targets": 12,
     "immediate": 2,
     "strong": 10,
-    "watching": 85,
+    "watching": 86,
     "reviews_loaded": 18
   },
   "groups": {
@@ -869,20 +869,20 @@
         "review": {}
       },
       {
-        "ticket_id": "65481",
-        "url": "https://core.trac.wordpress.org/ticket/65481",
+        "ticket_id": "65505",
+        "url": "https://core.trac.wordpress.org/ticket/65505",
         "score": 158,
         "tier_class": "strong",
         "tier_label": "Strong Candidate",
-        "summary": "REST API: Support registering one sideloaded file under multiple image sizes",
+        "summary": "WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",
         "track": "General: Needs Testing",
         "status": "New",
-        "component": "REST API",
+        "component": "AI",
         "owner": "",
         "comments": "Unknown",
-        "created": "06/18/2026 08:46:34 AM",
-        "modified": "06/25/2026 10:14:33 AM",
-        "keywords": "has-patch needs-testing has-unit-tests",
+        "created": "06/22/2026 06:46:10 AM",
+        "modified": "06/28/2026 08:48:41 AM",
+        "keywords": "has-patch has-unit-tests needs-testing has-test-info",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -946,19 +946,19 @@
         "review": {}
       },
       {
-        "ticket_id": "65505",
-        "url": "https://core.trac.wordpress.org/ticket/65505",
+        "ticket_id": "65515",
+        "url": "https://core.trac.wordpress.org/ticket/65515",
         "score": 158,
         "tier_class": "strong",
         "tier_label": "Strong Candidate",
-        "summary": "WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request",
+        "summary": "ThickBox ReferenceError: imgLoader is not defined due to \"use strict\" contamination in load-scripts.php",
         "track": "General: Needs Testing",
         "status": "New",
-        "component": "AI",
+        "component": "Script Loader",
         "owner": "",
         "comments": "Unknown",
-        "created": "06/22/2026 06:46:10 AM",
-        "modified": "06/25/2026 09:19:46 AM",
+        "created": "06/22/2026 12:39:34 PM",
+        "modified": "06/30/2026 11:35:38 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -1183,83 +1183,6 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65515",
-        "url": "https://core.trac.wordpress.org/ticket/65515",
-        "score": 158,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "ThickBox ReferenceError: imgLoader is not defined due to \"use strict\" contamination in load-scripts.php",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Script Loader",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/22/2026 12:39:34 PM",
-        "modified": "06/30/2026 11:35:38 PM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
@@ -2532,6 +2455,94 @@
         "review": {}
       },
       {
+        "ticket_id": "26571",
+        "url": "https://core.trac.wordpress.org/ticket/26571",
+        "score": 148,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Increase flexibility of \"At a Glance\" Dashboard Widget to match \"Right Now\" Widget",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Administration",
+        "owner": "chriscct7",
+        "comments": "Unknown",
+        "created": "12/12/2013 06:00:27 PM",
+        "modified": "07/10/2026 08:32:55 AM",
+        "keywords": "has-patch needs-testing needs-docs",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Very Old Ticket -8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "-8",
+            "label": "Ticket Age",
+            "detail": "Very Old Ticket",
+            "display": "Ticket Age: Very Old Ticket",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "40790",
         "url": "https://core.trac.wordpress.org/ticket/40790",
         "score": 148,
@@ -3570,6 +3581,83 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65481",
+        "url": "https://core.trac.wordpress.org/ticket/65481",
+        "score": 148,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "REST API: Support registering one sideloaded file under multiple image sizes",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "REST API",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/18/2026 08:46:34 AM",
+        "modified": "06/18/2026 08:47:20 AM",
+        "keywords": "has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           }
         ],
@@ -5054,72 +5142,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "26571",
-        "url": "https://core.trac.wordpress.org/ticket/26571",
-        "score": 136,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Increase flexibility of \"At a Glance\" Dashboard Widget to match \"Right Now\" Widget",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Unknown",
-        "owner": "chriscct7",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing needs-refresh needs-docs",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
