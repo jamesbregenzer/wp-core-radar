@@ -110,7 +110,7 @@
 45013,Wrong links when installing in subdirectory =,new,Administration,,defect (bug),normal,Awaiting Review,4.9.8,has-screenshots needs-testing,09/29/2018 08:32:21 PM,10/10/2018 04:23:16 PM
 45033,Add TIDAL to oEmbed whitelist,reopened,Embeds,,defect (bug),normal,Awaiting Review,,has-patch needs-testing,10/03/2018 08:20:13 AM,07/22/2025 03:13:20 AM
 45341,"WSOD when editing a page with define( 'SAVEQUERIES', true ); set in wp-config.php",new,Editor,,defect (bug),normal,Awaiting Review,5.0,needs-testing,11/14/2018 06:43:28 AM,11/16/2020 06:43:02 AM
-45354,Adding index for meta_key and post_id in postmeta,new,Database,,enhancement,normal,7.1,,needs-testing dev-feedback has-patch has-unit-tests,11/14/2018 09:43:31 PM,06/21/2026 05:58:57 AM
+45354,Adding index for meta_key and post_id in postmeta,new,Database,,enhancement,normal,Future Release,,needs-testing dev-feedback has-patch has-unit-tests,11/14/2018 09:43:31 PM,07/10/2026 03:15:20 AM
 45897,Chinese page uri dump fail,new,I18N,,defect (bug),normal,Awaiting Review,5.0.2,needs-testing has-patch,01/10/2019 07:17:56 AM,02/03/2026 03:56:47 PM
 45910,Improve and extend focus styles for Windows High Contrast mode,assigned,Administration,rcreators,defect (bug),normal,Future Release,,needs-testing,01/10/2019 04:54:41 PM,01/03/2025 07:13:03 AM
 46017,"""Mine"" comment count isn't updated when replying to or moderating a comment.",new,Comments,,defect (bug),normal,Future Release,5.1,needs-testing needs-refresh has-patch,01/17/2019 02:59:49 AM,09/25/2025 03:16:04 PM

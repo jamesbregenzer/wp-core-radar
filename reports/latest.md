@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-09 17:47
+Generated: 2026-07-09 23:48
 
 ## Summary
 
@@ -1253,27 +1253,26 @@ No tickets in this section.
 
 #### 2. [#45354](https://core.trac.wordpress.org/ticket/45354) — Adding index for meta_key and post_id in postmeta
 
-- Score: **166**
+- Score: **168**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Database
 - Trac status: New
-- Milestone: 7.1
+- Milestone: Future Release
 - Keywords: needs-testing dev-feedback has-patch has-unit-tests
 - Created: 11/14/2018 09:43:31 PM
-- Modified: 06/04/2026 09:13:21 AM
+- Modified: 07/10/2026 03:15:20 AM
 - Review status: watch
 - Review reason: Awaiting PR/test stability
 - Review notes: Database index change with active PR discussion and test failures still being worked through. Worth revisiting after tests are passing and maintainers clarify whether additional performance or upgrade testing is needed.
 - Review updated: 2026-06-16T18:16:01.070Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has concrete milestone +8, freshness: updated within 60 days +10
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
   - +18: Dev Feedback
-  - +8: Has Concrete Milestone
-  - +10: Freshness
+  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 3. [#56320](https://core.trac.wordpress.org/ticket/56320) — Update mediaelement.js to the latest version

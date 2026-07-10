@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T17:47:28",
+  "generated": "2026-07-09T23:48:23",
   "summary": {
     "unique_tickets": 291,
     "priority_targets": 12,
@@ -16358,7 +16358,7 @@
       {
         "ticket_id": "45354",
         "url": "https://core.trac.wordpress.org/ticket/45354",
-        "score": 166,
+        "score": 168,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "Adding index for meta_key and post_id in postmeta",
@@ -16368,7 +16368,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "11/14/2018 09:43:31 PM",
-        "modified": "06/04/2026 09:13:21 AM",
+        "modified": "07/10/2026 03:15:20 AM",
         "keywords": "needs-testing dev-feedback has-patch has-unit-tests",
         "signals": [
           {
@@ -16388,11 +16388,7 @@
             "class": "feedback"
           },
           {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
+            "label": "Freshness: Recently Updated <=14 Days +20",
             "class": "freshness"
           }
         ],
@@ -16426,17 +16422,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
+            "points": "+20",
             "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
