@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-13T05:58:51",
+  "generated": "2026-07-13T11:59:38",
   "summary": {
-    "unique_tickets": 291,
+    "unique_tickets": 292,
     "priority_targets": 12,
     "immediate": 2,
     "strong": 10,
@@ -2347,6 +2347,72 @@
         "comments": "Unknown",
         "created": "06/29/2026 01:43:40 PM",
         "modified": "06/29/2026 01:56:04 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65622",
+        "url": "https://core.trac.wordpress.org/ticket/65622",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Comments: allow note mention attributes in comment content",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Comments",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/13/2026 04:28:29 PM",
+        "modified": "07/13/2026 04:30:17 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
