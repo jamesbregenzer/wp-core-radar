@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-12 05:55
+Generated: 2026-07-12 23:57
 
 ## Summary
 
@@ -23,29 +23,7 @@ Generated: 2026-07-12 05:55
 
 ## Priority Targets
 
-#### 1. [#65549](https://core.trac.wordpress.org/ticket/65549) — Media: Sideload animated GIF → video companions and clean them up on delete
-
-- Score: **176**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: Reviewing
-- Milestone: Awaiting Review
-- Owner: adamsilverstein
-- Keywords: has-patch has-unit-tests needs-testing
-- Created: 06/27/2026 11:23:05 PM
-- Modified: 06/27/2026 11:24:51 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has owner +6, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
-  - +6: Has Owner
-  - +20: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 2. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
+#### 1. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -64,6 +42,28 @@ Generated: 2026-07-12 05:55
   - +8: Has Concrete Milestone
   - +20: Freshness
   - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 2. [#65549](https://core.trac.wordpress.org/ticket/65549) — Media: Sideload animated GIF → video companions and clean them up on delete
+
+- Score: **166**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: Reviewing
+- Milestone: Awaiting Review
+- Owner: adamsilverstein
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 06/27/2026 11:23:05 PM
+- Modified: 06/27/2026 11:24:51 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has owner +6, freshness: updated within 60 days +10
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +6: Has Owner
+  - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 3. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
@@ -1407,7 +1407,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: adamsilverstein
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 05/22/2026 10:26:49 PM
-- Modified: 06/28/2026 12:25:36 AM
+- Modified: 06/29/2026 06:13:34 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified media upload, scaling, metadata, frontend display, and image editing workflows in Playground.
