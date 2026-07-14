@@ -127,5 +127,11 @@
     "reason": "Associated implementation appears to have already landed and the GitHub PR is closed, leaving little opportunity for meaningful testing.",
     "notes": "Reviewed both the Trac ticket and linked GitHub PR. The implementation has already been merged through follow-up commits and the PR is closed. Discussion indicates the remaining work is administrative rather than awaiting independent testing. Skipped testing because additional reports are unlikely to provide value or contributor visibility.",
     "updated_at": "2026-07-14T18:12:18.957Z"
+  },
+  "65623": {
+    "status": "watch",
+    "reason": "Technically testable, but requires understanding of REST API behavior and media-processing filters to provide meaningful independent verification.",
+    "notes": "",
+    "updated_at": "2026-07-14T18:13:40.710Z"
   }
 }
