@@ -121,5 +121,11 @@
     "reason": "PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.",
     "notes": "Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed “Showing 1 of 1 media items,” so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the “Could not retrieve the featured image data” message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.",
     "updated_at": "2026-06-22T16:55:30.056Z"
+  },
+  "65549": {
+    "status": "reject",
+    "reason": "Associated implementation appears to have already landed and the GitHub PR is closed, leaving little opportunity for meaningful testing.",
+    "notes": "Reviewed both the Trac ticket and linked GitHub PR. The implementation has already been merged through follow-up commits and the PR is closed. Discussion indicates the remaining work is administrative rather than awaiting independent testing. Skipped testing because additional reports are unlikely to provide value or contributor visibility.",
+    "updated_at": "2026-07-14T18:12:18.957Z"
   }
 }
