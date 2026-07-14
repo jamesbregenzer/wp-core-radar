@@ -104,6 +104,12 @@
     "updated_at": "2026-06-19T22:21:31.662Z",
     "changeset": "62494"
   },
+  "65417": {
+    "status": "tested",
+    "reason": "Successfully verified the patch in the linked Playground instance with multiple URL scheme variations.",
+    "notes": "Tested the patch using the GitHub PR Playground preview. Verified uppercase (HTTPS://, HTTP://), mixed-case (Https://), lowercase schemes, ftp://, relative URLs, and fragment links. Confirmed the original bug is fixed, links persist correctly after saving and reloading, and left a detailed Trac test report.",
+    "updated_at": "2026-07-14T17:54:31.618Z"
+  },
   "65419": {
     "status": "tested",
     "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
