@@ -1,11 +1,11 @@
 # WP Core Radar Report
 
-Generated: 2026-07-14 00:01
+Generated: 2026-07-14 06:02
 
 ## Summary
 
 - Datasets discovered: 145
-- Unique tickets scored: 293
+- Unique tickets scored: 294
 - Outcomes loaded: 4
 - Reviews loaded: 18
 - Top opportunity limit: 50
@@ -15,7 +15,7 @@ Generated: 2026-07-14 00:01
 | Section | Count | Meaning |
 |---|---:|---|
 | Priority Targets | 12 | Highest-scoring unreviewed tickets with clear action and manageability signals. |
-| Top Opportunities | 266 | Remaining unreviewed tickets ranked by score. |
+| Top Opportunities | 267 | Remaining unreviewed tickets ranked by score. |
 | Shortlisted | 0 | Tickets manually marked as strong candidates. |
 | Watching | 5 | Tickets worth monitoring but not acting on yet. |
 | Completed / Acted On | 10 | Tickets already tested, commented on, propped, or committed. |
@@ -621,7 +621,7 @@ Generated: 2026-07-14 00:01
 - Milestone: Awaiting Review
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 06/29/2026 07:24:33 AM
-- Modified: 06/29/2026 07:30:03 AM
+- Modified: 07/14/2026 08:43:03 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
@@ -1798,7 +1798,7 @@ No tickets in this section.
 | media_has_patch | 2026-07-13 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-13/media_has_patch.csv` |
 | accessibility_has_patch | 2026-07-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-14/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-07-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-14/docs_needs_testing.csv` |
-| general_needs_testing | 2026-07-14 | 258 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-14/general_needs_testing.csv` |
+| general_needs_testing | 2026-07-14 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-14/general_needs_testing.csv` |
 | good_first_bugs | 2026-07-14 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-14/good_first_bugs.csv` |
 | media_has_patch | 2026-07-14 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-14/media_has_patch.csv` |
 

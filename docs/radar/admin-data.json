@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-14T00:01:16",
+  "generated": "2026-07-14T06:02:04",
   "summary": {
-    "unique_tickets": 293,
+    "unique_tickets": 294,
     "priority_targets": 12,
     "immediate": 3,
     "strong": 9,
@@ -2357,7 +2357,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/29/2026 07:24:33 AM",
-        "modified": "06/29/2026 07:30:03 AM",
+        "modified": "07/14/2026 08:43:03 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -8948,6 +8948,61 @@
         "created": "06/18/2026 07:24:05 AM",
         "modified": "06/30/2026 04:18:18 PM",
         "keywords": "needs-testing close",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65626",
+        "url": "https://core.trac.wordpress.org/ticket/65626",
+        "score": 115,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Database",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/14/2026 10:42:44 AM",
+        "modified": "07/14/2026 10:42:44 AM",
+        "keywords": "needs-testing needs-patch",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
