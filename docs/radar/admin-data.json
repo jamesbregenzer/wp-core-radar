@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-14T18:13:54",
+  "generated": "2026-07-14T18:03:45",
   "summary": {
-    "unique_tickets": 294,
+    "unique_tickets": 295,
     "priority_targets": 12,
     "immediate": 0,
     "strong": 12,
@@ -847,20 +847,20 @@
         "review": {}
       },
       {
-        "ticket_id": "21989",
-        "url": "https://core.trac.wordpress.org/ticket/21989",
-        "score": 154,
+        "ticket_id": "65632",
+        "url": "https://core.trac.wordpress.org/ticket/65632",
+        "score": 158,
         "tier_class": "strong",
         "tier_label": "Strong Candidate",
-        "summary": "update_option() calls sanitize_option() twice when option does not exist",
+        "summary": "Update `htmlhint` to version `1.9.2`",
         "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "Unknown",
-        "owner": "pbearne",
+        "status": "New",
+        "component": "External Libraries",
+        "owner": "",
         "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "dev-feedback has-patch needs-testing",
+        "created": "07/14/2026 07:49:09 PM",
+        "modified": "07/14/2026 07:50:29 PM",
+        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -875,12 +875,12 @@
             "class": "testing"
           },
           {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
           },
           {
-            "label": "Has Owner +6",
-            "class": "owner"
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
           }
         ],
         "score_breakdown": [
@@ -906,17 +906,17 @@
             "polarity": "positive"
           },
           {
-            "points": "+18",
-            "label": "Dev Feedback",
+            "points": "+8",
+            "label": "Has Concrete Milestone",
             "detail": "",
-            "display": "Dev Feedback",
+            "display": "Has Concrete Milestone",
             "polarity": "positive"
           },
           {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
@@ -924,20 +924,20 @@
         "review": {}
       },
       {
-        "ticket_id": "41305",
-        "url": "https://core.trac.wordpress.org/ticket/41305",
+        "ticket_id": "21989",
+        "url": "https://core.trac.wordpress.org/ticket/21989",
         "score": 154,
         "tier_class": "strong",
         "tier_label": "Strong Candidate",
-        "summary": "Add lazily evaluated translations",
+        "summary": "update_option() calls sanitize_option() twice when option does not exist",
         "track": "General: Needs Testing",
-        "status": "Assigned",
+        "status": "Accepted",
         "component": "Unknown",
-        "owner": "timothyblynjacobs",
+        "owner": "pbearne",
         "comments": "Unknown",
         "created": "Unknown",
         "modified": "Unknown",
-        "keywords": "has-patch early dev-feedback needs-testing has-unit-tests",
+        "keywords": "dev-feedback has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -1315,6 +1315,83 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "41305",
+        "url": "https://core.trac.wordpress.org/ticket/41305",
+        "score": 154,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Add lazily evaluated translations",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Unknown",
+        "owner": "timothyblynjacobs",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "has-patch early dev-feedback needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
             "polarity": "positive"
           }
         ],

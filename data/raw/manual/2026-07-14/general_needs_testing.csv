@@ -257,4 +257,5 @@
 65622,Comments: allow note mention attributes in comment content,assigned,Comments,adamsilverstein,defect (bug),normal,7.1,,has-patch has-unit-tests needs-testing,07/13/2026 04:28:29 PM,07/14/2026 04:26:01 PM
 65623,Media: expose image_strip_meta and image_max_bit_depth in the REST API index for client-side media processing,new,Media,,defect (bug),normal,Awaiting Review,,has-patch needs-testing has-unit-tests,07/13/2026 09:57:34 PM,07/14/2026 01:13:07 PM
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch,07/14/2026 10:42:44 AM,07/14/2026 10:42:44 AM
+65632,Update `htmlhint` to version `1.9.2`,new,External Libraries,,enhancement,normal,7.1,,has-patch needs-testing,07/14/2026 07:49:09 PM,07/14/2026 07:50:29 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing,04/09/2025 11:10:53 AM,07/02/2026 10:11:09 AM
