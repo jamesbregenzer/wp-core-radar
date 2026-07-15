@@ -1,15 +1,114 @@
 {
-  "generated": "2026-07-15T12:06:12",
+  "generated": "2026-07-15T18:06:59",
   "summary": {
     "unique_tickets": 296,
     "priority_targets": 12,
-    "immediate": 0,
-    "strong": 12,
+    "immediate": 1,
+    "strong": 11,
     "watching": 84,
     "reviews_loaded": 21
   },
   "groups": {
     "priority": [
+      {
+        "ticket_id": "65051",
+        "url": "https://core.trac.wordpress.org/ticket/65051",
+        "score": 172,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "$_REQUEST['term'] used unsanitized in user search query",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Networks and Sites",
+        "owner": "rajeshcp",
+        "comments": "Unknown",
+        "created": "04/09/2026 10:29:50 AM",
+        "modified": "07/15/2026 06:17:22 PM",
+        "keywords": "has-patch needs-testing has-test-info has-unit-tests has-screenshots",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
       {
         "ticket_id": "65054",
         "url": "https://core.trac.wordpress.org/ticket/65054",
@@ -922,83 +1021,6 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      },
-      {
-        "ticket_id": "65515",
-        "url": "https://core.trac.wordpress.org/ticket/65515",
-        "score": 158,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "ThickBox ReferenceError: imgLoader is not defined due to \"use strict\" contamination in load-scripts.php",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Script Loader",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/22/2026 12:39:34 PM",
-        "modified": "06/30/2026 11:35:38 PM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
       }
     ],
     "top": [
@@ -1168,6 +1190,83 @@
         "review": {}
       },
       {
+        "ticket_id": "65515",
+        "url": "https://core.trac.wordpress.org/ticket/65515",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "ThickBox ReferenceError: imgLoader is not defined due to \"use strict\" contamination in load-scripts.php",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Script Loader",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/22/2026 12:39:34 PM",
+        "modified": "06/30/2026 11:35:38 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "65632",
         "url": "https://core.trac.wordpress.org/ticket/65632",
         "score": 158,
@@ -1257,7 +1356,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "07/15/2026 11:35:42 AM",
-        "modified": "07/15/2026 04:11:37 PM",
+        "modified": "07/15/2026 09:03:24 PM",
         "keywords": "has-patch needs-testing has-unit-tests",
         "signals": [
           {
@@ -2030,94 +2129,6 @@
             "label": "Freshness",
             "detail": "Updated Within 60 Days",
             "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65051",
-        "url": "https://core.trac.wordpress.org/ticket/65051",
-        "score": 152,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "$_REQUEST['term'] used unsanitized in user search query",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Networks and Sites",
-        "owner": "rajeshcp",
-        "comments": "Unknown",
-        "created": "04/09/2026 10:29:50 AM",
-        "modified": "05/14/2026 04:09:08 PM",
-        "keywords": "has-patch needs-testing has-test-info has-unit-tests has-screenshots",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
           }
         ],
@@ -8252,6 +8263,72 @@
         "review": {}
       },
       {
+        "ticket_id": "65626",
+        "url": "https://core.trac.wordpress.org/ticket/65626",
+        "score": 125,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Database",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/14/2026 10:42:44 AM",
+        "modified": "07/15/2026 06:53:59 PM",
+        "keywords": "needs-testing needs-patch reporter-feedback",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Reporter Feedback +10",
+            "class": "feedback"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Reporter Feedback",
+            "detail": "",
+            "display": "Reporter Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "43746",
         "url": "https://core.trac.wordpress.org/ticket/43746",
         "score": 124,
@@ -8839,61 +8916,6 @@
             "label": "Preferred Component",
             "detail": "Media",
             "display": "Preferred Component: Media",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65626",
-        "url": "https://core.trac.wordpress.org/ticket/65626",
-        "score": 115,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Database",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "07/14/2026 10:42:44 AM",
-        "modified": "07/14/2026 10:42:44 AM",
-        "keywords": "needs-testing needs-patch",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
