@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T18:06:59",
+  "generated": "2026-07-16T00:07:55",
   "summary": {
     "unique_tickets": 296,
     "priority_targets": 12,
@@ -1202,7 +1202,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/22/2026 12:39:34 PM",
-        "modified": "06/30/2026 11:35:38 PM",
+        "modified": "07/01/2026 11:52:02 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -16428,6 +16428,110 @@
     "shortlist": [],
     "watch": [
       {
+        "ticket_id": "65623",
+        "url": "https://core.trac.wordpress.org/ticket/65623",
+        "score": 184,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Media: expose image_strip_meta and image_max_bit_depth in the REST API index for client-side media processing",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "adamsilverstein",
+        "comments": "Unknown",
+        "created": "07/13/2026 09:57:34 PM",
+        "modified": "07/16/2026 03:02:36 AM",
+        "keywords": "has-patch needs-testing has-unit-tests commit",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "watch",
+          "reason": "Technically testable, but requires understanding of REST API behavior and media-processing filters to provide meaningful independent verification.",
+          "notes": "",
+          "updated_at": "2026-07-14T18:13:40.710Z"
+        }
+      },
+      {
         "ticket_id": "33073",
         "url": "https://core.trac.wordpress.org/ticket/33073",
         "score": 174,
@@ -16518,88 +16622,6 @@
           "reason": "Needs refresh/dev feedback",
           "notes": "Good candidate, but verify latest patch applies and dev feedback is addressed before testing.",
           "updated_at": "2026-06-14T08:11:40.103Z"
-        }
-      },
-      {
-        "ticket_id": "65623",
-        "url": "https://core.trac.wordpress.org/ticket/65623",
-        "score": 170,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Media: expose image_strip_meta and image_max_bit_depth in the REST API index for client-side media processing",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Media",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "07/13/2026 09:57:34 PM",
-        "modified": "07/13/2026 09:59:01 PM",
-        "keywords": "has-patch needs-testing has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "watch",
-          "reason": "Technically testable, but requires understanding of REST API behavior and media-processing filters to provide meaningful independent verification.",
-          "notes": "",
-          "updated_at": "2026-07-14T18:13:40.710Z"
         }
       },
       {
