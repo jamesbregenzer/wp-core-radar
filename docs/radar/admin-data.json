@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T00:12:18",
+  "generated": "2026-07-17T06:13:11",
   "summary": {
     "unique_tickets": 297,
     "priority_targets": 12,
@@ -17548,7 +17548,7 @@
         "owner": "audrasjb",
         "comments": "Unknown",
         "created": "04/09/2025 11:10:53 AM",
-        "modified": "07/02/2026 10:11:09 AM",
+        "modified": "07/16/2026 02:39:54 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -17837,210 +17837,6 @@
         }
       },
       {
-        "ticket_id": "65345",
-        "url": "https://core.trac.wordpress.org/ticket/65345",
-        "score": 166,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Site Icon subsizes use wrong array key 'width ' instead of 'width'",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Media",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "05/26/2026 10:59:28 AM",
-        "modified": "07/02/2026 09:59:47 AM",
-        "keywords": "has-patch needs-testing has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          },
-          {
-            "points": "-20",
-            "label": "Already Tested",
-            "detail": "",
-            "display": "Already Tested",
-            "polarity": "negative"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "tested",
-          "reason": "Verified patch behavior locally and reported results on Trac.",
-          "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
-          "updated_at": "2026-06-15T23:07:33.995Z"
-        }
-      },
-      {
-        "ticket_id": "65417",
-        "url": "https://core.trac.wordpress.org/ticket/65417",
-        "score": 166,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Editor",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/05/2026 06:35:50 AM",
-        "modified": "07/02/2026 07:44:27 AM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "tested",
-          "reason": "Successfully verified the patch in the linked Playground instance with multiple URL scheme variations.",
-          "notes": "Tested the patch using the GitHub PR Playground preview. Verified uppercase (HTTPS://, HTTP://), mixed-case (Https://), lowercase schemes, ftp://, relative URLs, and fragment links. Confirmed the original bug is fixed, links persist correctly after saving and reloading, and left a detailed Trac test report.",
-          "updated_at": "2026-07-14T17:54:31.618Z"
-        }
-      },
-      {
         "ticket_id": "65513",
         "url": "https://core.trac.wordpress.org/ticket/65513",
         "score": 160,
@@ -18235,6 +18031,210 @@
           "reason": "Reviewed patch, tested in Playground, submitted Trac feedback.",
           "notes": "Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.",
           "updated_at": "2026-06-17T01:45:15.293Z"
+        }
+      },
+      {
+        "ticket_id": "65345",
+        "url": "https://core.trac.wordpress.org/ticket/65345",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Site Icon subsizes use wrong array key 'width ' instead of 'width'",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "05/26/2026 10:59:28 AM",
+        "modified": "06/15/2026 12:31:02 PM",
+        "keywords": "has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          },
+          {
+            "points": "-20",
+            "label": "Already Tested",
+            "detail": "",
+            "display": "Already Tested",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "tested",
+          "reason": "Verified patch behavior locally and reported results on Trac.",
+          "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
+          "updated_at": "2026-06-15T23:07:33.995Z"
+        }
+      },
+      {
+        "ticket_id": "65417",
+        "url": "https://core.trac.wordpress.org/ticket/65417",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/05/2026 06:35:50 AM",
+        "modified": "06/15/2026 12:23:04 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "tested",
+          "reason": "Successfully verified the patch in the linked Playground instance with multiple URL scheme variations.",
+          "notes": "Tested the patch using the GitHub PR Playground preview. Verified uppercase (HTTPS://, HTTP://), mixed-case (Https://), lowercase schemes, ftp://, relative URLs, and fragment links. Confirmed the original bug is fixed, links persist correctly after saving and reloading, and left a detailed Trac test report.",
+          "updated_at": "2026-07-14T17:54:31.618Z"
         }
       }
     ],

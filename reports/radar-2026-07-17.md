@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-17 00:12
+Generated: 2026-07-17 06:13
 
 ## Summary
 
@@ -1516,7 +1516,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: audrasjb
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 04/09/2025 11:10:53 AM
-- Modified: 07/02/2026 10:11:09 AM
+- Modified: 07/16/2026 02:39:54 AM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Applied PR #11534 locally, ran Tests_Term successfully, and verified basic category/post taxonomy workflows in wp-admin and on the front end.
@@ -1585,73 +1585,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
-
-- Score: **166**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: New
-- Milestone: 7.1
-- Keywords: has-patch needs-testing has-unit-tests
-- Created: 05/26/2026 10:59:28 AM
-- Modified: 07/02/2026 09:59:47 AM
-- Review status: tested
-- Review reason: Verified patch behavior locally and reported results on Trac.
-- Review notes: Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.
-
-Steps performed:
-- Uploaded a non-square image.
-- Set the image as the Site Icon.
-- Cropped and saved the Site Icon.
-- Verified generated site icon dimensions and attachment metadata.
-
-Confirmed generated site icon sizes are square as expected:
-- 270x270
-- 192x192
-- 180x180
-- 32x32
-
-Posted testing results to Trac.
-- Review updated: 2026-06-15T23:07:33.995Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8, already tested -20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
-  - +8: Has Concrete Milestone
-  - +20: Freshness
-  - +8: Ticket Age
-  - -20: Already Tested
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 9. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
-
-- Score: **166**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Editor
-- Trac status: New
-- Milestone: 7.1
-- Keywords: has-patch has-unit-tests needs-testing
-- Created: 06/05/2026 06:35:50 AM
-- Modified: 07/02/2026 07:44:27 AM
-- Review status: tested
-- Review reason: Successfully verified the patch in the linked Playground instance with multiple URL scheme variations.
-- Review notes: Tested the patch using the GitHub PR Playground preview. Verified uppercase (HTTPS://, HTTP://), mixed-case (Https://), lowercase schemes, ftp://, relative URLs, and fragment links. Confirmed the original bug is fixed, links persist correctly after saving and reloading, and left a detailed Trac test report.
-- Review updated: 2026-07-14T17:54:31.618Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +20: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 10. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
+#### 8. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
 
 - Score: **160**
 - Track/query: General: Needs Testing
@@ -1675,7 +1609,7 @@ Posted testing results to Trac.
   - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
+#### 9. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -1701,6 +1635,72 @@ Posted testing results to Trac.
   - +20: Freshness
   - +8: Ticket Age
   - -16: Setup Complexity
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 10. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: New
+- Milestone: 7.1
+- Keywords: has-patch needs-testing has-unit-tests
+- Created: 05/26/2026 10:59:28 AM
+- Modified: 06/15/2026 12:31:02 PM
+- Review status: tested
+- Review reason: Verified patch behavior locally and reported results on Trac.
+- Review notes: Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.
+
+Steps performed:
+- Uploaded a non-square image.
+- Set the image as the Site Icon.
+- Cropped and saved the Site Icon.
+- Verified generated site icon dimensions and attachment metadata.
+
+Confirmed generated site icon sizes are square as expected:
+- 270x270
+- 192x192
+- 180x180
+- 32x32
+
+Posted testing results to Trac.
+- Review updated: 2026-06-15T23:07:33.995Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, freshness: updated within 60 days +10, ticket age: mature but not ancient +8, already tested -20
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +8: Has Concrete Milestone
+  - +10: Freshness
+  - +8: Ticket Age
+  - -20: Already Tested
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 11. [#65417](https://core.trac.wordpress.org/ticket/65417) — Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Editor
+- Trac status: New
+- Milestone: 7.1
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 06/05/2026 06:35:50 AM
+- Modified: 06/15/2026 12:23:04 PM
+- Review status: tested
+- Review reason: Successfully verified the patch in the linked Playground instance with multiple URL scheme variations.
+- Review notes: Tested the patch using the GitHub PR Playground preview. Verified uppercase (HTTPS://, HTTP://), mixed-case (Https://), lowercase schemes, ftp://, relative URLs, and fragment links. Confirmed the original bug is fixed, links persist correctly after saving and reloading, and left a detailed Trac test report.
+- Review updated: 2026-07-14T17:54:31.618Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Rejected
@@ -1892,7 +1892,7 @@ Posted testing results to Trac.
 | media_has_patch | 2026-07-16 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-16/media_has_patch.csv` |
 | accessibility_has_patch | 2026-07-17 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-17/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-07-17 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-17/docs_needs_testing.csv` |
-| general_needs_testing | 2026-07-17 | 260 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-17/general_needs_testing.csv` |
+| general_needs_testing | 2026-07-17 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-17/general_needs_testing.csv` |
 | good_first_bugs | 2026-07-17 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-17/good_first_bugs.csv` |
 | media_has_patch | 2026-07-17 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-17/media_has_patch.csv` |
 
