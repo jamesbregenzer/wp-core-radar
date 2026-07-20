@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-20T00:22:13",
+  "generated": "2026-07-20T06:23:03",
   "summary": {
     "unique_tickets": 299,
     "priority_targets": 12,
     "immediate": 4,
     "strong": 8,
-    "watching": 83,
+    "watching": 82,
     "reviews_loaded": 21
   },
   "groups": {
@@ -1336,6 +1336,83 @@
         "created": "03/30/2026 10:13:26 AM",
         "modified": "07/15/2026 08:24:27 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65171",
+        "url": "https://core.trac.wordpress.org/ticket/65171",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "05/05/2026 09:12:28 PM",
+        "modified": "07/20/2026 05:29:18 AM",
+        "keywords": "has-patch needs-unit-tests needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -3874,83 +3951,6 @@
         "review": {}
       },
       {
-        "ticket_id": "65120",
-        "url": "https://core.trac.wordpress.org/ticket/65120",
-        "score": 148,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Add `wp_elements_block_supports_class_name` filter to `wp_get_elements_class_name()`",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Editor",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "04/23/2026 06:57:36 PM",
-        "modified": "05/20/2026 05:57:15 AM",
-        "keywords": "has-patch needs-testing has-test-info 2nd-opinion",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "65281",
         "url": "https://core.trac.wordpress.org/ticket/65281",
         "score": 148,
@@ -5436,20 +5436,20 @@
         "review": {}
       },
       {
-        "ticket_id": "65171",
-        "url": "https://core.trac.wordpress.org/ticket/65171",
+        "ticket_id": "65120",
+        "url": "https://core.trac.wordpress.org/ticket/65120",
         "score": 138,
         "tier_class": "watching",
         "tier_label": "Worth Watching",
-        "summary": "wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs",
+        "summary": "Add `wp_elements_block_supports_class_name` filter to `wp_get_elements_class_name()`",
         "track": "General: Needs Testing",
         "status": "New",
         "component": "Editor",
         "owner": "",
         "comments": "Unknown",
-        "created": "05/05/2026 09:12:28 PM",
-        "modified": "05/14/2026 11:31:38 AM",
-        "keywords": "has-patch needs-unit-tests needs-testing",
+        "created": "04/23/2026 06:57:36 PM",
+        "modified": "05/20/2026 05:57:15 AM",
+        "keywords": "has-patch needs-testing has-test-info 2nd-opinion",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",

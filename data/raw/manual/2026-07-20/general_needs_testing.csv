@@ -239,7 +239,7 @@
 65052,Nonce check order flaw in post-quickdraft-save,assigned,Security,rajeshcp,defect (bug),normal,Awaiting Review,,has-patch needs-testing has-test-info has-unit-tests,04/09/2026 01:06:03 PM,05/19/2026 08:54:37 PM
 65054,$_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler,assigned,Security,rajeshcp,defect (bug),normal,Awaiting Review,,has-patch needs-testing has-test-info has-unit-tests,04/09/2026 04:50:52 PM,07/18/2026 12:12:21 PM
 65120,Add `wp_elements_block_supports_class_name` filter to `wp_get_elements_class_name()`,new,Editor,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-test-info 2nd-opinion,04/23/2026 06:57:36 PM,05/20/2026 05:57:15 AM
-65171,wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs,new,Editor,,defect (bug),normal,Awaiting Review,,has-patch needs-unit-tests needs-testing,05/05/2026 09:12:28 PM,05/14/2026 11:31:38 AM
+65171,wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs,new,Editor,,defect (bug),normal,Awaiting Review,,has-patch needs-unit-tests needs-testing,05/05/2026 09:12:28 PM,07/20/2026 05:29:18 AM
 65281,Custom Time & Date Format Fields Allow Empty Save Instead of Validation,new,Date/Time,,defect (bug),normal,Awaiting Review,,has-patch has-unit-tests has-test-info needs-testing,05/20/2026 06:43:42 PM,06/15/2026 02:26:48 PM
 65345,Site Icon subsizes use wrong array key 'width ' instead of 'width',new,Media,,defect (bug),normal,7.1,4.3,has-patch needs-testing has-unit-tests,05/26/2026 10:59:28 AM,07/02/2026 09:59:47 AM
 65350,Possible duplicate update event firing during wp_maybe_auto_update,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,7.0,needs-testing 2nd-opinion,05/26/2026 02:22:13 PM,06/06/2026 03:27:02 AM
@@ -256,6 +256,6 @@
 65623,Media: expose image_strip_meta and image_max_bit_depth in the REST API index for client-side media processing,assigned,Media,adamsilverstein,defect (bug),normal,7.1,,has-patch needs-testing has-unit-tests commit,07/13/2026 09:57:34 PM,07/16/2026 04:20:27 PM
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch reporter-feedback,07/14/2026 10:42:44 AM,07/16/2026 09:43:07 AM
 65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,07/15/2026 09:03:24 PM
-65661,Media: Enable client-side media uploads in the Media Library grid,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,07/18/2026 04:16:18 PM
+65661,Media: Enable client-side media uploads in the Media Library grid,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,07/20/2026 06:13:09 AM
 65601,Install theme button icon is misaligned with button text during theme installation,assigned,Administration,kosvrouvas,defect (bug),low,7.1,7.0,has-patch needs-testing,07/09/2026 01:56:36 PM,07/19/2026 02:43:45 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing,04/09/2025 11:10:53 AM,07/16/2026 02:39:54 AM
