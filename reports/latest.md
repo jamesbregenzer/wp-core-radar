@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-20 06:22
+Generated: 2026-07-20 12:23
 
 ## Summary
 
@@ -1622,11 +1622,11 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Discovery track: General Needs Testing
 - Component: Site Health
 - Trac status: Accepted
-- Milestone: 7.0.2
+- Milestone: 7.0.3
 - Owner: westonruter
 - Keywords: has-patch needs-testing
 - Created: 02/23/2026 03:51:38 PM
-- Modified: 07/05/2026 01:45:04 PM
+- Modified: 07/17/2026 07:20:41 PM
 - Review status: commented
 - Review reason: Reviewed patch, tested in Playground, submitted Trac feedback.
 - Review notes: Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.
@@ -1913,7 +1913,7 @@ Posted testing results to Trac.
 | media_has_patch | 2026-07-19 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-19/media_has_patch.csv` |
 | accessibility_has_patch | 2026-07-20 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-20/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-07-20 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-20/docs_needs_testing.csv` |
-| general_needs_testing | 2026-07-20 | 260 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-20/general_needs_testing.csv` |
+| general_needs_testing | 2026-07-20 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-20/general_needs_testing.csv` |
 | good_first_bugs | 2026-07-20 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-20/good_first_bugs.csv` |
 | media_has_patch | 2026-07-20 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-20/media_has_patch.csv` |
 
