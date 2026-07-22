@@ -64,7 +64,7 @@
 38936,Alter Table Always Expects a COLUMN; Crashes on a CONSTRAINT,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,,needs-testing dev-feedback,11/24/2016 05:25:13 PM,12/16/2022 08:17:47 AM
 39003,menu_page_url() not working on Ajax call,new,Administration,,defect (bug),normal,Awaiting Review,4.6.1,needs-testing reporter-feedback,12/01/2016 01:50:38 PM,10/14/2024 03:34:48 PM
 39447,Improvement to the get_the_posts_navigation,reviewing,Query,SergeyBiryukov,enhancement,normal,Future Release,,needs-testing needs-patch needs-unit-tests,01/03/2017 02:36:31 PM,01/27/2021 06:28:38 AM
-40032,Automatic redirects with _wp_old_slug won't mantain GET parameters if present,new,Permalinks,,defect (bug),normal,Awaiting Review,2.1,has-patch needs-testing,03/04/2017 03:05:27 PM,03/09/2021 06:31:59 AM
+40032,Automatic redirects with _wp_old_slug won't mantain GET parameters if present,new,Permalinks,,defect (bug),normal,Awaiting Review,2.1,has-patch needs-testing has-unit-tests,03/04/2017 03:05:27 PM,07/22/2026 07:10:15 AM
 40241,Showing wrong Core current version on the update page.,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,4.7.3,has-patch needs-testing,03/23/2017 03:47:43 PM,12/06/2023 08:43:34 PM
 40339,If $home_path=='wp' then WP::parse_request() will remove 'wp' from 'wp-json/wc/v1/products' in $pathinfo,new,Rewrite Rules,,defect (bug),normal,Awaiting Review,4.7.3,needs-patch needs-testing,04/02/2017 01:32:06 PM,01/12/2018 02:33:28 AM
 40370,"add_image_sizes does not create the ""crop position"" versions of the image",reopened,Media,,enhancement,normal,Future Release,2.9,good-first-bug has-patch 2nd-opinion has-unit-tests needs-testing,04/05/2017 01:29:32 PM,05/20/2024 05:16:01 PM
