@@ -110,7 +110,7 @@
 45013,Wrong links when installing in subdirectory =,new,Administration,,defect (bug),normal,Awaiting Review,4.9.8,has-screenshots needs-testing,09/29/2018 08:32:21 PM,10/10/2018 04:23:16 PM
 45033,Add TIDAL to oEmbed whitelist,reopened,Embeds,,defect (bug),normal,Awaiting Review,,has-patch needs-testing,10/03/2018 08:20:13 AM,07/22/2025 03:13:20 AM
 45341,"WSOD when editing a page with define( 'SAVEQUERIES', true ); set in wp-config.php",new,Editor,,defect (bug),normal,Awaiting Review,5.0,needs-testing,11/14/2018 06:43:28 AM,11/16/2020 06:43:02 AM
-45354,Adding index for meta_key and post_id in postmeta,new,Database,,enhancement,normal,Future Release,,needs-testing dev-feedback has-patch has-unit-tests,11/14/2018 09:43:31 PM,07/10/2026 07:26:59 AM
+45354,Adding index for meta_key and post_id in postmeta,new,Database,,enhancement,normal,Future Release,,needs-testing dev-feedback has-patch has-unit-tests,11/14/2018 09:43:31 PM,07/22/2026 11:42:03 AM
 45897,Chinese page uri dump fail,new,I18N,,defect (bug),normal,Awaiting Review,5.0.2,needs-testing has-patch,01/10/2019 07:17:56 AM,02/03/2026 03:56:47 PM
 45910,Improve and extend focus styles for Windows High Contrast mode,assigned,Administration,rcreators,defect (bug),normal,Future Release,,needs-testing,01/10/2019 04:54:41 PM,01/03/2025 07:13:03 AM
 46017,"""Mine"" comment count isn't updated when replying to or moderating a comment.",new,Comments,,defect (bug),normal,Future Release,5.1,needs-testing has-patch has-unit-tests,01/17/2019 02:59:49 AM,07/21/2026 06:37:26 AM
@@ -250,9 +250,9 @@
 65491,Add support for the autofocus attribute within dialog elements,assigned,Formatting,afercia,defect (bug),normal,7.1,,has-patch has-unit-tests needs-testing,06/19/2026 09:30:32 AM,07/21/2026 04:52:59 PM
 65496,Theme testing workflow will fail when multiple themes have uncommitted changes to built files.,new,Build/Test Tools,,defect (bug),normal,Future Release,,has-patch needs-testing,06/19/2026 06:39:45 PM,07/06/2026 08:17:47 AM
 65515,"ThickBox ReferenceError: imgLoader is not defined due to ""use strict"" contamination in load-scripts.php",new,Script Loader,,defect (bug),normal,7.0.3,7.0,has-patch has-unit-tests needs-testing,06/22/2026 12:39:34 PM,07/21/2026 07:27:30 AM
-65551,Connectors: Preserve stored AI provider API key when validation is indeterminate,new,Editor,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 07:24:33 AM,07/14/2026 08:43:03 AM
+65551,Connectors: Preserve stored AI provider API key when validation is indeterminate,new,Editor,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 07:24:33 AM,07/22/2026 04:26:54 PM
 65554,Connectors: only validate AI provider API keys that were submitted in the request,new,AI,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 01:43:40 PM,07/10/2026 04:30:33 PM
-65622,Comments: allow note mention attributes in comment content,assigned,Comments,adamsilverstein,defect (bug),normal,7.1,,has-patch has-unit-tests needs-testing,07/13/2026 04:28:29 PM,07/21/2026 04:08:12 PM
+65622,Comments: allow note mention attributes in comment content,assigned,Comments,adamsilverstein,defect (bug),normal,7.1,,has-patch has-unit-tests needs-testing commit,07/13/2026 04:28:29 PM,07/22/2026 02:56:47 PM
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch reporter-feedback,07/14/2026 10:42:44 AM,07/16/2026 09:43:07 AM
 65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,07/15/2026 09:03:24 PM
 65661,Media: Enable client-side media uploads in the Media Library grid,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,07/20/2026 06:13:09 AM

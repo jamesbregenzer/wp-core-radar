@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-22 06:30
+Generated: 2026-07-22 12:31
 
 ## Summary
 
@@ -180,7 +180,28 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
+#### 8. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
+
+- Score: **166**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Script Loader
+- Trac status: New
+- Milestone: 7.0.2
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 06/22/2026 12:39:34 PM
+- Modified: 07/16/2026 09:47:24 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +20: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 9. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -202,7 +223,7 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#65601](https://core.trac.wordpress.org/ticket/65601) — Install theme button icon is misaligned with button text during theme installation
+#### 10. [#65601](https://core.trac.wordpress.org/ticket/65601) — Install theme button icon is misaligned with button text during theme installation
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -224,7 +245,7 @@ Generated: 2026-07-22 06:30
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#65622](https://core.trac.wordpress.org/ticket/65622) — Comments: allow note mention attributes in comment content
+#### 11. [#65622](https://core.trac.wordpress.org/ticket/65622) — Comments: allow note mention attributes in comment content
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -246,7 +267,7 @@ Generated: 2026-07-22 06:30
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+#### 12. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -268,7 +289,9 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+## Top Opportunities
+
+#### 1. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -291,9 +314,7 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-## Top Opportunities
-
-#### 1. [#65504](https://core.trac.wordpress.org/ticket/65504) — WP_AI_Client_Ability_Function_Resolver::execute_abilities() answers non-ability function calls with a spurious error
+#### 2. [#65504](https://core.trac.wordpress.org/ticket/65504) — WP_AI_Client_Ability_Function_Resolver::execute_abilities() answers non-ability function calls with a spurious error
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -316,7 +337,7 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 2. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+#### 3. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
 
 - Score: **161**
 - Track/query: Media: Has Patch
@@ -336,7 +357,7 @@ Generated: 2026-07-22 06:30
   - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
+#### 4. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
 
 - Score: **160**
 - Track/query: General: Needs Testing
@@ -357,7 +378,7 @@ Generated: 2026-07-22 06:30
   - -10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
+#### 5. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -377,7 +398,7 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#64670](https://core.trac.wordpress.org/ticket/64670) — WP_REST_Posts_Controller::update_item() not passing parent to wp_unique_post_slug() for draft child
+#### 6. [#64670](https://core.trac.wordpress.org/ticket/64670) — WP_REST_Posts_Controller::update_item() not passing parent to wp_unique_post_slug() for draft child
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -397,7 +418,7 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#64991](https://core.trac.wordpress.org/ticket/64991) — New param "allow_multiple_terms" in `register_taxonomy` for single term restriction
+#### 7. [#64991](https://core.trac.wordpress.org/ticket/64991) — New param "allow_multiple_terms" in `register_taxonomy` for single term restriction
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -417,7 +438,7 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65171](https://core.trac.wordpress.org/ticket/65171) — wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs
+#### 8. [#65171](https://core.trac.wordpress.org/ticket/65171) — wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -437,7 +458,7 @@ Generated: 2026-07-22 06:30
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
+#### 9. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -455,26 +476,6 @@ Generated: 2026-07-22 06:30
   - +30: Needs Testing
   - +20: Freshness
   - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 9. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
-
-- Score: **158**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Script Loader
-- Trac status: New
-- Milestone: 7.0.2
-- Keywords: has-patch has-unit-tests needs-testing
-- Created: 06/22/2026 12:39:34 PM
-- Modified: 07/16/2026 09:47:24 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 10. [#65632](https://core.trac.wordpress.org/ticket/65632) — Update `htmlhint` to version `1.9.2`
@@ -1401,7 +1402,7 @@ No tickets in this section.
 
 #### 1. [#43178](https://core.trac.wordpress.org/ticket/43178) — Rethinking what “captions” means for video
 
-- Score: **219**
+- Score: **209**
 - Track/query: Media: Has Patch
 - Discovery track: General Needs Testing, Media Has Patch
 - Component: Media
@@ -1410,7 +1411,7 @@ No tickets in this section.
 - Owner: joedolson
 - Keywords: has-patch has-ux-feedback phase-3-media-triage needs-testing has-test-info
 - Created: 01/29/2018 04:32:59 PM
-- Modified: 07/07/2026 05:02:35 PM
+- Modified: 06/30/2026 04:05:12 PM
 - Review status: tested
 - Review reason: Verified PR behavior in WordPress Playground.
 - Review notes: Tested PR #11634 using the WordPress Playground preview.
@@ -1423,7 +1424,7 @@ Verified existing Description field remains functional.
 
 No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Review updated: 2026-06-16T11:08:17.948Z
-- Why it ranked: track priority: Media: Has Patch +100, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
+- Why it ranked: track priority: Media: Has Patch +100, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10
 - Score breakdown:
   - +100: Track Priority
   - +35: Has Patch
@@ -1431,7 +1432,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +20: Preferred Component
   - +8: Has Concrete Milestone
   - +6: Has Owner
-  - +20: Freshness
+  - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 2. [#65329](https://core.trac.wordpress.org/ticket/65329) — Move sideload metadata writes to the finalize endpoint
@@ -1609,7 +1610,32 @@ Posted testing results to Trac.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
+#### 8. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
+
+- Score: **168**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: needs-testing needs-test-info has-screenshots has-patch
+- Created: 06/22/2026 12:12:45 PM
+- Modified: 06/22/2026 04:54:19 PM
+- Review status: commented
+- Review reason: PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.
+- Review notes: Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed “Showing 1 of 1 media items,” so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the “Could not retrieve the featured image data” message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.
+- Review updated: 2026-06-22T16:55:30.056Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 9. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -1632,30 +1658,6 @@ Posted testing results to Trac.
   - +30: Needs Testing
   - +20: Good First Bug
   - +6: Has Owner
-  - +10: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 9. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
-
-- Score: **160**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: New
-- Milestone: Awaiting Review
-- Keywords: needs-testing needs-test-info has-screenshots has-patch
-- Created: 06/22/2026 12:12:45 PM
-- Modified: 06/22/2026 04:54:19 PM
-- Review status: commented
-- Review reason: PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.
-- Review notes: Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed “Showing 1 of 1 media items,” so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the “Could not retrieve the featured image data” message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.
-- Review updated: 2026-06-22T16:55:30.056Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: updated within 60 days +10
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
   - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 

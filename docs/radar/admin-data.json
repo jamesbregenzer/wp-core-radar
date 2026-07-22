@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-22T06:30:31",
+  "generated": "2026-07-22T12:31:24",
   "summary": {
     "unique_tickets": 300,
     "priority_targets": 12,
-    "immediate": 7,
-    "strong": 5,
+    "immediate": 8,
+    "strong": 4,
     "watching": 81,
     "reviews_loaded": 21
   },
@@ -682,6 +682,94 @@
         "review": {}
       },
       {
+        "ticket_id": "65515",
+        "url": "https://core.trac.wordpress.org/ticket/65515",
+        "score": 166,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "ThickBox ReferenceError: imgLoader is not defined due to \"use strict\" contamination in load-scripts.php",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Script Loader",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/22/2026 12:39:34 PM",
+        "modified": "07/16/2026 09:47:24 AM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "65054",
         "url": "https://core.trac.wordpress.org/ticket/65054",
         "score": 164,
@@ -1032,7 +1120,9 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      },
+      }
+    ],
+    "top": [
       {
         "ticket_id": "64921",
         "url": "https://core.trac.wordpress.org/ticket/64921",
@@ -1131,9 +1221,7 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      }
-    ],
-    "top": [
+      },
       {
         "ticket_id": "65504",
         "url": "https://core.trac.wordpress.org/ticket/65504",
@@ -1766,83 +1854,6 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65515",
-        "url": "https://core.trac.wordpress.org/ticket/65515",
-        "score": 158,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "ThickBox ReferenceError: imgLoader is not defined due to \"use strict\" contamination in load-scripts.php",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Script Loader",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/22/2026 12:39:34 PM",
-        "modified": "07/16/2026 09:47:24 AM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
@@ -17507,7 +17518,7 @@
       {
         "ticket_id": "43178",
         "url": "https://core.trac.wordpress.org/ticket/43178",
-        "score": 219,
+        "score": 209,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "Rethinking what \u201ccaptions\u201d means for video",
@@ -17517,7 +17528,7 @@
         "owner": "joedolson",
         "comments": "Unknown",
         "created": "01/29/2018 04:32:59 PM",
-        "modified": "07/07/2026 05:02:35 PM",
+        "modified": "06/30/2026 04:05:12 PM",
         "keywords": "has-patch has-ux-feedback phase-3-media-triage needs-testing has-test-info",
         "signals": [
           {
@@ -17545,7 +17556,7 @@
             "class": "owner"
           },
           {
-            "label": "Freshness: Recently Updated <=14 Days +20",
+            "label": "Freshness: Updated Within 60 Days +10",
             "class": "freshness"
           }
         ],
@@ -17593,10 +17604,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+20",
+            "points": "+10",
             "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           }
         ],
@@ -18240,6 +18251,99 @@
         }
       },
       {
+        "ticket_id": "65513",
+        "url": "https://core.trac.wordpress.org/ticket/65513",
+        "score": 168,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Media Library modal shows wrong count on first upload and does not reset after image deletion",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/22/2026 12:12:45 PM",
+        "modified": "06/22/2026 04:54:19 PM",
+        "keywords": "needs-testing needs-test-info has-screenshots has-patch",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "commented",
+          "reason": "PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.",
+          "notes": "Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed \u201cShowing 1 of 1 media items,\u201d so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the \u201cCould not retrieve the featured image data\u201d message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.",
+          "updated_at": "2026-06-22T16:55:30.056Z"
+        }
+      },
+      {
         "ticket_id": "41081",
         "url": "https://core.trac.wordpress.org/ticket/41081",
         "score": 166,
@@ -18330,88 +18434,6 @@
           "reason": "Refreshed stale patch and validated behavior against current trunk.",
           "notes": "Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.",
           "updated_at": "2026-06-15T21:48:04.323Z"
-        }
-      },
-      {
-        "ticket_id": "65513",
-        "url": "https://core.trac.wordpress.org/ticket/65513",
-        "score": 160,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Media Library modal shows wrong count on first upload and does not reset after image deletion",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Media",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/22/2026 12:12:45 PM",
-        "modified": "06/22/2026 04:54:19 PM",
-        "keywords": "needs-testing needs-test-info has-screenshots has-patch",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "commented",
-          "reason": "PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.",
-          "notes": "Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed \u201cShowing 1 of 1 media items,\u201d so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the \u201cCould not retrieve the featured image data\u201d message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.",
-          "updated_at": "2026-06-22T16:55:30.056Z"
         }
       },
       {
