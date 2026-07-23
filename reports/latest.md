@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-23 06:33
+Generated: 2026-07-23 12:34
 
 ## Summary
 
@@ -23,7 +23,31 @@ Generated: 2026-07-23 06:33
 
 ## Priority Targets
 
-#### 1. [#64155](https://core.trac.wordpress.org/ticket/64155) — Add stack trace to failed plugin update error notifications
+#### 1. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+
+- Score: **182**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: General
+- Trac status: Accepted
+- Milestone: 7.1
+- Owner: westonruter
+- Keywords: has-patch needs-testing reporter-feedback has-test-info
+- Created: 03/21/2026 06:37:01 PM
+- Modified: 07/23/2026 03:08:44 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Reporter Feedback
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 2. [#64155](https://core.trac.wordpress.org/ticket/64155) — Add stack trace to failed plugin update error notifications
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -46,7 +70,7 @@ Generated: 2026-07-23 06:33
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 2. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+#### 3. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -69,7 +93,7 @@ Generated: 2026-07-23 06:33
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#65491](https://core.trac.wordpress.org/ticket/65491) — Add support for the autofocus attribute within dialog elements
+#### 4. [#65491](https://core.trac.wordpress.org/ticket/65491) — Add support for the autofocus attribute within dialog elements
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -92,7 +116,7 @@ Generated: 2026-07-23 06:33
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
+#### 5. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -115,7 +139,7 @@ Generated: 2026-07-23 06:33
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
+#### 6. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -139,7 +163,7 @@ Generated: 2026-07-23 06:33
   - -12: Setup Complexity
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#65661](https://core.trac.wordpress.org/ticket/65661) — Media: Enable client-side media uploads in the Media Library grid
+#### 7. [#65661](https://core.trac.wordpress.org/ticket/65661) — Media: Enable client-side media uploads in the Media Library grid
 
 - Score: **170**
 - Track/query: General: Needs Testing
@@ -159,7 +183,7 @@ Generated: 2026-07-23 06:33
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#64953](https://core.trac.wordpress.org/ticket/64953) — The login page still shows the old color for the “← Go to [Website Name]” link.
+#### 8. [#64953](https://core.trac.wordpress.org/ticket/64953) — The login page still shows the old color for the “← Go to [Website Name]” link.
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -180,7 +204,7 @@ Generated: 2026-07-23 06:33
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
+#### 9. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -201,7 +225,7 @@ Generated: 2026-07-23 06:33
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
+#### 10. [#65054](https://core.trac.wordpress.org/ticket/65054) — $_GET['pagenow'] and $_GET['widget'] unsanitized in dashboard AJAX handler
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -223,7 +247,7 @@ Generated: 2026-07-23 06:33
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#65601](https://core.trac.wordpress.org/ticket/65601) — Install theme button icon is misaligned with button text during theme installation
+#### 11. [#65601](https://core.trac.wordpress.org/ticket/65601) — Install theme button icon is misaligned with button text during theme installation
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -245,7 +269,7 @@ Generated: 2026-07-23 06:33
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#65622](https://core.trac.wordpress.org/ticket/65622) — Comments: allow note mention attributes in comment content
+#### 12. [#65622](https://core.trac.wordpress.org/ticket/65622) — Comments: allow note mention attributes in comment content
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -267,7 +291,9 @@ Generated: 2026-07-23 06:33
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+## Top Opportunities
+
+#### 1. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -285,31 +311,6 @@ Generated: 2026-07-23 06:33
   - +35: Has Patch
   - +30: Needs Testing
   - +18: Dev Feedback
-  - +6: Has Owner
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-## Top Opportunities
-
-#### 1. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
-
-- Score: **162**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: General
-- Trac status: Accepted
-- Milestone: 7.1
-- Owner: westonruter
-- Keywords: has-patch needs-testing needs-test-info reporter-feedback
-- Created: 03/21/2026 06:37:01 PM
-- Modified: 03/24/2026 02:56:52 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +10: Reporter Feedback
-  - +8: Has Concrete Milestone
   - +6: Has Owner
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
@@ -1933,7 +1934,7 @@ Posted testing results to Trac.
 | media_has_patch | 2026-07-22 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-22/media_has_patch.csv` |
 | accessibility_has_patch | 2026-07-23 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-23/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-07-23 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-23/docs_needs_testing.csv` |
-| general_needs_testing | 2026-07-23 | 258 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-23/general_needs_testing.csv` |
+| general_needs_testing | 2026-07-23 | 256 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-23/general_needs_testing.csv` |
 | good_first_bugs | 2026-07-23 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-23/good_first_bugs.csv` |
 | media_has_patch | 2026-07-23 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-07-23/media_has_patch.csv` |
 
