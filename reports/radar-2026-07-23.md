@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-23 12:34
+Generated: 2026-07-23 18:35
 
 ## Summary
 
@@ -104,7 +104,7 @@ Generated: 2026-07-23 12:34
 - Owner: afercia
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 06/19/2026 09:30:32 AM
-- Modified: 07/08/2026 09:56:21 PM
+- Modified: 07/13/2026 08:34:18 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
