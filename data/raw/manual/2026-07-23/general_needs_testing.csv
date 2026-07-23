@@ -247,7 +247,7 @@
 65381,Uncaught TypeError: Cannot read properties of undefined (reading 'borderColor') in block-editor.min.js on WordPress 7.0,new,Editor,,defect (bug),normal,Awaiting Review,,needs-testing reporter-feedback,06/01/2026 07:07:17 AM,06/11/2026 10:45:49 PM
 65395,"Site Health falsely reports ""Opcode cache is not enabled"" on shared hosting (WP 7.0)",new,Site Health,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/02/2026 09:05:13 PM,07/10/2026 11:19:17 AM
 65480,Custom HTML Block hangs when switching tabs and scrolling (Gutenberg/WordPress 7.0),new,Editor,,defect (bug),normal,Awaiting Review,7.0,needs-testing close,06/18/2026 07:24:05 AM,06/30/2026 04:18:18 PM
-65491,Add support for the autofocus attribute within dialog elements,assigned,Formatting,afercia,defect (bug),normal,7.1,,has-patch has-unit-tests needs-testing,06/19/2026 09:30:32 AM,07/21/2026 04:52:59 PM
+65491,Add support for the autofocus attribute within dialog elements,assigned,Formatting,afercia,defect (bug),normal,7.1,,has-patch has-unit-tests needs-testing has-test-info,06/19/2026 09:30:32 AM,07/23/2026 11:14:51 AM
 65496,Theme testing workflow will fail when multiple themes have uncommitted changes to built files.,new,Build/Test Tools,,defect (bug),normal,Future Release,,has-patch needs-testing,06/19/2026 06:39:45 PM,07/06/2026 08:17:47 AM
 65515,"ThickBox ReferenceError: imgLoader is not defined due to ""use strict"" contamination in load-scripts.php",new,Script Loader,,defect (bug),normal,7.0.3,7.0,has-patch has-unit-tests needs-testing,06/22/2026 12:39:34 PM,07/21/2026 07:27:30 AM
 65551,Connectors: Preserve stored AI provider API key when validation is indeterminate,new,Editor,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 07:24:33 AM,07/22/2026 04:26:54 PM
@@ -256,5 +256,4 @@
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch reporter-feedback,07/14/2026 10:42:44 AM,07/16/2026 09:43:07 AM
 65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,07/15/2026 09:03:24 PM
 65661,Media: Enable client-side media uploads in the Media Library grid,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,07/20/2026 06:13:09 AM
-65601,Install theme button icon is misaligned with button text during theme installation,assigned,Administration,kosvrouvas,defect (bug),low,7.1,7.0,has-patch needs-testing,07/09/2026 01:56:36 PM,07/23/2026 05:18:33 AM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing,04/09/2025 11:10:53 AM,07/16/2026 02:39:54 AM
