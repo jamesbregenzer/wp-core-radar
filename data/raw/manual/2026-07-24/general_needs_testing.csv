@@ -84,6 +84,7 @@
 42043,Twenty Fourteen: Menu problems on iPad Air 2,new,Bundled Theme,,defect (bug),normal,Future Release,,needs-testing 2nd-opinion,09/30/2017 06:15:32 PM,12/02/2024 11:37:55 AM
 42080,get_site_url() does not always return the appropriate protocol,new,Administration,,defect (bug),normal,Awaiting Review,4.9,needs-testing,10/03/2017 10:15:15 PM,09/21/2021 05:42:11 AM
 42164,Conditional Tags not working when using ugly URL,new,Query,,defect (bug),normal,Awaiting Review,4.8.2,needs-patch needs-unit-tests needs-testing,10/10/2017 10:23:14 AM,10/10/2017 01:54:21 PM
+42281,Better Update Management for Translation files,new,Upgrade/Install,,enhancement,normal,Awaiting Review,4.8.2,has-patch has-unit-tests has-screenshots needs-testing,10/19/2017 05:48:13 PM,07/24/2026 07:00:34 AM
 42288,Validation of custom menu link,new,Menus,,defect (bug),normal,Awaiting Review,4.8.2,needs-patch needs-testing,10/20/2017 05:38:04 AM,06/14/2018 01:40:20 PM
 42329,"Customizer: interacting with text fields in a ""wide"" widget shifts child panel position in Safari.",new,Customize,,defect (bug),normal,Future Release,4.7,needs-testing,10/24/2017 11:06:54 PM,06/22/2024 08:36:23 PM
 42670,Symlinked plugin makes plugin_basename function return wrong basename,assigned,Plugins,brianhenryie,defect (bug),normal,Future Release,4.9,has-unit-tests needs-testing has-patch has-test-info dev-feedback,11/23/2017 11:36:11 AM,05/12/2025 01:35:39 AM
@@ -232,8 +233,7 @@
 64842,Upload problems with Umlauts in ID3 Tags,new,Upload,,defect (bug),normal,Awaiting Review,6.9.1,has-patch needs-testing,03/11/2026 03:42:33 PM,03/19/2026 10:17:02 PM
 64863,"Eliminate switch_to_blog() from get_blog_option(), update_blog_option(), WP_Site::get_details(), and get_blog_post() using $wpdb->get_blog_prefix()",new,Networks and Sites,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,03/14/2026 10:37:58 PM,04/30/2026 06:36:50 AM
 64902,wp_save_image() fatal error when wp_save_image_file() returns WP_Error,new,Media,,defect (bug),normal,Awaiting Review,6.9.4,has-patch needs-testing has-test-info,03/19/2026 02:52:41 PM,07/15/2026 05:18:08 PM
-64921,REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766),accepted,General,westonruter,defect (bug),normal,7.1,4.7,has-patch needs-testing reporter-feedback has-test-info,03/21/2026 06:37:01 PM,07/23/2026 03:08:44 PM
-64953,The login page still shows the old color for the “← Go to [Website Name]” link.,new,Login and Registration,,defect (bug),normal,7.1,7.0,has-screenshots has-patch needs-testing,03/26/2026 05:46:37 AM,07/23/2026 03:08:43 PM
+64921,REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766),accepted,General,westonruter,defect (bug),normal,7.1,4.7,has-patch needs-testing reporter-feedback has-test-info,03/21/2026 06:37:01 PM,07/24/2026 08:18:26 AM
 64991,"New param ""allow_multiple_terms"" in `register_taxonomy` for single term restriction",new,Taxonomy,,feature request,normal,Awaiting Review,,has-patch has-unit-tests needs-testing,03/30/2026 10:13:26 AM,07/15/2026 08:24:27 AM
 65048,wp_ajax_fetch_list(): Sanitize $_GET input before nonce construction,assigned,Administration,rajeshcp,defect (bug),normal,Awaiting Review,3.1,has-patch needs-testing has-test-info,04/09/2026 10:09:59 AM,04/23/2026 04:22:59 AM
 65051,$_REQUEST['term'] used unsanitized in user search query,assigned,Networks and Sites,rajeshcp,defect (bug),normal,7.1,,has-patch needs-testing has-test-info has-unit-tests has-screenshots,04/09/2026 10:29:50 AM,07/15/2026 06:17:22 PM
