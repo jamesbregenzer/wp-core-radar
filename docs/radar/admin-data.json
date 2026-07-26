@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T00:43:34",
+  "generated": "2026-07-26T06:44:27",
   "summary": {
     "unique_tickets": 301,
     "priority_targets": 12,
@@ -11409,61 +11409,6 @@
         "review": {}
       },
       {
-        "ticket_id": "61750",
-        "url": "https://core.trac.wordpress.org/ticket/61750",
-        "score": 103,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Spacing issues since 6.6 (Gutenberg with Block- or Hybrid Themes)",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "General",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "07/25/2024 06:13:44 AM",
-        "modified": "07/26/2024 10:05:13 AM",
-        "keywords": "needs-patch 2nd-opinion needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "62810",
         "url": "https://core.trac.wordpress.org/ticket/62810",
         "score": 103,
@@ -16403,6 +16348,50 @@
         "review": {}
       },
       {
+        "ticket_id": "61750",
+        "url": "https://core.trac.wordpress.org/ticket/61750",
+        "score": 95,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Spacing issues since 6.6 (Gutenberg with Block- or Hybrid Themes)",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "needs-patch 2nd-opinion needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "55036",
         "url": "https://core.trac.wordpress.org/ticket/55036",
         "score": 93,
@@ -17813,7 +17802,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "03/19/2026 02:52:41 PM",
-        "modified": "07/11/2026 08:59:45 AM",
+        "modified": "07/15/2026 05:18:08 PM",
         "keywords": "has-patch needs-testing has-test-info",
         "signals": [
           {

@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-26 00:43
+Generated: 2026-07-26 06:44
 
 ## Summary
 
@@ -1475,7 +1475,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Milestone: Awaiting Review
 - Keywords: has-patch needs-testing has-test-info
 - Created: 03/19/2026 02:52:41 PM
-- Modified: 07/11/2026 08:59:45 AM
+- Modified: 07/15/2026 05:18:08 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Reproduced the reported fatal error by forcing wp_save_image_file() to return a WP_Error. Verified that the patch prevents the fatal error and returns the WP_Error message as the image edit error response. No regressions observed during testing.
