@@ -253,4 +253,5 @@
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch reporter-feedback,07/14/2026 10:42:44 AM,07/16/2026 09:43:07 AM
 65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,07/15/2026 09:03:24 PM
 65661,Media: Enable client-side media uploads in the Media Library,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,07/23/2026 10:46:37 PM
+65734,Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste,new,TinyMCE,,defect (bug),normal,Awaiting Review,trunk,has-patch needs-testing,07/27/2026 03:01:34 PM,07/27/2026 03:15:15 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing,04/09/2025 11:10:53 AM,07/16/2026 02:39:54 AM

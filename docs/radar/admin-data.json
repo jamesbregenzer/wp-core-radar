@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-27T00:47:01",
+  "generated": "2026-07-27T12:48:40",
   "summary": {
-    "unique_tickets": 301,
+    "unique_tickets": 302,
     "priority_targets": 12,
     "immediate": 8,
     "strong": 4,
@@ -3140,6 +3140,72 @@
         "created": "06/29/2026 07:24:33 AM",
         "modified": "07/14/2026 08:43:03 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65734",
+        "url": "https://core.trac.wordpress.org/ticket/65734",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "TinyMCE",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/27/2026 03:01:34 PM",
+        "modified": "07/27/2026 03:15:15 PM",
+        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
