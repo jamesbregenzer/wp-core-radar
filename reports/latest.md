@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-27 12:48
+Generated: 2026-07-27 18:49
 
 ## Summary
 
@@ -1715,7 +1715,7 @@ Posted testing results to Trac.
 
 #### 1. [#65549](https://core.trac.wordpress.org/ticket/65549) — Media: Sideload animated GIF → video companions and clean them up on delete
 
-- Score: **166**
+- Score: **174**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Media
@@ -1729,7 +1729,7 @@ Posted testing results to Trac.
 - Review reason: Associated implementation appears to have already landed and the GitHub PR is closed, leaving little opportunity for meaningful testing.
 - Review notes: Reviewed both the Trac ticket and linked GitHub PR. The implementation has already been merged through follow-up commits and the PR is closed. Discussion indicates the remaining work is administrative rather than awaiting independent testing. Skipped testing because additional reports are unlikely to provide value or contributor visibility.
 - Review updated: 2026-07-14T18:12:18.957Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has owner +6, freshness: updated within 60 days +10
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -1737,6 +1737,7 @@ Posted testing results to Trac.
   - +20: Preferred Component
   - +6: Has Owner
   - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Dataset Inventory

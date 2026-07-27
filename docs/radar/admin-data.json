@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T12:48:40",
+  "generated": "2026-07-27T18:49:31",
   "summary": {
     "unique_tickets": 302,
     "priority_targets": 12,
@@ -18759,7 +18759,7 @@
       {
         "ticket_id": "65549",
         "url": "https://core.trac.wordpress.org/ticket/65549",
-        "score": 166,
+        "score": 174,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "Media: Sideload animated GIF \u2192 video companions and clean them up on delete",
@@ -18795,6 +18795,10 @@
           {
             "label": "Freshness: Updated Within 60 Days +10",
             "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
           }
         ],
         "score_breakdown": [
@@ -18838,6 +18842,13 @@
             "label": "Freshness",
             "detail": "Updated Within 60 Days",
             "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
           }
         ],
