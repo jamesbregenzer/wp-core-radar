@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-28T00:50:26",
+  "generated": "2026-07-28T06:51:17",
   "summary": {
-    "unique_tickets": 302,
+    "unique_tickets": 304,
     "priority_targets": 12,
     "immediate": 8,
     "strong": 4,
-    "watching": 83,
+    "watching": 84,
     "reviews_loaded": 21
   },
   "groups": {
@@ -3139,6 +3139,72 @@
         "comments": "Unknown",
         "created": "06/29/2026 07:24:33 AM",
         "modified": "07/14/2026 08:43:03 AM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65731",
+        "url": "https://core.trac.wordpress.org/ticket/65731",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Changing the site timezone can immediately invalidate fresh privacy-request confirmation links",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Privacy",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/27/2026 12:03:29 PM",
+        "modified": "07/28/2026 11:06:07 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -6376,6 +6442,83 @@
             "detail": "",
             "display": "Has Owner",
             "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65718",
+        "url": "https://core.trac.wordpress.org/ticket/65718",
+        "score": 136,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Multisite: the blogname is required during site creation but can be emptied later",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Networks and Sites",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/26/2026 08:31:58 PM",
+        "modified": "07/28/2026 10:13:14 AM",
+        "keywords": "has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Setup Complexity: Multisite Environment -14",
+            "class": "complexity"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "-14",
+            "label": "Setup Complexity",
+            "detail": "Multisite Environment",
+            "display": "Setup Complexity: Multisite Environment",
+            "polarity": "negative"
           }
         ],
         "discovery_track": "General Needs Testing",
