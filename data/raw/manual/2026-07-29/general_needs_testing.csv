@@ -84,7 +84,7 @@
 42043,Twenty Fourteen: Menu problems on iPad Air 2,new,Bundled Theme,,defect (bug),normal,Future Release,,needs-testing 2nd-opinion,09/30/2017 06:15:32 PM,12/02/2024 11:37:55 AM
 42080,get_site_url() does not always return the appropriate protocol,new,Administration,,defect (bug),normal,Awaiting Review,4.9,needs-testing,10/03/2017 10:15:15 PM,09/21/2021 05:42:11 AM
 42164,Conditional Tags not working when using ugly URL,new,Query,,defect (bug),normal,Awaiting Review,4.8.2,needs-patch needs-unit-tests needs-testing,10/10/2017 10:23:14 AM,10/10/2017 01:54:21 PM
-42281,Better Update Management for Translation files,new,Upgrade/Install,,enhancement,normal,Awaiting Review,4.8.2,has-patch has-unit-tests has-screenshots needs-testing,10/19/2017 05:48:13 PM,07/24/2026 07:00:34 AM
+42281,Better Update Management for Translation files,new,Upgrade/Install,,enhancement,normal,Awaiting Review,4.8.2,has-patch has-unit-tests has-screenshots needs-testing,10/19/2017 05:48:13 PM,07/29/2026 05:45:03 PM
 42288,Validation of custom menu link,new,Menus,,defect (bug),normal,Awaiting Review,4.8.2,needs-patch needs-testing,10/20/2017 05:38:04 AM,06/14/2018 01:40:20 PM
 42329,"Customizer: interacting with text fields in a ""wide"" widget shifts child panel position in Safari.",new,Customize,,defect (bug),normal,Future Release,4.7,needs-testing,10/24/2017 11:06:54 PM,06/22/2024 08:36:23 PM
 42670,Symlinked plugin makes plugin_basename function return wrong basename,assigned,Plugins,brianhenryie,defect (bug),normal,Future Release,4.9,has-unit-tests needs-testing has-patch has-test-info dev-feedback,11/23/2017 11:36:11 AM,05/12/2025 01:35:39 AM
@@ -105,7 +105,7 @@
 44641,Customizing Button Text in Custom Media Manager Frame Doesn't Work Anymore,assigned,Media,antpb,defect (bug),normal,Future Release,4.9.7,has-patch needs-testing 2nd-opinion,07/25/2018 12:16:47 PM,01/30/2022 04:52:29 PM
 44658,Support BETWEEN for term names in WP_Tax_Query/WP_Term_Query,new,Query,,feature request,normal,Future Release,,needs-testing has-unit-tests 2nd-opinion needs-dev-note needs-patch,07/27/2018 08:23:30 PM,09/11/2019 03:56:51 PM
 44921,User nicename discovery is slow to return,accepted,Users,pbearne,enhancement,normal,Future Release,2.0,has-patch needs-testing has-unit-tests needs-refresh,09/08/2018 12:12:26 PM,01/18/2025 03:10:57 PM
-44964,`redirect_guess_404_permalink` doesn't support array in `post_type` var,new,Query,,defect (bug),normal,Awaiting Review,4.9,needs-testing dev-feedback needs-unit-tests,09/19/2018 09:35:59 AM,10/01/2018 12:37:02 PM
+44964,`redirect_guess_404_permalink` doesn't support array in `post_type` var,new,Query,,defect (bug),normal,Awaiting Review,4.9,needs-testing dev-feedback needs-unit-tests has-patch,09/19/2018 09:35:59 AM,07/29/2026 01:54:28 PM
 44973,Issues with $wpdb->get_col_info,new,Database,,defect (bug),normal,Awaiting Review,4.9.8,needs-testing,09/20/2018 09:37:49 PM,09/23/2018 02:50:24 PM
 44980,When using a mobile browser (iOS 12) and the Visual Editor you won’t be able to properly select/highlight text,new,Editor,,defect (bug),normal,Awaiting Review,4.9.8,needs-testing,09/21/2018 11:46:00 PM,03/02/2019 06:35:18 AM
 45013,Wrong links when installing in subdirectory =,new,Administration,,defect (bug),normal,Awaiting Review,4.9.8,has-screenshots needs-testing,09/29/2018 08:32:21 PM,10/10/2018 04:23:16 PM
@@ -151,6 +151,7 @@
 52738,Use of get_object_vars() in sanitize_post() and WP_Post constructor does not handle null byte,new,"Posts, Post Types",,defect (bug),normal,Awaiting Review,5.6.2,has-patch has-unit-tests needs-testing changes-requested,03/09/2021 02:56:39 PM,10/04/2023 08:36:17 AM
 52848,Widgets z-index issue hides the widget's update button when other widgets remain open,new,Widgets,,defect (bug),normal,Awaiting Review,5.7,needs-testing,03/18/2021 12:59:43 PM,03/18/2021 12:59:43 PM
 52879,The SCRIPT_DEBUG constant is ignored when concatenating scripts,new,Script Loader,,defect (bug),normal,Future Release,2.8,needs-patch needs-testing needs-refresh,03/22/2021 03:39:16 AM,04/27/2022 04:53:22 AM
+52976,user emails comparison should be case insensitive,new,Users,,defect (bug),normal,Awaiting Review,4.3,good-first-bug has-patch has-screenshots has-unit-tests has-testing-info,04/06/2021 12:08:20 AM,07/29/2026 05:53:45 PM
 53035,Copy suggested policy text to clipboard on click success message is not showing,new,Administration,,defect (bug),normal,Awaiting Review,,has-screenshots needs-testing needs-refresh,04/15/2021 06:29:49 AM,04/16/2021 04:47:18 AM
 53047,"My ""Posts"" page (when a static front is selected) uses the old editor",reopened,Editor,,defect (bug),normal,Awaiting Review,,needs-testing needs-test-info,04/16/2021 02:12:40 AM,05/12/2025 01:37:50 AM
 53136,"Error with ""Add to Reusable blocks"" in WordPress 5.7.1",new,Editor,,defect (bug),normal,Future Release,5.7.1,reporter-feedback needs-testing,05/03/2021 08:10:05 AM,08/31/2021 02:06:33 PM
