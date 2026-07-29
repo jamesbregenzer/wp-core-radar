@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-29T00:53:58",
+  "generated": "2026-07-29T06:54:49",
   "summary": {
     "unique_tickets": 304,
     "priority_targets": 12,
     "immediate": 8,
     "strong": 4,
-    "watching": 84,
+    "watching": 83,
     "reviews_loaded": 21
   },
   "groups": {
@@ -1564,6 +1564,83 @@
         "review": {}
       },
       {
+        "ticket_id": "64376",
+        "url": "https://core.trac.wordpress.org/ticket/64376",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20)",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Canonical",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "12/08/2025 11:00:27 AM",
+        "modified": "07/29/2026 06:17:41 AM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "64670",
         "url": "https://core.trac.wordpress.org/ticket/64670",
         "score": 158,
@@ -1732,6 +1809,83 @@
         "created": "05/05/2026 09:12:28 PM",
         "modified": "07/20/2026 05:29:18 AM",
         "keywords": "has-patch needs-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65551",
+        "url": "https://core.trac.wordpress.org/ticket/65551",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Connectors: Preserve stored AI provider API key when validation is indeterminate",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/29/2026 07:24:33 AM",
+        "modified": "07/22/2026 04:26:54 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -3185,72 +3339,6 @@
             "label": "Preferred Component",
             "detail": "Media",
             "display": "Preferred Component: Media",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65551",
-        "url": "https://core.trac.wordpress.org/ticket/65551",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Connectors: Preserve stored AI provider API key when validation is indeterminate",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Editor",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/29/2026 07:24:33 AM",
-        "modified": "07/14/2026 08:43:03 AM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
@@ -5538,72 +5626,6 @@
         "created": "09/22/2025 04:46:04 PM",
         "modified": "10/15/2025 02:37:09 PM",
         "keywords": "has-patch needs-testing has-test-info",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "64376",
-        "url": "https://core.trac.wordpress.org/ticket/64376",
-        "score": 138,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20)",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Canonical",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "12/08/2025 11:00:27 AM",
-        "modified": "04/06/2026 02:07:16 AM",
-        "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",

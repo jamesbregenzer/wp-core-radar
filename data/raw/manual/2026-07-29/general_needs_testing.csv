@@ -224,7 +224,7 @@
 64056,Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing close,09/30/2025 02:27:40 PM,10/01/2025 08:28:56 AM
 64155,Add stack trace to failed plugin update error notifications,reviewing,Upgrade/Install,westonruter,enhancement,normal,7.2,6.6,needs-testing has-patch,10/27/2025 03:53:33 PM,07/21/2026 11:37:56 PM
 64282,Erase personal data does not remove biographical info,new,Privacy,,defect (bug),normal,Awaiting Review,6.8.3,has-patch has-testing needs-unit-tests,11/20/2025 02:14:56 PM,07/10/2026 02:16:11 PM
-64376,redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20),new,Canonical,,defect (bug),normal,Future Release,,has-patch has-unit-tests needs-testing,12/08/2025 11:00:27 AM,04/06/2026 02:07:16 AM
+64376,redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20),new,Canonical,,defect (bug),normal,Future Release,,has-patch has-unit-tests needs-testing,12/08/2025 11:00:27 AM,07/29/2026 06:17:41 AM
 64523,_do_query needs exception processing in class-wpdb.php,new,General,,defect (bug),normal,Awaiting Review,6.9,has-patch needs-testing needs-unit-tests has-pr,01/16/2026 09:40:38 PM,01/23/2026 05:36:40 AM
 64670,WP_REST_Posts_Controller::update_item() not passing parent to wp_unique_post_slug() for draft child,new,REST API,,defect (bug),normal,Awaiting Review,6.9.1,has-patch needs-testing,02/18/2026 05:35:30 PM,07/15/2026 09:56:40 AM
 64707,Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode,accepted,Site Health,westonruter,defect (bug),normal,7.0.3,7.0,has-patch needs-testing,02/23/2026 03:51:38 PM,07/21/2026 04:56:09 AM
@@ -252,7 +252,7 @@
 65554,Connectors: only validate AI provider API keys that were submitted in the request,new,AI,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 01:43:40 PM,07/10/2026 04:30:33 PM
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch reporter-feedback,07/14/2026 10:42:44 AM,07/16/2026 09:43:07 AM
 65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,07/15/2026 09:03:24 PM
-65661,Media: Enable client-side media uploads in the Media Library,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,07/28/2026 10:12:31 AM
+65661,Media: Enable client-side media uploads in the Media Library,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,07/29/2026 08:13:53 AM
 65718,Multisite: the blogname is required during site creation but can be emptied later,new,Networks and Sites,,defect (bug),normal,Awaiting Review,,has-patch needs-testing,07/26/2026 08:31:58 PM,07/28/2026 10:13:14 AM
 65731,Changing the site timezone can immediately invalidate fresh privacy-request confirmation links,new,Privacy,,defect (bug),normal,,trunk,has-patch has-unit-tests needs-testing,07/27/2026 12:03:29 PM,07/28/2026 11:06:07 AM
 65734,Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste,new,TinyMCE,,defect (bug),normal,Awaiting Review,trunk,has-patch needs-testing,07/27/2026 03:01:34 PM,07/28/2026 05:09:49 AM
