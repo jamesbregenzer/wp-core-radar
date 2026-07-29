@@ -151,7 +151,7 @@
 52738,Use of get_object_vars() in sanitize_post() and WP_Post constructor does not handle null byte,new,"Posts, Post Types",,defect (bug),normal,Awaiting Review,5.6.2,has-patch has-unit-tests needs-testing changes-requested,03/09/2021 02:56:39 PM,10/04/2023 08:36:17 AM
 52848,Widgets z-index issue hides the widget's update button when other widgets remain open,new,Widgets,,defect (bug),normal,Awaiting Review,5.7,needs-testing,03/18/2021 12:59:43 PM,03/18/2021 12:59:43 PM
 52879,The SCRIPT_DEBUG constant is ignored when concatenating scripts,new,Script Loader,,defect (bug),normal,Future Release,2.8,needs-patch needs-testing needs-refresh,03/22/2021 03:39:16 AM,04/27/2022 04:53:22 AM
-52976,user emails comparison should be case insensitive,new,Users,,defect (bug),normal,Awaiting Review,4.3,good-first-bug has-patch has-screenshots has-unit-tests has-testing-info,04/06/2021 12:08:20 AM,07/29/2026 05:53:45 PM
+52976,user emails comparison should be case insensitive,new,Users,,defect (bug),normal,Awaiting Review,4.3,good-first-bug has-patch has-screenshots has-unit-tests has-testing-info,04/06/2021 12:08:20 AM,07/29/2026 08:03:50 PM
 53035,Copy suggested policy text to clipboard on click success message is not showing,new,Administration,,defect (bug),normal,Awaiting Review,,has-screenshots needs-testing needs-refresh,04/15/2021 06:29:49 AM,04/16/2021 04:47:18 AM
 53047,"My ""Posts"" page (when a static front is selected) uses the old editor",reopened,Editor,,defect (bug),normal,Awaiting Review,,needs-testing needs-test-info,04/16/2021 02:12:40 AM,05/12/2025 01:37:50 AM
 53136,"Error with ""Add to Reusable blocks"" in WordPress 5.7.1",new,Editor,,defect (bug),normal,Future Release,5.7.1,reporter-feedback needs-testing,05/03/2021 08:10:05 AM,08/31/2021 02:06:33 PM
@@ -257,4 +257,5 @@
 65718,Multisite: the blogname is required during site creation but can be emptied later,new,Networks and Sites,,defect (bug),normal,Awaiting Review,,has-patch needs-testing,07/26/2026 08:31:58 PM,07/28/2026 10:13:14 AM
 65731,Changing the site timezone can immediately invalidate fresh privacy-request confirmation links,new,Privacy,,defect (bug),normal,,trunk,has-patch has-unit-tests needs-testing,07/27/2026 12:03:29 PM,07/28/2026 11:06:07 AM
 65734,Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste,new,TinyMCE,,defect (bug),normal,Awaiting Review,trunk,has-patch needs-testing,07/27/2026 03:01:34 PM,07/28/2026 05:09:49 AM
+65757,Proposal: Make the Interactivity API extensible,new,Interactivity API,,defect (bug),normal,Awaiting Review,,has-patch needs-testing 2nd-opinion,07/29/2026 07:42:15 PM,07/29/2026 08:25:02 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing,04/09/2025 11:10:53 AM,07/16/2026 02:39:54 AM
