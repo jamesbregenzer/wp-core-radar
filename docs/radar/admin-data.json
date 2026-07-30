@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T18:56:31",
+  "generated": "2026-07-30T00:57:24",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -18529,7 +18529,7 @@
       {
         "ticket_id": "56886",
         "url": "https://core.trac.wordpress.org/ticket/56886",
-        "score": 170,
+        "score": 168,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "Admin facing add site screen missing search engine visibility field",
@@ -18539,7 +18539,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "10/22/2022 11:05:39 AM",
-        "modified": "07/15/2026 03:59:35 AM",
+        "modified": "06/04/2026 01:49:33 PM",
         "keywords": "good-first-bug has-patch needs-testing",
         "signals": [
           {
@@ -18559,7 +18559,11 @@
             "class": "first"
           },
           {
-            "label": "Freshness: Recently Updated <=14 Days +20",
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
             "class": "freshness"
           }
         ],
@@ -18593,10 +18597,17 @@
             "polarity": "positive"
           },
           {
-            "points": "+20",
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
             "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           }
         ],
