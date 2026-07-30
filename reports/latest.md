@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-30 06:58
+Generated: 2026-07-30 12:59
 
 ## Summary
 
@@ -1458,32 +1458,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
-
-- Score: **178**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: New
-- Milestone: Awaiting Review
-- Keywords: has-patch needs-testing has-test-info
-- Created: 03/19/2026 02:52:41 PM
-- Modified: 07/15/2026 05:18:08 PM
-- Review status: tested
-- Review reason: Positive test result
-- Review notes: Reproduced the reported fatal error by forcing wp_save_image_file() to return a WP_Error. Verified that the patch prevents the fatal error and returns the WP_Error message as the image edit error response. No regressions observed during testing.
-- Review updated: 2026-06-16T18:07:20.633Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
-  - +20: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 4. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
+#### 3. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -1510,7 +1485,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
+#### 4. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -1553,7 +1528,7 @@ Posted testing results to Trac.
   - -20: Already Tested
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#56886](https://core.trac.wordpress.org/ticket/56886) — Admin facing add site screen missing search engine visibility field
+#### 5. [#56886](https://core.trac.wordpress.org/ticket/56886) — Admin facing add site screen missing search engine visibility field
 
 - Score: **168**
 - Track/query: General: Needs Testing
@@ -1576,6 +1551,31 @@ Posted testing results to Trac.
   - +20: Good First Bug
   - +8: Has Concrete Milestone
   - +10: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 6. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
+
+- Score: **168**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-testing has-test-info
+- Created: 03/19/2026 02:52:41 PM
+- Modified: 06/11/2026 08:42:29 PM
+- Review status: tested
+- Review reason: Positive test result
+- Review notes: Reproduced the reported fatal error by forcing wp_save_image_file() to return a WP_Error. Verified that the patch prevents the fatal error and returns the WP_Error message as the image edit error response. No regressions observed during testing.
+- Review updated: 2026-06-16T18:07:20.633Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 7. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion

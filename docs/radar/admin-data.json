@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30T06:58:15",
+  "generated": "2026-07-30T12:59:09",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -18208,99 +18208,6 @@
         }
       },
       {
-        "ticket_id": "64902",
-        "url": "https://core.trac.wordpress.org/ticket/64902",
-        "score": 178,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "wp_save_image() fatal error when wp_save_image_file() returns WP_Error",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Media",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "03/19/2026 02:52:41 PM",
-        "modified": "07/15/2026 05:18:08 PM",
-        "keywords": "has-patch needs-testing has-test-info",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "tested",
-          "reason": "Positive test result",
-          "notes": "Reproduced the reported fatal error by forcing wp_save_image_file() to return a WP_Error. Verified that the patch prevents the fatal error and returns the WP_Error message as the image edit error response. No regressions observed during testing.",
-          "updated_at": "2026-06-16T18:07:20.633Z"
-        }
-      },
-      {
         "ticket_id": "63256",
         "url": "https://core.trac.wordpress.org/ticket/63256",
         "score": 172,
@@ -18617,6 +18524,99 @@
           "reason": "Positive test result",
           "notes": "Verified checkbox renders on Network Admin \u2192 Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.",
           "updated_at": "2026-06-16T18:01:22.376Z"
+        }
+      },
+      {
+        "ticket_id": "64902",
+        "url": "https://core.trac.wordpress.org/ticket/64902",
+        "score": 168,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "wp_save_image() fatal error when wp_save_image_file() returns WP_Error",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "03/19/2026 02:52:41 PM",
+        "modified": "06/11/2026 08:42:29 PM",
+        "keywords": "has-patch needs-testing has-test-info",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "tested",
+          "reason": "Positive test result",
+          "notes": "Reproduced the reported fatal error by forcing wp_save_image_file() to return a WP_Error. Verified that the patch prevents the fatal error and returns the WP_Error message as the image edit error response. No regressions observed during testing.",
+          "updated_at": "2026-06-16T18:07:20.633Z"
         }
       },
       {
