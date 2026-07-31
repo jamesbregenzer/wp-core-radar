@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-31T01:00:56",
+  "generated": "2026-07-31T07:01:52",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
     "immediate": 8,
     "strong": 4,
-    "watching": 88,
+    "watching": 89,
     "reviews_loaded": 21
   },
   "groups": {
@@ -683,7 +683,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/22/2026 12:39:34 PM",
-        "modified": "07/16/2026 09:47:24 AM",
+        "modified": "07/17/2026 07:20:41 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -5227,6 +5227,83 @@
         "review": {}
       },
       {
+        "ticket_id": "28212",
+        "url": "https://core.trac.wordpress.org/ticket/28212",
+        "score": 142,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "determine_current_user filter with priority <10 gets overridden",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Login and Registration",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "05/12/2014 01:35:55 AM",
+        "modified": "07/31/2026 11:26:56 AM",
+        "keywords": "needs-testing has-patch has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Very Old Ticket -8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "-8",
+            "label": "Ticket Age",
+            "detail": "Very Old Ticket",
+            "display": "Ticket Age: Very Old Ticket",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "51058",
         "url": "https://core.trac.wordpress.org/ticket/51058",
         "score": 140,
@@ -9264,72 +9341,6 @@
         "review": {}
       },
       {
-        "ticket_id": "65626",
-        "url": "https://core.trac.wordpress.org/ticket/65626",
-        "score": 125,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Database",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "07/14/2026 10:42:44 AM",
-        "modified": "07/16/2026 09:43:07 AM",
-        "keywords": "needs-testing needs-patch reporter-feedback",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Reporter Feedback +10",
-            "class": "feedback"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Reporter Feedback",
-            "detail": "",
-            "display": "Reporter Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "43746",
         "url": "https://core.trac.wordpress.org/ticket/43746",
         "score": 124,
@@ -10049,6 +10060,72 @@
             "label": "Preferred Component",
             "detail": "Media",
             "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65626",
+        "url": "https://core.trac.wordpress.org/ticket/65626",
+        "score": 115,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Database",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/14/2026 10:42:44 AM",
+        "modified": "07/15/2026 06:53:59 PM",
+        "keywords": "needs-testing needs-patch reporter-feedback",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Reporter Feedback +10",
+            "class": "feedback"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Reporter Feedback",
+            "detail": "",
+            "display": "Reporter Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           }
         ],
@@ -14008,50 +14085,6 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "needs-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "28212",
-        "url": "https://core.trac.wordpress.org/ticket/28212",
-        "score": 95,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "determine_current_user filter with priority <10 gets overridden",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "needs-testing needs-refresh",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",

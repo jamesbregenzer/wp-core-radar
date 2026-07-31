@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-31 01:00
+Generated: 2026-07-31 07:01
 
 ## Summary
 
@@ -185,10 +185,10 @@ Generated: 2026-07-31 01:00
 - Discovery track: General Needs Testing
 - Component: Script Loader
 - Trac status: New
-- Milestone: 7.0.2
+- Milestone: 7.0.3
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 06/22/2026 12:39:34 PM
-- Modified: 07/16/2026 09:47:24 AM
+- Modified: 07/17/2026 07:20:41 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority

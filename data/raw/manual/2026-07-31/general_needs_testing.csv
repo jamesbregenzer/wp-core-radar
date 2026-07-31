@@ -37,7 +37,7 @@
 27148,comments in page code converted to displayed text upon submission,new,Editor,,defect (bug),normal,,3.8,needs-patch needs-testing,02/18/2014 06:02:15 PM,06/04/2019 07:25:09 PM
 27165,Incorrect nonce supplied when authenticated session expires,new,Login and Registration,,defect (bug),normal,,3.8.1,needs-testing,02/20/2014 11:55:44 AM,06/04/2019 08:06:52 PM
 27832,All sites automatically marked as archived after upgrade,new,Networks and Sites,,defect (bug),normal,Awaiting Review,3.7,needs-patch needs-testing,04/16/2014 10:47:37 AM,12/08/2018 03:08:06 PM
-28212,determine_current_user filter with priority <10 gets overridden,new,Login and Registration,,defect (bug),normal,Awaiting Review,3.9,needs-testing needs-refresh,05/12/2014 01:35:55 AM,10/24/2020 03:56:24 AM
+28212,determine_current_user filter with priority <10 gets overridden,new,Login and Registration,,defect (bug),normal,Awaiting Review,3.9,needs-testing has-patch has-unit-tests,05/12/2014 01:35:55 AM,07/31/2026 11:26:56 AM
 28297,Losing custom nav menu data while importing / exporting XML,new,Import,,defect (bug),normal,Awaiting Review,3.9.1,needs-patch needs-testing,05/18/2014 03:19:46 AM,02/26/2018 03:52:39 PM
 29261,Enqueue script in Widget,new,Widgets,,defect (bug),normal,,3.9.1,needs-testing,08/19/2014 07:46:11 AM,10/13/2020 03:28:39 PM
 29368,Pasted media do not appear in the library,new,Media,,feature request,normal,,3.9.2,needs-patch needs-testing,08/25/2014 05:49:15 PM,06/04/2019 08:08:45 PM
