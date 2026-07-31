@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-07-31 07:01
+Generated: 2026-07-31 13:02
 
 ## Summary
 
@@ -104,7 +104,7 @@ Generated: 2026-07-31 07:01
 - Owner: adamsilverstein
 - Keywords: has-patch needs-testing has-unit-tests
 - Created: 07/16/2026 04:31:29 PM
-- Modified: 07/16/2026 04:45:57 PM
+- Modified: 07/17/2026 01:43:14 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, setup complexity: browser-specific behavior -12
 - Score breakdown:
   - +65: Track Priority
@@ -1241,33 +1241,7 @@ No tickets in this section.
 
 ## Watching
 
-#### 1. [#65623](https://core.trac.wordpress.org/ticket/65623) — Media: expose image_strip_meta and image_max_bit_depth in the REST API index for client-side media processing
-
-- Score: **184**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: Assigned
-- Milestone: 7.1
-- Owner: adamsilverstein
-- Keywords: has-patch needs-testing has-unit-tests commit
-- Created: 07/13/2026 09:57:34 PM
-- Modified: 07/16/2026 04:20:27 PM
-- Review status: watch
-- Review reason: Technically testable, but requires understanding of REST API behavior and media-processing filters to provide meaningful independent verification.
-- Review updated: 2026-07-14T18:13:40.710Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +20: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 2. [#33073](https://core.trac.wordpress.org/ticket/33073) — Some strings need "no HTML entities" translator comments
+#### 1. [#33073](https://core.trac.wordpress.org/ticket/33073) — Some strings need "no HTML entities" translator comments
 
 - Score: **174**
 - Track/query: General: Needs Testing
@@ -1288,6 +1262,32 @@ No tickets in this section.
   - +18: Dev Feedback
   - +20: Good First Bug
   - +6: Has Owner
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 2. [#65623](https://core.trac.wordpress.org/ticket/65623) — Media: expose image_strip_meta and image_max_bit_depth in the REST API index for client-side media processing
+
+- Score: **174**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: Assigned
+- Milestone: 7.1
+- Owner: adamsilverstein
+- Keywords: has-patch needs-testing has-unit-tests commit
+- Created: 07/13/2026 09:57:34 PM
+- Modified: 07/16/2026 04:20:27 PM
+- Review status: watch
+- Review reason: Technically testable, but requires understanding of REST API behavior and media-processing filters to provide meaningful independent verification.
+- Review updated: 2026-07-14T18:13:40.710Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 3. [#45354](https://core.trac.wordpress.org/ticket/45354) — Adding index for meta_key and post_id in postmeta

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T07:01:52",
+  "generated": "2026-07-31T13:02:47",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -331,7 +331,7 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "07/16/2026 04:31:29 PM",
-        "modified": "07/16/2026 04:45:57 PM",
+        "modified": "07/17/2026 01:43:14 AM",
         "keywords": "has-patch needs-testing has-unit-tests",
         "signals": [
           {
@@ -9892,7 +9892,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "11/20/2025 02:14:56 PM",
-        "modified": "05/31/2026 02:43:39 PM",
+        "modified": "07/08/2026 07:24:18 PM",
         "keywords": "has-patch has-testing needs-unit-tests",
         "signals": [
           {
@@ -17440,110 +17440,6 @@
     "shortlist": [],
     "watch": [
       {
-        "ticket_id": "65623",
-        "url": "https://core.trac.wordpress.org/ticket/65623",
-        "score": 184,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Media: expose image_strip_meta and image_max_bit_depth in the REST API index for client-side media processing",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Media",
-        "owner": "adamsilverstein",
-        "comments": "Unknown",
-        "created": "07/13/2026 09:57:34 PM",
-        "modified": "07/16/2026 04:20:27 PM",
-        "keywords": "has-patch needs-testing has-unit-tests commit",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "watch",
-          "reason": "Technically testable, but requires understanding of REST API behavior and media-processing filters to provide meaningful independent verification.",
-          "notes": "",
-          "updated_at": "2026-07-14T18:13:40.710Z"
-        }
-      },
-      {
         "ticket_id": "33073",
         "url": "https://core.trac.wordpress.org/ticket/33073",
         "score": 174,
@@ -17634,6 +17530,110 @@
           "reason": "Needs refresh/dev feedback",
           "notes": "Good candidate, but verify latest patch applies and dev feedback is addressed before testing.",
           "updated_at": "2026-06-14T08:11:40.103Z"
+        }
+      },
+      {
+        "ticket_id": "65623",
+        "url": "https://core.trac.wordpress.org/ticket/65623",
+        "score": 174,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Media: expose image_strip_meta and image_max_bit_depth in the REST API index for client-side media processing",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "adamsilverstein",
+        "comments": "Unknown",
+        "created": "07/13/2026 09:57:34 PM",
+        "modified": "07/16/2026 04:20:27 PM",
+        "keywords": "has-patch needs-testing has-unit-tests commit",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "watch",
+          "reason": "Technically testable, but requires understanding of REST API behavior and media-processing filters to provide meaningful independent verification.",
+          "notes": "",
+          "updated_at": "2026-07-14T18:13:40.710Z"
         }
       },
       {
