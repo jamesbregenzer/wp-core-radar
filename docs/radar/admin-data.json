@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-01T07:05:37",
+  "generated": "2026-08-01T13:06:29",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
     "immediate": 8,
     "strong": 4,
-    "watching": 89,
+    "watching": 90,
     "reviews_loaded": 21
   },
   "groups": {
@@ -936,7 +936,7 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "07/13/2026 04:28:29 PM",
-        "modified": "07/17/2026 12:55:56 PM",
+        "modified": "07/21/2026 04:08:12 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -2844,72 +2844,6 @@
             "label": "Good First Bug",
             "detail": "",
             "display": "Good First Bug",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "50002",
-        "url": "https://core.trac.wordpress.org/ticket/50002",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Hack in get_sample_permalink() can cause filters like post_link, and pre_post_link to have inaccurate post_status in admin",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Permalinks",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "04/24/2020 08:07:13 PM",
-        "modified": "07/17/2026 12:13:47 PM",
-        "keywords": "has-patch needs-testing has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
@@ -5298,6 +5232,72 @@
             "detail": "Very Old Ticket",
             "display": "Ticket Age: Very Old Ticket",
             "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "50002",
+        "url": "https://core.trac.wordpress.org/ticket/50002",
+        "score": 140,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Hack in get_sample_permalink() can cause filters like post_link, and pre_post_link to have inaccurate post_status in admin",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Permalinks",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "04/24/2020 08:07:13 PM",
+        "modified": "07/17/2026 12:13:47 PM",
+        "keywords": "has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
           }
         ],
         "discovery_track": "General Needs Testing",
