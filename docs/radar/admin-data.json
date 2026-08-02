@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-01T13:06:29",
+  "generated": "2026-08-01T19:07:22",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -672,7 +672,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/22/2026 12:39:34 PM",
-        "modified": "07/17/2026 07:20:41 PM",
+        "modified": "07/20/2026 04:11:18 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -848,7 +848,7 @@
         "owner": "kosvrouvas",
         "comments": "Unknown",
         "created": "07/09/2026 01:56:36 PM",
-        "modified": "07/17/2026 11:14:40 PM",
+        "modified": "07/19/2026 02:43:45 PM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
@@ -18955,7 +18955,7 @@
         "owner": "westonruter",
         "comments": "Unknown",
         "created": "02/23/2026 03:51:38 PM",
-        "modified": "07/17/2026 07:20:41 PM",
+        "modified": "07/20/2026 03:42:41 PM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {

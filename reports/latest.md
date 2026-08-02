@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-01 13:06
+Generated: 2026-08-01 19:07
 
 ## Summary
 
@@ -187,7 +187,7 @@ Generated: 2026-08-01 13:06
 - Milestone: 7.0.3
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 06/22/2026 12:39:34 PM
-- Modified: 07/17/2026 07:20:41 PM
+- Modified: 07/20/2026 04:11:18 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -231,7 +231,7 @@ Generated: 2026-08-01 13:06
 - Owner: kosvrouvas
 - Keywords: has-patch needs-testing
 - Created: 07/09/2026 01:56:36 PM
-- Modified: 07/17/2026 11:14:40 PM
+- Modified: 07/19/2026 02:43:45 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
@@ -1670,7 +1670,7 @@ Posted testing results to Trac.
 - Owner: westonruter
 - Keywords: has-patch needs-testing
 - Created: 02/23/2026 03:51:38 PM
-- Modified: 07/17/2026 07:20:41 PM
+- Modified: 07/20/2026 03:42:41 PM
 - Review status: commented
 - Review reason: Reviewed patch, tested in Playground, submitted Trac feedback.
 - Review notes: Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.
