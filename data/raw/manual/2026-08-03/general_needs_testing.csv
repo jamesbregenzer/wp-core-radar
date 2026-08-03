@@ -53,7 +53,7 @@
 34683,Default .htaccess config creates rewrite infinite loops for path-based multisite installations,new,Rewrite Rules,,defect (bug),normal,Awaiting Review,4.3.1,needs-patch needs-testing,11/14/2015 08:16:54 PM,03/27/2020 02:11:01 PM
 34848,Add support for updating post meta in bulk,assigned,"Options, Meta APIs",chriscct7,enhancement,normal,Future Release,,has-patch has-unit-tests needs-testing close,12/04/2015 07:43:48 PM,07/13/2025 06:12:47 PM
 35204,Refresh HiDPI support,new,Administration,,defect (bug),normal,Awaiting Review,,needs-patch needs-testing,12/22/2015 07:38:43 PM,03/14/2023 07:20:01 PM
-35593,Metadata from wrong file in media_handle_upload,reviewing,Media,,defect (bug),normal,Awaiting Review,,has-patch needs-testing,01/24/2016 03:14:20 PM,02/06/2023 03:07:08 PM
+35593,Metadata from wrong file in media_handle_upload,reviewing,Media,,defect (bug),normal,Awaiting Review,,has-patch needs-testing has-unit-tests,01/24/2016 03:14:20 PM,08/03/2026 09:01:18 AM
 35871,before_delete_post incorrectly triggered from edit.php to post.php,new,"Posts, Post Types",,defect (bug),normal,Future Release,,needs-testing,02/19/2016 10:44:18 AM,12/04/2025 03:23:37 PM
 36171,Proposed clean up of get_the_category_list() and link filter,new,Taxonomy,,enhancement,normal,,4.4.2,needs-testing needs-unit-tests,03/08/2016 05:09:25 PM,06/04/2019 09:20:57 PM
 36201,Admin Pagination URLs Use Wrong Hostname,reopened,Administration,,defect (bug),normal,Future Release,,has-patch needs-testing dev-feedback,03/10/2016 09:18:06 PM,06/17/2026 12:45:20 PM
@@ -258,4 +258,4 @@
 65731,Changing the site timezone can immediately invalidate fresh privacy-request confirmation links,new,Privacy,,defect (bug),normal,,trunk,has-patch has-unit-tests needs-testing,07/27/2026 12:03:29 PM,07/30/2026 06:21:00 PM
 65734,Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste,new,TinyMCE,,defect (bug),normal,Awaiting Review,trunk,has-patch needs-testing,07/27/2026 03:01:34 PM,08/01/2026 10:06:00 AM
 65757,Proposal: Make the Interactivity API extensible,new,Interactivity API,,defect (bug),normal,Awaiting Review,,has-patch needs-testing 2nd-opinion,07/29/2026 07:42:15 PM,07/30/2026 12:43:26 PM
-63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing has-test-info,04/09/2025 11:10:53 AM,07/30/2026 08:59:47 PM
+63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,7.1,4.7,has-patch has-unit-tests needs-testing has-test-info,04/09/2025 11:10:53 AM,08/03/2026 11:26:50 AM
