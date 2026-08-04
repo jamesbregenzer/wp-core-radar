@@ -132,7 +132,7 @@
 48522,Attachment size not generated when large images uploaded,new,Media,,defect (bug),normal,Future Release,5.3,2nd-opinion needs-testing needs-unit-tests needs-refresh,11/07/2019 01:33:39 AM,06/11/2026 02:07:19 AM
 48729,Twenty Twenty: Margin reset for first-child and last-child is overridden for heading and blocks with alignment,new,Bundled Theme,,defect (bug),normal,Awaiting Review,5.3,needs-testing 2nd-opinion,11/19/2019 04:47:08 PM,12/23/2024 06:39:08 PM
 48802,Twenty Twenty: Fixed Background Image on Cover template bugs on iPad,new,Bundled Theme,,defect (bug),normal,Awaiting Review,5.3,has-screenshots needs-patch needs-testing,11/26/2019 09:26:10 PM,06/08/2024 05:22:00 PM
-49408,Why is the action wp_ajax_wp_link_ajax not using wp_send_json(),new,General,,enhancement,normal,Awaiting Review,5.3.2,has-patch needs-testing,02/11/2020 04:09:10 PM,12/16/2020 07:31:11 PM
+49408,Why is the action wp_ajax_wp_link_ajax not using wp_send_json(),new,General,,enhancement,normal,Awaiting Review,5.3.2,has-patch needs-testing has-unit-tests,02/11/2020 04:09:10 PM,08/04/2026 07:03:08 AM
 49865,_unzip_file_pclzip attempting to create directories all the way up to /,new,Filesystem API,,defect (bug),normal,Awaiting Review,5.4,needs-test-info needs-testing close,04/09/2020 08:33:07 PM,05/12/2025 01:37:48 AM
 49948,Site Meta: Adding additional useful functions,new,"Options, Meta APIs",,enhancement,normal,Awaiting Review,5.5,needs-testing,04/18/2020 03:01:46 PM,08/04/2020 04:34:55 PM
 50002,"Hack in get_sample_permalink() can cause filters like post_link, and pre_post_link to have inaccurate post_status in admin",new,Permalinks,,defect (bug),normal,Awaiting Review,5.4,has-patch needs-testing has-unit-tests,04/24/2020 08:07:13 PM,07/17/2026 12:13:47 PM
