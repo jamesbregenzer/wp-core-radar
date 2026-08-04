@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-04 07:17
+Generated: 2026-08-04 13:18
 
 ## Summary
 
@@ -187,7 +187,7 @@ Generated: 2026-08-04 07:17
 - Milestone: 7.0.3
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 06/22/2026 12:39:34 PM
-- Modified: 07/20/2026 04:11:18 PM
+- Modified: 07/21/2026 07:27:30 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -1439,7 +1439,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: adamsilverstein
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 05/22/2026 10:26:49 PM
-- Modified: 06/04/2026 01:56:16 PM
+- Modified: 06/16/2026 01:52:30 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified media upload, scaling, metadata, frontend display, and image editing workflows in Playground.
@@ -1536,7 +1536,7 @@ Posted testing results to Trac.
 - Milestone: 7.1
 - Keywords: good-first-bug has-patch needs-testing
 - Created: 10/22/2022 11:05:39 AM
-- Modified: 06/04/2026 01:49:33 PM
+- Modified: 06/16/2026 05:59:31 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.
@@ -1665,7 +1665,7 @@ Posted testing results to Trac.
 - Owner: westonruter
 - Keywords: has-patch needs-testing
 - Created: 02/23/2026 03:51:38 PM
-- Modified: 07/20/2026 03:42:41 PM
+- Modified: 07/21/2026 04:56:09 AM
 - Review status: commented
 - Review reason: Reviewed patch, tested in Playground, submitted Trac feedback.
 - Review notes: Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.

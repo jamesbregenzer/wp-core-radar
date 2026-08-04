@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T07:17:15",
+  "generated": "2026-08-04T13:18:10",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -672,7 +672,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/22/2026 12:39:34 PM",
-        "modified": "07/20/2026 04:11:18 PM",
+        "modified": "07/21/2026 07:27:30 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -18149,7 +18149,7 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "05/22/2026 10:26:49 PM",
-        "modified": "06/04/2026 01:56:16 PM",
+        "modified": "06/16/2026 01:52:30 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -18490,7 +18490,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "10/22/2022 11:05:39 AM",
-        "modified": "06/04/2026 01:49:33 PM",
+        "modified": "06/16/2026 05:59:31 PM",
         "keywords": "good-first-bug has-patch needs-testing",
         "signals": [
           {
@@ -18966,7 +18966,7 @@
         "owner": "westonruter",
         "comments": "Unknown",
         "created": "02/23/2026 03:51:38 PM",
-        "modified": "07/20/2026 03:42:41 PM",
+        "modified": "07/21/2026 04:56:09 AM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
