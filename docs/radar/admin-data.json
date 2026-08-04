@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-03T13:13:37",
+  "generated": "2026-08-04T01:15:25",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -423,14 +423,14 @@
         "score": 170,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
-        "summary": "Media: Enable client-side media uploads in the Media Library grid",
+        "summary": "Media: Enable client-side media uploads in the Media Library",
         "track": "General: Needs Testing",
         "status": "New",
         "component": "Media",
         "owner": "",
         "comments": "Unknown",
         "created": "07/17/2026 11:42:28 PM",
-        "modified": "07/20/2026 06:13:09 AM",
+        "modified": "07/23/2026 10:46:37 PM",
         "keywords": "has-patch needs-testing has-unit-tests",
         "signals": [
           {
@@ -1642,7 +1642,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "05/05/2026 09:12:28 PM",
-        "modified": "07/20/2026 05:29:18 AM",
+        "modified": "07/23/2026 02:54:53 PM",
         "keywords": "has-patch needs-unit-tests needs-testing",
         "signals": [
           {
