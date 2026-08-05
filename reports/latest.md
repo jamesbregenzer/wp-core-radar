@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-05 07:20
+Generated: 2026-08-05 13:21
 
 ## Summary
 
@@ -102,9 +102,9 @@ Generated: 2026-08-05 07:20
 - Trac status: Assigned
 - Milestone: 7.1
 - Owner: afercia
-- Keywords: has-patch has-unit-tests needs-testing
+- Keywords: has-patch has-unit-tests needs-testing has-test-info
 - Created: 06/19/2026 09:30:32 AM
-- Modified: 07/21/2026 04:52:59 PM
+- Modified: 07/23/2026 03:08:43 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -209,9 +209,9 @@ Generated: 2026-08-05 07:20
 - Trac status: Assigned
 - Milestone: 7.1
 - Owner: adamsilverstein
-- Keywords: has-patch has-unit-tests needs-testing
+- Keywords: has-patch has-unit-tests needs-testing commit
 - Created: 07/13/2026 04:28:29 PM
-- Modified: 07/21/2026 04:08:12 PM
+- Modified: 07/22/2026 02:56:47 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
@@ -1320,28 +1320,28 @@ No tickets in this section.
 
 #### 4. [#56320](https://core.trac.wordpress.org/ticket/56320) — Update mediaelement.js to the latest version
 
-- Score: **164**
+- Score: **154**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: External Libraries
 - Trac status: Accepted
-- Milestone: 7.2
+- Milestone: 7.1
 - Owner: adamsilverstein
 - Keywords: has-patch needs-testing 2nd-opinion
 - Created: 08/01/2022 06:20:19 PM
-- Modified: 07/21/2026 04:28:08 PM
+- Modified: 06/17/2026 12:09:06 PM
 - Review status: watch
 - Review reason: Valid Core testing opportunity, but mediaelement upgrade testing is too broad for today’s easy-win queue.
 - Review notes: This ticket has an active PR, patch, owner, and needs-testing, so it is a legitimate contribution candidate. However, the update touches a large external library upgrade with prior UI/icon, shortcode, and accessibility concerns, making it better suited for a focused local testing pass rather than a quick comment. No testing or Core comment left today. Revisit when there is time for shortcode audio/video testing, browser console checks, and keyboard accessibility validation.
 - Review updated: 2026-06-19T17:15:33.912Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
   - +8: Has Concrete Milestone
   - +6: Has Owner
-  - +20: Freshness
+  - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 5. [#60628](https://core.trac.wordpress.org/ticket/60628) — Issues with avif image  imagecreatefromavif not working. Resizing not possible.
@@ -1488,9 +1488,110 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
+#### 4. [#56886](https://core.trac.wordpress.org/ticket/56886) — Admin facing add site screen missing search engine visibility field
 
-- Score: **172**
+- Score: **168**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Networks and Sites
+- Trac status: New
+- Milestone: 7.1
+- Keywords: good-first-bug has-patch needs-testing
+- Created: 10/22/2022 11:05:39 AM
+- Modified: 06/16/2026 05:59:31 PM
+- Review status: tested
+- Review reason: Positive test result
+- Review notes: Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.
+- Review updated: 2026-06-16T18:01:22.376Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has concrete milestone +8, freshness: updated within 60 days +10
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +8: Has Concrete Milestone
+  - +10: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 5. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
+
+- Score: **168**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: has-patch needs-testing has-test-info
+- Created: 03/19/2026 02:52:41 PM
+- Modified: 06/11/2026 08:42:29 PM
+- Review status: tested
+- Review reason: Positive test result
+- Review notes: Reproduced the reported fatal error by forcing wp_save_image_file() to return a WP_Error. Verified that the patch prevents the fatal error and returns the WP_Error message as the image edit error response. No regressions observed during testing.
+- Review updated: 2026-06-16T18:07:20.633Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 6. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
+
+- Score: **168**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Media
+- Trac status: New
+- Milestone: Awaiting Review
+- Keywords: needs-testing needs-test-info has-screenshots has-patch
+- Created: 06/22/2026 12:12:45 PM
+- Modified: 06/22/2026 04:54:19 PM
+- Review status: commented
+- Review reason: PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.
+- Review notes: Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed “Showing 1 of 1 media items,” so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the “Could not retrieve the featured image data” message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.
+- Review updated: 2026-06-22T16:55:30.056Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Preferred Component
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 7. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
+
+- Score: **166**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Widgets
+- Trac status: Assigned
+- Milestone: Future Release
+- Owner: mdifelice
+- Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
+- Created: 06/16/2017 01:33:58 PM
+- Modified: 06/15/2026 09:46:17 PM
+- Review status: tested
+- Review reason: Refreshed stale patch and validated behavior against current trunk.
+- Review notes: Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.
+- Review updated: 2026-06-15T21:48:04.323Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has owner +6, freshness: updated within 60 days +10
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +6: Has Owner
+  - +10: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 8. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
+
+- Score: **162**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Media
@@ -1518,7 +1619,7 @@ Confirmed generated site icon sizes are square as expected:
 
 Posted testing results to Trac.
 - Review updated: 2026-06-15T23:07:33.995Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -1526,110 +1627,9 @@ Posted testing results to Trac.
   - +20: Preferred Component
   - +8: Has Concrete Milestone
   - +6: Has Owner
-  - +20: Freshness
+  - +10: Freshness
   - +8: Ticket Age
   - -20: Already Tested
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 5. [#56886](https://core.trac.wordpress.org/ticket/56886) — Admin facing add site screen missing search engine visibility field
-
-- Score: **168**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Networks and Sites
-- Trac status: New
-- Milestone: 7.1
-- Keywords: good-first-bug has-patch needs-testing
-- Created: 10/22/2022 11:05:39 AM
-- Modified: 06/16/2026 05:59:31 PM
-- Review status: tested
-- Review reason: Positive test result
-- Review notes: Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.
-- Review updated: 2026-06-16T18:01:22.376Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has concrete milestone +8, freshness: updated within 60 days +10
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Good First Bug
-  - +8: Has Concrete Milestone
-  - +10: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 6. [#64902](https://core.trac.wordpress.org/ticket/64902) — wp_save_image() fatal error when wp_save_image_file() returns WP_Error
-
-- Score: **168**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: New
-- Milestone: Awaiting Review
-- Keywords: has-patch needs-testing has-test-info
-- Created: 03/19/2026 02:52:41 PM
-- Modified: 06/11/2026 08:42:29 PM
-- Review status: tested
-- Review reason: Positive test result
-- Review notes: Reproduced the reported fatal error by forcing wp_save_image_file() to return a WP_Error. Verified that the patch prevents the fatal error and returns the WP_Error message as the image edit error response. No regressions observed during testing.
-- Review updated: 2026-06-16T18:07:20.633Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
-  - +10: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 7. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
-
-- Score: **168**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Media
-- Trac status: New
-- Milestone: Awaiting Review
-- Keywords: needs-testing needs-test-info has-screenshots has-patch
-- Created: 06/22/2026 12:12:45 PM
-- Modified: 06/22/2026 04:54:19 PM
-- Review status: commented
-- Review reason: PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.
-- Review notes: Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed “Showing 1 of 1 media items,” so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the “Could not retrieve the featured image data” message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.
-- Review updated: 2026-06-22T16:55:30.056Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Preferred Component
-  - +10: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 8. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
-
-- Score: **166**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Widgets
-- Trac status: Assigned
-- Milestone: Future Release
-- Owner: mdifelice
-- Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
-- Created: 06/16/2017 01:33:58 PM
-- Modified: 06/15/2026 09:46:17 PM
-- Review status: tested
-- Review reason: Refreshed stale patch and validated behavior against current trunk.
-- Review notes: Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.
-- Review updated: 2026-06-15T21:48:04.323Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has owner +6, freshness: updated within 60 days +10
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Good First Bug
-  - +6: Has Owner
-  - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 9. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode

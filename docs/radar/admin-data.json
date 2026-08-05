@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T07:20:53",
+  "generated": "2026-08-05T13:21:53",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -331,8 +331,8 @@
         "owner": "afercia",
         "comments": "Unknown",
         "created": "06/19/2026 09:30:32 AM",
-        "modified": "07/21/2026 04:52:59 PM",
-        "keywords": "has-patch has-unit-tests needs-testing",
+        "modified": "07/23/2026 03:08:43 PM",
+        "keywords": "has-patch has-unit-tests needs-testing has-test-info",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -771,8 +771,8 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "07/13/2026 04:28:29 PM",
-        "modified": "07/21/2026 04:08:12 PM",
-        "keywords": "has-patch has-unit-tests needs-testing",
+        "modified": "07/22/2026 02:56:47 PM",
+        "keywords": "has-patch has-unit-tests needs-testing commit",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -17743,7 +17743,7 @@
       {
         "ticket_id": "56320",
         "url": "https://core.trac.wordpress.org/ticket/56320",
-        "score": 164,
+        "score": 154,
         "tier_class": "strong",
         "tier_label": "Strong Candidate",
         "summary": "Update mediaelement.js to the latest version",
@@ -17753,7 +17753,7 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "08/01/2022 06:20:19 PM",
-        "modified": "07/21/2026 04:28:08 PM",
+        "modified": "06/17/2026 12:09:06 PM",
         "keywords": "has-patch needs-testing 2nd-opinion",
         "signals": [
           {
@@ -17777,7 +17777,7 @@
             "class": "owner"
           },
           {
-            "label": "Freshness: Recently Updated <=14 Days +20",
+            "label": "Freshness: Updated Within 60 Days +10",
             "class": "freshness"
           }
         ],
@@ -17818,10 +17818,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+20",
+            "points": "+10",
             "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           }
         ],
@@ -18356,128 +18356,6 @@
         }
       },
       {
-        "ticket_id": "65345",
-        "url": "https://core.trac.wordpress.org/ticket/65345",
-        "score": 172,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Site Icon subsizes use wrong array key 'width ' instead of 'width'",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Media",
-        "owner": "davidbaumwald",
-        "comments": "Unknown",
-        "created": "05/26/2026 10:59:28 AM",
-        "modified": "07/21/2026 03:12:27 PM",
-        "keywords": "has-patch needs-testing has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          },
-          {
-            "points": "-20",
-            "label": "Already Tested",
-            "detail": "",
-            "display": "Already Tested",
-            "polarity": "negative"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "tested",
-          "reason": "Verified patch behavior locally and reported results on Trac.",
-          "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
-          "updated_at": "2026-06-15T23:07:33.995Z"
-        }
-      },
-      {
         "ticket_id": "56886",
         "url": "https://core.trac.wordpress.org/ticket/56886",
         "score": 168,
@@ -18847,6 +18725,128 @@
           "reason": "Refreshed stale patch and validated behavior against current trunk.",
           "notes": "Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.",
           "updated_at": "2026-06-15T21:48:04.323Z"
+        }
+      },
+      {
+        "ticket_id": "65345",
+        "url": "https://core.trac.wordpress.org/ticket/65345",
+        "score": 162,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Site Icon subsizes use wrong array key 'width ' instead of 'width'",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Media",
+        "owner": "davidbaumwald",
+        "comments": "Unknown",
+        "created": "05/26/2026 10:59:28 AM",
+        "modified": "07/21/2026 03:12:27 PM",
+        "keywords": "has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          },
+          {
+            "points": "-20",
+            "label": "Already Tested",
+            "detail": "",
+            "display": "Already Tested",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "tested",
+          "reason": "Verified patch behavior locally and reported results on Trac.",
+          "notes": "Tested PR 11975 locally using current WordPress trunk in a local wp-env/Docker environment.\r\n\r\nSteps performed:\r\n- Uploaded a non-square image.\r\n- Set the image as the Site Icon.\r\n- Cropped and saved the Site Icon.\r\n- Verified generated site icon dimensions and attachment metadata.\r\n\r\nConfirmed generated site icon sizes are square as expected:\r\n- 270x270\r\n- 192x192\r\n- 180x180\r\n- 32x32\r\n\r\nPosted testing results to Trac.",
+          "updated_at": "2026-06-15T23:07:33.995Z"
         }
       },
       {
