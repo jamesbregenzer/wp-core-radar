@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T19:22:49",
+  "generated": "2026-08-06T01:23:49",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -10518,72 +10518,6 @@
         "review": {}
       },
       {
-        "ticket_id": "65350",
-        "url": "https://core.trac.wordpress.org/ticket/65350",
-        "score": 113,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Possible duplicate update event firing during wp_maybe_auto_update",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Upgrade/Install",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "05/26/2026 02:22:13 PM",
-        "modified": "06/06/2026 03:27:02 AM",
-        "keywords": "needs-testing 2nd-opinion",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "65480",
         "url": "https://core.trac.wordpress.org/ticket/65480",
         "score": 113,
@@ -12149,6 +12083,61 @@
         "created": "08/13/2025 01:38:50 AM",
         "modified": "09/22/2025 10:29:13 PM",
         "keywords": "needs-testing has-screenshots close needs-test-info",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65350",
+        "url": "https://core.trac.wordpress.org/ticket/65350",
+        "score": 103,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Possible duplicate update event firing during wp_maybe_auto_update",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Upgrade/Install",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "05/26/2026 02:22:13 PM",
+        "modified": "06/06/2026 03:27:02 AM",
+        "keywords": "needs-testing 2nd-opinion",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
