@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-07 07:28
+Generated: 2026-08-07 13:29
 
 ## Summary
 
@@ -34,7 +34,7 @@ Generated: 2026-08-07 07:28
 - Owner: westonruter
 - Keywords: has-patch needs-testing reporter-feedback has-test-info
 - Created: 03/21/2026 06:37:01 PM
-- Modified: 07/23/2026 03:08:44 PM
+- Modified: 07/24/2026 08:18:26 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -103,9 +103,9 @@ Generated: 2026-08-07 07:28
 - Trac status: Assigned
 - Milestone: 7.1
 - Owner: afercia
-- Keywords: has-patch has-unit-tests needs-testing has-test-info
+- Keywords: has-patch has-unit-tests needs-testing has-test-info changes-requested
 - Created: 06/19/2026 09:30:32 AM
-- Modified: 07/23/2026 03:08:43 PM
+- Modified: 07/24/2026 01:19:31 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -157,28 +157,7 @@ Generated: 2026-08-07 07:28
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#64953](https://core.trac.wordpress.org/ticket/64953) — The login page still shows the old color for the “← Go to [Website Name]” link.
-
-- Score: **166**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Login and Registration
-- Trac status: New
-- Milestone: 7.1
-- Keywords: has-screenshots has-patch needs-testing
-- Created: 03/26/2026 05:46:37 AM
-- Modified: 07/23/2026 03:08:43 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +20: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 8. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+#### 7. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -200,7 +179,7 @@ Generated: 2026-08-07 07:28
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#64155](https://core.trac.wordpress.org/ticket/64155) — Add stack trace to failed plugin update error notifications
+#### 8. [#64155](https://core.trac.wordpress.org/ticket/64155) — Add stack trace to failed plugin update error notifications
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -223,7 +202,7 @@ Generated: 2026-08-07 07:28
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#65504](https://core.trac.wordpress.org/ticket/65504) — WP_AI_Client_Ability_Function_Resolver::execute_abilities() answers non-ability function calls with a spurious error
+#### 9. [#65504](https://core.trac.wordpress.org/ticket/65504) — WP_AI_Client_Ability_Function_Resolver::execute_abilities() answers non-ability function calls with a spurious error
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -246,7 +225,7 @@ Generated: 2026-08-07 07:28
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
+#### 10. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -269,7 +248,7 @@ Generated: 2026-08-07 07:28
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
+#### 11. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -291,6 +270,26 @@ Generated: 2026-08-07 07:28
   - +6: Has Owner
   - +10: Freshness
   - -12: Setup Complexity
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 12. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+
+- Score: **161**
+- Track/query: Media: Has Patch
+- Discovery track: Media Has Patch
+- Component: Media
+- Trac status: Accepted
+- Milestone: Future Release
+- Owner: joedolson
+- Keywords: has-patch has-unit-tests phase-3-media-triage needs-design
+- Created: 12/01/2016 03:58:50 PM
+- Modified: 01/05/2026 02:36:09 PM
+- Why it ranked: track priority: Media: Has Patch +100, has patch +35, preferred component: Media +20, has owner +6
+- Score breakdown:
+  - +100: Track Priority
+  - +35: Has Patch
+  - +20: Preferred Component
+  - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Top Opportunities
@@ -316,27 +315,7 @@ Generated: 2026-08-07 07:28
   - -8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 2. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
-
-- Score: **161**
-- Track/query: Media: Has Patch
-- Discovery track: Media Has Patch
-- Component: Media
-- Trac status: Accepted
-- Milestone: Future Release
-- Owner: joedolson
-- Keywords: has-patch has-unit-tests phase-3-media-triage needs-design
-- Created: 12/01/2016 03:58:50 PM
-- Modified: 01/05/2026 02:36:09 PM
-- Why it ranked: track priority: Media: Has Patch +100, has patch +35, preferred component: Media +20, has owner +6
-- Score breakdown:
-  - +100: Track Priority
-  - +35: Has Patch
-  - +20: Preferred Component
-  - +6: Has Owner
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 3. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
+#### 2. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
 
 - Score: **160**
 - Track/query: General: Needs Testing
@@ -357,7 +336,7 @@ Generated: 2026-08-07 07:28
   - -10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
+#### 3. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -377,7 +356,7 @@ Generated: 2026-08-07 07:28
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#64376](https://core.trac.wordpress.org/ticket/64376) — redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20)
+#### 4. [#64376](https://core.trac.wordpress.org/ticket/64376) — redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20)
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -397,7 +376,7 @@ Generated: 2026-08-07 07:28
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#65171](https://core.trac.wordpress.org/ticket/65171) — wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs
+#### 5. [#65171](https://core.trac.wordpress.org/ticket/65171) — wp_check_post_lock_window filter values below 120s break post lock detection in backgrounded tabs
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -407,7 +386,7 @@ Generated: 2026-08-07 07:28
 - Milestone: Awaiting Review
 - Keywords: has-patch needs-unit-tests needs-testing
 - Created: 05/05/2026 09:12:28 PM
-- Modified: 07/23/2026 02:54:53 PM
+- Modified: 08/07/2026 01:05:37 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -417,7 +396,7 @@ Generated: 2026-08-07 07:28
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#63109](https://core.trac.wordpress.org/ticket/63109) — test_get_block_editor_settings_theme_json_settings failing
+#### 6. [#63109](https://core.trac.wordpress.org/ticket/63109) — test_get_block_editor_settings_theme_json_settings failing
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -437,7 +416,7 @@ Generated: 2026-08-07 07:28
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#63197](https://core.trac.wordpress.org/ticket/63197) — Sanity Checks in mkdir and delete for FTPext Filesystem
+#### 7. [#63197](https://core.trac.wordpress.org/ticket/63197) — Sanity Checks in mkdir and delete for FTPext Filesystem
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -454,6 +433,27 @@ Generated: 2026-08-07 07:28
   - +35: Has Patch
   - +30: Needs Testing
   - +18: Dev Feedback
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 8. [#64953](https://core.trac.wordpress.org/ticket/64953) — The login page still shows the old color for the “← Go to [Website Name]” link.
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Login and Registration
+- Trac status: New
+- Milestone: 7.1
+- Keywords: has-screenshots has-patch needs-testing
+- Created: 03/26/2026 05:46:37 AM
+- Modified: 07/21/2026 07:12:09 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +10: Freshness
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
