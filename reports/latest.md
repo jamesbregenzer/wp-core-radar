@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-06 13:25
+Generated: 2026-08-06 19:26
 
 ## Summary
 
@@ -47,7 +47,31 @@ Generated: 2026-08-06 13:25
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 2. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+#### 2. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
+
+- Score: **182**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Script Loader
+- Trac status: Reviewing
+- Milestone: 7.1
+- Owner: wildworks
+- Keywords: has-patch has-unit-tests needs-testing reporter-feedback
+- Created: 06/22/2026 12:39:34 PM
+- Modified: 08/06/2026 07:13:33 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Reporter Feedback
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 3. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -70,7 +94,7 @@ Generated: 2026-08-06 13:25
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#65491](https://core.trac.wordpress.org/ticket/65491) — Add support for the autofocus attribute within dialog elements
+#### 4. [#65491](https://core.trac.wordpress.org/ticket/65491) — Add support for the autofocus attribute within dialog elements
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -82,29 +106,6 @@ Generated: 2026-08-06 13:25
 - Keywords: has-patch has-unit-tests needs-testing has-test-info
 - Created: 06/19/2026 09:30:32 AM
 - Modified: 07/23/2026 03:08:43 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +20: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 4. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
-
-- Score: **172**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Script Loader
-- Trac status: Reviewing
-- Milestone: 7.1
-- Owner: wildworks
-- Keywords: has-patch has-unit-tests needs-testing
-- Created: 06/22/2026 12:39:34 PM
-- Modified: 08/04/2026 09:00:18 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
