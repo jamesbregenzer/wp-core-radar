@@ -105,7 +105,7 @@
 44641,Customizing Button Text in Custom Media Manager Frame Doesn't Work Anymore,assigned,Media,antpb,defect (bug),normal,Future Release,4.9.7,has-patch needs-testing 2nd-opinion,07/25/2018 12:16:47 PM,01/30/2022 04:52:29 PM
 44658,Support BETWEEN for term names in WP_Tax_Query/WP_Term_Query,new,Query,,feature request,normal,Future Release,,needs-testing has-unit-tests 2nd-opinion needs-dev-note needs-patch,07/27/2018 08:23:30 PM,09/11/2019 03:56:51 PM
 44921,User nicename discovery is slow to return,accepted,Users,pbearne,enhancement,normal,Future Release,2.0,has-patch needs-testing has-unit-tests needs-refresh,09/08/2018 12:12:26 PM,01/18/2025 03:10:57 PM
-44964,`redirect_guess_404_permalink` doesn't support array in `post_type` var,new,Query,,defect (bug),normal,Awaiting Review,4.9,needs-testing dev-feedback needs-unit-tests has-patch,09/19/2018 09:35:59 AM,07/30/2026 02:04:21 AM
+44964,`redirect_guess_404_permalink` doesn't support array in `post_type` var,new,Query,,defect (bug),normal,Awaiting Review,4.9,needs-testing dev-feedback has-patch has-unit-tests,09/19/2018 09:35:59 AM,08/07/2026 11:16:33 PM
 44973,Issues with $wpdb->get_col_info,new,Database,,defect (bug),normal,Awaiting Review,4.9.8,needs-testing,09/20/2018 09:37:49 PM,09/23/2018 02:50:24 PM
 44980,When using a mobile browser (iOS 12) and the Visual Editor you won’t be able to properly select/highlight text,new,Editor,,defect (bug),normal,Awaiting Review,4.9.8,needs-testing,09/21/2018 11:46:00 PM,03/02/2019 06:35:18 AM
 45013,Wrong links when installing in subdirectory =,new,Administration,,defect (bug),normal,Awaiting Review,4.9.8,has-screenshots needs-testing,09/29/2018 08:32:21 PM,10/10/2018 04:23:16 PM
