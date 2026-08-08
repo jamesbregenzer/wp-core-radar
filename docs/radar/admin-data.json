@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T01:31:00",
+  "generated": "2026-08-08T07:31:56",
   "summary": {
     "unique_tickets": 306,
     "priority_targets": 12,
@@ -23,7 +23,7 @@
         "owner": "westonruter",
         "comments": "Unknown",
         "created": "03/21/2026 06:37:01 PM",
-        "modified": "07/24/2026 08:18:26 AM",
+        "modified": "07/28/2026 06:20:23 AM",
         "keywords": "has-patch needs-testing reporter-feedback has-test-info",
         "signals": [
           {
@@ -2632,7 +2632,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "10/19/2017 05:48:13 PM",
-        "modified": "07/24/2026 07:00:34 AM",
+        "modified": "07/29/2026 05:45:03 PM",
         "keywords": "has-patch has-unit-tests has-screenshots needs-testing",
         "signals": [
           {
@@ -4326,7 +4326,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/02/2026 09:05:13 PM",
-        "modified": "06/08/2026 12:22:02 PM",
+        "modified": "07/06/2026 11:03:48 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {

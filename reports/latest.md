@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-08 01:30
+Generated: 2026-08-08 07:31
 
 ## Summary
 
@@ -34,7 +34,7 @@ Generated: 2026-08-08 01:30
 - Owner: westonruter
 - Keywords: has-patch needs-testing reporter-feedback has-test-info
 - Created: 03/21/2026 06:37:01 PM
-- Modified: 07/24/2026 08:18:26 AM
+- Modified: 07/28/2026 06:20:23 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -665,7 +665,7 @@ Generated: 2026-08-08 01:30
 - Milestone: Awaiting Review
 - Keywords: has-patch has-unit-tests has-screenshots needs-testing
 - Created: 10/19/2017 05:48:13 PM
-- Modified: 07/24/2026 07:00:34 AM
+- Modified: 07/29/2026 05:45:03 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
@@ -1107,7 +1107,7 @@ Generated: 2026-08-08 01:30
 - Milestone: Awaiting Review
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 06/02/2026 09:05:13 PM
-- Modified: 06/08/2026 12:22:02 PM
+- Modified: 07/06/2026 11:03:48 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
