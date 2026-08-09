@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-09 01:34
+Generated: 2026-08-09 13:36
 
 ## Summary
 
@@ -1642,7 +1642,7 @@ Posted testing results to Trac.
 - Owner: joedolson
 - Keywords: has-patch needs-testing
 - Created: 06/05/2026 09:11:00 AM
-- Modified: 06/09/2026 04:50:17 PM
+- Modified: 06/16/2026 06:38:36 AM
 - Review status: tested
 - Review reason: Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.
 - Review notes: Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.
