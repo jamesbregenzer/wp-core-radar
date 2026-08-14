@@ -1,10 +1,10 @@
 # WP Core Radar Report
 
-Generated: 2026-08-13 16:42
+Generated: 2026-08-13 22:43
 
 ## Summary
 
-- Datasets discovered: 279
+- Datasets discovered: 280
 - Unique tickets scored: 307
 - Outcomes loaded: 4
 - Reviews loaded: 21
@@ -144,9 +144,9 @@ Generated: 2026-08-13 16:42
 - Component: Query
 - Trac status: New
 - Milestone: Awaiting Review
-- Keywords: needs-testing dev-feedback needs-unit-tests has-patch
+- Keywords: needs-testing dev-feedback has-patch has-unit-tests
 - Created: 09/19/2018 09:35:59 AM
-- Modified: 07/30/2026 02:04:21 AM
+- Modified: 08/07/2026 11:16:33 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
@@ -2022,6 +2022,7 @@ Posted testing results to Trac.
 | general_needs_testing | 2026-08-09 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-09/general_needs_testing.csv` |
 | good_first_bugs | 2026-08-09 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-09/good_first_bugs.csv` |
 | media_has_patch | 2026-08-09 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-09/media_has_patch.csv` |
+| accessibility_has_patch | 2026-08-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-13/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-08-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-13/docs_needs_testing.csv` |
 | general_needs_testing | 2026-08-13 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-13/general_needs_testing.csv` |
 | good_first_bugs | 2026-08-13 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-13/good_first_bugs.csv` |
