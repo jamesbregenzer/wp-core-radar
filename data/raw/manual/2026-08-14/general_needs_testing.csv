@@ -113,7 +113,7 @@
 45354,Adding index for meta_key and post_id in postmeta,new,Database,,enhancement,normal,Future Release,,needs-testing dev-feedback has-patch has-unit-tests,11/14/2018 09:43:31 PM,07/22/2026 11:42:03 AM
 45897,Chinese page uri dump fail,new,I18N,,defect (bug),normal,Awaiting Review,5.0.2,needs-testing has-patch,01/10/2019 07:17:56 AM,02/03/2026 03:56:47 PM
 45910,Improve and extend focus styles for Windows High Contrast mode,assigned,Administration,rcreators,defect (bug),normal,Future Release,,needs-testing,01/10/2019 04:54:41 PM,01/03/2025 07:13:03 AM
-46017,"""Mine"" comment count isn't updated when replying to or moderating a comment.",new,Comments,,defect (bug),normal,Future Release,5.1,needs-testing has-patch has-unit-tests,01/17/2019 02:59:49 AM,08/13/2026 03:56:53 PM
+46017,"""Mine"" comment count isn't updated when replying to or moderating a comment.",new,Comments,,defect (bug),normal,Future Release,5.1,needs-testing has-patch has-unit-tests,01/17/2019 02:59:49 AM,08/14/2026 11:59:28 AM
 46033,Please fix redirect in wp-login.php,new,Login and Registration,,defect (bug),normal,Awaiting Review,5.0.3,needs-testing,01/18/2019 10:45:43 AM,01/19/2019 10:32:26 PM
 46190,Firefox Emoji Detection Slow,new,Emoji,,enhancement,normal,Awaiting Review,5.0.3,needs-testing,02/05/2019 06:52:24 PM,07/06/2022 07:25:57 PM
 46540,Admin bar CSS shouldn't be added in the customizer,new,Customize,,defect (bug),normal,Future Release,4.5,has-patch needs-testing 2nd-opinion,03/16/2019 07:42:48 PM,05/30/2021 07:49:09 PM
@@ -251,7 +251,7 @@
 65551,Connectors: Preserve stored AI provider API key when validation is indeterminate,new,Editor,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 07:24:33 AM,07/22/2026 04:26:54 PM
 65554,Connectors: only validate AI provider API keys that were submitted in the request,new,AI,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 01:43:40 PM,07/10/2026 04:30:33 PM
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch reporter-feedback,07/14/2026 10:42:44 AM,07/16/2026 09:43:07 AM
-65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,08/11/2026 12:33:31 PM
+65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,08/14/2026 11:31:40 AM
 65661,Media: Enable client-side media uploads in the Media Library,new,Media,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,08/13/2026 06:08:40 PM
 65718,Multisite: the blogname is required during site creation but can be emptied later,new,Networks and Sites,,defect (bug),normal,Future Release,,has-patch needs-testing,07/26/2026 08:31:58 PM,08/13/2026 03:31:20 PM
 65731,Changing the site timezone can immediately invalidate fresh privacy-request confirmation links,new,Privacy,,defect (bug),normal,,trunk,has-patch has-unit-tests needs-testing,07/27/2026 12:03:29 PM,07/30/2026 06:21:00 PM
