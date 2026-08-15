@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T21:09:46",
+  "generated": "2026-08-15T03:10:34",
   "summary": {
     "unique_tickets": 307,
     "priority_targets": 12,
@@ -288,7 +288,7 @@
       {
         "ticket_id": "64921",
         "url": "https://core.trac.wordpress.org/ticket/64921",
-        "score": 174,
+        "score": 172,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)",
@@ -298,8 +298,8 @@
         "owner": "westonruter",
         "comments": "Unknown",
         "created": "03/21/2026 06:37:01 PM",
-        "modified": "07/31/2026 03:40:57 AM",
-        "keywords": "has-patch needs-testing reporter-feedback has-test-info has-unit-tests early",
+        "modified": "07/23/2026 03:08:44 PM",
+        "keywords": "has-patch needs-testing reporter-feedback has-test-info",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -318,11 +318,15 @@
             "class": "feedback"
           },
           {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
             "label": "Has Owner +6",
             "class": "owner"
           },
           {
-            "label": "Freshness: Recently Updated <=14 Days +20",
+            "label": "Freshness: Updated Within 60 Days +10",
             "class": "freshness"
           },
           {
@@ -360,6 +364,13 @@
             "polarity": "positive"
           },
           {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
             "points": "+6",
             "label": "Has Owner",
             "detail": "",
@@ -367,10 +378,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+20",
+            "points": "+10",
             "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           },
           {
