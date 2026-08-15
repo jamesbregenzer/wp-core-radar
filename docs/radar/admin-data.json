@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T15:08:55",
+  "generated": "2026-08-14T21:09:46",
   "summary": {
     "unique_tickets": 307,
     "priority_targets": 12,
@@ -10,116 +10,6 @@
   },
   "groups": {
     "priority": [
-      {
-        "ticket_id": "64921",
-        "url": "https://core.trac.wordpress.org/ticket/64921",
-        "score": 182,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)",
-        "track": "General: Needs Testing",
-        "status": "Accepted",
-        "component": "General",
-        "owner": "westonruter",
-        "comments": "Unknown",
-        "created": "03/21/2026 06:37:01 PM",
-        "modified": "07/30/2026 10:52:05 PM",
-        "keywords": "has-patch needs-testing reporter-feedback has-test-info has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Reporter Feedback +10",
-            "class": "feedback"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Reporter Feedback",
-            "detail": "",
-            "display": "Reporter Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
       {
         "ticket_id": "65515",
         "url": "https://core.trac.wordpress.org/ticket/65515",
@@ -389,6 +279,105 @@
             "label": "Freshness",
             "detail": "Recently Updated <=14 Days",
             "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "64921",
+        "url": "https://core.trac.wordpress.org/ticket/64921",
+        "score": 174,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)",
+        "track": "General: Needs Testing",
+        "status": "Accepted",
+        "component": "General",
+        "owner": "westonruter",
+        "comments": "Unknown",
+        "created": "03/21/2026 06:37:01 PM",
+        "modified": "07/31/2026 03:40:57 AM",
+        "keywords": "has-patch needs-testing reporter-feedback has-test-info has-unit-tests early",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Reporter Feedback +10",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Reporter Feedback",
+            "detail": "",
+            "display": "Reporter Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
           }
         ],
@@ -18473,7 +18462,7 @@
         "owner": "audrasjb",
         "comments": "Unknown",
         "created": "04/09/2025 11:10:53 AM",
-        "modified": "07/30/2026 08:59:47 PM",
+        "modified": "08/03/2026 11:26:50 AM",
         "keywords": "has-patch has-unit-tests needs-testing has-test-info",
         "signals": [
           {

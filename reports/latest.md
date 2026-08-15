@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-14 15:08
+Generated: 2026-08-14 21:09
 
 ## Summary
 
@@ -23,31 +23,7 @@ Generated: 2026-08-14 15:08
 
 ## Priority Targets
 
-#### 1. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
-
-- Score: **182**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: General
-- Trac status: Accepted
-- Milestone: 7.1
-- Owner: westonruter
-- Keywords: has-patch needs-testing reporter-feedback has-test-info has-unit-tests
-- Created: 03/21/2026 06:37:01 PM
-- Modified: 07/30/2026 10:52:05 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +10: Reporter Feedback
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +20: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 2. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
+#### 1. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
 
 - Score: **182**
 - Track/query: General: Needs Testing
@@ -71,7 +47,7 @@ Generated: 2026-08-14 15:08
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+#### 2. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
 
 - Score: **181**
 - Track/query: Media: Has Patch
@@ -92,7 +68,7 @@ Generated: 2026-08-14 15:08
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#65661](https://core.trac.wordpress.org/ticket/65661) — Media: Enable client-side media uploads in the Media Library
+#### 3. [#65661](https://core.trac.wordpress.org/ticket/65661) — Media: Enable client-side media uploads in the Media Library
 
 - Score: **178**
 - Track/query: General: Needs Testing
@@ -111,6 +87,29 @@ Generated: 2026-08-14 15:08
   - +20: Preferred Component
   - +8: Has Concrete Milestone
   - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 4. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+
+- Score: **174**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: General
+- Trac status: Accepted
+- Milestone: Future Release
+- Owner: westonruter
+- Keywords: has-patch needs-testing reporter-feedback has-test-info has-unit-tests early
+- Created: 03/21/2026 06:37:01 PM
+- Modified: 07/31/2026 03:40:57 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Reporter Feedback
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 5. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
@@ -1476,7 +1475,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: audrasjb
 - Keywords: has-patch has-unit-tests needs-testing has-test-info
 - Created: 04/09/2025 11:10:53 AM
-- Modified: 07/30/2026 08:59:47 PM
+- Modified: 08/03/2026 11:26:50 AM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Applied PR #11534 locally, ran Tests_Term successfully, and verified basic category/post taxonomy workflows in wp-admin and on the front end.
