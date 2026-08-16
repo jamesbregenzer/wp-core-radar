@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-15 15:12
+Generated: 2026-08-15 21:13
 
 ## Summary
 
@@ -1572,33 +1572,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
-
-- Score: **166**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Widgets
-- Trac status: Assigned
-- Milestone: Future Release
-- Owner: mdifelice
-- Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
-- Created: 06/16/2017 01:33:58 PM
-- Modified: 06/15/2026 09:46:17 PM
-- Review status: tested
-- Review reason: Refreshed stale patch and validated behavior against current trunk.
-- Review notes: Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.
-- Review updated: 2026-06-15T21:48:04.323Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has owner +6, freshness: updated within 60 days +10
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Good First Bug
-  - +6: Has Owner
-  - +10: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 8. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
+#### 7. [#65345](https://core.trac.wordpress.org/ticket/65345) — Site Icon subsizes use wrong array key 'width ' instead of 'width'
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -1641,7 +1615,7 @@ Posted testing results to Trac.
   - -20: Already Tested
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
+#### 8. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -1666,6 +1640,28 @@ Posted testing results to Trac.
   - +6: Has Owner
   - +10: Freshness
   - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 9. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
+
+- Score: **156**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Unknown
+- Trac status: Assigned
+- Owner: mdifelice
+- Keywords: good-first-bug has-patch 2nd-opinion needs-testing needs-screenshots needs-refresh
+- Review status: tested
+- Review reason: Refreshed stale patch and validated behavior against current trunk.
+- Review notes: Reproduced issue in Twenty Twenty-One Widgets screen. Original attachment did not apply cleanly in local current-trunk environment. Refreshed patch uploaded to Trac as 41081-refresh.patch. Verified expected behavior for no menu selected, empty menu selected, and populated menu selected.
+- Review updated: 2026-06-15T21:48:04.323Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, good first bug +20, has owner +6
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +20: Good First Bug
+  - +6: Has Owner
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 10. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
