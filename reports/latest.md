@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-16 09:14
+Generated: 2026-08-16 15:15
 
 ## Summary
 
@@ -1507,7 +1507,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Milestone: 7.1
 - Keywords: good-first-bug has-patch needs-testing
 - Created: 10/22/2022 11:05:39 AM
-- Modified: 06/16/2026 05:59:31 PM
+- Modified: 06/23/2026 08:04:16 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T09:14:48",
+  "generated": "2026-08-16T15:15:42",
   "summary": {
     "unique_tickets": 307,
     "priority_targets": 12,
@@ -18588,7 +18588,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "10/22/2022 11:05:39 AM",
-        "modified": "06/16/2026 05:59:31 PM",
+        "modified": "06/23/2026 08:04:16 PM",
         "keywords": "good-first-bug has-patch needs-testing",
         "signals": [
           {
