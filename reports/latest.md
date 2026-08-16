@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-16 03:13
+Generated: 2026-08-16 09:14
 
 ## Summary
 
@@ -141,12 +141,12 @@ Generated: 2026-08-16 03:13
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Networks and Sites
-- Trac status: Assigned
+- Trac status: Reviewing
 - Milestone: 7.1
-- Owner: rajeshcp
+- Owner: westonruter
 - Keywords: has-patch needs-testing has-test-info has-unit-tests has-screenshots
 - Created: 04/09/2026 10:29:50 AM
-- Modified: 08/01/2026 09:39:13 AM
+- Modified: 08/05/2026 12:17:20 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -899,10 +899,10 @@ Generated: 2026-08-16 03:13
 - Discovery track: General Needs Testing
 - Component: TinyMCE
 - Trac status: New
-- Milestone: Awaiting Review
+- Milestone: Future Release
 - Keywords: has-patch needs-testing
 - Created: 07/27/2026 03:01:34 PM
-- Modified: 08/01/2026 10:06:00 AM
+- Modified: 08/10/2026 02:15:13 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
@@ -1453,7 +1453,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: adamsilverstein
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 05/22/2026 10:26:49 PM
-- Modified: 06/16/2026 01:52:30 PM
+- Modified: 06/28/2026 12:25:36 AM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified media upload, scaling, metadata, frontend display, and image editing workflows in Playground.

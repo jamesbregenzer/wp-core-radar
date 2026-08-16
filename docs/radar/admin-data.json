@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T03:13:57",
+  "generated": "2026-08-16T09:14:48",
   "summary": {
     "unique_tickets": 307,
     "priority_targets": 12,
@@ -491,12 +491,12 @@
         "tier_label": "Immediate Review",
         "summary": "$_REQUEST['term'] used unsanitized in user search query",
         "track": "General: Needs Testing",
-        "status": "Assigned",
+        "status": "Reviewing",
         "component": "Networks and Sites",
-        "owner": "rajeshcp",
+        "owner": "westonruter",
         "comments": "Unknown",
         "created": "04/09/2026 10:29:50 AM",
-        "modified": "08/01/2026 09:39:13 AM",
+        "modified": "08/05/2026 12:17:20 AM",
         "keywords": "has-patch needs-testing has-test-info has-unit-tests has-screenshots",
         "signals": [
           {
@@ -3534,7 +3534,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "07/27/2026 03:01:34 PM",
-        "modified": "08/01/2026 10:06:00 AM",
+        "modified": "08/10/2026 02:15:13 PM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
@@ -9814,72 +9814,6 @@
         "review": {}
       },
       {
-        "ticket_id": "60478",
-        "url": "https://core.trac.wordpress.org/ticket/60478",
-        "score": 123,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Upgrade to jQuery 4.0",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "External Libraries",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "02/08/2024 08:52:50 PM",
-        "modified": "08/01/2026 11:39:34 AM",
-        "keywords": "needs-patch needs-testing early",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "65626",
         "url": "https://core.trac.wordpress.org/ticket/65626",
         "score": 123,
@@ -10753,6 +10687,72 @@
             "label": "Dev Feedback",
             "detail": "",
             "display": "Dev Feedback",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "60478",
+        "url": "https://core.trac.wordpress.org/ticket/60478",
+        "score": 113,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Upgrade to jQuery 4.0",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "External Libraries",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "02/08/2024 08:52:50 PM",
+        "modified": "07/16/2026 10:25:03 PM",
+        "keywords": "needs-patch needs-testing early",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           }
         ],
@@ -18369,7 +18369,7 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "05/22/2026 10:26:49 PM",
-        "modified": "06/16/2026 01:52:30 PM",
+        "modified": "06/28/2026 12:25:36 AM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
