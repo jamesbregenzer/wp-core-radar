@@ -58,7 +58,7 @@
 36171,Proposed clean up of get_the_category_list() and link filter,new,Taxonomy,,enhancement,normal,,4.4.2,needs-testing needs-unit-tests,03/08/2016 05:09:25 PM,06/04/2019 09:20:57 PM
 36201,Admin Pagination URLs Use Wrong Hostname,reopened,Administration,,defect (bug),normal,Future Release,,has-patch needs-testing dev-feedback,03/10/2016 09:18:06 PM,06/17/2026 12:45:20 PM
 37255,Update attachment functions to accept a post object in addition to ID,accepted,Media,johnbillion,enhancement,normal,Future Release,4.6,needs-testing needs-dev-note needs-test-info 2nd-opinion close,07/02/2016 09:26:02 AM,05/12/2025 01:35:34 AM
-38067,New filter `wp_post_lock_status`,new,"Posts, Post Types",,enhancement,normal,Future Release,2.5,has-patch has-test-info needs-testing,09/15/2016 01:23:37 PM,08/08/2026 12:56:11 PM
+38067,New filter `wp_post_lock_status`,new,"Posts, Post Types",,enhancement,normal,Future Release,2.5,has-patch has-test-info needs-testing,09/15/2016 01:23:37 PM,08/17/2026 01:54:42 PM
 38238,Sorting a list table by some kind of count should default to DESC initially,reviewing,Administration,helen,enhancement,normal,Awaiting Review,,has-patch has-unit-tests needs-testing,10/05/2016 09:32:01 PM,03/03/2026 04:37:11 PM
 38809,Better wp namespace in password-strength-meter.js,reviewing,Administration,,defect (bug),normal,Future Release,,has-patch needs-testing needs-test-info close,11/15/2016 11:27:37 PM,05/12/2025 01:35:35 AM
 38936,Alter Table Always Expects a COLUMN; Crashes on a CONSTRAINT,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,,needs-testing dev-feedback,11/24/2016 05:25:13 PM,12/16/2022 08:17:47 AM

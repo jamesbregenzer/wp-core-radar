@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-17 03:17
+Generated: 2026-08-17 09:18
 
 ## Summary
 
@@ -686,28 +686,7 @@ Generated: 2026-08-17 03:17
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 20. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
-
-- Score: **150**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Administration
-- Trac status: Reopened
-- Milestone: Future Release
-- Keywords: has-patch needs-testing dev-feedback
-- Created: 03/10/2016 09:18:06 PM
-- Modified: 06/17/2026 12:45:20 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, freshness: updated within 60 days +10, ticket age: very old ticket -8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +18: Dev Feedback
-  - +10: Freshness
-  - -8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 21. [#38067](https://core.trac.wordpress.org/ticket/38067) — New filter `wp_post_lock_status`
+#### 20. [#38067](https://core.trac.wordpress.org/ticket/38067) — New filter `wp_post_lock_status`
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -726,7 +705,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 22. [#40032](https://core.trac.wordpress.org/ticket/40032) — Automatic redirects with _wp_old_slug won't mantain GET parameters if present
+#### 21. [#40032](https://core.trac.wordpress.org/ticket/40032) — Automatic redirects with _wp_old_slug won't mantain GET parameters if present
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -745,7 +724,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 23. [#43010](https://core.trac.wordpress.org/ticket/43010) — Attribute Name Escape
+#### 22. [#43010](https://core.trac.wordpress.org/ticket/43010) — Attribute Name Escape
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -764,7 +743,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 24. [#46017](https://core.trac.wordpress.org/ticket/46017) — "Mine" comment count isn't updated when replying to or moderating a comment.
+#### 23. [#46017](https://core.trac.wordpress.org/ticket/46017) — "Mine" comment count isn't updated when replying to or moderating a comment.
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -783,7 +762,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 25. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
+#### 24. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -799,7 +778,7 @@ Generated: 2026-08-17 03:17
   - +20: Good First Bug
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 26. [#49408](https://core.trac.wordpress.org/ticket/49408) — Why is the action wp_ajax_wp_link_ajax not using wp_send_json()
+#### 25. [#49408](https://core.trac.wordpress.org/ticket/49408) — Why is the action wp_ajax_wp_link_ajax not using wp_send_json()
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -818,7 +797,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 27. [#54016](https://core.trac.wordpress.org/ticket/54016) — Media Library: Bulk delete elements in grid view takes very long
+#### 26. [#54016](https://core.trac.wordpress.org/ticket/54016) — Media Library: Bulk delete elements in grid view takes very long
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -837,7 +816,7 @@ Generated: 2026-08-17 03:17
   - +20: Preferred Component
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 28. [#58416](https://core.trac.wordpress.org/ticket/58416) — Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.
+#### 27. [#58416](https://core.trac.wordpress.org/ticket/58416) — Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -856,7 +835,7 @@ Generated: 2026-08-17 03:17
   - +20: Preferred Component
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 29. [#59365](https://core.trac.wordpress.org/ticket/59365) — Deprecated notice when calling get_admin_page_title() on some dashboard pages.
+#### 28. [#59365](https://core.trac.wordpress.org/ticket/59365) — Deprecated notice when calling get_admin_page_title() on some dashboard pages.
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -874,7 +853,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 30. [#61330](https://core.trac.wordpress.org/ticket/61330) — Plugin Dependencies: Refresh plugin-install.php instead of redirecting on activation
+#### 29. [#61330](https://core.trac.wordpress.org/ticket/61330) — Plugin Dependencies: Refresh plugin-install.php instead of redirecting on activation
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -893,7 +872,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 31. [#65734](https://core.trac.wordpress.org/ticket/65734) — Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste
+#### 30. [#65734](https://core.trac.wordpress.org/ticket/65734) — Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -912,7 +891,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 32. [#65757](https://core.trac.wordpress.org/ticket/65757) — Proposal: Make the Interactivity API extensible
+#### 31. [#65757](https://core.trac.wordpress.org/ticket/65757) — Proposal: Make the Interactivity API extensible
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -931,7 +910,7 @@ Generated: 2026-08-17 03:17
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 33. [#20746](https://core.trac.wordpress.org/ticket/20746) — Accessing non-existing theme folder in Network install gives 500 error
+#### 32. [#20746](https://core.trac.wordpress.org/ticket/20746) — Accessing non-existing theme folder in Network install gives 500 error
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -939,6 +918,22 @@ Generated: 2026-08-17 03:17
 - Component: Unknown
 - Trac status: Reopened
 - Keywords: needs-testing has-patch dev-feedback 2nd-opinion
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 33. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
+
+- Score: **148**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Unknown
+- Trac status: Reopened
+- Keywords: has-patch needs-testing dev-feedback
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18
 - Score breakdown:
   - +65: Track Priority
