@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-17T09:18:16",
+  "generated": "2026-08-17T15:19:08",
   "summary": {
-    "unique_tickets": 307,
+    "unique_tickets": 308,
     "priority_targets": 12,
     "immediate": 9,
     "strong": 3,
@@ -3577,6 +3577,72 @@
         "review": {}
       },
       {
+        "ticket_id": "65897",
+        "url": "https://core.trac.wordpress.org/ticket/65897",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Surface community-contributed patterns from the Pattern Directory in the editor (opt-in)",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "08/17/2026 02:53:39 PM",
+        "modified": "08/17/2026 04:29:49 PM",
+        "keywords": "has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "20746",
         "url": "https://core.trac.wordpress.org/ticket/20746",
         "score": 148,
@@ -6107,72 +6173,6 @@
         "review": {}
       },
       {
-        "ticket_id": "61889",
-        "url": "https://core.trac.wordpress.org/ticket/61889",
-        "score": 138,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Function dbDelta() splits queries on semi-colon in column COMMENT and table COMMENT",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Database",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "08/16/2024 07:06:04 PM",
-        "modified": "04/28/2025 05:46:54 AM",
-        "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "63882",
         "url": "https://core.trac.wordpress.org/ticket/63882",
         "score": 138,
@@ -7307,7 +7307,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "07/26/2026 08:31:58 PM",
-        "modified": "08/02/2026 05:21:52 PM",
+        "modified": "08/13/2026 03:31:20 PM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
@@ -9520,6 +9520,61 @@
         "created": "Unknown",
         "modified": "Unknown",
         "keywords": "has-patch 2nd-opinion needs-testing needs-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "61889",
+        "url": "https://core.trac.wordpress.org/ticket/61889",
+        "score": 130,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Function dbDelta() splits queries on semi-colon in column COMMENT and table COMMENT",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Unknown",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "Unknown",
+        "modified": "Unknown",
+        "keywords": "has-patch needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
