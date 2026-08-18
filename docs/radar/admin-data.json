@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T15:19:08",
+  "generated": "2026-08-18T03:20:50",
   "summary": {
     "unique_tickets": 308,
     "priority_targets": 12,
@@ -2389,6 +2389,83 @@
         "review": {}
       },
       {
+        "ticket_id": "65897",
+        "url": "https://core.trac.wordpress.org/ticket/65897",
+        "score": 156,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Surface community-contributed patterns from the Pattern Directory in the editor (opt-in)",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Editor",
+        "owner": "ugyensupport",
+        "comments": "Unknown",
+        "created": "08/17/2026 02:53:39 PM",
+        "modified": "08/18/2026 06:31:29 AM",
+        "keywords": "has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "21989",
         "url": "https://core.trac.wordpress.org/ticket/21989",
         "score": 154,
@@ -3525,72 +3602,6 @@
         "created": "07/29/2026 07:42:15 PM",
         "modified": "08/11/2026 02:49:29 PM",
         "keywords": "has-patch needs-testing 2nd-opinion",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65897",
-        "url": "https://core.trac.wordpress.org/ticket/65897",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Surface community-contributed patterns from the Pattern Directory in the editor (opt-in)",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Editor",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "08/17/2026 02:53:39 PM",
-        "modified": "08/17/2026 04:29:49 PM",
-        "keywords": "has-patch needs-testing has-unit-tests",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -10882,8 +10893,8 @@
         "owner": "",
         "comments": "Unknown",
         "created": "06/18/2026 07:24:05 AM",
-        "modified": "06/18/2026 07:24:05 AM",
-        "keywords": "needs-testing",
+        "modified": "06/30/2026 04:18:18 PM",
+        "keywords": "needs-testing close",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
