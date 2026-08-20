@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-19 15:26
+Generated: 2026-08-19 21:27
 
 ## Summary
 
@@ -157,30 +157,7 @@ Generated: 2026-08-19 15:26
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
-
-- Score: **172**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Networks and Sites
-- Trac status: Reviewing
-- Milestone: 7.1
-- Owner: westonruter
-- Keywords: has-patch needs-testing has-test-info has-unit-tests has-screenshots
-- Created: 04/09/2026 10:29:50 AM
-- Modified: 08/05/2026 12:17:20 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +20: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 8. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
+#### 7. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
 
 - Score: **170**
 - Track/query: General: Needs Testing
@@ -205,7 +182,7 @@ Generated: 2026-08-19 15:26
   - -12: Setup Complexity
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#44964](https://core.trac.wordpress.org/ticket/44964) — `redirect_guess_404_permalink` doesn't support array in `post_type` var
+#### 8. [#44964](https://core.trac.wordpress.org/ticket/44964) — `redirect_guess_404_permalink` doesn't support array in `post_type` var
 
 - Score: **168**
 - Track/query: General: Needs Testing
@@ -225,7 +202,7 @@ Generated: 2026-08-19 15:26
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#65638](https://core.trac.wordpress.org/ticket/65638) — AI: Add embedding generation support to WordPress
+#### 9. [#65638](https://core.trac.wordpress.org/ticket/65638) — AI: Add embedding generation support to WordPress
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -246,7 +223,7 @@ Generated: 2026-08-19 15:26
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+#### 10. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -268,7 +245,7 @@ Generated: 2026-08-19 15:26
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#64155](https://core.trac.wordpress.org/ticket/64155) — Add stack trace to failed plugin update error notifications
+#### 11. [#64155](https://core.trac.wordpress.org/ticket/64155) — Add stack trace to failed plugin update error notifications
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -280,6 +257,29 @@ Generated: 2026-08-19 15:26
 - Keywords: needs-testing has-patch
 - Created: 10/27/2025 03:53:33 PM
 - Modified: 07/21/2026 11:19:18 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +10: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 12. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+
+- Score: **162**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Networks and Sites
+- Trac status: Assigned
+- Milestone: 7.1
+- Owner: rajeshcp
+- Keywords: has-patch needs-testing has-test-info has-unit-tests has-screenshots
+- Created: 04/09/2026 10:29:50 AM
+- Modified: 07/15/2026 06:17:22 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -1553,7 +1553,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: audrasjb
 - Keywords: has-patch has-unit-tests needs-testing has-test-info early
 - Created: 04/09/2025 11:10:53 AM
-- Modified: 08/04/2026 11:30:09 PM
+- Modified: 08/19/2026 12:56:53 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Applied PR #11534 locally, ran Tests_Term successfully, and verified basic category/post taxonomy workflows in wp-admin and on the front end.
