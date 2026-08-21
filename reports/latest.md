@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-21 09:32
+Generated: 2026-08-21 15:33
 
 ## Summary
 
@@ -45,31 +45,7 @@ Generated: 2026-08-21 09:32
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 2. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
-
-- Score: **182**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Script Loader
-- Trac status: Reviewing
-- Milestone: 7.1
-- Owner: wildworks
-- Keywords: has-patch has-unit-tests needs-testing reporter-feedback
-- Created: 06/22/2026 12:39:34 PM
-- Modified: 08/06/2026 07:13:33 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +10: Reporter Feedback
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +20: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 3. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+#### 2. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
 
 - Score: **181**
 - Track/query: Media: Has Patch
@@ -90,7 +66,7 @@ Generated: 2026-08-21 09:32
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#46010](https://core.trac.wordpress.org/ticket/46010) — Auto-generated term slugs can be greater than 200 characters, giving "Could not insert term into the database." error
+#### 3. [#46010](https://core.trac.wordpress.org/ticket/46010) — Auto-generated term slugs can be greater than 200 characters, giving "Could not insert term into the database." error
 
 - Score: **176**
 - Track/query: General: Needs Testing
@@ -111,7 +87,7 @@ Generated: 2026-08-21 09:32
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
+#### 4. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
 
 - Score: **174**
 - Track/query: General: Needs Testing
@@ -131,6 +107,29 @@ Generated: 2026-08-21 09:32
   - +18: Dev Feedback
   - +6: Has Owner
   - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 5. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
+
+- Score: **174**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Script Loader
+- Trac status: Reviewing
+- Milestone: Future Release
+- Owner: wildworks
+- Keywords: has-patch has-unit-tests needs-testing reporter-feedback
+- Created: 06/22/2026 12:39:34 PM
+- Modified: 08/10/2026 12:18:08 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, reporter feedback +10, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Reporter Feedback
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 6. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
@@ -192,7 +191,7 @@ Generated: 2026-08-21 09:32
 - Milestone: Awaiting Review
 - Keywords: needs-testing has-patch has-unit-tests
 - Created: 08/21/2026 09:58:37 AM
-- Modified: 08/21/2026 12:20:31 PM
+- Modified: 08/21/2026 06:07:07 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
