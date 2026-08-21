@@ -1,4 +1,5 @@
 ﻿id,Summary,Status,Component,Owner,Type,Priority,Milestone,Version,Keywords,Created,Modified
+65930,Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements,new,Media,,defect (bug),high,Awaiting Review,7.1,needs-testing has-patch has-unit-tests,08/21/2026 09:58:37 AM,08/21/2026 12:20:31 PM
 7965,Database upgrade complete message should be an admin notice,new,Upgrade/Install,,enhancement,normal,Future Release,,has-patch needs-testing,10/25/2008 06:53:28 PM,04/02/2026 10:52:23 AM
 13743,Ability to choose a network default theme,reopened,Networks and Sites,,enhancement,normal,Future Release,3.0,has-patch has-screenshots needs-testing,06/06/2010 05:44:12 AM,02/03/2026 04:40:36 PM
 15467,Multisite with separate users table,reopened,Networks and Sites,,feature request,normal,,3.0.1,needs-codex needs-testing,11/18/2010 09:09:03 AM,03/02/2024 04:55:21 PM
@@ -89,7 +90,7 @@
 42329,"Customizer: interacting with text fields in a ""wide"" widget shifts child panel position in Safari.",new,Customize,,defect (bug),normal,Future Release,4.7,needs-testing,10/24/2017 11:06:54 PM,06/22/2024 08:36:23 PM
 42670,Symlinked plugin makes plugin_basename function return wrong basename,assigned,Plugins,brianhenryie,defect (bug),normal,Future Release,4.9,has-unit-tests needs-testing has-patch has-test-info dev-feedback,11/23/2017 11:36:11 AM,08/15/2026 10:51:53 AM
 42833,WordPress forces non-ssl login in described circumstance even though FORCE_SSL_ADMIN is set in wp-config,new,Administration,,defect (bug),normal,Awaiting Review,4.9.1,needs-testing,12/07/2017 07:32:39 PM,09/21/2021 06:59:07 AM
-43010,Attribute Name Escape,new,Formatting,,enhancement,normal,Awaiting Review,,needs-testing needs-unit-tests has-patch,01/02/2018 05:03:09 PM,08/06/2026 02:23:54 PM
+43010,Attribute Name Escape,new,Formatting,,enhancement,normal,Awaiting Review,,needs-testing needs-unit-tests has-patch,01/02/2018 05:03:09 PM,08/21/2026 10:50:51 AM
 43019,Hook to validate post form data before save,new,Database,,enhancement,normal,Awaiting Review,,has-patch needs-testing,01/04/2018 01:23:07 PM,10/28/2021 03:26:41 AM
 43233,Network transients,new,Networks and Sites,,enhancement,normal,Future Release,2.9,has-patch 2nd-opinion needs-testing,02/06/2018 09:28:25 AM,04/01/2025 05:28:43 PM
 43746,Custom post type single post feed returns a 404 if has_archive is set to false when calling register_post_type(),reviewing,Rewrite Rules,SergeyBiryukov,defect (bug),normal,Future Release,4.9.5,2nd-opinion has-patch needs-testing has-unit-tests,04/12/2018 01:58:17 PM,04/13/2026 08:34:34 AM
