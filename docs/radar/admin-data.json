@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T15:29:46",
+  "generated": "2026-08-20T21:30:38",
   "summary": {
     "unique_tickets": 310,
     "priority_targets": 12,
@@ -2071,7 +2071,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "08/20/2026 03:48:11 PM",
-        "modified": "08/20/2026 06:19:23 PM",
+        "modified": "08/20/2026 09:15:50 PM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
@@ -5304,72 +5304,6 @@
         "review": {}
       },
       {
-        "ticket_id": "47456",
-        "url": "https://core.trac.wordpress.org/ticket/47456",
-        "score": 146,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Improve the user interface to ensure correct usage of the image alt text",
-        "track": "Media: Has Patch",
-        "status": "Accepted",
-        "component": "Media",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "06/01/2019 11:15:23 AM",
-        "modified": "08/05/2026 11:28:41 PM",
-        "keywords": "wpcampus-report needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
         "ticket_id": "52464",
         "url": "https://core.trac.wordpress.org/ticket/52464",
         "score": 146,
@@ -7435,6 +7369,72 @@
           }
         ],
         "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "47456",
+        "url": "https://core.trac.wordpress.org/ticket/47456",
+        "score": 136,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Improve the user interface to ensure correct usage of the image alt text",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "06/01/2019 11:15:23 AM",
+        "modified": "08/04/2026 09:01:17 AM",
+        "keywords": "wpcampus-report needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
