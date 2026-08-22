@@ -1,5 +1,5 @@
 ﻿id,Summary,Status,Component,Owner,Type,Priority,Milestone,Version,Keywords,Created,Modified
-65930,Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements,new,Media,,defect (bug),high,Awaiting Review,7.1,needs-testing has-patch has-unit-tests,08/21/2026 09:58:37 AM,08/21/2026 06:07:07 PM
+65930,Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements,new,Media,,defect (bug),high,Awaiting Review,7.1,needs-testing has-patch has-unit-tests,08/21/2026 09:58:37 AM,08/22/2026 02:24:37 PM
 7965,Database upgrade complete message should be an admin notice,new,Upgrade/Install,,enhancement,normal,Future Release,,has-patch needs-testing,10/25/2008 06:53:28 PM,04/02/2026 10:52:23 AM
 13743,Ability to choose a network default theme,reopened,Networks and Sites,,enhancement,normal,Future Release,3.0,has-patch has-screenshots needs-testing,06/06/2010 05:44:12 AM,02/03/2026 04:40:36 PM
 15467,Multisite with separate users table,reopened,Networks and Sites,,feature request,normal,,3.0.1,needs-codex needs-testing,11/18/2010 09:09:03 AM,03/02/2024 04:55:21 PM
@@ -61,7 +61,7 @@
 37255,Update attachment functions to accept a post object in addition to ID,accepted,Media,johnbillion,enhancement,normal,Future Release,4.6,needs-testing needs-dev-note needs-test-info 2nd-opinion close,07/02/2016 09:26:02 AM,05/12/2025 01:35:34 AM
 38067,New filter `wp_post_lock_status`,new,"Posts, Post Types",,enhancement,normal,Future Release,2.5,has-patch has-test-info needs-testing,09/15/2016 01:23:37 PM,08/17/2026 01:54:42 PM
 38238,Sorting a list table by some kind of count should default to DESC initially,reviewing,Administration,helen,enhancement,normal,Awaiting Review,,has-patch has-unit-tests needs-testing,10/05/2016 09:32:01 PM,03/03/2026 04:37:11 PM
-38809,Better wp namespace in password-strength-meter.js,reviewing,Administration,,defect (bug),normal,Future Release,,has-patch needs-testing needs-test-info close,11/15/2016 11:27:37 PM,05/12/2025 01:35:35 AM
+38809,Better wp namespace in password-strength-meter.js,reviewing,Administration,,defect (bug),normal,Future Release,,has-patch needs-testing needs-test-info close,11/15/2016 11:27:37 PM,08/22/2026 12:11:07 PM
 38936,Alter Table Always Expects a COLUMN; Crashes on a CONSTRAINT,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,,needs-testing dev-feedback,11/24/2016 05:25:13 PM,12/16/2022 08:17:47 AM
 39003,menu_page_url() not working on Ajax call,new,Administration,,defect (bug),normal,Awaiting Review,4.6.1,needs-testing reporter-feedback,12/01/2016 01:50:38 PM,10/14/2024 03:34:48 PM
 39447,Improvement to the get_the_posts_navigation,reviewing,Query,SergeyBiryukov,enhancement,normal,Future Release,,needs-testing needs-patch needs-unit-tests,01/03/2017 02:36:31 PM,01/27/2021 06:28:38 AM
