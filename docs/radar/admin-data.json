@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T09:35:59",
+  "generated": "2026-08-22T15:36:52",
   "summary": {
     "unique_tickets": 311,
     "priority_targets": 12,
@@ -18911,99 +18911,6 @@
         }
       },
       {
-        "ticket_id": "65513",
-        "url": "https://core.trac.wordpress.org/ticket/65513",
-        "score": 168,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Media Library modal shows wrong count on first upload and does not reset after image deletion",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Media",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/22/2026 12:12:45 PM",
-        "modified": "06/22/2026 04:54:19 PM",
-        "keywords": "needs-testing needs-test-info has-screenshots has-patch",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "commented",
-          "reason": "PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.",
-          "notes": "Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed \u201cShowing 1 of 1 media items,\u201d so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the \u201cCould not retrieve the featured image data\u201d message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.",
-          "updated_at": "2026-06-22T16:55:30.056Z"
-        }
-      },
-      {
         "ticket_id": "63256",
         "url": "https://core.trac.wordpress.org/ticket/63256",
         "score": 164,
@@ -19320,6 +19227,88 @@
           "reason": "Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.",
           "notes": "Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.",
           "updated_at": "2026-06-19T17:38:19.873Z"
+        }
+      },
+      {
+        "ticket_id": "65513",
+        "url": "https://core.trac.wordpress.org/ticket/65513",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Media Library modal shows wrong count on first upload and does not reset after image deletion",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/22/2026 12:12:45 PM",
+        "modified": "06/22/2026 04:54:19 PM",
+        "keywords": "needs-testing needs-test-info has-screenshots has-patch",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "commented",
+          "reason": "PR fixes the first-upload count, but delete/reset behavior still leaves a stale selectable thumbnail.",
+          "notes": "Tested PR #12265 via WordPress Playground using the Featured Image modal upload/delete workflow. Confirmed the first uploaded image correctly showed \u201cShowing 1 of 1 media items,\u201d so Bug 1 appears fixed. After permanently deleting the uploaded image, the deleted thumbnail still appeared in the modal and remained selectable; setting it as the featured image produced the \u201cCould not retrieve the featured image data\u201d message. Left a Trac comment with environment, steps, results, and screenshots. Keywords were not updated.",
+          "updated_at": "2026-06-22T16:55:30.056Z"
         }
       },
       {
