@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-23 09:39
+Generated: 2026-08-23 15:40
 
 ## Summary
 
@@ -233,7 +233,7 @@ Generated: 2026-08-23 09:39
 - Owner: afercia
 - Keywords: has-patch needs-testing needs-test-info
 - Created: 11/15/2016 11:27:37 PM
-- Modified: 08/23/2026 07:55:09 AM
+- Modified: 08/23/2026 03:11:50 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
@@ -1477,7 +1477,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Milestone: 7.1
 - Keywords: good-first-bug has-patch needs-testing
 - Created: 10/22/2022 11:05:39 AM
-- Modified: 06/23/2026 08:04:16 PM
+- Modified: 07/10/2026 01:36:37 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified checkbox renders on Network Admin → Add Site and correctly persists search engine visibility setting to newly created sites in both checked and unchecked states.
@@ -1691,11 +1691,11 @@ Posted testing results to Trac.
 - Discovery track: General Needs Testing
 - Component: Site Health
 - Trac status: Accepted
-- Milestone: 7.0.1
+- Milestone: 7.0.2
 - Owner: westonruter
 - Keywords: has-patch needs-testing
 - Created: 02/23/2026 03:51:38 PM
-- Modified: 06/23/2026 06:59:16 PM
+- Modified: 06/30/2026 02:30:50 PM
 - Review status: commented
 - Review reason: Reviewed patch, tested in Playground, submitted Trac feedback.
 - Review notes: Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.
