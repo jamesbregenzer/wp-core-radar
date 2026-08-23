@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T21:37:45",
+  "generated": "2026-08-23T03:38:40",
   "summary": {
     "unique_tickets": 311,
     "priority_targets": 12,
@@ -858,6 +858,94 @@
         "review": {}
       },
       {
+        "ticket_id": "38809",
+        "url": "https://core.trac.wordpress.org/ticket/38809",
+        "score": 164,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Better wp namespace in password-strength-meter.js",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Administration",
+        "owner": "afercia",
+        "comments": "Unknown",
+        "created": "11/15/2016 11:27:37 PM",
+        "modified": "08/23/2026 07:55:09 AM",
+        "keywords": "has-patch needs-testing needs-test-info",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "63568",
         "url": "https://core.trac.wordpress.org/ticket/63568",
         "score": 162,
@@ -1043,6 +1131,96 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
+      }
+    ],
+    "top": [
+      {
+        "ticket_id": "35593",
+        "url": "https://core.trac.wordpress.org/ticket/35593",
+        "score": 162,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Metadata from wrong file in media_handle_upload",
+        "track": "General: Needs Testing",
+        "status": "Reviewing",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "01/24/2016 03:14:20 PM",
+        "modified": "08/18/2026 08:39:06 AM",
+        "keywords": "has-patch needs-testing has-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Very Old Ticket -8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "-8",
+            "label": "Ticket Age",
+            "detail": "Very Old Ticket",
+            "display": "Ticket Age: Very Old Ticket",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
       },
       {
         "ticket_id": "65051",
@@ -1138,96 +1316,6 @@
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      }
-    ],
-    "top": [
-      {
-        "ticket_id": "35593",
-        "url": "https://core.trac.wordpress.org/ticket/35593",
-        "score": 162,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Metadata from wrong file in media_handle_upload",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Media",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "01/24/2016 03:14:20 PM",
-        "modified": "08/18/2026 08:39:06 AM",
-        "keywords": "has-patch needs-testing has-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Very Old Ticket -8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "-8",
-            "label": "Ticket Age",
-            "detail": "Very Old Ticket",
-            "display": "Ticket Age: Very Old Ticket",
-            "polarity": "negative"
           }
         ],
         "discovery_track": "General Needs Testing",
@@ -3030,72 +3118,6 @@
         "created": "09/15/2016 01:23:37 PM",
         "modified": "08/08/2026 12:56:11 PM",
         "keywords": "has-patch has-test-info needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "38809",
-        "url": "https://core.trac.wordpress.org/ticket/38809",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Better wp namespace in password-strength-meter.js",
-        "track": "General: Needs Testing",
-        "status": "Reviewing",
-        "component": "Administration",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "11/15/2016 11:27:37 PM",
-        "modified": "08/22/2026 12:11:07 PM",
-        "keywords": "has-patch needs-testing needs-test-info close",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
