@@ -1,5 +1,5 @@
 ﻿id,Summary,Status,Component,Owner,Type,Priority,Milestone,Version,Keywords,Created,Modified
-65930,Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements,new,Media,,defect (bug),high,Awaiting Review,7.1,needs-testing has-patch has-unit-tests,08/21/2026 09:58:37 AM,08/22/2026 02:24:37 PM
+65930,Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements,new,Media,,defect (bug),high,Awaiting Review,7.1,needs-testing has-patch has-unit-tests,08/21/2026 09:58:37 AM,08/22/2026 09:54:02 PM
 7965,Database upgrade complete message should be an admin notice,new,Upgrade/Install,,enhancement,normal,Future Release,,has-patch needs-testing,10/25/2008 06:53:28 PM,04/02/2026 10:52:23 AM
 13743,Ability to choose a network default theme,reopened,Networks and Sites,,enhancement,normal,Future Release,3.0,has-patch has-screenshots needs-testing,06/06/2010 05:44:12 AM,02/03/2026 04:40:36 PM
 15467,Multisite with separate users table,reopened,Networks and Sites,,feature request,normal,,3.0.1,needs-codex needs-testing,11/18/2010 09:09:03 AM,03/02/2024 04:55:21 PM
@@ -260,5 +260,5 @@
 65734,Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste,new,TinyMCE,,enhancement,normal,Future Release,7.1,has-patch needs-testing,07/27/2026 03:01:34 PM,08/10/2026 02:15:13 PM
 65757,Proposal: Make the Interactivity API extensible,new,Interactivity API,,defect (bug),normal,Future Release,,has-patch needs-testing 2nd-opinion,07/29/2026 07:42:15 PM,08/19/2026 06:24:23 PM
 65897,Surface community-contributed patterns from the Pattern Directory in the editor (opt-in),assigned,Editor,ugyensupport,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,08/17/2026 02:53:39 PM,08/18/2026 06:31:29 AM
-65920,Add a plugin compatibility testing workflow to catch fatals with popular plugins before release,new,Build/Test Tools,,feature request,normal,7.2,,has-patch needs-testing,08/20/2026 03:48:11 PM,08/21/2026 04:31:50 PM
+65920,Add a plugin compatibility testing workflow to catch fatals with popular plugins before release,new,Build/Test Tools,,feature request,normal,7.2,,has-patch needs-testing,08/20/2026 03:48:11 PM,08/22/2026 09:48:31 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,Future Release,4.7,has-patch has-unit-tests needs-testing has-test-info early,04/09/2025 11:10:53 AM,08/19/2026 12:56:53 PM
