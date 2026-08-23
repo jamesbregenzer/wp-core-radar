@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-23 03:38
+Generated: 2026-08-23 09:39
 
 ## Summary
 
@@ -779,7 +779,7 @@ Generated: 2026-08-23 03:38
 - Milestone: Future Release
 - Keywords: has-patch has-test-info needs-testing
 - Created: 09/15/2016 01:23:37 PM
-- Modified: 08/08/2026 12:56:11 PM
+- Modified: 08/17/2026 01:54:42 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20
 - Score breakdown:
   - +65: Track Priority
@@ -2072,7 +2072,7 @@ Posted testing results to Trac.
 | media_has_patch | 2026-08-22 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-22/media_has_patch.csv` |
 | accessibility_has_patch | 2026-08-23 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-23/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-08-23 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-23/docs_needs_testing.csv` |
-| general_needs_testing | 2026-08-23 | 261 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-23/general_needs_testing.csv` |
+| general_needs_testing | 2026-08-23 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-23/general_needs_testing.csv` |
 | good_first_bugs | 2026-08-23 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-23/good_first_bugs.csv` |
 | media_has_patch | 2026-08-23 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-23/media_has_patch.csv` |
 

@@ -113,7 +113,6 @@
 45354,Adding index for meta_key and post_id in postmeta,new,Database,,enhancement,normal,Future Release,,needs-testing dev-feedback has-patch has-unit-tests,11/14/2018 09:43:31 PM,07/22/2026 11:42:03 AM
 45897,Chinese page uri dump fail,new,I18N,,defect (bug),normal,Awaiting Review,5.0.2,needs-testing has-patch,01/10/2019 07:17:56 AM,02/03/2026 03:56:47 PM
 45910,Improve and extend focus styles for Windows High Contrast mode,assigned,Administration,rcreators,defect (bug),normal,Future Release,,needs-testing,01/10/2019 04:54:41 PM,01/03/2025 07:13:03 AM
-46010,"Auto-generated term slugs can be greater than 200 characters, giving ""Could not insert term into the database."" error",new,Taxonomy,,defect (bug),normal,7.2,,dev-feedback has-patch 2nd-opinion has-unit-tests needs-testing,01/16/2019 02:37:23 PM,08/20/2026 10:53:20 AM
 46017,"""Mine"" comment count isn't updated when replying to or moderating a comment.",new,Comments,,defect (bug),normal,Future Release,5.1,needs-testing has-patch has-unit-tests,01/17/2019 02:59:49 AM,08/18/2026 08:40:27 AM
 46033,Please fix redirect in wp-login.php,new,Login and Registration,,defect (bug),normal,Awaiting Review,5.0.3,needs-testing,01/18/2019 10:45:43 AM,01/19/2019 10:32:26 PM
 46190,Firefox Emoji Detection Slow,new,Emoji,,enhancement,normal,Awaiting Review,5.0.3,needs-testing,02/05/2019 06:52:24 PM,07/06/2022 07:25:57 PM
@@ -223,7 +222,6 @@
 64024,wp_die() status code Plugins component updates (parent ticket: #64009),new,Plugins,,defect (bug),normal,Awaiting Review,,has-patch needs-testing needs-test-info,09/22/2025 04:24:04 PM,11/22/2025 03:41:42 AM
 64025,wp_die() status code posts component updates (parent ticket: #64009),new,"Posts, Post Types",,enhancement,normal,Future Release,,has-patch needs-testing has-test-info,09/22/2025 04:46:04 PM,10/15/2025 02:37:09 PM
 64056,Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings,new,Media,,enhancement,normal,Awaiting Review,,has-patch needs-testing close,09/30/2025 02:27:40 PM,10/01/2025 08:28:56 AM
-64155,Add stack trace to failed plugin update error notifications,reviewing,Upgrade/Install,westonruter,enhancement,normal,7.2,6.6,needs-testing has-patch,10/27/2025 03:53:33 PM,07/21/2026 11:37:56 PM
 64282,Erase personal data does not remove biographical info,new,Privacy,,defect (bug),normal,Awaiting Review,6.8.3,has-patch has-testing needs-unit-tests,11/20/2025 02:14:56 PM,07/10/2026 02:16:11 PM
 64376,redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20),new,Canonical,,defect (bug),normal,Future Release,,has-patch has-unit-tests needs-testing has-test-info,12/08/2025 11:00:27 AM,08/11/2026 11:13:00 AM
 64523,_do_query needs exception processing in class-wpdb.php,new,General,,defect (bug),normal,Awaiting Review,6.9,has-patch needs-testing needs-unit-tests has-pr,01/16/2026 09:40:38 PM,01/23/2026 05:36:40 AM
