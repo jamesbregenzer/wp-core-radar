@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T09:43:20",
+  "generated": "2026-08-24T15:44:19",
   "summary": {
     "unique_tickets": 312,
     "priority_targets": 12,
@@ -782,7 +782,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "03/05/2026 11:45:53 AM",
-        "modified": "08/24/2026 06:44:34 AM",
+        "modified": "08/24/2026 04:53:11 PM",
         "keywords": "has-screenshots has-patch has-unit-tests needs-testing has-test-info",
         "signals": [
           {
@@ -9990,6 +9990,72 @@
         "review": {}
       },
       {
+        "ticket_id": "64282",
+        "url": "https://core.trac.wordpress.org/ticket/64282",
+        "score": 128,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Erase personal data does not remove biographical info",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Privacy",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "11/20/2025 02:14:56 PM",
+        "modified": "08/24/2026 05:35:36 PM",
+        "keywords": "has-patch has-testing needs-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "39358",
         "url": "https://core.trac.wordpress.org/ticket/39358",
         "score": 126,
@@ -10445,72 +10511,6 @@
             "label": "Has Owner",
             "detail": "",
             "display": "Has Owner",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "64282",
-        "url": "https://core.trac.wordpress.org/ticket/64282",
-        "score": 118,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Erase personal data does not remove biographical info",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Privacy",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "11/20/2025 02:14:56 PM",
-        "modified": "07/08/2026 07:24:18 PM",
-        "keywords": "has-patch has-testing needs-unit-tests",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
           }
         ],
