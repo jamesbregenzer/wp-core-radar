@@ -1,5 +1,4 @@
 ﻿id,Summary,Status,Component,Owner,Type,Priority,Milestone,Version,Keywords,Created,Modified
-65930,Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements,new,Media,,defect (bug),high,Awaiting Review,7.1,needs-testing has-patch has-unit-tests,08/21/2026 09:58:37 AM,08/23/2026 03:09:15 PM
 7965,Database upgrade complete message should be an admin notice,new,Upgrade/Install,,enhancement,normal,Future Release,,has-patch needs-testing,10/25/2008 06:53:28 PM,04/02/2026 10:52:23 AM
 13743,Ability to choose a network default theme,reopened,Networks and Sites,,enhancement,normal,Future Release,3.0,has-patch has-screenshots needs-testing,06/06/2010 05:44:12 AM,02/03/2026 04:40:36 PM
 15467,Multisite with separate users table,reopened,Networks and Sites,,feature request,normal,,3.0.1,needs-codex needs-testing,11/18/2010 09:09:03 AM,03/02/2024 04:55:21 PM
