@@ -1,11 +1,11 @@
 # WP Core Radar Report
 
-Generated: 2026-08-25 09:46
+Generated: 2026-08-25 15:47
 
 ## Summary
 
 - Datasets discovered: 340
-- Unique tickets scored: 313
+- Unique tickets scored: 312
 - Outcomes loaded: 4
 - Reviews loaded: 21
 - Top opportunity limit: 50
@@ -15,7 +15,7 @@ Generated: 2026-08-25 09:46
 | Section | Count | Meaning |
 |---|---:|---|
 | Priority Targets | 12 | Highest-scoring unreviewed tickets with clear action and manageability signals. |
-| Top Opportunities | 283 | Remaining unreviewed tickets ranked by score. |
+| Top Opportunities | 282 | Remaining unreviewed tickets ranked by score. |
 | Shortlisted | 0 | Tickets manually marked as strong candidates. |
 | Watching | 6 | Tickets worth monitoring but not acting on yet. |
 | Completed / Acted On | 11 | Tickets already tested, commented on, propped, or committed. |
@@ -157,7 +157,30 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
+#### 7. [#65554](https://core.trac.wordpress.org/ticket/65554) — Connectors: only validate AI provider API keys that were submitted in the request
+
+- Score: **172**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: AI
+- Trac status: Reviewing
+- Milestone: 7.2
+- Owner: gziolo
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 06/29/2026 01:43:40 PM
+- Modified: 08/25/2026 03:51:26 PM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +20: Freshness
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 8. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
 
 - Score: **170**
 - Track/query: General: Needs Testing
@@ -182,7 +205,7 @@ Generated: 2026-08-25 09:46
   - -12: Setup Complexity
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#65930](https://core.trac.wordpress.org/ticket/65930) — Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements
+#### 9. [#65930](https://core.trac.wordpress.org/ticket/65930) — Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements
 
 - Score: **170**
 - Track/query: General: Needs Testing
@@ -202,7 +225,7 @@ Generated: 2026-08-25 09:46
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#64810](https://core.trac.wordpress.org/ticket/64810) — A password protected post can be sticky but sometimes this behaviour is forbidden.
+#### 10. [#64810](https://core.trac.wordpress.org/ticket/64810) — A password protected post can be sticky but sometimes this behaviour is forbidden.
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -223,7 +246,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#65638](https://core.trac.wordpress.org/ticket/65638) — AI: Add embedding generation support to WordPress
+#### 11. [#65638](https://core.trac.wordpress.org/ticket/65638) — AI: Add embedding generation support to WordPress
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -244,7 +267,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#38809](https://core.trac.wordpress.org/ticket/38809) — Better wp namespace in password-strength-meter.js
+#### 12. [#38809](https://core.trac.wordpress.org/ticket/38809) — Better wp namespace in password-strength-meter.js
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -264,28 +287,6 @@ Generated: 2026-08-25 09:46
   - +8: Has Concrete Milestone
   - +6: Has Owner
   - +20: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 12. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
-
-- Score: **162**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Editor
-- Trac status: Accepted
-- Milestone: Future Release
-- Owner: audrasjb
-- Keywords: has-patch has-test-info has-screenshots has-unit-tests needs-testing dev-feedback
-- Created: 06/14/2025 01:01:14 PM
-- Modified: 03/30/2026 09:24:46 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +18: Dev Feedback
-  - +6: Has Owner
-  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Top Opportunities
@@ -311,7 +312,29 @@ Generated: 2026-08-25 09:46
   - -8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 2. [#64155](https://core.trac.wordpress.org/ticket/64155) — Add stack trace to failed plugin update error notifications
+#### 2. [#63568](https://core.trac.wordpress.org/ticket/63568) — WP_Font_Face: Font names that contain single quotes are not wrapped in double quotes
+
+- Score: **162**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Editor
+- Trac status: Accepted
+- Milestone: Future Release
+- Owner: audrasjb
+- Keywords: has-patch has-test-info has-screenshots has-unit-tests needs-testing dev-feedback
+- Created: 06/14/2025 01:01:14 PM
+- Modified: 03/30/2026 09:24:46 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +6: Has Owner
+  - +8: Ticket Age
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 3. [#64155](https://core.trac.wordpress.org/ticket/64155) — Add stack trace to failed plugin update error notifications
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -334,7 +357,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
+#### 4. [#65051](https://core.trac.wordpress.org/ticket/65051) — $_REQUEST['term'] used unsanitized in user search query
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -357,7 +380,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 4. [#65491](https://core.trac.wordpress.org/ticket/65491) — Add support for the autofocus attribute within dialog elements
+#### 5. [#65491](https://core.trac.wordpress.org/ticket/65491) — Add support for the autofocus attribute within dialog elements
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -380,7 +403,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
+#### 6. [#65505](https://core.trac.wordpress.org/ticket/65505) — WP_AI_Client_Prompt_Builder catches Exception but not Error, so a TypeError fatals the request
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -403,7 +426,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#65601](https://core.trac.wordpress.org/ticket/65601) — Install theme button icon is misaligned with button text during theme installation
+#### 7. [#65601](https://core.trac.wordpress.org/ticket/65601) — Install theme button icon is misaligned with button text during theme installation
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -426,7 +449,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65622](https://core.trac.wordpress.org/ticket/65622) — Comments: allow note mention attributes in comment content
+#### 8. [#65622](https://core.trac.wordpress.org/ticket/65622) — Comments: allow note mention attributes in comment content
 
 - Score: **162**
 - Track/query: General: Needs Testing
@@ -449,7 +472,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
+#### 9. [#40370](https://core.trac.wordpress.org/ticket/40370) — add_image_sizes does not create the "crop position" versions of the image
 
 - Score: **160**
 - Track/query: General: Needs Testing
@@ -470,7 +493,7 @@ Generated: 2026-08-25 09:46
   - -10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#44964](https://core.trac.wordpress.org/ticket/44964) — `redirect_guess_404_permalink` doesn't support array in `post_type` var
+#### 10. [#44964](https://core.trac.wordpress.org/ticket/44964) — `redirect_guess_404_permalink` doesn't support array in `post_type` var
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -490,7 +513,7 @@ Generated: 2026-08-25 09:46
   - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
+#### 11. [#64056](https://core.trac.wordpress.org/ticket/64056) — Media / REST API: Uploading non-resizable image formats (SVG) generates multiple PHP warnings
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -510,7 +533,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#64376](https://core.trac.wordpress.org/ticket/64376) — redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20)
+#### 12. [#64376](https://core.trac.wordpress.org/ticket/64376) — redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20)
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -530,7 +553,7 @@ Generated: 2026-08-25 09:46
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
+#### 13. [#65395](https://core.trac.wordpress.org/ticket/65395) — Site Health falsely reports "Opcode cache is not enabled" on shared hosting (WP 7.0)
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -548,26 +571,6 @@ Generated: 2026-08-25 09:46
   - +30: Needs Testing
   - +20: Freshness
   - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 13. [#65867](https://core.trac.wordpress.org/ticket/65867) — Connectors: AI provider API keys are re-validated on every settings update (/wp/v2/settings), causing needless provider calls and key resets
-
-- Score: **158**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: AI
-- Trac status: New
-- Milestone: 7.2
-- Keywords: has-patch needs-testing
-- Created: 08/13/2026 06:45:27 AM
-- Modified: 08/25/2026 02:00:31 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 14. [#65920](https://core.trac.wordpress.org/ticket/65920) — Add a plugin compatibility testing workflow to catch fatals with popular plugins before release
@@ -2083,7 +2086,7 @@ Posted testing results to Trac.
 | media_has_patch | 2026-08-24 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-24/media_has_patch.csv` |
 | accessibility_has_patch | 2026-08-25 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-25/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-08-25 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-25/docs_needs_testing.csv` |
-| general_needs_testing | 2026-08-25 | 260 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-25/general_needs_testing.csv` |
+| general_needs_testing | 2026-08-25 | 259 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-25/general_needs_testing.csv` |
 | good_first_bugs | 2026-08-25 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-25/good_first_bugs.csv` |
 | media_has_patch | 2026-08-25 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-25/media_has_patch.csv` |
 
