@@ -59,7 +59,6 @@
 37255,Update attachment functions to accept a post object in addition to ID,accepted,Media,johnbillion,enhancement,normal,Future Release,4.6,needs-testing needs-dev-note needs-test-info 2nd-opinion close,07/02/2016 09:26:02 AM,05/12/2025 01:35:34 AM
 38067,New filter `wp_post_lock_status`,new,"Posts, Post Types",,enhancement,normal,Future Release,2.5,has-patch has-test-info needs-testing,09/15/2016 01:23:37 PM,08/17/2026 01:54:42 PM
 38238,Sorting a list table by some kind of count should default to DESC initially,reviewing,Administration,helen,enhancement,normal,Awaiting Review,,has-patch has-unit-tests needs-testing,10/05/2016 09:32:01 PM,03/03/2026 04:37:11 PM
-38809,Better wp namespace in password-strength-meter.js,reviewing,Administration,afercia,defect (bug),normal,7.2,,has-patch needs-testing needs-test-info,11/15/2016 11:27:37 PM,08/23/2026 03:11:50 PM
 38936,Alter Table Always Expects a COLUMN; Crashes on a CONSTRAINT,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,,needs-testing dev-feedback,11/24/2016 05:25:13 PM,12/16/2022 08:17:47 AM
 39003,menu_page_url() not working on Ajax call,new,Administration,,defect (bug),normal,Awaiting Review,4.6.1,needs-testing reporter-feedback,12/01/2016 01:50:38 PM,10/14/2024 03:34:48 PM
 39447,Improvement to the get_the_posts_navigation,reviewing,Query,SergeyBiryukov,enhancement,normal,Future Release,,needs-testing needs-patch needs-unit-tests,01/03/2017 02:36:31 PM,01/27/2021 06:28:38 AM
@@ -248,12 +247,12 @@
 65515,"ThickBox ReferenceError: imgLoader is not defined due to ""use strict"" contamination in load-scripts.php",reviewing,Script Loader,wildworks,defect (bug),normal,Future Release,7.0,has-patch has-unit-tests needs-testing reporter-feedback,06/22/2026 12:39:34 PM,08/10/2026 12:18:08 PM
 65551,Connectors: Preserve stored AI provider API key when validation is indeterminate,new,Editor,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 07:24:33 AM,07/22/2026 04:26:54 PM
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch reporter-feedback,07/14/2026 10:42:44 AM,07/16/2026 09:43:07 AM
-65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,08/20/2026 10:48:26 AM
+65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,08/27/2026 11:19:39 AM
 65661,Media: Enable client-side media uploads in the Media Library,new,Media,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,08/25/2026 09:38:45 AM
 65718,Multisite: the blogname is required during site creation but can be emptied later,new,Networks and Sites,,defect (bug),normal,Future Release,,has-patch needs-testing,07/26/2026 08:31:58 PM,08/21/2026 07:10:21 AM
 65731,Changing the site timezone can immediately invalidate fresh privacy-request confirmation links,new,Privacy,,defect (bug),normal,,7.1,has-patch has-unit-tests needs-testing,07/27/2026 12:03:29 PM,07/30/2026 06:21:00 PM
 65734,Classic Editor: Support pasted WebP image URLs in TinyMCE smart paste,new,TinyMCE,,enhancement,normal,Future Release,7.1,has-patch needs-testing,07/27/2026 03:01:34 PM,08/10/2026 02:15:13 PM
-65757,Proposal: Make the Interactivity API extensible,new,Interactivity API,,defect (bug),normal,Future Release,,has-patch needs-testing 2nd-opinion,07/29/2026 07:42:15 PM,08/26/2026 12:21:21 PM
+65757,Proposal: Make the Interactivity API extensible,new,Interactivity API,,defect (bug),normal,Future Release,,has-patch needs-testing 2nd-opinion,07/29/2026 07:42:15 PM,08/27/2026 12:32:25 PM
 65897,Surface community-contributed patterns from the Pattern Directory in the editor (opt-in),assigned,Editor,ugyensupport,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,08/17/2026 02:53:39 PM,08/18/2026 06:31:29 AM
 65920,Add a plugin compatibility testing workflow to catch fatals with popular plugins before release,new,Build/Test Tools,,feature request,normal,7.2,,has-patch needs-testing,08/20/2026 03:48:11 PM,08/25/2026 06:59:38 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,Future Release,4.7,has-patch has-unit-tests needs-testing has-test-info early,04/09/2025 11:10:53 AM,08/19/2026 12:56:53 PM
