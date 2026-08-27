@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-26T15:51:28",
+  "generated": "2026-08-27T03:53:18",
   "summary": {
     "unique_tickets": 312,
     "priority_targets": 12,
-    "immediate": 11,
-    "strong": 1,
+    "immediate": 12,
+    "strong": 0,
     "watching": 91,
     "reviews_loaded": 21
   },
@@ -682,6 +682,83 @@
         "review": {}
       },
       {
+        "ticket_id": "48522",
+        "url": "https://core.trac.wordpress.org/ticket/48522",
+        "score": 170,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Attachment size not generated when large images uploaded",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "11/07/2019 01:33:39 AM",
+        "modified": "08/27/2026 06:34:32 AM",
+        "keywords": "2nd-opinion needs-testing needs-unit-tests has-patch",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "65648",
         "url": "https://core.trac.wordpress.org/ticket/65648",
         "score": 170,
@@ -1054,7 +1131,9 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      },
+      }
+    ],
+    "top": [
       {
         "ticket_id": "38809",
         "url": "https://core.trac.wordpress.org/ticket/38809",
@@ -1142,9 +1221,7 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      }
-    ],
-    "top": [
+      },
       {
         "ticket_id": "35593",
         "url": "https://core.trac.wordpress.org/ticket/35593",
@@ -10163,72 +10240,6 @@
           }
         ],
         "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
-        "ticket_id": "48522",
-        "url": "https://core.trac.wordpress.org/ticket/48522",
-        "score": 125,
-        "tier_class": "standard",
-        "tier_label": "Standard",
-        "summary": "Attachment size not generated when large images uploaded",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Media",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "11/07/2019 01:33:39 AM",
-        "modified": "08/11/2026 10:13:43 AM",
-        "keywords": "2nd-opinion needs-testing needs-unit-tests needs-refresh",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
         "review": {}
       },
       {
