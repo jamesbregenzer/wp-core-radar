@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-28T09:58:00",
+  "generated": "2026-08-28T15:58:54",
   "summary": {
     "unique_tickets": 313,
     "priority_targets": 12,
     "immediate": 12,
     "strong": 0,
-    "watching": 92,
+    "watching": 91,
     "reviews_loaded": 21
   },
   "groups": {
@@ -23,7 +23,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "07/17/2026 11:42:28 PM",
-        "modified": "08/13/2026 06:08:40 PM",
+        "modified": "08/25/2026 09:38:45 AM",
         "keywords": "has-patch needs-testing has-unit-tests",
         "signals": [
           {
@@ -107,83 +107,6 @@
           }
         ],
         "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "39004",
-        "url": "https://core.trac.wordpress.org/ticket/39004",
-        "score": 181,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Alt attributes should be searchable in media library",
-        "track": "Media: Has Patch",
-        "status": "Accepted",
-        "component": "Media",
-        "owner": "joedolson",
-        "comments": "Unknown",
-        "created": "12/01/2016 03:58:50 PM",
-        "modified": "08/13/2026 08:08:14 PM",
-        "keywords": "has-patch has-unit-tests phase-3-media-triage needs-design",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
@@ -679,6 +602,83 @@
           }
         ],
         "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "39004",
+        "url": "https://core.trac.wordpress.org/ticket/39004",
+        "score": 171,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Alt attributes should be searchable in media library",
+        "track": "Media: Has Patch",
+        "status": "Accepted",
+        "component": "Media",
+        "owner": "joedolson",
+        "comments": "Unknown",
+        "created": "12/01/2016 03:58:50 PM",
+        "modified": "08/13/2026 08:08:14 PM",
+        "keywords": "has-patch has-unit-tests phase-3-media-triage needs-design",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
@@ -2312,6 +2312,83 @@
         "review": {}
       },
       {
+        "ticket_id": "65757",
+        "url": "https://core.trac.wordpress.org/ticket/65757",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Proposal: Make the Interactivity API extensible",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Interactivity API",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "07/29/2026 07:42:15 PM",
+        "modified": "08/18/2026 12:40:33 PM",
+        "keywords": "has-patch needs-testing 2nd-opinion",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "65920",
         "url": "https://core.trac.wordpress.org/ticket/65920",
         "score": 158,
@@ -3490,7 +3567,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "01/17/2019 02:59:49 AM",
-        "modified": "08/13/2026 03:56:53 PM",
+        "modified": "08/14/2026 11:59:28 AM",
         "keywords": "needs-testing has-patch has-unit-tests",
         "signals": [
           {
@@ -3952,74 +4029,8 @@
         "owner": "",
         "comments": "Unknown",
         "created": "09/15/2023 11:35:39 AM",
-        "modified": "08/13/2026 04:04:57 PM",
+        "modified": "08/18/2026 08:18:24 AM",
         "keywords": "php81 has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65757",
-        "url": "https://core.trac.wordpress.org/ticket/65757",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Proposal: Make the Interactivity API extensible",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Interactivity API",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "07/29/2026 07:42:15 PM",
-        "modified": "08/18/2026 12:40:33 PM",
-        "keywords": "has-patch needs-testing 2nd-opinion",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -6042,7 +6053,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "07/26/2026 08:31:58 PM",
-        "modified": "08/13/2026 03:31:20 PM",
+        "modified": "08/21/2026 07:10:21 AM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
@@ -6676,83 +6687,6 @@
           }
         ],
         "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "31177",
-        "url": "https://core.trac.wordpress.org/ticket/31177",
-        "score": 138,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Captions video not saved with the post and are lost on attachment page",
-        "track": "Media: Has Patch",
-        "status": "Assigned",
-        "component": "Media",
-        "owner": "postphotos",
-        "comments": "Unknown",
-        "created": "01/29/2015 04:13:09 PM",
-        "modified": "08/13/2026 07:45:06 PM",
-        "keywords": "needs-patch phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Very Old Ticket -8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "-8",
-            "label": "Ticket Age",
-            "detail": "Very Old Ticket",
-            "display": "Ticket Age: Very Old Ticket",
-            "polarity": "negative"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
@@ -10064,6 +9998,83 @@
           }
         ],
         "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "31177",
+        "url": "https://core.trac.wordpress.org/ticket/31177",
+        "score": 128,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Captions video not saved with the post and are lost on attachment page",
+        "track": "Media: Has Patch",
+        "status": "Assigned",
+        "component": "Media",
+        "owner": "postphotos",
+        "comments": "Unknown",
+        "created": "01/29/2015 04:13:09 PM",
+        "modified": "08/13/2026 07:45:06 PM",
+        "keywords": "needs-patch phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Very Old Ticket -8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "-8",
+            "label": "Ticket Age",
+            "detail": "Very Old Ticket",
+            "display": "Ticket Age: Very Old Ticket",
+            "polarity": "negative"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
@@ -18958,7 +18969,7 @@
       {
         "ticket_id": "56886",
         "url": "https://core.trac.wordpress.org/ticket/56886",
-        "score": 168,
+        "score": 170,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "Admin facing add site screen missing search engine visibility field",
@@ -18968,7 +18979,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "10/22/2022 11:05:39 AM",
-        "modified": "07/10/2026 01:36:37 PM",
+        "modified": "08/28/2026 05:25:51 PM",
         "keywords": "good-first-bug has-patch needs-testing",
         "signals": [
           {
@@ -18988,11 +18999,7 @@
             "class": "first"
           },
           {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
+            "label": "Freshness: Recently Updated <=14 Days +20",
             "class": "freshness"
           }
         ],
@@ -19026,17 +19033,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
+            "points": "+20",
             "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
