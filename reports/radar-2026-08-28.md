@@ -1,11 +1,11 @@
 # WP Core Radar Report
 
-Generated: 2026-08-28 03:56
+Generated: 2026-08-28 09:57
 
 ## Summary
 
 - Datasets discovered: 355
-- Unique tickets scored: 312
+- Unique tickets scored: 313
 - Outcomes loaded: 4
 - Reviews loaded: 21
 - Top opportunity limit: 50
@@ -15,7 +15,7 @@ Generated: 2026-08-28 03:56
 | Section | Count | Meaning |
 |---|---:|---|
 | Priority Targets | 12 | Highest-scoring unreviewed tickets with clear action and manageability signals. |
-| Top Opportunities | 282 | Remaining unreviewed tickets ranked by score. |
+| Top Opportunities | 283 | Remaining unreviewed tickets ranked by score. |
 | Shortlisted | 0 | Tickets manually marked as strong candidates. |
 | Watching | 6 | Tickets worth monitoring but not acting on yet. |
 | Completed / Acted On | 11 | Tickets already tested, commented on, propped, or committed. |
@@ -2100,7 +2100,7 @@ Posted testing results to Trac.
 | media_has_patch | 2026-08-27 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-27/media_has_patch.csv` |
 | accessibility_has_patch | 2026-08-28 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-28/accessibility_has_patch.csv` |
 | docs_needs_testing | 2026-08-28 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-28/docs_needs_testing.csv` |
-| general_needs_testing | 2026-08-28 | 257 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-28/general_needs_testing.csv` |
+| general_needs_testing | 2026-08-28 | 258 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-28/general_needs_testing.csv` |
 | good_first_bugs | 2026-08-28 | 0 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-28/good_first_bugs.csv` |
 | media_has_patch | 2026-08-28 | 23 | `/Users/thor/Sites/wp-core-radar/data/raw/manual/2026-08-28/media_has_patch.csv` |
 

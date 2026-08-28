@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-28T03:57:00",
+  "generated": "2026-08-28T09:58:00",
   "summary": {
-    "unique_tickets": 312,
+    "unique_tickets": 313,
     "priority_targets": 12,
     "immediate": 12,
     "strong": 0,
@@ -10709,6 +10709,61 @@
             "label": "Preferred Component",
             "detail": "Media",
             "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65992",
+        "url": "https://core.trac.wordpress.org/ticket/65992",
+        "score": 115,
+        "tier_class": "standard",
+        "tier_label": "Standard",
+        "summary": "Responsive @tablet / @mobile styles are ignored in standalone block style variation JSON partials",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "08/28/2026 11:22:23 AM",
+        "modified": "08/28/2026 11:22:23 AM",
+        "keywords": "needs-testing has-screenshots",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
