@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T09:54:14",
+  "generated": "2026-08-27T21:56:05",
   "summary": {
     "unique_tickets": 312,
     "priority_targets": 12,
@@ -18798,7 +18798,7 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "05/22/2026 10:26:49 PM",
-        "modified": "06/28/2026 12:25:36 AM",
+        "modified": "06/29/2026 06:13:34 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -19782,9 +19782,9 @@
       {
         "ticket_id": "65549",
         "url": "https://core.trac.wordpress.org/ticket/65549",
-        "score": 174,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
+        "score": 164,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
         "summary": "Media: Sideload animated GIF \u2192 video companions and clean them up on delete",
         "track": "General: Needs Testing",
         "status": "Reviewing",
@@ -19814,10 +19814,6 @@
           {
             "label": "Has Owner +6",
             "class": "owner"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
           },
           {
             "label": "Ticket Age: Mature But Not Ancient +8",
@@ -19858,13 +19854,6 @@
             "label": "Has Owner",
             "detail": "",
             "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           },
           {

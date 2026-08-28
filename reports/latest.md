@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-27 09:54
+Generated: 2026-08-27 21:56
 
 ## Summary
 
@@ -1453,7 +1453,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: adamsilverstein
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 05/22/2026 10:26:49 PM
-- Modified: 06/28/2026 12:25:36 AM
+- Modified: 06/29/2026 06:13:34 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified media upload, scaling, metadata, frontend display, and image editing workflows in Playground.
@@ -1719,7 +1719,7 @@ Posted testing results to Trac.
 
 #### 1. [#65549](https://core.trac.wordpress.org/ticket/65549) — Media: Sideload animated GIF → video companions and clean them up on delete
 
-- Score: **174**
+- Score: **164**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Media
@@ -1733,14 +1733,13 @@ Posted testing results to Trac.
 - Review reason: Associated implementation appears to have already landed and the GitHub PR is closed, leaving little opportunity for meaningful testing.
 - Review notes: Reviewed both the Trac ticket and linked GitHub PR. The implementation has already been merged through follow-up commits and the PR is closed. Discussion indicates the remaining work is administrative rather than awaiting independent testing. Skipped testing because additional reports are unlikely to provide value or contributor visibility.
 - Review updated: 2026-07-14T18:12:18.957Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has owner +6, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
   - +20: Preferred Component
   - +6: Has Owner
-  - +10: Freshness
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
