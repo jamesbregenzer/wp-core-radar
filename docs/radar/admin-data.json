@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-28T15:58:54",
+  "generated": "2026-08-28T21:59:49",
   "summary": {
     "unique_tickets": 313,
     "priority_targets": 12,
@@ -6404,61 +6404,6 @@
         "review": {}
       },
       {
-        "ticket_id": "60345",
-        "url": "https://core.trac.wordpress.org/ticket/60345",
-        "score": 140,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Add duplicate checking for uploaded attachments",
-        "track": "Media: Has Patch",
-        "status": "New",
-        "component": "Media",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "01/25/2024 04:39:34 PM",
-        "modified": "08/13/2026 09:00:36 PM",
-        "keywords": "phase-3-media-triage",
-        "signals": [
-          {
-            "label": "Track Priority: Media: Has Patch +100",
-            "class": "priority"
-          },
-          {
-            "label": "Preferred Component: Media +20",
-            "class": "component"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+100",
-            "label": "Track Priority",
-            "detail": "Media: Has Patch",
-            "display": "Track Priority: Media: Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Preferred Component",
-            "detail": "Media",
-            "display": "Preferred Component: Media",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "Media Has Patch",
-        "review": {}
-      },
-      {
         "ticket_id": "61330",
         "url": "https://core.trac.wordpress.org/ticket/61330",
         "score": 140,
@@ -9833,6 +9778,61 @@
           }
         ],
         "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "60345",
+        "url": "https://core.trac.wordpress.org/ticket/60345",
+        "score": 130,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Add duplicate checking for uploaded attachments",
+        "track": "Media: Has Patch",
+        "status": "New",
+        "component": "Media",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "01/25/2024 04:39:34 PM",
+        "modified": "08/13/2026 09:00:36 PM",
+        "keywords": "phase-3-media-triage",
+        "signals": [
+          {
+            "label": "Track Priority: Media: Has Patch +100",
+            "class": "priority"
+          },
+          {
+            "label": "Preferred Component: Media +20",
+            "class": "component"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+100",
+            "label": "Track Priority",
+            "detail": "Media: Has Patch",
+            "display": "Track Priority: Media: Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Preferred Component",
+            "detail": "Media",
+            "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "Media Has Patch",
         "review": {}
       },
       {
