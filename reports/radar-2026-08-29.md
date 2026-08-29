@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-29 10:01
+Generated: 2026-08-29 16:02
 
 ## Summary
 
@@ -1446,7 +1446,7 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 
 #### 2. [#65329](https://core.trac.wordpress.org/ticket/65329) — Move sideload metadata writes to the finalize endpoint
 
-- Score: **182**
+- Score: **172**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Media
@@ -1455,12 +1455,12 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 - Owner: adamsilverstein
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 05/22/2026 10:26:49 PM
-- Modified: 06/29/2026 06:13:34 PM
+- Modified: 06/04/2026 01:56:16 PM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Verified media upload, scaling, metadata, frontend display, and image editing workflows in Playground.
 - Review updated: 2026-06-16T13:53:37.124Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, preferred component: Media +20, has concrete milestone +8, has owner +6, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
@@ -1468,7 +1468,6 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
   - +20: Preferred Component
   - +8: Has Concrete Milestone
   - +6: Has Owner
-  - +10: Freshness
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 

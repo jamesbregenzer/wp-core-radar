@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T10:01:37",
+  "generated": "2026-08-29T16:02:32",
   "summary": {
     "unique_tickets": 313,
     "priority_targets": 12,
@@ -18865,7 +18865,7 @@
       {
         "ticket_id": "65329",
         "url": "https://core.trac.wordpress.org/ticket/65329",
-        "score": 182,
+        "score": 172,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "Move sideload metadata writes to the finalize endpoint",
@@ -18875,7 +18875,7 @@
         "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "05/22/2026 10:26:49 PM",
-        "modified": "06/29/2026 06:13:34 PM",
+        "modified": "06/04/2026 01:56:16 PM",
         "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
@@ -18901,10 +18901,6 @@
           {
             "label": "Has Owner +6",
             "class": "owner"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
           },
           {
             "label": "Ticket Age: Mature But Not Ancient +8",
@@ -18952,13 +18948,6 @@
             "label": "Has Owner",
             "detail": "",
             "display": "Has Owner",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           },
           {
