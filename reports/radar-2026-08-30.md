@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-30 10:05
+Generated: 2026-08-30 16:06
 
 ## Summary
 
@@ -1420,7 +1420,7 @@ No tickets in this section.
 - Owner: joedolson
 - Keywords: has-patch has-ux-feedback phase-3-media-triage needs-testing has-test-info
 - Created: 01/29/2018 04:32:59 PM
-- Modified: 06/30/2026 04:05:12 PM
+- Modified: 07/01/2026 10:17:33 PM
 - Review status: tested
 - Review reason: Verified PR behavior in WordPress Playground.
 - Review notes: Tested PR #11634 using the WordPress Playground preview.
