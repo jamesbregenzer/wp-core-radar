@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-30 04:04
+Generated: 2026-08-30 10:05
 
 ## Summary
 
@@ -66,29 +66,7 @@ Generated: 2026-08-30 04:04
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 3. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
-
-- Score: **174**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Plugins
-- Trac status: Assigned
-- Milestone: Future Release
-- Owner: brianhenryie
-- Keywords: has-unit-tests needs-testing has-patch has-test-info dev-feedback
-- Created: 11/23/2017 11:36:11 AM
-- Modified: 08/15/2026 10:51:53 AM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +18: Dev Feedback
-  - +6: Has Owner
-  - +20: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 4. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
+#### 3. [#64921](https://core.trac.wordpress.org/ticket/64921) — REST API POST /wp/v2/posts: Undefined property stdClass::$id (line 766)
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -112,7 +90,7 @@ Generated: 2026-08-30 04:04
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 5. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
+#### 4. [#65515](https://core.trac.wordpress.org/ticket/65515) — ThickBox ReferenceError: imgLoader is not defined due to "use strict" contamination in load-scripts.php
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -136,7 +114,7 @@ Generated: 2026-08-30 04:04
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 6. [#65554](https://core.trac.wordpress.org/ticket/65554) — Connectors: only validate AI provider API keys that were submitted in the request
+#### 5. [#65554](https://core.trac.wordpress.org/ticket/65554) — Connectors: only validate AI provider API keys that were submitted in the request
 
 - Score: **172**
 - Track/query: General: Needs Testing
@@ -159,7 +137,7 @@ Generated: 2026-08-30 04:04
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
+#### 6. [#39004](https://core.trac.wordpress.org/ticket/39004) — Alt attributes should be searchable in media library
 
 - Score: **171**
 - Track/query: Media: Has Patch
@@ -180,7 +158,7 @@ Generated: 2026-08-30 04:04
   - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 8. [#48522](https://core.trac.wordpress.org/ticket/48522) — Attachment size not generated when large images uploaded
+#### 7. [#48522](https://core.trac.wordpress.org/ticket/48522) — Attachment size not generated when large images uploaded
 
 - Score: **170**
 - Track/query: General: Needs Testing
@@ -200,7 +178,7 @@ Generated: 2026-08-30 04:04
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
+#### 8. [#65648](https://core.trac.wordpress.org/ticket/65648) — Media: Set `window.__heicUploadSupport` flag so Safari gets client-side HEIC conversion
 
 - Score: **170**
 - Track/query: General: Needs Testing
@@ -225,7 +203,7 @@ Generated: 2026-08-30 04:04
   - -12: Setup Complexity
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 10. [#65930](https://core.trac.wordpress.org/ticket/65930) — Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements
+#### 9. [#65930](https://core.trac.wordpress.org/ticket/65930) — Cross-origin isolation: crossorigin attribute is mis-scoped for <source> elements
 
 - Score: **170**
 - Track/query: General: Needs Testing
@@ -245,7 +223,7 @@ Generated: 2026-08-30 04:04
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 11. [#64810](https://core.trac.wordpress.org/ticket/64810) — A password protected post can be sticky but sometimes this behaviour is forbidden.
+#### 10. [#64810](https://core.trac.wordpress.org/ticket/64810) — A password protected post can be sticky but sometimes this behaviour is forbidden.
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -266,7 +244,7 @@ Generated: 2026-08-30 04:04
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 12. [#65638](https://core.trac.wordpress.org/ticket/65638) — AI: Add embedding generation support to WordPress
+#### 11. [#65638](https://core.trac.wordpress.org/ticket/65638) — AI: Add embedding generation support to WordPress
 
 - Score: **166**
 - Track/query: General: Needs Testing
@@ -287,9 +265,7 @@ Generated: 2026-08-30 04:04
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-## Top Opportunities
-
-#### 1. [#38809](https://core.trac.wordpress.org/ticket/38809) — Better wp namespace in password-strength-meter.js
+#### 12. [#38809](https://core.trac.wordpress.org/ticket/38809) — Better wp namespace in password-strength-meter.js
 
 - Score: **164**
 - Track/query: General: Needs Testing
@@ -309,6 +285,30 @@ Generated: 2026-08-30 04:04
   - +8: Has Concrete Milestone
   - +6: Has Owner
   - +20: Freshness
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+## Top Opportunities
+
+#### 1. [#42670](https://core.trac.wordpress.org/ticket/42670) — Symlinked plugin makes plugin_basename function return wrong basename
+
+- Score: **164**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Plugins
+- Trac status: Assigned
+- Milestone: Future Release
+- Owner: brianhenryie
+- Keywords: has-unit-tests needs-testing has-patch has-test-info dev-feedback
+- Created: 11/23/2017 11:36:11 AM
+- Modified: 08/15/2026 10:51:53 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, dev feedback +18, has owner +6, freshness: updated within 60 days +10
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +18: Dev Feedback
+  - +6: Has Owner
+  - +10: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 2. [#35593](https://core.trac.wordpress.org/ticket/35593) — Metadata from wrong file in media_handle_upload
@@ -1698,7 +1698,7 @@ Posted testing results to Trac.
 - Owner: westonruter
 - Keywords: has-patch needs-testing
 - Created: 02/23/2026 03:51:38 PM
-- Modified: 06/30/2026 02:30:50 PM
+- Modified: 07/05/2026 01:45:04 PM
 - Review status: commented
 - Review reason: Reviewed patch, tested in Playground, submitted Trac feedback.
 - Review notes: Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.

@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-30T04:04:19",
+  "generated": "2026-08-30T10:05:16",
   "summary": {
     "unique_tickets": 313,
     "priority_targets": 12,
-    "immediate": 12,
-    "strong": 0,
+    "immediate": 11,
+    "strong": 1,
     "watching": 91,
     "reviews_loaded": 21
   },
@@ -184,94 +184,6 @@
             "label": "Has Concrete Milestone",
             "detail": "",
             "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "42670",
-        "url": "https://core.trac.wordpress.org/ticket/42670",
-        "score": 174,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Symlinked plugin makes plugin_basename function return wrong basename",
-        "track": "General: Needs Testing",
-        "status": "Assigned",
-        "component": "Plugins",
-        "owner": "brianhenryie",
-        "comments": "Unknown",
-        "created": "11/23/2017 11:36:11 AM",
-        "modified": "08/15/2026 10:51:53 AM",
-        "keywords": "has-unit-tests needs-testing has-patch has-test-info dev-feedback",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Has Owner +6",
-            "class": "owner"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+6",
-            "label": "Has Owner",
-            "detail": "",
-            "display": "Has Owner",
             "polarity": "positive"
           },
           {
@@ -1131,9 +1043,7 @@
         ],
         "discovery_track": "General Needs Testing",
         "review": {}
-      }
-    ],
-    "top": [
+      },
       {
         "ticket_id": "38809",
         "url": "https://core.trac.wordpress.org/ticket/38809",
@@ -1216,6 +1126,96 @@
             "label": "Freshness",
             "detail": "Recently Updated <=14 Days",
             "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      }
+    ],
+    "top": [
+      {
+        "ticket_id": "42670",
+        "url": "https://core.trac.wordpress.org/ticket/42670",
+        "score": 164,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Symlinked plugin makes plugin_basename function return wrong basename",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Plugins",
+        "owner": "brianhenryie",
+        "comments": "Unknown",
+        "created": "11/23/2017 11:36:11 AM",
+        "modified": "08/15/2026 10:51:53 AM",
+        "keywords": "has-unit-tests needs-testing has-patch has-test-info dev-feedback",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           }
         ],
@@ -19730,7 +19730,7 @@
         "owner": "westonruter",
         "comments": "Unknown",
         "created": "02/23/2026 03:51:38 PM",
-        "modified": "06/30/2026 02:30:50 PM",
+        "modified": "07/05/2026 01:45:04 PM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {
