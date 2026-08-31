@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-08-31 04:07
+Generated: 2026-08-31 16:09
 
 ## Summary
 
@@ -819,7 +819,7 @@ Generated: 2026-08-31 04:07
 - Owner: rajeshcp
 - Keywords: has-patch needs-testing has-test-info has-unit-tests
 - Created: 04/09/2026 04:50:52 PM
-- Modified: 07/01/2026 05:42:12 PM
+- Modified: 07/18/2026 12:12:21 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
