@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T22:10:43",
+  "generated": "2026-09-01T04:11:39",
   "summary": {
     "unique_tickets": 313,
     "priority_targets": 12,
@@ -19625,99 +19625,6 @@
         }
       },
       {
-        "ticket_id": "65417",
-        "url": "https://core.trac.wordpress.org/ticket/65417",
-        "score": 156,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Editor",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/05/2026 06:35:50 AM",
-        "modified": "07/02/2026 07:44:27 AM",
-        "keywords": "has-patch has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {
-          "status": "tested",
-          "reason": "Successfully verified the patch in the linked Playground instance with multiple URL scheme variations.",
-          "notes": "Tested the patch using the GitHub PR Playground preview. Verified uppercase (HTTPS://, HTTP://), mixed-case (Https://), lowercase schemes, ftp://, relative URLs, and fragment links. Confirmed the original bug is fixed, links persist correctly after saving and reloading, and left a detailed Trac test report.",
-          "updated_at": "2026-07-14T17:54:31.618Z"
-        }
-      },
-      {
         "ticket_id": "64707",
         "url": "https://core.trac.wordpress.org/ticket/64707",
         "score": 146,
@@ -19830,6 +19737,88 @@
           "reason": "Reviewed patch, tested in Playground, submitted Trac feedback.",
           "notes": "Reviewed Trac ticket and PR #12185. Confirmed understanding of issue: Site Health incorrectly reports OPcache unavailable when configured in file-cache-only mode. Tested Playground environment and observed no regressions. Submitted review comment on Trac noting patch appears reasonable and low risk.",
           "updated_at": "2026-06-17T01:45:15.293Z"
+        }
+      },
+      {
+        "ticket_id": "65417",
+        "url": "https://core.trac.wordpress.org/ticket/65417",
+        "score": 146,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Bug: Classic Editor link dialog prepends http:// to URLs with uppercase protocol",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Editor",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "06/05/2026 06:35:50 AM",
+        "modified": "06/15/2026 12:23:04 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {
+          "status": "tested",
+          "reason": "Successfully verified the patch in the linked Playground instance with multiple URL scheme variations.",
+          "notes": "Tested the patch using the GitHub PR Playground preview. Verified uppercase (HTTPS://, HTTP://), mixed-case (Https://), lowercase schemes, ftp://, relative URLs, and fragment links. Confirmed the original bug is fixed, links persist correctly after saving and reloading, and left a detailed Trac test report.",
+          "updated_at": "2026-07-14T17:54:31.618Z"
         }
       }
     ],
