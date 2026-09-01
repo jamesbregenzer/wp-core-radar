@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-01T04:11:39",
+  "generated": "2026-09-01T10:12:38",
   "summary": {
     "unique_tickets": 313,
     "priority_targets": 12,
     "immediate": 11,
     "strong": 1,
-    "watching": 91,
+    "watching": 92,
     "reviews_loaded": 21
   },
   "groups": {
@@ -3434,72 +3434,6 @@
         "review": {}
       },
       {
-        "ticket_id": "38067",
-        "url": "https://core.trac.wordpress.org/ticket/38067",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "New filter `wp_post_lock_status`",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Posts, Post Types",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "09/15/2016 01:23:37 PM",
-        "modified": "08/17/2026 01:54:42 PM",
-        "keywords": "has-patch has-test-info needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "40032",
         "url": "https://core.trac.wordpress.org/ticket/40032",
         "score": 150,
@@ -6200,6 +6134,72 @@
             "detail": "Multisite Environment",
             "display": "Setup Complexity: Multisite Environment",
             "polarity": "negative"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "38067",
+        "url": "https://core.trac.wordpress.org/ticket/38067",
+        "score": 140,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "New filter `wp_post_lock_status`",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Posts, Post Types",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "09/15/2016 01:23:37 PM",
+        "modified": "08/08/2026 12:56:11 PM",
+        "keywords": "has-patch has-test-info needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
           }
         ],
         "discovery_track": "General Needs Testing",

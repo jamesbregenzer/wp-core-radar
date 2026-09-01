@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-09-01 04:11
+Generated: 2026-09-01 10:12
 
 ## Summary
 
@@ -852,26 +852,7 @@ Generated: 2026-09-01 04:11
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 28. [#38067](https://core.trac.wordpress.org/ticket/38067) — New filter `wp_post_lock_status`
-
-- Score: **150**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: Posts, Post Types
-- Trac status: New
-- Milestone: Future Release
-- Keywords: has-patch has-test-info needs-testing
-- Created: 09/15/2016 01:23:37 PM
-- Modified: 08/17/2026 01:54:42 PM
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +20: Freshness
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 29. [#40032](https://core.trac.wordpress.org/ticket/40032) — Automatic redirects with _wp_old_slug won't mantain GET parameters if present
+#### 28. [#40032](https://core.trac.wordpress.org/ticket/40032) — Automatic redirects with _wp_old_slug won't mantain GET parameters if present
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -890,7 +871,7 @@ Generated: 2026-09-01 04:11
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 30. [#43010](https://core.trac.wordpress.org/ticket/43010) — Attribute Name Escape
+#### 29. [#43010](https://core.trac.wordpress.org/ticket/43010) — Attribute Name Escape
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -909,7 +890,7 @@ Generated: 2026-09-01 04:11
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 31. [#46017](https://core.trac.wordpress.org/ticket/46017) — "Mine" comment count isn't updated when replying to or moderating a comment.
+#### 30. [#46017](https://core.trac.wordpress.org/ticket/46017) — "Mine" comment count isn't updated when replying to or moderating a comment.
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -928,7 +909,7 @@ Generated: 2026-09-01 04:11
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 32. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
+#### 31. [#47988](https://core.trac.wordpress.org/ticket/47988) — Unexpected behaviour when draft post has the same page_name as published post
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -944,7 +925,7 @@ Generated: 2026-09-01 04:11
   - +20: Good First Bug
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 33. [#49408](https://core.trac.wordpress.org/ticket/49408) — Why is the action wp_ajax_wp_link_ajax not using wp_send_json()
+#### 32. [#49408](https://core.trac.wordpress.org/ticket/49408) — Why is the action wp_ajax_wp_link_ajax not using wp_send_json()
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -963,7 +944,7 @@ Generated: 2026-09-01 04:11
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 34. [#50002](https://core.trac.wordpress.org/ticket/50002) — Hack in get_sample_permalink() can cause filters like post_link, and pre_post_link to have inaccurate post_status in admin
+#### 33. [#50002](https://core.trac.wordpress.org/ticket/50002) — Hack in get_sample_permalink() can cause filters like post_link, and pre_post_link to have inaccurate post_status in admin
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -982,7 +963,7 @@ Generated: 2026-09-01 04:11
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 35. [#54016](https://core.trac.wordpress.org/ticket/54016) — Media Library: Bulk delete elements in grid view takes very long
+#### 34. [#54016](https://core.trac.wordpress.org/ticket/54016) — Media Library: Bulk delete elements in grid view takes very long
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -1001,7 +982,7 @@ Generated: 2026-09-01 04:11
   - +20: Preferred Component
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 36. [#55523](https://core.trac.wordpress.org/ticket/55523) — Remove deprecation notice from get_the_excerpt
+#### 35. [#55523](https://core.trac.wordpress.org/ticket/55523) — Remove deprecation notice from get_the_excerpt
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -1020,7 +1001,7 @@ Generated: 2026-09-01 04:11
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 37. [#58416](https://core.trac.wordpress.org/ticket/58416) — Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.
+#### 36. [#58416](https://core.trac.wordpress.org/ticket/58416) — Media Title field should soft wrap in Media Modal: For better readability/editing of long titles.
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -1039,7 +1020,7 @@ Generated: 2026-09-01 04:11
   - +20: Preferred Component
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 38. [#59365](https://core.trac.wordpress.org/ticket/59365) — Deprecated notice when calling get_admin_page_title() on some dashboard pages.
+#### 37. [#59365](https://core.trac.wordpress.org/ticket/59365) — Deprecated notice when calling get_admin_page_title() on some dashboard pages.
 
 - Score: **150**
 - Track/query: General: Needs Testing
@@ -1057,7 +1038,7 @@ Generated: 2026-09-01 04:11
   - +20: Freshness
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 39. [#20746](https://core.trac.wordpress.org/ticket/20746) — Accessing non-existing theme folder in Network install gives 500 error
+#### 38. [#20746](https://core.trac.wordpress.org/ticket/20746) — Accessing non-existing theme folder in Network install gives 500 error
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1073,7 +1054,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 40. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
+#### 39. [#36201](https://core.trac.wordpress.org/ticket/36201) — Admin Pagination URLs Use Wrong Hostname
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1089,7 +1070,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 41. [#40790](https://core.trac.wordpress.org/ticket/40790) — Ability to filter $post_type in _get_last_post_time
+#### 40. [#40790](https://core.trac.wordpress.org/ticket/40790) — Ability to filter $post_type in _get_last_post_time
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1105,7 +1086,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 42. [#41358](https://core.trac.wordpress.org/ticket/41358) — Shutdown hooks can significantly slow down REST API responses
+#### 41. [#41358](https://core.trac.wordpress.org/ticket/41358) — Shutdown hooks can significantly slow down REST API responses
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1121,7 +1102,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 43. [#43885](https://core.trac.wordpress.org/ticket/43885) — WP_Role and WP_Roles::get_role() missing Display Name
+#### 42. [#43885](https://core.trac.wordpress.org/ticket/43885) — WP_Role and WP_Roles::get_role() missing Display Name
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1137,7 +1118,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 44. [#47352](https://core.trac.wordpress.org/ticket/47352) — Take into account the current admin email address when rate limiting the recovery mode email
+#### 43. [#47352](https://core.trac.wordpress.org/ticket/47352) — Take into account the current admin email address when rate limiting the recovery mode email
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1153,7 +1134,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 45. [#48193](https://core.trac.wordpress.org/ticket/48193) — Improve the WordPress loop
+#### 44. [#48193](https://core.trac.wordpress.org/ticket/48193) — Improve the WordPress loop
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1169,7 +1150,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 46. [#51446](https://core.trac.wordpress.org/ticket/51446) — CORS issues with QUnit while running tests
+#### 45. [#51446](https://core.trac.wordpress.org/ticket/51446) — CORS issues with QUnit while running tests
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1185,7 +1166,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 47. [#53450](https://core.trac.wordpress.org/ticket/53450) — [WP_Meta_Query] Add faster LIKE based 'STARTSWITH' and 'ENDSWITH' compare modes for value query
+#### 46. [#53450](https://core.trac.wordpress.org/ticket/53450) — [WP_Meta_Query] Add faster LIKE based 'STARTSWITH' and 'ENDSWITH' compare modes for value query
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1201,7 +1182,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 48. [#54042](https://core.trac.wordpress.org/ticket/54042) — Extending wpdb::prepare() to support IN() operator
+#### 47. [#54042](https://core.trac.wordpress.org/ticket/54042) — Extending wpdb::prepare() to support IN() operator
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1217,7 +1198,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 49. [#54546](https://core.trac.wordpress.org/ticket/54546) — Fatal error receive while updating WP 5.8.2 to WP 5.9.
+#### 48. [#54546](https://core.trac.wordpress.org/ticket/54546) — Fatal error receive while updating WP 5.8.2 to WP 5.9.
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1233,7 +1214,7 @@ Generated: 2026-09-01 04:11
   - +18: Dev Feedback
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 50. [#57586](https://core.trac.wordpress.org/ticket/57586) — term_exists() return type not consistent regarding wp_insert_term()
+#### 49. [#57586](https://core.trac.wordpress.org/ticket/57586) — term_exists() return type not consistent regarding wp_insert_term()
 
 - Score: **148**
 - Track/query: General: Needs Testing
@@ -1247,6 +1228,26 @@ Generated: 2026-09-01 04:11
   - +35: Has Patch
   - +30: Needs Testing
   - +18: Dev Feedback
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 50. [#64376](https://core.trac.wordpress.org/ticket/64376) — redirect_canonical() causes unnecessary 301 redirects for query string encoding variants (+ vs %20)
+
+- Score: **148**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: Canonical
+- Trac status: New
+- Milestone: Future Release
+- Keywords: has-patch has-unit-tests needs-testing
+- Created: 12/08/2025 11:00:27 AM
+- Modified: 07/29/2026 06:17:41 AM
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +10: Freshness
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 ## Shortlisted
