@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-09-02 04:15
+Generated: 2026-09-02 10:16
 
 ## Summary
 
@@ -254,7 +254,7 @@ Generated: 2026-09-02 04:15
 - Milestone: 7.2
 - Keywords: has-patch needs-testing has-unit-tests
 - Created: 07/15/2026 11:35:42 AM
-- Modified: 08/18/2026 11:57:46 AM
+- Modified: 08/20/2026 10:48:26 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -580,10 +580,10 @@ Generated: 2026-09-02 04:15
 - Discovery track: General Needs Testing
 - Component: Interactivity API
 - Trac status: New
-- Milestone: Awaiting Review
+- Milestone: Future Release
 - Keywords: has-patch needs-testing 2nd-opinion
 - Created: 07/29/2026 07:42:15 PM
-- Modified: 08/18/2026 12:40:33 PM
+- Modified: 08/19/2026 06:24:23 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
