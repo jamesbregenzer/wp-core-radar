@@ -22,4 +22,4 @@
 59753,Attach image to existing content functionality not working properly,new,Media,,defect (bug),normal,Future Release,,phase-3-media-triage,10/27/2023 07:14:55 AM,04/18/2024 08:37:08 PM
 60250,Feature Req – Media Library Grid-List,assigned,Media,antpb,feature request,normal,Future Release,,phase-3-media-triage,01/14/2024 04:18:41 PM,09/30/2024 02:37:11 AM
 60345,Add duplicate checking for uploaded attachments,new,Media,,enhancement,normal,Awaiting Review,,phase-3-media-triage,01/25/2024 04:39:34 PM,08/13/2026 09:00:36 PM
-66031,Excerpt panel has a z-index/layering issue in the WordPress Media Library modal.,new,General,,defect (bug),normal,7.2,7.1,Post Type Media,09/03/2026 07:01:51 AM,09/03/2026 07:46:41 AM
+66031,Excerpt panel has a z-index/layering issue in the WordPress Media Library modal.,new,General,,defect (bug),normal,7.2,7.1,Post Type Media,09/03/2026 07:01:51 AM,09/03/2026 03:36:07 PM

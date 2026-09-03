@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T10:20:33",
+  "generated": "2026-09-03T16:21:29",
   "summary": {
     "unique_tickets": 314,
     "priority_targets": 12,
@@ -2236,7 +2236,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "07/29/2026 07:42:15 PM",
-        "modified": "08/19/2026 06:24:23 PM",
+        "modified": "08/26/2026 12:21:21 PM",
         "keywords": "has-patch needs-testing 2nd-opinion",
         "signals": [
           {
@@ -10299,7 +10299,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "09/03/2026 07:01:51 AM",
-        "modified": "09/03/2026 07:46:41 AM",
+        "modified": "09/03/2026 03:36:07 PM",
         "keywords": "Post Type Media",
         "signals": [
           {
