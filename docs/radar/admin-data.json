@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T04:19:34",
+  "generated": "2026-09-03T10:20:33",
   "summary": {
     "unique_tickets": 314,
     "priority_targets": 12,
@@ -19221,7 +19221,7 @@
       {
         "ticket_id": "63256",
         "url": "https://core.trac.wordpress.org/ticket/63256",
-        "score": 164,
+        "score": 162,
         "tier_class": "strong",
         "tier_label": "Strong Candidate",
         "summary": "Unnecessary array_map() call in get_terms() when object_ids is not set",
@@ -19231,8 +19231,8 @@
         "owner": "audrasjb",
         "comments": "Unknown",
         "created": "04/09/2025 11:10:53 AM",
-        "modified": "08/19/2026 12:56:53 PM",
-        "keywords": "has-patch has-unit-tests needs-testing has-test-info early",
+        "modified": "07/16/2026 02:39:54 AM",
+        "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -19247,11 +19247,15 @@
             "class": "testing"
           },
           {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
             "label": "Has Owner +6",
             "class": "owner"
           },
           {
-            "label": "Freshness: Recently Updated <=14 Days +20",
+            "label": "Freshness: Updated Within 60 Days +10",
             "class": "freshness"
           },
           {
@@ -19282,6 +19286,13 @@
             "polarity": "positive"
           },
           {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
             "points": "+6",
             "label": "Has Owner",
             "detail": "",
@@ -19289,10 +19300,10 @@
             "polarity": "positive"
           },
           {
-            "points": "+20",
+            "points": "+10",
             "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
             "polarity": "positive"
           },
           {

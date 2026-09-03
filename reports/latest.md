@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-09-03 04:19
+Generated: 2026-09-03 10:20
 
 ## Summary
 
@@ -1527,27 +1527,28 @@ No regressions observed during testing. Watch for commit during 7.1 cycle.
 
 #### 5. [#63256](https://core.trac.wordpress.org/ticket/63256) — Unnecessary array_map() call in get_terms() when object_ids is not set
 
-- Score: **164**
+- Score: **162**
 - Track/query: General: Needs Testing
 - Discovery track: General Needs Testing
 - Component: Taxonomy
 - Trac status: Reviewing
-- Milestone: Future Release
+- Milestone: 7.1
 - Owner: audrasjb
-- Keywords: has-patch has-unit-tests needs-testing has-test-info early
+- Keywords: has-patch has-unit-tests needs-testing
 - Created: 04/09/2025 11:10:53 AM
-- Modified: 08/19/2026 12:56:53 PM
+- Modified: 07/16/2026 02:39:54 AM
 - Review status: tested
 - Review reason: Positive test result
 - Review notes: Applied PR #11534 locally, ran Tests_Term successfully, and verified basic category/post taxonomy workflows in wp-admin and on the front end.
 - Review updated: 2026-06-16T22:30:13.948Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has owner +6, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
   - +35: Has Patch
   - +30: Needs Testing
+  - +8: Has Concrete Milestone
   - +6: Has Owner
-  - +20: Freshness
+  - +10: Freshness
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
