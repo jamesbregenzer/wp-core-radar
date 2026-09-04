@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-04T04:23:23",
+  "generated": "2026-09-04T10:24:21",
   "summary": {
     "unique_tickets": 314,
     "priority_targets": 12,
     "immediate": 11,
     "strong": 1,
-    "watching": 98,
+    "watching": 96,
     "reviews_loaded": 21
   },
   "groups": {
@@ -103,94 +103,6 @@
             "label": "Ticket Age",
             "detail": "Mature But Not Ancient",
             "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "46010",
-        "url": "https://core.trac.wordpress.org/ticket/46010",
-        "score": 176,
-        "tier_class": "immediate",
-        "tier_label": "Immediate Review",
-        "summary": "Auto-generated term slugs can be greater than 200 characters, giving \"Could not insert term into the database.\" error",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Taxonomy",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "01/16/2019 02:37:23 PM",
-        "modified": "08/20/2026 10:53:20 AM",
-        "keywords": "dev-feedback has-patch 2nd-opinion has-unit-tests needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Dev Feedback +18",
-            "class": "feedback"
-          },
-          {
-            "label": "Has Concrete Milestone +8",
-            "class": "standard"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+18",
-            "label": "Dev Feedback",
-            "detail": "",
-            "display": "Dev Feedback",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Has Concrete Milestone",
-            "detail": "",
-            "display": "Has Concrete Milestone",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
@@ -869,6 +781,94 @@
         "review": {}
       },
       {
+        "ticket_id": "46010",
+        "url": "https://core.trac.wordpress.org/ticket/46010",
+        "score": 166,
+        "tier_class": "immediate",
+        "tier_label": "Immediate Review",
+        "summary": "Auto-generated term slugs can be greater than 200 characters, giving \"Could not insert term into the database.\" error",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Taxonomy",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "01/16/2019 02:37:23 PM",
+        "modified": "08/19/2026 04:25:50 AM",
+        "keywords": "dev-feedback has-patch 2nd-opinion has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Dev Feedback +18",
+            "class": "feedback"
+          },
+          {
+            "label": "Has Concrete Milestone +8",
+            "class": "standard"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+18",
+            "label": "Dev Feedback",
+            "detail": "",
+            "display": "Dev Feedback",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Has Concrete Milestone",
+            "detail": "",
+            "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "64810",
         "url": "https://core.trac.wordpress.org/ticket/64810",
         "score": 166,
@@ -969,7 +969,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "07/15/2026 11:35:42 AM",
-        "modified": "08/20/2026 10:48:26 AM",
+        "modified": "08/27/2026 11:19:39 AM",
         "keywords": "has-patch needs-testing has-unit-tests",
         "signals": [
           {
@@ -1216,6 +1216,94 @@
             "label": "Freshness",
             "detail": "Updated Within 60 Days",
             "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65551",
+        "url": "https://core.trac.wordpress.org/ticket/65551",
+        "score": 164,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Connectors: Preserve stored AI provider API key when validation is indeterminate",
+        "track": "General: Needs Testing",
+        "status": "Assigned",
+        "component": "Editor",
+        "owner": "jorgefilipecosta",
+        "comments": "Unknown",
+        "created": "06/29/2026 07:24:33 AM",
+        "modified": "09/04/2026 11:55:30 AM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
             "polarity": "positive"
           }
         ],
@@ -3687,6 +3775,72 @@
         "review": {}
       },
       {
+        "ticket_id": "57136",
+        "url": "https://core.trac.wordpress.org/ticket/57136",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "wp_list_pluck's key argument not working correctly when its zero",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "General",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "11/17/2022 04:36:32 PM",
+        "modified": "09/04/2026 02:30:11 PM",
+        "keywords": "has-patch needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "58416",
         "url": "https://core.trac.wordpress.org/ticket/58416",
         "score": 150,
@@ -4944,83 +5098,6 @@
         "created": "06/19/2026 06:39:45 PM",
         "modified": "07/06/2026 08:17:47 AM",
         "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Updated Within 60 Days +10",
-            "class": "freshness"
-          },
-          {
-            "label": "Ticket Age: Mature But Not Ancient +8",
-            "class": "age"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+10",
-            "label": "Freshness",
-            "detail": "Updated Within 60 Days",
-            "display": "Freshness: Updated Within 60 Days",
-            "polarity": "positive"
-          },
-          {
-            "points": "+8",
-            "label": "Ticket Age",
-            "detail": "Mature But Not Ancient",
-            "display": "Ticket Age: Mature But Not Ancient",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "65551",
-        "url": "https://core.trac.wordpress.org/ticket/65551",
-        "score": 148,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "Connectors: Preserve stored AI provider API key when validation is indeterminate",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Editor",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "06/29/2026 07:24:33 AM",
-        "modified": "07/14/2026 08:43:03 AM",
-        "keywords": "has-patch has-unit-tests needs-testing",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
@@ -6343,72 +6420,6 @@
             "detail": "Stale Activity >2 Years",
             "display": "Freshness: Stale Activity >2 Years",
             "polarity": "negative"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "52976",
-        "url": "https://core.trac.wordpress.org/ticket/52976",
-        "score": 140,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "user emails comparison should be case insensitive",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Users",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "04/06/2021 12:08:20 AM",
-        "modified": "08/20/2026 12:18:38 PM",
-        "keywords": "good-first-bug has-patch has-screenshots has-unit-tests has-testing-info",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Good First Bug +20",
-            "class": "first"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Good First Bug",
-            "detail": "",
-            "display": "Good First Bug",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
           }
         ],
         "discovery_track": "General Needs Testing",
@@ -9451,6 +9462,72 @@
         "review": {}
       },
       {
+        "ticket_id": "52976",
+        "url": "https://core.trac.wordpress.org/ticket/52976",
+        "score": 130,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "user emails comparison should be case insensitive",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Users",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "04/06/2021 12:08:20 AM",
+        "modified": "07/29/2026 08:03:50 PM",
+        "keywords": "good-first-bug has-patch has-screenshots has-unit-tests has-testing-info",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Good First Bug +20",
+            "class": "first"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Good First Bug",
+            "detail": "",
+            "display": "Good First Bug",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
         "ticket_id": "54152",
         "url": "https://core.trac.wordpress.org/ticket/54152",
         "score": 130,
@@ -9677,61 +9754,6 @@
         "tier_class": "watching",
         "tier_label": "Worth Watching",
         "summary": "WP_Filesystem_SSH2::chmod() should use ssh2_sftp_chmod()",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Unknown",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "Unknown",
-        "modified": "Unknown",
-        "keywords": "has-patch needs-testing",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
-        "ticket_id": "57136",
-        "url": "https://core.trac.wordpress.org/ticket/57136",
-        "score": 130,
-        "tier_class": "watching",
-        "tier_label": "Worth Watching",
-        "summary": "wp_list_pluck's key argument not working correctly when its zero",
         "track": "General: Needs Testing",
         "status": "New",
         "component": "Unknown",
@@ -19725,7 +19747,7 @@
         "owner": "westonruter",
         "comments": "Unknown",
         "created": "02/23/2026 03:51:38 PM",
-        "modified": "07/05/2026 01:45:04 PM",
+        "modified": "07/17/2026 07:20:41 PM",
         "keywords": "has-patch needs-testing",
         "signals": [
           {

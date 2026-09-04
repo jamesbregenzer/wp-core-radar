@@ -185,7 +185,7 @@
 56842,WordPress performance drop due to introduce Gutenberg,new,Build/Test Tools,,defect (bug),normal,Awaiting Review,6.0,has-test-info needs-testing,10/18/2022 09:49:54 AM,05/12/2025 01:38:00 AM
 56886,Admin facing add site screen missing search engine visibility field,new,Networks and Sites,,enhancement,normal,Future Release,,good-first-bug has-patch needs-testing,10/22/2022 11:05:39 AM,09/01/2026 04:23:26 AM
 57083,wp_list_authors and WP Search Users,new,Query,,defect (bug),normal,Awaiting Review,6.1,needs-testing reporter-feedback,11/11/2022 10:47:31 PM,11/16/2022 01:24:41 PM
-57136,wp_list_pluck's key argument not working correctly when its zero,new,General,,defect (bug),normal,Awaiting Review,4.7,has-patch needs-testing,11/17/2022 04:36:32 PM,02/23/2024 02:49:01 AM
+57136,wp_list_pluck's key argument not working correctly when its zero,new,General,,defect (bug),normal,Awaiting Review,4.7,has-patch needs-testing,11/17/2022 04:36:32 PM,09/04/2026 02:30:11 PM
 57500,Plugin update results in mixing files of old and new versions,new,Upgrade/Install,,defect (bug),normal,Awaiting Review,,needs-testing needs-test-info reporter-feedback,01/18/2023 02:38:02 PM,05/12/2025 01:38:03 AM
 57525,Incorrect home link,new,General,,defect (bug),normal,Awaiting Review,6.1,needs-testing,01/22/2023 02:44:58 PM,04/15/2024 10:10:05 AM
 57586,term_exists() return type not consistent regarding wp_insert_term(),new,Taxonomy,,enhancement,normal,Future Release,3.0,has-patch dev-feedback early needs-dev-note needs-testing,01/30/2023 10:14:03 AM,09/15/2023 03:57:43 AM
@@ -245,7 +245,7 @@
 65480,Custom HTML Block hangs when switching tabs and scrolling (Gutenberg/WordPress 7.0),new,Editor,,defect (bug),normal,Awaiting Review,7.0,needs-testing close,06/18/2026 07:24:05 AM,06/30/2026 04:18:18 PM
 65496,Theme testing workflow will fail when multiple themes have uncommitted changes to built files.,new,Build/Test Tools,,defect (bug),normal,Future Release,,has-patch needs-testing,06/19/2026 06:39:45 PM,07/06/2026 08:17:47 AM
 65515,"ThickBox ReferenceError: imgLoader is not defined due to ""use strict"" contamination in load-scripts.php",reviewing,Script Loader,wildworks,defect (bug),normal,Future Release,7.0,has-patch has-unit-tests needs-testing reporter-feedback,06/22/2026 12:39:34 PM,08/10/2026 12:18:08 PM
-65551,Connectors: Preserve stored AI provider API key when validation is indeterminate,new,Editor,,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 07:24:33 AM,07/22/2026 04:26:54 PM
+65551,Connectors: Preserve stored AI provider API key when validation is indeterminate,assigned,Editor,jorgefilipecosta,defect (bug),normal,Awaiting Review,7.0,has-patch has-unit-tests needs-testing,06/29/2026 07:24:33 AM,09/04/2026 11:55:30 AM
 65626,7.0.1 9.9797 lagging at WP_Query->get_posts() on site with 16K= posts,new,Database,,defect (bug),normal,Awaiting Review,7.0.1,needs-testing needs-patch reporter-feedback,07/14/2026 10:42:44 AM,07/16/2026 09:43:07 AM
 65638,AI: Add embedding generation support to WordPress,new,AI,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/15/2026 11:35:42 AM,08/27/2026 11:19:39 AM
 65661,Media: Enable client-side media uploads in the Media Library,new,Media,,enhancement,normal,7.2,,has-patch needs-testing has-unit-tests,07/17/2026 11:42:28 PM,09/03/2026 06:52:28 PM
