@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-05T04:27:04",
+  "generated": "2026-09-05T10:28:01",
   "summary": {
     "unique_tickets": 314,
     "priority_targets": 12,
     "immediate": 11,
     "strong": 1,
-    "watching": 96,
+    "watching": 97,
     "reviews_loaded": 21
   },
   "groups": {
@@ -3511,72 +3511,6 @@
         "review": {}
       },
       {
-        "ticket_id": "43010",
-        "url": "https://core.trac.wordpress.org/ticket/43010",
-        "score": 150,
-        "tier_class": "strong",
-        "tier_label": "Strong Candidate",
-        "summary": "Attribute Name Escape",
-        "track": "General: Needs Testing",
-        "status": "New",
-        "component": "Formatting",
-        "owner": "",
-        "comments": "Unknown",
-        "created": "01/02/2018 05:03:09 PM",
-        "modified": "08/21/2026 10:50:51 AM",
-        "keywords": "needs-testing needs-unit-tests has-patch",
-        "signals": [
-          {
-            "label": "Track Priority: General: Needs Testing +65",
-            "class": "priority"
-          },
-          {
-            "label": "Has Patch +35",
-            "class": "patch"
-          },
-          {
-            "label": "Needs Testing +30",
-            "class": "testing"
-          },
-          {
-            "label": "Freshness: Recently Updated <=14 Days +20",
-            "class": "freshness"
-          }
-        ],
-        "score_breakdown": [
-          {
-            "points": "+65",
-            "label": "Track Priority",
-            "detail": "General: Needs Testing",
-            "display": "Track Priority: General: Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+35",
-            "label": "Has Patch",
-            "detail": "",
-            "display": "Has Patch",
-            "polarity": "positive"
-          },
-          {
-            "points": "+30",
-            "label": "Needs Testing",
-            "detail": "",
-            "display": "Needs Testing",
-            "polarity": "positive"
-          },
-          {
-            "points": "+20",
-            "label": "Freshness",
-            "detail": "Recently Updated <=14 Days",
-            "display": "Freshness: Recently Updated <=14 Days",
-            "polarity": "positive"
-          }
-        ],
-        "discovery_track": "General Needs Testing",
-        "review": {}
-      },
-      {
         "ticket_id": "47988",
         "url": "https://core.trac.wordpress.org/ticket/47988",
         "score": 150,
@@ -5857,6 +5791,72 @@
         "created": "10/19/2017 05:48:13 PM",
         "modified": "07/24/2026 07:00:34 AM",
         "keywords": "has-patch has-unit-tests has-screenshots needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Updated Within 60 Days +10",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+10",
+            "label": "Freshness",
+            "detail": "Updated Within 60 Days",
+            "display": "Freshness: Updated Within 60 Days",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "43010",
+        "url": "https://core.trac.wordpress.org/ticket/43010",
+        "score": 140,
+        "tier_class": "watching",
+        "tier_label": "Worth Watching",
+        "summary": "Attribute Name Escape",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Formatting",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "01/02/2018 05:03:09 PM",
+        "modified": "08/06/2026 02:23:54 PM",
+        "keywords": "needs-testing needs-unit-tests has-patch",
         "signals": [
           {
             "label": "Track Priority: General: Needs Testing +65",
