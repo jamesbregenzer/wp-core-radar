@@ -82,7 +82,7 @@
 42043,Twenty Fourteen: Menu problems on iPad Air 2,new,Bundled Theme,,defect (bug),normal,Future Release,,needs-testing 2nd-opinion,09/30/2017 06:15:32 PM,12/02/2024 11:37:55 AM
 42080,get_site_url() does not always return the appropriate protocol,new,Administration,,defect (bug),normal,Awaiting Review,4.9,needs-testing,10/03/2017 10:15:15 PM,09/21/2021 05:42:11 AM
 42164,Conditional Tags not working when using ugly URL,new,Query,,defect (bug),normal,Awaiting Review,4.8.2,needs-patch needs-unit-tests needs-testing,10/10/2017 10:23:14 AM,10/10/2017 01:54:21 PM
-42281,Better Update Management for Translation files,new,Upgrade/Install,,enhancement,normal,Awaiting Review,4.8.2,has-patch has-unit-tests has-screenshots needs-testing,10/19/2017 05:48:13 PM,07/29/2026 05:45:03 PM
+42281,Better Update Management for Translation files,new,Upgrade/Install,,enhancement,normal,Awaiting Review,4.8.2,has-patch has-unit-tests has-screenshots needs-testing,10/19/2017 05:48:13 PM,09/06/2026 06:20:05 PM
 42288,Validation of custom menu link,new,Menus,,defect (bug),normal,Awaiting Review,4.8.2,needs-patch needs-testing,10/20/2017 05:38:04 AM,06/14/2018 01:40:20 PM
 42329,"Customizer: interacting with text fields in a ""wide"" widget shifts child panel position in Safari.",new,Customize,,defect (bug),normal,Future Release,4.7,needs-testing,10/24/2017 11:06:54 PM,06/22/2024 08:36:23 PM
 42670,Symlinked plugin makes plugin_basename function return wrong basename,assigned,Plugins,brianhenryie,defect (bug),normal,Future Release,4.9,has-unit-tests needs-testing has-patch has-test-info dev-feedback,11/23/2017 11:36:11 AM,08/15/2026 10:51:53 AM
