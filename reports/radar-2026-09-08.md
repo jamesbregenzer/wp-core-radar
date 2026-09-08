@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-09-08 04:39
+Generated: 2026-09-08 16:41
 
 ## Summary
 
@@ -213,7 +213,7 @@ Generated: 2026-09-08 04:39
 - Milestone: 7.2
 - Keywords: has-screenshots has-patch has-unit-tests needs-testing has-test-info
 - Created: 03/05/2026 11:45:53 AM
-- Modified: 08/24/2026 04:53:11 PM
+- Modified: 08/26/2026 06:25:31 PM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, freshness: recently updated <=14 days +20, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority

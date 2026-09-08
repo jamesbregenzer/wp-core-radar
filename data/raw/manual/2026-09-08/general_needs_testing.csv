@@ -110,7 +110,7 @@
 45341,"WSOD when editing a page with define( 'SAVEQUERIES', true ); set in wp-config.php",new,Editor,,defect (bug),normal,Awaiting Review,5.0,needs-testing,11/14/2018 06:43:28 AM,11/16/2020 06:43:02 AM
 45354,Adding index for meta_key and post_id in postmeta,new,Database,,enhancement,normal,Future Release,,needs-testing dev-feedback has-patch has-unit-tests,11/14/2018 09:43:31 PM,07/22/2026 11:42:03 AM
 45897,Chinese page uri dump fail,new,I18N,,defect (bug),normal,Awaiting Review,5.0.2,needs-testing has-patch,01/10/2019 07:17:56 AM,02/03/2026 03:56:47 PM
-45910,Improve and extend focus styles for Windows High Contrast mode,assigned,Administration,rcreators,defect (bug),normal,Future Release,,needs-testing,01/10/2019 04:54:41 PM,01/03/2025 07:13:03 AM
+45910,Improve and extend focus styles for Windows High Contrast mode,assigned,Administration,rcreators,defect (bug),normal,7.2,,needs-testing,01/10/2019 04:54:41 PM,09/08/2026 04:49:37 PM
 46017,"""Mine"" comment count isn't updated when replying to or moderating a comment.",new,Comments,,defect (bug),normal,Future Release,5.1,needs-testing has-patch has-unit-tests,01/17/2019 02:59:49 AM,08/18/2026 08:40:27 AM
 46033,Please fix redirect in wp-login.php,new,Login and Registration,,defect (bug),normal,Awaiting Review,5.0.3,needs-testing,01/18/2019 10:45:43 AM,01/19/2019 10:32:26 PM
 46190,Firefox Emoji Detection Slow,new,Emoji,,enhancement,normal,Awaiting Review,5.0.3,needs-testing,02/05/2019 06:52:24 PM,07/06/2022 07:25:57 PM
@@ -255,6 +255,6 @@
 65757,Proposal: Make the Interactivity API extensible,new,Interactivity API,,defect (bug),normal,Future Release,,has-patch needs-testing 2nd-opinion,07/29/2026 07:42:15 PM,08/31/2026 11:55:42 PM
 65897,Surface community-contributed patterns from the Pattern Directory in the editor (opt-in),assigned,Editor,ugyensupport,enhancement,normal,Awaiting Review,,has-patch needs-testing has-unit-tests,08/17/2026 02:53:39 PM,08/18/2026 06:31:29 AM
 65920,Add a plugin compatibility testing workflow to catch fatals with popular plugins before release,new,Build/Test Tools,,feature request,normal,7.2,,has-patch needs-testing,08/20/2026 03:48:11 PM,09/07/2026 08:03:58 AM
-65992,Responsive @tablet / @mobile styles are ignored in standalone block style variation JSON partials,new,Editor,,defect (bug),normal,7.1.1,7.1,needs-testing has-screenshots has-patch has-unit-tests gutenberg-merge,08/28/2026 11:22:23 AM,09/08/2026 04:41:28 AM
-66047,Site Editor Identity screen crashes blank (React insertBefore error) after saving Site Icon with stale cached site data,new,Editor,,defect (bug),normal,7.1.1,trunk,needs-testing,09/04/2026 03:40:03 PM,09/08/2026 09:29:50 AM
+65992,Responsive @tablet / @mobile styles are ignored in standalone block style variation JSON partials,new,Editor,,defect (bug),normal,7.1.1,7.1,needs-testing has-screenshots has-patch has-unit-tests gutenberg-merge,08/28/2026 11:22:23 AM,09/08/2026 08:23:17 PM
+66047,Site Editor Identity screen crashes blank (React insertBefore error) after saving Site Icon with stale cached site data,new,Editor,,defect (bug),normal,7.1.1,trunk,needs-testing,09/04/2026 03:40:03 PM,09/08/2026 08:10:31 PM
 63256,Unnecessary array_map() call in get_terms() when object_ids is not set,reviewing,Taxonomy,audrasjb,defect (bug),lowest,Future Release,4.7,has-patch has-unit-tests needs-testing has-test-info early,04/09/2025 11:10:53 AM,08/19/2026 12:56:53 PM
