@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-09-09 04:43
+Generated: 2026-09-09 10:44
 
 ## Summary
 
@@ -1248,7 +1248,7 @@ Generated: 2026-09-09 04:43
 - Milestone: Awaiting Review
 - Keywords: has-patch has-unit-tests needs-testing
 - Created: 06/02/2026 09:05:13 PM
-- Modified: 07/10/2026 11:19:17 AM
+- Modified: 08/24/2026 06:34:56 AM
 - Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
 - Score breakdown:
   - +65: Track Priority
@@ -1598,34 +1598,7 @@ Posted testing results to Trac.
   - -20: Already Tested
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 7. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
-
-- Score: **162**
-- Track/query: General: Needs Testing
-- Discovery track: General Needs Testing
-- Component: General
-- Trac status: Accepted
-- Milestone: 7.1
-- Owner: joedolson
-- Keywords: has-patch needs-testing
-- Created: 06/05/2026 09:11:00 AM
-- Modified: 07/10/2026 11:42:30 AM
-- Review status: tested
-- Review reason: Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.
-- Review notes: Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.
-- Review updated: 2026-06-19T17:38:19.873Z
-- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, freshness: updated within 60 days +10, ticket age: mature but not ancient +8
-- Score breakdown:
-  - +65: Track Priority
-  - +35: Has Patch
-  - +30: Needs Testing
-  - +8: Has Concrete Milestone
-  - +6: Has Owner
-  - +10: Freshness
-  - +8: Ticket Age
-- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
-
-#### 8. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
+#### 7. [#65513](https://core.trac.wordpress.org/ticket/65513) — Media Library modal shows wrong count on first upload and does not reset after image deletion
 
 - Score: **158**
 - Track/query: General: Needs Testing
@@ -1649,7 +1622,7 @@ Posted testing results to Trac.
   - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
-#### 9. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
+#### 8. [#41081](https://core.trac.wordpress.org/ticket/41081) — Improve Custom Menu widget, show notification if menu is empty or no menu selected
 
 - Score: **156**
 - Track/query: General: Needs Testing
@@ -1669,6 +1642,32 @@ Posted testing results to Trac.
   - +30: Needs Testing
   - +20: Good First Bug
   - +6: Has Owner
+- Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
+
+#### 9. [#65419](https://core.trac.wordpress.org/ticket/65419) — In the Add Themes and Plugins page, active tabs are not visible in Windows High Contrast Mode
+
+- Score: **152**
+- Track/query: General: Needs Testing
+- Discovery track: General Needs Testing
+- Component: General
+- Trac status: Accepted
+- Milestone: 7.1
+- Owner: joedolson
+- Keywords: has-patch needs-testing
+- Created: 06/05/2026 09:11:00 AM
+- Modified: 06/09/2026 04:50:17 PM
+- Review status: tested
+- Review reason: Verified Add Plugins/Add Themes tab visibility in Windows forced-colors mode.
+- Review notes: Tested PR #12107 locally on Windows using forced-colors / High Contrast mode. Confirmed active tabs are visually distinguishable and inactive tabs no longer show the misleading border on Add Plugins and Add Themes. Also checked normal display mode and did not observe visual regressions. Left a Trac/GitHub comment with environment and results.
+- Review updated: 2026-06-19T17:38:19.873Z
+- Why it ranked: track priority: General: Needs Testing +65, has patch +35, needs testing +30, has concrete milestone +8, has owner +6, ticket age: mature but not ancient +8
+- Score breakdown:
+  - +65: Track Priority
+  - +35: Has Patch
+  - +30: Needs Testing
+  - +8: Has Concrete Milestone
+  - +6: Has Owner
+  - +8: Ticket Age
 - Human next step: open ticket, verify current state, test locally if appropriate, then decide whether to comment manually.
 
 #### 10. [#64707](https://core.trac.wordpress.org/ticket/64707) — Site Health: Opcode cache test reports a false negative when OPcache runs in file-cache-only mode
