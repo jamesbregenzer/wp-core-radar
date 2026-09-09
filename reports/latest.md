@@ -1,6 +1,6 @@
 # WP Core Radar Report
 
-Generated: 2026-09-08 16:41
+Generated: 2026-09-08 22:42
 
 ## Summary
 
@@ -1324,7 +1324,7 @@ No tickets in this section.
 - Milestone: Future Release
 - Keywords: needs-testing dev-feedback has-patch has-unit-tests
 - Created: 11/14/2018 09:43:31 PM
-- Modified: 07/10/2026 03:15:20 AM
+- Modified: 07/10/2026 07:26:59 AM
 - Review status: watch
 - Review reason: Awaiting PR/test stability
 - Review notes: Database index change with active PR discussion and test failures still being worked through. Worth revisiting after tests are passing and maintainers clarify whether additional performance or upgrade testing is needed.
