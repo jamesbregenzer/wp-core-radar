@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-10T10:47:57",
+  "generated": "2026-09-10T16:48:53",
   "summary": {
-    "unique_tickets": 317,
+    "unique_tickets": 318,
     "priority_targets": 12,
     "immediate": 10,
     "strong": 2,
@@ -13,17 +13,17 @@
       {
         "ticket_id": "66081",
         "url": "https://core.trac.wordpress.org/ticket/66081",
-        "score": 198,
+        "score": 204,
         "tier_class": "immediate",
         "tier_label": "Immediate Review",
         "summary": "Media: Fix color of the inactive view-switcher link",
         "track": "General: Needs Testing",
-        "status": "New",
+        "status": "Assigned",
         "component": "Media",
-        "owner": "",
+        "owner": "adamsilverstein",
         "comments": "Unknown",
         "created": "09/09/2026 03:10:58 PM",
-        "modified": "09/09/2026 06:34:39 PM",
+        "modified": "09/10/2026 04:00:43 PM",
         "keywords": "has-screenshots good-first-bug has-patch needs-testing",
         "signals": [
           {
@@ -49,6 +49,10 @@
           {
             "label": "Has Concrete Milestone +8",
             "class": "standard"
+          },
+          {
+            "label": "Has Owner +6",
+            "class": "owner"
           },
           {
             "label": "Freshness: Recently Updated <=14 Days +20",
@@ -96,6 +100,13 @@
             "label": "Has Concrete Milestone",
             "detail": "",
             "display": "Has Concrete Milestone",
+            "polarity": "positive"
+          },
+          {
+            "points": "+6",
+            "label": "Has Owner",
+            "detail": "",
+            "display": "Has Owner",
             "polarity": "positive"
           },
           {
@@ -804,7 +815,7 @@
         "owner": "",
         "comments": "Unknown",
         "created": "03/05/2026 11:45:53 AM",
-        "modified": "08/26/2026 06:25:31 PM",
+        "modified": "08/28/2026 07:08:35 AM",
         "keywords": "has-screenshots has-patch has-unit-tests needs-testing has-test-info",
         "signals": [
           {
@@ -2221,6 +2232,83 @@
             "label": "Preferred Component",
             "detail": "Media",
             "display": "Preferred Component: Media",
+            "polarity": "positive"
+          },
+          {
+            "points": "+8",
+            "label": "Ticket Age",
+            "detail": "Mature But Not Ancient",
+            "display": "Ticket Age: Mature But Not Ancient",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "65348",
+        "url": "https://core.trac.wordpress.org/ticket/65348",
+        "score": 158,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Adding menu items in bulk, checked items forgotten when navigating",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Menus",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "05/26/2026 01:48:25 PM",
+        "modified": "09/10/2026 05:33:51 PM",
+        "keywords": "has-patch has-unit-tests needs-testing",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          },
+          {
+            "label": "Ticket Age: Mature But Not Ancient +8",
+            "class": "age"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           },
           {
