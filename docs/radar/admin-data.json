@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-11T10:51:36",
+  "generated": "2026-09-11T16:52:34",
   "summary": {
-    "unique_tickets": 318,
+    "unique_tickets": 319,
     "priority_targets": 12,
     "immediate": 8,
     "strong": 4,
@@ -3955,6 +3955,72 @@
             "label": "Preferred Component",
             "detail": "Media",
             "display": "Preferred Component: Media",
+            "polarity": "positive"
+          }
+        ],
+        "discovery_track": "General Needs Testing",
+        "review": {}
+      },
+      {
+        "ticket_id": "66075",
+        "url": "https://core.trac.wordpress.org/ticket/66075",
+        "score": 150,
+        "tier_class": "strong",
+        "tier_label": "Strong Candidate",
+        "summary": "Name the item, or give a count, in the plugin/theme auto-update email subject lines",
+        "track": "General: Needs Testing",
+        "status": "New",
+        "component": "Upgrade/Install",
+        "owner": "",
+        "comments": "Unknown",
+        "created": "09/09/2026 02:15:02 AM",
+        "modified": "09/11/2026 05:57:56 PM",
+        "keywords": "has-patch needs-testing needs-unit-tests",
+        "signals": [
+          {
+            "label": "Track Priority: General: Needs Testing +65",
+            "class": "priority"
+          },
+          {
+            "label": "Has Patch +35",
+            "class": "patch"
+          },
+          {
+            "label": "Needs Testing +30",
+            "class": "testing"
+          },
+          {
+            "label": "Freshness: Recently Updated <=14 Days +20",
+            "class": "freshness"
+          }
+        ],
+        "score_breakdown": [
+          {
+            "points": "+65",
+            "label": "Track Priority",
+            "detail": "General: Needs Testing",
+            "display": "Track Priority: General: Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+35",
+            "label": "Has Patch",
+            "detail": "",
+            "display": "Has Patch",
+            "polarity": "positive"
+          },
+          {
+            "points": "+30",
+            "label": "Needs Testing",
+            "detail": "",
+            "display": "Needs Testing",
+            "polarity": "positive"
+          },
+          {
+            "points": "+20",
+            "label": "Freshness",
+            "detail": "Recently Updated <=14 Days",
+            "display": "Freshness: Recently Updated <=14 Days",
             "polarity": "positive"
           }
         ],
